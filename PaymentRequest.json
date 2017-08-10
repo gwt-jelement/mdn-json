@@ -1,0 +1,108 @@
+{
+  "name": "PaymentRequest",
+  "description": "",
+  "members": [
+    {
+      "name": "PaymentRequest()",
+      "link": "/en-US/docs/Web/API/PaymentRequest/PaymentRequest",
+      "description": "Creates a new PaymentRequest object.",
+      "parameters": [
+        {
+          "name": "methodData",
+          "description": "Contains the payment method identifiers for the payment methods the merchant web site accepts and any associated payment method specific data. This parameter contains the following fields: supportedMethods For early implementations of the spec, this was a sequence of identifiers for payment methods that the merchant website accepts. Starting with more recent browsers, this parameter is more generic than credit cards, it is a single DOMString, and the meaning of the data parameter changes with the supportedMethods. data A JSON-serializable object that provides optional information that might be needed by the supported payment methods. supportedNetworks Optional A sequence of identifiers for card networks that the merchant accepts. This parameter is supported from Chrome 57 onwards."
+        },
+        {
+          "name": "supportedMethods",
+          "description": "For early implementations of the spec, this was a sequence of identifiers for payment methods that the merchant website accepts. Starting with more recent browsers, this parameter is more generic than credit cards, it is a single DOMString, and the meaning of the data parameter changes with the supportedMethods."
+        },
+        {
+          "name": "data",
+          "description": "A JSON-serializable object that provides optional information that might be needed by the supported payment methods. supportedNetworks Optional A sequence of identifiers for card networks that the merchant accepts. This parameter is supported from Chrome 57 onwards."
+        },
+        {
+          "name": "supportedNetworks Optional",
+          "description": "A sequence of identifiers for card networks that the merchant accepts. This parameter is supported from Chrome 57 onwards."
+        },
+        {
+          "name": "details",
+          "description": "Provides information about the requested transaction. This parameter contains the following fields: total The total amount of the payment request. displayItems An array of optional line items for the payment request that the user agent may display, such as product details, tax, and shipping. shippingOptions The shipping options the user may choose from. If this sequence is blank, it indicates the merchant cannot ship to the current shipping address. The default shipping option may be indicated in this sequence. modifiers Modifiers for specific payment methods; for example, adjusting the total amount based on the payment method."
+        },
+        {
+          "name": "total",
+          "description": "The total amount of the payment request."
+        },
+        {
+          "name": "displayItems",
+          "description": "An array of optional line items for the payment request that the user agent may display, such as product details, tax, and shipping."
+        },
+        {
+          "name": "shippingOptions",
+          "description": "The shipping options the user may choose from. If this sequence is blank, it indicates the merchant cannot ship to the current shipping address. The default shipping option may be indicated in this sequence."
+        },
+        {
+          "name": "modifiers",
+          "description": "Modifiers for specific payment methods; for example, adjusting the total amount based on the payment method."
+        },
+        {
+          "name": "options",
+          "description": "Lets you set options that control the behavior of the user agent. This parameter contains the following fields:"
+        },
+        {
+          "name": "requestPayerName",
+          "description": "A boolean indicating whether the user agent should collect the payer\u0027s name and submit it with the payment request. The default is false."
+        },
+        {
+          "name": "requestPayerEmail",
+          "description": "A boolean indicating whether the user agent should collect the payer\u0027s email address and submit it with the payment request. The default is false."
+        },
+        {
+          "name": "requestPayerPhone",
+          "description": "A boolean indicating whether the user agent should collect the payer\u0027s phone number and submit it with the payment request. The default is false."
+        },
+        {
+          "name": "requestShipping",
+          "description": "A boolean indicating whether the user agent should collect the payer\u0027s shipping address and submit it with the payment request. If you set this type to true, you should select an appropriate shippingType. The default is false."
+        },
+        {
+          "name": "shippingType",
+          "description": "Lets you specify how the user interface refers to shipping when the word \u0027shipping\u0027 isn\u0027t appropriate for your use case. For example, in English speaking countries you would say \"pizza delivery\" not \"pizza shipping\". Valid values are \"shipping\", \"delivery\", and \"pickup\". Quotation marks must be included. The default value is \"shipping\"."
+        }
+      ]
+    },
+    {
+      "name": "PaymentRequest.shippingAddress",
+      "link": "/en-US/docs/Web/API/PaymentRequest/shippingAddress",
+      "description": "Returns the shipping address chosen by the user. This property is only populated if the constructor is called with the requestShipping flag set to true."
+    },
+    {
+      "name": "PaymentRequest.shippingOption",
+      "link": "/en-US/docs/Web/API/PaymentRequest/shippingOption",
+      "description": "Returns the ID of the selected shipping option. This property is only populated if the constructor is called with therequestShipping flag set to true."
+    },
+    {
+      "name": "PaymentRequest.onshippingaddresschange",
+      "link": "/en-US/docs/Web/API/PaymentRequest/onshippingaddresschange",
+      "description": "Fired whenever the user changes their shipping address."
+    },
+    {
+      "name": "PaymentRequest.onshippingoptionchange",
+      "link": "/en-US/docs/Web/API/PaymentRequest/onshippingoptionchange",
+      "description": "Fired whenever the user changes a shipping option."
+    },
+    {
+      "name": "PaymentRequest.canMakePayment()",
+      "link": "/en-US/docs/Web/API/PaymentRequest/canMakePayment",
+      "description": "Indicates whether the PaymentRequest object can make a payment before calling show()."
+    },
+    {
+      "name": "PaymentRequest.show()",
+      "link": "/en-US/docs/Web/API/PaymentRequest/show",
+      "description": "Causes the user agent to begin the user interaction for the payment request."
+    },
+    {
+      "name": "PaymentRequest.abort()",
+      "link": "/en-US/docs/Web/API/PaymentRequest/abort",
+      "description": "Causes the user agent to end the payment request and to remove any user interface that might be shown."
+    }
+  ]
+}

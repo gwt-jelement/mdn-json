@@ -1,0 +1,79 @@
+{
+  "name": "IDBCursor",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBCursor.source",
+      "link": "/en-US/docs/Web/API/IDBCursor/source",
+      "description": "Returns the IDBObjectStore or IDBIndex that the cursor is iterating. This function never returns null or throws an exception, even if the cursor is currently being iterated, has iterated past its end, or its transaction is not active."
+    },
+    {
+      "name": "IDBCursor.direction",
+      "link": "/en-US/docs/Web/API/IDBCursor/direction",
+      "description": "Returns the direction of traversal of the cursor. See Constants for possible values."
+    },
+    {
+      "name": "IDBCursor.key",
+      "link": "/en-US/docs/Web/API/IDBCursor/key",
+      "description": "Returns the key for the record at the cursor\u0027s position. If the cursor is outside its range, this is set to undefined. The cursor\u0027s key can be any data type."
+    },
+    {
+      "name": "IDBCursor.primaryKey",
+      "link": "/en-US/docs/Web/API/IDBCursor/primaryKey",
+      "description": "Returns the cursor\u0027s current effective primary key. If the cursor is currently being iterated or has iterated outside its range, this is set to undefined. The cursor\u0027s primary key can be any data type."
+    },
+    {
+      "name": "IDBCursor.advance()",
+      "link": "/en-US/docs/Web/API/IDBCursor/advance",
+      "description": "Sets the number times a cursor should move its position forward.",
+      "parameters": [
+        {
+          "name": "count",
+          "description": "The number of times to move the cursor forward."
+        }
+      ]
+    },
+    {
+      "name": "IDBCursor.continue()",
+      "link": "/en-US/docs/Web/API/IDBCursor/continue",
+      "description": "Advances the cursor to the next position along its direction, to the item whose key matches the optional key parameter.",
+      "parameters": [
+        {
+          "name": "optionalKey",
+          "description": "The key to position the cursor at."
+        }
+      ]
+    },
+    {
+      "name": "IDBCursor.continuePrimaryKey()",
+      "link": "/en-US/docs/Web/API/IDBCursor/continuePrimaryKey",
+      "description": "Sets the cursor to the given index key and primary key given as arguments.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "The key to position the cursor at."
+        },
+        {
+          "name": "primaryKey",
+          "description": "The primary key to position the cursor at."
+        }
+      ]
+    },
+    {
+      "name": "IDBCursor.delete()",
+      "link": "/en-US/docs/Web/API/IDBCursor/delete",
+      "description": "Returns an IDBRequest object, and, in a separate thread, deletes the record at the cursor\u0027s position, without changing the cursor\u0027s position. This can be used to delete specific records."
+    },
+    {
+      "name": "IDBCursor.update()",
+      "link": "/en-US/docs/Web/API/IDBCursor/update",
+      "description": "Returns an IDBRequest object, and, in a separate thread, updates the value at the current position of the cursor in the object store. This can be used to update specific records.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "The new value to be stored at the current position."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "DOMLocator",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMLocator.lineNumber",
+      "link": "/en-US/docs/Web/API/DOMLocator/lineNumber",
+      "description": "Returns a positiove integer or -1."
+    },
+    {
+      "name": "DOMLocator.columnNumber",
+      "link": "/en-US/docs/Web/API/DOMLocator/columnNumber",
+      "description": "Returns a positiove integer or -1."
+    },
+    {
+      "name": "DOMLocator.byteOffset",
+      "link": "/en-US/docs/Web/API/DOMLocator/byteOffset",
+      "description": "Returns a positiove integer or -1."
+    },
+    {
+      "name": "DOMLocator.utf16Offset",
+      "link": "/en-US/docs/Web/API/DOMLocator/utf16Offset",
+      "description": "Returns a positiove integer or -1."
+    },
+    {
+      "name": "DOMLocator.relatedNode",
+      "link": "/en-US/docs/Web/API/DOMLocator/relatedNode",
+      "description": "Returns a positiove integer or -1."
+    },
+    {
+      "name": "DOMLocator.uri",
+      "link": "/en-US/docs/Web/API/DOMLocator/uri",
+      "description": "Returns a positiove integer or -1."
+    }
+  ]
+}

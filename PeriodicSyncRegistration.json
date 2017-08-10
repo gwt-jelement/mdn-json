@@ -1,0 +1,31 @@
+{
+  "name": "PeriodicSyncRegistration",
+  "description": "",
+  "members": [
+    {
+      "name": "PeriodicSyncRegistration.minPeriod",
+      "link": "/en-US/docs/Web/API/PeriodicSyncRegistration/minPeriod",
+      "description": "Provides in miliseconds the minimum time between periodic sync events. User agents may delay this event for reasons ranging from usage frequency to device states such as, for example, battery charge, connectivity, and location."
+    },
+    {
+      "name": "PeriodicSyncRegistration.networkState",
+      "link": "/en-US/docs/Web/API/PeriodicSyncRegistration/networkState",
+      "description": "Indicates the network condition under which periodic background synchronization will occur. Valid values are \u0027any\u0027, \u0027avoid-cellular\u0027, and \u0027online\u0027."
+    },
+    {
+      "name": "PeriodicSyncRegistration.powerState",
+      "link": "/en-US/docs/Web/API/PeriodicSyncRegistration/powerState",
+      "description": "Indicates how the PeriodicSyncRegistration deals with a devices\u0027 battery conditions. Valid values are \u0027auto\u0027, and \u0027avoid-draining\u0027."
+    },
+    {
+      "name": "PeriodicSyncRegistration.tag",
+      "link": "/en-US/docs/Web/API/PeriodicSyncRegistration/tag",
+      "description": "Provides the unique identifier of the specified PeriodicSyncRegistration."
+    },
+    {
+      "name": "PeriodicSyncRegistration.unregister",
+      "link": "/en-US/docs/Web/API/PeriodicSyncRegistration/unregister",
+      "description": "Returns a Promise that resolves to Boolean indicating whether the PeriodicSyncRegistration object was unregistered."
+    }
+  ]
+}

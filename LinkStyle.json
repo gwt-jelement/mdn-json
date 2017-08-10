@@ -1,0 +1,11 @@
+{
+  "name": "LinkStyle",
+  "description": "The LinkStyle interface allows to access the associated CSS style sheet of a node.",
+  "members": [
+    {
+      "name": "LinkStyle.sheet",
+      "link": "/en-US/docs/Web/API/LinkStyle/sheet",
+      "description": "Returns the StyleSheet object associated with the given element, or null if there is none."
+    }
+  ]
+}

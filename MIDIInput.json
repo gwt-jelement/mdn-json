@@ -1,0 +1,11 @@
+{
+  "name": "MIDIInput",
+  "description": "",
+  "members": [
+    {
+      "name": "MIDIInput.onmidimessage",
+      "link": "/en-US/docs/Web/API/MIDIInput/onmidimessage",
+      "description": "When the current port receives a MIDIMessage it triggers a call to this event handler."
+    }
+  ]
+}

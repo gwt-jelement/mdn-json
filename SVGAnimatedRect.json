@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedRect",
+  "description": "The SVGAnimatedRect interface is used for attributes of basic SVGRect which can be animated.",
+  "members": []
+}

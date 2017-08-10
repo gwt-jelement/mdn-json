@@ -1,0 +1,26 @@
+{
+  "name": "ExtendableEvent",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The ExtendableEvent interface extends the lifetime of the install and activate events dispatched on the global scope as part of the service worker lifecycle. This ensures that any functional events (like FetchEvent) are not dispatched until it upgrades database schemas and deletes the outdated cache entries.",
+  "members": [
+    {
+      "name": "ExtendableEvent()",
+      "link": "/en-US/docs/Web/API/ExtendableEvent/ExtendableEvent",
+      "description": "Creates a new ExtendableEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of the ExtendableEvent, for example install, activate."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the event object. Currently no possible options exist inside the spec, but this has been defined for forward compatibility across the different derived events."
+        }
+      ]
+    },
+    {
+      "name": "ExtendableEvent.waitUntil()",
+      "link": "/en-US/docs/Web/API/ExtendableEvent/waitUntil",
+      "description": "Extends the lifetime of the event.  It is intended to be called in the install EventHandler for the installing worker and on the active EventHandler for the active worker."
+    }
+  ]
+}

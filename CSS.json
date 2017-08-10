@@ -1,0 +1,36 @@
+{
+  "name": "CSS",
+  "description": "The CSS interface holds useful CSS-related methods. No object with this interface are implemented: it contains only static methods and therefore is a utilitarian interface.",
+  "members": [
+    {
+      "name": "CSS.supports()",
+      "link": "/en-US/docs/Web/API/CSS/supports",
+      "description": "Returns a Boolean indicating if the pair property-value, or the condition, given in parameter is supported.",
+      "parameters": [
+        {
+          "name": "propertyName",
+          "description": "A DOMString containing the name of the CSS property to check."
+        },
+        {
+          "name": "value",
+          "description": "A DOMString containing the value of the CSS property to check."
+        },
+        {
+          "name": "supportCondition",
+          "description": "A DOMString containing the condition to check."
+        }
+      ]
+    },
+    {
+      "name": "CSS.escape()",
+      "link": "/en-US/docs/Web/API/CSS/escape",
+      "description": "Can be used to escape a string mostly for use as part of a CSS selector.",
+      "parameters": [
+        {
+          "name": "str",
+          "description": "The DOMString to be escaped."
+        }
+      ]
+    }
+  ]
+}

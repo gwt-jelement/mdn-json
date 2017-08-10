@@ -1,0 +1,21 @@
+{
+  "name": "FetchController",
+  "description": "Draft This page is not complete. This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The FetchController interface of the Fetch API represents a controller object that allows you to control one or more fetch requests.",
+  "members": [
+    {
+      "name": "FetchController.FetchController()",
+      "link": "/en-US/docs/Web/API/FetchController/FetchController",
+      "description": "Creates a new FetchController object instance."
+    },
+    {
+      "name": "FetchController.signal",
+      "link": "/en-US/docs/Web/API/FetchController/signal",
+      "description": "Returns a FetchSignal object instance, which can be used to communicate with/control a fetch request."
+    },
+    {
+      "name": "FetchController.abort()",
+      "link": "/en-US/docs/Web/API/FetchController/abort",
+      "description": "Aborts a fetch request before it has completed."
+    }
+  ]
+}

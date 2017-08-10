@@ -1,0 +1,11 @@
+{
+  "name": "NavigatorConcurrentHardware",
+  "description": "",
+  "members": [
+    {
+      "name": "NavigatorConcurrentHardware.hardwareConcurrency",
+      "link": "/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency",
+      "description": "Returns the number of logical processors which may be available to the user agent. This value is always at least 1, and will be 1 if the actual number of logical processors can\u0027t be determined."
+    }
+  ]
+}

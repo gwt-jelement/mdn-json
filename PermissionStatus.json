@@ -1,0 +1,21 @@
+{
+  "name": "PermissionStatus",
+  "description": "",
+  "members": [
+    {
+      "name": "PermissionStatus.state",
+      "link": "/en-US/docs/Web/API/PermissionStatus/state",
+      "description": "Returns the state of a requested permission; one of \u0027granted\u0027, \u0027denied\u0027, or \u0027prompt\u0027."
+    },
+    {
+      "name": "PermissionStatus.status",
+      "link": "/en-US/docs/Web/API/PermissionStatus/status",
+      "description": "Returns the state of a requested permission; one of \u0027granted\u0027, \u0027denied\u0027, or \u0027prompt\u0027. Later versions of the specification replace this with PermissionStatus.state."
+    },
+    {
+      "name": "PermissionStatus.onchange",
+      "link": "/en-US/docs/Web/API/PermissionStatus/onchange",
+      "description": "An event called whenever PermissionStatus.status changes."
+    }
+  ]
+}

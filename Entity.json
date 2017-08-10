@@ -1,0 +1,36 @@
+{
+  "name": "Entity",
+  "description": "",
+  "members": [
+    {
+      "name": "Entity.publicId",
+      "link": "/en-US/docs/Web/API/Entity/publicId",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Entity.systemId",
+      "link": "/en-US/docs/Web/API/Entity/systemId",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Entity.notationName",
+      "link": "/en-US/docs/Web/API/Entity/notationName",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Entity.inputEncoding",
+      "link": "/en-US/docs/Web/API/Entity/inputEncoding",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Entity.xmlEncoding",
+      "link": "/en-US/docs/Web/API/Entity/xmlEncoding",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Entity.xmlVersion",
+      "link": "/en-US/docs/Web/API/Entity/xmlVersion",
+      "description": "Is a DOMString."
+    }
+  ]
+}

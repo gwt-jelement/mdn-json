@@ -1,0 +1,31 @@
+{
+  "name": "MediaKeySystemConfiguration",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The MediaKeySystemConfiguration interface Encrypted Media Extensions API provides configuration information about the media key system.",
+  "members": [
+    {
+      "name": "MediaKeySystemConfiguration.initDataTypes",
+      "link": "/en-US/docs/Web/API/MediaKeySystemConfiguration/initDataTypes",
+      "description": "Returns a list of supported initialization data type names. An initialization data type is a string indicating the format of the initialization data."
+    },
+    {
+      "name": "MediaKeySystemConfiguration.audioCapabilities",
+      "link": "/en-US/docs/Web/API/MediaKeySystemConfiguration/audioCapabilities",
+      "description": "Returns a list of supported audio type and capability pairs."
+    },
+    {
+      "name": "MediaKeySystemConfiguration.videoCapabilities",
+      "link": "/en-US/docs/Web/API/MediaKeySystemConfiguration/videoCapabilities",
+      "description": "Returns a list of supported video type and capability pairs."
+    },
+    {
+      "name": "MediaKeySystemConfiguration.distinctiveIdentifier",
+      "link": "/en-US/docs/Web/API/MediaKeySystemConfiguration/distinctiveIdentifier",
+      "description": "Indicates whether a persistent distinctive identifier is required."
+    },
+    {
+      "name": "MediaKeySystemConfiguration.persistentState",
+      "link": "/en-US/docs/Web/API/MediaKeySystemConfiguration/persistentState",
+      "description": "Indicates whether the ability to persist state is required."
+    }
+  ]
+}

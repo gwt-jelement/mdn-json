@@ -1,0 +1,278 @@
+{
+  "name": "WorkerGlobalScope",
+  "description": "",
+  "members": [
+    {
+      "name": "WorkerGlobalScope.self",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/self",
+      "description": "Returns a reference to the WorkerGlobalScope itself. Most of the time it is a specific scope like DedicatedWorkerGlobalScope,  SharedWorkerGlobalScope or ServiceWorkerGlobalScope."
+    },
+    {
+      "name": "WorkerGlobalScope.location",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/location",
+      "description": "Returns the WorkerLocation associated with the worker. It is a specific location object, mostly a subset of the Location for browsing scopes, but adapted to workers."
+    },
+    {
+      "name": "WorkerGlobalScope.performance",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/performance",
+      "description": "Returns the Performance associated with the worker. It is a regular performance object, except that only a subset of its property and methods are available to workers."
+    },
+    {
+      "name": "WorkerGlobalScope.console",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/console",
+      "description": "Returns the Console associated with the worker."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.caches",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/caches",
+      "description": "Returns the CacheStorage object associated with the current context. This object enables functionality such as storing assets for offline use, and generating custom responses to requests."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.indexedDB",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/indexedDB",
+      "description": "Provides a mechanism for applications to asynchronously access capabilities of indexed databases; returns an IDBFactory object."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.isSecureContext",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/isSecureContext",
+      "description": "Returns a boolean indicating whether the current context is secure (true) or not (false)."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.origin",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/origin",
+      "description": "Returns the global object\u0027s origin, serialized as a string. (This does not yet appear to be implemented in any browser.)"
+    },
+    {
+      "name": "WorkerGlobalScope.onerror",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onerror",
+      "description": "Is an EventHandler representing the code to be called when the error event is raised."
+    },
+    {
+      "name": "WorkerGlobalScope.onoffline",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onoffline",
+      "description": "Is an EventHandler representing the code to be called when the offline event is raised."
+    },
+    {
+      "name": "WorkerGlobalScope.ononline",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/ononline",
+      "description": "Is an EventHandler representing the code to be called when the online event is raised."
+    },
+    {
+      "name": "WorkerGlobalScope.onlanguagechange",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onlanguagechange",
+      "description": "An EventHandler fired at the global/worker scope object when the user\u0027s preferred languages change."
+    },
+    {
+      "name": "WorkerGlobalScope.onclose",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onclose",
+      "description": "Is an EventHandler representing the code to be called when the close event is raised."
+    },
+    {
+      "name": "WorkerGlobalScope.onrejectionhandled",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onrejectionhandled",
+      "description": "An event handler for handled Promise rejection events."
+    },
+    {
+      "name": "WorkerGlobalScope.onunhandledrejection",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/onunhandledrejection",
+      "description": "An event handler for unhandled Promise rejection events."
+    },
+    {
+      "name": "WorkerGlobalScope.importScripts()",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/importScripts",
+      "description": "Imports one or more scripts into the worker\u0027s scope. You can specify as many as you\u0027d like, separated by commas. For example: importScripts(\u0027foo.js\u0027, \u0027bar.js\u0027);"
+    },
+    {
+      "name": "WorkerGlobalScope.dump()",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/dump",
+      "description": "Allows you to write a message to stdout — i.e. in your terminal. This is the same as Firefox\u0027s window.dump, but for workers."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.atob()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob",
+      "description": "Decodes a string of data which has been encoded using base-64 encoding."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.btoa()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa",
+      "description": "Creates a base-64 encoded ASCII string from a string of binary data.",
+      "parameters": [
+        {
+          "name": "stringToEncode",
+          "description": "A string whose characters each represent a single byte of binary data to be encoded into ASCII."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.clearInterval()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval",
+      "description": "Cancels the repeated execution set using WindowOrWorkerGlobalScope.setInterval().",
+      "parameters": [
+        {
+          "name": "intervalID",
+          "description": "The identifier of the repeated action you want to cancel. This ID was returned by the corresponding call to setInterval()."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.clearTimeout()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout",
+      "description": "Cancels the delayed execution set using WindowOrWorkerGlobalScope.setTimeout().",
+      "parameters": [
+        {
+          "name": "timeoutID",
+          "description": "The identifier of the timeout you want to cancel. This ID was returned by the corresponding call to setTimeout()."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.createImageBitmap()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap",
+      "description": "Accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap. Optionally the source is cropped to the rectangle of pixels originating at (sx, sy) with width sw, and height sh.",
+      "parameters": [
+        {
+          "name": "image",
+          "description": "An image source, which can be an \u003cimg\u003e, SVG \u003cimage\u003e, \u003cvideo\u003e, \u003ccanvas\u003e, HTMLImageElement, SVGImageElement, HTMLVideoElement, HTMLCanvasElement, Blob, ImageData, ImageBitmap, or OffscreenCanvas object."
+        },
+        {
+          "name": "sx",
+          "description": "The x coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sy",
+          "description": "The y coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sw",
+          "description": "The width of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "sh",
+          "description": "The height of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for . The available options are: imageOrientation: Indicates whether the image is presented as is or flipped vertically. Either none (default) or flipY. premultiplyAlpha: Indicates that the bitmaps color channels are premultiplied by the alpha channel. One of none, premultiply, or default (default). colorSpaceConversion: Indicates whether the image is decoded using color space conversion. Either none or default (default). The value default indicates that implementation-specific behavior is used. resizeWidth: A long integer that indicates the new width. resizeHeight: A long integer that indicates the new height. resizeQuality: Specifies an image scaling algorithm. One of pixelated, low (default), medium, or high."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.fetch()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch",
+      "description": "Starts the process of fetching a resource from the network.",
+      "parameters": [
+        {
+          "name": "input",
+          "description": "This defines the resource that you wish to fetch. This can either be: A USVString containing the direct URL of the resource you want to fetch. Some browsers accept blob: and data: as schemes. A Request object."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the request. The possible options are: method: The request method, e.g., GET, POST. headers: Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. body: Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, or USVString object. Note that a request using the GET or HEAD method cannot have a body. mode: The mode you want to use for the request, e.g., cors, no-cors, or same-origin. credentials: The request credentials you want to use for the request: omit, same-origin, or include. To automatically send cookies for the current domain, this option must be provided. Starting with Chrome 50, this property also takes a FederatedCredential instance or a PasswordCredential instance. cache: The cache mode you want to use for the request: default, no-store, reload, no-cache, force-cache, or only-if-cached. redirect: The redirect mode to use: follow (automatically follow redirects), error (abort with an error if a redirect occurs), or manual (handle redirects manually). In Chrome the default was follow before Chrome 47 and manual starting with Chrome 47. referrer: A USVString specifying no-referrer, client, or a URL. The default is client. referrerPolicy: Specifies the value of the referer HTTP header. May be one of no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url. integrity: Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d). signal: A FetchSignal object instance; allows you to communicate with a fetch request and control it via a FetchController. observe: An ObserverCallback object — this object\u0027s sole purpose is to provide a callback function that runs when the fetch request runs. This returns a FetchObserver object that can be used to retrieve information concerning the status of a fetch request."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.setInterval()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval",
+      "description": "Schedules a function to execute every time a given number of milliseconds elapses.",
+      "parameters": [
+        {
+          "name": "func",
+          "description": "A function to be executed every delay milliseconds. The function is not passed any parameters, and no return value is expected."
+        },
+        {
+          "name": "code",
+          "description": "An optional syntax allows you to include a string instead of a function, which is compiled and executed every delay milliseconds. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should delay in between executions of the specified function or code. If this parameter is less than 10, a value of 10 is used. Note that the actual delay may be longer; see \"Reasons for delays longer than specified\" in WindowOrWorkerGlobalScope.setTimeout() for examples."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by func once the timer expires."
+        },
+        {
+          "name": "thisObject",
+          "description": "The this object on which the callback function is called. It can be an object or null."
+        },
+        {
+          "name": "callback",
+          "description": "The function that is repeatedly invoked . It is called with three parameters: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is increasing or decreasing). It is something like callback.call(thisObject, index, length, backwards). If the callback function returns a false value the daemon is paused."
+        },
+        {
+          "name": "rate (optional)",
+          "description": "The time lapse (in number of milliseconds) between each invocation. The default value is 100."
+        },
+        {
+          "name": "length (optional)",
+          "description": "The total number of invocations. It can be a positive integer or Infinity. The default value is Infinity."
+        },
+        {
+          "name": "myDaemon.owner",
+          "description": "The this object on which is executed the daemon (read/write). It can be an object or null."
+        },
+        {
+          "name": "myDaemon.task",
+          "description": "The function that is repeatedly invoked (read/write). It is called with three arguments: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is decreasing or not) – see above. If the myDaemon.task function returns a false value the daemon is paused."
+        },
+        {
+          "name": "myDaemon.rate",
+          "description": "The time lapse (in number of milliseconds) between each invocation (read/write)."
+        },
+        {
+          "name": "myDaemon.length",
+          "description": "The total number of invocations. It can be a positive integer or Infinity (read/write)."
+        },
+        {
+          "name": "myDaemon.isAtEnd()",
+          "description": "Returns a boolean expressing whether the daemon is at the start/end position or not."
+        },
+        {
+          "name": "myDaemon.synchronize()",
+          "description": "Synchronize the timer of a started daemon with the time of its invocation."
+        },
+        {
+          "name": "myDaemon.pause()",
+          "description": "Pauses the daemon."
+        },
+        {
+          "name": "myDaemon.start([reverse])",
+          "description": "Starts the daemon forward (index of each invocation increasing) or backwards (index decreasing)."
+        },
+        {
+          "name": "MiniDaemon.forceCall(minidaemon)",
+          "description": "Forces a single callback to the minidaemon.task function regardless of the fact that the end has been reached or not. In any case the internal INDEX property is increased/decreased (depending on the actual direction of the process)."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.setTimeout()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout",
+      "description": "Schedules a function to execute in a given amount of time.",
+      "parameters": [
+        {
+          "name": "function",
+          "description": "A function to be executed after the timer expires."
+        },
+        {
+          "name": "code",
+          "description": "An alternative syntax that allows you to include a string instead of a function, which is compiled and executed when the timer expires. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay Optional",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should wait before the specified function or code is executed. If this parameter is omitted, a value of 0 is used, meaning execute \"immediately\", or more accurately, as soon as possible. Note that in either case, the actual delay may be longer than intended; see Reasons for delays longer than specified below."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by function or code once the timer expires."
+        }
+      ]
+    },
+    {
+      "name": "WorkerGlobalScope.close()",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/close",
+      "description": "Discards any tasks queued in the WorkerGlobalScope\u0027s event loop, effectively closing this particular scope. In newer browser versions, close() is available on DedicatedWorkerGlobalScope and SharedWorkerGlobalScope instead. This change was made to stop close() being available on service workers, as it isn\u0027t supposed to be used there and always throws an exception when called (see bug 1336043)."
+    }
+  ]
+}

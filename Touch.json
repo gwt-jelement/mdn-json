@@ -1,0 +1,113 @@
+{
+  "name": "Touch",
+  "description": "",
+  "members": [
+    {
+      "name": "Touch()",
+      "link": "/en-US/docs/Web/API/Touch/Touch",
+      "description": "Creates a Touch object.",
+      "parameters": [
+        {
+          "name": "touchInit",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Touch.identifier",
+      "link": "/en-US/docs/Web/API/Touch/identifier",
+      "description": "Returns a unique identifier for this Touch object. A given touch point (say, by a finger) will have the same identifier for the duration of its movement around the surface. This lets you ensure that you\u0027re tracking the same touch all the time."
+    },
+    {
+      "name": "Touch.screenX",
+      "link": "/en-US/docs/Web/API/Touch/screenX",
+      "description": "Returns the X coordinate of the touch point relative to the left edge of the screen.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The X coordinate of the touch point relative to the screen, not including any scroll offset."
+        }
+      ]
+    },
+    {
+      "name": "Touch.screenY",
+      "link": "/en-US/docs/Web/API/Touch/screenY",
+      "description": "Returns the Y coordinate of the touch point relative to the top edge of the screen.",
+      "parameters": [
+        {
+          "name": "y",
+          "description": "The Y coordinate of the touch point relative to the screen, not including any scroll offset."
+        }
+      ]
+    },
+    {
+      "name": "Touch.clientX",
+      "link": "/en-US/docs/Web/API/Touch/clientX",
+      "description": "Returns the X coordinate of the touch point relative to the left edge of the browser viewport, not including any scroll offset."
+    },
+    {
+      "name": "Touch.clientY",
+      "link": "/en-US/docs/Web/API/Touch/clientY",
+      "description": "Returns the Y coordinate of the touch point relative to the top edge of the browser viewport, not including any scroll offset."
+    },
+    {
+      "name": "Touch.pageX",
+      "link": "/en-US/docs/Web/API/Touch/pageX",
+      "description": "Returns the X coordinate of the touch point relative to the left edge of the document. Unlike clientX, this value includes the horizontal scroll offset, if any."
+    },
+    {
+      "name": "Touch.pageY",
+      "link": "/en-US/docs/Web/API/Touch/pageY",
+      "description": "Returns the Y coordinate of the touch point relative to the top of the document. Unlike clientY, this value includes the vertical scroll offset, if any."
+    },
+    {
+      "name": "Touch.target",
+      "link": "/en-US/docs/Web/API/Touch/target",
+      "description": "Returns the Element on which the touch point started when it was first placed on the surface, even if the touch point has since moved outside the interactive area of that element or even been removed from the document.",
+      "parameters": [
+        {
+          "name": "el",
+          "description": "The target element of the Touch object."
+        }
+      ]
+    },
+    {
+      "name": "Touch.radiusX",
+      "link": "/en-US/docs/Web/API/Touch/radiusX",
+      "description": "Returns the X radius of the ellipse that most closely circumscribes the area of contact with the screen. The value is in pixels of the same scale as screenX.",
+      "parameters": [
+        {
+          "name": "xRadius",
+          "description": "The X radius of the ellipse that most closely circumscribes the area of contact with the touch surface."
+        }
+      ]
+    },
+    {
+      "name": "Touch.radiusY",
+      "link": "/en-US/docs/Web/API/Touch/radiusY",
+      "description": "Returns the Y radius of the ellipse that most closely circumscribes the area of contact with the screen. The value is in pixels of the same scale as screenY.",
+      "parameters": [
+        {
+          "name": "yRadius",
+          "description": "The Y radius of the ellipse that most closely circumscribes the area of contact with the screen."
+        }
+      ]
+    },
+    {
+      "name": "Touch.rotationAngle",
+      "link": "/en-US/docs/Web/API/Touch/rotationAngle",
+      "description": "Returns the angle (in degrees) that the ellipse described by radiusX and radiusY must be rotated, clockwise, to most accurately cover the area of contact between the user and the surface.",
+      "parameters": [
+        {
+          "name": "angle",
+          "description": "The number of degrees of rotation to apply to the described ellipse to align with the contact area between the user and the touch surface."
+        }
+      ]
+    },
+    {
+      "name": "Touch.force",
+      "link": "/en-US/docs/Web/API/Touch/force",
+      "description": "Returns the amount of pressure being applied to the surface by the user, as a float between 0.0 (no pressure) and 1.0 (maximum pressure)."
+    }
+  ]
+}

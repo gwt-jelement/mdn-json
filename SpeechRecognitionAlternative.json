@@ -1,0 +1,16 @@
+{
+  "name": "SpeechRecognitionAlternative",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognitionAlternative.transcript",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionAlternative/transcript",
+      "description": "Returns a string containing the transcript of the recognised word."
+    },
+    {
+      "name": "SpeechRecognitionAlternative.confidence",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionAlternative/confidence",
+      "description": "Returns a numeric estimate of how confident the speech recognition system is that the recognition is correct."
+    }
+  ]
+}

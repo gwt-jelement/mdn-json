@@ -1,0 +1,111 @@
+{
+  "name": "IdentityManager",
+  "description": "",
+  "members": [
+    {
+      "name": "IdentityManager.watch()",
+      "link": "/en-US/docs/Web/API/IdentityManager/watch",
+      "description": "Registers callbacks to be invoked when a user logs into or out of a website.",
+      "parameters": [
+        {
+          "name": "loggedInUser Optional",
+          "description": "This parameter tells Persona what you believe about the user\u0027s state. It may be a string, null, or undefined."
+        },
+        {
+          "name": "onlogin",
+          "description": "A function which will be invoked and passed a single argument, an assertion, when the user logs in. This function should send the assertion to the site\u0027s backend for verification. If verification succeeds, the backend should establish a session for the user and the function should update the UI as appropriate."
+        },
+        {
+          "name": "onlogout Optional",
+          "description": "A function that will be invoked, without any arguments, when the user logs out. This should tear down the user\u0027s session by making a call to the site\u0027s backend, or by redirecting the user. If onlogout is not provided, the session management provided by the Observer API will be disabled. Only onready and onlogin will be invoked, and onlogin will only be invoked in response to a user\u0027s attempt to login (it will not be invoked automatically if the user has logged in before)."
+        },
+        {
+          "name": "onready Optional",
+          "description": "A function that will be invoked when the user agent is initialized and able to process calls to id.request and id.logout. The onready callback will be invoked immediately after any automatic invocations of onlogin, onlogout, or onmatch. By waiting to display UI until onready is called, relying parties can avoid UI flicker in cases where the user agent\u0027s preferred state is out of sync with the site\u0027s session."
+        }
+      ]
+    },
+    {
+      "name": "IdentityManager.request()",
+      "link": "/en-US/docs/Web/API/IdentityManager/request",
+      "description": "Requests a signed identity assertion from the user.",
+      "parameters": [
+        {
+          "name": "backgroundColor Optional",
+          "description": "A hexadecimal color to use as the login dialog\u0027s background. Format: \"#rgb\" or \"#rrggbb\"."
+        },
+        {
+          "name": "oncancel Optional",
+          "description": "A function that will be invoked if the user refuses to share an identity with the site."
+        },
+        {
+          "name": "privacyPolicy Optional",
+          "description": "Must be served over SSL. The termsOfService parameter must also be provided."
+        },
+        {
+          "name": "returnTo Optional",
+          "description": "Absolute path to send new users to after they\u0027ve completed email verification for the first time. The path must begin with \u0027/\u0027. This parameter only affects users who are certified by Mozilla\u0027s fallback Identity Provider. This value passed in should be a valid path which could be used to set window.location too."
+        },
+        {
+          "name": "siteLogo Optional",
+          "description": "Must be served over SSL."
+        },
+        {
+          "name": "siteName Optional",
+          "description": "Plain text name of your site to show in the login dialog. Unicode and whitespace are allowed, but markup is not."
+        },
+        {
+          "name": "termsOfService Optional",
+          "description": "Must be served over SSL. The privacyPolicy parameter must also be provided."
+        }
+      ]
+    },
+    {
+      "name": "IdentityManager.logout()",
+      "link": "/en-US/docs/Web/API/IdentityManager/logout",
+      "description": "Logs the user out of a website and prevents the onlogin action from automatically firing on their next visit."
+    },
+    {
+      "name": "IdentityManager.get()",
+      "link": "/en-US/docs/Web/API/IdentityManager/get",
+      "description": "Gets the user\u0027s BrowserID in a signed assertion.",
+      "parameters": [
+        {
+          "name": "gotAssertion",
+          "description": "A function which will be called with a signed assertion object or NULL. The callback should send the assertion to the server for verification."
+        },
+        {
+          "name": "backgroundColor Optional",
+          "description": "A hexadecimal color to use as the login dialog\u0027s background. Format: \"#rgb\" or \"#rrggbb\"."
+        },
+        {
+          "name": "privacyPolicy Optional",
+          "description": "Must be served over SSL. The termsOfService parameter must also be provided."
+        },
+        {
+          "name": "termsOfService Optional",
+          "description": "Must be served over SSL. The privacyPolicy parameter must also be provided."
+        },
+        {
+          "name": "siteLogo Optional",
+          "description": "Must be served over SSL."
+        },
+        {
+          "name": "siteName Optional",
+          "description": "Plain text name of your site to show in the login dialog. Unicode and whitespace are allowed, but markup is not."
+        }
+      ]
+    },
+    {
+      "name": "IdentityManager.getVerifiedEmail()",
+      "link": "/en-US/docs/Web/API/IdentityManager/getVerifiedEmail",
+      "description": "Gets the user\u0027s BrowserID in a signed assertion. This method is deprecated; navigator.id.get() is backwards compatible and can be used instead.",
+      "parameters": [
+        {
+          "name": "gotAssertion",
+          "description": "A callback function which will be called with a signed assertion object or NULL. The callback should send the assertion to the server for verification."
+        }
+      ]
+    }
+  ]
+}

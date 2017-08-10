@@ -1,0 +1,186 @@
+{
+  "name": "DragEvent",
+  "description": "The DragEvent interface is a DOM event that represents a drag and drop interaction. The user initiates a drag by placing a pointer device (such as a mouse) on the touch surface and then dragging the pointer to a new location (such as another DOM element). Applications are free to interpret a drag and drop interaction in an application-specific way.",
+  "members": [
+    {
+      "name": "DragEvent.dataTransfer",
+      "link": "/en-US/docs/Web/API/DragEvent/dataTransfer",
+      "description": "The data that is transferred during a drag and drop interaction.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "A DataTransfer object which contains the drag event\u0027s data."
+        }
+      ]
+    },
+    {
+      "name": "DragEvent()",
+      "link": "/en-US/docs/Web/API/DragEvent/DragEvent",
+      "description": "Creates a synthetic and untrusted DragEvent.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString representing the name of the event (see DragEvent event types)."
+        },
+        {
+          "name": "DragEventInitOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "drag",
+      "link": "/en-US/docs/Web/Events/drag",
+      "description": "This event is fired when an element or text selection is being dragged."
+    },
+    {
+      "name": "dragend",
+      "link": "/en-US/docs/Web/Events/dragend",
+      "description": "This event is fired when a drag operation is being ended (by releasing a mouse button or hitting the escape key)."
+    },
+    {
+      "name": "dragenter",
+      "link": "/en-US/docs/Web/Events/dragenter",
+      "description": "This event is fired when a dragged element or text selection enters a valid drop target."
+    },
+    {
+      "name": "dragexit",
+      "link": "/en-US/docs/Web/Events/dragexit",
+      "description": "This event is fired when an element is no longer the drag operation\u0027s immediate selection target.",
+      "parameters": [
+        {
+          "name": "Specification",
+          "description": "HTML5"
+        },
+        {
+          "name": "Interface",
+          "description": "DragEvent"
+        },
+        {
+          "name": "Bubbles",
+          "description": "Yes"
+        },
+        {
+          "name": "Cancelable",
+          "description": "No"
+        },
+        {
+          "name": "Target",
+          "description": "The previous target element."
+        },
+        {
+          "name": "Default Action",
+          "description": "None."
+        }
+      ]
+    },
+    {
+      "name": "dragleave",
+      "link": "/en-US/docs/Web/Events/dragleave",
+      "description": "This event is fired when a dragged element or text selection leaves a valid drop target."
+    },
+    {
+      "name": "dragover",
+      "link": "/en-US/docs/Web/Events/dragover",
+      "description": "This event is fired when an element or text selection is being dragged over a valid drop target (every few hundred milliseconds)."
+    },
+    {
+      "name": "dragstart",
+      "link": "/en-US/docs/Web/Events/dragstart",
+      "description": "This event is fired when the user starts dragging an element or text selection."
+    },
+    {
+      "name": "drop",
+      "link": "/en-US/docs/Web/Events/drop",
+      "description": "This event is fired when an element or text selection is dropped on a valid drop target."
+    },
+    {
+      "name": "GlobalEventHandlers.ondrag",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrag",
+      "description": "A global event handler for the drag event.",
+      "parameters": [
+        {
+          "name": "dragHandler",
+          "description": "The drag event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragend",
+      "description": "A global event handler for the dragend event.",
+      "parameters": [
+        {
+          "name": "dragendHandler",
+          "description": "The dragend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragenter",
+      "description": "A global event handler for the dragenter event.",
+      "parameters": [
+        {
+          "name": "dragenterHandler",
+          "description": "The dragenter event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragexit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragexit",
+      "description": "A global event handler for the dragexit event.",
+      "parameters": [
+        {
+          "name": "dragexitHandler",
+          "description": "The dragexit event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragleave",
+      "description": "A global event handler for the dragleave event.",
+      "parameters": [
+        {
+          "name": "dragleaveHandler",
+          "description": "The dragleave event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragover",
+      "description": "A global event handler for the dragover event.",
+      "parameters": [
+        {
+          "name": "dragoverHandler",
+          "description": "The dragover event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragstart",
+      "description": "A global event handler for the dragstart event.",
+      "parameters": [
+        {
+          "name": "dragstartHandler",
+          "description": "The dragstart event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondrop",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrop",
+      "description": "A global event handler for the drop event.",
+      "parameters": [
+        {
+          "name": "dropHandler",
+          "description": "The drop event handler for element targetElement."
+        }
+      ]
+    }
+  ]
+}

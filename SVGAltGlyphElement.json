@@ -1,0 +1,26 @@
+{
+  "name": "SVGAltGlyphElement",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. The SVGAltGlyphElement interface represents an \u003caltglyph\u003e element. This interface makes it possible to implement more sophisticated and particular glyph characters. For some textal representations as: ligatures (e.g. æ, ß, etc ), special-purpose fonts (e.g. musical symbols) or even alternate glyphs such as Asian text strings it is required that a different set of glyphs be used than the normal given character data.",
+  "members": [
+    {
+      "name": "SVGAltGlyphElement.glyphRef",
+      "link": "/en-US/docs/Web/API/SVGAltGlyphElement/glyphRef",
+      "description": "It corresponds to the attribute glyphRef on the given element. It\u0027s data type is \u0027String\u0027. It defines the glyph identifier, whose format is dependent on the ‘format’ of the given font."
+    },
+    {
+      "name": "SVGAltGlyphElement.format",
+      "link": "/en-US/docs/Web/API/SVGAltGlyphElement/format",
+      "description": "It corresponds to the attribute  format on the given element. It\u0027s data type is \u0027String\u0027. This property specifies the format of the given font.",
+      "parameters": [
+        {
+          "name": "SVGAltGlyphElement",
+          "description": ""
+        },
+        {
+          "name": "SVGGlyphRefElement",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

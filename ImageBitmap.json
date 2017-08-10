@@ -1,0 +1,21 @@
+{
+  "name": "ImageBitmap",
+  "description": "The ImageBitmap interface represents a bitmap image which can be drawn to a \u003ccanvas\u003e without undue latency. It can be created from a variety of source objects using the createImageBitmap() factory method. ImageBitmap provides an asynchronous and resource efficient pathway to prepare textures for rendering in WebGL.",
+  "members": [
+    {
+      "name": "ImageBitmap.height",
+      "link": "/en-US/docs/Web/API/ImageBitmap/height",
+      "description": "Is an unsigned long representing the height, in CSS pixels, of the ImageData."
+    },
+    {
+      "name": "ImageBitmap.width",
+      "link": "/en-US/docs/Web/API/ImageBitmap/width",
+      "description": "Is an unsigned long representing the width, in CSS pixels, of the ImageData."
+    },
+    {
+      "name": "ImageBitmap.close()",
+      "link": "/en-US/docs/Web/API/ImageBitmap/close",
+      "description": "Disposes of all graphical resources associated with an ImageBitmap."
+    }
+  ]
+}

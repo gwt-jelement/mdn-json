@@ -1,0 +1,16 @@
+{
+  "name": "CanvasCaptureMediaStream",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The CanvasCaptureMediaStream interface represents a MediaStream capturing in real-time the surface of an HTMLCanvasElement.",
+  "members": [
+    {
+      "name": "CanvasCaptureMediaStream.canvas",
+      "link": "/en-US/docs/Web/API/CanvasCaptureMediaStream/canvas",
+      "description": "Returns the HTMLCanvasElement object whose surface is captured in real-time."
+    },
+    {
+      "name": "CanvasCaptureMediaStream.requestFrame()",
+      "link": "/en-US/docs/Web/API/CanvasCaptureMediaStream/requestFrame",
+      "description": "Manually forces a frame to be captured and sent to the stream. This allows to capture partially rendered frames."
+    }
+  ]
+}

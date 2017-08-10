@@ -1,0 +1,116 @@
+{
+  "name": "Response",
+  "description": "The Response interface of the Fetch API represents the response to a request.",
+  "members": [
+    {
+      "name": "Response()",
+      "link": "/en-US/docs/Web/API/Response/Response",
+      "description": "Creates a new Response object.",
+      "parameters": [
+        {
+          "name": "body Optional",
+          "description": "An object defining a body for the response. This can be one of: Blob BufferSource FormData ReadableStream URLSearchParams USVString"
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the response. The possible options are: status: The status code for the reponse, e.g., 200. statusText: The status message associated with the status code, e.g., OK. headers: Any headers you want to add to your response, contained within a Headers object or object literal of ByteString key/value pairs (see HTTP headers for a reference)."
+        }
+      ]
+    },
+    {
+      "name": "Response.headers",
+      "link": "/en-US/docs/Web/API/Response/headers",
+      "description": "Contains the Headers object associated with the response."
+    },
+    {
+      "name": "Response.ok",
+      "link": "/en-US/docs/Web/API/Response/ok",
+      "description": "Contains a boolean stating whether the response was successful (status in the range 200-299) or not."
+    },
+    {
+      "name": "Response.redirected",
+      "link": "/en-US/docs/Web/API/Response/redirected",
+      "description": "Indicates whether or not the response is the result of a redirect; that is, its URL list has more than one entry."
+    },
+    {
+      "name": "Response.status",
+      "link": "/en-US/docs/Web/API/Response/status",
+      "description": "Contains the status code of the response (e.g., 200 for a success)."
+    },
+    {
+      "name": "Response.statusText",
+      "link": "/en-US/docs/Web/API/Response/statusText",
+      "description": "Contains the status message corresponding to the status code (e.g., OK for 200)."
+    },
+    {
+      "name": "Response.type",
+      "link": "/en-US/docs/Web/API/Response/type",
+      "description": "Contains the type of the response (e.g., basic, cors)."
+    },
+    {
+      "name": "Response.url",
+      "link": "/en-US/docs/Web/API/Response/url",
+      "description": "Contains the URL of the response."
+    },
+    {
+      "name": "Response.useFinalURL",
+      "link": "/en-US/docs/Web/API/Response/useFinalURL",
+      "description": "Contains a boolean stating whether this is the final URL of the response."
+    },
+    {
+      "name": "Body.bodyUsed",
+      "link": "/en-US/docs/Web/API/Body/bodyUsed",
+      "description": "Stores a Boolean that declares whether the body has been used in a response yet."
+    },
+    {
+      "name": "Response.clone()",
+      "link": "/en-US/docs/Web/API/Response/clone",
+      "description": "Creates a clone of a Response object."
+    },
+    {
+      "name": "Response.error()",
+      "link": "/en-US/docs/Web/API/Response/error",
+      "description": "Returns a new Response object associated with a network error."
+    },
+    {
+      "name": "Response.redirect()",
+      "link": "/en-US/docs/Web/API/Response/redirect",
+      "description": "Creates a new response with a different URL.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The URL that the new response is to originate from."
+        },
+        {
+          "name": "status Optional",
+          "description": "An optional status code for the response (e.g., 302.)"
+        }
+      ]
+    },
+    {
+      "name": "Body.arrayBuffer()",
+      "link": "/en-US/docs/Web/API/Body/arrayBuffer",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with an ArrayBuffer."
+    },
+    {
+      "name": "Body.blob()",
+      "link": "/en-US/docs/Web/API/Body/blob",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a Blob."
+    },
+    {
+      "name": "Body.formData()",
+      "link": "/en-US/docs/Web/API/Body/formData",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a FormData object."
+    },
+    {
+      "name": "Body.json()",
+      "link": "/en-US/docs/Web/API/Body/json",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with the result of parsing the body text as JSON."
+    },
+    {
+      "name": "Body.text()",
+      "link": "/en-US/docs/Web/API/Body/text",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a USVString (text)."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "name": "URLSearchParams",
+  "description": "",
+  "members": [
+    {
+      "name": "URLSearchParams()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/URLSearchParams",
+      "description": "Constructor returning a URLSearchParams object.",
+      "parameters": [
+        {
+          "name": "init Optional",
+          "description": "A USVString instance, a URLSearchParams instance, a sequence of USVStrings, or a record containing USVStrings. Note that using a URLSearchParams instance is deprecated; soon browsers will just use a USVString for the init."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.append()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/append",
+      "description": "Appends a specified key/value pair as a new search parameter.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to append."
+        },
+        {
+          "name": "value ",
+          "description": "The value of the parameter to append."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.delete()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/delete",
+      "description": "Deletes the given search parameter, and its associated value, from the list of all search parameters.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to be deleted."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.entries()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/entries",
+      "description": "Returns an iterator allowing to go through all key/value pairs contained in this object."
+    },
+    {
+      "name": "URLSearchParams.get()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/get",
+      "description": "Returns the first value associated to the given search parameter.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to return."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.getAll()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/getAll",
+      "description": "Returns all the values association with a given search parameter.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to return."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.has()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/has",
+      "description": "Returns a Boolean indicating if such a search parameter exists.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to find."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.keys()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/keys",
+      "description": "Returns an iterator allowing to go through all keys of the key/value pairs contained in this object."
+    },
+    {
+      "name": "URLSearchParams.set()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/set",
+      "description": "Sets the value associated to a given search parameter to the given value. If there were several values, delete the others.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the parameter to set."
+        },
+        {
+          "name": "value ",
+          "description": "The value of the parameter to set."
+        }
+      ]
+    },
+    {
+      "name": "URLSearchParams.sort()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/sort",
+      "description": "Sorts all key/value pairs, if any, by their keys."
+    },
+    {
+      "name": "URLSearchParams.toString()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/toString",
+      "description": "Returns a string containing a query string suitable for use in a URL."
+    },
+    {
+      "name": "URLSearchParams.values()",
+      "link": "/en-US/docs/Web/API/URLSearchParams/values",
+      "description": "Returns an iterator allowing to go through all values of the key/value pairs contained in this object."
+    }
+  ]
+}

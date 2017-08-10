@@ -1,0 +1,5 @@
+{
+  "name": "HTMLLegendElement",
+  "description": "The HTMLLegendElement is an interface allowing to access properties of the \u003clegend\u003e elements. It inherits properties and methods from the HTMLElement interface.",
+  "members": []
+}

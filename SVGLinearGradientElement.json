@@ -1,0 +1,26 @@
+{
+  "name": "SVGLinearGradientElement",
+  "description": "The SVGLinearGradientElement interface corresponds to the \u003clinearGradient\u003e element.",
+  "members": [
+    {
+      "name": "SVGLinearGradientElement.x1",
+      "link": "/en-US/docs/Web/API/SVGLinearGradientElement/x1",
+      "description": "An SVGAnimatedLength corresponding to the x1 attribute of the given \u003clinearGradient\u003e element."
+    },
+    {
+      "name": "SVGLinearGradientElement.y1",
+      "link": "/en-US/docs/Web/API/SVGLinearGradientElement/y1",
+      "description": "An SVGAnimatedLength corresponding to the y1 attribute of the given \u003clinearGradient\u003e element."
+    },
+    {
+      "name": "SVGLinearGradientElement.x2",
+      "link": "/en-US/docs/Web/API/SVGLinearGradientElement/x2",
+      "description": "An SVGAnimatedLength corresponding to the x2 attribute of the given \u003clinearGradient\u003e element."
+    },
+    {
+      "name": "SVGLinearGradientElement.y2",
+      "link": "/en-US/docs/Web/API/SVGLinearGradientElement/y2",
+      "description": "An SVGAnimatedLength corresponding to the y2 attribute of the given \u003clinearGradient\u003e element."
+    }
+  ]
+}

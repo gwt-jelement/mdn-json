@@ -1,0 +1,36 @@
+{
+  "name": "HTMLEmbedElement",
+  "description": "The HTMLEmbedElement interface, which provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating \u003cembed\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLEmbedElement.align",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/align",
+      "description": "Is a DOMString representing an enumerated property indicating alignment of the element\u0027s contents with respect to the surrounding context. The possible values are \"left\", \"right\", \"center\", and \"justify\"."
+    },
+    {
+      "name": "HTMLEmbedElement.height",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/height",
+      "description": "Is a DOMString reflecting the height HTML attribute, containing the displayed height of the resource."
+    },
+    {
+      "name": "HTMLEmbedElement.name",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/name",
+      "description": "Is a DOMString representing the name of the embedded object."
+    },
+    {
+      "name": "HTMLEmbedElement.src",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/src",
+      "description": "Is a DOMString that reflects the src HTML attribute, containing the address of the resource."
+    },
+    {
+      "name": "HTMLEmbedElement.type",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/type",
+      "description": "Is a DOMString that reflects the type HTML attribute, containing the type of the resource."
+    },
+    {
+      "name": "HTMLEmbedElement.width",
+      "link": "/en-US/docs/Web/API/HTMLEmbedElement/width",
+      "description": "Is a DOMString that reflects the width HTML attribute, containing the displayed width of the resource."
+    }
+  ]
+}

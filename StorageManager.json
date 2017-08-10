@@ -1,0 +1,21 @@
+{
+  "name": "StorageManager",
+  "description": "",
+  "members": [
+    {
+      "name": "StorageManager.estimate()",
+      "link": "/en-US/docs/Web/API/StorageManager/estimate",
+      "description": "Returns a StorageEstimate object containing usage and quota numbers for your origin."
+    },
+    {
+      "name": "StorageManager.persist()",
+      "link": "/en-US/docs/Web/API/StorageManager/persist",
+      "description": "Returns a Promise that resolves to true if the user agent is able to persist your site\u0027s storage."
+    },
+    {
+      "name": "StorageManager.persisted()",
+      "link": "/en-US/docs/Web/API/StorageManager/persisted",
+      "description": "Returns a Promise that resolves to true if persistence has already been granted for your site\u0027s storage."
+    }
+  ]
+}

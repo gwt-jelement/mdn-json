@@ -1,0 +1,61 @@
+{
+  "name": "CSSCounterStyleRule",
+  "description": "The CSSCounterStyleRule interface represents an @counter-style at-rule.",
+  "members": [
+    {
+      "name": "CSSCounterStyleRule.name",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/name",
+      "description": "Is a DOMString object that contains the serialization of the \u003ccounter-style-name\u003e defined for the associated rule."
+    },
+    {
+      "name": "CSSCounterStyleRule.system",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/system",
+      "description": "Is a DOMString object that contains the serialization of the system descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.symbols",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/symbols",
+      "description": "Is a DOMString object that contains the serialization of the symbols descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.additiveSymbols",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/additiveSymbols",
+      "description": "Is a DOMString object that contains the serialization of the additive-symbols descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.negative",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/negative",
+      "description": "Is a DOMString object that contains the serialization of the negative descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.prefix",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/prefix",
+      "description": "Is a DOMString object that contains the serialization of the prefix descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.suffix",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/suffix",
+      "description": "Is a DOMString object that contains the serialization of the suffix descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.range",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/range",
+      "description": "Is a DOMString object that contains the serialization of the range descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.pad",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/pad",
+      "description": "Is a DOMString object that contains the serialization of the pad descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.speakAs",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/speakAs",
+      "description": "Is a DOMString object that contains the serialization of the speak-as descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    },
+    {
+      "name": "CSSCounterStyleRule.fallback",
+      "link": "/en-US/docs/Web/API/CSSCounterStyleRule/fallback",
+      "description": "Is a DOMString object that contains the serialization of the fallback descriptor defined for the associated rule. If the descriptor was not specified in the associated rule, the attribute returns an empty string."
+    }
+  ]
+}

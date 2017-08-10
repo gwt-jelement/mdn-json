@@ -1,0 +1,89 @@
+{
+  "name": "PerformanceNavigationTiming",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The PerformanceNavigationTiming interface provides methods and properties to store and retrieve high resolution timestamps or metrics regarding the browser\u0027s document navigation events. For example, this interface can be used to determine how much time it takes to load or unload a document.",
+  "members": [
+    {
+      "name": "PerformanceNavigationTiming.domComplete",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/domComplete",
+      "description": "A DOMHighResTimeStamp representing a time value equal to the time immediately before the browser sets the current document readiness of the current document to complete."
+    },
+    {
+      "name": "PerformanceNavigationTiming.domContentLoadedEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventEnd",
+      "description": "A DOMHighResTimeStamp representing the time value equal to the time immediately after the current document\u0027s DOMContentLoaded event completes."
+    },
+    {
+      "name": "PerformanceNavigationTiming.domContentLoadedEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventStart",
+      "description": "A DOMHighResTimeStamp representing the time value equal to the time immediately before the user agent fires the DOMContentLoaded event at the current document."
+    },
+    {
+      "name": "PerformanceNavigationTiming.domInteractive",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/domInteractive",
+      "description": "A DOMHighResTimeStamp representing a timestamp representing the time value equal to the time immediately before the user agent sets the current document readiness of the current document to interactive."
+    },
+    {
+      "name": "PerformanceNavigationTiming.loadEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/loadEventEnd",
+      "description": "A DOMHighResTimeStamp representing the time when the load event of the current document is completed."
+    },
+    {
+      "name": "PerformanceNavigationTiming.loadEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/loadEventStart",
+      "description": "A DOMHighResTimeStamp representing the time value equal to the time immediately before the load event of the current document is fired."
+    },
+    {
+      "name": "PerformanceNavigationTiming.redirectCount",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/redirectCount",
+      "description": "A number representing the number of redirects since the last non-redirect navigation under the current browsing context."
+    },
+    {
+      "name": "PerformanceNavigationTiming.type",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/type",
+      "description": "A string representing the navigation type. Must be: \"navigate\", \"reload\", \"back_forward\" or \"prerender\".",
+      "parameters": [
+        {
+          "name": "navigate",
+          "description": "Navigation started by clicking a link, entering the URL in the browser\u0027s address bar, form submission, or initializing through a script operation other than reload and back_forward as listed below."
+        },
+        {
+          "name": "reload",
+          "description": "Navigation is through the browser\u0027s reload operation or location.reload()."
+        },
+        {
+          "name": "back_forward",
+          "description": "Navigation is through the browser\u0027s history traversal operation."
+        },
+        {
+          "name": "prerender",
+          "description": "Navigation is initiated by a prerender hint."
+        }
+      ]
+    },
+    {
+      "name": "PerformanceNavigationTiming.unloadEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd",
+      "description": "A DOMHighResTimeStamp representing the time value equal to the time immediately after the user agent finishes the unload event of the previous document."
+    },
+    {
+      "name": "PerformanceNavigationTiming.unloadEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventStart",
+      "description": "A DOMHighResTimeStamp representing the time value equal to the time immediately before the user agent starts the unload event of the previous document."
+    },
+    {
+      "name": "PerformanceNavigationTiming.toJSON()",
+      "link": "/en-US/docs/Web/API/PerformanceNavigationTiming/toJSON",
+      "description": "Returns a DOMString that is the JSON representation of the PerformanceNavigationTiming object.",
+      "parameters": [
+        {
+          "name": "None",
+          "description": " "
+        },
+        {
+          "name": "json",
+          "description": "A JSON object that is the serialization of the PerformanceNavigationTiming object as a map with entries from the closest inherited interface and with entries for each of the serializable attributes."
+        }
+      ]
+    }
+  ]
+}

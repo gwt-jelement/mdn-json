@@ -1,0 +1,93 @@
+{
+  "name": "MediaStream",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaStream()",
+      "link": "/en-US/docs/Web/API/MediaStream/MediaStream",
+      "description": "Creates and returns a new MediaStream object. You can create an empty stream, a stream which is based upon an existing stream, or a stream that contains a specified list of tracks (specified as an array of MediaStreamTrack objects).",
+      "parameters": [
+        {
+          "name": "stream",
+          "description": "Another MediaStream containing tracks to add."
+        },
+        {
+          "name": "tracks",
+          "description": "An Array of MediaStreamTracks to add."
+        }
+      ]
+    },
+    {
+      "name": "MediaStream.active",
+      "link": "/en-US/docs/Web/API/MediaStream/active",
+      "description": "A Boolean value that returns true if the MediaStream is active, or false otherwise."
+    },
+    {
+      "name": "MediaStream.ended",
+      "link": "/en-US/docs/Web/API/MediaStream/ended",
+      "description": "A Boolean value set to true if the end of the stream has been reached. This has been removed from the specification; you should instead check the value of MediaStreamTrack.readyState to see if its value is \"ended\" for the track or tracks you want to ensure have finished playing."
+    },
+    {
+      "name": "MediaStream.id",
+      "link": "/en-US/docs/Web/API/MediaStream/id",
+      "description": "A DOMString containing 36 characters denoting a universally unique identifier (UUID) for the object."
+    },
+    {
+      "name": "MediaStream.onaddtrack",
+      "link": "/en-US/docs/Web/API/MediaStream/onaddtrack",
+      "description": "An EventHandler containing the action to perform when an addtrack event is fired when a new MediaStreamTrack object is added."
+    },
+    {
+      "name": "MediaStream.onremovetrack",
+      "link": "/en-US/docs/Web/API/MediaStream/onremovetrack",
+      "description": "An EventHandler containing the action to perform when a removetrack event is fired when a  MediaStreamTrack object is removed from it."
+    },
+    {
+      "name": "MediaStream.addTrack()",
+      "link": "/en-US/docs/Web/API/MediaStream/addTrack",
+      "description": "Stores a copy of the MediaStreamTrack given as argument. If the track has already been added to the MediaStream object, nothing happens.",
+      "parameters": [
+        {
+          "name": "track",
+          "description": "A MediaStreamTrack to add to the stream."
+        }
+      ]
+    },
+    {
+      "name": "MediaStream.clone()",
+      "link": "/en-US/docs/Web/API/MediaStream/clone",
+      "description": "Returns a clone of the MediaStream object. The clone will, however, have a unique value for id."
+    },
+    {
+      "name": "MediaStream.getAudioTracks()",
+      "link": "/en-US/docs/Web/API/MediaStream/getAudioTracks",
+      "description": "Returns a list of the MediaStreamTrack objects stored in the MediaStream object that have their kind attribute set to \"audio\". The order is not defined, and may not only vary from one browser to another, but also from one call to another."
+    },
+    {
+      "name": "MediaStream.getTrackById()",
+      "link": "/en-US/docs/Web/API/MediaStream/getTrackById",
+      "description": "Returns the track whose ID corresponds to the one given in parameters, trackid. If no parameter is given, or if no track with that ID does exist, it returns null. If several tracks have the same ID, it returns the first one.",
+      "parameters": [
+        {
+          "name": "id",
+          "description": "A DOMString which identifies the track to be returned."
+        }
+      ]
+    },
+    {
+      "name": "MediaStream.getTracks()",
+      "link": "/en-US/docs/Web/API/MediaStream/getTracks",
+      "description": "Returns a list of all MediaStreamTrack objects stored in the MediaStream object, regardless of the value of the kind attribute. The order is not defined, and may not only vary from one browser to another, but also from one call to another."
+    },
+    {
+      "name": "MediaStream.getVideoTracks()",
+      "link": "/en-US/docs/Web/API/MediaStream/getVideoTracks",
+      "description": "Returns a list of the MediaStreamTrack objects stored in the MediaStream object that have their kind attribute set to \"video\". The order is not defined, and may not only vary from one browser to another, but also from one call to another."
+    },
+    {
+      "name": "MediaStream.removeTrack()",
+      "link": "/en-US/docs/Web/API/MediaStream/removeTrack",
+      "description": "Removes the MediaStreamTrack given as argument. If the track is not part of the MediaStream object, nothing happens."
+    }
+  ]
+}

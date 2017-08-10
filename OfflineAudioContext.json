@@ -1,0 +1,56 @@
+{
+  "name": "OfflineAudioContext",
+  "description": "The OfflineAudioContext interface is an AudioContext interface representing an audio-processing graph built from linked together AudioNodes. In contrast with a standard AudioContext, an OfflineAudioContext doesn\u0027t render the audio to the device hardware; instead, it generates it, as fast as it can, and outputs the result to an AudioBuffer.",
+  "members": [
+    {
+      "name": "OfflineAudioContext.OfflineAudioContext()",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/OfflineAudioContext",
+      "description": "Creates a new OfflineAudioContext instance.",
+      "parameters": [
+        {
+          "name": "numOfChannels",
+          "description": "An integer representing the number of channels this buffer should have. Implementations must support a minimum 32 channels."
+        },
+        {
+          "name": "length",
+          "description": "An integer representing the size of the buffer in sample-frames."
+        },
+        {
+          "name": "sampleRate",
+          "description": "The sample-rate of the linear audio data in sample-frames per second. An implementation must support sample-rates in at least the range 22050 to 96000, with 44100 being the most commonly used."
+        }
+      ]
+    },
+    {
+      "name": "OfflineAudioContext.length",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/length",
+      "description": "An integer representing the size of the buffer in sample-frames."
+    },
+    {
+      "name": "OfflineAudioContext.oncomplete",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/oncomplete",
+      "description": "Is an EventHandler called when processing is terminated, that is when the complete event (of type OfflineAudioCompletionEvent) is raised, after the event-based version of OfflineAudioContext.startRendering() is used."
+    },
+    {
+      "name": "OfflineAudioContext.resume()",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/resume",
+      "description": "Resumes the progression of time in an audio context that has been suspended."
+    },
+    {
+      "name": "OfflineAudioContext.suspend()",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/suspend",
+      "description": "Schedules a suspension of the time progression in the audio context at the specified time and returns a promise.",
+      "parameters": [
+        {
+          "name": "suspendTime",
+          "description": "A double specifying the suspend time."
+        }
+      ]
+    },
+    {
+      "name": "OfflineAudioContext.startRendering()",
+      "link": "/en-US/docs/Web/API/OfflineAudioContext/startRendering",
+      "description": "Starts rendering the audio, taking into account the current connections and the current scheduled changes. This page covers both the event-based version and the promise-based version."
+    }
+  ]
+}

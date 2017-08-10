@@ -1,0 +1,5 @@
+{
+  "name": "SVGUnitTypes",
+  "description": "The SVGUnitTypes interface defines a commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes.",
+  "members": []
+}

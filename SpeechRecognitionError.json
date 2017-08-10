@@ -1,0 +1,50 @@
+{
+  "name": "SpeechRecognitionError",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognitionError.error",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionError/error",
+      "description": "Returns the type of error raised.",
+      "parameters": [
+        {
+          "name": "no-speech",
+          "description": "No speech was detected."
+        },
+        {
+          "name": "aborted",
+          "description": "Speech input was aborted in some manner, perhaps by some user-agent-specific behavior like a button the user can press to cancel speech input."
+        },
+        {
+          "name": "audio-capture",
+          "description": "Audio capture failed."
+        },
+        {
+          "name": "network",
+          "description": "Network communication required for completing the recognition failed."
+        },
+        {
+          "name": "not-allowed",
+          "description": "The user agent disallowed any speech input from occurring for reasons of security, privacy or user preference."
+        },
+        {
+          "name": "service-not-allowed",
+          "description": "The user agent disallowed the requested speech recognition service, either because the user agent doesn\u0027t support it or because of reasons of security, privacy or user preference. In this case it would allow another more suitable speech recognition service to be used instead."
+        },
+        {
+          "name": "bad-grammar",
+          "description": "There was an error in the speech recognition grammar or semantic tags, or the chosen grammar format or semantic tag format was unsupported."
+        },
+        {
+          "name": "language-not-supported",
+          "description": "The language was not supported."
+        }
+      ]
+    },
+    {
+      "name": "SpeechRecognitionError.message",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionError/message",
+      "description": "Returns a message describing the error in more detail."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "EXT_color_buffer_float",
+  "description": "The EXT_color_buffer_float extension is part of WebGL and adds the ability to render a variety of floating point formats.",
+  "members": []
+}

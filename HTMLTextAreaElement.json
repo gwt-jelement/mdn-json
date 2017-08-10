@@ -1,0 +1,5 @@
+{
+  "name": "HTMLTextAreaElement",
+  "description": "Inheritance Hierarchy:  Node  \u003c\u003d\u003d  Element  \u003c\u003d\u003d  HTMLElement  \u003c\u003d\u003d  HTMLTextAreaElement, The HTMLTextAreaElement interface provides special properties and methods for manipulating the layout and presentation of \u003ctextarea\u003e elements.",
+  "members": []
+}

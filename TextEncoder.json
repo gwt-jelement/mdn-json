@@ -1,0 +1,35 @@
+{
+  "name": "TextEncoder",
+  "description": "",
+  "members": [
+    {
+      "name": "TextEncoder()",
+      "link": "/en-US/docs/Web/API/TextEncoder/TextEncoder",
+      "description": "Returns a newly constructed TextEncoder that will generate a byte stream with utf-8 encoding."
+    },
+    {
+      "name": "TextEncoder.encoding",
+      "link": "/en-US/docs/Web/API/TextEncoder/encoding",
+      "description": "Is a DOMString containing the name of the encoder, that is a string describing the method the TextEncoder will use."
+    },
+    {
+      "name": "TextEncoder.encode()",
+      "link": "/en-US/docs/Web/API/TextEncoder/encode",
+      "description": "Returns a Uint8Array containing utf-8 encoded text.",
+      "parameters": [
+        {
+          "name": "buffer",
+          "description": "Is a DOMString containing the text to encode."
+        },
+        {
+          "name": "options Optional",
+          "description": "Is a TextEncodeOptions dictionary with the property:"
+        },
+        {
+          "name": "stream",
+          "description": "A Boolean flag indicating if the encoding can be done in chunks or not. It defaults to false."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "MediaKeyStatusMap",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaKeyStatusMap.size",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/size",
+      "description": "Returns the number of key/value pars in the status map."
+    },
+    {
+      "name": "MediaKeyStatusMap.entries()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/entries",
+      "description": "Returns a new Iterator object containing an array of [key, value] for each element in the status map, in insertion order."
+    },
+    {
+      "name": "MediaKeyStatusMap.forEach(callback[, argument])",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/forEach",
+      "description": "Calls callback once for each key-value pair in the status map, in insertion order. If argument is present it will be passed to the callback.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "Function to execute for each element, taking three arguments: currentValue The current element being processed in the array. index The index of the current element being processed in the array. array Which array forEach() is being applied to."
+        },
+        {
+          "name": "currentValue",
+          "description": "The current element being processed in the array."
+        },
+        {
+          "name": "index",
+          "description": "The index of the current element being processed in the array."
+        },
+        {
+          "name": "array",
+          "description": "Which array forEach() is being applied to."
+        },
+        {
+          "name": "thisArg Optional",
+          "description": "Value used as this when executing callback."
+        }
+      ]
+    },
+    {
+      "name": "MediaKeyStatusMap.get()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/get",
+      "description": "Returns the value associated with the given key, or undefined if there is none.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "The key whose value you want returned."
+        }
+      ]
+    },
+    {
+      "name": "MediaKeyStatusMap.has()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/has",
+      "description": "Returns a boolean asserting whether a value has been associated with the given key.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "The key whose value you want returned"
+        }
+      ]
+    },
+    {
+      "name": "MediaKeyStatusMap.keys()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/keys",
+      "description": "Returns a new Iterator object containing keys for each element in the status map, in insertion order."
+    },
+    {
+      "name": "MediaKeyStatusMap.values()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/values",
+      "description": "Returns a new Iterator object containing values for each element in the status map, in insertion order."
+    },
+    {
+      "name": "MediaKeyStatusMap.[@@iterator]()",
+      "link": "/en-US/docs/Web/API/MediaKeyStatusMap/[@@iterator]",
+      "description": "Returns a new Iterator object containing an array of [key, value] for each element in the status map, in insertion order."
+    }
+  ]
+}

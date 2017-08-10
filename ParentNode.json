@@ -1,0 +1,68 @@
+{
+  "name": "ParentNode",
+  "description": "The ParentNode mixin contains methods and properties that are common to all types of Node objects that can have children. It\u0027s implemented by Element, Document, and DocumentFragment objects.",
+  "members": [
+    {
+      "name": "ParentNode.children",
+      "link": "/en-US/docs/Web/API/ParentNode/children",
+      "description": "Returns a live HTMLCollection containing all objects of type Element that are children of this ParentNode."
+    },
+    {
+      "name": "ParentNode.firstElementChild",
+      "link": "/en-US/docs/Web/API/ParentNode/firstElementChild",
+      "description": "Returns the Element that is the first child of this ParentNode, or null if there is none."
+    },
+    {
+      "name": "ParentNode.lastElementChild",
+      "link": "/en-US/docs/Web/API/ParentNode/lastElementChild",
+      "description": "Returns the Element that is the last child of this ParentNode, or null if there is none."
+    },
+    {
+      "name": "ParentNode.childElementCount",
+      "link": "/en-US/docs/Web/API/ParentNode/childElementCount",
+      "description": "Returns an unsigned long giving the amount of children that the object has.",
+      "parameters": [
+        {
+          "name": "count",
+          "description": "holds the return value an unsigned long (simply an integer) type."
+        },
+        {
+          "name": "node",
+          "description": "is an object representing a Document, DocumentFragment or Element."
+        }
+      ]
+    },
+    {
+      "name": "ParentNode.append()",
+      "link": "/en-US/docs/Web/API/ParentNode/append",
+      "description": "Inserts a set of Node objects or DOMString objects after the last child of the ParentNode. DOMString objects are inserted as equivalent Text nodes.",
+      "parameters": [
+        {
+          "name": "nodes",
+          "description": "A set of Node or DOMString objects to insert."
+        }
+      ]
+    },
+    {
+      "name": "ParentNode.prepend()",
+      "link": "/en-US/docs/Web/API/ParentNode/prepend",
+      "description": "Inserts a set of Node objects or DOMString objects before the first child of the ParentNode. DOMString objects are inserted as equivalent Text nodes.",
+      "parameters": [
+        {
+          "name": "nodesToPrepend",
+          "description": "One or more nodes to insert before the first child node currently in the ParentNode. Each node can be specified as either a Node object or as a string; strings are inserted as new Text nodes."
+        }
+      ]
+    },
+    {
+      "name": "ParentNode.querySelector()",
+      "link": "/en-US/docs/Web/API/ParentNode/querySelector",
+      "description": "Returns the first Element with the current element as root that matches the specified group of selectors."
+    },
+    {
+      "name": "ParentNode.querySelectorAll()",
+      "link": "/en-US/docs/Web/API/ParentNode/querySelectorAll",
+      "description": "Returns a NodeList representing a list of elements with the current element as root that matches the specified group of selectors."
+    }
+  ]
+}

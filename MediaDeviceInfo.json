@@ -1,0 +1,26 @@
+{
+  "name": "MediaDeviceInfo",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The MediaDevicesInfo interface contains information on the available media input and output devices.",
+  "members": [
+    {
+      "name": "MediaDeviceInfo.deviceId",
+      "link": "/en-US/docs/Web/API/MediaDeviceInfo/deviceId",
+      "description": "Returns a DOMString that is an identifier for the represented device that is persisted across sessions. It is un-guessable by other applications and unique to the origin of the calling application. It is reset when the user clears cookies (for Private Browsing, a different identifier is used that is not persisted across sessions)."
+    },
+    {
+      "name": "MediaDeviceInfo.groupId",
+      "link": "/en-US/docs/Web/API/MediaDeviceInfo/groupId",
+      "description": "Returns a DOMString that is a group identifier. Two devices have the same group identifier if they belong to the same physical device — for example a monitor with both a built-in camera and a microphone."
+    },
+    {
+      "name": "MediaDeviceInfo.kind",
+      "link": "/en-US/docs/Web/API/MediaDeviceInfo/kind",
+      "description": "Returns an enumerated value that is either \"videoinput\", \"audioinput\" or \"audiooutput\"."
+    },
+    {
+      "name": "MediaDeviceInfo.label",
+      "link": "/en-US/docs/Web/API/MediaDeviceInfo/label",
+      "description": "Returns a DOMString that is a label describing this device (for example \"External USB Webcam\"). Only available during active MediaStream use or when persistent permissions have been granted."
+    }
+  ]
+}

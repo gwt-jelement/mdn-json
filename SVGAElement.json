@@ -1,0 +1,11 @@
+{
+  "name": "SVGAElement",
+  "description": "The SVGAElement interface provides access to the properties of \u003ca\u003e element, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGAElement.target",
+      "link": "/en-US/docs/Web/API/SVGAElement/target",
+      "description": "It corresponds to the target attribute of the given element."
+    }
+  ]
+}

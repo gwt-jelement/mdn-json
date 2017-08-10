@@ -1,0 +1,11 @@
+{
+  "name": "DOMErrorHandler",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMErrorHandler.handleError()",
+      "link": "/en-US/docs/Web/API/DOMErrorHandler/handleError",
+      "description": "If returns false, DOM implementation should stop processing; if true, may continue depending on DOMError.severity."
+    }
+  ]
+}

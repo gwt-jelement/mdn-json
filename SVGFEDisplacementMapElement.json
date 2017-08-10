@@ -1,0 +1,31 @@
+{
+  "name": "SVGFEDisplacementMapElement",
+  "description": "The SVGFEDisplacementMapElement interface corresponds to the \u003cfeDisplacementMap\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEDisplacementMapElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEDisplacementMapElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEDisplacementMapElement.in2",
+      "link": "/en-US/docs/Web/API/SVGFEDisplacementMapElement/in2",
+      "description": "An SVGAnimatedString corresponding to the in2 attribute of the given element."
+    },
+    {
+      "name": "SVGFEDisplacementMapElement.scale",
+      "link": "/en-US/docs/Web/API/SVGFEDisplacementMapElement/scale",
+      "description": "An SVGAnimatedNumber corresponding to the scale attribute of the given element."
+    },
+    {
+      "name": "SVGFEDisplacementMapElement.xChannelSelector",
+      "link": "/en-US/docs/Web/API/SVGFEDisplacementMapElement/xChannelSelector",
+      "description": "An SVGAnimatedEnumeration corresponding to the xChannelSelect attribute of the given element. It takes one of the SVG_CHANNEL_* constants defined on this interface."
+    },
+    {
+      "name": "SVGFEDisplacementMapElement.yChannelSelector",
+      "link": "/en-US/docs/Web/API/SVGFEDisplacementMapElement/yChannelSelector",
+      "description": "An SVGAnimatedEnumeration corresponding to the yChannelSelect attribute of the given element. It takes one of the SVG_CHANNEL_* constants defined on this interface."
+    }
+  ]
+}

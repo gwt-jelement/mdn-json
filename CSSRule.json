@@ -1,0 +1,26 @@
+{
+  "name": "CSSRule",
+  "description": "The CSSRule interface represents a single CSS rule. There are several types of rules, listed in the Type constants section below.",
+  "members": [
+    {
+      "name": "CSSRule.cssText",
+      "link": "/en-US/docs/Web/API/CSSRule/cssText",
+      "description": "Represents the textual representation of the rule, e.g. \"h1,h2 { font-size: 16pt }\" or \"@import \u0027url\u0027\". To access or modify parts of the rule (e.g. the value of \"font-size\" in the example) use the properties on the specialized interface for the rule\u0027s type."
+    },
+    {
+      "name": "CSSRule.parentRule",
+      "link": "/en-US/docs/Web/API/CSSRule/parentRule",
+      "description": "Returns the containing rule, otherwise null. E.g. if this rule is a style rule inside an @media block, the parent rule would be that CSSMediaRule."
+    },
+    {
+      "name": "CSSRule.parentStyleSheet",
+      "link": "/en-US/docs/Web/API/CSSRule/parentStyleSheet",
+      "description": "Returns the CSSStyleSheet object for the style sheet that contains this rule"
+    },
+    {
+      "name": "CSSRule.type",
+      "link": "/en-US/docs/Web/API/CSSRule/type",
+      "description": "One of the Type constants indicating the type of CSS rule."
+    }
+  ]
+}

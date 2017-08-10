@@ -1,0 +1,11 @@
+{
+  "name": "HTMLDListElement",
+  "description": "The HTMLDListElement interface provides special properties (beyond those of the regular HTMLElement interface it also has available to it by inheritance) for manipulating definition list elements.",
+  "members": [
+    {
+      "name": "HTMLDListElement.compact",
+      "link": "/en-US/docs/Web/API/HTMLDListElement/compact",
+      "description": "Is a Boolean indicating that spacing between list items should be reduced."
+    }
+  ]
+}

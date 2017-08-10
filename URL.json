@@ -1,0 +1,113 @@
+{
+  "name": "URL",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The URL interface represents an object providing static methods used for creating object URLs.",
+  "members": [
+    {
+      "name": "URL()",
+      "link": "/en-US/docs/Web/API/URL/URL",
+      "description": "Creates and return a URL object composed from the given parameters.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "A USVString representing an absolute or relative URL. If url is a relative URL, base is required, and will be used as the base URL. If url is an absolute URL, a given base will be ignored. If"
+        },
+        {
+          "name": "base Optional",
+          "description": "A USVString representing the base URL to use in case url is a relative URL. If not specified, it defaults to \u0027\u0027."
+        }
+      ]
+    },
+    {
+      "name": "URL.hash",
+      "link": "/en-US/docs/Web/API/URL/hash",
+      "description": "Is a DOMString containing a \u0027#\u0027 followed by the fragment identifier of the URL."
+    },
+    {
+      "name": "URL.host",
+      "link": "/en-US/docs/Web/API/URL/host",
+      "description": "Is a DOMString containing the host, that is the hostname, a \u0027:\u0027, and the port of the URL."
+    },
+    {
+      "name": "URL.hostname",
+      "link": "/en-US/docs/Web/API/URL/hostname",
+      "description": "Is a DOMString containing the domain of the URL."
+    },
+    {
+      "name": "URL.href",
+      "link": "/en-US/docs/Web/API/URL/href",
+      "description": "Is a DOMString containing the whole URL."
+    },
+    {
+      "name": "URL.origin",
+      "link": "/en-US/docs/Web/API/URL/origin",
+      "description": "Returns a DOMString containing the origin of the URL, that is its scheme, its domain and its port."
+    },
+    {
+      "name": "URL.password",
+      "link": "/en-US/docs/Web/API/URL/password",
+      "description": "Is a DOMString containing the password specified before the domain name."
+    },
+    {
+      "name": "URL.pathname",
+      "link": "/en-US/docs/Web/API/URL/pathname",
+      "description": "Is a DOMString containing an initial \u0027/\u0027 followed by the path of the URL."
+    },
+    {
+      "name": "URL.port",
+      "link": "/en-US/docs/Web/API/URL/port",
+      "description": "Is a DOMString containing the port number of the URL."
+    },
+    {
+      "name": "URL.protocol",
+      "link": "/en-US/docs/Web/API/URL/protocol",
+      "description": "Is a DOMString containing the protocol scheme of the URL, including the final \u0027:\u0027."
+    },
+    {
+      "name": "URL.search",
+      "link": "/en-US/docs/Web/API/URL/search",
+      "description": "Is a DOMString containing a \u0027?\u0027 followed by the parameters of the URL."
+    },
+    {
+      "name": "URL.searchParams",
+      "link": "/en-US/docs/Web/API/URL/searchParams",
+      "description": "Returns a URLSearchParams object allowing to access the GET query arguments contained in the URL."
+    },
+    {
+      "name": "URL.username",
+      "link": "/en-US/docs/Web/API/URL/username",
+      "description": "Is a DOMString containing the username specified before the domain name."
+    },
+    {
+      "name": "URLUtils.toString()",
+      "link": "/en-US/docs/Web/API/URLUtils/toString",
+      "description": "Returns a DOMString containing the whole URL. It is a synonym for URLUtils.href, though it can\u0027t be used to modify the value."
+    },
+    {
+      "name": "URL.toJSON()",
+      "link": "/en-US/docs/Web/API/URL/toJSON",
+      "description": "Returns a DOMString  containing the whole URL. It returns the same string as the href property."
+    },
+    {
+      "name": "URL.createObjectURL()",
+      "link": "/en-US/docs/Web/API/URL/createObjectURL",
+      "description": "Returns a DOMString containing a unique blob URL, that is a URL with blob: as its scheme, followed by an opaque string uniquely identifying the object in the browser.",
+      "parameters": [
+        {
+          "name": "object",
+          "description": "A File, Blob, or MediaStream object to create an object URL for."
+        }
+      ]
+    },
+    {
+      "name": "URL.revokeObjectURL()",
+      "link": "/en-US/docs/Web/API/URL/revokeObjectURL",
+      "description": "Revokes an object URL previously created using URL.createObjectURL().",
+      "parameters": [
+        {
+          "name": "objectURL",
+          "description": "is a DOMString representing the object URL that was created by calling URL.createObjectURL()."
+        }
+      ]
+    }
+  ]
+}

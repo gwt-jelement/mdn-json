@@ -1,0 +1,130 @@
+{
+  "name": "RTCDataChannel",
+  "description": "",
+  "members": [
+    {
+      "name": "binaryType",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/binaryType",
+      "description": "The property binaryType on the RTCDataChannel interface is a DOMString which specifies the type of JavaScript object which should be used to represent binary data received on the RTCDataChannel. Values allowed by the WebSocket.binaryType property are also permitted here: \"blob\" if Blob objects are being used or \"arraybuffer\" if ArrayBuffer objects are being used. The default is \"blob\".",
+      "parameters": [
+        {
+          "name": "\"blob\"",
+          "description": "Received binary messages\u0027 contents will be contained in Blob objects."
+        },
+        {
+          "name": "\"arraybuffer\"",
+          "description": "Received binary messages\u0027 contents will be contained in ArrayBuffer objects."
+        }
+      ]
+    },
+    {
+      "name": "bufferedAmount",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/bufferedAmount",
+      "description": "The read-only RTCDataChannel property bufferedAmount returns the number of bytes of data currently queued to be sent over the data channel."
+    },
+    {
+      "name": "bufferedAmountLowThreshold",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/bufferedAmountLowThreshold",
+      "description": "The RTCDataChannel property bufferedAmountLowThreshold is used to specify the number of bytes of buffered outgoing data that is considered \"low.\" The default value is 0 (meaning no bufferedamountlow events are sent)."
+    },
+    {
+      "name": "id",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/id",
+      "description": "The read-only RTCDataChannel property id returns an ID number (between 0 and 65,534) which uniquely identifies the RTCDataChannel."
+    },
+    {
+      "name": "label",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/label",
+      "description": "The read-only RTCDataChannel property label returns a DOMString containing a name describing the data channel. These labels are not required to be unique."
+    },
+    {
+      "name": "maxPacketLifeTime",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/maxPacketLifeTime",
+      "description": "The read-only RTCDataChannel property maxPacketLifeTime returns the amount of time, in milliseconds, the browser is allowed to take to attempt to transmit a message, as set when the data channel was created, or null."
+    },
+    {
+      "name": "maxRetransmits",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/maxRetransmits",
+      "description": "The read-only RTCDataChannel property maxRetransmits returns the maximum number of times the browser should try to transmit a message before giving up when in unordered mode, as set when the data channel was created, or null, which indicates that there is no maximum."
+    },
+    {
+      "name": "negotiated",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/negotiated",
+      "description": "The read-only RTCDataChannel property negotiated indicates whether the RTCDataChannel\u0027s connection was negotiated by the Web app (true) or by the WebRTC layer (false). The default is false."
+    },
+    {
+      "name": "ordered",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/ordered",
+      "description": "The read-only RTCDataChannel property ordered indicates whether or not the data channel guarantees in-order delivery of messages; the default is true, which indicates that the data channel is indeed ordered."
+    },
+    {
+      "name": "protocol",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/protocol",
+      "description": "The read-only RTCDataChannel property protocol returns a DOMString containing the name of the subprotocol in use. If no protocol was specified when the data channel was created, then this property\u0027s value is \"\" (the empty string)."
+    },
+    {
+      "name": "readyState",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/readyState",
+      "description": "The read-only RTCDataChannel property readyState returns an enum of type RTCDataChannelState which indicates the state of the data channel\u0027s underlying data connection."
+    },
+    {
+      "name": "reliable",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/reliable",
+      "description": "The read-only RTCDataChannel property reliable indicates whether or not the data channel is reliable."
+    },
+    {
+      "name": "stream",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/stream",
+      "description": "The deprecated (and never part of the official specification) read-only RTCDataChannel property stream returns an ID number (between 0 and 65,535) which uniquely identifies the RTCDataChannel."
+    },
+    {
+      "name": "onbufferedamountlow",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/onbufferedamountlow",
+      "description": "The RTCDataChannel.onbufferedamountlow property is an EventHandler which specifies a function the browser calls when the bufferedamountlow event is sent to the RTCDataChannel. This event, which is represented by a simple Event object, is sent when the amount of data buffered to be sent falls to or below the threshold specified by the channel\u0027s bufferedAmountLowThreshold."
+    },
+    {
+      "name": "onclose",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/onclose",
+      "description": "The RTCDataChannel.onclose property is an EventHandler which specifies a function to be called by the browser when the close event is received by the RTCDataChannel. This is a simple Event which indicates that the data channel has closed down."
+    },
+    {
+      "name": "onerror",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/onerror",
+      "description": "The RTCDataChannel.onerror property is an EventHandler which specifies a function to be called when the error event is received. When an error occurs on the data channel, the function receives as input an ErrorEvent object describing the error which occurred."
+    },
+    {
+      "name": "onmessage",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/onmessage",
+      "description": "The RTCDataChannel.ommessage property stores an EventHandler which specifies a function to be called when the message event is fired on the channel. This event is represented by the MessageEvent interface. This event is sent to the channel when a message is received from the other peer."
+    },
+    {
+      "name": "onopen",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/onopen",
+      "description": "The RTCDataChannel.onopen property is an EventHandler which specifies a function to be called when the open event is fired; this is a simple Event which is sent when the data channel\u0027s underlying data transport—the link over which the RTCDataChannel\u0027s messages flow—is established or re-established."
+    },
+    {
+      "name": "close()",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/close",
+      "description": "The RTCDataChannel.close() method closes the RTCDataChannel. Either peer is permitted to call this method to initiate closure of the channel."
+    },
+    {
+      "name": "send()",
+      "link": "/en-US/docs/Web/API/RTCDataChannel/send",
+      "description": "The send() method of the RTCDataChannel interface sends data across the data channel to the remote peer.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "The data to transmit across the connection. This may be a USVString, a Blob, an ArrayBuffer, or an ArrayBufferView."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "Since the data channel uses a separate transport channel from the media content, it must establish its own connection; if it hasn\u0027t finished doing so (that is, its readyState is \"connecting\"), this error occurs without sending or buffering the data."
+        },
+        {
+          "name": "NetworkError",
+          "description": "The specified data would need to be buffered, and there isn\u0027t room for it in the buffer. In this scenario, the underlying transport is immediately closed."
+        }
+      ]
+    }
+  ]
+}

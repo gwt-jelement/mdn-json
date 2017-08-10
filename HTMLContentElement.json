@@ -1,0 +1,16 @@
+{
+  "name": "HTMLContentElement",
+  "description": "",
+  "members": [
+    {
+      "name": "HTMLContentElement.select",
+      "link": "/en-US/docs/Web/API/HTMLContentElement/select",
+      "description": "Is a DOMString that reflects the select HTML attribute. The value is a comma-separated list of CSS selectors that select the content to insert in place of the \u003ccontent\u003e element."
+    },
+    {
+      "name": "HTMLContentElement.getDistributedNodes()",
+      "link": "/en-US/docs/Web/API/HTMLContentElement/getDistributedNodes",
+      "description": "Returns a static NodeList of the distributed nodes associated with this \u003ccontent\u003e element. "
+    }
+  ]
+}

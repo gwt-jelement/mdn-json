@@ -1,0 +1,36 @@
+{
+  "name": "SVGGlyphRefElement",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. The SVGGlyphRefElement interface corresponds to the \u003cglyphRef\u003e elements.",
+  "members": [
+    {
+      "name": "SVGGlyphRefElement.glyphRef",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/glyphRef",
+      "description": "A DOMString corresponding to the glyphRef attribute of the given element."
+    },
+    {
+      "name": "SVGGlyphRefElement.format",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/format",
+      "description": "A DOMString corresponding to the format attribute of the given element."
+    },
+    {
+      "name": "SVGGlyphRefElement.x",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/x",
+      "description": "A float corresponding to the x attribute of the given element."
+    },
+    {
+      "name": "SVGGlyphRefElement.y",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/y",
+      "description": "A float corresponding to the y attribute of the given element."
+    },
+    {
+      "name": "SVGGlyphRefElement.dx",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/dx",
+      "description": "A float corresponding to the dx attribute of the given element."
+    },
+    {
+      "name": "SVGGlyphRefElement.dy",
+      "link": "/en-US/docs/Web/API/SVGGlyphRefElement/dy",
+      "description": "A float corresponding to the dy attribute of the given element."
+    }
+  ]
+}

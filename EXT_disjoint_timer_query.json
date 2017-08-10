@@ -1,0 +1,104 @@
+{
+  "name": "EXT_disjoint_timer_query",
+  "description": "The EXT_disjoint_timer_query extension is part of the WebGL API and provides a way to measure the duration of a set of GL commands, without stalling the rendering pipeline.",
+  "members": [
+    {
+      "name": "ext.createQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/createQueryEXT",
+      "description": "Creates a new WebGLQuery."
+    },
+    {
+      "name": "ext.deleteQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/deleteQueryEXT",
+      "description": "Deletes a given WebGLQuery.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object to delete."
+        }
+      ]
+    },
+    {
+      "name": "ext.isQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/isQueryEXT",
+      "description": "Returns true if a given object is a WebGLQuery.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object to test."
+        }
+      ]
+    },
+    {
+      "name": "ext.beginQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/beginQueryEXT",
+      "description": "The timer starts when all commands prior to beginQueryEXT have been fully executed.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the time query. Must be ext.TIME_ELAPSED_EXT."
+        },
+        {
+          "name": "query",
+          "description": "A WebGLQuery object for which to start the time querying."
+        }
+      ]
+    },
+    {
+      "name": "ext.endQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/endQueryEXT",
+      "description": "The timer stops when all commands prior to endQueryEXT have been fully executed.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the time query. Must be ext.TIME_ELAPSED_EXT."
+        }
+      ]
+    },
+    {
+      "name": "ext.queryCounterEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/queryCounterEXT",
+      "description": "Records the current time into the corresponding query object.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object for which to record the current time."
+        },
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the time query. Must be ext.TIMESTAMP_EXT."
+        }
+      ]
+    },
+    {
+      "name": "ext.getQueryEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/getQueryEXT",
+      "description": "Returns information about a query target.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the time query. Must be ext.TIMESTAMP_EXT or ext.TIME_ELAPSED_EXT."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to return. Must be ext.CURRENT_QUERY_EXT or ext.QUERY_COUNTER_BITS_EXT."
+        }
+      ]
+    },
+    {
+      "name": "ext.getQueryObjectEXT()",
+      "link": "/en-US/docs/Web/API/EXT_disjoint_timer_query/getQueryObjectEXT",
+      "description": "Return the state of a query object.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object from which to return information."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to return. Must be ext.QUERY_RESULT_EXT or ext.QUERY_RESULT_AVAILABLE_EXT."
+        }
+      ]
+    }
+  ]
+}

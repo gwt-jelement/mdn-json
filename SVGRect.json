@@ -1,0 +1,26 @@
+{
+  "name": "SVGRect",
+  "description": "The SVGRect represents a rectangle. Rectangles consist of an x and y coordinate pair identifying a minimum x value, a minimum y value, and a width and height, which are constrained to be non-negative.",
+  "members": [
+    {
+      "name": "SVGRect.x",
+      "link": "/en-US/docs/Web/API/SVGRect/x",
+      "description": "The exact effect of this coordinate depends on each element. If the attribute is not specified, the effect is as if a value of 0 were specified."
+    },
+    {
+      "name": "SVGRect.y",
+      "link": "/en-US/docs/Web/API/SVGRect/y",
+      "description": "The exact effect of this coordinate depends on each element.If the attribute is not specified, the effect is as if a value of 0 were specified."
+    },
+    {
+      "name": "SVGRect.width",
+      "link": "/en-US/docs/Web/API/SVGRect/width",
+      "description": "This represents the width of the rectangle.A value that is negative results to an error. A value of zero disables rendering of the element"
+    },
+    {
+      "name": "SVGRect.height",
+      "link": "/en-US/docs/Web/SVG/Attribute/SVGRect.height",
+      "description": "This represents the height of the rectangle.A value that is negative results to an error.A value of zero disables rendering of the element."
+    }
+  ]
+}

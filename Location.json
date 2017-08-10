@@ -1,0 +1,99 @@
+{
+  "name": "Location",
+  "description": "",
+  "members": [
+    {
+      "name": "Location.href",
+      "link": "/en-US/docs/Web/API/Location/href",
+      "description": "Is a DOMString containing the entire URL. If changed, the associated document navigates to the new page. It can be set from a different origin than the associated document."
+    },
+    {
+      "name": "Location.protocol",
+      "link": "/en-US/docs/Web/API/Location/protocol",
+      "description": "Is a DOMString containing the protocol scheme of the URL, including the final \u0027:\u0027."
+    },
+    {
+      "name": "Location.host",
+      "link": "/en-US/docs/Web/API/Location/host",
+      "description": "Is a DOMString containing the host, that is the hostname, a \u0027:\u0027, and the port of the URL."
+    },
+    {
+      "name": "Location.hostname",
+      "link": "/en-US/docs/Web/API/Location/hostname",
+      "description": "Is a DOMString containing the domain of the URL."
+    },
+    {
+      "name": "Location.port",
+      "link": "/en-US/docs/Web/API/Location/port",
+      "description": "Is a DOMString containing the port number of the URL."
+    },
+    {
+      "name": "Location.pathname",
+      "link": "/en-US/docs/Web/API/Location/pathname",
+      "description": "Is a DOMString containing an initial \u0027/\u0027 followed by the path of the URL."
+    },
+    {
+      "name": "Location.search",
+      "link": "/en-US/docs/Web/API/Location/search",
+      "description": "Is a DOMString containing a \u0027?\u0027 followed by the parameters or \"querystring\" of the URL. Modern browsers provide URLSearchParams and URL.searchParams to make it easy to parse out the parameters from the querystring."
+    },
+    {
+      "name": "Location.hash",
+      "link": "/en-US/docs/Web/API/Location/hash",
+      "description": "Is a DOMString containing a \u0027#\u0027 followed by the fragment identifier of the URL."
+    },
+    {
+      "name": "Location.username",
+      "link": "/en-US/docs/Web/API/Location/username",
+      "description": "Is a DOMString containing the username specified before the domain name."
+    },
+    {
+      "name": "Location.password",
+      "link": "/en-US/docs/Web/API/Location/password",
+      "description": "Is a DOMString containing the password specified before the domain name."
+    },
+    {
+      "name": "Location.origin",
+      "link": "/en-US/docs/Web/API/Location/origin",
+      "description": "Returns a DOMString containing the canonical form of the origin of the specific location."
+    },
+    {
+      "name": "Location.assign()",
+      "link": "/en-US/docs/Web/API/Location/assign",
+      "description": "Loads the resource at the URL provided in parameter.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "Is a DOMString containing the URL of the page to navigate to."
+        }
+      ]
+    },
+    {
+      "name": "Location.reload()",
+      "link": "/en-US/docs/Web/API/Location/reload",
+      "description": "Reloads the resource from the current URL. Its optional unique parameter is a Boolean, which, when it is true, causes the page to always be reloaded from the server. If it is false or not specified, the browser may reload the page from its cache.",
+      "parameters": [
+        {
+          "name": "forcedReload Optional",
+          "description": "Is a Boolean flag, which, when it is true, causes the page to always be reloaded from the server. If it is false or not specified, the browser may reload the page from its cache."
+        }
+      ]
+    },
+    {
+      "name": "Location.replace()",
+      "link": "/en-US/docs/Web/API/Location/replace",
+      "description": "Replaces the current resource with the one at the provided URL. The difference from the assign() method is that after using replace() the current page will not be saved in session History, meaning the user won\u0027t be able to use the back button to navigate to it.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "Is a DOMString containing the URL of the page to navigate to."
+        }
+      ]
+    },
+    {
+      "name": "Location.toString()",
+      "link": "/en-US/docs/Web/API/Location/toString",
+      "description": "Returns a DOMString containing the whole URL. It is a synonym for URLUtils.href, though it can\u0027t be used to modify the value."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "StorageEstimate",
+  "description": "Secure context This feature is available only in secure contexts (HTTPS), in some or all supporting browsers. Draft This page is not complete. The StorageEstimate dictionary is used by the StorageManager to provide estimates of the size of a Web site\u0027s or application\u0027s data store and how much of it is in use. The navigator.storage.estimate() method returns an object that conforms to this dictionary when its Promise is resolved.",
+  "members": [
+    {
+      "name": "quota",
+      "link": "/en-US/docs/Web/API/StorageEstimate/quota",
+      "description": "A numeric value which provides a conservative approximation of how much total storage the user\u0027s device or computer has available for use by the site origin or Web app. It\u0027s possible that there\u0027s more than this amount of space available but you can\u0027t rely on that being the case."
+    },
+    {
+      "name": "usage",
+      "link": "/en-US/docs/Web/API/StorageEstimate/usage",
+      "description": "A numeric value approximating the amount of storage space currently being used by the site or Web app, out of the available space as indicated by quota."
+    }
+  ]
+}

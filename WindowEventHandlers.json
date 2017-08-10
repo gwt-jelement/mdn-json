@@ -1,0 +1,82 @@
+{
+  "name": "WindowEventHandlers",
+  "description": "WindowEventHandlers mixin describes the event handlers common to several interfaces like Window, or HTMLBodyElement and  HTMLFrameSetElement. Each of these interfaces can implement additional specific event handlers.",
+  "members": [
+    {
+      "name": "WindowEventHandlers.onafterprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onafterprint",
+      "description": "Is an EventHandler representing the code to be called when the afterprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeprint",
+      "description": "Is an EventHandler representing the code to be called when the beforeprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
+      "description": "Is an EventHandler representing the code to be called when the beforeunload event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onhashchange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onhashchange",
+      "description": "Is an EventHandler representing the code to be called when the hashchange event is raised.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A reference to a function."
+        }
+      ]
+    },
+    {
+      "name": "WindowEventHandlers.onlanguagechange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onlanguagechange",
+      "description": "Is an EventHandler representing the code to be called when the languagechange event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onmessage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onmessage",
+      "description": "Is an EventHandler representing the code to be called when the message event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onoffline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onoffline",
+      "description": "Is an EventHandler representing the code to be called when the offline event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.ononline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/ononline",
+      "description": "Is an EventHandler representing the code to be called when the online event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpagehide",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpagehide",
+      "description": "Is an EventHandler representing the code to be called when the pagehide event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpageshow",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpageshow",
+      "description": "Is an EventHandler representing the code to be called when the pageshow event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpopstate",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
+      "description": "Is an EventHandler representing the code to be called when the popstate event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onstorage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onstorage",
+      "description": "Is an EventHandler representing the code to be called when the storage event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onunhandledrejection",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunhandledrejection",
+      "description": "An event handler for unhandled Promise rejection events."
+    },
+    {
+      "name": "WindowEventHandlers.onunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunload",
+      "description": "Is an EventHandler representing the code to be called when the unload event is raised."
+    }
+  ]
+}

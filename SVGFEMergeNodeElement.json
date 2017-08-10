@@ -1,0 +1,11 @@
+{
+  "name": "SVGFEMergeNodeElement",
+  "description": "The SVGFEMergeNodeElement interface corresponds to the \u003cfeMergeNode\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEMergeNodeElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEMergeNodeElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "GamepadEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "GamepadEvent.gamepad",
+      "link": "/en-US/docs/Web/API/GamepadEvent/gamepad",
+      "description": "Returns a Gamepad object, providing access to the associated gamepad data for the event fired."
+    }
+  ]
+}

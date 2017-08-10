@@ -1,0 +1,26 @@
+{
+  "name": "IDBCursorSync",
+  "description": "",
+  "members": [
+    {
+      "name": "DATA_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#DATA_ERR",
+      "description": "If the underlying object store uses in-line keys and the property at the key path does not match the key in this cursor\u0027s position."
+    },
+    {
+      "name": "NOT_ALLOWED_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_ALLOWED_ERR",
+      "description": "If the underlying index or object store does not support updating the record because it is open in the READ_ONLY or SNAPSHOT_READ mode, or if an index record cannot be changed because the underlying index is auto-populated."
+    },
+    {
+      "name": "SERIAL_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#SERIAL_ERR",
+      "description": "If the data being stored could not be serialized by the internal structured cloning algorithm."
+    },
+    {
+      "name": "NOT_ALLOWED_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_ALLOWED_ERR",
+      "description": "If the underlying index or object store does not support updating the record because it is open in the READ_ONLY or SNAPSHOT_READ mode."
+    }
+  ]
+}

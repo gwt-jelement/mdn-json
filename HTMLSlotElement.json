@@ -1,0 +1,22 @@
+{
+  "name": "HTMLSlotElement",
+  "description": "",
+  "members": [
+    {
+      "name": "HTMLSlotElement.name",
+      "link": "/en-US/docs/Web/API/HTMLSlotElement/name",
+      "description": "DOMString: Can be used to get and set the slot\u0027s name."
+    },
+    {
+      "name": "HTMLSlotElement.assignedNodes()",
+      "link": "/en-US/docs/Web/API/HTMLSlotElement/assignedNodes",
+      "description": "Returns the sequence of elements assigned to this slot, or alternatively the slot\u0027s fallback content.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for the nodes to be returned. The available options are: flatten: A Boolean indicating whether to return the elements assigned to the slot (if this value is false) or the slot\u0027s fallback content (if this value is true). The default is false."
+        }
+      ]
+    }
+  ]
+}

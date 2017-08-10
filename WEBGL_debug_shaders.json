@@ -1,0 +1,17 @@
+{
+  "name": "WEBGL_debug_shaders",
+  "description": "The WEBGL_debug_shaders extension is part of the WebGL API and exposes a method to debug shaders from privileged contexts.",
+  "members": [
+    {
+      "name": "WEBGL_debug_shaders.getTranslatedShaderSource()",
+      "link": "/en-US/docs/Web/API/WEBGL_debug_shaders/getTranslatedShaderSource",
+      "description": "Returns the translated shader source.",
+      "parameters": [
+        {
+          "name": "shader",
+          "description": "A WebGLShader to get the translated source from."
+        }
+      ]
+    }
+  ]
+}

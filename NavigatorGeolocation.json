@@ -1,0 +1,11 @@
+{
+  "name": "NavigatorGeolocation",
+  "description": "NavigatorGeolocation contains a creation method allowing objects implementing it to obtain a Geolocation instance.",
+  "members": [
+    {
+      "name": "NavigatorGeolocation.geolocation",
+      "link": "/en-US/docs/Web/API/NavigatorGeolocation/geolocation",
+      "description": "Returns a Geolocation object allowing accessing the location of the device."
+    }
+  ]
+}

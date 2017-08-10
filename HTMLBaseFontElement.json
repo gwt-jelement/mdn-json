@@ -1,0 +1,21 @@
+{
+  "name": "HTMLBaseFontElement",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The HTMLBaseFontElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating \u003cbasefont\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLBaseFontElement.color",
+      "link": "/en-US/docs/Web/API/HTMLBaseFontElement/color",
+      "description": "Is a DOMString representing the text color using either a named color or a color specified in the hexadecimal #RRGGBB format."
+    },
+    {
+      "name": "HTMLBaseFontElement.face",
+      "link": "/en-US/docs/Web/API/HTMLBaseFontElement/face",
+      "description": "Is a DOMString representing a list of one or more font names. The document text in the default style is rendered in the first font face that the client\u0027s browser supports. If no font listed is installed on the local system, the browser typically defaults to the proportional or fixed-width font for that system."
+    },
+    {
+      "name": "HTMLBaseFontElement.size",
+      "link": "/en-US/docs/Web/API/HTMLBaseFontElement/size",
+      "description": "Is a DOMString representing the font size as either a numeric or relative value. Numeric values range from 1 to 7 with 1 being the smallest and 3 the default. Relative value starts with a \u0027+\u0027 or a \u0027-\u0027."
+    }
+  ]
+}

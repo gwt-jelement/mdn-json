@@ -1,0 +1,5 @@
+{
+  "name": "SVGStringList",
+  "description": "SVG string list interface The SVGStringList defines a list of DOMString objects.",
+  "members": []
+}

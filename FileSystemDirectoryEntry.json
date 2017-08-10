@@ -1,0 +1,140 @@
+{
+  "name": "FileSystemDirectoryEntry",
+  "description": "",
+  "members": [
+    {
+      "name": "createReader()",
+      "link": "/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader",
+      "description": "Creates a FileSystemDirectoryReader object which can be used to read the entries in this directory."
+    },
+    {
+      "name": "getDirectory()",
+      "link": "/en-US/docs/Web/API/FileSystemDirectoryEntry/getDirectory",
+      "description": "Returns a FileSystemDirectoryEntry object representing a directory located at a given path, relative to the directory on which the method is called.",
+      "parameters": [
+        {
+          "name": "path Optional",
+          "description": "A USVString representing an absolute path or a path relative to the directory on which the method is called, describing which directory entry to return. Absolute paths may not be able to be used, for security reasons."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object based on the FileSystemFlags dictionary, which allows you to specify whether or not to create the entry if it\u0027s missing and if it\u0027s an error if the file already exists. These options are currently not useful in Web contexts."
+        },
+        {
+          "name": "successCallback Optional",
+          "description": "A method to be called once the FileSystemDirectoryEntry has been created. The method receives a single parameter: the FileSystemDirectoryEntry object representing the directory in question."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "A method to be called if an error occurs. Receives as its sole input parameter a FileError object describing the error which occurred."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The create option was not specified (or was specified as false), and the directory doesn\u0027t exist."
+        },
+        {
+          "name": "FileError.PATH_EXISTS_ERR",
+          "description": "The create and exclusive options were both true, indicating that the directory should be created but must not already exist, but the directory does in fact already exist."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "The request to access the directory was denied for security reasons."
+        },
+        {
+          "name": "FileError.TYPE_MISMATCH_ERR",
+          "description": "The path specified is not a directory; it\u0027s probably a file, but might be an unsupported file descriptor such as a pipe; this depends on the user agent to some extent."
+        },
+        {
+          "name": "create Optional",
+          "description": "If this property is true, and the requested file or directory doesn\u0027t exist, the user agent should create it. The default is false. The parent directory must already exist."
+        },
+        {
+          "name": "exclusive Optional",
+          "description": "If true, and the create option is also true, the file must not exist prior to issuing the call. Instead, it must be possible for it to be created newly at call time. The default is false."
+        }
+      ]
+    },
+    {
+      "name": "getFile()",
+      "link": "/en-US/docs/Web/API/FileSystemDirectoryEntry/getFile",
+      "description": "Returns a FileSystemFileEntry object representing a file located within the directory\u0027s hierarchy, given a path relative to the directory on which the method is called.",
+      "parameters": [
+        {
+          "name": "path Optional",
+          "description": "A USVString specifying the path, relative to the directory on which the method is called, describing which file\u0027s entry to return."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object based on the FileSystemFlags dictionary, which allows you to specify whether or not to create the entry if it\u0027s missing and if it\u0027s an error if the file already exists. These options are currently not useful in Web contexts."
+        },
+        {
+          "name": "successCallback Optional",
+          "description": "A method to be called once the FileSystemFileEntry has been created. The method receives a single parameter: the FileSystemFileEntry object representing the file in question."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "A method to be called if an error occurs. Receives as its sole input parameter a FileError object describing the error which occurred."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The create option was not specified (or was specified as false), and the file doesn\u0027t exist."
+        },
+        {
+          "name": "FileError.PATH_EXISTS_ERR",
+          "description": "The create and exclusive options were both true, indicating that the file should be created but must not already exist, but the file does in fact already exist."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "The request to access the file was denied for security reasons."
+        },
+        {
+          "name": "FileError.TYPE_MISMATCH_ERR",
+          "description": "The path specified is not a file; it\u0027s probably a directory, but might be an unsupported file descriptor such as a pipe; this depends on the user agent to some extent."
+        },
+        {
+          "name": "create Optional",
+          "description": "If this property is true, and the requested file or directory doesn\u0027t exist, the user agent should create it. The default is false. The parent directory must already exist."
+        },
+        {
+          "name": "exclusive Optional",
+          "description": "If true, and the create option is also true, the file must not exist prior to issuing the call. Instead, it must be possible for it to be created newly at call time. The default is false."
+        }
+      ]
+    },
+    {
+      "name": "removeRecursively()",
+      "link": "/en-US/docs/Web/API/FileSystemDirectoryEntry/removeRecursively",
+      "description": "Deletes a directory and all of its contents, including the contents of subdirectories. This has been removed from the spec.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A function to call once the directory removal process has completed. The callback has no parameters."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "A function to be called if an error occurs while attempting to remove the directory subtree. Receives a FileError describing the error which occurred as input."
+        },
+        {
+          "name": "FileError.INVALID_MODIFICATION_ERR",
+          "description": "An attempt was made to remove the root directory; this is not permitted."
+        },
+        {
+          "name": "FileError.NO_MODIFICATION_ALLOWED_ERR",
+          "description": "The file system\u0027s state doesn\u0027t permit modification."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The directory represented by the FileSystemDirectoryEntry no longer exists."
+        },
+        {
+          "name": "FileError.NOT_READABLE_ERR",
+          "description": "The directory is not accessible; perhaps it\u0027s in use by another application or is locked at the operating system level."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "The directory could not be removed for security reasons. Possible reasons include: The directory and/or its contents may not be safe to access from a Web application. Too many file system calls are being made. Other security concerns as raised by the user agent or the operating system."
+        }
+      ]
+    }
+  ]
+}

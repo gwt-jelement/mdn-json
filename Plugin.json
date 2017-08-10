@@ -1,0 +1,36 @@
+{
+  "name": "Plugin",
+  "description": "The Plugin interface provides information about a browser plugin.",
+  "members": [
+    {
+      "name": "Plugin.description",
+      "link": "/en-US/docs/Web/API/Plugin/description",
+      "description": "A human readable description of the plugin."
+    },
+    {
+      "name": "Plugin.filename",
+      "link": "/en-US/docs/Web/API/Plugin/filename",
+      "description": "The filename of the plugin file."
+    },
+    {
+      "name": "Plugin.name",
+      "link": "/en-US/docs/Web/API/Plugin/name",
+      "description": "The name of the plugin."
+    },
+    {
+      "name": "Plugin.version",
+      "link": "/en-US/docs/Web/API/Plugin/version",
+      "description": "The plugin\u0027s version number string."
+    },
+    {
+      "name": "Plugin.item",
+      "link": "/en-US/docs/Web/API/Plugin/item",
+      "description": "Returns the MIME type of a supported content type, given the index number into a list of supported types."
+    },
+    {
+      "name": "Plugin.namedItem",
+      "link": "/en-US/docs/Web/API/Plugin/namedItem",
+      "description": "Returns the MIME type of a supported item."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "MediaQueryListListener",
+  "description": "A MediaQueryList object maintains a list of media queries on a document, and handles sending notifications to listeners when the media queries on the document change.",
+  "members": []
+}

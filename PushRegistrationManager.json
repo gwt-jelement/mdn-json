@@ -1,0 +1,26 @@
+{
+  "name": "PushRegistrationManager",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. Returns an interface to register or unregister a push registration, get an active registration, or check the permission status of the registration. This interface has been superceded by PushManager.",
+  "members": [
+    {
+      "name": "PushRegistrationManager.register()",
+      "link": "/en-US/docs/Web/API/PushRegistrationManager/register",
+      "description": "Returns a promise that resolves to a PushRegistration with details of a new registration."
+    },
+    {
+      "name": "PushRegistrationManager.unregister()",
+      "link": "/en-US/docs/Web/API/PushRegistrationManager/unregister",
+      "description": "Returns a promise that resolves to a PushRegistration with details of the unregistered registration."
+    },
+    {
+      "name": "PushRegistrationManager.getRegistration()",
+      "link": "/en-US/docs/Web/API/PushRegistrationManager/getRegistration",
+      "description": "Returns a promise that resolves the PushRegistration associated with the current webapp."
+    },
+    {
+      "name": "PushRegistrationManager.hasPermission()",
+      "link": "/en-US/docs/Web/API/PushRegistrationManager/hasPermission",
+      "description": "Returns a promise that resolves to the PushPermissionStatus of the requesting webapp."
+    }
+  ]
+}

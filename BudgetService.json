@@ -1,0 +1,33 @@
+{
+  "name": "BudgetService",
+  "description": "",
+  "members": [
+    {
+      "name": "BudgetService.getCost()",
+      "link": "/en-US/docs/Web/API/BudgetService/getCost",
+      "description": "Returns a Promise that resolves to a double, indicating the worst-case background operation cost of the provided background operation.",
+      "parameters": [
+        {
+          "name": "operation",
+          "description": "Must be \"silent-push\"."
+        }
+      ]
+    },
+    {
+      "name": "BudgetService.getBudget()",
+      "link": "/en-US/docs/Web/API/BudgetService/getBudget",
+      "description": "Returns a Promise that resolves to an array of BudgetState objects, indicating the expected state of the budget at times in the future."
+    },
+    {
+      "name": "BudgetService.reserve()",
+      "link": "/en-US/docs/Web/API/BudgetService/reserve",
+      "description": "Returns a Promise that resolves to a boolean, indicating whether the requested budget operation can be reserved.",
+      "parameters": [
+        {
+          "name": "operation",
+          "description": "desc"
+        }
+      ]
+    }
+  ]
+}

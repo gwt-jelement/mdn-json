@@ -1,0 +1,26 @@
+{
+  "name": "PushEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "PushEvent.PushEvent()",
+      "link": "/en-US/docs/Web/API/PushEvent/PushEvent",
+      "description": "Creates a new PushEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString defining the type of PushEvent. This can be push or pushsubscriptionchange."
+        },
+        {
+          "name": "eventInitDict Optional",
+          "description": "An options object containing any initialization data you want to populate the PushEvent object with. The options are: data: The data you want the PushEvent to contain, if any. When the constructor is invoked, the PushEvent.data property of the resulting object will be set to a new PushMessageData object containing bytes extracted from the eventInitDict data member."
+        }
+      ]
+    },
+    {
+      "name": "PushEvent.data",
+      "link": "/en-US/docs/Web/API/PushEvent/data",
+      "description": "Returns a reference to a PushMessageData object containing data sent to the PushSubscription."
+    }
+  ]
+}

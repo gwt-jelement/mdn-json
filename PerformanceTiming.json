@@ -1,0 +1,116 @@
+{
+  "name": "PerformanceTiming",
+  "description": "",
+  "members": [
+    {
+      "name": "PerformanceTiming.navigationStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/navigationStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, right after the prompt for unload terminates on the previous document in the same browsing context. If there is no previous document, this value will be the same as PerformanceTiming.fetchStart."
+    },
+    {
+      "name": "PerformanceTiming.unloadEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/unloadEventStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, the unload event has been thrown. If there is no previous document, or if the previous document, or one of the needed redirects, is not of the same origin, the value returned is 0."
+    },
+    {
+      "name": "PerformanceTiming.unloadEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/unloadEventEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, the unload event handler finishes. If there is no previous document, or if the previous document, or one of the needed redirects, is not of the same origin, the value returned is 0."
+    },
+    {
+      "name": "PerformanceTiming.redirectStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/redirectStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, the first HTTP redirect starts. If there is no redirect, or if one of the redirects is not of the same origin, the value returned is 0."
+    },
+    {
+      "name": "PerformanceTiming.redirectEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/redirectEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, the last HTTP redirect is completed, that is when the last byte of the HTTP response has been received. If there is no redirect, or if one of the redirect is not of the same origin, the value returned is 0."
+    },
+    {
+      "name": "PerformanceTiming.fetchStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/fetchStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, the browser is ready to fetch the document using an HTTP request. This moment is before the check to any application cache."
+    },
+    {
+      "name": "PerformanceTiming.domainLookupStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domainLookupStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, where the domain lookup starts. If a persistent connection is used, or the information is stored in a cache or a local resource, the value will be the same as PerformanceTiming.fetchStart."
+    },
+    {
+      "name": "PerformanceTiming.domainLookupEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domainLookupEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, where the domain lookup is finished. If a persistent connection is used, or the information is stored in a cache or a local resource, the value will be the same as PerformanceTiming.fetchStart."
+    },
+    {
+      "name": "PerformanceTiming.connectStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/connectStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, where the request to open a connection is sent to the network. If the transport layer reports an error and the connection establishment is started again, the last connection establisment start time is given. If a persistent connection is used, the value will be the same as PerformanceTiming.fetchStart."
+    },
+    {
+      "name": "PerformanceTiming.connectEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/connectEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, where the connection is opened network. If the transport layer reports an error and the connection establishment is started again, the last connection establisment end time is given. If a persistent connection is used, the value will be the same as PerformanceTiming.fetchStart. A connection is considered as opened when all secure connection handshake, or SOCKS authentication, is terminated."
+    },
+    {
+      "name": "PerformanceTiming.secureConnectionStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/secureConnectionStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, where the secure connection handshake starts. If no such connection is requested, it returns 0."
+    },
+    {
+      "name": "PerformanceTiming.requestStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/requestStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the browser sent the request to obtain the actual document, from the server or from a cache. If the transport layer fails after the start of the request and the connection is reopened, this property will be set to the time corresponding to the new request."
+    },
+    {
+      "name": "PerformanceTiming.responseStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/responseStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the browser received the first byte of the response, from the server from a cache, of from a local resource."
+    },
+    {
+      "name": "PerformanceTiming.responseEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/responseEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the browser received the last byte of the response, or when the connection is closed if this happened first, from the server from a cache, of from a local resource."
+    },
+    {
+      "name": "PerformanceTiming.domLoading",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domLoading",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the parser started its work, that is when its Document.readyState changes to \u0027loading\u0027 and the corresponding readystatechange event is thrown."
+    },
+    {
+      "name": "PerformanceTiming.domInteractive",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domInteractive",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the parser finished its work on the main document, that is when its Document.readyState changes to \u0027interactive\u0027 and the corresponding readystatechange event is thrown."
+    },
+    {
+      "name": "PerformanceTiming.domContentLoadedEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domContentLoadedEventStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, right before the parser sent the DOMContentLoaded event, that is right after all the scripts that need to be executed right after parsing has been executed."
+    },
+    {
+      "name": "PerformanceTiming.domContentLoadedEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domContentLoadedEventEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, right after all the scripts that need to be executed as soon as possible, in order or not, has been executed."
+    },
+    {
+      "name": "PerformanceTiming.domComplete",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/domComplete",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the parser finished its work on the main document, that is when its Document.readyState changes to \u0027complete\u0027 and the corresponding readystatechange event is thrown."
+    },
+    {
+      "name": "PerformanceTiming.loadEventStart",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/loadEventStart",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the load event was sent for the current document. If this event has not yet been sent, it returns 0."
+    },
+    {
+      "name": "PerformanceTiming.loadEventEnd",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/loadEventEnd",
+      "description": "Is an unsigned long long representing the moment, in milliseconds since the UNIX epoch, when the load event handler terminated, that is when the load event is completed. If this event has not yet been sent, or is not yet completed, it returns 0."
+    },
+    {
+      "name": "PerformanceTiming.toJSON()",
+      "link": "/en-US/docs/Web/API/PerformanceTiming/toJSON",
+      "description": "Is a jsonizer returning a JSON object representing the specific PerformanceTiming object."
+    }
+  ]
+}

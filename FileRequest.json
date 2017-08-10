@@ -1,0 +1,51 @@
+{
+  "name": "FileRequest",
+  "description": "",
+  "members": [
+    {
+      "name": "FileRequest.lockedFile",
+      "link": "/en-US/docs/Web/API/FileRequest/lockedFile",
+      "description": "The LockedFile object from which the request was started."
+    },
+    {
+      "name": "FileRequest.onprogress",
+      "link": "/en-US/docs/Web/API/FileRequest/onprogress",
+      "description": "A callback handler called repeatedly while the operation represented by the FileRequest is in progress.",
+      "parameters": [
+        {
+          "name": "loaded",
+          "description": "A number representing the current amount of bytes processed by the operation."
+        },
+        {
+          "name": "total",
+          "description": "A number representing the total amount of bytes that will be processed by the operation."
+        }
+      ]
+    },
+    {
+      "name": "DOMRequest.onsuccess",
+      "link": "/en-US/docs/Web/API/DOMRequest/onsuccess",
+      "description": "A callback handler called when the operation represented by the DOMRequest is completed."
+    },
+    {
+      "name": "DOMRequest.onerror",
+      "link": "/en-US/docs/Web/API/DOMRequest/onerror",
+      "description": "A callback handler that gets called when an error occurs while processing the operation."
+    },
+    {
+      "name": "DOMRequest.readyState",
+      "link": "/en-US/docs/Web/API/DOMRequest/readyState",
+      "description": "A string indicating whether or not the operation is finished running. Its value is either \"done\" or \"pending\"."
+    },
+    {
+      "name": "DOMRequest.result",
+      "link": "/en-US/docs/Web/API/DOMRequest/result",
+      "description": "The operation\u0027s result."
+    },
+    {
+      "name": "DOMRequest.error",
+      "link": "/en-US/docs/Web/API/DOMRequest/error",
+      "description": "Error information, if any."
+    }
+  ]
+}

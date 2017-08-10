@@ -1,0 +1,46 @@
+{
+  "name": "ExtendableMessageEvent",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes.   The ExtendableMessageEvent interface of the ServiceWorker API represents the event object of a message event fired on a service worker (when a channel message is received on the ServiceWorkerGlobalScope from another context) — extends the lifetime of such events.",
+  "members": [
+    {
+      "name": "ExtendableMessageEvent.ExtendableMessageEvent()",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/ExtendableMessageEvent",
+      "description": "Creates a new ExtendableMessageEvent object instance.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString that defines the type of the message event being created."
+        },
+        {
+          "name": "init Optional",
+          "description": "An initialisation object, which should contain the following parameters: data: The event\u0027s data — this can be any type. origin: A DOMString that defines the origin of the corresponding service worker\u0027s environment settings object. lastEventId: A DOMString that defines the last event ID of the event source. source: The Client, ServiceWorker or MessagePort that sent the message. ports: An array containing the MessagePort objects connected to the channel sending the message."
+        }
+      ]
+    },
+    {
+      "name": "ExtendableMessageEvent.data",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/data",
+      "description": "Returns the event\u0027s data. It can be any data type."
+    },
+    {
+      "name": "ExtendableMessageEvent.origin",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/origin",
+      "description": "Returns the origin of the ServiceWorkerClient that sent the message"
+    },
+    {
+      "name": "ExtendableMessageEvent.lastEventId",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/lastEventId",
+      "description": "Represents, in server-sent events, the last event ID of the event source."
+    },
+    {
+      "name": "ExtendableMessageEvent.source",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/source",
+      "description": "Returns a reference to the service worker that sent the message."
+    },
+    {
+      "name": "ExtendableMessageEvent.ports",
+      "link": "/en-US/docs/Web/API/ExtendableMessageEvent/ports",
+      "description": "Returns the array containing the MessagePort objects representing the ports of the associated message channel."
+    }
+  ]
+}

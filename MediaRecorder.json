@@ -1,0 +1,129 @@
+{
+  "name": "MediaRecorder",
+  "description": "The MediaRecorder interface of the MediaStream Recording API provides functionality to easily record media. It is created by the invocation of the MediaRecorder() constructor.",
+  "members": [
+    {
+      "name": "MediaRecorder.MediaRecorder()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/MediaRecorder",
+      "description": "Creates a new MediaRecorder object, given a MediaStream to record. Options are available to do things like set the container\u0027s MIME type (such as \"video/webm\" or \"video/mp4\") and the bit rates of the audio and video tracks or a single overall bit rate.",
+      "parameters": [
+        {
+          "name": "stream",
+          "description": "The MediaStream that will be recorded. This source media can come from a stream created using navigator.mediaDevices.getUserMedia() or from an \u003caudio\u003e, \u003cvideo\u003e or \u003ccanvas\u003e element."
+        },
+        {
+          "name": "options Optional",
+          "description": "A dictionary object that can contain the following properties: mimeType: The mime type you want to use as the recording container for the new MediaRecorder. Applications can check in advance if this mimeType is supported by the user agent by calling MediaRecorder.isTypeSupported(). audioBitsPerSecond: The chosen bitrate for the audio component of the media. videoBitsPerSecond: The chosen bitrate for the video component of the media. bitsPerSecond: The chosen bitrate for the audio and video components of the media. This can be specified instead of the above two properties. If this is specified along with one or the other of the above properties, this will be used for the one that isn\u0027t specified. If bits per second values are not specified for video and/or audio, the default adopted for video is 2.5Mbps, while the audio default is adaptive, depending upon the sample rate and the number of channels."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder.mimeType",
+      "link": "/en-US/docs/Web/API/MediaRecorder/mimeType",
+      "description": "Returns the MIME type that was selected as the recording container for the MediaRecorder object when it was created."
+    },
+    {
+      "name": "MediaRecorder.state",
+      "link": "/en-US/docs/Web/API/MediaRecorder/state",
+      "description": "Returns the current state of the MediaRecorder object (inactive, recording, or paused.)"
+    },
+    {
+      "name": "MediaRecorder.stream",
+      "link": "/en-US/docs/Web/API/MediaRecorder/stream",
+      "description": "Returns the stream that was passed into the constructor when the MediaRecorder was created."
+    },
+    {
+      "name": "MediaRecorder.ignoreMutedMedia",
+      "link": "/en-US/docs/Web/API/MediaRecorder/ignoreMutedMedia",
+      "description": "Indicates whether the MediaRecorder instance will record input when the input MediaStreamTrack is muted. If this attribute is false, MediaRecorder will record silence for audio and black frames for video. The default is false."
+    },
+    {
+      "name": "MediaRecorder.videoBitsPerSecond",
+      "link": "/en-US/docs/Web/API/MediaRecorder/videoBitsPerSecond",
+      "description": "Returns the video encoding bit rate in use. This may differ from the bit rate specified in the constructor (if it was provided)."
+    },
+    {
+      "name": "MediaRecorder.audioBitsPerSecond",
+      "link": "/en-US/docs/Web/API/MediaRecorder/audioBitsPerSecond",
+      "description": "Returns the audio encoding bit rate in use. This may differ from the bit rate specified in the constructor (if it was provided)."
+    },
+    {
+      "name": "MediaRecorder.isTypeSupported()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/canRecordMimeType",
+      "description": " Returns a Boolean value indicating if the given MIME type is supported by the current user agent . ",
+      "parameters": [
+        {
+          "name": "mimeType",
+          "description": "The mimeType to check."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder.pause()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/pause",
+      "description": "Pauses the recording of media."
+    },
+    {
+      "name": "MediaRecorder.requestData()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/requestData",
+      "description": "Requests a Blob containing the saved data received thus far (or since the last time requestData() was called. After calling this method, recording continues, but in a new Blob."
+    },
+    {
+      "name": "MediaRecorder.resume()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/resume",
+      "description": "Resumes recording of media after having been paused."
+    },
+    {
+      "name": "MediaRecorder.start()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/start",
+      "description": "Begins recording media; this method can optionally be passed a timeslice argument with a value in milliseconds. If this is specified, the media will be captured in separate chunks of that duration, rather than the default behavior of recording the media in a single large chunk.",
+      "parameters": [
+        {
+          "name": "timeslice Optional",
+          "description": "This parameter takes a value of milliseconds, and represents the length of media capture to return in each Blob. If it is not specified, all media captured will be returned in a single Blob, unless one or more calls are made to MediaRecorder.requestData."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder.stop()",
+      "link": "/en-US/docs/Web/API/MediaRecorder/stop",
+      "description": "Stops recording, at which point a dataavailable event containing the final Blob of saved data is fired. No more recording occurs."
+    },
+    {
+      "name": "MediaRecorder.ondataavailable",
+      "link": "/en-US/docs/Web/API/MediaRecorder/ondataavailable",
+      "description": "Called to handle the dataavailable event, which can be used to grab the recorded media (which is made available as a Blob object in the event\u0027s data attribute.)"
+    },
+    {
+      "name": "MediaRecorder.onerror",
+      "link": "/en-US/docs/Web/API/MediaRecorder/onerror",
+      "description": "An EventHandler called to handle the recordingerror event, including reporting errors that arise with media recording. These are fatal errors that stop recording.",
+      "parameters": [
+        {
+          "name": "message",
+          "description": "Contains information about the error that occurred."
+        }
+      ]
+    },
+    {
+      "name": "MediaRecorder.onpause",
+      "link": "/en-US/docs/Web/API/MediaRecorder/onpause",
+      "description": "An EventHandler called to handle the pause event, which occurs when media recording is paused."
+    },
+    {
+      "name": "MediaRecorder.onresume",
+      "link": "/en-US/docs/Web/API/MediaRecorder/onresume",
+      "description": "An EventHandler called to handle the resume event, which occurs when media recording resumes after being paused."
+    },
+    {
+      "name": "MediaRecorder.onstart",
+      "link": "/en-US/docs/Web/API/MediaRecorder/onstart",
+      "description": "An EventHandler called to handle the start event, which occurs when media recording starts."
+    },
+    {
+      "name": "MediaRecorder.onstop",
+      "link": "/en-US/docs/Web/API/MediaRecorder/onstop",
+      "description": "An EventHandler called to handle the stop event, which occurs when media recording ends, either when the MediaStream ends — or after the MediaRecorder.stop() method is called."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "DeviceOrientationEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "DeviceOrientationEvent.DeviceOrientation()",
+      "link": "/en-US/docs/Web/API/DeviceOrientationEvent/DeviceOrientationEvent",
+      "description": "Creates a new DeviceOrientationEvent.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: alpha: A number representing the motion of the device around the z axis, express in degrees with values ranging from 0 to 360. beta: A number representing the motion of the device around the x axis, express in degrees with values ranging from -180 to 180. This represents a front to back motion of the device. gamma: A number representing the motion of the device around the y axis, express in degrees with values ranging from -90 to 90. This represents a left to right motion of the device. absolute: A boolean that indicates whether or not the device is providing orientation data absolutely."
+        }
+      ]
+    },
+    {
+      "name": "DeviceOrientationEvent.absolute",
+      "link": "/en-US/docs/Web/API/DeviceOrientationEvent/absolute",
+      "description": "A boolean that indicates whether or not the device is providing orientation data absolutely."
+    },
+    {
+      "name": "DeviceOrientationEvent.alpha",
+      "link": "/en-US/docs/Web/API/DeviceOrientationEvent/alpha",
+      "description": "A number representing the motion of the device around the z axis, express in degrees with values ranging from 0 to 360."
+    },
+    {
+      "name": "DeviceOrientationEvent.beta",
+      "link": "/en-US/docs/Web/API/DeviceOrientationEvent/beta",
+      "description": "A number representing the motion of the device around the x axis, express in degrees with values ranging from -180 to 180. This represents a front to back motion of the device."
+    },
+    {
+      "name": "DeviceOrientationEvent.gamma",
+      "link": "/en-US/docs/Web/API/DeviceOrientationEvent/gamma",
+      "description": "A number representing the motion of the device around the y axis, express in degrees with values ranging from -90 to 90. This represents a left to right motion of the device."
+    }
+  ]
+}

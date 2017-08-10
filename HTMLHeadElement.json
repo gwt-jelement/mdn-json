@@ -1,0 +1,11 @@
+{
+  "name": "HTMLHeadElement",
+  "description": "The HTMLHeadElement interface contains the descriptive information, or metadata, for a document. This object inherits all of the properties and methods described in the HTMLElement interface.",
+  "members": [
+    {
+      "name": "HTMLHeadElement.profile",
+      "link": "/en-US/docs/Web/API/HTMLHeadElement/profile",
+      "description": "Is a DOMString representing the URIs of one or more metadata profiles (white space separated)."
+    }
+  ]
+}

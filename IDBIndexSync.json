@@ -1,0 +1,36 @@
+{
+  "name": "IDBIndexSync",
+  "description": "",
+  "members": [
+    {
+      "name": "CONSTRAINT_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#CONSTRAINT_ERR",
+      "description": "If a record exists in this index with a key corresponding to the key parameter or the index is auto-populated, or if no record exists with a key corresponding to the value parameter in the index\u0027s referenced object store."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If no record exists in this index for the given key."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If no record exists in this index for the given key."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If no records exist in this index for the requested key range."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If no records exist in this index for the requested key range."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If a record does not exist in this index with the given key."
+    }
+  ]
+}

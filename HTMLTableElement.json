@@ -1,0 +1,198 @@
+{
+  "name": "HTMLTableElement",
+  "description": "The HTMLTableElement interface provides special properties and methods (beyond the regular HTMLElement object interface it also has available to it by inheritance) for manipulating the layout and presentation of tables in an HTML document.",
+  "members": [
+    {
+      "name": "HTMLTableElement.caption",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/caption",
+      "description": "Is a HTMLTableCaptionElement representing the first \u003ccaption\u003e that is a child of the element, or null if none is found. When set, if the object doesn\u0027t represent a \u003ccaption\u003e, a DOMException with the HierarchyRequestError name is thrown. If a correct object is given, it is inserted in the tree as the first child of this element and the first \u003ccaption\u003e that is a child of this element is removed from the tree, if any."
+    },
+    {
+      "name": "HTMLTableElement.tHead",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/tHead",
+      "description": "Is a HTMLTableSectionElement representing the first \u003cthead\u003e that is a child of the element, or null if none is found. When set, if the object doesn\u0027t represent a \u003cthead\u003e, a DOMException with the HierarchyRequestError name is thrown. If a correct object is given, it is inserted in the tree immediately before the first element that is neither a \u003ccaption\u003e, nor a \u003ccolgroup\u003e, or as the last child if there is no such element, and the first \u003cthead\u003e that is a child of this element is removed from the tree, if any."
+    },
+    {
+      "name": "HTMLTableElement.tFoot",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/tFoot",
+      "description": "Is a HTMLTableSectionElement representing the first \u003ctfoot\u003e that is a child of the element, or null if none is found. When set, if the object doesn\u0027t represent a \u003ctfoot\u003e, a DOMException with the HierarchyRequestError name is thrown. If a correct object is given, it is inserted in the tree immediately before the first element that is neither a \u003ccaption\u003e, a \u003ccolgroup\u003e, nor a \u003cthead\u003e, or as the last child if there is no such element, and the first \u003ctfoot\u003e that is a child of this element is removed from the tree, if any."
+    },
+    {
+      "name": "HTMLTableElement.rows",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/rows",
+      "description": "Returns a live HTMLCollection containing all the rows of the element, that is all \u003ctr\u003e that are a child of the element, or a child or one of its \u003cthead\u003e, \u003ctbody\u003e and \u003ctfoot\u003e children. The rows members of a \u003cthead\u003e appear first, in tree order, and those members of a \u003ctbody\u003e last, also in tree order. The HTMLCollection is live and is automatically updated when the HTMLTableElement changes."
+    },
+    {
+      "name": "HTMLTableElement.tBodies",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/tBodies",
+      "description": "Returns a live HTMLCollection containing all the \u003ctbody\u003e of the element. The HTMLCollection is live and is automatically updated when the HTMLTableElement changes."
+    },
+    {
+      "name": "HTMLTableElement.sortable",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/sortable",
+      "description": "Is a Boolean value indicating if the user agent is allowed to provide sorting mechanism for the table, if it supports such a feature. This property reflects the sortable attribute."
+    },
+    {
+      "name": "HTMLTableElement.align",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/align",
+      "description": "Is a DOMString containing an enumerated value reflecting the align attribute. It indicates the alignment of the element\u0027s contents with respect to the surrounding context. The possible values are \"left\", \"right\", and \"center\".",
+      "parameters": [
+        {
+          "name": "alignment Deprecated since HTML4",
+          "description": "alignment is a string with one of the following values: left center right"
+        }
+      ]
+    },
+    {
+      "name": "HTMLTableElement.bgColor",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/bgColor",
+      "description": "Is a DOMString containing the background color of the cells. It reflects the obsolete bgcolor attribute."
+    },
+    {
+      "name": "HTMLTableElement.border",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/border",
+      "description": "Is a DOMString containing the width in pixels of the border of the table. It reflects the obsolete border attribute."
+    },
+    {
+      "name": "HTMLTableElement.cellPadding",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/cellPadding",
+      "description": "Is a DOMString containing the width in pixels of the horizontal and vertical sapce between cell content and cell borders. It reflects the obsolete cellpadding attribute."
+    },
+    {
+      "name": "HTMLTableElement.cellSpacing",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/cellSpacing",
+      "description": "Is a DOMString containing the width in pixels of the horizontal and vertical separation between cells. It reflects the obsolete cellspacing attribute."
+    },
+    {
+      "name": "HTMLTableElement.frame",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/frame",
+      "description": "Is a DOMString containing the type of the external borders of the table. It reflects the obsolete frame attribute and can take one of the following values: \"void\", \"above\", \"below\", \"hsides\", \"vsides\", \"lhs\", \"rhs\", \"box\", or \"border\".",
+      "parameters": [
+        {
+          "name": "void",
+          "description": "no sides. this is the default."
+        },
+        {
+          "name": "above",
+          "description": "top side"
+        },
+        {
+          "name": "below",
+          "description": "bottom side"
+        },
+        {
+          "name": "hsides",
+          "description": "top and bottom only"
+        },
+        {
+          "name": "vsides",
+          "description": "right and left sides only"
+        },
+        {
+          "name": "lhs",
+          "description": "left-hand side only"
+        },
+        {
+          "name": "rhs",
+          "description": "right-hand side only"
+        },
+        {
+          "name": "box",
+          "description": "all four sides"
+        },
+        {
+          "name": "border",
+          "description": "all four sides"
+        }
+      ]
+    },
+    {
+      "name": "HTMLTableElement.rules",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/rules",
+      "description": "Is a DOMString containing the type of the internal borders of the table. It reflects the obsolete rules attribute and can take one of the following values: \"none\", \"groups\", \"rows\", \"cols\", or \"all\".",
+      "parameters": [
+        {
+          "name": "none",
+          "description": "no rules"
+        },
+        {
+          "name": "groups",
+          "description": "lines between groups only"
+        },
+        {
+          "name": "rows",
+          "description": "lines between rows"
+        },
+        {
+          "name": "cols",
+          "description": "lines between cols"
+        },
+        {
+          "name": "all",
+          "description": "lines between all cells"
+        }
+      ]
+    },
+    {
+      "name": "HTMLTableElement.summary",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/summary",
+      "description": "Is a DOMString containing a description of the purpose or the structure of the table. It reflects the obsolete summary attribute."
+    },
+    {
+      "name": "HTMLTableElement.width",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/width",
+      "description": "Is a DOMString containing the length in pixels or in percentage of the desired width fo the entire table. It reflects the obsolete width attribute."
+    },
+    {
+      "name": "HTMLTableElement.createTHead()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/createTHead",
+      "description": "Returns an HTMLElement representing the first \u003cthead\u003e that is a child of the element. If none is found, a new one is created and inserted in the tree immediately before the first element that is neither a \u003ccaption\u003e, nor a \u003ccolgroup\u003e, or as the last child if there is no such element."
+    },
+    {
+      "name": "HTMLTableElement.deleteTHead()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/deleteTHead",
+      "description": "Removes the first \u003cthead\u003e that is a child of the element."
+    },
+    {
+      "name": "HTMLTableElement.createTFoot()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/createTFoot",
+      "description": "Returns an HTMLElement representing the first \u003ctfoot\u003e that is a child of the element. If none is found, a new one is created and inserted in the tree immediately before the first element that is neither a \u003ccaption\u003e, a \u003ccolgroup\u003e, nor a \u003cthead\u003e, or as the last child if there is no such element."
+    },
+    {
+      "name": "HTMLTableElement.deleteTFoot()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/deleteTFoot",
+      "description": "Removes the first \u003ctfoot\u003e that is a child of the element."
+    },
+    {
+      "name": "HTMLTableElement.createCaption()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/createCaption",
+      "description": "Returns an HTMLElement representing the first \u003ccaption\u003e that is a child of the element. If none is found, a new one is created and inserted in the tree as the first child of the \u003ctable\u003e element."
+    },
+    {
+      "name": "HTMLTableElement.deleteCaption()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/deleteCaption",
+      "description": "Removes the first \u003ccaption\u003e that is a child of the element."
+    },
+    {
+      "name": "HTMLTableElement.insertRow()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/insertRow",
+      "description": "Returns an HTMLTableRowElement representing a new row of the table. It inserts it in the rows collection immediately before the \u003ctr\u003e element at the given index position. If necessary a \u003ctbody\u003e is created. If the index is -1, the new row is appended to the collection. If the index is smaller than -1 or greater than the number of rows in the collection, a DOMException with the value IndexSizeError is raised."
+    },
+    {
+      "name": "HTMLTableElement.deleteRow()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/deleteRow",
+      "description": "Removes the row corresponding to the index given in parameter. If the index value is -1 the last row is removed; if it smaller than -1 or greater than the amount of rows in the collection, a DOMException with the value IndexSizeError is raised.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "index is an integer representing the row that should be deleted. However, the special index -1 can be used to remove the very last row of a table."
+        }
+      ]
+    },
+    {
+      "name": "HTMLTableElement.stopSorting()",
+      "link": "/en-US/docs/Web/API/HTMLTableElement/stopSorting",
+      "description": "Removes the sortable attribute to all \u003cth\u003e elements of the table."
+    }
+  ]
+}

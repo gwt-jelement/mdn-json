@@ -1,0 +1,202 @@
+{
+  "name": "KeyboardEvent",
+  "description": "KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed.",
+  "members": [
+    {
+      "name": "KeyboardEvent()",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/KeyboardEvent",
+      "description": "Creates a KeyboardEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "KeyboardEventInitOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "KeyboardEvent.getModifierState()",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/getModifierState",
+      "description": "Returns a Boolean indicating if the modifier key, like Alt, Shift, Ctrl, or Meta, was pressed when the event was created.",
+      "parameters": [
+        {
+          "name": "keyArg",
+          "description": "A modifier key value. The value must be one of the KeyboardEvent.key values which represent modifier keys, or the string \"Accel\" . This is case-sensitive."
+        }
+      ]
+    },
+    {
+      "name": "KeyboardEvent.initKeyEvent()",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/initKeyEvent",
+      "description": "Initializes a KeyboardEvent object. This has only been implemented by Gecko (others used KeyboardEvent.initKeyboardEvent()) and should not be used any more. The standard modern way is to use the KeyboardEvent() constructor.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString representing the type of event."
+        },
+        {
+          "name": "bubbles",
+          "description": "Is a Boolean indicating whether the event should bubble up through the event chain or not (see bubbles)."
+        },
+        {
+          "name": "cancelable",
+          "description": "Is a Boolean i indicating whether the event can be canceled (see cancelable)."
+        },
+        {
+          "name": "viewArg",
+          "description": "Specifies the UIEvent.view; this value may be null."
+        },
+        {
+          "name": "ctrlKeyArg",
+          "description": "Is a Boolean that is true if the virtual key to be generated is a combination of keys containing the Ctrl key."
+        },
+        {
+          "name": "altKeyArg",
+          "description": "Is a Boolean that is true if the virtual key to be generated is a combination of keys containing the Alt key."
+        },
+        {
+          "name": "shiftKeyArg",
+          "description": "A Boolean that is true if the virtual key to be generated is a combination of keys containing the Shift key."
+        },
+        {
+          "name": "metaKeyArg",
+          "description": "Is a Boolean that is true if the virtual key to be generated is a combination of keys containing the Meta key."
+        },
+        {
+          "name": "keyCodeArg",
+          "description": "Is a unsigned long representing the virtual key code value of the key which was depressed, otherwise 0. See KeyboardEvent.keyCode for the list of key codes."
+        },
+        {
+          "name": "charCodeArg",
+          "description": "Is a unsigned long representingthe Unicode character associated with the depressed key otherwise 0."
+        }
+      ]
+    },
+    {
+      "name": "KeyboardEvent.initKeyboardEvent()",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/initKeyboardEvent",
+      "description": "Initializes a KeyboardEvent object. This has never been implemented by Gecko (who used KeyboardEvent.initKeyEvent()) and should not be used any more. The standard modern way is to use the KeyboardEvent() constructor.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "The type of keyboard event; this will be one of keydown, keypress, or keyup."
+        },
+        {
+          "name": "canBubbleArg",
+          "description": "Whether or not the event can bubble."
+        },
+        {
+          "name": "cancelableArg",
+          "description": "Whether or not the event can be canceled."
+        },
+        {
+          "name": "viewArg",
+          "description": "The WindowProxy it is associated to."
+        },
+        {
+          "name": "charArg",
+          "description": "The value of the char attribute."
+        },
+        {
+          "name": "keyArg",
+          "description": "The value of the key attribute."
+        },
+        {
+          "name": "locationArg",
+          "description": "The value of the location attribute."
+        },
+        {
+          "name": "modifiersListArg",
+          "description": "A whitespace-delineated list of modifier keys that should be considered to be active on the event\u0027s key. For example, specifying \"Control Shift\" indicates that the user was holding down the Control and Shift keys when pressing the key described by the event."
+        },
+        {
+          "name": "repeatArg",
+          "description": "The value of the repeat attribute."
+        }
+      ]
+    },
+    {
+      "name": "KeyboardEvent.altKey",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/altKey",
+      "description": "Returns a Boolean that is true if the Alt ( Option or ⌥ on OS X) key was active when the key event was generated."
+    },
+    {
+      "name": "KeyboardEvent.char",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/char",
+      "description": "Returns a DOMString representing the character value of the key. If the key corresponds to a printable character, this value is a non-empty Unicode string containing that character. If the key doesn\u0027t have a printable representation, this is an empty string. Note: If the key is used as a macro that inserts multiple characters, this attribute\u0027s value is the entire string, not just the first character. Warning: This has been dropped from DOM Level 3 Events. This is supported only on IE9+ and Microsoft Edge."
+    },
+    {
+      "name": "KeyboardEvent.charCode",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/charCode",
+      "description": "Returns a Number representing the Unicode reference number of the key; this attribute is used only by the keypress event. For keys whose char attribute contains multiple characters, this is the Unicode value of the first character in that attribute. In Firefox 26 this returns codes for printable characters. Warning: This attribute is deprecated; you should use KeyboardEvent.key instead, if available."
+    },
+    {
+      "name": "KeyboardEvent.code",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/code",
+      "description": "Returns a DOMString with the code value of the key represented by the event."
+    },
+    {
+      "name": "KeyboardEvent.ctrlKey",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/ctrlKey",
+      "description": "Returns a Boolean that is true if the Ctrl key was active when the key event was generated."
+    },
+    {
+      "name": "KeyboardEvent.isComposing",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/isComposing",
+      "description": "Returns a Boolean that is true if the event is fired between after compositionstart and before compositionend."
+    },
+    {
+      "name": "KeyboardEvent.key",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/key",
+      "description": "Returns a DOMString representing the key value of the key represented by the event."
+    },
+    {
+      "name": "KeyboardEvent.keyCode",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/keyCode",
+      "description": "Returns a Number representing a system and implementation dependent numerical code identifying the unmodified value of the pressed key. Warning: This attribute is deprecated; you should use KeyboardEvent.key instead, if available."
+    },
+    {
+      "name": "KeyboardEvent.keyIdentifier",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/keyIdentifier",
+      "description": "This property is non-standard and has been deprecated in favor of KeyboardEvent.key. It was part of an old version of DOM Level 3 Events."
+    },
+    {
+      "name": "KeyboardEvent.keyLocation",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/keyLocation",
+      "description": "This is a non-standard deprecated alias for KeyboardEvent.location. It was part of an old version of DOM Level 3 Events."
+    },
+    {
+      "name": "KeyboardEvent.locale",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/locale",
+      "description": "Returns a DOMString representing a locale string indicating the locale the keyboard is configured for. This may be the empty string if the browser or device doesn\u0027t know the keyboard\u0027s locale. Note: This does not describe the locale of the data being entered. A user may be using one keyboard layout while typing text in a different language."
+    },
+    {
+      "name": "KeyboardEvent.location",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/location",
+      "description": "Returns a Number representing the location of the key on the keyboard or other input device."
+    },
+    {
+      "name": "KeyboardEvent.metaKey",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/metaKey",
+      "description": "Returns a Boolean that is true if the Meta key (on Mac keyboards, the ⌘ Command key; on Windows keyboards, the Windows key (⊞)) was active when the key event was generated."
+    },
+    {
+      "name": "KeyboardEvent.repeat",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/repeat",
+      "description": "Returns a Boolean that is true if the key is being held down such that it is automatically repeating."
+    },
+    {
+      "name": "KeyboardEvent.shiftKey",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/shiftKey",
+      "description": "Returns a Boolean that is true if the Shift key was active when the key event was generated."
+    },
+    {
+      "name": "KeyboardEvent.which",
+      "link": "/en-US/docs/Web/API/KeyboardEvent/which",
+      "description": "Returns a Number representing a system and implementation dependent numeric code identifying the unmodified value of the pressed key; this is usually the same as keyCode. Warning: This attribute is deprecated; you should use KeyboardEvent.key instead, if available."
+    }
+  ]
+}

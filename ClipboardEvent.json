@@ -1,0 +1,26 @@
+{
+  "name": "ClipboardEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "ClipboardEvent.clipboardData",
+      "link": "/en-US/docs/Web/API/ClipboardEvent/clipboardData",
+      "description": "Is a DataTransfer object containing the data affected by the user-initiated cut, copy, or paste operation, along with its MIME type."
+    },
+    {
+      "name": "ClipboardEvent()",
+      "link": "/en-US/docs/Web/API/ClipboardEvent/ClipboardEvent",
+      "description": "Creates a ClipboardEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString representing the name of the type of the ClipboardEvent. It is case-sensitive and can be: \u0027copy\u0027, \u0027cut\u0027, or \u0027paste\u0027."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: dataType: A DOMString containing the MIME-type of the data contained in the data argument. data: A DOMString containing the data concerned by the clipboard event."
+        }
+      ]
+    }
+  ]
+}

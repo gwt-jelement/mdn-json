@@ -1,0 +1,16 @@
+{
+  "name": "PresentationAvailability",
+  "description": "A PresentationAvailability object is associated with available presentation displays and represents the presentation display availability for a presentation request. If the controlling user agent can monitor the list of available presentation displays in the background (without a pending request to start()), the PresentationAvailability object MUST be implemented in a controlling browsing context.",
+  "members": [
+    {
+      "name": "PresentationAvailability.value",
+      "link": "/en-US/docs/Web/API/PresentationAvailability/value",
+      "description": "A boolean value indicating whether the given presentation display is available. The value attribute MUST return the last value it was set to."
+    },
+    {
+      "name": "PresentationAvailability.onchange",
+      "link": "/en-US/docs/Web/API/PresentationAvailability/onchange",
+      "description": "Indicates that the availability of the presentation display has changed."
+    }
+  ]
+}

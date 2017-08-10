@@ -1,0 +1,17 @@
+{
+  "name": "CanvasPattern",
+  "description": "The CanvasPattern interface represents an opaque object describing a pattern, based on an image, a canvas or a video, created by the CanvasRenderingContext2D.createPattern() method.",
+  "members": [
+    {
+      "name": "CanvasPattern.setTransform()",
+      "link": "/en-US/docs/Web/API/CanvasPattern/setTransform",
+      "description": "Applies an SVGMatrix representing a linear transform to the pattern.",
+      "parameters": [
+        {
+          "name": "matrix",
+          "description": "An SVGMatrix to use as the pattern\u0027s transformation matrix."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "SpeechSynthesisVoice",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechSynthesisVoice.default",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisVoice/default",
+      "description": "A Boolean indicating whether the voice is the default voice for the current app language (true), or not (false.)"
+    },
+    {
+      "name": "SpeechSynthesisVoice.lang",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisVoice/lang",
+      "description": "Returns a BCP 47 language tag indicating the language of the voice."
+    },
+    {
+      "name": "SpeechSynthesisVoice.localService",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisVoice/localService",
+      "description": "A Boolean indicating whether the voice is supplied by a local speech synthesizer service (true), or a remote speech synthesizer service (false.)"
+    },
+    {
+      "name": "SpeechSynthesisVoice.name",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisVoice/name",
+      "description": "Returns a human-readable name that represents the voice."
+    },
+    {
+      "name": "SpeechSynthesisVoice.voiceURI",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisVoice/voiceURI",
+      "description": "Returns the type of URI and location of the speech synthesis service for this voice."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "SVGComponentTransferFunctionElement",
+  "description": "The SVGComponentTransferFunctionElement interface defines a base interface used by the component transfer function interfaces.",
+  "members": [
+    {
+      "name": "SVGComponentTransferFunctionElement.type",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/type",
+      "description": "An SVGAnimatedEnumeration corresponding to the type attribute of the given element. It takes one of the SVG_FECOMPONENTTRANSFER_TYPE_* constants defined on this interface."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.tableValues",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/tableValues",
+      "description": "An SVGAnimatedNumberList corresponding to the tableValues attribute of the given element."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.slope",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/slope",
+      "description": "An SVGAnimatedNumber corresponding to the slope attribute of the given element."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.intercept",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/intercept",
+      "description": "An SVGAnimatedNumber corresponding to the intercept attribute of the given element."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.amplitude",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/amplitude",
+      "description": "An SVGAnimatedNumber corresponding to the amplitude attribute of the given element."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.exponent",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/exponent",
+      "description": "An SVGAnimatedNumber corresponding to the exponent attribute of the given element."
+    },
+    {
+      "name": "SVGComponentTransferFunctionElement.offset",
+      "link": "/en-US/docs/Web/API/SVGComponentTransferFunctionElement/offset",
+      "description": "An SVGAnimatedNumber corresponding to the offset attribute of the given element."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "SVGTextPositioningElement",
+  "description": "The SVGTextPositioningElement interface is implemented by elements that support attributes that position individual text glyphs. It is inherited by SVGTextElement, SVGTSpanElement, SVGTRefElement and SVGAltGlyphElement.",
+  "members": [
+    {
+      "name": "SVGTextPositioningElement.x",
+      "link": "/en-US/docs/Web/API/SVGTextPositioningElement/x",
+      "description": "Returns an SVGAnimatedLengthList reflecting the x attribute of the given element."
+    },
+    {
+      "name": "SVGTextPositioningElement.y",
+      "link": "/en-US/docs/Web/API/SVGTextPositioningElement/y",
+      "description": "Returns an SVGAnimatedLengthList reflecting the y attribute of the given element."
+    },
+    {
+      "name": "SVGTextPositioningElement.dx",
+      "link": "/en-US/docs/Web/API/SVGTextPositioningElement/dx",
+      "description": "Returns an SVGAnimatedLengthList reflecting the dx attribute of the given element."
+    },
+    {
+      "name": "SVGTextPositioningElement.dy",
+      "link": "/en-US/docs/Web/API/SVGTextPositioningElement/dy",
+      "description": "Returns an SVGAnimatedLengthList reflecting the dy attribute of the given element."
+    },
+    {
+      "name": "SVGTextPositioningElement.rotate",
+      "link": "/en-US/docs/Web/API/SVGTextPositioningElement/rotate",
+      "description": "Returns an SVGAnimatedNumberList reflecting the rotate attribute of the given element."
+    }
+  ]
+}

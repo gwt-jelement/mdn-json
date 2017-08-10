@@ -1,0 +1,31 @@
+{
+  "name": "BlobEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "BlobEvent()",
+      "link": "/en-US/docs/Web/API/BlobEvent/BlobEvent",
+      "description": "Creates a BlobEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "Is an Blob associated with the event."
+        },
+        {
+          "name": "timecode Optional",
+          "description": "A DOMHighResTimeStamp to be used in initializing the blob event."
+        }
+      ]
+    },
+    {
+      "name": "BlobEvent.data",
+      "link": "/en-US/docs/Web/API/BlobEvent/data",
+      "description": "A Blob representing the data associated with the event. The event was fired on the EventTarget because of something happening on that specific Blob."
+    },
+    {
+      "name": "BlobEvent.timecode",
+      "link": "/en-US/docs/Web/API/BlobEvent/timecode",
+      "description": "A DOMHighResTimeStamp indicating the difference between the timestamp of the first chunk in data and the timestamp of the first chunk in the first BlobEvent produced by this recorder. Note that the timecode in the first produced BlobEvent does not need to be zero."
+    }
+  ]
+}

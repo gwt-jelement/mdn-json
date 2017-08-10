@@ -1,0 +1,31 @@
+{
+  "name": "MediaMetadata",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaMetadata.MediaMetadata()",
+      "link": "/en-US/docs/Web/API/MediaMetadata/MediaMetadata",
+      "description": "Creates a new MediaMetaData object."
+    },
+    {
+      "name": "MediaMetadata.title",
+      "link": "/en-US/docs/Web/API/MediaMetadata/title",
+      "description": "Returns or sets the title of the media to be played."
+    },
+    {
+      "name": "MediaMetadata.artist",
+      "link": "/en-US/docs/Web/API/MediaMetadata/artist",
+      "description": "Returns or sets the name of the artist, group, creator, etc. of the media to be played."
+    },
+    {
+      "name": "MediaMetadata.album",
+      "link": "/en-US/docs/Web/API/MediaMetadata/album",
+      "description": "Returns or sets the name of the album or collection containing the media to be played."
+    },
+    {
+      "name": "MediaMetadata.artwork",
+      "link": "/en-US/docs/Web/API/MediaMetadata/artwork",
+      "description": "Returns or sets an array of images associated with playing media. "
+    }
+  ]
+}

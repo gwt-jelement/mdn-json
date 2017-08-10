@@ -1,0 +1,70 @@
+{
+  "name": "DOMImplementation",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMImplementation.createDocument()",
+      "link": "/en-US/docs/Web/API/DOMImplementation/createDocument",
+      "description": "Creates and returns an XMLDocument.",
+      "parameters": [
+        {
+          "name": "namespaceURI",
+          "description": "Is a DOMString containing the namespace URI of the document to be created, or null if the document doesn\u0027t belong to one."
+        },
+        {
+          "name": "qualifiedNameStr",
+          "description": "Is a DOMString containing the qualified name, that is an optional prefix and colon plus the local root element name, of the document to be created."
+        },
+        {
+          "name": "documentType Optional",
+          "description": "Is the DocumentType of the document to be created. It defaults to null."
+        }
+      ]
+    },
+    {
+      "name": "DOMImplementation.createDocumentType()",
+      "link": "/en-US/docs/Web/API/DOMImplementation/createDocumentType",
+      "description": "Creates and returns a DocumentType.",
+      "parameters": [
+        {
+          "name": "qualifiedNameStr",
+          "description": "Is a DOMString containing the qualified name, like svg:svg."
+        },
+        {
+          "name": "publicId",
+          "description": "Is a DOMString containing the PUBLIC identifier."
+        },
+        {
+          "name": "systemId",
+          "description": "Is a DOMString containing the SYSTEM identifiers."
+        }
+      ]
+    },
+    {
+      "name": "DOMImplementation.createHTMLDocument()",
+      "link": "/en-US/docs/Web/API/DOMImplementation/createHTMLDocument",
+      "description": "Creates and returns an HTML Document.",
+      "parameters": [
+        {
+          "name": "title  Optional (except in IE)",
+          "description": "Is a DOMString containing the title to give the new HTML document."
+        }
+      ]
+    },
+    {
+      "name": "DOMImplementation.hasFeature()",
+      "link": "/en-US/docs/Web/API/DOMImplementation/hasFeature",
+      "description": "Returns a Boolean indicating if a given feature is supported or not. This function is unreliable and kept for compatibility purpose alone: except for SVG-related queries, it always returns true. Old browsers are very inconsistent in their behavior.",
+      "parameters": [
+        {
+          "name": "feature",
+          "description": "Is a DOMString representing the feature name."
+        },
+        {
+          "name": "version",
+          "description": "Is a DOMString representing the version of the specification defining the feature."
+        }
+      ]
+    }
+  ]
+}

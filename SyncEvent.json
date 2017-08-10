@@ -1,0 +1,31 @@
+{
+  "name": "SyncEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "SyncEvent.SyncEvent()",
+      "link": "/en-US/docs/Web/API/SyncEvent/SyncEvent",
+      "description": "Creates a new SyncEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of the Event."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the event object. Options are as follows: tag: A developer-defined unique identifier for this SyncEvent. lastChance: A Boolean indicating that the user agent will not make further synchronization attempts after the current attempt."
+        }
+      ]
+    },
+    {
+      "name": "SyncEvent.tag",
+      "link": "/en-US/docs/Web/API/SyncEvent/tag",
+      "description": "Returns the developer-defined identifier for this SyncEvent."
+    },
+    {
+      "name": "SyncEvent.lastChance",
+      "link": "/en-US/docs/Web/API/SyncEvent/lastChance",
+      "description": "Returns true if the user agent will not make further synchronization attempts after the current attempt."
+    }
+  ]
+}

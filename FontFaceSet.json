@@ -1,0 +1,56 @@
+{
+  "name": "FontFaceSet",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The FontFaceSet interface of the CSS Font Loading API manages the loading of font-faces and querying of their download status.",
+  "members": [
+    {
+      "name": "FontFaceSet.status",
+      "link": "/en-US/docs/Web/API/FontFaceSet/status",
+      "description": "Indicates the font-face\u0027s loading status. It will be one of \u0027loading\u0027 or \u0027loaded\u0027."
+    },
+    {
+      "name": "FontFaceSet.onloading",
+      "link": "/en-US/docs/Web/API/FontFaceSet/onloading",
+      "description": "An EventListener called whenever an event of type loading is fired, indicating a font-face set has started loading."
+    },
+    {
+      "name": "FontFaceSet.onloadingdone",
+      "link": "/en-US/docs/Web/API/FontFaceSet/onloadingdone",
+      "description": "An EventListener called whenever an event of type loadingdone is fired, indicating that a font face set has finished loading."
+    },
+    {
+      "name": "FontFaceSet.onloadingerror",
+      "link": "/en-US/docs/Web/API/FontFaceSet/onloadingerror",
+      "description": "An EventListener called whenever an event of type loadingerror is fired, indicating that an error occurred whilst loading a font-face set."
+    },
+    {
+      "name": "FontFaceSet.add()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/add",
+      "description": "Adds a font to the font set."
+    },
+    {
+      "name": "FontFaceSet.check()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/check",
+      "description": "A Boolean that indicates whether a font is loaded, but doesn\u0027t initiate a load when it isn\u0027t."
+    },
+    {
+      "name": "FontFaceSet.clear()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/clear",
+      "description": "Removes all fonts from the font set."
+    },
+    {
+      "name": "FontFaceSet.delete()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/delete",
+      "description": "Removes a font from the font set."
+    },
+    {
+      "name": "FontFaceSet.load()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/load",
+      "description": "Returns a Promise which resolves to a list of font-faces for a requested font."
+    },
+    {
+      "name": "FontFaceSet.ready()",
+      "link": "/en-US/docs/Web/API/FontFaceSet/ready",
+      "description": "Returns a Promise which resolves once font loading and layout operations have completed."
+    }
+  ]
+}

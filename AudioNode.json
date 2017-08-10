@@ -1,0 +1,94 @@
+{
+  "name": "AudioNode",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioNode.context",
+      "link": "/en-US/docs/Web/API/AudioNode/context",
+      "description": "Returns the associated AudioContext, that is the object representing the processing graph the node is participating in."
+    },
+    {
+      "name": "AudioNode.numberOfInputs",
+      "link": "/en-US/docs/Web/API/AudioNode/numberOfInputs",
+      "description": "Returns the number of inputs feeding the node. Source nodes are defined as nodes having a numberOfInputs property with a value of 0."
+    },
+    {
+      "name": "AudioNode.numberOfOutputs",
+      "link": "/en-US/docs/Web/API/AudioNode/numberOfOutputs",
+      "description": "Returns the number of outputs coming out of the node. Destination nodes — like AudioDestinationNode — have a value of 0 for this attribute."
+    },
+    {
+      "name": "AudioNode.channelCount",
+      "link": "/en-US/docs/Web/API/AudioNode/channelCount",
+      "description": "Represents an integer used to determine how many channels are used when up-mixing and down-mixing connections to any inputs to the node. Its usage and precise definition depend on the value of AudioNode.channelCountMode."
+    },
+    {
+      "name": "AudioNode.channelCountMode",
+      "link": "/en-US/docs/Web/API/AudioNode/channelCountMode",
+      "description": "Represents an enumerated value describing the way channels must be matched between the node\u0027s inputs and outputs."
+    },
+    {
+      "name": "AudioNode.channelInterpretation",
+      "link": "/en-US/docs/Web/API/AudioNode/channelInterpretation",
+      "description": "Represents an enumerated value describing the meaning of the channels. This interpretation will define how audio up-mixing and down-mixing will happen. The possible values are \"speakers\" or \"discrete\"."
+    },
+    {
+      "name": "AudioNode.connect()",
+      "link": "/en-US/docs/Web/API/AudioNode/connect",
+      "description": "Allows us to connect the output of this node to be input into another node, either as audio data or as the value of an AudioParam.",
+      "parameters": [
+        {
+          "name": "destination",
+          "description": "The AudioNode or AudioParam to which to connect."
+        },
+        {
+          "name": "outputIndex Optional",
+          "description": "An index specifying which output of the current AudioNode to connect to the destination. The index numbers are defined according to the number of output channels (see Audio channels). While you can only connect a given output to a given input once (repeated attempts are ignored), you can connect an output to multiple inputs by calling connect() repeatedly. This makes fan-out possible. The default value is 0."
+        },
+        {
+          "name": "inputIndex Optional",
+          "description": "An index describing which input of the destination you want to connect the current AudioNode to; the default is 0. The index numbers are defined according to the number of input channels (see Audio channels). It is possible to connect an AudioNode to another AudioNode, which in turn connects back to the first AudioNode, creating a cycle. This is allowed only if there is at least one DelayNode in the cycle. Otherwise, a NotSupportedError exception is thrown. This parameter is not allowed if the destination is an AudioParam."
+        },
+        {
+          "name": "IndexSizeError",
+          "description": "The value specified as outputIndex or inputIndex doesn\u0027t correspond to an existing input or output."
+        },
+        {
+          "name": "InvalidAccessError",
+          "description": "The destination node is not part of the same audio context as the source node."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "The specified connection would create a cycle (in which the audio loops back through the same nodes repeatedly) and there are no DelayNodes in the cycle to prevent the resulting waveform from getting stuck constructing the same audio frame indefinitely."
+        }
+      ]
+    },
+    {
+      "name": "AudioNode.disconnect()",
+      "link": "/en-US/docs/Web/API/AudioNode/disconnect",
+      "description": "Allows us to disconnect the current node from another one it is already connected to.",
+      "parameters": [
+        {
+          "name": "destination Optional",
+          "description": "An AudioNode or AudioParam specifying the node or nodes to disconnect from. If this value is an AudioNode, a single node is disconnected from, with any other, optional, parameters (output and/or input) further limiting which inputs and/or outputs should be disconnected. If this value is an AudioParam, then the connection to that AudioParam is terminated, and the node\u0027s contributions to that computed parameter become 0 going forward once the change takes effect. If no matching connection is found, an InvalidAccessError exception is thrown."
+        },
+        {
+          "name": "output Optional",
+          "description": "An index describing which output from the current AudioNode is to be disconnected. The index numbers are defined according to the number of output channels (see Audio channels). If this parameter is out-of-bound, an IndexSizeError exception is thrown."
+        },
+        {
+          "name": "input Optional",
+          "description": "An index describing which input into the specified destination AudioNode is to be disconnected. The index numbers are defined according to the number of input channels (see Audio channels).  If this parameter is out-of-bound, an IndexSizeError exception is thrown."
+        },
+        {
+          "name": "IndexSizeError",
+          "description": "A value specified for input or output is invalid, referring to a node which doesn\u0027t exist or outside the permitted range."
+        },
+        {
+          "name": "InvalidAccessError",
+          "description": "The node on which disconnect() was called isn\u0027t connected to the specified destination node."
+        }
+      ]
+    }
+  ]
+}

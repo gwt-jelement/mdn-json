@@ -1,0 +1,39 @@
+{
+  "name": "DeviceRotationRate",
+  "description": "",
+  "members": [
+    {
+      "name": "DeviceRotationRate.alpha",
+      "link": "/en-US/docs/Web/API/DeviceRotationRate/alpha",
+      "description": "The amount of rotation around the Z axis, in degrees per second.",
+      "parameters": [
+        {
+          "name": "alpha",
+          "description": "A double indicating the rate of rotation around the Z axis, in degrees per second. See Accelerometer values explained for details."
+        }
+      ]
+    },
+    {
+      "name": "DeviceRotationRate.beta",
+      "link": "/en-US/docs/Web/API/DeviceRotationRate/beta",
+      "description": "The amount of rotation around the X axis, in degrees per second.",
+      "parameters": [
+        {
+          "name": "beta",
+          "description": "A double indicating the rate of rotation around the X axis, in degrees per second. See Accelerometer values explained for details."
+        }
+      ]
+    },
+    {
+      "name": "DeviceRotationRate.gamma",
+      "link": "/en-US/docs/Web/API/DeviceRotationRate/gamma",
+      "description": "The amount of rotation around the Y axis, in degrees per second.",
+      "parameters": [
+        {
+          "name": "gamma",
+          "description": "A double indicating the rate of rotation around the Y axis, in degrees per second. See Accelerometer values explained for details."
+        }
+      ]
+    }
+  ]
+}

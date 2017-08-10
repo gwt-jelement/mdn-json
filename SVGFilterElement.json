@@ -1,0 +1,51 @@
+{
+  "name": "SVGFilterElement",
+  "description": "The SVGFilterElement interface provides access to the properties of \u003cfilter\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGFilterElement.filterUnits",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/filterUnits",
+      "description": "An SVGAnimatedEnumeration that corresponds to the filterUnits attribute of the given \u003cfilter\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGFilterElement.primitiveUnits",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/primitiveUnits",
+      "description": "An SVGAnimatedEnumeration that corresponds to the primitiveUnits attribute of the given \u003cfilter\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGFilterElement.x",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/x",
+      "description": "An SVGAnimatedLength that corresponds to the x attribute on the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.y",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/y",
+      "description": "An SVGAnimatedLength that corresponds to the y attribute of the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.width",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/width",
+      "description": "An SVGAnimatedLength that corresponds to the width attribute of the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.height",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/height",
+      "description": "An SVGAnimatedLength that corresponds to the height attribute of the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.filterResX",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/filterResX",
+      "description": "An SVGAnimatedInteger that contains the X component of the filterRes attribute of the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.filterResY",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/filterResY",
+      "description": "An SVGAnimatedInteger that contains the Y component of the filterRes attribute of the given \u003cfilter\u003e element."
+    },
+    {
+      "name": "SVGFilterElement.setFilterRes()",
+      "link": "/en-US/docs/Web/API/SVGFilterElement/setFilterRes",
+      "description": "Sets the values of the filterRes attribute."
+    }
+  ]
+}

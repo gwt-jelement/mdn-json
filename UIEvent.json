@@ -1,0 +1,98 @@
+{
+  "name": "UIEvent",
+  "description": "The UIEvent interface represents simple user interface events.",
+  "members": [
+    {
+      "name": "UIEvent()",
+      "link": "/en-US/docs/Web/API/UIEvent/UIEvent",
+      "description": "Creates a UIEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "UIEventInitOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "UIEvent.cancelBubble",
+      "link": "/en-US/docs/Web/API/UIEvent/cancelBubble",
+      "description": "Is a Boolean indicating whether the bubbling of the event has been canceled or not."
+    },
+    {
+      "name": "UIEvent.detail",
+      "link": "/en-US/docs/Web/API/UIEvent/detail",
+      "description": "Returns a long with details about the event, depending on the event type."
+    },
+    {
+      "name": "UIEvent.isChar",
+      "link": "/en-US/docs/Web/API/UIEvent/isChar",
+      "description": "Returns a Boolean indicating whether the event produced a key character or not."
+    },
+    {
+      "name": "UIEvent.layerX",
+      "link": "/en-US/docs/Web/API/UIEvent/layerX",
+      "description": "Returns the horizontal coordinate of the event relative to the current layer."
+    },
+    {
+      "name": "UIEvent.layerY",
+      "link": "/en-US/docs/Web/API/UIEvent/layerY",
+      "description": "Returns the vertical coordinate of the event relative to the current layer."
+    },
+    {
+      "name": "UIEvent.pageX",
+      "link": "/en-US/docs/Web/API/UIEvent/pageX",
+      "description": "Returns the horizontal coordinate of the event relative to the whole document."
+    },
+    {
+      "name": "UIEvent.pageY",
+      "link": "/en-US/docs/Web/API/UIEvent/pageY",
+      "description": "Returns the vertical coordinate of the event relative to the whole document."
+    },
+    {
+      "name": "UIEvent.sourceCapabilities",
+      "link": "/en-US/docs/Web/API/UIEvent/sourceCapabilities",
+      "description": "Returns an instance of the InputDeviceCapabilities interface which provides information about the physical device responsible for generating a touch event."
+    },
+    {
+      "name": "UIEvent.view",
+      "link": "/en-US/docs/Web/API/UIEvent/view",
+      "description": "Returns a WindowProxy that contains the view that generated the event."
+    },
+    {
+      "name": "UIEvent.which",
+      "link": "/en-US/docs/Web/API/UIEvent/which",
+      "description": "Returns the numeric keyCode of the key pressed, or the character code (charCode) for an alphanumeric key pressed."
+    },
+    {
+      "name": "UIEvent.initUIEvent()",
+      "link": "/en-US/docs/Web/API/UIEvent/initUIEvent",
+      "description": "Initializes a UIEvent object. If the event has already being dispatched, this method does nothing.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString defining the type of event."
+        },
+        {
+          "name": "canBubble",
+          "description": "Is a Boolean deciding whether the event should bubble up through the event chain or not. Once set, the read-only property Event.bubbles will give its value."
+        },
+        {
+          "name": "cancelable",
+          "description": "Is a Boolean defining whether the event can be canceled. Once set, the read-only property Event.cancelable will give its value."
+        },
+        {
+          "name": "view",
+          "description": "Is the WindowProxy associated with the event."
+        },
+        {
+          "name": "detail",
+          "description": "Is an unsigned long  specifying some detail information about the event, depending on the type of event. For mouse events, it indicates how many times the mouse has been clicked on a given screen location."
+        }
+      ]
+    }
+  ]
+}

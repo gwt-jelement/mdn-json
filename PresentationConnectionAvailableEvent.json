@@ -1,0 +1,26 @@
+{
+  "name": "PresentationConnectionAvailableEvent",
+  "description": "The PresentationConnectionAvailableEvent interface of the Presentation API is fired on a PresentationRequest when a connection associated with the object is created.",
+  "members": [
+    {
+      "name": "PresentationConnectionAvailableEvent()",
+      "link": "/en-US/docs/Web/API/PresentationConnectionAvailableEvent",
+      "description": "Creates a new PresentationConnectionAvailableEvent.",
+      "parameters": [
+        {
+          "name": "PresentationConnectionAvailableEvent()",
+          "description": "Creates a new PresentationConnectionAvailableEvent."
+        },
+        {
+          "name": "PresentationConnectionAvailableEvent.connection Read only",
+          "description": "Returns a references to the PresentationConnection object that fired the event."
+        }
+      ]
+    },
+    {
+      "name": "PresentationConnectionAvailableEvent.connection",
+      "link": "/en-US/docs/Web/API/PresentationConnectionAvailableEvent/connection",
+      "description": "Returns a references to the PresentationConnection object that fired the event."
+    }
+  ]
+}

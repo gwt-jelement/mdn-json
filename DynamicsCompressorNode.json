@@ -1,0 +1,51 @@
+{
+  "name": "DynamicsCompressorNode",
+  "description": "",
+  "members": [
+    {
+      "name": "DynamicsCompressorNode()",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/DynamicsCompressorNode",
+      "description": "Creates a new instance of an DynamicsCompressorNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: attack: The amount of time (in seconds) to reduce the gain by 10dB. Its default value is 0.003. This parameter is k-rate. Its nominal range is [0, 1]. knee: A decibel value representing the range above the threshold where the curve smoothly transitions to the \"ratio\" portion. Its default value is 30. This parameter is k-rate. Its nominal range is [0, 40]. ratio: The amount of dB change in input for a 1 dB change in output. Its default value is 12. This parameter is k-rate. Its nominal range is [1, 20]. release: The amount of time (in seconds) to increase the gain by 10dB. Its default value is 0.250. This parameter is k-rate. Its nominal range is [0, 1]. threshold: The decibel value above which the compression will start taking effect. Its default value is -24. This parameter is k-rate. Its nominal range is [-100, 0]."
+        }
+      ]
+    },
+    {
+      "name": "DynamicsCompressorNode.threshold",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/threshold",
+      "description": "Is a k-rate AudioParam representing the decibel value above which the compression will start taking effect."
+    },
+    {
+      "name": "DynamicsCompressorNode.knee",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/knee",
+      "description": "Is a k-rate AudioParam containing a decibel value representing the range above the threshold where the curve smoothly transitions to the compressed portion."
+    },
+    {
+      "name": "DynamicsCompressorNode.ratio",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/ratio",
+      "description": "Is a k-rate AudioParam representing the amount of change, in dB, needed in the input for a 1 dB change in the output."
+    },
+    {
+      "name": "DynamicsCompressorNode.reduction",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/reduction",
+      "description": "Is a float representing the amount of gain reduction currently applied by the compressor to the signal."
+    },
+    {
+      "name": "DynamicsCompressorNode.attack",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/attack",
+      "description": "Is a k-rate AudioParam representing the amount of time, in seconds, required to reduce the gain by 10 dB."
+    },
+    {
+      "name": "DynamicsCompressorNode.release",
+      "link": "/en-US/docs/Web/API/DynamicsCompressorNode/release",
+      "description": "Is a k-rate AudioParam representing the amount of time, in seconds, required to increase the gain by 10 dB."
+    }
+  ]
+}

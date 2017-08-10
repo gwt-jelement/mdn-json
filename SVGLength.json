@@ -1,0 +1,5 @@
+{
+  "name": "SVGLength",
+  "description": "SVG length interface The SVGLength interface correspond to the \u003clength\u003e basic data type.",
+  "members": []
+}

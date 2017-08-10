@@ -1,0 +1,26 @@
+{
+  "name": "CSSStyleSheet",
+  "description": "The CSSStyleSheet interface represents a single CSS style sheet. It inherits properties and methods from its parent, StyleSheet.",
+  "members": [
+    {
+      "name": "CSSStyleSheet.cssRules",
+      "link": "/en-US/docs/Web/API/CSSStyleSheet/cssRules",
+      "description": "Returns a live CSSRuleList, listing the CSSRule objects in the style sheet. This is normally used to access individual rules like this:    styleSheet.cssRules[i] // where i \u003d 0..cssRules.length-1 To add or remove items in cssRules, use the CSSStyleSheet\u0027s deleteRule() and insertRule() methods, described below."
+    },
+    {
+      "name": "CSSStyleSheet.ownerRule",
+      "link": "/en-US/docs/Web/API/CSSStyleSheet/ownerRule",
+      "description": "If this style sheet is imported into the document using an @import rule, the ownerRule property will return that CSSImportRule, otherwise it returns null."
+    },
+    {
+      "name": "CSSStyleSheet.deleteRule",
+      "link": "/en-US/docs/Web/API/CSSStyleSheet/deleteRule",
+      "description": "Deletes a rule at the specified position from the style sheet."
+    },
+    {
+      "name": "CSSStyleSheet.insertRule",
+      "link": "/en-US/docs/Web/API/CSSStyleSheet/insertRule",
+      "description": "Inserts a new rule at the specified position in the style sheet, given the textual representation of the rule."
+    }
+  ]
+}

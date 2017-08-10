@@ -1,0 +1,41 @@
+{
+  "name": "PerformanceEntry",
+  "description": "The PerformanceEntry object encapsulates a single performance metric that is part of the performance timeline. A performance entry can be directly created by making a performance mark or measure (for example by calling the mark() method) at an explicit point in an application. Performance entries are also created in indirect ways such as loading a resource (such as an image).",
+  "members": [
+    {
+      "name": "PerformanceEntry.name",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/name",
+      "description": "A DOMString representing the name of a performance entry when the metric was created."
+    },
+    {
+      "name": "PerformanceEntry.entryType",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/entryType",
+      "description": "A DOMString representing the type of performance metric such as \"mark\". See entryType for a list of valid values."
+    },
+    {
+      "name": "PerformanceEntry.startTime",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/startTime",
+      "description": "A DOMHighResTimeStamp representing the starting time for the performance metric."
+    },
+    {
+      "name": "PerformanceEntry.duration",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/duration",
+      "description": "A DOMHighResTimeStamp representing the time value of the duration of the performance event."
+    },
+    {
+      "name": "PerformanceEntry.toJSON()",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/toJSON",
+      "description": "A jsonizer that returns a JSON representation of the PerformanceEntry object.",
+      "parameters": [
+        {
+          "name": "None",
+          "description": " "
+        },
+        {
+          "name": "json",
+          "description": "A JSON object that is the serialization of the PerformanceEntry object."
+        }
+      ]
+    }
+  ]
+}

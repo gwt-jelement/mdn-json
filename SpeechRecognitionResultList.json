@@ -1,0 +1,16 @@
+{
+  "name": "SpeechRecognitionResultList",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognitionResultList.length",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionResultList/length",
+      "description": "Returns the length of the \"array\" — the number of SpeechRecognitionResult objects in the list."
+    },
+    {
+      "name": "SpeechRecognitionResultList.item",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionResultList/item",
+      "description": "A standard getter that allows SpeechRecognitionResult objects in the list to be accessed via array syntax."
+    }
+  ]
+}

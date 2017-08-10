@@ -1,0 +1,117 @@
+{
+  "name": "Request",
+  "description": "The Request interface of the Fetch API represents a resource request.",
+  "members": [
+    {
+      "name": "Request.Request()",
+      "link": "/en-US/docs/Web/API/Request/Request",
+      "description": "Creates a new Request object.",
+      "parameters": [
+        {
+          "name": "input",
+          "description": "Defines the resource that you wish to fetch. This can either be: A USVString containing the direct URL of the resource you want to fetch. A Request object, effectively creating a copy. Note the following behavioural updates to retain security while making the constructor less likely to throw exceptions: If this object exists on another origin to the constructor call, the Request.referrer is stripped out. If this object has a Request.mode of navigate, the mode value is converted to same-origin."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the request. The possible options are: method: The request method, e.g., GET, POST. headers: Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. body: Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, or USVString object. Note that a request using the GET or HEAD method cannot have a body. mode: The mode you want to use for the request, e.g., cors, no-cors, same-origin, or navigate. The default is cors. In Chrome the default is no-cors before Chrome 47 and same-origin starting with Chrome 47. credentials: The request credentials you want to use for the request: omit, same-origin, or include. The default is omit. In Chrome the default is same-origin before Chrome 47 and include starting with Chrome 47. cache: The cache mode you want to use for the request. redirect: The redirect mode to use: follow, error, or manual. In Chrome the default is manual before Chrome 47 and follow starting with Chrome 47. referrer: A USVString specifying no-referrer, client, or a URL. The default is client. integrity: Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d)."
+        }
+      ]
+    },
+    {
+      "name": "Request.method",
+      "link": "/en-US/docs/Web/API/Request/method",
+      "description": "Contains the request\u0027s method (GET, POST, etc.)"
+    },
+    {
+      "name": "Request.url",
+      "link": "/en-US/docs/Web/API/Request/url",
+      "description": "Contains the URL of the request."
+    },
+    {
+      "name": "Request.headers",
+      "link": "/en-US/docs/Web/API/Request/headers",
+      "description": "Contains the associated Headers object of the request."
+    },
+    {
+      "name": "Request.context",
+      "link": "/en-US/docs/Web/API/Request/context",
+      "description": "Contains the context of the request (e.g., audio, image, iframe, etc.)"
+    },
+    {
+      "name": "Request.referrer",
+      "link": "/en-US/docs/Web/API/Request/referrer",
+      "description": "Contains the referrer of the request (e.g., client)."
+    },
+    {
+      "name": "Request.referrerPolicy",
+      "link": "/en-US/docs/Web/API/Request/referrerPolicy",
+      "description": "Contains the referrer policy of the request (e.g., no-referrer)."
+    },
+    {
+      "name": "Request.mode",
+      "link": "/en-US/docs/Web/API/Request/mode",
+      "description": "Contains the mode of the request (e.g., cors, no-cors, same-origin, navigate.)",
+      "parameters": [
+        {
+          "name": "A RequestMode value.",
+          "description": "The associated mode, available values of which are: same-origin — If a request is made to another origin with this mode set, the result is simply an error. You could use this to ensure that a request is always being made to your origin. no-cors — Prevents the method from being anything other than HEAD, GET or POST. If any ServiceWorkers intercept these requests, they may not add or override any headers except for these. In addition, JavaScript may not access any properties of the resulting Response. This ensures that ServiceWorkers do not affect the semantics of the Web and prevents security and privacy issues arising from leaking data across domains. cors — Allows cross-origin requests, for example to access various APIs offered by 3rd party vendors. These are expected to adhere to the CORS protocol. Only a limited set of headers are exposed in the Response, but the body is readable. navigate — A mode for supporting navigation. The navigate value is intended to be used only by HTML navigation. A navigate request is created only while navigating between documents. If not defined, the default value of no-cors is assumed."
+        }
+      ]
+    },
+    {
+      "name": "Request.credentials",
+      "link": "/en-US/docs/Web/API/Request/credentials",
+      "description": "Contains the credentials of the request (e.g., omit, same-origin)."
+    },
+    {
+      "name": "Request.redirect",
+      "link": "/en-US/docs/Web/API/Request/redirect",
+      "description": "Contains the mode for how redirects are handled. It may be one of follow, error, or manual."
+    },
+    {
+      "name": "Request.integrity",
+      "link": "/en-US/docs/Web/API/Request/integrity",
+      "description": "Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d)."
+    },
+    {
+      "name": "Request.cache",
+      "link": "/en-US/docs/Web/API/Request/cache",
+      "description": "Contains the cache mode of the request (e.g., default, reload, no-cache)."
+    },
+    {
+      "name": "Body.bodyUsed",
+      "link": "/en-US/docs/Web/API/Body/bodyUsed",
+      "description": "Stores a Boolean that declares whether the body has been used in a response yet."
+    },
+    {
+      "name": "Request.clone()",
+      "link": "/en-US/docs/Web/API/Request/clone",
+      "description": "Creates a copy of the current Request object."
+    },
+    {
+      "name": "Body.arrayBuffer()",
+      "link": "/en-US/docs/Web/API/Body/arrayBuffer",
+      "description": "Returns a promise that resolves with an ArrayBuffer representation of the request body."
+    },
+    {
+      "name": "Body.blob()",
+      "link": "/en-US/docs/Web/API/Body/blob",
+      "description": "Returns a promise that resolves with a Blob representation of the request body."
+    },
+    {
+      "name": "Body.formData()",
+      "link": "/en-US/docs/Web/API/Body/formData",
+      "description": "Returns a promise that resolves with a FormData representation of the request body."
+    },
+    {
+      "name": "Body.json()",
+      "link": "/en-US/docs/Web/API/Body/json",
+      "description": "Returns a promise that resolves with a JSON representation of the request body."
+    },
+    {
+      "name": "Body.text()",
+      "link": "/en-US/docs/Web/API/Body/text",
+      "description": "Returns a promise that resolves with an USVString (text) representation of the request body."
+    }
+  ]
+}

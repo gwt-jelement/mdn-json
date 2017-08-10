@@ -1,0 +1,16 @@
+{
+  "name": "Notation",
+  "description": "Draft This page is not complete. Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. Represents a DTD notation (read-only). May declare format of an unparsed entity or formally declare the document\u0027s processing instruction targets. Inherits methods and properties from Node. Its nodeName is the notation name. Has no parent.",
+  "members": [
+    {
+      "name": "Notation.publicId",
+      "link": "/en-US/docs/Web/API/Notation/publicId",
+      "description": "Is a DOMString."
+    },
+    {
+      "name": "Notation.systemId",
+      "link": "/en-US/docs/Web/API/Notation/systemId",
+      "description": "Is a DOMString."
+    }
+  ]
+}

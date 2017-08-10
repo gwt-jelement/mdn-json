@@ -1,0 +1,41 @@
+{
+  "name": "MediaStreamConstraints",
+  "description": "The MediaStreamConstraints dictionary is used when calling getUserMedia() to specify what kinds of tracks should be included in the returned MediaStream, and, optionally, to establish constraints for those tracks\u0027 settings.",
+  "members": [
+    {
+      "name": "video",
+      "link": "/en-US/docs/Web/API/MediaStreamConstraints/video",
+      "description": "Either a Boolean (which indicates whether or not a video track is requested) or a MediaTrackConstraints object providing the constraints which must be met by the video track included in the returned MediaStream. If constraints are specified, a video track is inherently requested.",
+      "parameters": [
+        {
+          "name": "Boolean",
+          "description": "If a Boolean value is specified, it simply indicates whether or not a video track should be included in the returned stream; if it\u0027s true, a video track is included; if no video source is available or if permission is not given to use the video source, the call to getUserMedia() will fail. If false, no video track is included."
+        },
+        {
+          "name": "MediaTrackConstraints",
+          "description": "A constraints dictionary detailing the preferable and/or required values or ranges of values for the track\u0027s constrainable properties. If you specify constraints, a video track meeting these constraints is required."
+        }
+      ]
+    },
+    {
+      "name": "audio",
+      "link": "/en-US/docs/Web/API/MediaStreamConstraints/audio",
+      "description": "Either a Boolean (which indicates whether or not an audio track is requested) or a MediaTrackConstraints object providing the constraints which must be met by the audio track included in the returned MediaStream. If constraints are specified, an audio track is inherently requested.",
+      "parameters": [
+        {
+          "name": "Boolean",
+          "description": "If a Boolean value is specified, it simply indicates whether or not an audio track should be included in the returned stream; if it\u0027s true, an audio track is included; if no audio source is available or if permission is not given to use the audio source, the call to getUserMedia() will fail. If false, no audio track is included."
+        },
+        {
+          "name": "MediaTrackConstraints",
+          "description": "A constraints dictionary detailing the preferable and/or required values or ranges of values for the track\u0027s constrainable properties. If you specify constraints, an audio track meeting the constraints is required."
+        }
+      ]
+    },
+    {
+      "name": "peerIdentity",
+      "link": "/en-US/docs/Web/API/MediaStreamConstraints/peerIdentity",
+      "description": "A DOMString identifying the peer who has sole access to the stream. If this property is specified, only the indicated peer can receive and use the stream. Streams isolated in this way can only be displayed in a media element (\u003caudio\u003e or \u003cvideo\u003e) where the content is protected just as if CORS cross-origin rules were in effect."
+    }
+  ]
+}

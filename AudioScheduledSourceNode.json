@@ -1,0 +1,49 @@
+{
+  "name": "AudioScheduledSourceNode",
+  "description": "The AudioScheduledSourceNode interface—part of the Web Audio API—is a parent interface for several types of audio source node interfaces which share the ability to be started and stopped, optionally at specified times. Specifically, this interface defines the start() and stop() methods, as well as the onended event handler.",
+  "members": [
+    {
+      "name": "onended",
+      "link": "/en-US/docs/Web/API/AudioScheduledSourceNode/onended",
+      "description": "A function to be called when the ended event is fired, indicating that the node has finished playing."
+    },
+    {
+      "name": "start()",
+      "link": "/en-US/docs/Web/API/AudioScheduledSourceNode/start",
+      "description": "Schedules the node to begin playing the constant sound at the specified time. If no time is specified, the node begins playing immediately.",
+      "parameters": [
+        {
+          "name": "when Optional",
+          "description": "The time, in seconds, at which the sound should begin to play. This value is specified in the same time coordinate system as the AudioContext is using for its currentTime attribute. A value of 0 (or omitting the when parameter entirely) causes the sound to start playback immediately."
+        },
+        {
+          "name": "offset Optional",
+          "description": "A floating-point number indicating the offset, in seconds, into the audio buffer where playback should begin. If 0 is passed then the playback will start from the beginning."
+        },
+        {
+          "name": "duration Optional",
+          "description": "A floating-point number indicating the duration, in seconds, to be played. If no value is passed then the duration will be equal to the length of the audio buffer minus the offset value"
+        },
+        {
+          "name": "TypeError",
+          "description": "The value specified for when is negative."
+        }
+      ]
+    },
+    {
+      "name": "stop()",
+      "link": "/en-US/docs/Web/API/AudioScheduledSourceNode/stop",
+      "description": "Schedules the node to stop playing at the specified time. If no time is specified, the node stops playing at once.",
+      "parameters": [
+        {
+          "name": "when Optional",
+          "description": "The time, in seconds, at which the sound should stop playing. This value is specified in the same time coordinate system as the AudioContext is using for its currentTime attribute. Omitting this parameter, specifying a value of 0, or passing a negative value causes the sound to stop playback immediately."
+        },
+        {
+          "name": "TypeError",
+          "description": "The value specified for when is negative."
+        }
+      ]
+    }
+  ]
+}

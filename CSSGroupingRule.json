@@ -1,0 +1,21 @@
+{
+  "name": "CSSGroupingRule",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSGroupingRule.cssRules",
+      "link": "/en-US/docs/Web/API/CSSGroupingRule/cssRules",
+      "description": "Returns a CSSRuleList of the CSS rules in the media rule."
+    },
+    {
+      "name": "CSSGroupingRule.deleteRule",
+      "link": "/en-US/docs/Web/API/CSSGroupingRule/deleteRule",
+      "description": "Deletes a rule from the style sheet."
+    },
+    {
+      "name": "CSSGroupingRule.insertRule",
+      "link": "/en-US/docs/Web/API/CSSGroupingRule/insertRule",
+      "description": "Inserts a new style rule into the current style sheet."
+    }
+  ]
+}

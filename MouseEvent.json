@@ -1,0 +1,233 @@
+{
+  "name": "MouseEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "MouseEvent()",
+      "link": "/en-US/docs/Web/API/MouseEvent/MouseEvent",
+      "description": "Creates a MouseEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "mouseEventInit Optional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent.altKey",
+      "link": "/en-US/docs/Web/API/MouseEvent/altKey",
+      "description": "Returns true if the alt key was down when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.button",
+      "link": "/en-US/docs/Web/API/MouseEvent/button",
+      "description": "The button number that was pressed (if applicable) when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.buttons",
+      "link": "/en-US/docs/Web/API/MouseEvent/buttons",
+      "description": "The buttons being depressed (if any) when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.clientX",
+      "link": "/en-US/docs/Web/API/MouseEvent/clientX",
+      "description": "The X coordinate of the mouse pointer in local (DOM content) coordinates."
+    },
+    {
+      "name": "MouseEvent.clientY",
+      "link": "/en-US/docs/Web/API/MouseEvent/clientY",
+      "description": "The Y coordinate of the mouse pointer in local (DOM content) coordinates."
+    },
+    {
+      "name": "MouseEvent.ctrlKey",
+      "link": "/en-US/docs/Web/API/MouseEvent/ctrlKey",
+      "description": "Returns true if the control key was down when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.metaKey",
+      "link": "/en-US/docs/Web/API/MouseEvent/metaKey",
+      "description": "Returns true if the meta key was down when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.movementX",
+      "link": "/en-US/docs/Web/API/MouseEvent/movementX",
+      "description": "The X coordinate of the mouse pointer relative to the position of the last mousemove event."
+    },
+    {
+      "name": "MouseEvent.movementY",
+      "link": "/en-US/docs/Web/API/MouseEvent/movementY",
+      "description": "The Y coordinate of the mouse pointer relative to the position of the last mousemove event."
+    },
+    {
+      "name": "MouseEvent.offsetX",
+      "link": "/en-US/docs/Web/API/MouseEvent/offsetX",
+      "description": "The X coordinate of the mouse pointer relative to the position of the padding edge of the target node."
+    },
+    {
+      "name": "MouseEvent.offsetY",
+      "link": "/en-US/docs/Web/API/MouseEvent/offsetY",
+      "description": "The Y coordinate of the mouse pointer relative to the position of the padding edge of the target node."
+    },
+    {
+      "name": "MouseEvent.pageX",
+      "link": "/en-US/docs/Web/API/MouseEvent/pageX",
+      "description": "The X coordinate of the mouse pointer relative to the whole document."
+    },
+    {
+      "name": "MouseEvent.pageY",
+      "link": "/en-US/docs/Web/API/MouseEvent/pageY",
+      "description": "The Y coordinate of the mouse pointer relative to the whole document."
+    },
+    {
+      "name": "MouseEvent.region",
+      "link": "/en-US/docs/Web/API/MouseEvent/region",
+      "description": "Returns the id of the hit region affected by the event. If no hit region is affected, null is returned."
+    },
+    {
+      "name": "MouseEvent.relatedTarget",
+      "link": "/en-US/docs/Web/API/MouseEvent/relatedTarget",
+      "description": "The secondary target for the event, if there is one."
+    },
+    {
+      "name": "MouseEvent.screenX",
+      "link": "/en-US/docs/Web/API/MouseEvent/screenX",
+      "description": "The X coordinate of the mouse pointer in global (screen) coordinates."
+    },
+    {
+      "name": "MouseEvent.screenY",
+      "link": "/en-US/docs/Web/API/MouseEvent/screenY",
+      "description": "The Y coordinate of the mouse pointer in global (screen) coordinates."
+    },
+    {
+      "name": "MouseEvent.shiftKey",
+      "link": "/en-US/docs/Web/API/MouseEvent/shiftKey",
+      "description": "Returns true if the shift key was down when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.which",
+      "link": "/en-US/docs/Web/API/MouseEvent/which",
+      "description": "The button being pressed when the mouse event was fired."
+    },
+    {
+      "name": "MouseEvent.mozPressure",
+      "link": "/en-US/docs/Web/API/MouseEvent/mozPressure",
+      "description": "The amount of pressure applied to a touch or tablet device when generating the event; this value ranges between 0.0 (minimum pressure) and 1.0 (maximum pressure)."
+    },
+    {
+      "name": "MouseEvent.mozInputSource",
+      "link": "/en-US/docs/Web/API/MouseEvent/mozInputSource",
+      "description": "The type of device that generated the event (one of the MOZ_SOURCE_* constants listed below). This lets you, for example, determine whether a mouse event was generated by an actual mouse or by a touch event (which might affect the degree of accuracy with which you interpret the coordinates associated with the event)."
+    },
+    {
+      "name": "MouseEvent.webkitForce",
+      "link": "/en-US/docs/Web/API/MouseEvent/webkitForce",
+      "description": "The amount of pressure applied when clicking"
+    },
+    {
+      "name": "MouseEvent.x",
+      "link": "/en-US/docs/Web/API/MouseEvent/x",
+      "description": "Alias for MouseEvent.clientX."
+    },
+    {
+      "name": "MouseEvent.y",
+      "link": "/en-US/docs/Web/API/MouseEvent/y",
+      "description": "Alias for MouseEvent.clientY"
+    },
+    {
+      "name": "MouseEvent.WEBKIT_FORCE_AT_MOUSE_DOWN",
+      "link": "/en-US/docs/Web/API/MouseEvent/WEBKIT_FORCE_AT_MOUSE_DOWN",
+      "description": "Minimum force necessary for a normal click"
+    },
+    {
+      "name": "MouseEvent.WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN",
+      "link": "/en-US/docs/Web/API/MouseEvent/WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN",
+      "description": "Minimum force necessary for a force click"
+    },
+    {
+      "name": "MouseEvent.getModifierState()",
+      "link": "/en-US/docs/Web/API/MouseEvent/getModifierState",
+      "description": "Returns the current state of the specified modifier key. See the KeyboardEvent.getModifierState() for details.",
+      "parameters": [
+        {
+          "name": "keyArg",
+          "description": "A modifier key value. The value must be one of the KeyboardEvent.key values which represent modifier keys or \"Accel\". This is case-sensitive."
+        }
+      ]
+    },
+    {
+      "name": "MouseEvent.initMouseEvent()",
+      "link": "/en-US/docs/Web/API/MouseEvent/initMouseEvent",
+      "description": "Initializes the value of a MouseEvent created. If the event has already being dispatched, this method does nothing.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "the string to set the event\u0027s type to. Possible types for mouse events include: click, mousedown, mouseup, mouseover, mousemove, mouseout."
+        },
+        {
+          "name": "canBubble",
+          "description": "whether or not the event can bubble. Sets the value of Event.bubbles."
+        },
+        {
+          "name": "cancelable",
+          "description": "whether or not the event\u0027s default action can be prevented. Sets the value of Event.cancelable."
+        },
+        {
+          "name": "view",
+          "description": "the event\u0027s AbstractView. You should pass the window object here. Sets the value of UIEvent.view."
+        },
+        {
+          "name": "detail",
+          "description": "the event\u0027s mouse click count. Sets the value of UIEvent.detail."
+        },
+        {
+          "name": "screenX",
+          "description": "the event\u0027s screen x coordinate. Sets the value of MouseEvent.screenX."
+        },
+        {
+          "name": "screenY",
+          "description": "the event\u0027s screen y coordinate. Sets the value of MouseEvent.screenY."
+        },
+        {
+          "name": "clientX",
+          "description": "the event\u0027s client x coordinate. Sets the value of MouseEvent.clientX."
+        },
+        {
+          "name": "clientY",
+          "description": "the event\u0027s client y coordinate. Sets the value of MouseEvent.clientY."
+        },
+        {
+          "name": "ctrlKey",
+          "description": "whether or not control key was depressed during the Event. Sets the value of MouseEvent.ctrlKey."
+        },
+        {
+          "name": "altKey",
+          "description": "whether or not alt key was depressed during the Event. Sets the value of MouseEvent.altKey."
+        },
+        {
+          "name": "shiftKey",
+          "description": "whether or not shift key was depressed during the Event. Sets the value of MouseEvent.shiftKey."
+        },
+        {
+          "name": "metaKey",
+          "description": "whether or not meta key was depressed during the Event. Sets the value of MouseEvent.metaKey."
+        },
+        {
+          "name": "button",
+          "description": "the event\u0027s mouse button."
+        },
+        {
+          "name": "relatedTarget",
+          "description": "the event\u0027s related EventTarget. Only used with some event types (e.g. mouseover and mouseout). In other cases, pass null."
+        },
+        {
+          "name": "  Example HTML Content \u003cdiv style\u003d\"background:red;width:180px;padding:10px;\"\u003e\n \u003cdiv id\u003d\"out\"\u003e\u003c/div\u003e\n \u003cinput type\u003d\"text\"\u003e\n\u003c/div\u003e\n JavaScript Content document.body.onclick \u003d function(){\n e \u003d arguments[0];\n var dt \u003d e.target,stag \u003d dt.tagName.toLowerCase();\n document.getElementById(\"out\").innerHTML \u003d stag;\n};\nvar simulateClick \u003d function(){\n var evt \u003d document.createEvent(\"MouseEvents\");\n evt.initMouseEvent(\"click\", true, true, window, 0, 0, 0, 80, 20, false, false, false, false, 0, null);\n document.body.dispatchEvent(evt);\n}\nsimulateClick();//Why it can not show \"input\" ?\n Here\u0027s a live demo Link to live demo",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "HTMLMeterElement",
+  "description": "The HTML \u003cmeter\u003e elements expose the HTMLMeterElement interface, which provides special properties and methods (beyond the HTMLElement object interface they also have available to them by inheritance) for manipulating the layout and presentation of \u003cmeter\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLMeterElement.high",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/high",
+      "description": "A double representing the value of the high boundary, reflecting the high attribute."
+    },
+    {
+      "name": "HTMLMeterElement.low",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/low",
+      "description": "A double representing the value of the low boundary, reflecting the lowattribute."
+    },
+    {
+      "name": "HTMLMeterElement.max",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/max",
+      "description": "A double representing the maximum value, reflecting the max attribute."
+    },
+    {
+      "name": "HTMLMeterElement.min",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/min",
+      "description": "A double representing the minimum value, reflecting the min attribute."
+    },
+    {
+      "name": "HTMLMeterElement.optimum",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/optimum",
+      "description": "A double representing the optimum, reflecting the optimum attribute."
+    },
+    {
+      "name": "HTMLMeterElement.labels",
+      "link": "/en-US/docs/Web/API/HTMLMeterElement/labels",
+      "description": "A NodeList of \u003clabel\u003e elements that are associated with the element."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "NavigatorStorage",
+  "description": "",
+  "members": [
+    {
+      "name": "storage",
+      "link": "/en-US/docs/Web/API/NavigatorStorage/storage",
+      "description": "Returns the StorageManager singleton object which is used to access the Storage Manager. Through the returned object, you can control persistence of data stores as well as get estimates of how much space is left for your site or appliation to store data."
+    }
+  ]
+}

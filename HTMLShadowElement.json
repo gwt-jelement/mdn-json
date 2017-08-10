@@ -1,0 +1,11 @@
+{
+  "name": "HTMLShadowElement",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The HTMLShadowElement interface represents a \u003cshadow\u003e HTML Element, which is used in Shadow DOM.",
+  "members": [
+    {
+      "name": "HTMLShadowElement.getDistributedNodes()",
+      "link": "/en-US/docs/Web/API/HTMLShadowElement/getDistributedNodes",
+      "description": "Returns a static NodeList of the distributed nodes associated with this \u003cshadow\u003e element. "
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MimeTypeArray",
+  "description": "",
+  "members": [
+    {
+      "name": "MimeTypeArray.length",
+      "link": "/en-US/docs/Web/API/MimeTypeArray/length",
+      "description": "The number of items in the array."
+    },
+    {
+      "name": "MimeTypeArray.item()",
+      "link": "/en-US/docs/Web/API/MimeTypeArray/item",
+      "description": "Returns the MimeType object with the specified index."
+    },
+    {
+      "name": "MimeTypeArray.namedItem()",
+      "link": "/en-US/docs/Web/API/MimeTypeArray/namedItem",
+      "description": "Returns the MimeType object with the specified name."
+    }
+  ]
+}

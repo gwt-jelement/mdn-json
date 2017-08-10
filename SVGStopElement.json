@@ -1,0 +1,11 @@
+{
+  "name": "SVGStopElement",
+  "description": "The SVGStopElement interface corresponds to the \u003cstop\u003e element.",
+  "members": [
+    {
+      "name": "SVGStopElement.offset",
+      "link": "/en-US/docs/Web/API/SVGStopElement/offset",
+      "description": "An SVGAnimatedNumber corresponding to the offset of the given element."
+    }
+  ]
+}

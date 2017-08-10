@@ -1,0 +1,54 @@
+{
+  "name": "DOMPoint",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMPoint()",
+      "link": "/en-US/docs/Web/API/DOMPoint/DOMPoint",
+      "description": "Creates a new DOMPoint object.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x coordinate for the new DOMPoint."
+        },
+        {
+          "name": "y",
+          "description": "The y coordinate for the new DOMPoint."
+        },
+        {
+          "name": "z",
+          "description": "The z coordinate for the new DOMPoint."
+        },
+        {
+          "name": "w",
+          "description": "The perspective value of the new DOMPoint."
+        }
+      ]
+    },
+    {
+      "name": "DOMPointReadOnly.fromPoint",
+      "link": "/en-US/docs/Web/API/DOMPointReadOnly/fromPoint",
+      "description": "Translates the position/perspective of a DOMPoint to a new position (doesn\u0027t appear to be supported anywhere yet.)"
+    },
+    {
+      "name": "DOMPointReadOnly.x",
+      "link": "/en-US/docs/Web/API/DOMPointReadOnly/x",
+      "description": "The x coordinate of the DOMPoint."
+    },
+    {
+      "name": "DOMPointReadOnly.y",
+      "link": "/en-US/docs/Web/API/DOMPointReadOnly/y",
+      "description": "The y coordinate of the DOMPoint."
+    },
+    {
+      "name": "DOMPointReadOnly.z",
+      "link": "/en-US/docs/Web/API/DOMPointReadOnly/z",
+      "description": "The z coordinate of the DOMPoint."
+    },
+    {
+      "name": "DOMPointReadOnly.w",
+      "link": "/en-US/docs/Web/API/DOMPointReadOnly/w",
+      "description": "The perspective value of the DOMPoint."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AmbientLightSensorReading",
+  "description": "",
+  "members": [
+    {
+      "name": "AmbientLightSensorReading.AmbientLightSensorReading()",
+      "link": "/en-US/docs/Web/API/AmbientLightSensorReading/AmbientLightSensorReading",
+      "description": "Creates a new AmbientLightSensorReading object.",
+      "parameters": [
+        {
+          "name": "options ",
+          "description": "Options are as follows: illuminance: TBD."
+        }
+      ]
+    },
+    {
+      "name": "AmbientLightSensorReading.illuminance",
+      "link": "/en-US/docs/Web/API/AmbientLightSensorReading/illuminance",
+      "description": "Returns the current light level."
+    }
+  ]
+}

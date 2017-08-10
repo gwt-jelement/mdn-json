@@ -1,0 +1,59 @@
+{
+  "name": "CacheStorage",
+  "description": "",
+  "members": [
+    {
+      "name": "CacheStorage.match()",
+      "link": "/en-US/docs/Web/API/CacheStorage/match",
+      "description": "Checks if a given Request is a key in any of the Cache objects that the CacheStorage object tracks and returns a Promise that resolves to that match.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The Request you want to match."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object whose properties control how matching is done in the match operation. The available options are: ignoreSearch: A Boolean that specifies whether the matching process should ignore the query string in the url.  If set to true, the ?value\u003dbar part of http://foo.com/?value\u003dbar would be ignored when performing a match. It defaults to false. ignoreMethod: A Boolean that, when set to true, prevents matching operations from validating the Request http method (normally only GET and HEAD are allowed.) It defaults to false. ignoreVary: A Boolean that, when set to true, tells the matching operation not to perform VARY header matching. In other words, if the URL matches you will get a match regardless of whether the Response object has a VARY header or not. It defaults to false. cacheName: A DOMString that represents a specific cache to search within."
+        }
+      ]
+    },
+    {
+      "name": "CacheStorage.has()",
+      "link": "/en-US/docs/Web/API/CacheStorage/has",
+      "description": "Returns a Promise that resolves to true if a Cache object matching the cacheName exists.",
+      "parameters": [
+        {
+          "name": "cacheName",
+          "description": "A DOMString representing the name of the Cache object you are looking for in the CacheStorage."
+        }
+      ]
+    },
+    {
+      "name": "CacheStorage.open()",
+      "link": "/en-US/docs/Web/API/CacheStorage/open",
+      "description": "Returns a Promise that resolves to the Cache object matching the cacheName (a new cache is created if it doesn\u0027t exist.)",
+      "parameters": [
+        {
+          "name": "cacheName",
+          "description": "The name of the cache you want to open."
+        }
+      ]
+    },
+    {
+      "name": "CacheStorage.delete()",
+      "link": "/en-US/docs/Web/API/CacheStorage/delete",
+      "description": "Finds the Cache object matching the cacheName, and if found, deletes the Cache object and returns a Promise that resolves to true. If no Cache object is found, it returns false.",
+      "parameters": [
+        {
+          "name": "cacheName",
+          "description": "The name of the cache you want to delete."
+        }
+      ]
+    },
+    {
+      "name": "CacheStorage.keys()",
+      "link": "/en-US/docs/Web/API/CacheStorage/keys",
+      "description": "Returns a Promise that will resolve with an array containing strings corresponding to all of the named Cache objects tracked by the CacheStorage. Use this method to iterate over a list of all the Cache objects."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "SpeechGrammarList",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechGrammarList.SpeechGrammarList()",
+      "link": "/en-US/docs/Web/API/SpeechGrammarList/SpeechGrammarList",
+      "description": "Creates a new SpeechGrammarList object."
+    },
+    {
+      "name": "SpeechGrammarList.length",
+      "link": "/en-US/docs/Web/API/SpeechGrammarList/length",
+      "description": "Returns the number of SpeechGrammar objects contained in the SpeechGrammarList."
+    },
+    {
+      "name": "SpeechGrammarList.item()",
+      "link": "/en-US/docs/Web/API/SpeechGrammarList/item",
+      "description": "Standard getter — allows individual SpeechGrammar objects to be retrieved from the SpeechGrammarList using array syntax."
+    },
+    {
+      "name": "SpeechGrammarList.addFromURI()",
+      "link": "/en-US/docs/Web/API/SpeechGrammarList/addFromURI",
+      "description": "Takes a grammar present at a specific URI and adds it to the SpeechGrammarList as a new SpeechGrammar object.",
+      "parameters": [
+        {
+          "name": "src",
+          "description": "A DOMString representing the URI of the grammar to be added."
+        },
+        {
+          "name": "weight Optional",
+          "description": "A float representing the weight of the grammar relative to other grammars present in the SpeechGrammarList. The weight means the importance of this grammar, or the likelihood that it will be recognised by the speech recognition service. The value can be between 0.0 and 1.0; If not specified, the default used is 1.0."
+        }
+      ]
+    },
+    {
+      "name": "SpeechGrammarList.addFromString()",
+      "link": "/en-US/docs/Web/API/SpeechGrammarList/addFromString",
+      "description": "Takes a grammar present in a specific DOMString within the code base (e.g. stored in a variable) and adds it to the SpeechGrammarList as a new SpeechGrammar object.",
+      "parameters": [
+        {
+          "name": "string",
+          "description": "A DOMString representing the grammar to be added."
+        },
+        {
+          "name": "weight Optional",
+          "description": "A float representing the weight of the grammar relative to other grammars present in the SpeechGrammarList. The weight means the importance of this grammar, or the likelihood that it will be recognised by the speech recognition service. The value can be between 0.0 and 1.0; If not specified, the default used is 1.0."
+        }
+      ]
+    }
+  ]
+}

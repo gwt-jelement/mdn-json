@@ -1,0 +1,21 @@
+{
+  "name": "MediaElementAudioSourceNode",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaElementAudioSourceNode.MediaElementAudioSourceNode()",
+      "link": "/en-US/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode",
+      "description": "Creates a new MediaElementAudioSourceNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "An AudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options",
+          "description": "A MediaElementAudioSourceOptions dictionary object defining the properties you want the MediaElementAudioSourceNode to have: mediaElement: An HTMLMediaElement that will be used as the source for the audio."
+        }
+      ]
+    }
+  ]
+}

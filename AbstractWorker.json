@@ -1,0 +1,11 @@
+{
+  "name": "AbstractWorker",
+  "description": "",
+  "members": [
+    {
+      "name": "AbstractWorker.onerror",
+      "link": "/en-US/docs/Web/API/AbstractWorker/onerror",
+      "description": "Is an EventListener that is called whenever an ErrorEvent of type error bubbles through the worker."
+    }
+  ]
+}

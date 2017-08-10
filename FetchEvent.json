@@ -1,0 +1,56 @@
+{
+  "name": "FetchEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "FetchEvent.FetchEvent()",
+      "link": "/en-US/docs/Web/API/FetchEvent/FetchEvent",
+      "description": "Creates a new FetchEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of the Event."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the event object. Options are as follows: request: The Request object that would have triggered the event handler. clientId: The Client that the current service worker is controlling. This property is not yet implemented in Chrome. isReload: A Boolean that signifies whether the page was reloaded or not when the event was dispatched. true if yes, and false if not. Typically, pressing the refresh button in a browser is a reload, while clicking a link and pressing the back button is not. If not present, it defaults to false."
+        }
+      ]
+    },
+    {
+      "name": "FetchEvent.clientId",
+      "link": "/en-US/docs/Web/API/FetchEvent/clientId",
+      "description": "Returns the id of the client that the current service worker is controlling."
+    },
+    {
+      "name": "FetchEvent.isReload",
+      "link": "/en-US/docs/Web/API/FetchEvent/isReload",
+      "description": "Returns a Boolean that is true if the event was dispatched with the user\u0027s intention for the page to reload, and false otherwise. Typically, pressing the refresh button in a browser is a reload, while clicking a link and pressing the back button is not."
+    },
+    {
+      "name": "FetchEvent.navigationPreload",
+      "link": "/en-US/docs/Web/API/FetchEvent/navigationPreload",
+      "description": "Returns a Promise that resolves to the instance of NavigationPreloadManager associated with the current service worker registration."
+    },
+    {
+      "name": "FetchEvent.request",
+      "link": "/en-US/docs/Web/API/FetchEvent/request",
+      "description": "Returns the Request that triggered the event handler."
+    },
+    {
+      "name": "FetchEvent.client",
+      "link": "/en-US/docs/Web/API/FetchEvent/client",
+      "description": "Returns the Client that the current service worker is controlling."
+    },
+    {
+      "name": "FetchEvent.respondWith()",
+      "link": "/en-US/docs/Web/API/FetchEvent/respondWith",
+      "description": "Resolves by returning a Response or a network error  to Fetch."
+    },
+    {
+      "name": "ExtendableEvent.waitUntil()",
+      "link": "/en-US/docs/Web/API/ExtendableEvent/waitUntil",
+      "description": "Extends the lifetime of the event.  It is intended to be called in the install EventHandler for the installing worker and on the active EventHandler for the active worker."
+    }
+  ]
+}

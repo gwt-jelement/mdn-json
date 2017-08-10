@@ -1,0 +1,11 @@
+{
+  "name": "RTCCertificate",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCCertificate.expires",
+      "link": "/en-US/docs/Web/API/RTCCertificate/expires",
+      "description": "Returns the expiration date of the certificate."
+    }
+  ]
+}

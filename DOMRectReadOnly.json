@@ -1,0 +1,80 @@
+{
+  "name": "DOMRectReadOnly",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMRectReadOnly()",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly",
+      "description": "Defined to create a new DOMRectReadOnly object, but note that this constructor cannot be called by 3rd party JavaScript: doing so returns an \"Illegal constructor\" typeError.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x coordinate of the DOMRectReadOnly\u0027s origin."
+        },
+        {
+          "name": "y",
+          "description": "The y coordinate of the DOMRectReadOnly\u0027s origin."
+        },
+        {
+          "name": "width",
+          "description": "The width of the DOMRectReadOnly."
+        },
+        {
+          "name": "height",
+          "description": "The height of the DOMRectReadOnly."
+        }
+      ]
+    },
+    {
+      "name": "DOMRectReadOnly.x",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/x",
+      "description": "The x coordinate of the DOMRect\u0027s origin."
+    },
+    {
+      "name": "DOMRectReadOnly.y",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/y",
+      "description": "The y coordinate of the DOMRect\u0027s origin."
+    },
+    {
+      "name": "DOMRectReadOnly.width",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/width",
+      "description": "The width of the DOMRect."
+    },
+    {
+      "name": "DOMRectReadOnly.height",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/height",
+      "description": "The height of the DOMRect."
+    },
+    {
+      "name": "DOMRectReadOnly.top",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/top",
+      "description": "Returns the top coordinate value of the DOMRect (usually the same as y.)"
+    },
+    {
+      "name": "DOMRectReadOnly.right",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/right",
+      "description": "Returns the right coordinate value of the DOMRect (usually the same as x + width)."
+    },
+    {
+      "name": "DOMRectReadOnly.bottom",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/bottom",
+      "description": "Returns the bottom coordinate value of the DOMRect (usually the same as y + height)."
+    },
+    {
+      "name": "DOMRectReadOnly.left",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/left",
+      "description": "Returns the left coordinate value of the DOMRect (usually the same as x)."
+    },
+    {
+      "name": "DOMRectReadOnly.fromRect()",
+      "link": "/en-US/docs/Web/API/DOMRectReadOnly/fromRect",
+      "description": "Creates a new DOMRect object with a given location and dimensions.",
+      "parameters": [
+        {
+          "name": "rectangle Optional",
+          "description": "An object specifying the location and dimensions of a rectangle. All properties default to 0. The properties are:"
+        }
+      ]
+    }
+  ]
+}

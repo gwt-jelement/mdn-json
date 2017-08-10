@@ -1,0 +1,41 @@
+{
+  "name": "IntersectionObserverEntry",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The IntersectionObserverEntry interface of the Intersection Observer API describes the intersection between the target element and its root container at a specific moment of transition. Instances of IntersectionObserverEntry are delivered to an IntersectionObserver callback in its entries parameter; otherwise, these objects can only be obtained by calling IntersectionObserver.takeRecords().",
+  "members": [
+    {
+      "name": "IntersectionObserverEntry.boundingClientRect",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/boundingClientRect",
+      "description": "Returns the bounds rectangle of the target element as a DOMRectReadOnly. The bounds are computed as described in the documentation for Element.getBoundingClientRect()."
+    },
+    {
+      "name": "IntersectionObserverEntry.intersectionRatio",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/intersectionRatio",
+      "description": "Returns the ratio of the intersectionRect to the boundingClientRect."
+    },
+    {
+      "name": "IntersectionObserverEntry.intersectionRect",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/intersectionRect",
+      "description": "Returns a DOMRectReadOnly representing the target\u0027s visible area."
+    },
+    {
+      "name": "IntersectionObserverEntry.isIntersecting",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/isIntersecting",
+      "description": "A Boolean value which is true if the target element intersects with the intersection observer\u0027s root. If this is true, then, the IntersectionObserverEntry describes a transition into a state of intersection; if it\u0027s false, then you know the transition is from intersecting to not-intersecting."
+    },
+    {
+      "name": "IntersectionObserverEntry.rootBounds",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/rootBounds",
+      "description": "Returns a DOMRectReadOnly for the intersection observer\u0027s root."
+    },
+    {
+      "name": "IntersectionObserverEntry.target",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/target",
+      "description": "The Element whose intersection with the root changed."
+    },
+    {
+      "name": "IntersectionObserverEntry.time",
+      "link": "/en-US/docs/Web/API/IntersectionObserverEntry/time",
+      "description": "A DOMHighResTimeStamp indicating the time at which the intersection was recorded, relative to the IntersectionObserver\u0027s time origin."
+    }
+  ]
+}

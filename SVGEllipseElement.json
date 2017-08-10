@@ -1,0 +1,26 @@
+{
+  "name": "SVGEllipseElement",
+  "description": "The SVGEllipseElement interface provides access to the properties of \u003cellipse\u003e elements.",
+  "members": [
+    {
+      "name": "SVGEllipseElement.cx",
+      "link": "/en-US/docs/Web/API/SVGEllipseElement/cx",
+      "description": "This property returns a SVGAnimatedLength reflecting the cx attribute of the given \u003cellipse\u003e element."
+    },
+    {
+      "name": "SVGEllipseElement.cy",
+      "link": "/en-US/docs/Web/API/SVGEllipseElement/cy",
+      "description": "This property returns a SVGAnimatedLength reflecting the cy attribute of the given \u003cellipse\u003e element."
+    },
+    {
+      "name": "SVGEllipseElement.rx",
+      "link": "/en-US/docs/Web/API/SVGEllipseElement/rx",
+      "description": "This property returns a SVGAnimatedLength reflecting the rx attribute of the given \u003cellipse\u003e element."
+    },
+    {
+      "name": "SVGEllipseElement.ry",
+      "link": "/en-US/docs/Web/API/SVGEllipseElement/ry",
+      "description": "This property returns a SVGAnimatedLength reflecting the ry attribute of the given \u003cellipse\u003e element."
+    }
+  ]
+}

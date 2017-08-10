@@ -1,0 +1,5 @@
+{
+  "name": "HTMLKeygenElement",
+  "description": "Note: This page describes the Keygen Element interface as specified, not as currently implemented by Gecko. See bug 101019 for details and status. The \u003ckeygen\u003e elements expose the HTMLKeygenElement interface, which provides special properties and methods (beyond the regular element object interface they also have available to them by inheritance) for manipulating the layout and presentation of keygen elements.",
+  "members": []
+}

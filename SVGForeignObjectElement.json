@@ -1,0 +1,26 @@
+{
+  "name": "SVGForeignObjectElement",
+  "description": "The SVGForeignObjectElement interface provides access to the properties of \u003cforeignObject\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGForeignObjectElement.x",
+      "link": "/en-US/docs/Web/API/SVGForeignObjectElement/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given \u003cforeignObject\u003e element."
+    },
+    {
+      "name": "SVGForeignObjectElement.y",
+      "link": "/en-US/docs/Web/API/SVGForeignObjectElement/y",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given \u003cforeignObject\u003e element."
+    },
+    {
+      "name": "SVGForeignObjectElement.width",
+      "link": "/en-US/docs/Web/API/SVGForeignObjectElement/width",
+      "description": "An SVGAnimatedLength corresponding to the width attribute of the given \u003cforeignObject\u003e element."
+    },
+    {
+      "name": "SVGForeignObjectElement.height",
+      "link": "/en-US/docs/Web/API/SVGForeignObjectElement/height",
+      "description": "An SVGAnimatedLength corresponding to the height attribute of the given \u003cforeignObject\u003e element."
+    }
+  ]
+}

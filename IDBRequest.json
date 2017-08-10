@@ -1,0 +1,41 @@
+{
+  "name": "IDBRequest",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBRequest.error",
+      "link": "/en-US/docs/Web/API/IDBRequest/error",
+      "description": "Returns an error in the event of an unsuccessful request, indicating what went wrong."
+    },
+    {
+      "name": "IDBRequest.result",
+      "link": "/en-US/docs/Web/API/IDBRequest/result",
+      "description": "Returns the result of the request. If the the request failed and the result is not available, an InvalidStateError exception is thrown."
+    },
+    {
+      "name": "IDBRequest.source",
+      "link": "/en-US/docs/Web/API/IDBRequest/source",
+      "description": "The source of the request, such as an IDBIndex or an IDBObjectStore. If no source exists (such as when calling IDBFactory.open), it returns null."
+    },
+    {
+      "name": "IDBRequest.readyState",
+      "link": "/en-US/docs/Web/API/IDBRequest/readyState",
+      "description": "The state of the request. Every request starts in the pending state. The state changes to done when the request completes successfully or when an error occurs."
+    },
+    {
+      "name": "IDBRequest.transaction",
+      "link": "/en-US/docs/Web/API/IDBRequest/transaction",
+      "description": "The transaction for the request. This property can be null for certain requests, for example those returned from IDBFactory.open unless an upgrade is needed. (You\u0027re just connecting to a database, so there is no transaction to return)."
+    },
+    {
+      "name": "IDBRequest.onerror",
+      "link": "/en-US/docs/Web/API/IDBRequest/onerror",
+      "description": "The event handler for the error event."
+    },
+    {
+      "name": "IDBRequest.onsuccess",
+      "link": "/en-US/docs/Web/API/IDBRequest/onsuccess",
+      "description": "The event handler for the success event."
+    }
+  ]
+}

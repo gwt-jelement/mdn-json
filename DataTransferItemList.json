@@ -1,0 +1,65 @@
+{
+  "name": "DataTransferItemList",
+  "description": "The DataTransferItemList object is a list of DataTransferItem objects representing items being dragged. During a drag operation, each DragEvent has a dataTransfer property and that property is a DataTransferItemList.",
+  "members": [
+    {
+      "name": "DataTransferItemList.length",
+      "link": "/en-US/docs/Web/API/DataTransferItemList/length",
+      "description": "An unsigned long that is the number of drag items in the list."
+    },
+    {
+      "name": "DataTransferItemList.add()",
+      "link": "/en-US/docs/Web/API/DataTransferItemList/add",
+      "description": "Adds an item (either a File object or a string) to the drag item list and returns a DataTransferItem object for the new item.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "A string representing the drag item\u0027s data."
+        },
+        {
+          "name": "type",
+          "description": "A string of the drag item\u0027s type. Some example types are text/html and text/plain."
+        },
+        {
+          "name": "file",
+          "description": "A File object. No type needs to be given in this case."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "A string data parameter was provided, and the list already contains an item whose kind is \"Plain Unicode string\" and whose type is equal to the specified type parameter."
+        }
+      ]
+    },
+    {
+      "name": "DataTransferItemList.remove()",
+      "link": "/en-US/docs/Web/API/DataTransferItemList/remove",
+      "description": "Removes the drag item from the list at the given index.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The zero-based index number of the item in the drag data list to remove. If the index doesn\u0027t correspond to an existing item in the list, the list is left unchanged."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "The drag data store is not in read/write mode, so the item can\u0027t be removed."
+        }
+      ]
+    },
+    {
+      "name": "DataTransferItemList.clear()",
+      "link": "/en-US/docs/Web/API/DataTransferItemList/clear",
+      "description": "Removes all of the drag items from the list."
+    },
+    {
+      "name": "DataTransferItemList.DataTransferItem()",
+      "link": "/en-US/docs/Web/API/DataTransferItemList/DataTransferItem",
+      "description": "Getter that returns a DataTransferItem at the given index.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The zero-based index of the item in the drag data list to return."
+        }
+      ]
+    }
+  ]
+}

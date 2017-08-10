@@ -1,0 +1,5 @@
+{
+  "name": "FileException",
+  "description": "Non-standard This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future. In the File System API, a FileException object represents error conditions that you might encounter while accessing the file system using the synchronous API. It extends the FileException interface described in File Writer and adds several new error codes.",
+  "members": []
+}

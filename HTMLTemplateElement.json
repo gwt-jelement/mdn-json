@@ -1,0 +1,11 @@
+{
+  "name": "HTMLTemplateElement",
+  "description": "The HTMLTemplateElement interface enables access to the contents of an HTML \u003ctemplate\u003e element.",
+  "members": [
+    {
+      "name": "HTMLTemplateElement.content",
+      "link": "/en-US/docs/Web/API/HTMLTemplateElement/content",
+      "description": "DocumentFragment: Returns the \u003ctemplate\u003e element\u0027s template contents."
+    }
+  ]
+}

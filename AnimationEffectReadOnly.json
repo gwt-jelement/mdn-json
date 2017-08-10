@@ -1,0 +1,46 @@
+{
+  "name": "AnimationEffectReadOnly",
+  "description": "",
+  "members": [
+    {
+      "name": "AnimationEffectReadOnly.timing",
+      "link": "/en-US/docs/Web/API/AnimationEffectReadOnly/timing",
+      "description": "The AnimationEffectTimingReadOnly object associated with the animation containing all the animation\u0027s timing values."
+    },
+    {
+      "name": "AnimationEffectReadOnly.getComputedTiming()",
+      "link": "/en-US/docs/Web/API/AnimationEffectReadOnly/getComputedTiming",
+      "description": "Returns the calculated timing properties for this Animation Effect.",
+      "parameters": [
+        {
+          "name": "duration",
+          "description": "Returns the calculated value of the iteration duration. If AnimationEffectTimingReadOnly.duration is the string auto, this attribute will return 0."
+        },
+        {
+          "name": "fill",
+          "description": "The auto value is replaced with the appropriate AnimationEffectTimingReadOnly.fill value."
+        },
+        {
+          "name": "endTime",
+          "description": "The end time of the animation in milliseconds from the animation\u0027s start (if the KeyframeEffect is associated with an Animation). (Also includes AnimationEffectTimingReadOnly.endDelay in that calculation.)"
+        },
+        {
+          "name": "activeDuration",
+          "description": "The length of time in milliseconds that the animation\u0027s effects will run. This is equal to the iteration duration multiplied by the iteration count."
+        },
+        {
+          "name": "localTime",
+          "description": "The current time of the animation in milliseconds. If the KeyframeEffect is not associated with an Animation, its value is null."
+        },
+        {
+          "name": "progress",
+          "description": "Indicates how far along the animation is through its current iteration with values between 0 and 1. Returns null if the animation is not running or its KeyframeEffect isn\u0027t associated with an Animation."
+        },
+        {
+          "name": "currentIteration",
+          "description": "The number of times this animation has looped, starting from 0. Returns null if the animation is not running or its KeyframeEffect isn\u0027t associated with an Animation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "SVGMaskElement",
+  "description": "The SVGMaskElement interface provides access to the properties of \u003cmask\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGMaskElement.maskUnits",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/maskUnits",
+      "description": "An SVGAnimatedEnumeration corresponding to the maskUnits attribute of the given \u003cmask\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGMaskElement.maskContentUnits",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/maskContentUnits",
+      "description": "An SVGAnimatedEnumeration corresponding to the maskContentUnits attribute of the given \u003cmask\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGMaskElement.x",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given \u003cmask\u003e element."
+    },
+    {
+      "name": "SVGMaskElement.y",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/y",
+      "description": "An SVGAnimatedLength corresponding to the y attribute of the given \u003cmask\u003e element."
+    },
+    {
+      "name": "SVGMaskElement.width",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/width",
+      "description": "An SVGAnimatedLength corresponding to the width attribute of the given \u003cmask\u003e element."
+    },
+    {
+      "name": "SVGMaskElement.height",
+      "link": "/en-US/docs/Web/API/SVGMaskElement/height",
+      "description": "An SVGAnimatedLength corresponding to the height attribute of the given \u003cmask\u003e element."
+    }
+  ]
+}

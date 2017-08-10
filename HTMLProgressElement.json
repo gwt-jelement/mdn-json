@@ -1,0 +1,26 @@
+{
+  "name": "HTMLProgressElement",
+  "description": "The HTMLProgressElement interface provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of \u003cprogress\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLProgressElement.max",
+      "link": "/en-US/docs/Web/API/HTMLProgressElement/max",
+      "description": "Is a double value reflecting the content attribute of the same name, limited to numbers greater than zero. Its default value is 1.0."
+    },
+    {
+      "name": "HTMLProgressElement.position",
+      "link": "/en-US/docs/Web/API/HTMLProgressElement/position",
+      "description": "Returns a double value returning the result of dividing the current value (value) by the maximum value (max); if the progress bar is an indeterminate progress bar, it returns -1."
+    },
+    {
+      "name": "HTMLProgressElement.value",
+      "link": "/en-US/docs/Web/API/HTMLProgressElement/value",
+      "description": "Is a double value that reflects the current value; if the progress bar is an indeterminate progress bar, it returns 0."
+    },
+    {
+      "name": "HTMLProgressElement.labels",
+      "link": "/en-US/docs/Web/API/HTMLProgressElement/labels",
+      "description": "Returns NodeList containing the list of \u003clabel\u003e elements that are labels for this element."
+    }
+  ]
+}

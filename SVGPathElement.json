@@ -1,0 +1,127 @@
+{
+  "name": "SVGPathElement",
+  "description": "The SVGPathElement interface corresponds to the \u003cpath\u003e element.",
+  "members": [
+    {
+      "name": "SVGPathElement.pathLength",
+      "link": "/en-US/docs/Web/API/SVGPathElement/pathLength",
+      "description": "An SVGAnimatedNumber corresponding to the pathLength attribute of the given \u003cpath\u003e element. Note: In SVG 2 this property was moved to the SVGGeometryElement interface, from which this interface inherits it."
+    },
+    {
+      "name": "SVGPathElement.getTotalLength()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/getTotalLength",
+      "description": "Returns a float representing the computed value for the total length of the path using the browser\u0027s distance-along-a-path algorithm, as a distance in the current user coordinate system. Note: In SVG 2 this method was moved to the SVGGeometryElement interface, from which this interface inherits it."
+    },
+    {
+      "name": "SVGPathElement.getPointAtLength()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/getPointAtLength",
+      "description": "Returns an SVGPoint representing the x and y coordinates in user space utilizing the browser\u0027s distance-along-a-path algorithm. Note: In SVG 2 this method was moved to the SVGGeometryElement interface, from which this interface inherits it.",
+      "parameters": [
+        {
+          "name": "distance",
+          "description": "A float referring to the distance along the path."
+        }
+      ]
+    },
+    {
+      "name": "SVGPathElement.getPathSegAtLength()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/getPathSegAtLength",
+      "description": "Returns an unsigned long representing the index within the pathSegList utilizing the user agent\u0027s distance-along-a-path algorithm."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegClosePath()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegClosePath",
+      "description": "Returns a stand-alone, parentless SVGPathSegClosePath object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegMovetoAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegMovetoAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegMovetoAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegMovetoRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegMovetoRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegMovetoRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoCubicAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoCubicAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoCubicAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoCubicRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoCubicRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoCubicRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoQuadraticAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoQuadraticAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoQuadraticAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoQuadraticRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoQuadraticRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoQuadraticRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegArcAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegArcAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegArcAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegArcRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegArcRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegArcRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoHorizontalAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoHorizontalAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoHorizontalAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoHorizontalRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoHorizontalRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoHorizontalRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoVerticalAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoVerticalAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoVerticalAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegLinetoVerticalRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegLinetoVerticalRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegLinetoVerticalRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoCubicSmoothAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoCubicSmoothAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoCubicSmoothAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoCubicSmoothRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoCubicSmoothRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoCubicSmoothRel object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoQuadraticSmoothAbs()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoQuadraticSmoothAbs",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoQuadraticSmoothAbs object."
+    },
+    {
+      "name": "SVGPathElement.createSVGPathSegCurvetoQuadraticSmoothRel()",
+      "link": "/en-US/docs/Web/API/SVGPathElement/createSVGPathSegCurvetoQuadraticSmoothRel",
+      "description": "Returns a stand-alone, parentless SVGPathSegCurvetoQuadraticSmoothRel object."
+    }
+  ]
+}

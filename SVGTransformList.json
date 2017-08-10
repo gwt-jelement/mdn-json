@@ -1,0 +1,5 @@
+{
+  "name": "SVGTransformList",
+  "description": "SVG transform list interface The SVGTransformList defines a list of SVGTransform objects.",
+  "members": []
+}

@@ -1,0 +1,556 @@
+{
+  "name": "GlobalEventHandlers",
+  "description": "The GlobalEventHandlers mixin describes the event handlers common to several interfaces like HTMLElement, Document, or Window. Each of these interfaces can, of course, add more event handlers in addition to the ones listed below.",
+  "members": [
+    {
+      "name": "GlobalEventHandlers.onabort",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onabort",
+      "description": "Is an EventHandler representing the code to be called when the abort event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationcancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationcancel",
+      "description": "An EventHandler called when an animationcancel event is sent, indicating that a running CSS animation has been canceled."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationend",
+      "description": "An EventHandler called when an animationend event is sent, indicating that a CSS animation has stopped playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationiteration",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationiteration",
+      "description": "An EventHandler called when an animationiteration event has been sent, indicating that a CSS animation has begun playing a new iteration of the animation sequence."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationstart",
+      "description": "An EventHandler called when an animationstart event is sent, indicating that a CSS animation has started playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onauxclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onauxclick",
+      "description": "An EventHandler called when an auxclick event is sent, indicating that a non-primary button has been pressed on an input device (e.g. a middle mouse button)."
+    },
+    {
+      "name": "GlobalEventHandlers.onblur",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onblur",
+      "description": "Is an EventHandler representing the code to be called when the blur event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onerror",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onerror",
+      "description": "Is an OnErrorEventHandler representing the code to be called when the error event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onfocus",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onfocus",
+      "description": "Is an EventHandler representing the code to be called when the focus event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncancel",
+      "description": "Is an EventHandler representing the code to be called when the cancel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncanplay",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncanplay",
+      "description": "Is an EventHandler representing the code to be called when the canplay event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncanplaythrough",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncanplaythrough",
+      "description": "Is an EventHandler representing the code to be called when the canplaythrough event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onchange",
+      "description": "Is an EventHandler representing the code to be called when the change event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclick",
+      "description": "Is an EventHandler representing the code to be called when the click event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onclose",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclose",
+      "description": "Is an EventHandler representing the code to be called when the close event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncontextmenu",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncontextmenu",
+      "description": "Is an EventHandler representing the code to be called when the contextmenu event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncuechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncuechange",
+      "description": "Is an EventHandler representing the code to be called when the cuechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ondblclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondblclick",
+      "description": "Is an EventHandler representing the code to be called when the dblclick event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ondrag",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrag",
+      "description": "Is an EventHandler representing the code to be called when the drag event is raised.",
+      "parameters": [
+        {
+          "name": "dragHandler",
+          "description": "The drag event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragend",
+      "description": "Is an EventHandler representing the code to be called when the dragend event is raised.",
+      "parameters": [
+        {
+          "name": "dragendHandler",
+          "description": "The dragend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragenter",
+      "description": "Is an EventHandler representing the code to be called when the dragenter event is raised.",
+      "parameters": [
+        {
+          "name": "dragenterHandler",
+          "description": "The dragenter event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragexit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragexit",
+      "description": "Is an EventHandler representing the code to be called when the dragexit event is raised.",
+      "parameters": [
+        {
+          "name": "dragexitHandler",
+          "description": "The dragexit event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragleave",
+      "description": "Is an EventHandler representing the code to be called when the dragleave event is raised.",
+      "parameters": [
+        {
+          "name": "dragleaveHandler",
+          "description": "The dragleave event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragover",
+      "description": "Is an EventHandler representing the code to be called when the dragover event is raised.",
+      "parameters": [
+        {
+          "name": "dragoverHandler",
+          "description": "The dragover event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragstart",
+      "description": "Is an EventHandler representing the code to be called when the dragstart event is raised.",
+      "parameters": [
+        {
+          "name": "dragstartHandler",
+          "description": "The dragstart event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondrop",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrop",
+      "description": "Is an EventHandler representing the code to be called when the drop event is raised.",
+      "parameters": [
+        {
+          "name": "dropHandler",
+          "description": "The drop event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondurationchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondurationchange",
+      "description": "Is an EventHandler representing the code to be called when the durationchange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onemptied",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onemptied",
+      "description": "Is an EventHandler representing the code to be called when the emptied event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onended",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onended",
+      "description": "Is an EventHandler representing the code to be called when the ended event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ongotpointercapture",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ongotpointercapture",
+      "description": "Is an EventHandler representing the code to be called when the gotpointercapture event type is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oninput",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oninput",
+      "description": "Is an EventHandler representing the code to be called when the input event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oninvalid",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oninvalid",
+      "description": "Is an EventHandler representing the code to be called when the invalid event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeydown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeydown",
+      "description": "Is an EventHandler representing the code to be called when the keydown event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeypress",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeypress",
+      "description": "Is an EventHandler representing the code to be called when the keypress event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeyup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeyup",
+      "description": "Is an EventHandler representing the code to be called when the keyup event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onload",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onload",
+      "description": "Is an EventHandler representing the code to be called when the load event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadeddata",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadeddata",
+      "description": "Is an EventHandler representing the code to be called when the loadeddata event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadedmetadata",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadedmetadata",
+      "description": "Is an EventHandler representing the code to be called when the loadedmetadata event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadend",
+      "description": "Is an EventHandler representing the code to be called when the loadend event is raised (when progress has stopped on the loading of a resource.)"
+    },
+    {
+      "name": "GlobalEventHandlers.onloadstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadstart",
+      "description": "Is an EventHandler representing the code to be called when the loadstart event is raised (when progress has begun on the loading of a resource.)"
+    },
+    {
+      "name": "GlobalEventHandlers.onlostpointercapture",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onlostpointercapture",
+      "description": "Is an EventHandler representing the code to be called when the lostpointercapture event type is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousedown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousedown",
+      "description": "Is an EventHandler representing the code to be called when the mousedown event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseenter",
+      "description": "Is an EventHandler representing the code to be called when the mouseenter event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseleave",
+      "description": "Is an EventHandler representing the code to be called when the mouseleave event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousemove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousemove",
+      "description": "Is an EventHandler representing the code to be called when the mousemove event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseout",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseout",
+      "description": "Is an EventHandler representing the code to be called when the mouseout event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseover",
+      "description": "Is an EventHandler representing the code to be called when the mouseover event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseup",
+      "description": "Is an EventHandler representing the code to be called when the mouseup event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousewheel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousewheel",
+      "description": "Is an EventHandler representing the code to be called when the mousewheel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onwheel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onwheel",
+      "description": "Is an EventHandler representing the code to be called when the wheel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpause",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpause",
+      "description": "Is an EventHandler representing the code to be called when the pause event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onplay",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onplay",
+      "description": "Is an EventHandler representing the code to be called when the play event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onplaying",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onplaying",
+      "description": "Is an EventHandler representing the code to be called when the playing event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerdown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerdown",
+      "description": "Is an EventHandler representing the code to be called when the pointerdown event is raised.",
+      "parameters": [
+        {
+          "name": "downHandler",
+          "description": "The pointerdown event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointermove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointermove",
+      "description": "Is an EventHandler representing the code to be called when the pointermove event is raised.",
+      "parameters": [
+        {
+          "name": "moveHandler",
+          "description": "The pointermove event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerup",
+      "description": "Is an EventHandler representing the code to be called when the pointerup event is raised.",
+      "parameters": [
+        {
+          "name": "upHandler",
+          "description": "The pointerup event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointercancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointercancel",
+      "description": "Is an EventHandler representing the code to be called when the pointercancel event is raised.",
+      "parameters": [
+        {
+          "name": "cancelHandler",
+          "description": "The pointercancel event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerover",
+      "description": "Is an EventHandler representing the code to be called when the pointerover event is raised.",
+      "parameters": [
+        {
+          "name": "overHandler",
+          "description": "The pointerover event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerout",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerout",
+      "description": "Is an EventHandler representing the code to be called when the pointerout event is raised.",
+      "parameters": [
+        {
+          "name": "outHandler",
+          "description": "The pointerout event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerenter",
+      "description": "Is an EventHandler representing the code to be called when the pointerevent event is raised.",
+      "parameters": [
+        {
+          "name": "enterHandler",
+          "description": "The pointerenter event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerleave",
+      "description": "Is an EventHandler representing the code to be called when the pointerleave event is raised.",
+      "parameters": [
+        {
+          "name": "leaveHandler",
+          "description": "The EventListener which will be invoked to handle pointerleave events sent to the target."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerlockchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerlockchange",
+      "description": "Is an EventHandler representing the code to be called when the pointerlockchange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerlockerror",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerlockerror",
+      "description": "Is an EventHandler representing the code to be called when the pointerlockerror event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onprogress",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onprogress",
+      "description": "Is an EventHandler representing the code to be called when the progress event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onratechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onratechange",
+      "description": "Is an EventHandler representing the code to be called when the ratechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onreset",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onreset",
+      "description": "Is an EventHandler representing the code to be called when the reset event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onscroll",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onscroll",
+      "description": "Is an EventHandler representing the code to be called when the scroll event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onseeked",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onseeked",
+      "description": "Is an EventHandler representing the code to be called when the seeked event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onseeking",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onseeking",
+      "description": "Is an EventHandler representing the code to be called when the seeking event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onselect",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselect",
+      "description": "Is an EventHandler representing the code to be called when the select event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onselectstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselectstart",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised, i.e. when the user starts to make a new text selection on a web page."
+    },
+    {
+      "name": "GlobalEventHandlers.onselectionchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselectionchange",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised, i.e. when the text selected on a web page changes."
+    },
+    {
+      "name": "GlobalEventHandlers.onshow",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onshow",
+      "description": "Is an EventHandler representing the code to be called when the show event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsort",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsort",
+      "description": "Is an EventHandler representing the code to be called when the sort event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onstalled",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onstalled",
+      "description": "Is an EventHandler representing the code to be called when the stalled event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsubmit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsubmit",
+      "description": "Is an EventHandler representing the code to be called when the submit event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsuspend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsuspend",
+      "description": "Is an EventHandler representing the code to be called when the suspend event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ontimeupdate",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontimeupdate",
+      "description": "Is an EventHandler representing the code to be called when the timeupdate event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onvolumechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onvolumechange",
+      "description": "Is an EventHandler representing the code to be called when the volumechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchcancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchcancel",
+      "description": "Is an EventHandler representing the code to be called when the touchcancel event is raised.",
+      "parameters": [
+        {
+          "name": "cancelHandler",
+          "description": "The touchcancel event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchend",
+      "description": "Is an EventHandler representing the code to be called when the touchend event is raised.",
+      "parameters": [
+        {
+          "name": "endHandler",
+          "description": "The touchend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchmove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchmove",
+      "description": "Is an EventHandler representing the code to be called when the touchmove event is raised.",
+      "parameters": [
+        {
+          "name": "moveHandler",
+          "description": "The touchmove event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchstart",
+      "description": "Is an EventHandler representing the code to be called when the touchstart event is raised.",
+      "parameters": [
+        {
+          "name": "startHandler",
+          "description": "The touchstart event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontransitioncancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontransitioncancel",
+      "description": "An EventHandler called when a transitioncancel event is sent, indicating that a CSS transition has been cancelled."
+    },
+    {
+      "name": "GlobalEventHandlers.ontransitionend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontransitionend",
+      "description": "An EventHandler called when a transitionend event is sent, indicating that a CSS transition has finished playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onwaiting",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onwaiting",
+      "description": "Is an EventHandler representing the code to be called when the waiting event is raised."
+    }
+  ]
+}

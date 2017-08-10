@@ -1,0 +1,330 @@
+{
+  "name": "Navigator",
+  "description": "",
+  "members": [
+    {
+      "name": "Navigator.activeVRDisplays",
+      "link": "/en-US/docs/Web/API/Navigator/activeVRDisplays",
+      "description": "Returns an array containing every VRDisplay object that is currently presenting (VRDisplay.ispresenting is true)."
+    },
+    {
+      "name": "NavigatorID.appCodeName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appCodeName",
+      "description": "Returns the internal \"code\" name of the current browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.appName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appName",
+      "description": "Returns a DOMString with the official name of the browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.appVersion",
+      "link": "/en-US/docs/Web/API/NavigatorID/appVersion",
+      "description": "Returns the version of the browser as a DOMString. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "Navigator.battery",
+      "link": "/en-US/docs/Web/API/Navigator/battery",
+      "description": "Returns a BatteryManager object you can use to get information about the battery charging status."
+    },
+    {
+      "name": "Navigator.connection",
+      "link": "/en-US/docs/Web/API/Navigator/connection",
+      "description": "Provides a NetworkInformation object containing information about the network connection of a device."
+    },
+    {
+      "name": "Navigator.cookieEnabled",
+      "link": "/en-US/docs/Web/API/Navigator/cookieEnabled",
+      "description": "Returns false if setting a cookie will be ignored and true otherwise."
+    },
+    {
+      "name": "Navigator.geolocation",
+      "link": "/en-US/docs/Web/API/Navigator/geolocation",
+      "description": "Returns a Geolocation object allowing accessing the location of the device."
+    },
+    {
+      "name": "NavigatorConcurrentHardware.hardwareConcurrency",
+      "link": "/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency",
+      "description": "Returns the number of logical processor cores available."
+    },
+    {
+      "name": "NavigatorPlugins.javaEnabled",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/javaEnabled",
+      "description": "Returns a Boolean flag indicating whether the host browser is Java-enabled or not."
+    },
+    {
+      "name": "NavigatorLanguage.language",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/language",
+      "description": "Returns a DOMString representing the preferred language of the user, usually the language of the browser UI. The null value is returned when this is unknown."
+    },
+    {
+      "name": "NavigatorLanguage.languages",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/languages",
+      "description": "Returns an array of DOMString representing the languages known to the user, by order of preference."
+    },
+    {
+      "name": "NavigatorPlugins.mimeTypes",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/mimeTypes",
+      "description": "Returns an MimeTypeArray listing the MIME types supported by the browser."
+    },
+    {
+      "name": "NavigatorOnLine.onLine",
+      "link": "/en-US/docs/Web/API/NavigatorOnLine/onLine",
+      "description": "Returns a Boolean indicating whether the browser is working online."
+    },
+    {
+      "name": "Navigator.oscpu",
+      "link": "/en-US/docs/Web/API/Navigator/oscpu",
+      "description": "Returns a string that represents the current operating system."
+    },
+    {
+      "name": "Navigator.permissions",
+      "link": "/en-US/docs/Web/API/Navigator/permissions",
+      "description": "Returns a Permissions object that can be used to query and update permission status of APIs covered by the Permissions API."
+    },
+    {
+      "name": "NavigatorID.platform",
+      "link": "/en-US/docs/Web/API/NavigatorID/platform",
+      "description": "Returns a string representing the platform of the browser. Do not rely on this function to return a significant value."
+    },
+    {
+      "name": "NavigatorPlugins.plugins",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/plugins",
+      "description": "Returns a PluginArray listing the plugins installed in the browser."
+    },
+    {
+      "name": "NavigatorID.product",
+      "link": "/en-US/docs/Web/API/NavigatorID/product",
+      "description": "Always returns \u0027Gecko\u0027, on any browser. This property is kept only for compatibility purpose."
+    },
+    {
+      "name": "Navigator.serviceWorker",
+      "link": "/en-US/docs/Web/API/Navigator/serviceWorker",
+      "description": "Returns a ServiceWorkerContainer object, which provides access to registration, removal, upgrade, and communication with the ServiceWorker objects for the associated document."
+    },
+    {
+      "name": "Navigator.storage",
+      "link": "/en-US/docs/Web/API/Navigator/storage",
+      "description": "Returns the singleton StorageManager object used for managing persistance permissions and estimating available storage on a site-by-site/app-by-app basis."
+    },
+    {
+      "name": "NavigatorID.userAgent",
+      "link": "/en-US/docs/Web/API/NavigatorID/userAgent",
+      "description": "Returns the user agent string for the current browser."
+    },
+    {
+      "name": "Navigator.cookieEnabled",
+      "link": "/en-US/docs/Web/API/Navigator/cookieEnabled",
+      "description": "Returns a boolean indicating whether cookies are enabled in the browser or not."
+    },
+    {
+      "name": "Navigator.credentials",
+      "link": "/en-US/docs/Web/API/Navigator/credentials",
+      "description": "Returns the CredentialsContainer interface which exposes methods to request credentials and notify the user agent when interesting events occur such as successful sign in or sign out. "
+    },
+    {
+      "name": "Navigator.doNotTrack",
+      "link": "/en-US/docs/Web/API/Navigator/doNotTrack",
+      "description": "Reports the value of the user\u0027s do-not-track preference. When this value is \"yes\", your web site or application should not track the user."
+    },
+    {
+      "name": "Navigator.id",
+      "link": "/en-US/docs/Web/API/Navigator/id",
+      "description": "Returns the id object which you can use to add support for BrowserID to your web site."
+    },
+    {
+      "name": "Navigator.mediaDevices",
+      "link": "/en-US/docs/Web/API/Navigator/mediaDevices",
+      "description": "Returns a reference to a MediaDevices object which can then be used to get information about available media devices (MediaDevices.enumerateDevices()), find out what constrainable properties are supported for media on the user\u0027s computer and user agent (MediaDevices.getSupportedConstraints()), and to request access to media using MediaDevices.getUserMedia()."
+    },
+    {
+      "name": "Navigator.mozNotification",
+      "link": "/en-US/docs/Web/API/Navigator/mozNotification",
+      "description": "Returns a notification object you can use to deliver notifications to the user from your web application.",
+      "parameters": [
+        {
+          "name": "title",
+          "description": "The notification title."
+        },
+        {
+          "name": "description",
+          "description": "The text to display in the notification."
+        },
+        {
+          "name": "iconURL Optional",
+          "description": "A URL identifying the image to display in the notification."
+        }
+      ]
+    },
+    {
+      "name": "Navigator.mozSocial",
+      "link": "/en-US/docs/Web/API/Navigator/mozSocial",
+      "description": "The Object, returned by the navigator.mozSocial property, is available within the social media provider\u0027s panel to provide functionality it may need."
+    },
+    {
+      "name": "Navigator.presentation",
+      "link": "/en-US/docs/Web/API/Navigator/presentation",
+      "description": "Returns a reference to the Presentation API."
+    },
+    {
+      "name": "Navigator.productSub",
+      "link": "/en-US/docs/Web/API/Navigator/productSub",
+      "description": "Returns the build number of the current browser (e.g., \"20060909\")."
+    },
+    {
+      "name": "Navigator.securitypolicy",
+      "link": "/en-US/docs/Web/API/Navigator/securitypolicy",
+      "description": "Returns an empty string. In Netscape 4.7x, returns \"US \u0026 CA domestic policy\" or \"Export policy\"."
+    },
+    {
+      "name": "Navigator.standalone",
+      "link": "/en-US/docs/Web/API/Navigator/standalone",
+      "description": "Returns a boolean indicating whether the browser is running in standalone mode. Available on Apple\u0027s iOS Safari only."
+    },
+    {
+      "name": "Navigator.storageQuota",
+      "link": "/en-US/docs/Web/API/Navigator/storageQuota",
+      "description": "Returns a StorageQuota interface which provides means to query and request storage usage and quota information."
+    },
+    {
+      "name": "Navigator.vendor",
+      "link": "/en-US/docs/Web/API/Navigator/vendor",
+      "description": "Returns the vendor name of the current browser (e.g., \"Netscape6\")."
+    },
+    {
+      "name": "Navigator.vendorSub",
+      "link": "/en-US/docs/Web/API/Navigator/vendorSub",
+      "description": "Returns the vendor version number (e.g. \"6.1\")."
+    },
+    {
+      "name": "Navigator.webkitPointer",
+      "link": "/en-US/docs/Web/API/Navigator/webkitPointer",
+      "description": "Returns a PointerLock object for the Mouse Lock API."
+    },
+    {
+      "name": "Navigator.getVRDisplays()",
+      "link": "/en-US/docs/Web/API/Navigator/getVRDisplays",
+      "description": "Returns a promise that resolves to an array of VRDisplay objects representing any available VR devices connected to the computer."
+    },
+    {
+      "name": "Navigator.getUserMedia()",
+      "link": "/en-US/docs/Web/API/Navigator/getUserMedia",
+      "description": "After having prompted the user for permission, returns the audio or video stream associated to a camera or microphone on the local computer.",
+      "parameters": [
+        {
+          "name": "constraints",
+          "description": "A MediaStreamConstraints object specifying the types of media to request, along with any requirements for each type. For details, see the constraints section under the modern MediaDevices.getUserMedia() method, as well as the article Capabilities, constraints, and settings."
+        },
+        {
+          "name": "successCallback",
+          "description": "A function which is invoked when the request for media access is approved. The function is called with one parameter: the MediaStream object that contains the media stream. Your callback can then assign the stream to the desired object (such as an \u003caudio\u003e or \u003cvideo\u003e element), as shown in the following example: function(stream) {\n   var video \u003d document.querySelector(\u0027video\u0027);\n   video.srcObject \u003d stream;\n   video.onloadedmetadata \u003d function(e) {\n      // Do something with the video here.\n   };\n}"
+        },
+        {
+          "name": "errorCallback",
+          "description": "When the call fails, the function specified in the errorCallback is invokedwith a MediaStreamError object as its sole argument; this object is is modeled on DOMException. See {anch(\"Errors\")}} below for a list of the errors which can occur."
+        }
+      ]
+    },
+    {
+      "name": "Navigator.registerContentHandler()",
+      "link": "/en-US/docs/Web/API/Navigator/registerContentHandler",
+      "description": "Allows web sites to register themselves as a possible handler for a given MIME type."
+    },
+    {
+      "name": "Navigator.registerProtocolHandler()",
+      "link": "/en-US/docs/Web/API/Navigator/registerProtocolHandler",
+      "description": "Allows web sites to register themselves as a possible handler for a given protocol.",
+      "parameters": [
+        {
+          "name": "protocol",
+          "description": "The protocol the site wishes to handle, specified as a string. For example, you can register to handle SMS text message links by registering to handle the \"sms\" scheme."
+        },
+        {
+          "name": "url",
+          "description": "The URL of the handler, as a string. This string should include \"%s\" as a placeholder which will be replaced with the escaped URL of the document to be handled. This URL might be a true URL, or it could be a phone number, email address, or so forth. The handler\u0027s URL must use one of \"http\" or \"https\" as its scheme."
+        },
+        {
+          "name": "title",
+          "description": "A user-readable title string for the protocol handler. This will be displayed to the user in interface objects as needed."
+        },
+        {
+          "name": "SecurityError",
+          "description": "The user agent blocked registration of the protocol handler. This might happen if an invalid scheme is specified, such as \"http\", which cannot be registered for obvious security reasons."
+        },
+        {
+          "name": "SyntaxError",
+          "description": "The \"%s\" string is missing from the specified protocol handler URL."
+        }
+      ]
+    },
+    {
+      "name": "Navigator.requestMediaKeySystemAccess()",
+      "link": "/en-US/docs/Web/API/Navigator/requestMediaKeySystemAccess",
+      "description": "Returns a Promise for a MediaKeySystemAccess object.",
+      "parameters": [
+        {
+          "name": "keySystem",
+          "description": "A DOMString identifying the key system. For example com.example.somesystem or org.w3.clearkey."
+        },
+        {
+          "name": "supportedConfigurations",
+          "description": "A non-empty Array of MediaKeySystemConfiguration objects. The first element with a satisfiable configuration will be used."
+        },
+        {
+          "name": "mediaKeySystemAccess",
+          "description": "A MediaKeySystemAccess object representing the media key system configuration described by keySystem and supportedConfigurations"
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "Either the specified keySystem isn\u0027t supported by the platform or the browser, or none of the configurations specified by supportedConfigurations can be satisfied (if, for example, none of the codecs specified in contentType are available)."
+        },
+        {
+          "name": "TypeError",
+          "description": "Either keySystem is an empty string or the supportedConfigurations array is empty."
+        }
+      ]
+    },
+    {
+      "name": "Navigator.sendBeacon()",
+      "link": "/en-US/docs/Web/API/Navigator/sendBeacon",
+      "description": "Used to asynchronously transfer a small amount of data using HTTP from the User Agent to a web server.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The url parameter indicates the resolved URL to which the data is to be transmitted."
+        },
+        {
+          "name": "data",
+          "description": "The data parameter is a ArrayBufferView, Blob, DOMString, or FormData object containing the data to be transmitted."
+        }
+      ]
+    },
+    {
+      "name": "NavigatorID.taintEnabled()",
+      "link": "/en-US/docs/Web/API/NavigatorID/taintEnabled",
+      "description": "Returns false. JavaScript taint/untaint functions removed in JavaScript 1.2."
+    },
+    {
+      "name": "Navigator.vibrate()",
+      "link": "/en-US/docs/Web/API/Navigator/vibrate",
+      "description": "Causes vibration on devices with support for it. Does nothing if vibration support isn\u0027t available.",
+      "parameters": [
+        {
+          "name": "pattern",
+          "description": "Provides a pattern of vibration and pause intervals. Each value indicates a number of milliseconds to vibrate or pause, in alternation. You may provide either a single value (to vibrate once for that many milliseconds) or an array of values to alternately vibrate, pause, then vibrate again. See Vibration API for details."
+        }
+      ]
+    },
+    {
+      "name": "Navigator.mozPay()",
+      "link": "/en-US/docs/Web/API/Navigator/mozPay",
+      "description": "Allows in-app payment.",
+      "parameters": [
+        {
+          "name": "jwts",
+          "description": "An array of JSON Web Tokens."
+        }
+      ]
+    }
+  ]
+}

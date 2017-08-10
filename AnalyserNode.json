@@ -1,0 +1,90 @@
+{
+  "name": "AnalyserNode",
+  "description": "",
+  "members": [
+    {
+      "name": "AnalyserNode()",
+      "link": "/en-US/docs/Web/API/AnalyserNode/AnalyserNode",
+      "description": "Creates a new instance of an AnalyserNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: fftSize: The desired initial size of the FFT for frequency-domain analysis. The default is 2048. maxDecibels: The desired initial maximum power in dB for FFT analysis. The default is -30. minDecibels: The desired initial minimum power in dB for FFT analysis. The default is -100. smoothingTimeConstant: The desired initial smoothing constant for the FFT analysis. The default is 0.8"
+        }
+      ]
+    },
+    {
+      "name": "AnalyserNode.fftSize",
+      "link": "/en-US/docs/Web/API/AnalyserNode/fftSize",
+      "description": "Is an unsigned long value representing the size of the FFT (Fast Fourier Transform) to be used to determine the frequency domain."
+    },
+    {
+      "name": "AnalyserNode.frequencyBinCount",
+      "link": "/en-US/docs/Web/API/AnalyserNode/frequencyBinCount",
+      "description": "Is an unsigned long value half that of the FFT size. This generally equates to the number of data values you will have to play with for the visualization."
+    },
+    {
+      "name": "AnalyserNode.minDecibels",
+      "link": "/en-US/docs/Web/API/AnalyserNode/minDecibels",
+      "description": "Is a double value representing the minimum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte values — basically, this specifies the minimum value for the range of results when using getByteFrequencyData()."
+    },
+    {
+      "name": "AnalyserNode.maxDecibels",
+      "link": "/en-US/docs/Web/API/AnalyserNode/maxDecibels",
+      "description": "Is a double value representing the maximum power value in the scaling range for the FFT analysis data, for conversion to unsigned byte values — basically, this specifies the maximum value for the range of results when using getByteFrequencyData()."
+    },
+    {
+      "name": "AnalyserNode.smoothingTimeConstant",
+      "link": "/en-US/docs/Web/API/AnalyserNode/smoothingTimeConstant",
+      "description": "Is a double value representing the averaging constant with the last analysis frame — basically, it makes the transition between values over time smoother."
+    },
+    {
+      "name": "AnalyserNode.getFloatFrequencyData()",
+      "link": "/en-US/docs/Web/API/AnalyserNode/getFloatFrequencyData",
+      "description": "Copies the current frequency data into a Float32Array array passed into it.",
+      "parameters": [
+        {
+          "name": "array",
+          "description": "The Float32Array that the frequency domain data will be copied to. For any sample which is silent, the value is -Infinity."
+        }
+      ]
+    },
+    {
+      "name": "AnalyserNode.getByteFrequencyData()",
+      "link": "/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData",
+      "description": "Copies the current frequency data into a Uint8Array (unsigned byte array) passed into it.",
+      "parameters": [
+        {
+          "name": "array",
+          "description": "The Uint8Array that the frequency domain data will be copied to."
+        }
+      ]
+    },
+    {
+      "name": "AnalyserNode.getFloatTimeDomainData()",
+      "link": "/en-US/docs/Web/API/AnalyserNode/getFloatTimeDomainData",
+      "description": "Copies the current waveform, or time-domain, data into a Float32Array array passed into it.",
+      "parameters": [
+        {
+          "name": "array",
+          "description": "The Float32Array that the time domain data will be copied to."
+        }
+      ]
+    },
+    {
+      "name": "AnalyserNode.getByteTimeDomainData()",
+      "link": "/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData",
+      "description": "Copies the current waveform, or time-domain, data into a Uint8Array (unsigned byte array) passed into it.",
+      "parameters": [
+        {
+          "name": "array",
+          "description": "The Uint8Array that the time domain data will be copied to."
+        }
+      ]
+    }
+  ]
+}

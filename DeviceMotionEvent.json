@@ -1,0 +1,79 @@
+{
+  "name": "DeviceMotionEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "DeviceMotionEvent.DeviceMotionEvent()",
+      "link": "/en-US/docs/Web/API/DeviceMotionEvent/DeviceMotionEvent",
+      "description": "Creates a new DeviceMotionEvent.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: acceleration: An object giving the acceleration of the device on the three axis X, Y and Z. Acceleration is expressed in m/s2. accelerationIncludingGravity: An object giving the acceleration of the device on the three axis X, Y and Z with the effect of gravity. Acceleration is expressed in m/s2. rotationRate: An object giving the rate of change of the device\u0027s orientation on the three orientation axis alpha, beta and gamma. Rotation rate is express in degrees per seconds. interval: A number representing the interval of time, in milliseconds, at which data is obtained from the device."
+        }
+      ]
+    },
+    {
+      "name": "DeviceMotionEvent.acceleration",
+      "link": "/en-US/docs/Web/API/DeviceMotionEvent/acceleration",
+      "description": "An object giving the acceleration of the device on the three axis X, Y and Z. Acceleration is expressed in m/s2.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "Represents the acceleration upon the x axis which is the west to east axis"
+        },
+        {
+          "name": "y",
+          "description": "Represents the acceleration upon the y axis which is the south to north axis"
+        },
+        {
+          "name": "z",
+          "description": "Represents the acceleration upon the z axis which is the down to up axis"
+        }
+      ]
+    },
+    {
+      "name": "DeviceMotionEvent.accelerationIncludingGravity",
+      "link": "/en-US/docs/Web/API/DeviceMotionEvent/accelerationIncludingGravity",
+      "description": "An object giving the acceleration of the device on the three axis X, Y and Z with the effect of gravity. Acceleration is expressed in m/s2.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "Represents the acceleration upon the x axis which is the west to east axis"
+        },
+        {
+          "name": "y",
+          "description": "Represents the acceleration upon the y axis which is the south to north axis"
+        },
+        {
+          "name": "z",
+          "description": "Represents the acceleration upon the z axis which is the down to up axis"
+        }
+      ]
+    },
+    {
+      "name": "DeviceMotionEvent.rotationRate",
+      "link": "/en-US/docs/Web/API/DeviceMotionEvent/rotationRate",
+      "description": "An object giving the rate of change of the device\u0027s orientation on the three orientation axis alpha, beta and gamma. Rotation rate is express in degrees per seconds.",
+      "parameters": [
+        {
+          "name": "alpha",
+          "description": "The rate at which the device is rotating about its Z axis; that is, being twisted about a line perpendicular to the screen."
+        },
+        {
+          "name": "beta",
+          "description": "The rate at which the device is rotating about its X axis; that is, front to back."
+        },
+        {
+          "name": "gamma",
+          "description": "The rate at which the device is rotating about its Y axis; that is, side to side."
+        }
+      ]
+    },
+    {
+      "name": "DeviceMotionEvent.interval",
+      "link": "/en-US/docs/Web/API/DeviceMotionEvent/interval",
+      "description": "A number representing the interval of time, in milliseconds, at which data is obtained from the device."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "SVGFEPointLightElement",
+  "description": "The SVGFEPointLightElement interface corresponds to the \u003cfePointLight\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEPointLightElement.x",
+      "link": "/en-US/docs/Web/API/SVGFEPointLightElement/x",
+      "description": "An SVGAnimatedNumber corresponding to the x attribute of the given element."
+    },
+    {
+      "name": "SVGFEPointLightElement.y",
+      "link": "/en-US/docs/Web/API/SVGFEPointLightElement/y",
+      "description": "An SVGAnimatedNumber corresponding to the y attribute of the given element."
+    },
+    {
+      "name": "SVGFEPointLightElement.z",
+      "link": "/en-US/docs/Web/API/SVGFEPointLightElement/z",
+      "description": "An SVGAnimatedNumber corresponding to the z attribute of the given element."
+    }
+  ]
+}

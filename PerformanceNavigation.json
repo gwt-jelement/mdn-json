@@ -1,0 +1,21 @@
+{
+  "name": "PerformanceNavigation",
+  "description": "",
+  "members": [
+    {
+      "name": "PerformanceNavigation.type",
+      "link": "/en-US/docs/Web/API/PerformanceNavigation/type",
+      "description": "Is an unsigned short containing a constant describing how the navigation to this page was done. Possible values are: Value Constant name Meaning 0 TYPE_NAVIGATE The page was accessed by following a link, a bookmark, a form submission, a script, or typing the URL in the address bar. 1 TYPE_RELOAD The page was accessed by clicking the Reload button or via the Location.reload() method. 2 TYPE_BACK_FORWARD The page was accessed by navigating into the history. 255 TYPE_RESERVED Any other way."
+    },
+    {
+      "name": "PerformanceNavigation.redirectCount",
+      "link": "/en-US/docs/Web/API/PerformanceNavigation/redirectCount",
+      "description": "Is an unsigned short representing the number of REDIRECTs done before reaching the page."
+    },
+    {
+      "name": "PerformanceNavigation.toJSON()",
+      "link": "/en-US/docs/Web/API/PerformanceNavigation/toJSON",
+      "description": "Is a jsonizer returning a json object representing the PerformanceNavigation object."
+    }
+  ]
+}

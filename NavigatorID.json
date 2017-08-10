@@ -1,0 +1,41 @@
+{
+  "name": "NavigatorID",
+  "description": "",
+  "members": [
+    {
+      "name": "NavigatorID.appCodeName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appCodeName",
+      "description": "Always returns \u0027Mozilla\u0027, on any browser. This property is kept only for compatibility purpose."
+    },
+    {
+      "name": "NavigatorID.appName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appName",
+      "description": "Returns the official name of the browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.appVersion",
+      "link": "/en-US/docs/Web/API/NavigatorID/appVersion",
+      "description": "Returns the version of the browser as a string. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.platform",
+      "link": "/en-US/docs/Web/API/NavigatorID/platform",
+      "description": "Returns a string representing the platform of the browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.product",
+      "link": "/en-US/docs/Web/API/NavigatorID/product",
+      "description": "Always returns \u0027Gecko\u0027, on any browser. This property is kept only for compatibility purpose."
+    },
+    {
+      "name": "NavigatorID.userAgent",
+      "link": "/en-US/docs/Web/API/NavigatorID/userAgent",
+      "description": "Returns the user agent string for the current browser."
+    },
+    {
+      "name": "NavigatorID.taintEnabled()",
+      "link": "/en-US/docs/Web/API/NavigatorID/taintEnabled",
+      "description": "Always returns false. JavaScript taint/untaint functions were removed in JavaScript 1.2. This method is only kept for compatibility purpose"
+    }
+  ]
+}

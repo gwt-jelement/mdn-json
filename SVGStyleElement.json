@@ -1,0 +1,21 @@
+{
+  "name": "SVGStyleElement",
+  "description": "SVG style interface The SVGStyleElement interface corresponds to the SVG \u003cstyle\u003e element.",
+  "members": [
+    {
+      "name": "SVGStyleElement.type",
+      "link": "/en-US/docs/Web/API/SVGStyleElement/type",
+      "description": "A DOMString corresponding to the type attribute of the given element. SVG 1.1 defined that a DOMException is raised with code NO_MODIFICATION_ALLOWED_ERR on an attempt to change the value of a read-only attribute. This restriction was removed in SVG 2."
+    },
+    {
+      "name": "SVGStyleElement.media",
+      "link": "/en-US/docs/Web/API/SVGStyleElement/media",
+      "description": "A DOMString corresponding to the media attribute of the given element. SVG 1.1 defined that a DOMException is raised with code NO_MODIFICATION_ALLOWED_ERR on an attempt to change the value of a read-only attribute. This restriction was removed in SVG 2."
+    },
+    {
+      "name": "SVGStyleElement.title",
+      "link": "/en-US/docs/Web/API/SVGStyleElement/title",
+      "description": "A DOMString corresponding to the title attribute of the given element. SVG 1.1 defined that a DOMException is raised with code NO_MODIFICATION_ALLOWED_ERR on an attempt to change the value of a read-only attribute. This restriction was removed in SVG 2."
+    }
+  ]
+}

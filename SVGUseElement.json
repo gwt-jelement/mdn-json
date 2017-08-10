@@ -1,0 +1,36 @@
+{
+  "name": "SVGUseElement",
+  "description": "SVG use DOM interface The SVGUseElement interface corresponds to the \u003cuse\u003e element.",
+  "members": [
+    {
+      "name": "SVGUseElement.x",
+      "link": "/en-US/docs/Web/API/SVGUseElement/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given element."
+    },
+    {
+      "name": "SVGUseElement.y",
+      "link": "/en-US/docs/Web/API/SVGUseElement/y",
+      "description": "An SVGAnimatedLength corresponding to the y attribute of the given element."
+    },
+    {
+      "name": "SVGUseElement.width",
+      "link": "/en-US/docs/Web/API/SVGUseElement/width",
+      "description": "An SVGAnimatedLength corresponding to the width attribute of the given element."
+    },
+    {
+      "name": "SVGUseElement.height",
+      "link": "/en-US/docs/Web/API/SVGUseElement/height",
+      "description": "An SVGAnimatedLength corresponding to the height attribute of the given element."
+    },
+    {
+      "name": "SVGUseElement.instanceRoot",
+      "link": "/en-US/docs/Web/API/SVGUseElement/instanceRoot",
+      "description": "An SVGAnimatedLength corresponding to the instance root of the given element, which is a direct child of the elements shadow root. If the element does not have a shadow tree (for example, because its URI is invalid or because it has been disabled by conditional processing), then getting this attribute returns null."
+    },
+    {
+      "name": "SVGUseElement.animatedInstanceRoot",
+      "link": "/en-US/docs/Web/API/SVGUseElement/animatedInstanceRoot",
+      "description": "An SVGAnimatedLength corresponding to the instance root of the given element, which is a direct child of the elements shadow root. If the element does not have a shadow tree (for example, because its URI is invalid or because it has been disabled by conditional processing), then getting this attribute returns null."
+    }
+  ]
+}

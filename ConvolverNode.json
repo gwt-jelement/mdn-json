@@ -1,0 +1,16 @@
+{
+  "name": "ConvolverNode",
+  "description": "",
+  "members": [
+    {
+      "name": "ConvolverNode.buffer",
+      "link": "/en-US/docs/Web/API/ConvolverNode/buffer",
+      "description": "A mono, stereo, or 4-channel AudioBuffer containing the (possibly multichannel) impulse response used by the ConvolverNode to create the reverb effect."
+    },
+    {
+      "name": "ConvolverNode.normalize",
+      "link": "/en-US/docs/Web/API/ConvolverNode/normalize",
+      "description": "A boolean that controls whether the impulse response from the buffer will be scaled by an equal-power normalization when the buffer attribute is set, or not."
+    }
+  ]
+}

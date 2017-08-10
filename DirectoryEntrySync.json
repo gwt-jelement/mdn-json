@@ -1,0 +1,31 @@
+{
+  "name": "DirectoryEntrySync",
+  "description": "",
+  "members": [
+    {
+      "name": "DirectoryReaderSync",
+      "link": "/en/DOM/File_API/File_System_API/DirectoryReaderSync",
+      "description": "Represents a directory in a file system."
+    },
+    {
+      "name": "FileEntrySync",
+      "link": "/en/DOM/File_API/File_System_API/FileEntrySync",
+      "description": "Represents a file in a file system.",
+      "parameters": [
+        {
+          "name": "FileWriterSync",
+          "description": ""
+        },
+        {
+          "name": "File",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "DirectoryEntrySync",
+      "link": "/en/DOM/File_API/File_System_API/DirectoryReaderSync",
+      "description": "Represents a directory in a file system."
+    }
+  ]
+}

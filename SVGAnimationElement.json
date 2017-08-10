@@ -1,0 +1,61 @@
+{
+  "name": "SVGAnimationElement",
+  "description": "The SVGAnimationElement interface is the base interface for all of the animation element interfaces: SVGAnimateElement, SVGSetElement, SVGAnimateColorElement, SVGAnimateMotionElement and SVGAnimateTransformElement.",
+  "members": [
+    {
+      "name": "SVGAnimationElement.targetElement",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/targetElement",
+      "description": "An SVGElement representing the element which is being animated. If no target element is being animated (for example, because the href specifies an unknown element) the value returned is null."
+    },
+    {
+      "name": "SVGAnimationElement.onbegin",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/onbegin",
+      "description": "The event handler for the beginEvent event ."
+    },
+    {
+      "name": "SVGAnimationElement.onend",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/onend",
+      "description": "The event handler for the endEvent event ."
+    },
+    {
+      "name": "SVGAnimationElement.onrepeat",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/onrepeat",
+      "description": "The event handler for the repeatEvent event ."
+    },
+    {
+      "name": "SVGAnimationElement.getStartTime()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/getStartTime",
+      "description": "Returns a float representing the begin time, in seconds, for this animation element\u0027s current interval, if it exists, regardless of whether the interval has begun yet. If there is no current interval, then a DOMException with code INVALID_STATE_ERR is thrown."
+    },
+    {
+      "name": "SVGAnimationElement.getCurrentTime()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/getCurrentTime",
+      "description": "Returns a float representing the current time in seconds relative to time zero for the given time container."
+    },
+    {
+      "name": "SVGAnimationElement.getSimpleDuration()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/getSimpleDuration",
+      "description": "Returns a float representing the number of seconds for the simple duration for this animation. If the simple duration is undefined (e.g., the end time is indefinite), then a DOMException with code NOT_SUPPORTED_ERR is raised."
+    },
+    {
+      "name": "SVGAnimationElement.beginElement()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/beginElement",
+      "description": "Creates a begin instance time for the current time. The new instance time is added to the begin instance times list. The behavior of this method is equivalent to beginElementAt(0)."
+    },
+    {
+      "name": "SVGAnimationElement.beginElementAt()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/beginElementAt",
+      "description": "Creates a begin instance time for the current time plus the specified offset. The new instance time is added to the begin instance times list."
+    },
+    {
+      "name": "SVGAnimationElement.endElement()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/endElement",
+      "description": "Creates an end instance time for the current time. The new instance time is added to the end instance times list. The behavior of this method is equivalent to endElementAt(0)."
+    },
+    {
+      "name": "SVGAnimationElement.endElementAt()",
+      "link": "/en-US/docs/Web/API/SVGAnimationElement/endElementAt",
+      "description": "Creates a end instance time for the current time plus the specified offset. The new instance time is added to the end instance times list."
+    }
+  ]
+}

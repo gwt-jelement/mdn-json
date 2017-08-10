@@ -1,0 +1,31 @@
+{
+  "name": "InputEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "InputEvent()",
+      "link": "/en-US/docs/Web/API/InputEvent/InputEvent",
+      "description": "Creates an InputEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "inputEventInitOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "InputEvent.data",
+      "link": "/en-US/docs/Web/API/InputEvent/data",
+      "description": "Returns a DOMString with the inserted characters. This may be empty string if the change doesn\u0027t cause inserting text, e.g., deleting characters."
+    },
+    {
+      "name": "InputEvent.isComposing",
+      "link": "/en-US/docs/Web/API/InputEvent/isComposing",
+      "description": "Returns a Boolean value indicating if the event is fired after compositionstart and before compositionend."
+    }
+  ]
+}

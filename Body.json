@@ -1,0 +1,36 @@
+{
+  "name": "Body",
+  "description": "The Body mixin of the Fetch API represents the body of the response/request, allowing you to declare what its content type is and how it should be handled.",
+  "members": [
+    {
+      "name": "Body.bodyUsed",
+      "link": "/en-US/docs/Web/API/Body/bodyUsed",
+      "description": "Contains a Boolean that indicates whether the body has been read."
+    },
+    {
+      "name": "Body.arrayBuffer()",
+      "link": "/en-US/docs/Web/API/Body/arrayBuffer",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with an ArrayBuffer."
+    },
+    {
+      "name": "Body.blob()",
+      "link": "/en-US/docs/Web/API/Body/blob",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a Blob."
+    },
+    {
+      "name": "Body.formData()",
+      "link": "/en-US/docs/Web/API/Body/formData",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a FormData object."
+    },
+    {
+      "name": "Body.json()",
+      "link": "/en-US/docs/Web/API/Body/json",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a JSON object."
+    },
+    {
+      "name": "Body.text()",
+      "link": "/en-US/docs/Web/API/Body/text",
+      "description": "Takes a Response stream and reads it to completion. It returns a promise that resolves with a USVString (text)."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "NavigatorOnLine",
+  "description": "",
+  "members": [
+    {
+      "name": "NavigatorOnLine.onLine",
+      "link": "/en-US/docs/Web/API/NavigatorOnLine/onLine",
+      "description": "Returns a Boolean indicating whether the browser is working online."
+    }
+  ]
+}

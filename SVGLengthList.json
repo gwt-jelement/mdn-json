@@ -1,0 +1,5 @@
+{
+  "name": "SVGLengthList",
+  "description": "SVG length list interface The SVGLengthList defines a list of SVGLength objects.",
+  "members": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "HTMLParamElement",
+  "description": "The HTMLParamElement interface provides special properties (beyond those of the regular HTMLElement object interface it inherits) for manipulating \u003cparam\u003e elements, representing a pair of a key and a value that acts as a parameter for an \u003cobject\u003e element.",
+  "members": [
+    {
+      "name": "HTMLParamElement.name",
+      "link": "/en-US/docs/Web/API/HTMLParamElement/name",
+      "description": "Is a DOMString representing the name of the parameter. It reflects the name attribute."
+    },
+    {
+      "name": "HTMLParamElement.value",
+      "link": "/en-US/docs/Web/API/HTMLParamElement/value",
+      "description": "Is a DOMString representing the value associated to the parameter. It reflects the value attribute."
+    },
+    {
+      "name": "HTMLParamElement.type",
+      "link": "/en-US/docs/Web/API/HTMLParamElement/type",
+      "description": "Is a DOMString containing the type of the parameter when valueType has the \"ref\" value. It reflects the type attribute."
+    },
+    {
+      "name": "HTMLParamElement.valueType",
+      "link": "/en-US/docs/Web/API/HTMLParamElement/valueType",
+      "description": "Is a DOMString containing the type of the value. It reflects the valuetype attribute and has one of the values: \"data\", \"ref\", or \"object\"."
+    }
+  ]
+}

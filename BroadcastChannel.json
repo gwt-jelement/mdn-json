@@ -1,0 +1,37 @@
+{
+  "name": "BroadcastChannel",
+  "description": "",
+  "members": [
+    {
+      "name": "BroadcastChannel()",
+      "link": "/en-US/docs/Web/API/BroadcastChannel/BroadcastChannel",
+      "description": "Creates an object linking to the named channel.",
+      "parameters": [
+        {
+          "name": "channel",
+          "description": "Is a DOMString representing the name of the channel; there is one single channel with this name for all browser contexts with the same origin."
+        }
+      ]
+    },
+    {
+      "name": "BroadcastChannel.name",
+      "link": "/en-US/docs/Web/API/BroadcastChannel/name",
+      "description": "Returns a DOMString, the name of the channel."
+    },
+    {
+      "name": "BroadcastChannel.onmessage",
+      "link": "/en-US/docs/Web/API/BroadcastChannel/onmessage",
+      "description": "Is an EventHandler property that specifies the function to execute when a message event is fired on this object."
+    },
+    {
+      "name": "BroadcastChannel.postMessage()",
+      "link": "/en-US/docs/Web/API/BroadcastChannel/postMessage",
+      "description": "Sends the message, of any type of object, to each BroadcastChannel object listening to the same channel."
+    },
+    {
+      "name": "BroadcastChannel.close()",
+      "link": "/en-US/docs/Web/API/BroadcastChannel/close",
+      "description": "Closes the channel object, indicating it won\u0027t get any new messages, and allowing it to be, eventually, garbage collected."
+    }
+  ]
+}

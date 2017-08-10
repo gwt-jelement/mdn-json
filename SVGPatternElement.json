@@ -1,0 +1,41 @@
+{
+  "name": "SVGPatternElement",
+  "description": "The SVGPatternElement interface corresponds to the \u003cpattern\u003e element.",
+  "members": [
+    {
+      "name": "SVGPatternElement.patternUnits",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/patternUnits",
+      "description": "An SVGAnimatedEnumeration corresponding to the patternUnits attribute of the given \u003cpattern\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGPatternElement.patternContentUnits",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/patternContentUnits",
+      "description": "An SVGAnimatedEnumeration corresponding to the patternContentUnits attribute of the given \u003cpattern\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGPatternElement.patternTransform",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/patternTransform",
+      "description": "An SVGAnimatedTransformList corresponding to the patternTransform attribute of the given \u003cpattern\u003e element."
+    },
+    {
+      "name": "SVGPatternElement.x",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/x",
+      "description": "An SVGAnimatedEnumeration corresponding to the x attribute of the given \u003cpattern\u003e element."
+    },
+    {
+      "name": "SVGPatternElement.y",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/y",
+      "description": "An SVGAnimatedEnumeration corresponding to the y attribute of the given \u003cpattern\u003e element."
+    },
+    {
+      "name": "SVGPatternElement.width",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/width",
+      "description": "An SVGAnimatedEnumeration corresponding to the width attribute of the given \u003cpattern\u003e element."
+    },
+    {
+      "name": "SVGPatternElement.height",
+      "link": "/en-US/docs/Web/API/SVGPatternElement/height",
+      "description": "An SVGAnimatedEnumeration corresponding to the height attribute of the given \u003cpattern\u003e element."
+    }
+  ]
+}

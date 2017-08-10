@@ -1,0 +1,11 @@
+{
+  "name": "SVGViewElement",
+  "description": "The SVGViewElement interface provides access to the properties of \u003cview\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGViewElement.viewTarget",
+      "link": "/en-US/docs/Web/API/SVGViewElement/viewTarget",
+      "description": "An SVGStringList corresponding to the viewTarget attribute of the given \u003cview\u003e element. A list of DOMString values which contain the names listed in the viewTarget attribute. Each of the DOMString values can be associated with the corresponding element using the getElementById() method call."
+    }
+  ]
+}

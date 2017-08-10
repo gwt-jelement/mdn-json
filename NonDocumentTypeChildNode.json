@@ -1,0 +1,16 @@
+{
+  "name": "NonDocumentTypeChildNode",
+  "description": "The NonDocumentTypeChildNode interface contains methods that are particular to Node objects that can have a parent, but not suitable for DocumentType.",
+  "members": [
+    {
+      "name": "NonDocumentTypeChildNode.previousElementSibling",
+      "link": "/en-US/docs/Web/API/NonDocumentTypeChildNode/previousElementSibling",
+      "description": "Returns the Element immediately prior to this node in its parent\u0027s children list, or null if there is no Element in the list prior to this node."
+    },
+    {
+      "name": "NonDocumentTypeChildNode.nextElementSibling",
+      "link": "/en-US/docs/Web/API/NonDocumentTypeChildNode/nextElementSibling",
+      "description": "Returns the Element immediately following this node in its parent\u0027s children list, or null if there is no Element in the list following this node."
+    }
+  ]
+}

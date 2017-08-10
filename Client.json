@@ -1,0 +1,41 @@
+{
+  "name": "Client",
+  "description": "",
+  "members": [
+    {
+      "name": "Client.postMessage()",
+      "link": "/en-US/docs/Web/API/Client/postMessage",
+      "description": "Allows a service worker to send a message to a ServiceWorkerClient.",
+      "parameters": [
+        {
+          "name": "message",
+          "description": "The message to send to the service worker."
+        },
+        {
+          "name": "transfer Optional",
+          "description": "A transferable object such as, for example, a reference to a port."
+        }
+      ]
+    },
+    {
+      "name": "Client.frameType",
+      "link": "/en-US/docs/Web/API/Client/frameType",
+      "description": "Indicates the type of browsing context of the current client. This value can be one of auxiliary, top-level, nested, or none."
+    },
+    {
+      "name": "Client.id",
+      "link": "/en-US/docs/Web/API/Client/id",
+      "description": "Returns the universally unique identifier of the Client object."
+    },
+    {
+      "name": "Client.type",
+      "link": "/en-US/docs/Web/API/Client/type",
+      "description": "Indicates the type of client the service worker is controlling. Its value can be window, worker, sharedworker, or all."
+    },
+    {
+      "name": "Client.url",
+      "link": "/en-US/docs/Web/API/Client/url",
+      "description": "The URL of the current service worker client."
+    }
+  ]
+}

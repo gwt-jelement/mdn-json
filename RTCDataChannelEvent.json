@@ -1,0 +1,26 @@
+{
+  "name": "RTCDataChannelEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCDataChannelEvent()",
+      "link": "/en-US/docs/Web/API/RTCDataChannelEvent/RTCDataChannelEvent",
+      "description": "The RTCDataChannelEvent() constructor creates a new RTCDataChannelEvent.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString which specifies the name of the event. There is only one type of RTCDataChannelEvent, so this will always be \"datachannel\"."
+        },
+        {
+          "name": "rtcDataChannelEventInit",
+          "description": "A RTCDataChannelEventInit dictionary, which has following fields: \"channel\" of type RTCDataChannel, representing the data channel being concerned by the event. \"bubbles\", optional, inherited from EventInit. Indicates if the event must bubble or not. Default is false. \"cancelable\", optional, inherited from EventInit. Indicates if the event can be canceled or not. Default is false."
+        }
+      ]
+    },
+    {
+      "name": "channel",
+      "link": "/en-US/docs/Web/API/RTCDataChannelEvent/channel",
+      "description": "The read-only property RTCDataChannelEvent.channel returns the RTCDataChannel associated with the event."
+    }
+  ]
+}

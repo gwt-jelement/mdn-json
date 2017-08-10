@@ -1,0 +1,330 @@
+{
+  "name": "HTMLMediaElement",
+  "description": "",
+  "members": [
+    {
+      "name": "HTMLMediaElement.audioTracks",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/audioTracks",
+      "description": "A AudioTrackList that lists the AudioTrack objects contained in the element."
+    },
+    {
+      "name": "HTMLMediaElement.autoplay",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/autoplay",
+      "description": "A Boolean that reflects the autoplay HTML attribute, indicating whether playback should automatically begin as soon as enough media is available to do so without interruption. Sites which automatically play audio (or videos with an audio track) can be an unpleasant experience for users, so it should be avoided when possible. If you must offer autoplay functionality, you should make it opt-in (requiring a user to specifically enable it). However, this can be useful when creating media elements whose source will be set at a later time, under user control."
+    },
+    {
+      "name": "HTMLMediaElement.buffered",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/buffered",
+      "description": "Returns a TimeRanges object that indicates the ranges of the media source that the browser has buffered (if any) at the moment the buffered property is accessed."
+    },
+    {
+      "name": "HTMLMediaElement.controller",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/controller",
+      "description": "Is a MediaController object that represents the media controller assigned to the element, or null if none is assigned."
+    },
+    {
+      "name": "HTMLMediaElement.controls",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/controls",
+      "description": "Is a Boolean that reflects the controls HTML attribute, indicating whether user interface items for controlling the resource should be displayed."
+    },
+    {
+      "name": "HTMLMediaElement.controlsList",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/controlsList",
+      "description": "Returns a DOMTokenList that helps the user agent select what controls to show on the media element whenever the user agent shows its own set of controls. The DOMTokenList takes one or more of three possible values: nodownload, nofullscreen, and noremoteplayback."
+    },
+    {
+      "name": "HTMLMediaElement.crossOrigin",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/crossOrigin",
+      "description": "Is a DOMString indicating the CORS setting for this media element."
+    },
+    {
+      "name": "HTMLMediaElement.currentSrc",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/currentSrc",
+      "description": "Returns a DOMString with the absolute URL of the chosen media resource."
+    },
+    {
+      "name": "HTMLMediaElement.currentTime",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/currentTime",
+      "description": "Is a double indicating the current playback time in seconds. Setting this value seeks the media to the new time."
+    },
+    {
+      "name": "HTMLMediaElement.defaultMuted",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/defaultMuted",
+      "description": "Is a Boolean that reflects the muted HTML attribute, which indicates whether the media element\u0027s audio output should be muted by default."
+    },
+    {
+      "name": "HTMLMediaElement.defaultPlaybackRate",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/defaultPlaybackRate",
+      "description": "Is a double indicating the default playback rate for the media."
+    },
+    {
+      "name": "HTMLMediaElement.disableRemotePlayback",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/disableRemotePlayback",
+      "description": "Is a Boolean that sets or returns the remote playback state, indicating whether the media element is allowed to have a remote playback UI."
+    },
+    {
+      "name": "HTMLMediaElement.duration",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/duration",
+      "description": "Returns a double indicating the length of the media in seconds, or 0 if no media data is available."
+    },
+    {
+      "name": "HTMLMediaElement.ended",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/ended",
+      "description": "Returns a Boolean that indicates whether the media element has finished playing."
+    },
+    {
+      "name": "HTMLMediaElement.error",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/error",
+      "description": "Returns a MediaError object for the most recent error, or null if there has not been an error."
+    },
+    {
+      "name": "HTMLMediaElement.initialTime",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/initialTime",
+      "description": "Returns a double that indicates the initial playback position in seconds."
+    },
+    {
+      "name": "HTMLMediaElement.loop",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/loop",
+      "description": "Is a Boolean that reflects the loop HTML attribute, which indicates whether the media element should start over when it reaches the end."
+    },
+    {
+      "name": "HTMLMediaElement.mediaGroup",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mediaGroup",
+      "description": "Is a DOMString that reflects the mediagroup HTML attribute, which indicates the name of the group of elements it belongs to. A group of media elements shares a common MediaController."
+    },
+    {
+      "name": "HTMLMediaElement.mediaKeys",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mediaKeys",
+      "description": "Returns a MediaKeys object or null. MediaKeys is a set of keys that an associated HTMLMediaElement can use for decryption of media data during playback."
+    },
+    {
+      "name": "HTMLMediaElement.mozAudioCaptured",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozAudioCaptured",
+      "description": "Returns a Boolean. Related to audio stream capture."
+    },
+    {
+      "name": "HTMLMediaElement.mozChannels",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozChannels",
+      "description": "Returns a double representing the number of channels in the audio resource (e.g., 2 for stereo)."
+    },
+    {
+      "name": "HTMLMediaElement.mozFragmentEnd",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozFragmentEnd",
+      "description": "Is a double that provides access to the fragment end time if the media element has a fragment URI for currentSrc, otherwise it is equal to the media duration."
+    },
+    {
+      "name": "HTMLMediaElement.mozFrameBufferLength",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozFrameBufferLength",
+      "description": "Is a unsigned long that indicates the number of samples that will be returned in the framebuffer of each MozAudioAvailable event. This number is a total for all channels, and by default is set to be the number of channels * 1024 (e.g., 2 channels * 1024 samples \u003d 2048 total). The mozFrameBufferLength property can be set to a new value for lower latency, larger amounts of data, etc. The size given must be a number between 512 and 16384. Using any other size results in an exception being thrown. The best time to set a new length is after the loadedmetadata event fires, when the audio info is known, but before the audio has started or MozAudioAvailable events have begun firing."
+    },
+    {
+      "name": "HTMLMediaElement.mozSampleRate",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozSampleRate",
+      "description": "Returns a double representing the number of samples per second that will be played. For example, 44100 samples per second is the sample rate used by CD audio."
+    },
+    {
+      "name": "HTMLMediaElement.muted",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/muted",
+      "description": "Is a Boolean that determines whether audio is muted. true if the audio is muted and false otherwise."
+    },
+    {
+      "name": "HTMLMediaElement.networkState",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/networkState",
+      "description": "Returns a unsigned short (enumeration) indicating the current state of fetching the media over the network."
+    },
+    {
+      "name": "HTMLMediaElement.paused",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/paused",
+      "description": "Returns a Boolean that indicates whether the media element is paused."
+    },
+    {
+      "name": "HTMLMediaElement.playbackRate",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/playbackRate",
+      "description": "Is a double that indicates the rate at which the media is being played back. "
+    },
+    {
+      "name": "HTMLMediaElement.played",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/played",
+      "description": "Returns a TimeRanges object that contains the ranges of the media source that the browser has played, if any."
+    },
+    {
+      "name": "HTMLMediaElement.preload",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/preload",
+      "description": "Is a DOMString that reflects the preload HTML attribute, indicating what data should be preloaded, if any. Possible values are: none, metadata, auto."
+    },
+    {
+      "name": "HTMLMediaElement.preservesPitch",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/preservesPitch",
+      "description": "Is a Boolean that determines if the pitch of the sound will be preserved. If set to false, the pitch will adjust to the speed of the audio. This is implemented with prefixes in Firefox (mozPreservesPitch) and WebKit (webkitPreservesPitch)."
+    },
+    {
+      "name": "HTMLMediaElement.readyState",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/readyState",
+      "description": "Returns a unsigned short (enumeration) indicating the readiness state of the media."
+    },
+    {
+      "name": "HTMLMediaElement.seekable",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/seekable",
+      "description": "Returns a TimeRanges object that contains the time ranges that the user is able to seek to, if any."
+    },
+    {
+      "name": "HTMLMediaElement.seeking",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/seeking",
+      "description": "Returns a Boolean that indicates whether the media is in the process of seeking to a new position."
+    },
+    {
+      "name": "HTMLMediaElement.sinkId",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/sinkId",
+      "description": "Returns a DOMString that is the unique ID of the audio device delivering output, or an empty string if it is using the user agent default. This ID should be one of the MediaDeviceInfo.deviceid values returned from MediaDevices.enumeratedDevices(), id-multimedia, or id-communications."
+    },
+    {
+      "name": "HTMLMediaElement.src",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/src",
+      "description": "Is a DOMString that reflects the src HTML attribute, which contains the URL of a media resource to use."
+    },
+    {
+      "name": "HTMLMediaElement.srcObject",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/srcObject",
+      "description": "Is a MediaStream representing the media to play or that has played in the current HTMLMediaElement."
+    },
+    {
+      "name": "HTMLMediaElement.textTracks",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/textTracks",
+      "description": "Returns the list of TextTrack objects contained in the element."
+    },
+    {
+      "name": "HTMLMediaElement.videoTracks",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/videoTracks",
+      "description": "Returns the list of VideoTrack objects contained in the element. Gecko supports only single track playback, and the parsing of tracks\u0027 metadata is only available for media with the Ogg container format."
+    },
+    {
+      "name": "HTMLMediaElement.volume",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/volume",
+      "description": "Is a double indicating the audio volume, from 0.0 (silent) to 1.0 (loudest)."
+    },
+    {
+      "name": "HTMLMediaElement.onmozinterruptbegin",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/onmozinterruptbegin",
+      "description": "Sets the EventHandler called when the media element is interrupted because of the Audio Channel manager. This was Firefox-specific, having been implemented for Firefox OS, and was removed in Firefox 55."
+    },
+    {
+      "name": "HTMLMediaElement.onmozinterruptend",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/onmozinterruptend",
+      "description": "Sets the EventHandler called when the interruption is concluded. This was Firefox-specific, having been implemented for Firefox OS, and was removed in Firefox 55."
+    },
+    {
+      "name": "HTMLMediaElement.onencrypted",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/onencrypted",
+      "description": "Sets the EventHandler called when the media is encrypted."
+    },
+    {
+      "name": "HTMLMediaElement.onwaitingforkey",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/onwaitingforkey",
+      "description": "Sets the EventHandler called when playback is blocked while waiting for an encryption key."
+    },
+    {
+      "name": "HTMLMediaElement.addTextTrack()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/addTextTrack",
+      "description": "Adds a text track (such as a track for subtitles) to a media element."
+    },
+    {
+      "name": "HTMLMediaElement.captureStream()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/captureStream",
+      "description": "Returns MediaStream, captures a stream of the media content."
+    },
+    {
+      "name": "HTMLMediaElement.canPlayType()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/canPlayType",
+      "description": "Determines whether the specified media type can be played back.",
+      "parameters": [
+        {
+          "name": "mediaType",
+          "description": "A DOMString containing the MIME type of the media."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMediaElement.fastSeek()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/fastSeek",
+      "description": "Directly seeks to the given time.",
+      "parameters": [
+        {
+          "name": "time",
+          "description": "A double."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMediaElement.load()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/load",
+      "description": "Resets the media element and restarts the media resource. Any pending events are discarded. How much media data is fetched is still affected by the preload attribute. This method can be useful for releasing resources after any src attribute and source element descendants have been removed. Otherwise, it is usually unnecessary to use this method, unless required to rescan source element children after dynamic changes."
+    },
+    {
+      "name": "HTMLMediaElement.mozCaptureStream()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozCaptureStream",
+      "description": "[enter description]"
+    },
+    {
+      "name": "HTMLMediaElement.mozCaptureStreamUntilEnded()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozCaptureStreamUntilEnded",
+      "description": "[enter description]"
+    },
+    {
+      "name": "HTMLMediaElement.mozGetMetadata()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozGetMetadata",
+      "description": "Returns Object, which contains properties that represent metadata from the playing media resource as {key: value} pairs. A separate copy of the data is returned each time the method is called. This method must be called after the loadedmetadata event fires."
+    },
+    {
+      "name": "HTMLMediaElement.mozLoadFrom()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/mozLoadFrom",
+      "description": "This method, available only in Mozilla\u0027s implementation, loads data from another media element. This works similarly to load() except that instead of running the normal resource selection algorithm, the source is simply set to the other element\u0027s currentSrc. This is optimized so this element gets access to all of the other element\u0027s cached and buffered data; in fact, the two elements share downloaded data, so data downloaded by either element is available to both."
+    },
+    {
+      "name": "HTMLMediaElement.pause()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/pause",
+      "description": "Pauses the media playback."
+    },
+    {
+      "name": "HTMLMediaElement.play()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/play",
+      "description": "Begins playback of the media.",
+      "parameters": [
+        {
+          "name": "NotAllowedError",
+          "description": "The user agent (browser) or operating system doesn\u0027t allow playback of media in the current context or situation. This may happen, for example, if the browser requires the user to explicitly start media playback by clicking a \"play\" button."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "The media source (which may be specified as a MediaStream, MediaSource, Blob, or File, for example) doesn\u0027t represent a supported media format."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMediaElement.seekToNextFrame()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/seekToNextFrame",
+      "description": "Seeks to the next frame in the media. This non-standard, experimental method makes it possible to manually drive reading and rendering of media at a custom speed, or to move through the media frame-by-frame to perform filtering or other operations."
+    },
+    {
+      "name": "HTMLMediaElement.setMediaKeys()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/setMediaKeys",
+      "description": "Returns Promise. Sets the MediaKeys keys to use when decrypting media during playback.",
+      "parameters": [
+        {
+          "name": "mediaKeys",
+          "description": "A reference to a MediaKeys object that the HTMLMediaElement can use for decryption of media data during playback."
+        }
+      ]
+    },
+    {
+      "name": "HTMLMediaElement.setSinkId()",
+      "link": "/en-US/docs/Web/API/HTMLMediaElement/setSinkId",
+      "description": "Sets the ID of the audio device to use for output and returns a Promise. This only works when the application is authorized to use the specified device.",
+      "parameters": [
+        {
+          "name": "sinkId",
+          "description": "The ID of the audio output device."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "SVGGradientElement",
+  "description": "The SVGGradient interface is a base interface used by SVGLinearGradientElement and SVGRadialGradientElement.",
+  "members": [
+    {
+      "name": "SVGGradientElement.gradientUnits",
+      "link": "/en-US/docs/Web/API/SVGGradientElement/gradientUnits",
+      "description": "Returns an SVGAnimatedEnumeration corresponding to the gradientUnits attribute on the given element. Takes one of the constants defined in SVGUnitTypes."
+    },
+    {
+      "name": "SVGGradientElement.gradientTransform",
+      "link": "/en-US/docs/Web/API/SVGGradientElement/gradientTransform",
+      "description": "Returns an SVGAnimatedTransformList corresponding to attribute gradientTransform on the given element."
+    },
+    {
+      "name": "SVGGradientElement.spreadMethod",
+      "link": "/en-US/docs/Web/API/SVGGradientElement/spreadMethod",
+      "description": "Returns an SVGAnimatedEnumeration corresponding to attribute spreadMethod on the given element. One of the spread method types defined on this interface."
+    }
+  ]
+}

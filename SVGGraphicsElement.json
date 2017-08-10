@@ -1,0 +1,26 @@
+{
+  "name": "SVGGraphicsElement",
+  "description": "The SVGGraphicsElement interface represents SVG elements whose primary purpose is to directly render graphics into a group.",
+  "members": [
+    {
+      "name": "SVGGraphicsElement.transform",
+      "link": "/en-US/docs/Web/API/SVGGraphicsElement/transform",
+      "description": "An SVGAnimatedTransformList reflecting the computed value of the transform property and its corresponding transform attribute of the given element."
+    },
+    {
+      "name": "SVGGraphicsElement.getBBox()",
+      "link": "/en-US/docs/Web/API/SVGGraphicsElement/getBBox",
+      "description": "Returns a DOMRect representing the computed bounding box of the current element."
+    },
+    {
+      "name": "SVGGraphicsElement.getCTM()",
+      "link": "/en-US/docs/Web/API/SVGGraphicsElement/getCTM",
+      "description": "Returns a DOMMatrix representing the matrix that transforms the current element\u0027s coordinate system to its SVG viewport\u0027s coordinate system."
+    },
+    {
+      "name": "SVGGraphicsElement.getScreenCTM()",
+      "link": "/en-US/docs/Web/API/SVGGraphicsElement/getScreenCTM",
+      "description": "Returns a DOMMatrix representing the matrix that transforms the current element\u0027s coordinate system to the coordinate system of the SVG viewport for the SVG document fragment."
+    }
+  ]
+}

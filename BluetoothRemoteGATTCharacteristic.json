@@ -1,0 +1,62 @@
+{
+  "name": "BluetoothRemoteGATTCharacteristic",
+  "description": "",
+  "members": [
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.service",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/service",
+      "description": "Returns the BluetoothGATTService this characteristic belongs to."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.uuid",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/uuid",
+      "description": "Returns a DOMString containing the UUID of the characteristic, for example \u002700002a37-0000-1000-8000-00805f9b34fb\u0027 for the Heart Rate Measurement characteristic."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.properties",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/properties",
+      "description": "Returns the properties of this characteristic."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.value",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/value",
+      "description": "The currently cached characteristic value. This value gets updated when the value of the characteristic is read or updated via a notification or indication."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.getDescriptor()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptor",
+      "description": "Returns a Promise that resolves to the first BluetoothGATTDescriptor for a given descriptor UUID."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.getDescriptors()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/getDescriptors",
+      "description": "Returns a Promise that resolves to an Array of all BluetoothGATTDescriptor objects for a given descriptor UUID."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.readValue()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/readValue",
+      "description": "Returns a Promise that resolves to an ArrayBuffer holding a duplicate of the value property if it is available and supported. Otherwise it throws an error."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.writeValue()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/writeValue",
+      "description": "Sets the value property to the bytes contained in an ArrayBuffer and returns a Promise.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "An ArrayBuffer. "
+        }
+      ]
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.startNotifications()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/startNotifications",
+      "description": "Returns a Promise when navigator.bluetooth is added to the active notification context."
+    },
+    {
+      "name": "BluetoothRemoteGATTCharacteristic.stopNotifications()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTCharacteristic/stopNotifications",
+      "description": "Returns a Promise when navigator.bluetooth is removed from the active notification context."
+    }
+  ]
+}

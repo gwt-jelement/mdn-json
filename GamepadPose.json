@@ -1,0 +1,46 @@
+{
+  "name": "GamepadPose",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The GamepadPose interface of the Gamepad API represents the pose of a WebVR controller at a given timestamp (which includes orientation, position, velocity, and acceleration information.)",
+  "members": [
+    {
+      "name": "GamepadPose.hasOrientation",
+      "link": "/en-US/docs/Web/API/GamepadPose/hasOrientation",
+      "description": "Returns a boolean indicating whether the gamepad is capable of returning orientation information (true) or not (false)."
+    },
+    {
+      "name": "GamepadPose.hasPosition",
+      "link": "/en-US/docs/Web/API/GamepadPose/hasPosition",
+      "description": "Returns a boolean indicating whether the gamepad is capable of returning position information (true) or not (false)."
+    },
+    {
+      "name": "GamepadPose.position",
+      "link": "/en-US/docs/Web/API/GamepadPose/position",
+      "description": "Returns the position of the Gamepad as a 3D vector."
+    },
+    {
+      "name": "GamepadPose.linearVelocity",
+      "link": "/en-US/docs/Web/API/GamepadPose/linearVelocity",
+      "description": "Returns the linear velocity of the Gamepad, in meters per second."
+    },
+    {
+      "name": "GamepadPose.linearAcceleration",
+      "link": "/en-US/docs/Web/API/GamepadPose/linearAcceleration",
+      "description": "Returns the linear acceleration of the Gamepad, in meters per second per second."
+    },
+    {
+      "name": "GamepadPose.orientation",
+      "link": "/en-US/docs/Web/API/GamepadPose/orientation",
+      "description": "Returns the orientation of the Gamepad, as a quarternion value."
+    },
+    {
+      "name": "GamepadPose.angularVelocity",
+      "link": "/en-US/docs/Web/API/GamepadPose/angularVelocity",
+      "description": "Returns the angular velocity of the Gamepad, in radians per second."
+    },
+    {
+      "name": "GamepadPose.angularAcceleration",
+      "link": "/en-US/docs/Web/API/GamepadPose/angularAcceleration",
+      "description": "Returns the angular acceleration of the Gamepad, in meters per second per second."
+    }
+  ]
+}

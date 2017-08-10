@@ -1,0 +1,85 @@
+{
+  "name": "XDomainRequest",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. Non-standard This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future. XDomainRequest is an implementation of HTTP access control (CORS) that worked in Internet Explorer 8 and 9. It was removed in Internet Explorer 10 in favor of using XMLHttpRequest with proper CORS; if you are targeting Internet Explorer 10 or later, or wish to support any other browser, you need to use standard HTTP access control.",
+  "members": [
+    {
+      "name": "XDomainRequest.timeout",
+      "link": "/en-US/docs/Web/API/XDomainRequest/timeout",
+      "description": "Gets or sets the amount of time until a request times out."
+    },
+    {
+      "name": "XDomainRequest.responseText",
+      "link": "/en-US/docs/Web/API/XDomainRequest/responseText",
+      "description": "Gets the response body as a string."
+    },
+    {
+      "name": "XDomainRequest.open()",
+      "link": "/en-US/docs/Web/API/XDomainRequest/open",
+      "description": "Opens the request, specifing the method (GET/POST) and URL.",
+      "parameters": [
+        {
+          "name": "method",
+          "description": "The HTTP method to use for the request. (GET or POST)"
+        },
+        {
+          "name": "url",
+          "description": "The URL to which to send the request."
+        }
+      ]
+    },
+    {
+      "name": "XDomainRequest.send()",
+      "link": "/en-US/docs/Web/API/XDomainRequest/send",
+      "description": "Sends the request. POST data is specified in this method.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "The form data to be sent with the request. This parameter is optional for GET requests."
+        }
+      ]
+    },
+    {
+      "name": "XDomainRequest.abort()",
+      "link": "/en-US/docs/Web/API/XDomainRequest/abort",
+      "description": "Aborts the request."
+    },
+    {
+      "name": "XDomainRequest.onprogress",
+      "link": "/en-US/docs/Web/API/XDomainRequest/onprogress",
+      "description": "A handler for when the request has made progress between the send method call and the onload event.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A function to call when progress events occur."
+        }
+      ]
+    },
+    {
+      "name": "XDomainRequest.ontimeout",
+      "link": "/en-US/docs/Web/API/XDomainRequest/ontimeout",
+      "description": "A handler for when the request times out.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A function to be called when the event times out."
+        }
+      ]
+    },
+    {
+      "name": "XDomainRequest.onerror",
+      "link": "/en-US/docs/Web/API/XDomainRequest/onerror",
+      "description": "A handler for when a request has errored.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A function to call when an error occurs."
+        }
+      ]
+    },
+    {
+      "name": "XDomainRequest.onload",
+      "link": "/en-US/docs/Web/API/XDomainRequest/onload",
+      "description": "A handler for when the full response has been received from the server."
+    }
+  ]
+}

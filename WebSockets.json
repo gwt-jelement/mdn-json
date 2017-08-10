@@ -1,0 +1,115 @@
+{
+  "name": "WebSockets",
+  "description": "",
+  "members": [
+    {
+      "name": "WebSocket",
+      "link": "/en-US/docs/Web/API/WebSocket",
+      "description": "The primary interface for connecting to a WebSocket server and then sending and receiving data on the connection.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The URL to which to connect; this should be the URL to which the WebSocket server will respond."
+        },
+        {
+          "name": "protocols Optional",
+          "description": "Either a single protocol string or an array of protocol strings. These strings are used to indicate sub-protocols, so that a single server can implement multiple WebSocket sub-protocols (for example, you might want one server to be able to handle different types of interactions depending on the specified protocol). If you don\u0027t specify a protocol string, an empty string is assumed."
+        },
+        {
+          "name": "SECURITY_ERR",
+          "description": "The port to which the connection is being attempted is being blocked."
+        },
+        {
+          "name": "code Optional",
+          "description": "A numeric value indicating the status code explaining why the connection is being closed. If this parameter is not specified, a default value of 1000 (indicating a normal \"transaction complete\" closure) is assumed. See the list of status codes on the CloseEvent page for permitted values."
+        },
+        {
+          "name": "reason Optional",
+          "description": "A human-readable string explaining why the connection is closing. This string must be no longer than 123 bytes of UTF-8 text (not characters)."
+        },
+        {
+          "name": "INVALID_ACCESS_ERR",
+          "description": "An invalid code was specified."
+        },
+        {
+          "name": "SYNTAX_ERR",
+          "description": "The reason string is too long or contains unpaired surrogates."
+        },
+        {
+          "name": "data",
+          "description": "A text string to send to the server."
+        },
+        {
+          "name": "INVALID_STATE_ERR",
+          "description": "The connection is not currently OPEN."
+        },
+        {
+          "name": "SYNTAX_ERR",
+          "description": "The data is a string that has unpaired surrogates."
+        }
+      ]
+    },
+    {
+      "name": "CloseEvent",
+      "link": "/en-US/docs/Web/API/CloseEvent",
+      "description": "The event sent by the WebSocket object when the connection closes.",
+      "parameters": [
+        {
+          "name": "CloseEvent()",
+          "description": "Creates a new CloseEvent."
+        },
+        {
+          "name": "CloseEvent.code Read only",
+          "description": "Returns an unsigned short containing the close code send by the server. The following values are permitted status codes. Status code Name Description 0–999   Reserved and not used. 1000 CLOSE_NORMAL Normal closure; the connection successfully completed whatever purpose for which it was created. 1001 CLOSE_GOING_AWAY The endpoint is going away, either because of a server failure or because the browser is navigating away from the page that opened the connection. 1002 CLOSE_PROTOCOL_ERROR The endpoint is terminating the connection due to a protocol error. 1003 CLOSE_UNSUPPORTED The connection is being terminated because the endpoint received data of a type it cannot accept (for example, a text-only endpoint received binary data). 1004   Reserved. A meaning might be defined in the future. 1005 CLOSE_NO_STATUS Reserved.  Indicates that no status code was provided even though one was expected. 1006 CLOSE_ABNORMAL Reserved. Used to indicate that a connection was closed abnormally (that is, with no close frame being sent) when a status code is expected. 1007 Unsupported Data The endpoint is terminating the connection because a message was received that contained inconsistent data (e.g., non-UTF-8 data within a text message). 1008 Policy Violation The endpoint is terminating the connection because it received a message that violates its policy. This is a generic status code, used when codes 1003 and 1009 are not suitable. 1009 CLOSE_TOO_LARGE The endpoint is terminating the connection because a data frame was received that is too large. 1010 Missing Extension The client is terminating the connection because it expected the server to negotiate one or more extension, but the server didn\u0027t. 1011 Internal Error The server is terminating the connection because it encountered an unexpected condition that prevented it from fulfilling the request. 1012 Service Restart The server is terminating the connection because it is restarting. [Ref] 1013 Try Again Later The server is terminating the connection due to a temporary condition, e.g. it is overloaded and is casting off some of its clients. [Ref] 1014   Reserved for future use by the WebSocket standard. 1015 TLS Handshake Reserved. Indicates that the connection was closed due to a failure to perform a TLS handshake (e.g., the server certificate can\u0027t be verified). 1016–1999   Reserved for future use by the WebSocket standard. 2000–2999   Reserved for use by WebSocket extensions. 3000–3999   Available for use by libraries and frameworks. May not be used by applications. Available for registration at the IANA via first-come, first-serve. 4000–4999   Available for use by applications."
+        },
+        {
+          "name": "CloseEvent.reason Read only",
+          "description": "Returns a DOMString indicating the reason the server closed the connection. This is specific to the particular server and sub-protocol."
+        },
+        {
+          "name": "CloseEvent.wasClean Read only",
+          "description": "Returns a Boolean that Indicates whether or not the connection was cleanly closed."
+        },
+        {
+          "name": "CloseEvent.initCloseEvent()",
+          "description": "Initializes the value of a CloseEvent created. If the event has already being dispatched, this method does nothing. Do not use this method anymore, use the CloseEvent() constructor instead."
+        }
+      ]
+    },
+    {
+      "name": "MessageEvent",
+      "link": "/en-US/docs/Web/API/MessageEvent",
+      "description": "The event sent by the WebSocket object when a message is received from the server.",
+      "parameters": [
+        {
+          "name": "MessageEvent()",
+          "description": "Creates a new MessageEvent."
+        },
+        {
+          "name": "MessageEvent.data Read only",
+          "description": "The data sent by the message emitter."
+        },
+        {
+          "name": "MessageEvent.origin Read only",
+          "description": "A USVString representing the origin of the message emitter."
+        },
+        {
+          "name": "MessageEvent.lastEventId Read only",
+          "description": "A DOMString representing a unique ID for the event."
+        },
+        {
+          "name": "MessageEvent.source Read only",
+          "description": "A MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter."
+        },
+        {
+          "name": "MessageEvent.ports Read only",
+          "description": "An array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker)."
+        },
+        {
+          "name": "MessageEvent.initMessageEvent()",
+          "description": "Initializes a message event. Do not use this anymore — use the MessageEvent() constructor instead."
+        }
+      ]
+    }
+  ]
+}

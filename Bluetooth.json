@@ -1,0 +1,32 @@
+{
+  "name": "Bluetooth",
+  "description": "",
+  "members": [
+    {
+      "name": "Bluetooth.referringDevice",
+      "link": "/en-US/docs/Web/API/Bluetooth/referringDevice",
+      "description": "Returns a reference to the device, if any, from which the user opened the current page. For example, an Eddystone beacon might advertise a URL, which the user agent allows the user to open. A BluetoothDevice representing the beacon would be available through navigator.bluetooth.referringDevice."
+    },
+    {
+      "name": "Bluetooth.onavailabilitychanged",
+      "link": "/en-US/docs/Web/API/Bluetooth/onavailabilitychanged",
+      "description": "An event handler that runs when an event of type availabilitychanged has fired."
+    },
+    {
+      "name": "Bluetooth.getAvailability()",
+      "link": "/en-US/docs/Web/API/Bluetooth/getAvailability",
+      "description": "Returns a Promise that resolved to a Boolean indicating whether the user-agent has the ability to support Bluetooth. Some user-agents let the user configure an option that affects what is returned by this value. If this option is set, that is the value returned by this method."
+    },
+    {
+      "name": "Bluetooth.requestDevice()",
+      "link": "/en-US/docs/Web/API/Bluetooth/requestDevice",
+      "description": "Returns a Promise to a BluetoothDevice object with the specified options.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for the device request. The available options are: filters[]: An array of BluetoothScanFilters. This filter consists of an array of  BluetoothServiceUUIDs, a name parameter, and a namePrefix parameter. optionalServices[]: An array of BluetoothServiceUUIDs. acceptAllDevices: A Boolean indicating that the requesting script can accept all Bluetooth devices. The default is false."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "HTMLAudioElement",
+  "description": "The HTMLAudioElement interface provides access to the properties of \u003caudio\u003e elements, as well as methods to manipulate them. It derives from the HTMLMediaElement interface.",
+  "members": [
+    {
+      "name": "DOMString",
+      "link": "/en-US/docs/Web/API/DOMString",
+      "description": "The src property of the constructed HTMLAudioElement."
+    }
+  ]
+}

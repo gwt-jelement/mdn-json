@@ -1,0 +1,11 @@
+{
+  "name": "RTCIdentityEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCIdentityEvent.assertion",
+      "link": "/en-US/docs/Web/API/RTCIdentityEvent/assertion",
+      "description": "Returns the DOMString containing a blob being the assertion generated."
+    }
+  ]
+}

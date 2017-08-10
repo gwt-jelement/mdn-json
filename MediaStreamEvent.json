@@ -1,0 +1,26 @@
+{
+  "name": "MediaStreamEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaStreamEvent.stream",
+      "link": "/en-US/docs/Web/API/MediaStreamEvent/stream",
+      "description": "Contains the MediaStream containing the stream associated with the event."
+    },
+    {
+      "name": "MediaStreamEvent()",
+      "link": "/en-US/docs/Web/API/MediaStreamEvent/MediaStreamEvent",
+      "description": "Returns a new MediaStreamEvent. It takes two parameters, the first being a DOMString representing the type of the event; the second a dictionary containing the MediaStream it refers to.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString containing the name of the event, like addstream or removestream."
+        },
+        {
+          "name": "mediaStreamEventInit",
+          "description": "Is a MediaStreamEventInit dictionary, having the following fields: \"stream\" of type MediaStream representing the stream being concerned by the event. \"bubbles\", optional and defaulting to false, inherited from EventInit, and indicating if the event must bubble or not. \"cancelable\", optional and defaulting to false, inherited from EventInit, and indicating if the event can be canceled or not."
+        }
+      ]
+    }
+  ]
+}

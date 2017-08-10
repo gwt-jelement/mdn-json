@@ -1,0 +1,26 @@
+{
+  "name": "BeforeInstallPromptEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "BeforeInstallPromptEvent()",
+      "link": "/en-US/docs/Web/API/BeforeInstallPromptEvent/BeforeInstallPromptEvent",
+      "description": "Creates a new BeforeInstallPromptEvent."
+    },
+    {
+      "name": "BeforeInstallPromptEvent.platforms",
+      "link": "/en-US/docs/Web/API/BeforeInstallPromptEvent/platforms",
+      "description": "Returns an array of DOMString items containing the platforms on which the event was dispatched. This is provided for user agents that want to present a choice of versions to the user such as, for example, \"web\" or \"play\" which would allow the user to chose between a web version or an Android version."
+    },
+    {
+      "name": "BeforeInstallPromptEvent.userChoice",
+      "link": "/en-US/docs/Web/API/BeforeInstallPromptEvent/userChoice",
+      "description": "Returns a Promise that resolves to a DOMString containing either \u0027installed\u0027 or \u0027dismissed\u0027."
+    },
+    {
+      "name": "BeforeInstallPromptEvent.prompt()",
+      "link": "/en-US/docs/Web/API/BeforeInstallPromptEvent/prompt",
+      "description": "Allows a developer to show the install prompt at a time of their own choosing. This method returns a  Promise."
+    }
+  ]
+}

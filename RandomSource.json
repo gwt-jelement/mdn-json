@@ -1,0 +1,17 @@
+{
+  "name": "RandomSource",
+  "description": "",
+  "members": [
+    {
+      "name": "RandomSource.getRandomValues()",
+      "link": "/en-US/docs/Web/API/RandomSource/getRandomValues",
+      "description": "Fills the passed ArrayBufferView with cryptographically sound random values.",
+      "parameters": [
+        {
+          "name": "typedArray",
+          "description": "Is an integer-based TypedArray, that is an Int8Array, a Uint8Array, an Int16Array, a Uint16Array, an Int32Array, or a Uint32Array. All elements in the array are going to be overridden with random numbers."
+        }
+      ]
+    }
+  ]
+}

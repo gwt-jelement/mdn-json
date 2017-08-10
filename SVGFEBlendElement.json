@@ -1,0 +1,21 @@
+{
+  "name": "SVGFEBlendElement",
+  "description": "The SVGFEBlendElement interface corresponds to the \u003cfeBlend\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEBlendElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEBlendElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEBlendElement.in2",
+      "link": "/en-US/docs/Web/API/SVGFEBlendElement/in2",
+      "description": "An SVGAnimatedString corresponding to the in2 attribute of the given element."
+    },
+    {
+      "name": "SVGFEBlendElement.mode",
+      "link": "/en-US/docs/Web/API/SVGFEBlendElement/mode",
+      "description": "An SVGAnimatedEnumeration corresponding to the mode attribute of the given element. It takes one of the SVG_FEBLEND_MODE_* constants defined on this interface."
+    }
+  ]
+}

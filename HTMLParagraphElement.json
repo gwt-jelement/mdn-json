@@ -1,0 +1,11 @@
+{
+  "name": "HTMLParagraphElement",
+  "description": "The HTMLParagraphElement interface provides special properties (beyond those of the regular HTMLElement object interface it inherits) for manipulating \u003cp\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLParagraphElement.align",
+      "link": "/en-US/docs/Web/API/HTMLParagraphElement/align",
+      "description": "A DOMString representing an enumerated property indicating alignment of the element\u0027s contents with respect to the surrounding context. The possible values are \"left\", \"right\", \"justify\", and \"center\"."
+    }
+  ]
+}

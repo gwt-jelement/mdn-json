@@ -1,0 +1,122 @@
+{
+  "name": "HTMLBodyElement",
+  "description": "The HTMLBodyElement interface provides special properties (beyond those of the regular HTMLElement interface they also inherit) for manipulating body elements.",
+  "members": [
+    {
+      "name": "HTMLBodyElement.aLink",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/aLink",
+      "description": "Is a DOMString that represents the color of active hyperlinks."
+    },
+    {
+      "name": "HTMLBodyElement.background",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/background",
+      "description": "Is a DOMString that represents the description of the location of the background image resource. Note that this is not an URI, though some older version of some browsers do expect it."
+    },
+    {
+      "name": "HTMLBodyElement.bgColor",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/bgColor",
+      "description": "Is a DOMString that represents the background color for the document."
+    },
+    {
+      "name": "HTMLBodyElement.link",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/link",
+      "description": "Is a DOMString that represents the color of unvisited links."
+    },
+    {
+      "name": "HTMLBodyElement.text",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/text",
+      "description": "Is a DOMString that represents the foreground color of text."
+    },
+    {
+      "name": "HTMLBodyElement.vLink",
+      "link": "/en-US/docs/Web/API/HTMLBodyElement/vLink",
+      "description": "Is a DOMString that represents the color of visited links."
+    },
+    {
+      "name": "WindowEventHandlers.onafterprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onafterprint",
+      "description": "Is an EventHandler representing the code to be called when the afterprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeprint",
+      "description": "Is an EventHandler representing the code to be called when the beforeprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
+      "description": "Is an EventHandler representing the code to be called when the beforeunload event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onhashchange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onhashchange",
+      "description": "Is an EventHandler representing the code to be called when the hashchange event is raised.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A reference to a function."
+        }
+      ]
+    },
+    {
+      "name": "WindowEventHandlers.onlanguagechange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onlanguagechange",
+      "description": "Is an EventHandler representing the code to be called when the languagechange event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onmessage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onmessage",
+      "description": "Is an EventHandler representing the code to be called when the message event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onoffline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onoffline",
+      "description": "Is an EventHandler representing the code to be called when the offline event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.ononline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/ononline",
+      "description": "Is an EventHandler representing the code to be called when the online event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpagehide",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpagehide",
+      "description": "Is an EventHandler representing the code to be called when the pagehide event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpageshow",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpageshow",
+      "description": "Is an EventHandler representing the code to be called when the pageshow event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpopstate",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
+      "description": "Is an EventHandler representing the code to be called when the popstate event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onrejectionhandled",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onrejectionhandled",
+      "description": "An EventHandler representing the code executed when the rejectionhandled event is raised, indicating that a Promise was rejected and the rejection has been handled."
+    },
+    {
+      "name": "WindowEventHandlers.onresize",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onresize",
+      "description": "Is an EventHandler representing the code to be called when the resize event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onstorage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onstorage",
+      "description": "Is an EventHandler representing the code to be called when the storage event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onunhandledrejection",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunhandledrejection",
+      "description": "An EventHandler representing the code executed when the unhandledrejection event is raised, indicating that a Promise was rejected but the rejection was not handled."
+    },
+    {
+      "name": "WindowEventHandlers.onunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunload",
+      "description": "Is an EventHandler representing the code to be called when the unload event is raised."
+    }
+  ]
+}

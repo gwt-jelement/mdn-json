@@ -1,0 +1,26 @@
+{
+  "name": "InputDeviceCapabilities",
+  "description": "",
+  "members": [
+    {
+      "name": "InputDeviceCapabilities.InputDeviceCapabilities()",
+      "link": "/en-US/docs/Web/API/InputDeviceCapabilities/InputDeviceCapabilities",
+      "description": "Creates an InputDeviceCapabilities object.",
+      "parameters": [
+        {
+          "name": "InputDeviceCapabilitiesInit Optional",
+          "description": "A dictionary object containing a set of device capabilities. It contains the following property. fireTouchEvents: A Boolean that indicates whether the device dispatches touch events."
+        },
+        {
+          "name": "Specifications",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "InputDeviceCapabilities.firesTouchEvents",
+      "link": "/en-US/docs/Web/API/InputDeviceCapabilities/firesTouchEvents",
+      "description": "A Boolean that indicates whether the device dispatches touch events."
+    }
+  ]
+}

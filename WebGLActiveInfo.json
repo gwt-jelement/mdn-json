@@ -1,0 +1,21 @@
+{
+  "name": "WebGLActiveInfo",
+  "description": "The WebGLActiveInfo interface is part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods.",
+  "members": [
+    {
+      "name": "WebGLActiveInfo.name",
+      "link": "/en-US/docs/Web/API/WebGLActiveInfo/name",
+      "description": "The read-only name of the requested variable."
+    },
+    {
+      "name": "WebGLActiveInfo.size",
+      "link": "/en-US/docs/Web/API/WebGLActiveInfo/size",
+      "description": "The read-only size of the requested variable."
+    },
+    {
+      "name": "WebGLActiveInfo.type",
+      "link": "/en-US/docs/Web/API/WebGLActiveInfo/type",
+      "description": "The read-only type of the requested variable."
+    }
+  ]
+}

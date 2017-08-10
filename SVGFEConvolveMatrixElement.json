@@ -1,0 +1,66 @@
+{
+  "name": "SVGFEConvolveMatrixElement",
+  "description": "The SVGFEConvolveMatrixElement interface corresponds to the \u003cfeConvolveMatrix\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEConvolveMatrixElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.orderX",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/orderX",
+      "description": "An SVGAnimatedInteger corresponding to the order attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.orderY",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/orderY",
+      "description": "An SVGAnimatedInteger corresponding to the order attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.kernelMatrix",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/kernelMatrix",
+      "description": "An SVGAnimatedNumberList corresponding to the kernelMatrix attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.divisor",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/divisor",
+      "description": "An SVGAnimatedNumber corresponding to the divisor attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.bias",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/bias",
+      "description": "An SVGAnimatedNumber corresponding to the bias attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.targetX",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/targetX",
+      "description": "An SVGAnimatedInteger corresponding to the targetX attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.targetY",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/targetY",
+      "description": "An SVGAnimatedInteger corresponding to the targetY attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.edgeMode",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/edgeMode",
+      "description": "An SVGAnimatedEnumeration corresponding to the edgeMode attribute of the given element. Takes one of the SVG_EDGEMODE_* constants defined on this interface."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.kernelUnitLengthX",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthX",
+      "description": "An SVGAnimatedNumber corresponding to the kernelUnitLength attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.kernelUnitLengthY",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/kernelUnitLengthY",
+      "description": "An SVGAnimatedNumber corresponding to the kernelUnitLength attribute of the given element."
+    },
+    {
+      "name": "SVGFEConvolveMatrixElement.preserveAlpha",
+      "link": "/en-US/docs/Web/API/SVGFEConvolveMatrixElement/preserveAlpha",
+      "description": "An SVGAnimatedBoolean corresponding to the preserveAlpha attribute of the given element."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "RTCRtpSender",
+  "description": "The RTCRtpSender interface provides the ability to control and obtain details about how a particular MediaStreamTrack is encoded and sent to a remote peer. With it, you can configure the encoding used for the corresponding track, get information about the device\u0027s media capabilities, and so forth. You can also obtain access to an RTPDTMFSender which can be used to send DTMF codes to the remote peer. Properties RTCRtpSender.dtmf Read only An RTCDTMFSender which can be used to send DTMF tones using \"telephone-event\" payloads on the RTP session represented by the RTCRtpSender object. If null, the track and/or the connection doesn\u0027t support DTMF. Only audio tracks can support DTMF. RTCRtpSender.rtcpTransport Read only The transport over which Real-time Transport Control Protocol (RTCP) information is exchanged. This value is null before the RTCDtlsTransport object is created. When bundling is in use, more than one RTCRtpSender can share the same transport, sending all RTP and RTCP information over that one transport. RTCRtpSender.track Read only The MediaStreamTrack which is being handled by the RTCRtpSender. If track is null, the RTCRtpSender doesn\u0027t transmit anything. RTCRtpSender.transport Read only The RTCDtlsTransport over which media data for the track is being transmitted. The data is transmitted using RTP packets. Before the transport is established, this value is null. Methods RTCRtpSender.getParameters() Returns a RTCRtpParameters object describing the current configuration for the encoding and transmission of media on the track. RTCRtpSender.setParameters() Applies changes to parameters which configure how the track is encoded and transmitted to the remote peer. RTCRtpSender.replaceTrack() Attempts to replace the track currently being sent by the RTCRtpSender with another track, without performing renegotiation. This method can be used, for example, to toggle between the front- and rear-facing cameras on a device. Static methods RTCRtpSender.getCapabilities() Returns an RTCRtpCapabilities object describing the system\u0027s capabilities for sending a specified kind of media data. Example tbd",
+  "members": [
+    {
+      "name": "RTCRtpSender.dtmf",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/dtmf",
+      "description": "An RTCDTMFSender which can be used to send DTMF tones using \"telephone-event\" payloads on the RTP session represented by the RTCRtpSender object. If null, the track and/or the connection doesn\u0027t support DTMF. Only audio tracks can support DTMF."
+    },
+    {
+      "name": "RTCRtpSender.rtcpTransport",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/rtcpTransport",
+      "description": "The transport over which Real-time Transport Control Protocol (RTCP) information is exchanged. This value is null before the RTCDtlsTransport object is created. When bundling is in use, more than one RTCRtpSender can share the same transport, sending all RTP and RTCP information over that one transport."
+    },
+    {
+      "name": "RTCRtpSender.track",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/track",
+      "description": "The MediaStreamTrack which is being handled by the RTCRtpSender. If track is null, the RTCRtpSender doesn\u0027t transmit anything."
+    },
+    {
+      "name": "RTCRtpSender.transport",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/transport",
+      "description": "The RTCDtlsTransport over which media data for the track is being transmitted. The data is transmitted using RTP packets. Before the transport is established, this value is null."
+    },
+    {
+      "name": "RTCRtpSender.getParameters()",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/getParameters",
+      "description": "Returns a RTCRtpParameters object describing the current configuration for the encoding and transmission of media on the track."
+    },
+    {
+      "name": "RTCRtpSender.setParameters()",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/setParameters",
+      "description": "Applies changes to parameters which configure how the track is encoded and transmitted to the remote peer."
+    },
+    {
+      "name": "RTCRtpSender.replaceTrack()",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/replaceTrack",
+      "description": "Attempts to replace the track currently being sent by the RTCRtpSender with another track, without performing renegotiation. This method can be used, for example, to toggle between the front- and rear-facing cameras on a device."
+    },
+    {
+      "name": "RTCRtpSender.getCapabilities()",
+      "link": "/en-US/docs/Web/API/RTCRtpSender/getCapabilities",
+      "description": "Returns an RTCRtpCapabilities object describing the system\u0027s capabilities for sending a specified kind of media data."
+    }
+  ]
+}

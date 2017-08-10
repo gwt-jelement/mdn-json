@@ -1,0 +1,61 @@
+{
+  "name": "ValidityState",
+  "description": "The ValidityState interface represents the validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element\u0027s value fails to validate, if it\u0027s not valid.",
+  "members": [
+    {
+      "name": "ValidityState.badInput",
+      "link": "/en-US/docs/Web/API/ValidityState/badInput",
+      "description": "Is a Boolean indicating the user has provided input that the browser is unable to convert."
+    },
+    {
+      "name": "ValidityState.customError",
+      "link": "/en-US/docs/Web/API/ValidityState/customError",
+      "description": "Is a Boolean indicating the element\u0027s custom validity message has been set to a non-empty string by calling the element\u0027s setCustomValidity() method."
+    },
+    {
+      "name": "ValidityState.patternMismatch",
+      "link": "/en-US/docs/Web/API/ValidityState/patternMismatch",
+      "description": "Is a Boolean indicating the value does not match the specified pattern."
+    },
+    {
+      "name": "ValidityState.rangeOverflow",
+      "link": "/en-US/docs/Web/API/ValidityState/rangeOverflow",
+      "description": "Is a Boolean indicating the value is greater than the maximum specified by the max attribute."
+    },
+    {
+      "name": "ValidityState.rangeUnderflow",
+      "link": "/en-US/docs/Web/API/ValidityState/rangeUnderflow",
+      "description": "Is a Boolean indicating the value is less than the minimum specified by the min attribute."
+    },
+    {
+      "name": "ValidityState.stepMismatch",
+      "link": "/en-US/docs/Web/API/ValidityState/stepMismatch",
+      "description": "Is a Boolean indicating the value does not fit the rules determined by the step attribute (that is, it\u0027s not evenly divisible by the step value)."
+    },
+    {
+      "name": "ValidityState.tooLong",
+      "link": "/en-US/docs/Web/API/ValidityState/tooLong",
+      "description": "Is a Boolean indicating the value exceeds the specified maxlength for HTMLInputElement or HTMLTextAreaElement objects. Note: This will never be true in Gecko, because elements\u0027 values are prevented from being longer than maxlength."
+    },
+    {
+      "name": "ValidityState.tooShort",
+      "link": "/en-US/docs/Web/API/ValidityState/tooShort",
+      "description": "Is a Boolean indicating the value fails to meet the specified minlength for HTMLInputElement or HTMLTextAreaElement objects."
+    },
+    {
+      "name": "ValidityState.typeMismatch",
+      "link": "/en-US/docs/Web/API/ValidityState/typeMismatch",
+      "description": "Is a Boolean indicating the value is not in the required syntax (when type is email or url)."
+    },
+    {
+      "name": "ValidityState.valid",
+      "link": "/en-US/docs/Web/API/ValidityState/valid",
+      "description": "Is a Boolean indicating the element meets all constraint validations, and is therefore considered to be valid."
+    },
+    {
+      "name": "ValidityState.valueMissing",
+      "link": "/en-US/docs/Web/API/ValidityState/valueMissing",
+      "description": "Is a Boolean indicating the element has a required attribute, but no value."
+    }
+  ]
+}

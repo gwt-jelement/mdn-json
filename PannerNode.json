@@ -1,0 +1,148 @@
+{
+  "name": "PannerNode",
+  "description": "",
+  "members": [
+    {
+      "name": "PannerNode.PannerNode",
+      "link": "/en-US/docs/Web/API/PannerNode/PannerNode",
+      "description": "Creates a new PannerNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A BaseAudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options Optional",
+          "description": "A PannerOptions dictionary object defining the properties you want the PannerNode to have (It also inherits the options defined in the AudioNodeOptions dictionary.): panningModel: The PannerNode.panningModel you want the PannerNode to have (the default is equalpower.) distanceModel: The PannerNode.distanceModel you want the PannerNode to have (the default is inverse.) positionX: The PannerNode.positionX you want the PannerNode to have (the default is 0.) positionY: The PannerNode.positionY you want the PannerNode to have (the default is 0.) positionZ: The PannerNode.positionZ you want the PannerNode to have (the default is 0.) orientationX: The PannerNode.orientationX you want the PannerNode to have (the default is 1.) orientationY: The PannerNode.orientationY you want the PannerNode to have (the default is 0.) orientationZ: The PannerNode.orientationZ you want the PannerNode to have (the default is 0.) refDistance: The PannerNode.refDistance you want the PannerNode to have (the default is 1.) maxDistance: The PannerNode.maxDistance you want the PannerNode to have (the default is 10000.) rollOffFactor: The PannerNode.rollOffFactor you want the PannerNode to have (the default is 1.) coneInnerAngle: The PannerNode.coneInnerAngle you want the PannerNode to have (the default is 360.) coneOuterAngle: The PannerNode.coneOuterAngle you want the PannerNode to have (the default is 360.) coneOuterGain: The PannerNode.coneOuterGain you want the PannerNode to have (the default is 0.)"
+        }
+      ]
+    },
+    {
+      "name": "PannerNode.coneInnerAngle",
+      "link": "/en-US/docs/Web/API/PannerNode/coneInnerAngle",
+      "description": "Is a double value describing the angle, in degrees, of a cone inside of which there will be no volume reduction."
+    },
+    {
+      "name": "PannerNode.coneOuterAngle",
+      "link": "/en-US/docs/Web/API/PannerNode/coneOuterAngle",
+      "description": "A double value describing the angle, in degrees, of a cone outside of which the volume will be reduced by a constant value, defined by the coneOuterGain attribute."
+    },
+    {
+      "name": "PannerNode.coneOuterGain",
+      "link": "/en-US/docs/Web/API/PannerNode/coneOuterGain",
+      "description": "A double value describing the amount of volume reduction outside the cone defined by the coneOuterAngle attribute. Its default value is 0, meaning that no sound can be heard."
+    },
+    {
+      "name": "PannerNode.distanceModel",
+      "link": "/en-US/docs/Web/API/PannerNode/distanceModel",
+      "description": "An enumerated value determining which algorithm to use to reduce the volume of the audio source as it moves away from the listener."
+    },
+    {
+      "name": "PannerNode.maxDistance",
+      "link": "/en-US/docs/Web/API/PannerNode/maxDistance",
+      "description": "A double value representing the maximum distance between the audio source and the listener, after which the volume is not reduced any further."
+    },
+    {
+      "name": "PannerNode.orientationX",
+      "link": "/en-US/docs/Web/API/PannerNode/orientationX",
+      "description": "Represents the horizontal position of the audio source\u0027s vector in a right-hand cartesian coordinate sytem. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 1."
+    },
+    {
+      "name": "PannerNode.orientationY",
+      "link": "/en-US/docs/Web/API/PannerNode/orientationY",
+      "description": "Represents the vertical position of the audio source\u0027s vector in a right-hand cartesian coordinate sytem. The default is 0. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 0."
+    },
+    {
+      "name": "PannerNode.orientationZ",
+      "link": "/en-US/docs/Web/API/PannerNode/orientationZ",
+      "description": "Represents the longitudinal (back and forth) position of the audio source\u0027s vector in a right-hand cartesian coordinate sytem. The default is 0. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 0."
+    },
+    {
+      "name": "PannerNode.panningModel",
+      "link": "/en-US/docs/Web/API/PannerNode/panningModel",
+      "description": "An enumerated value determining which spatialisation algorithm to use to position the audio in 3D space."
+    },
+    {
+      "name": "PannerNode.positionX",
+      "link": "/en-US/docs/Web/API/PannerNode/positionX",
+      "description": "Represents the horizontal position of the audio in a right-hand cartesian coordinate sytem. The default is 0. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 0."
+    },
+    {
+      "name": "PannerNode.positionY",
+      "link": "/en-US/docs/Web/API/PannerNode/positionY",
+      "description": "Represents the vertical position of the audio in a right-hand cartesian coordinate sytem. The default is 0. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 0."
+    },
+    {
+      "name": "PannerNode.positionZ",
+      "link": "/en-US/docs/Web/API/PannerNode/positionZ",
+      "description": "Represents the longitudinal (back and forth) position of the audio in a right-hand cartesian coordinate sytem. The default is 0. While this AudioParam cannot be directly changed, its value can be altered using its value property. The default is value is 0."
+    },
+    {
+      "name": "PannerNode.refDistance",
+      "link": "/en-US/docs/Web/API/PannerNode/refDistance",
+      "description": "A double value representing the reference distance for reducing volume as the audio source moves further from the listener."
+    },
+    {
+      "name": "PannerNode.rolloffFactor",
+      "link": "/en-US/docs/Web/API/PannerNode/rolloffFactor",
+      "description": "A double value describing how quickly the volume is reduced as the source moves away from the listener. This value is used by all distance models."
+    },
+    {
+      "name": "PannerNode.setPosition()",
+      "link": "/en-US/docs/Web/API/PannerNode/setPosition",
+      "description": "Defines the position of the audio source relative to the listener (represented by an AudioListener object stored in the AudioContext.listener attribute.)",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x position of the panner in 3D space."
+        },
+        {
+          "name": "y",
+          "description": "The y position of the panner in 3D space."
+        },
+        {
+          "name": "z",
+          "description": "The z position of the panner in 3D space."
+        }
+      ]
+    },
+    {
+      "name": "PannerNode.setOrientation()",
+      "link": "/en-US/docs/Web/API/PannerNode/setOrientation",
+      "description": "Defines the direction the audio source is playing in.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x value of the panner\u0027s direction vector in 3D space."
+        },
+        {
+          "name": "y",
+          "description": "The y value of the panner\u0027s direction vector in 3D space."
+        },
+        {
+          "name": "z",
+          "description": "The z value of the panner\u0027s direction vector in 3D space."
+        }
+      ]
+    },
+    {
+      "name": "PannerNode.setVelocity()",
+      "link": "/en-US/docs/Web/API/PannerNode/setVelocity",
+      "description": "Defines the velocity vector of the audio source — how fast it is moving and in what direction. In a previous version of the specification, the PannerNode had a velocity that could pitch up or down AudioBufferSourceNodes connected downstream. This feature was not clearly specified and had a number of issues, so it was removed from the specification.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x value of the panner\u0027s velocity vector."
+        },
+        {
+          "name": "y",
+          "description": "The y value of the panner\u0027s velocity vector."
+        },
+        {
+          "name": "z",
+          "description": "The z value of the panner\u0027s velocity vector."
+        }
+      ]
+    }
+  ]
+}

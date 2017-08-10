@@ -1,0 +1,16 @@
+{
+  "name": "MIDIConnectionEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "MIDIConnectionEvent.MIDIConnectionEvent",
+      "link": "/en-US/docs/Web/API/MIDIConnectionEvent/MIDIConnectionEvent",
+      "description": "Creates a new MIDIConnectionEvent object."
+    },
+    {
+      "name": "MIDIConnectionEvent.port",
+      "link": "/en-US/docs/Web/API/MIDIConnectionEvent/port",
+      "description": "Returns a reference to a MIDIPort instance for a port that has been connected or disconnected.\""
+    }
+  ]
+}

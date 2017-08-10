@@ -1,0 +1,22 @@
+{
+  "name": "SourceBufferList",
+  "description": "",
+  "members": [
+    {
+      "name": "SourceBufferList.length",
+      "link": "/en-US/docs/Web/API/SourceBufferList/length",
+      "description": "Returns the number of SourceBuffer objects in the list."
+    },
+    {
+      "name": "SourceBufferList.SourceBuffer()",
+      "link": "/en-US/docs/Web/API/SourceBufferList/SourceBuffer",
+      "description": "This getter allows the SourceBuffer objects in the list to be accessed with an array operator (i.e. [].)",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The index position of the SourceBuffer object you want to return."
+        }
+      ]
+    }
+  ]
+}

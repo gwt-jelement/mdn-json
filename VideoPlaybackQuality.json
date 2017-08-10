@@ -1,0 +1,31 @@
+{
+  "name": "VideoPlaybackQuality",
+  "description": "",
+  "members": [
+    {
+      "name": "VideoPlaybackQuality.creationTime",
+      "link": "/en-US/docs/Web/API/VideoPlaybackQuality/creationTime",
+      "description": "A DOMHighResTimeStamp containing the time in miliseconds since the start of the navigation and the creation of the object."
+    },
+    {
+      "name": "VideoPlaybackQuality.totalVideoFrames",
+      "link": "/en-US/docs/Web/API/VideoPlaybackQuality/totalVideoFrames",
+      "description": "An unsigned long giving the number of video frames created and dropped since the creation of the associated HTMLVideoElement."
+    },
+    {
+      "name": "VideoPlaybackQuality.droppedVideoFrames",
+      "link": "/en-US/docs/Web/API/VideoPlaybackQuality/droppedVideoFrames",
+      "description": "An unsigned long giving the number of video frames dropped since the creation of the associated HTMLVideoElement."
+    },
+    {
+      "name": "VideoPlaybackQuality.corruptedVideoFrames",
+      "link": "/en-US/docs/Web/API/VideoPlaybackQuality/corruptedVideoFrames",
+      "description": "An unsigned long giving the number of video frames corrupted since the creation of the associated HTMLVideoElement. A corrupted frame may be created or dropped."
+    },
+    {
+      "name": "VideoPlaybackQuality.totalFrameDelay",
+      "link": "/en-US/docs/Web/API/VideoPlaybackQuality/totalFrameDelay",
+      "description": "A double containing the sum of the frame delay since the creation of the associated HTMLVideoElement. The frame delay is the difference between a frame\u0027s theoretical presentation time and its effective display time."
+    }
+  ]
+}

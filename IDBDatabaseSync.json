@@ -1,0 +1,319 @@
+{
+  "name": "IDBDatabaseSync",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBObjectStoreSync",
+      "link": "/en/IndexedDB/IDBObjectStoreSync",
+      "description": "An object to access the newly created object store.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "The value to store into the index."
+        },
+        {
+          "name": "key",
+          "description": "A key to use for identifying the record."
+        },
+        {
+          "name": "any",
+          "description": "The key for the stored record."
+        },
+        {
+          "name": "CONSTRAINT_ERR",
+          "description": "If a record exists in this index with a key corresponding to the key parameter or the index is auto-populated, or if no record exists with a key corresponding to the value parameter in the index\u0027s referenced object store."
+        },
+        {
+          "name": "DATA_ERR",
+          "description": "If this object store uses out-of-line keys, and the key parameter was not passed."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be serialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "name",
+          "description": "The name of a new index."
+        },
+        {
+          "name": "keyPath",
+          "description": "The key path used by the new index."
+        },
+        {
+          "name": "unique",
+          "description": "If true, keys in the index must be unique; if false, duplicate keys are allowed."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object to access the newly created index."
+        },
+        {
+          "name": "key",
+          "description": "The key that identifies the record to be retrieved."
+        },
+        {
+          "name": "any",
+          "description": "The value retrieved from the object store."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be deserialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If no record exists in this index for the given key."
+        },
+        {
+          "name": "range",
+          "description": "The key range to use as the cursor\u0027s range."
+        },
+        {
+          "name": "direction",
+          "description": "The cursor\u0027s required direction."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object for accessing the index."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If no records exist in this index for the requested key range."
+        },
+        {
+          "name": "name",
+          "description": "The name of the index to open."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object to access the index."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If the index with the given name does not exist in the connected database."
+        },
+        {
+          "name": "value",
+          "description": "The value to be stored in the record."
+        },
+        {
+          "name": "key",
+          "description": "The key to be used to identify the record."
+        },
+        {
+          "name": "any",
+          "description": "The key for the stored record."
+        },
+        {
+          "name": "CONSTRAINT_ERR",
+          "description": "If noOverwrite was true, and a record exists in this index for the given key or this index is auto-populated; or if no record exists with the given key in the index\u0027s referenced object store."
+        },
+        {
+          "name": "DATA_ERR",
+          "description": "If this object store uses out-of-line keys and no key generator, but no key was given."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be serialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "key",
+          "description": "Key of the records to be removed."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If a record does not exist in this index with the given key."
+        },
+        {
+          "name": "indexName",
+          "description": "The name of the existing index to remove."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If an index with the given name does not exist in the connected database."
+        }
+      ]
+    },
+    {
+      "name": "CONSTRAINT_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#CONSTRAINT_ERR",
+      "description": "If an object store with the same name (based on case-sensitive comparison) already exists in the connected database."
+    },
+    {
+      "name": "IDBObjectStoreSync",
+      "link": "/en/IndexedDB/IDBObjectStoreSync",
+      "description": "An object to access the opened object store.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "The value to store into the index."
+        },
+        {
+          "name": "key",
+          "description": "A key to use for identifying the record."
+        },
+        {
+          "name": "any",
+          "description": "The key for the stored record."
+        },
+        {
+          "name": "CONSTRAINT_ERR",
+          "description": "If a record exists in this index with a key corresponding to the key parameter or the index is auto-populated, or if no record exists with a key corresponding to the value parameter in the index\u0027s referenced object store."
+        },
+        {
+          "name": "DATA_ERR",
+          "description": "If this object store uses out-of-line keys, and the key parameter was not passed."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be serialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "name",
+          "description": "The name of a new index."
+        },
+        {
+          "name": "keyPath",
+          "description": "The key path used by the new index."
+        },
+        {
+          "name": "unique",
+          "description": "If true, keys in the index must be unique; if false, duplicate keys are allowed."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object to access the newly created index."
+        },
+        {
+          "name": "key",
+          "description": "The key that identifies the record to be retrieved."
+        },
+        {
+          "name": "any",
+          "description": "The value retrieved from the object store."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be deserialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If no record exists in this index for the given key."
+        },
+        {
+          "name": "range",
+          "description": "The key range to use as the cursor\u0027s range."
+        },
+        {
+          "name": "direction",
+          "description": "The cursor\u0027s required direction."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object for accessing the index."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If no records exist in this index for the requested key range."
+        },
+        {
+          "name": "name",
+          "description": "The name of the index to open."
+        },
+        {
+          "name": "IDBIndexSync",
+          "description": "An object to access the index."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If the index with the given name does not exist in the connected database."
+        },
+        {
+          "name": "value",
+          "description": "The value to be stored in the record."
+        },
+        {
+          "name": "key",
+          "description": "The key to be used to identify the record."
+        },
+        {
+          "name": "any",
+          "description": "The key for the stored record."
+        },
+        {
+          "name": "CONSTRAINT_ERR",
+          "description": "If noOverwrite was true, and a record exists in this index for the given key or this index is auto-populated; or if no record exists with the given key in the index\u0027s referenced object store."
+        },
+        {
+          "name": "DATA_ERR",
+          "description": "If this object store uses out-of-line keys and no key generator, but no key was given."
+        },
+        {
+          "name": "SERIAL_ERR",
+          "description": "If the data being stored could not be serialized by the internal structured cloning algorithm."
+        },
+        {
+          "name": "key",
+          "description": "Key of the records to be removed."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If a record does not exist in this index with the given key."
+        },
+        {
+          "name": "indexName",
+          "description": "The name of the existing index to remove."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If an index with the given name does not exist in the connected database."
+        }
+      ]
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If an object store with the given name (based on case-sensitive comparison) already exists in the connected database."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": ""
+    },
+    {
+      "name": "IDBTransactionSync",
+      "link": "/en/IndexedDB/IDBTransactionSync",
+      "description": "An object to access the newly created transaction.",
+      "parameters": [
+        {
+          "name": "NON_TRANSIENT_ERR",
+          "description": "If this transaction has already been committed or aborted."
+        },
+        {
+          "name": "NON_TRANSIENT_ERR",
+          "description": "If this transaction has already been committed or aborted."
+        },
+        {
+          "name": "RECOVERABLE_ERR",
+          "description": "If this transaction\u0027s scope is dynamic, and the browser cannot commit all of the changes due to another transaction."
+        },
+        {
+          "name": "name",
+          "description": "The name of the requested object store."
+        },
+        {
+          "name": "IDBObjectStoreSync",
+          "description": "An object for accessing the requested object store."
+        },
+        {
+          "name": "NOT_FOUND_ERR",
+          "description": "If the requested object store is not in this transaction\u0027s scope."
+        }
+      ]
+    },
+    {
+      "name": "TIMEOUT_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#TIMEOUT_ERR",
+      "description": "If reserving all the database objects identified in storeNames takes longer than the timeout interval."
+    }
+  ]
+}

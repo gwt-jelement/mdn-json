@@ -1,0 +1,40 @@
+{
+  "name": "ImageData",
+  "description": "The ImageData interface represents the underlying pixel data of an area of a \u003ccanvas\u003e element. It is created using the ImageData() constructor or creator methods on the CanvasRenderingContext2D object associated with a canvas: createImageData() and getImageData(). It can also be used to set a part of the canvas by using putImageData().",
+  "members": [
+    {
+      "name": "ImageData()",
+      "link": "/en-US/docs/Web/API/ImageData/ImageData",
+      "description": "Creates an ImageData object from a given Uint8ClampedArray and the size of the image it contains. If no array is given, it creates an image of a black rectangle. Note that this is the most common way to create such an object in workers as createImageData() is not available there.",
+      "parameters": [
+        {
+          "name": "array Optional",
+          "description": "A Uint8ClampedArray containing the underlying pixel representation of the image. If no such array is given, an image with a black rectangle of the given dimension will be created."
+        },
+        {
+          "name": "width",
+          "description": "An unsigned long representing the width of the represented image."
+        },
+        {
+          "name": " height",
+          "description": "An unsigned long representing the height of the represented image. This value is optional if an array is given: it will be inferred from its size and the given width."
+        }
+      ]
+    },
+    {
+      "name": "ImageData.data",
+      "link": "/en-US/docs/Web/API/ImageData/data",
+      "description": "Is a Uint8ClampedArray representing a one-dimensional array containing the data in the RGBA order, with integer values between 0 and 255 (included)."
+    },
+    {
+      "name": "ImageData.height",
+      "link": "/en-US/docs/Web/API/ImageData/height",
+      "description": "Is an unsigned long representing the actual height, in pixels, of the ImageData."
+    },
+    {
+      "name": "ImageData.width",
+      "link": "/en-US/docs/Web/API/ImageData/width",
+      "description": "Is an unsigned long representing the actual width, in pixels, of the ImageData."
+    }
+  ]
+}

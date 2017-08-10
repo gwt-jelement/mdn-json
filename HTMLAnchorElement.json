@@ -1,0 +1,156 @@
+{
+  "name": "HTMLAnchorElement",
+  "description": "The HTMLAnchorElement interface represents hyperlink elements and provides special properties and methods (beyond those of the regular HTMLElement object interface that they inherit from) for manipulating the layout and presentation of such elements.",
+  "members": [
+    {
+      "name": "HTMLAnchorElement.accessKey",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/accessKey",
+      "description": "Is a DOMString representing a single character that switches input focus to the hyperlink."
+    },
+    {
+      "name": "HTMLAnchorElement.charset",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/charset",
+      "description": "Is a DOMString representing the character encoding of the linked resource."
+    },
+    {
+      "name": "HTMLAnchorElement.coords",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/coords",
+      "description": "Is a DOMString representing a comma-separated list of coordinates."
+    },
+    {
+      "name": "HTMLAnchorElement.download",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/download",
+      "description": "Is a DOMString indicating that the linked resource is intended to be downloaded rather than displayed in the browser. The value represent the proposed name of the file. If the name is not a valid filename of the underlying OS, browser will adapt it."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.hash",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hash",
+      "description": "Is a USVString representing the fragment identifier, including the leading hash mark (\u0027#\u0027), if any, in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.host",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/host",
+      "description": "Is a USVString representing the hostname and port (if it\u0027s not the default port) in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.hostname",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname",
+      "description": "Is a USVString representing the hostname in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.href",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/href",
+      "description": "Is a USVString that reflects the href HTML attribute, containing a valid URL of a linked resource."
+    },
+    {
+      "name": "HTMLAnchorElement.hreflang",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/hreflang",
+      "description": "Is a DOMString that reflects the hreflang HTML attribute, indicating the language of the linked resource."
+    },
+    {
+      "name": "HTMLAnchorElement.media",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/media",
+      "description": "Is a DOMString that reflects the media HTML attribute, indicating the intended media for the linked resource."
+    },
+    {
+      "name": "HTMLAnchorElement.name",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/name",
+      "description": "Is a DOMString representing the anchor name."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.password",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/password",
+      "description": "Is a USVString containing the password specified before the domain name."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.origin",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/origin",
+      "description": "Returns a USVString containing the origin of the URL, that is its scheme, its domain and its port."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.pathname",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/pathname",
+      "description": "Is a USVString representing the path name component, if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.port",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/port",
+      "description": "Is a USVString representing the port component, if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.protocol",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/protocol",
+      "description": "Is a USVString representing the protocol component, including trailing colon (\u0027:\u0027), of the referenced URL."
+    },
+    {
+      "name": "HTMLAnchorElement.referrerPolicy",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/referrerPolicy",
+      "description": "Is a DOMString that reflects the referrerpolicy HTML attribute indicating which referrer to use."
+    },
+    {
+      "name": "HTMLAnchorElement.rel",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/rel",
+      "description": "Is a DOMString that reflects the rel HTML attribute, specifying the relationship of the target object to the linked object."
+    },
+    {
+      "name": "HTMLAnchorElement.relList",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/relList",
+      "description": "Returns a DOMTokenList that reflects the rel HTML attribute, as a list of tokens."
+    },
+    {
+      "name": "HTMLAnchorElement.rev",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/rev",
+      "description": "Is a DOMString representing that the rev HTML attribute, specifying the relationship of the link object to the target object."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.search",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/search",
+      "description": "Is a USVString representing tThe search element, including leading question mark (\u0027?\u0027), if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLAnchorElement.shape",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/shape",
+      "description": "Is a DOMString representing the shape of the active area."
+    },
+    {
+      "name": "HTMLAnchorElement.tabindex",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/tabindex",
+      "description": "Is a long containing the position of the element in the tabbing navigation order for the current document."
+    },
+    {
+      "name": "HTMLAnchorElement.target",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/target",
+      "description": "Is a DOMString that reflects the target HTML attribute, indicating where to display the linked resource."
+    },
+    {
+      "name": "HTMLAnchorElement.text",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/text",
+      "description": "Is a DOMString being a synonym for the Node.textContent property."
+    },
+    {
+      "name": "HTMLAnchorElement.type",
+      "link": "/en-US/docs/Web/API/HTMLAnchorElement/type",
+      "description": "Is a DOMString that reflects the type HTML attribute, indicating the MIME type of the linked resource."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.username",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/username",
+      "description": "Is a USVString containing the username specified before the domain name."
+    },
+    {
+      "name": "HTMLElement.blur()",
+      "link": "/en-US/docs/Web/API/HTMLElement/blur",
+      "description": "Removes the  keyboard focus from the current element."
+    },
+    {
+      "name": "HTMLElement.focus()",
+      "link": "/en-US/docs/Web/API/HTMLElement/focus",
+      "description": "Gives the keyboard focus to the current element."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.toString()",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/toString",
+      "description": "Returns a USVString containing the whole URL. It is a synonym for URLUtils.href, though it can\u0027t be used to modify the value."
+    }
+  ]
+}

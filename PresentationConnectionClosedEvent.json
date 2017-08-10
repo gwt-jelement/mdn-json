@@ -1,0 +1,5 @@
+{
+  "name": "PresentationConnectionClosedEvent",
+  "description": "A PresentationConnectionClosedEvent is declared when a presentation connection enters a closed state. The reason attribute provides the reason why the connection was closed.",
+  "members": []
+}

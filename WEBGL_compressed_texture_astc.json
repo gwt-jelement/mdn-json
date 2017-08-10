@@ -1,0 +1,11 @@
+{
+  "name": "WEBGL_compressed_texture_astc",
+  "description": "The WEBGL_compressed_texture_astc extension is part of the WebGL API and exposes Adaptive Scalable Texture Compression (ASTC) compressed texture formats to WebGL.",
+  "members": [
+    {
+      "name": "ext.getSupportedProfiles()",
+      "link": "/en-US/docs/Web/API/WEBGL_compressed_texture_astc/getSupportedProfiles",
+      "description": "Returns an array of strings containing the names of the ASTC profiles supported by the implementation."
+    }
+  ]
+}

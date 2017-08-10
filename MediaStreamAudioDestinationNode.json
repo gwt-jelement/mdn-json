@@ -1,0 +1,26 @@
+{
+  "name": "MediaStreamAudioDestinationNode",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaStreamAudioDestinationNode.MediaStreamAudioDestinationNode()",
+      "link": "/en-US/docs/Web/API/MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode",
+      "description": "Creates a new MediaStreamAudioDestinationNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "An AudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options Optional",
+          "description": "An AudioNodeOptions dictionary object defining the properties you want the MediaStreamAudioDestinationNode to have."
+        }
+      ]
+    },
+    {
+      "name": "MediaStreamAudioDestinationNode.stream",
+      "link": "/en-US/docs/Web/API/MediaStreamAudioDestinationNode/stream",
+      "description": "Is a MediaStream containing a single AudioMediaStreamTrack with the same number of channels as the node itself. You can use this property to get a stream out of the audio graph and feed it into another construct, such as a Media Recorder."
+    }
+  ]
+}

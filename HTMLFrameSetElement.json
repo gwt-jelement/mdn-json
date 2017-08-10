@@ -1,0 +1,92 @@
+{
+  "name": "HTMLFrameSetElement",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The HTMLFrameSetElement interface provides special properties (beyond those of the regular HTMLElement interface they also inherit) for manipulating \u003cframeset\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLFrameSetElement.cols",
+      "link": "/en-US/docs/Web/API/HTMLFrameSetElement/cols",
+      "description": "Is a DOMString structured as a comma-seperated list specifing the width of each column inside a frameset."
+    },
+    {
+      "name": "HTMLFrameSetElement.rows",
+      "link": "/en-US/docs/Web/API/HTMLFrameSetElement/rows",
+      "description": "Is a DOMString structured as a comma-seperated list specifing the height of each column inside a frameset."
+    },
+    {
+      "name": "WindowEventHandlers.onafterprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onafterprint",
+      "description": "Is an EventHandler representing the code to be called when the afterprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeprint",
+      "description": "Is an EventHandler representing the code to be called when the beforeprint event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
+      "description": "Is an EventHandler representing the code to be called when the beforeunload event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onhashchange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onhashchange",
+      "description": "Is an EventHandler representing the code to be called when the hashchange event is raised.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A reference to a function."
+        }
+      ]
+    },
+    {
+      "name": "WindowEventHandlers.onlanguagechange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onlanguagechange",
+      "description": "Is an EventHandler representing the code to be called when the languagechange event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onmessage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onmessage",
+      "description": "Is an EventHandler representing the code to be called when the message event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onoffline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onoffline",
+      "description": "Is an EventHandler representing the code to be called when the offline event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.ononline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/ononline",
+      "description": "Is an EventHandler representing the code to be called when the online event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpagehide",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpagehide",
+      "description": "Is an EventHandler representing the code to be called when the pagehide event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpageshow",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpageshow",
+      "description": "Is an EventHandler representing the code to be called when the pageshow event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onpopstate",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
+      "description": "Is an EventHandler representing the code to be called when the popstate event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onresize",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onresize",
+      "description": "Is an EventHandler representing the code to be called when the resize event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onstorage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onstorage",
+      "description": "Is an EventHandler representing the code to be called when the storage event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunload",
+      "description": "Is an EventHandler representing the code to be called when the unload event is raised."
+    }
+  ]
+}

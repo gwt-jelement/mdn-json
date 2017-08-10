@@ -1,0 +1,31 @@
+{
+  "name": "BluetoothAdvertisingData",
+  "description": "",
+  "members": [
+    {
+      "name": "BluetoothAdvertisingData.appearance",
+      "link": "/en-US/docs/Web/API/BluetoothAdvertisingData/appearance",
+      "description": "Returns one of the values defined by the org.bluetooth.characteristic.gap.appearance characteristic."
+    },
+    {
+      "name": "BluetoothAdvertisingData.txPower",
+      "link": "/en-US/docs/Web/API/BluetoothAdvertisingData/txPower",
+      "description": "Returns the transmission power at which the device is broadcasting, measured in dBm. This is used to compute the path loss as this.txPower - this.rssi."
+    },
+    {
+      "name": "BluetoothAdvertisingData.rssi",
+      "link": "/en-US/docs/Web/API/BluetoothAdvertisingData/rssi",
+      "description": "Returns the power at which the device’s packets are being received, measured in dBm. This is used to compute the path loss as this.txPower - this.rssi."
+    },
+    {
+      "name": "BluetoothAdvertisingData.manufacturerData",
+      "link": "/en-US/docs/Web/API/BluetoothAdvertisingData/manufacturerData",
+      "description": "Returns a map that relates Company Identifier Codes to ArrayBuffers."
+    },
+    {
+      "name": "BluetoothAdvertisingData.serviceData",
+      "link": "/en-US/docs/Web/API/BluetoothAdvertisingData/serviceData",
+      "description": "Returns a map that relates UUIDs to ArrayBuffers."
+    }
+  ]
+}

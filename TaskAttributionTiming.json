@@ -1,0 +1,26 @@
+{
+  "name": "TaskAttributionTiming",
+  "description": "",
+  "members": [
+    {
+      "name": "TaskAttributionTiming.containerType",
+      "link": "/en-US/docs/Web/API/TaskAttributionTiming/containerType",
+      "description": "Returns the type of frame container, one of iframe, embed, or object."
+    },
+    {
+      "name": "TaskAttributionTiming.containerSrc",
+      "link": "/en-US/docs/Web/API/TaskAttributionTiming/containerSrc",
+      "description": "Returns the container\u0027s src attribute."
+    },
+    {
+      "name": "TaskAttributionTiming.containerId",
+      "link": "/en-US/docs/Web/API/TaskAttributionTiming/containerId",
+      "description": "Returns the container\u0027s id attribute."
+    },
+    {
+      "name": "TaskAttributionTiming.containerName",
+      "link": "/en-US/docs/Web/API/TaskAttributionTiming/containerName",
+      "description": "Returns the container\u0027s Name attribute."
+    }
+  ]
+}

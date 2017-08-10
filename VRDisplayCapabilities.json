@@ -1,0 +1,31 @@
+{
+  "name": "VRDisplayCapabilities",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The VRDisplayCapabilities interface of the WebVR API describes the capabilities of a VRDisplay — its features can be used to perform VR device capability tests, for example can it return position information.",
+  "members": [
+    {
+      "name": "VRDisplayCapabilities.canPresent",
+      "link": "/en-US/docs/Web/API/VRDisplayCapabilities/canPresent",
+      "description": "Returns a Boolean stating whether the VR display is capable of presenting content (e.g. through an HMD)."
+    },
+    {
+      "name": "VRDisplayCapabilities.hasExternalDisplay",
+      "link": "/en-US/docs/Web/API/VRDisplayCapabilities/hasExternalDisplay",
+      "description": "Returns a Boolean stating whether the VR display is separate from the device\u0027s primary display."
+    },
+    {
+      "name": "VRDisplayCapabilities.hasOrientation",
+      "link": "/en-US/docs/Web/API/VRDisplayCapabilities/hasOrientation",
+      "description": "Returns a Boolean stating whether the VR display can track and return orientation information."
+    },
+    {
+      "name": "VRDisplayCapabilities.hasPosition",
+      "link": "/en-US/docs/Web/API/VRDisplayCapabilities/hasPosition",
+      "description": "Returns a Boolean stating whether the VR display can track and return position information."
+    },
+    {
+      "name": "VRDisplayCapabilities.maxLayers",
+      "link": "/en-US/docs/Web/API/VRDisplayCapabilities/maxLayers",
+      "description": "Returns a number indicating the maximum number of VRLayers that the VR display can present at once (e.g. the maximum length of the array that VRDisplay.requestPresent() can accept.)"
+    }
+  ]
+}

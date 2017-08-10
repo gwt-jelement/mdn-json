@@ -1,0 +1,21 @@
+{
+  "name": "ShadowRoot",
+  "description": "",
+  "members": [
+    {
+      "name": "ShadowRoot.mode",
+      "link": "/en-US/docs/Web/API/ShadowRoot/mode",
+      "description": "The mode of the ShadowRoot: either \"open\" or \"closed\"."
+    },
+    {
+      "name": "ShadowRoot.host",
+      "link": "/en-US/docs/Web/API/ShadowRoot/host",
+      "description": "A DOM element to which the ShadowRoot is attached."
+    },
+    {
+      "name": "ShadowRoot.innerHTML",
+      "link": "/en-US/docs/Web/API/ShadowRoot/innerHTML",
+      "description": "The DOM tree inside the ShadowRoot."
+    }
+  ]
+}

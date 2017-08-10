@@ -1,0 +1,66 @@
+{
+  "name": "LocalFileSystemSync",
+  "description": "Non-standard This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future. The LocalFileSystemSync interface of the File System API gives you access to a sandboxed file system. It is intended to be used with WebWorkers. The methods are implemented by worker objects.",
+  "members": [
+    {
+      "name": "FileSystemSync",
+      "link": "/en/DOM/File_API/File_System_API/FileSystemSync",
+      "description": "An object that represents the file system."
+    },
+    {
+      "name": "EntrySync",
+      "link": "/en/DOM/File_API/File_System_API/EntrySync",
+      "description": "An object that represents entries in the file system.",
+      "parameters": [
+        {
+          "name": "None",
+          "description": ""
+        },
+        {
+          "name": "Metadata",
+          "description": ""
+        },
+        {
+          "name": "parent",
+          "description": "The directory to which to move the entry."
+        },
+        {
+          "name": "newName",
+          "description": "The new name of the entry. If you do not specify a name, the browser preserves the entry\u0027s current name."
+        },
+        {
+          "name": "EntrySync",
+          "description": "An object that represents an entry in the file system."
+        },
+        {
+          "name": "parent",
+          "description": "The directory where you want the entry to move to."
+        },
+        {
+          "name": "newName",
+          "description": "The new name of the entry. If you do not specify a name, the browser preserves the EntrySync\u0027s current name."
+        },
+        {
+          "name": "EntrySync",
+          "description": "An object that represents an entry in the file system."
+        },
+        {
+          "name": "None.",
+          "description": ""
+        },
+        {
+          "name": "DOMString",
+          "description": ""
+        },
+        {
+          "name": "void",
+          "description": ""
+        },
+        {
+          "name": "DirectoryEntrySync",
+          "description": "An object that represents a directory in the file system."
+        }
+      ]
+    }
+  ]
+}

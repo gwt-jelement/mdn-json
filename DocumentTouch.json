@@ -1,0 +1,84 @@
+{
+  "name": "DocumentTouch",
+  "description": "",
+  "members": [
+    {
+      "name": "DocumentTouch.createTouch()",
+      "link": "/en-US/docs/Web/API/DocumentTouch/createTouch",
+      "description": "Creates a new Touch object.",
+      "parameters": [
+        {
+          "name": "view",
+          "description": "The window in which the touch occurred."
+        },
+        {
+          "name": "target",
+          "description": "The EventTarget for the touch."
+        },
+        {
+          "name": "identifier",
+          "description": "The value for Touch.identifier."
+        },
+        {
+          "name": "pageX",
+          "description": "The value for Touch.pageX."
+        },
+        {
+          "name": "pageY",
+          "description": "The value for Touch.pageY."
+        },
+        {
+          "name": "screenX",
+          "description": "The value for Touch.screenX."
+        },
+        {
+          "name": "screenY",
+          "description": "The value for Touch.screenY."
+        },
+        {
+          "name": "clientX",
+          "description": "The value for Touch.clientX."
+        },
+        {
+          "name": "clientY",
+          "description": "The value for Touch.clientY."
+        },
+        {
+          "name": "radiusX",
+          "description": "The value for Touch.radiusX."
+        },
+        {
+          "name": "radiusY",
+          "description": "The value for Touch.radiusY."
+        },
+        {
+          "name": "rotationAngle",
+          "description": "The value for Touch.rotationAngle."
+        },
+        {
+          "name": "force",
+          "description": "The value for Touch.force."
+        },
+        {
+          "name": "touch",
+          "description": "A Touch object configured as described by the input parameters."
+        }
+      ]
+    },
+    {
+      "name": "DocumentTouch.createTouchList()",
+      "link": "/en-US/docs/Web/API/DocumentTouch/createTouchList",
+      "description": "Creates a new TouchList object.",
+      "parameters": [
+        {
+          "name": "touches",
+          "description": "Zero or more Touch objects. Note: Firefox also accepts an array of Touch objects."
+        },
+        {
+          "name": "list",
+          "description": "A TouchList object containing the Touch objects specified by the touches parameter."
+        }
+      ]
+    }
+  ]
+}

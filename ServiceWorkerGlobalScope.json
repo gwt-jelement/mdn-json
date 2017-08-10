@@ -1,0 +1,86 @@
+{
+  "name": "ServiceWorkerGlobalScope",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The ServiceWorkerGlobalScope interface of the ServiceWorker API represents the global execution context of a service worker.",
+  "members": [
+    {
+      "name": "ServiceWorkerGlobalScope.clients",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/clients",
+      "description": "Contains the Clients object associated with the service worker."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.registration",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/registration",
+      "description": "Contains the ServiceWorkerRegistration object that represents the service worker\u0027s registration."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.caches",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/caches",
+      "description": "Contains the CacheStorage object associated with the service worker."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onactivate",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onactivate",
+      "description": "An event handler fired whenever an activate event occurs — when a ServiceWorkerRegistration acquires a new ServiceWorkerRegistration.active worker."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onfetch",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onfetch",
+      "description": "An event handler fired whenever a fetch event occurs — when a fetch() is called."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.oninstall",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/oninstall",
+      "description": "An event handler fired whenever an install event occurs — when a ServiceWorkerRegistration acquires a new ServiceWorkerRegistration.installing worker."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onmessage",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onmessage",
+      "description": "An event handler fired whenever a message event occurs — when incoming messages are received. Controlled pages can use the MessagePort.postMessage() method to send messages to service workers. The service worker can optionally send a response back via the MessagePort exposed in event.data.port, corresponding to the controlled page."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onnotificationclick",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onnotificationclick",
+      "description": "An event handler fired whenever a notificationclick event occurs — when a user clicks on a displayed notification."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onnotificationclose",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onnotificationclose",
+      "description": "An event handler fired whenever a notificationclose event occurs — when a user closes a displayed notification."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onpush",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onpush",
+      "description": "An event handler fired whenever a push event occurs — when a server push notification is received."
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onpushsubscriptionchange",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onpushsubscriptionchange",
+      "description": "An event handler fired whenever a pushsubscriptionchange event occurs — when a push subscription has been invalidated, or is about to be invalidated (e.g. when a push service sets an expiration time.)"
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.onsync",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/onsync",
+      "description": "An event handler fired whenever a SyncEvent event occurs. This is triggered when a call to SyncManager.register is made from a service worker client page. The attempt to sync is made either immediately if the network is available or as soon as the network becomes available. "
+    },
+    {
+      "name": "ServiceWorkerGlobalScope.skipWaiting()",
+      "link": "/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting",
+      "description": "Allows the current service worker registration to progress from waiting to active state while service worker clients are using it."
+    },
+    {
+      "name": "GlobalFetch.fetch()",
+      "link": "/en-US/docs/Web/API/GlobalFetch/fetch",
+      "description": "Starts the process of fetching a resource. This returns a promise that resolves to the Response object representing the response to your request. This algorithm is the entry point for the fetch handling handed to the service worker context.",
+      "parameters": [
+        {
+          "name": "input",
+          "description": "This defines the resource that you wish to fetch. This can either be: A USVString containing the direct URL of the resource you want to fetch. Some browsers accept blob: and data: as schemes. A Request object."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the request. The possible options are: method: The request method, e.g., GET, POST. headers: Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. body: Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, or USVString object. Note that a request using the GET or HEAD method cannot have a body. mode: The mode you want to use for the request, e.g., cors, no-cors, or same-origin. credentials: The request credentials you want to use for the request: omit, same-origin, or include. To automatically send cookies for the current domain, this option must be provided. Starting with Chrome 50, this property also takes a FederatedCredential instance or a PasswordCredential instance. cache: The cache mode you want to use for the request: default, no-store, reload, no-cache, force-cache, or only-if-cached. redirect: The redirect mode to use: follow (automatically follow redirects), error (abort with an error if a redirect occurs), or manual (handle redirects manually). In Chrome the default was follow before Chrome 47 and manual starting with Chrome 47. referrer: A USVString specifying no-referrer, client, or a URL. The default is client. referrerPolicy: Specifies the value of the referer HTTP header. May be one of no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url. integrity: Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d). signal: A FetchSignal object instance; allows you to communicate with a fetch request and control it via a FetchController. observe: An ObserverCallback object — this object\u0027s sole purpose is to provide a callback function that runs when the fetch request runs. This returns a FetchObserver object that can be used to retrieve information concerning the status of a fetch request."
+        }
+      ]
+    }
+  ]
+}

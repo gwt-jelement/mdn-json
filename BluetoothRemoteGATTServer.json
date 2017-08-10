@@ -1,0 +1,48 @@
+{
+  "name": "BluetoothRemoteGATTServer",
+  "description": "",
+  "members": [
+    {
+      "name": "BluetoothRemoteGATTServer.connected",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/connected",
+      "description": "A boolean value that returns true while this script execution environment is connected to this.device. It can be false while the user agent is physically connected."
+    },
+    {
+      "name": "BluetoothRemoteGATTServer.device",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/device",
+      "description": "A reference to the BluetoothDevice running the server."
+    },
+    {
+      "name": "BluetoothRemoteGATTServer.connect()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/connect",
+      "description": "Causes the script execution environment to connect to this.device."
+    },
+    {
+      "name": "BluetoothRemoteGATTServer.disconnect()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/disconnect",
+      "description": "Causes the script execution environment to disconnect from this.device."
+    },
+    {
+      "name": "BluetoothRemoteGATTServer.getPrimaryService()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryService",
+      "description": "Returns a promise to the primary BluetoothGATTService offered by the bluetooth device for a specified BluetoothServiceUUID.",
+      "parameters": [
+        {
+          "name": "BluetoothServiceUUID",
+          "description": "A Bluetooth service universally unique identifier for a specified device."
+        }
+      ]
+    },
+    {
+      "name": "BluetoothRemoteGATTServer.getPrimaryServices()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTServer/getPrimaryServices",
+      "description": "Returns a promise to a list of primary BluetoothGATTService objects offered by the bluetooth device for a specified BluetoothServiceUUID.",
+      "parameters": [
+        {
+          "name": "BluetoothServiceUUID",
+          "description": "A Bluetooth service universally unique identifier for a specified device."
+        }
+      ]
+    }
+  ]
+}

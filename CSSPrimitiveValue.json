@@ -1,0 +1,72 @@
+{
+  "name": "CSSPrimitiveValue",
+  "description": "The CSSPrimitiveValue interface derives from the CSSValue interface and represents the current computed value of a CSS property.",
+  "members": [
+    {
+      "name": "CSSPrimitiveValue.primitiveType",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/primitiveType",
+      "description": "An unsigned short representing the type of the value. Possible values are: Constant Description CSS_ATTR The value is an attr() function. The value can be obtained by using the getStringValue() method. CSS_CM The value is a \u003clength\u003e in centimeters. The value can be obtained by using the getFloatValue() method. CSS_COUNTER The value is a counter or counters function. The value can be obtained by using the getCounterValue() method. CSS_DEG The value is an \u003cangle\u003e in degrees. The value can be obtained by using the getFloatValue() method. CSS_DIMENSION The value is a \u003cnumber\u003e with an unknown dimension. The value can be obtained by using the getFloatValue() method. CSS_EMS The value is a \u003clength\u003e in em units. The value can be obtained by using the getFloatValue() method. CSS_EXS The value is a \u003clength\u003e in ex units. The value can be obtained by using the getFloatValue() method. CSS_GRAD The value is an \u003cangle\u003e in grads. The value can be obtained by using the getFloatValue() method. CSS_HZ The value is a \u003cfrequency\u003e in Hertz. The value can be obtained by using the getFloatValue method. CSS_IDENT The value is an identifier. The value can be obtained by using the getStringValue() method. CSS_IN The value is a \u003clength\u003e in inches. The value can be obtained by using the getFloatValue() method. CSS_KHZ The value is a \u003cfrequency\u003e in Kilohertz. The value can be obtained by using the getFloatValue() method. CSS_MM The value is a \u003clength\u003e in millimeters. The value can be obtained by using the getFloatValue() method. CSS_MS The value is a \u003ctime\u003e in milliseconds. The value can be obtained by using the getFloatValue() method. CSS_NUMBER The value is a simple \u003cnumber\u003e. The value can be obtained by using the getFloatValue() method. CSS_PC The value is a \u003clength\u003e in picas. The value can be obtained by using the getFloatValue() method. CSS_PERCENTAGE The value is a \u003cpercentage\u003e. The value can be obtained by using the getFloatValue() method. CSS_PT The value is a \u003clength\u003e in points. The value can be obtained by using the getFloatValue() method. CSS_PX The value is a \u003clength\u003e in pixels. The value can be obtained by using the getFloatValue() method. CSS_RAD The value is an \u003cangle\u003e in radians. The value can be obtained by using the getFloatValue() method. CSS_RECT The value is a rect() function. The value can be obtained by using the getRectValue() method. CSS_RGBCOLOR The value is an \u003ccolor\u003e. The value can be obtained by using the getRGBColorValue() method. CSS_S The value is a \u003ctime\u003e in seconds. The value can be obtained by using the getFloatValue() method. CSS_STRING The value is a \u003cstring\u003e. The value can be obtained by using the getStringValue() method. CSS_UNKNOWN The value is not a recognized CSS2 value. The value can only be obtained by using the cssText attribute. CSS_URI The value is a \u003curi\u003e. The value can be obtained by using the getStringValue() method."
+    },
+    {
+      "name": "CSSPrimitiveValue.getCounterValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/getCounterValue",
+      "description": "This method is used to get the counter value. If this CSS value doesn\u0027t contain a counter value, a DOMException is raised. Modification to the corresponding style property can be achieved using the Counter interface."
+    },
+    {
+      "name": "CSSPrimitiveValue.getFloatValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/getFloatValue",
+      "description": "This method is used to get a float value in a specified unit. If this CSS value doesn\u0027t contain a float value or can\u0027t be converted into the specified unit, a DOMException is raised.",
+      "parameters": [
+        {
+          "name": "unitType",
+          "description": "An unsigned short representing the code for the unit type, in which the value should be returned. Valid values are: Constant Description CSS_CM The value is a \u003clength\u003e in centimeters. CSS_DEG The value is an \u003cangle\u003e in degrees. CSS_DIMENSION The value is a \u003cnumber\u003e with an unknown dimension. CSS_EMS The value is a \u003clength\u003e in em units. CSS_EXS The value is a \u003clength\u003e in ex units. CSS_GRAD The value is an \u003cangle\u003e in grads. CSS_HZ The value is a \u003cfrequency\u003e in Hertz. The value can be obtained by using the getFloatValue method. CSS_IN The value is a \u003clength\u003e in inches. CSS_KHZ The value is a \u003cfrequency\u003e in Kilohertz. CSS_MM The value is a \u003clength\u003e in millimeters. CSS_MS The value is a \u003ctime\u003e in milliseconds. CSS_NUMBER The value is a simple \u003cnumber\u003e. CSS_PC The value is a \u003clength\u003e in picas. CSS_PERCENTAGE The value is a \u003cpercentage\u003e. CSS_PT The value is a \u003clength\u003e in points. CSS_PX The value is a \u003clength\u003e in pixels. CSS_RAD The value is an \u003cangle\u003e in radians. CSS_S The value is a \u003ctime\u003e in seconds."
+        }
+      ]
+    },
+    {
+      "name": "CSSPrimitiveValue.getRGBColorValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/getRGBColorValue",
+      "description": "This method is used to get the RGB color. If this CSS value doesn\u0027t contain a RGB color value, a DOMException is raised. Modification to the corresponding style property can be achieved using the RGBColor interface."
+    },
+    {
+      "name": "CSSPrimitiveValue.getRectValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/getRectValue",
+      "description": "This method is used to get the Rect value. If this CSS value doesn\u0027t contain a rect value, a DOMException is raised. Modification to the corresponding style property can be achieved using the Rect interface."
+    },
+    {
+      "name": "CSSPrimitiveValue.getStringValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/getStringValue",
+      "description": "This method is used to get the string value. If the CSS value doesn\u0027t contain a string value, a DOMException is raised."
+    },
+    {
+      "name": "CSSPrimitiveValue.setFloatValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/setFloatValue",
+      "description": "A method to set the float value with a specified unit. If the property attached with this value can not accept the specified unit or the float value, the value will be unchanged and a DOMException will be raised.",
+      "parameters": [
+        {
+          "name": "unitType",
+          "description": "An unsigned short representing the code for the unit type, in which the value should be returned. Valid values are: Constant Description CSS_CM The value is a \u003clength\u003e in centimeters. CSS_DEG The value is an \u003cangle\u003e in degrees. CSS_DIMENSION The value is a \u003cnumber\u003e with an unknown dimension. CSS_EMS The value is a \u003clength\u003e in em units. CSS_EXS The value is a \u003clength\u003e in ex units. CSS_GRAD The value is an \u003cangle\u003e in grads. CSS_HZ The value is a \u003cfrequency\u003e in Hertz. The value can be obtained by using the getFloatValue method. CSS_IN The value is a \u003clength\u003e in inches. CSS_KHZ The value is a \u003cfrequency\u003e in Kilohertz. CSS_MM The value is a \u003clength\u003e in millimeters. CSS_MS The value is a \u003ctime\u003e in milliseconds. CSS_NUMBER The value is a simple \u003cnumber\u003e. CSS_PC The value is a \u003clength\u003e in picas. CSS_PERCENTAGE The value is a \u003cpercentage\u003e. CSS_PT The value is a \u003clength\u003e in points. CSS_PX The value is a \u003clength\u003e in pixels. CSS_RAD The value is an \u003cangle\u003e in radians. CSS_S The value is a \u003ctime\u003e in seconds."
+        },
+        {
+          "name": "floatValue",
+          "description": "A float representing the new float value."
+        }
+      ]
+    },
+    {
+      "name": "CSSPrimitiveValue.setStringValue()",
+      "link": "/en-US/docs/Web/API/CSSPrimitiveValue/setStringValue",
+      "description": "A method to set the string value with the specified unit. If the property attached to this value can\u0027t accept the specified unit or the string value, the value will be unchanged and a DOMException will be raised.",
+      "parameters": [
+        {
+          "name": "stringType",
+          "description": "An unsigned short representing the type of the value. Possible values are: Constant Description CSS_ATTR The value is an attr() function. CSS_IDENT The value is an identifier. CSS_STRING The value is a \u003cstring\u003e. CSS_URI The value is a \u003curi\u003e."
+        },
+        {
+          "name": "stringValue",
+          "description": "A DOMString representing the new string value."
+        }
+      ]
+    }
+  ]
+}

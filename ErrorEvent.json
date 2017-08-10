@@ -1,0 +1,36 @@
+{
+  "name": "ErrorEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "ErrorEvent.message",
+      "link": "/en-US/docs/Web/API/ErrorEvent/message",
+      "description": "Is a DOMString containing a human-readable error message describing the problem."
+    },
+    {
+      "name": "ErrorEvent.filename",
+      "link": "/en-US/docs/Web/API/ErrorEvent/filename",
+      "description": "Is a DOMString containing the name of the script file in which the error occurred."
+    },
+    {
+      "name": "ErrorEvent.lineno",
+      "link": "/en-US/docs/Web/API/ErrorEvent/lineno",
+      "description": "Is an integer containing the line number of the script file on which the error occurred."
+    },
+    {
+      "name": "ErrorEvent.colno",
+      "link": "/en-US/docs/Web/API/ErrorEvent/colno",
+      "description": "Is an integer containing the column number of the script file on which the error occurred."
+    },
+    {
+      "name": "ErrorEvent.error",
+      "link": "/en-US/docs/Web/API/ErrorEvent/error",
+      "description": "Is a JavaScript Object that is concerned by the event."
+    },
+    {
+      "name": "ErrorEvent()",
+      "link": "/en-US/docs/Web/API/ErrorEvent/ErrorEvent",
+      "description": "Creates an ErrorEvent event with the given parameters."
+    }
+  ]
+}

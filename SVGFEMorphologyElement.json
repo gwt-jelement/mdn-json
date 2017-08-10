@@ -1,0 +1,26 @@
+{
+  "name": "SVGFEMorphologyElement",
+  "description": "The SVGFEMorphologyElement interface corresponds to the \u003cfeMorphology\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEMorphologyElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEMorphologyElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEMorphologyElement.operator",
+      "link": "/en-US/docs/Web/API/SVGFEMorphologyElement/operator",
+      "description": "An SVGAnimatedEnumeration corresponding to the operator attribute of the given element. It takes one of the SVG_MORPHOLOGY_OPERATOR_* constants defined on this interface."
+    },
+    {
+      "name": "SVGFEMorphologyElement.radiusX",
+      "link": "/en-US/docs/Web/API/SVGFEMorphologyElement/radiusX",
+      "description": "An SVGAnimatedNumber corresponding to the X component of the radius attribute of the given element."
+    },
+    {
+      "name": "SVGFEMorphologyElement.radiusY",
+      "link": "/en-US/docs/Web/API/SVGFEMorphologyElement/radiusY",
+      "description": "An SVGAnimatedNumber corresponding to the Y component of the radius attribute of the given element."
+    }
+  ]
+}

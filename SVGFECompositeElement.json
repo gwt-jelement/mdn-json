@@ -1,0 +1,21 @@
+{
+  "name": "SVGFECompositeElement",
+  "description": "The SVGFECompositeElement interface corresponds to the \u003cfeComposite\u003e element.",
+  "members": [
+    {
+      "name": "SVGFECompositeElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFECompositeElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFECompositeElement.type",
+      "link": "/en-US/docs/Web/API/SVGFECompositeElement/type",
+      "description": "An SVGAnimatedEnumeration corresponding to the type attribute of the given element. It takes one of the SVG_FECOMPOSITE_OPERATOR_* constants defined on this interface."
+    },
+    {
+      "name": "SVGFECompositeElement.values",
+      "link": "/en-US/docs/Web/API/SVGFECompositeElement/values",
+      "description": "An SVGAnimatedNumberList corresponding to the values attribute of the given element."
+    }
+  ]
+}

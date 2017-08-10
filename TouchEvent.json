@@ -1,0 +1,142 @@
+{
+  "name": "TouchEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "TouchEvent()",
+      "link": "/en-US/docs/Web/API/TouchEvent/TouchEvent",
+      "description": "Creates a TouchEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "touchEventInit Optional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.altKey",
+      "link": "/en-US/docs/Web/API/TouchEvent/altKey",
+      "description": "A Boolean value indicating whether or not the alt key was down when the touch event was fired.",
+      "parameters": [
+        {
+          "name": "altEnabled",
+          "description": "true if the alt key is enabled for this event; and false if the alt is not enabled."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.changedTouches",
+      "link": "/en-US/docs/Web/API/TouchEvent/changedTouches",
+      "description": "A TouchList of all the Touch objects representing individual points of contact whose states changed between the previous touch event and this one.",
+      "parameters": [
+        {
+          "name": "changes",
+          "description": "A TouchList whose Touch objects include all the touch points that contributed to this touch event."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.ctrlKey",
+      "link": "/en-US/docs/Web/API/TouchEvent/ctrlKey",
+      "description": "A Boolean value indicating whether or not the control key was down when the touch event was fired.",
+      "parameters": [
+        {
+          "name": "ctrlEnabled",
+          "description": "true if the control key is enabled for this event; and false if the control is not enabled."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.metaKey",
+      "link": "/en-US/docs/Web/API/TouchEvent/metaKey",
+      "description": "A Boolean value indicating whether or not the meta key was down when the touch event was fired.",
+      "parameters": [
+        {
+          "name": "metaEnabled",
+          "description": "true if the Meta key is enabled for this event; and false if the Meta is not enabled."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.shiftKey",
+      "link": "/en-US/docs/Web/API/TouchEvent/shiftKey",
+      "description": "A Boolean value indicating whether or not the shift key was down when the touch event was fired.",
+      "parameters": [
+        {
+          "name": "shiftEnabled",
+          "description": "true if the shift key is enabled for this event; and false if the shift key is not enabled."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.targetTouches",
+      "link": "/en-US/docs/Web/API/TouchEvent/targetTouches",
+      "description": "A TouchList of all the Touch objects that are both currently in contact with the touch surface and were also started on the same element that is the target of the event.",
+      "parameters": [
+        {
+          "name": "touches",
+          "description": "A TouchList listing all the Touch objects for touch points that are still in contact with the touch surface and whose touchstart event occurred inside the same target element as the current target element."
+        }
+      ]
+    },
+    {
+      "name": "TouchEvent.touches",
+      "link": "/en-US/docs/Web/API/TouchEvent/touches",
+      "description": "A TouchList of all the Touch objects representing all current points of contact with the surface, regardless of target or changed status.",
+      "parameters": [
+        {
+          "name": "touches",
+          "description": "A TouchList listing all the Touch objects for touch points that are still in contact with the touch surface, regardless of whether or not they\u0027ve changed or what their target element was at touchstart time."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchstart",
+      "description": "A global event handler for the touchstart event.",
+      "parameters": [
+        {
+          "name": "startHandler",
+          "description": "The touchstart event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchend",
+      "description": "A global event handler for the touchend event.",
+      "parameters": [
+        {
+          "name": "endHandler",
+          "description": "The touchend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchmove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchmove",
+      "description": "A global event handler for the touchmove event.",
+      "parameters": [
+        {
+          "name": "moveHandler",
+          "description": "The touchmove event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchcancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchcancel",
+      "description": "A global event handler for the touchcancel event.",
+      "parameters": [
+        {
+          "name": "cancelHandler",
+          "description": "The touchcancel event handler for element someElement."
+        }
+      ]
+    }
+  ]
+}

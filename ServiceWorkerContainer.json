@@ -1,0 +1,62 @@
+{
+  "name": "ServiceWorkerContainer",
+  "description": "",
+  "members": [
+    {
+      "name": "ServiceWorkerContainer.controller",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/controller",
+      "description": "Returns a ServiceWorker object if its state is activated (the same object returned by ServiceWorkerRegistration.active). This property returns null if the request is a force refresh (Shift + refresh) or if there is no active worker."
+    },
+    {
+      "name": "ServiceWorkerContainer.ready",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/ready",
+      "description": "Defines whether a service worker is ready to control a page or not. It returns a Promise that will never reject, which resolves to a ServiceWorkerRegistration with an ServiceWorkerRegistration.active worker."
+    },
+    {
+      "name": "ServiceWorkerContainer.oncontrollerchange",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/oncontrollerchange",
+      "description": "An event handler fired whenever a controllerchange event occurs — when the document\u0027s associated ServiceWorkerRegistration acquires a new ServiceWorkerRegistration.active worker."
+    },
+    {
+      "name": "ServiceWorkerContainer.onerror",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/onerror",
+      "description": "An event handler fired whenever an error event occurs in the associated service workers."
+    },
+    {
+      "name": "ServiceWorkerContainer.onmessage",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/onmessage",
+      "description": "An event handler fired whenever a message event occurs — when incoming messages are received to the ServiceWorkerContainer object (e.g. via a MessagePort.postMessage() call.)"
+    },
+    {
+      "name": "ServiceWorkerContainer.register()",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/register",
+      "description": "Creates or updates a ServiceWorkerRegistration for the given scriptURL.",
+      "parameters": [
+        {
+          "name": "scriptURL",
+          "description": "The URL of the service worker script."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object to provide options upon registration. Currently available options are: scope: A USVString representing a URL that defines a service worker\u0027s registration scope; what range of URLs a service worker can control. This is usually a relative URL. The default value is the URL you\u0027d get if you resolved \u0027./\u0027 using the we page\u0027s location as the base. It is not, as is comonly believed, relative to the service worker\u0027s location. See the Examples section for more information on how it does work."
+        }
+      ]
+    },
+    {
+      "name": "ServiceWorkerContainer.getRegistration()",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/getRegistration",
+      "description": "Gets a ServiceWorkerRegistration object whose scope URL matches the provided document URL.  If the method can\u0027t return a ServiceWorkerRegistration, it returns a Promise. ",
+      "parameters": [
+        {
+          "name": "scope Optional",
+          "description": "A unique identifier for a service worker registration — the scope URL of the registration object you want to return. This is usually a relative URL."
+        }
+      ]
+    },
+    {
+      "name": "ServiceWorkerContainer.getRegistrations()",
+      "link": "/en-US/docs/Web/API/ServiceWorkerContainer/getRegistrations",
+      "description": "Returns all ServiceWorkerRegistrations associated with a ServiceWorkerContainer in an array.  If the method can\u0027t return ServiceWorkerRegistrations, it returns a Promise. "
+    }
+  ]
+}

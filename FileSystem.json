@@ -1,0 +1,16 @@
+{
+  "name": "FileSystem",
+  "description": "",
+  "members": [
+    {
+      "name": "FileSystem.name",
+      "link": "/en-US/docs/Web/API/FileSystem/name",
+      "description": "A USVString representing the file system\u0027s name. This name is unique among the entire list of exposed file systems."
+    },
+    {
+      "name": "FileSystem.root",
+      "link": "/en-US/docs/Web/API/FileSystem/root",
+      "description": "A FileSystemDirectoryEntry object which represents the file system\u0027s root directory. Through this object, you can gain access to all files and directories in the file system."
+    }
+  ]
+}

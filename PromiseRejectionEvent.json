@@ -1,0 +1,49 @@
+{
+  "name": "PromiseRejectionEvent",
+  "description": "The PromiseRejectionEvent interface represents events which are fired when JavaScript Promises are rejected. These events are particularly useful for telemetry and debugging purposes.",
+  "members": [
+    {
+      "name": "PromiseRejectionEvent()",
+      "link": "/en-US/docs/Web/API/PromiseRejectionEvent/PromiseRejectionEvent",
+      "description": "Creates a PromiseRejectionEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the name of the type of the PromiseRejectionEvent. This is case-sensitive and must be one of \"rejectionhandled\" or \"unhandledrejection\"."
+        },
+        {
+          "name": "options",
+          "description": "An Object specifying details about the rejection which occurred: promise The Promise that was rejected. reason Any value or Object which represents the reason the promise was rejected."
+        },
+        {
+          "name": "promise",
+          "description": "The Promise that was rejected."
+        },
+        {
+          "name": "reason",
+          "description": "Any value or Object which represents the reason the promise was rejected."
+        }
+      ]
+    },
+    {
+      "name": "PromiseRejectionEvent.promise",
+      "link": "/en-US/docs/Web/API/PromiseRejectionEvent/promise",
+      "description": "The JavaScript Promise that was rejected."
+    },
+    {
+      "name": "PromiseRejectionEvent.reason",
+      "link": "/en-US/docs/Web/API/PromiseRejectionEvent/reason",
+      "description": "A value or Object indicating why the promise was rejected, as passed to Promise.reject()."
+    },
+    {
+      "name": "unhandledrejection",
+      "link": "/en-US/docs/Web/Events/unhandledrejection",
+      "description": "Fired when a JavaScript Promise is rejected but there is no rejection handler to deal with the rejection."
+    },
+    {
+      "name": "rejectionhandled",
+      "link": "/en-US/docs/Web/Events/rejectionhandled",
+      "description": "Fired when a JavaScript Promise is rejected, and after the rejection is handled by the promise\u0027s rejection handling code."
+    }
+  ]
+}

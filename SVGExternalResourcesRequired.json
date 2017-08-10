@@ -1,0 +1,11 @@
+{
+  "name": "SVGExternalResourcesRequired",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. The SVGExternalResourcesRequired interface defines an interface which applies to all elements where this element or one of its descendants can reference an external resource.",
+  "members": [
+    {
+      "name": "SVGExternalResourcesRequired.externalResourcesRequired",
+      "link": "/en-US/docs/Web/API/SVGExternalResourcesRequired/externalResourcesRequired",
+      "description": "Corresponds to the externalResourcesRequired attribute of the given element. Note: The SVG DOM defines the attribute externalResourcesRequired as being of type SVGAnimatedBoolean, whereas the SVG language definition says that the attribute is not animated. Because the SVG language definition states that externalResourcesRequired cannot be animated, the animVal will always be the same as the baseVal."
+    }
+  ]
+}

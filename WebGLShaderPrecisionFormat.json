@@ -1,0 +1,21 @@
+{
+  "name": "WebGLShaderPrecisionFormat",
+  "description": "The WebGLShaderPrecisionFormat interface is part of the WebGL API and represents the information returned by calling the WebGLRenderingContext.getShaderPrecisionFormat() method.",
+  "members": [
+    {
+      "name": "WebGLShaderPrecisionFormat.rangeMin",
+      "link": "/en-US/docs/Web/API/WebGLShaderPrecisionFormat/rangeMin",
+      "description": "The base 2 log of the absolute value of the minimum value that can be represented."
+    },
+    {
+      "name": "WebGLShaderPrecisionFormat.rangeMax",
+      "link": "/en-US/docs/Web/API/WebGLShaderPrecisionFormat/rangeMax",
+      "description": "The base 2 log of the absolute value of the maximum value that can be represented."
+    },
+    {
+      "name": "WebGLShaderPrecisionFormat.precision",
+      "link": "/en-US/docs/Web/API/WebGLShaderPrecisionFormat/precision",
+      "description": "The number of bits of precision that can be represented. For integer formats this value is always 0."
+    }
+  ]
+}

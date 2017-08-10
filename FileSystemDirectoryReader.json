@@ -1,0 +1,21 @@
+{
+  "name": "FileSystemDirectoryReader",
+  "description": "",
+  "members": [
+    {
+      "name": "readEntries()",
+      "link": "/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries",
+      "description": "Returns a an array containing some number of the directory\u0027s entries. Each item in the array is an object based on FileSystemEntry—typically either FileSystemFileEntry or FileSystemDirectoryEntry.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A function which is called when the directory\u0027s contents have been retrieved. The function receives a single input parameter: an array of file system entry objects, each based on FileSystemEntry. Generally, they are either FileSystemFileEntry objects, which represent standard files, or FileSystemDirectoryEntry objects, which represent directories. If there are no files left, or you\u0027ve already called readEntries() on this FileSystemDirectoryReader, the array is empty."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "A callback function which is called if an error occurs while reading from the directory. It receives one input parameter: a FileError object describing the error which occurred."
+        }
+      ]
+    }
+  ]
+}

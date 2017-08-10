@@ -1,0 +1,31 @@
+{
+  "name": "HTMLStyleElement",
+  "description": "The HTMLStyleElement interface represents a \u003cstyle\u003e element. It inherits properties and methods from its parent, HTMLElement, and from LinkStyle.",
+  "members": [
+    {
+      "name": "HTMLStyleElement.media",
+      "link": "/en-US/docs/Web/API/HTMLStyleElement/media",
+      "description": "Is a DOMString representing the intended destination medium for style information."
+    },
+    {
+      "name": "HTMLStyleElement.type",
+      "link": "/en-US/docs/Web/API/HTMLStyleElement/type",
+      "description": "Is a DOMString representing the type of style being applied by this statement."
+    },
+    {
+      "name": "HTMLStyleElement.disabled",
+      "link": "/en-US/docs/Web/API/HTMLStyleElement/disabled",
+      "description": "Is a Boolean value representing whether or not the stylesheet is disabled (true) or not (false)."
+    },
+    {
+      "name": "LinkStyle.sheet",
+      "link": "/en-US/docs/Web/API/LinkStyle/sheet",
+      "description": "Returns the StyleSheet object associated with the given element, or null if there is none"
+    },
+    {
+      "name": "HTMLStyleElement.scoped",
+      "link": "/en-US/docs/Web/API/HTMLStyleElement/scoped",
+      "description": "Is a Boolean value indicating if the element applies to the whole document (false) or only to the parent\u0027s sub-tree (true)."
+    }
+  ]
+}

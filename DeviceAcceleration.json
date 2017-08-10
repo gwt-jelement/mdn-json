@@ -1,0 +1,39 @@
+{
+  "name": "DeviceAcceleration",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. A DeviceAcceleration object provides information about the amount of acceleration the device is experiencing along all three axes.",
+  "members": [
+    {
+      "name": "DeviceAcceleration.x",
+      "link": "/en-US/docs/Web/API/DeviceAcceleration/x",
+      "description": "The amount of acceleration along the X axis. Read only.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "A double indicating the amount of acceleration along the X axis. See Accelerometer values explained for details."
+        }
+      ]
+    },
+    {
+      "name": "DeviceAcceleration.y",
+      "link": "/en-US/docs/Web/API/DeviceAcceleration/y",
+      "description": "The amount of acceleration along the Y axis. Read only.",
+      "parameters": [
+        {
+          "name": "y",
+          "description": "A double indicating the amount of acceleration along the Y axis. See Accelerometer values explained for details."
+        }
+      ]
+    },
+    {
+      "name": "DeviceAcceleration.z",
+      "link": "/en-US/docs/Web/API/DeviceAcceleration/z",
+      "description": "The amount of acceleration along the Z axis. Read only.",
+      "parameters": [
+        {
+          "name": "z",
+          "description": "A double indicating the amount of acceleration along the Z axis. See Accelerometer values explained for details."
+        }
+      ]
+    }
+  ]
+}

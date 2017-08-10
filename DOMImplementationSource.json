@@ -1,0 +1,16 @@
+{
+  "name": "DOMImplementationSource",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMImplementationSource.getDOMImplementation()",
+      "link": "/en-US/docs/Web/API/DOMImplementationSource/getDOMImplementation",
+      "description": "Returns a DOMImplementation."
+    },
+    {
+      "name": "DOMImplementationSource.getDOMImplementationList()",
+      "link": "/en-US/docs/Web/API/DOMImplementationSource/getDOMImplementationList",
+      "description": "Returns a DOMImplementationList"
+    }
+  ]
+}

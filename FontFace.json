@@ -1,0 +1,61 @@
+{
+  "name": "FontFace",
+  "description": "",
+  "members": [
+    {
+      "name": "FontFace()",
+      "link": "/en-US/docs/Web/API/FontFace/FontFace",
+      "description": "Constructs and returns a new FontFace object, built from an external resource described by an URL or from an ArrayBuffer."
+    },
+    {
+      "name": "FontFace.family",
+      "link": "/en-US/docs/Web/API/FontFace/family",
+      "description": "Is a DOMString that contains the family of the font. It is equivalent to the family descriptor."
+    },
+    {
+      "name": "FontFace.style",
+      "link": "/en-US/docs/Web/API/FontFace/style",
+      "description": "Is a DOMString that contains the style of the font. It is equivalent to the style descriptor."
+    },
+    {
+      "name": "FontFace.weight",
+      "link": "/en-US/docs/Web/API/FontFace/weight",
+      "description": "Is a DOMString that contains the weight of the font. It is equivalent to the weight descriptor."
+    },
+    {
+      "name": "FontFace.stretch",
+      "link": "/en-US/docs/Web/API/FontFace/stretch",
+      "description": "Is a DOMString that contains how the font stretches. It is equivalent to the stretch descriptor."
+    },
+    {
+      "name": "FontFace.unicodeRange",
+      "link": "/en-US/docs/Web/API/FontFace/unicodeRange",
+      "description": "Is a DOMString that contains the range of code encompassed the font. It is equivalent to the unicode-range descriptor."
+    },
+    {
+      "name": "FontFace.variant",
+      "link": "/en-US/docs/Web/API/FontFace/variant",
+      "description": "Is a DOMString that contains the variant of the font. It is equivalent to the range descriptor."
+    },
+    {
+      "name": "FontFace.featureSettings",
+      "link": "/en-US/docs/Web/API/FontFace/featureSettings",
+      "description": "Is a DOMString that contains the features of the font. It is equivalent to the feature-settings descriptor."
+    },
+    {
+      "name": "FontFace.status",
+      "link": "/en-US/docs/Web/API/FontFace/status",
+      "description": "Returns an enumerated value indicating the status of the font. It can be one of the following: \"unloaded\", \"loading\", \"loaded\", or \"error\"."
+    },
+    {
+      "name": "FontFace.loaded",
+      "link": "/en-US/docs/Web/API/FontFace/loaded",
+      "description": "Returns a Promise to a FontFace that fulfills when the font is completely loaded and rejects when an error happens."
+    },
+    {
+      "name": "FontFace.load()",
+      "link": "/en-US/docs/Web/API/FontFace/load",
+      "description": "Loads the font, returning a Promise to a FontFace that fulfills when the font is completely loaded and rejects when an error happens."
+    }
+  ]
+}

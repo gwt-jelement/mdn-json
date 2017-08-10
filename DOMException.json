@@ -1,0 +1,194 @@
+{
+  "name": "DOMException",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMException()",
+      "link": "/en-US/docs/Web/API/DOMException/DOMException",
+      "description": "Returns a DOMException object with a specified message and name.",
+      "parameters": [
+        {
+          "name": "message Optional",
+          "description": "A description of the exception. If not present, the empty string \u0027\u0027 is used."
+        },
+        {
+          "name": "name Optional",
+          "description": "Returns a DOMString that contains one of the strings associated with an error constant."
+        },
+        {
+          "name": "Return value",
+          "description": ""
+        },
+        {
+          "name": "DOMException",
+          "description": "A newly created DOMException object."
+        }
+      ]
+    },
+    {
+      "name": "DOMException.code",
+      "link": "/en-US/docs/Web/API/DOMException/code",
+      "description": "Returns a short that contains one of the error code constants, or 0 if none match. This field is used for historical reasons, new kind of DOM exceptions don\u0027t use anymore: they put this info in the DOMException.name attribute."
+    },
+    {
+      "name": "DOMException.name",
+      "link": "/en-US/docs/Web/API/DOMException/name",
+      "description": "Returns a DOMString that contains one of the strings associated with an error name."
+    },
+    {
+      "name": "IndexSizeError",
+      "link": "",
+      "description": "The index is not in the allowed range. For example, this can be thrown by Range object. (Legacy code value: 1 and legacy constant name: INDEX_SIZE_ERR)"
+    },
+    {
+      "name": "HierarchyRequestError",
+      "link": "",
+      "description": "The node tree hierarchy is not correct. (Legacy code value: 3 and legacy constant name: HIERARCHY_REQUEST_ERR)"
+    },
+    {
+      "name": "WrongDocumentError",
+      "link": "",
+      "description": "The object is in the wrong Document. (Legacy code value: 4 and legacy constant name: WRONG_DOCUMENT_ERR)"
+    },
+    {
+      "name": "InvalidCharacterError",
+      "link": "",
+      "description": "The string contains invalid characters. (Legacy code value: 5 and legacy constant name: INVALID_CHARACTER_ERR)"
+    },
+    {
+      "name": "NoModificationAllowedError",
+      "link": "",
+      "description": "The object can not be modified. (Legacy code value: 7 and legacy constant name: NO_MODIFICATION_ALLOWED_ERR)"
+    },
+    {
+      "name": "NotFoundError",
+      "link": "",
+      "description": "The object can not be found here. (Legacy code value: 8 and legacy constant name: NOT_FOUND_ERR)"
+    },
+    {
+      "name": "NotSupportedError",
+      "link": "",
+      "description": "The operation is not supported. (Legacy code value: 9 and legacy constant name: NOT_SUPPORTED_ERR)"
+    },
+    {
+      "name": "InvalidStateError",
+      "link": "",
+      "description": "The object is in an invalid state. (Legacy code value: 11 and legacy constant name: INVALID_STATE_ERR)"
+    },
+    {
+      "name": "SyntaxError",
+      "link": "",
+      "description": "The string did not match the expected pattern. (Legacy code value: 12 and legacy constant name: SYNTAX_ERR)"
+    },
+    {
+      "name": "InvalidModificationError",
+      "link": "",
+      "description": "The object can not be modified in this way. (Legacy code value: 13 and legacy constant name: INVALID_MODIFICATION_ERR)"
+    },
+    {
+      "name": "NamespaceError",
+      "link": "",
+      "description": "The operation is not allowed by Namespaces in XML. (Legacy code value: 14 and legacy constant name: NAMESPACE_ERR)"
+    },
+    {
+      "name": "InvalidAccessError",
+      "link": "",
+      "description": "The object does not support the operation or argument. (Legacy code value: 15 and legacy constant name: INVALID_ACCESS_ERR)"
+    },
+    {
+      "name": "TypeMismatchError",
+      "link": "",
+      "description": "The type of the object does not match the expected type. (Legacy code value: 17 and legacy constant name: TYPE_MISMATCH_ERR) This value is deprecated, the JavaScript TypeError exception is now raised instead of a DOMException with this value."
+    },
+    {
+      "name": "SecurityError",
+      "link": "",
+      "description": "The operation is insecure. (Legacy code value: 18 and legacy constant name: SECURITY_ERR)"
+    },
+    {
+      "name": "NetworkError",
+      "link": "",
+      "description": "A network error occurred. (Legacy code value: 19 and legacy constant name: NETWORK_ERR)"
+    },
+    {
+      "name": "AbortError",
+      "link": "",
+      "description": "The operation was aborted. (Legacy code value: 20 and legacy constant name: ABORT_ERR)"
+    },
+    {
+      "name": "URLMismatchError",
+      "link": "",
+      "description": "The given URL does not match another URL. (Legacy code value: 21 and legacy constant name: URL_MISMATCH_ERR)"
+    },
+    {
+      "name": "QuotaExceededError",
+      "link": "",
+      "description": "The quota has been exceeded. (Legacy code value: 22 and legacy constant name: QUOTA_EXCEEDED_ERR)"
+    },
+    {
+      "name": "TimeoutError",
+      "link": "",
+      "description": "The operation timed out. (Legacy code value: 23 and legacy constant name: TIMEOUT_ERR)"
+    },
+    {
+      "name": "InvalidNodeTypeError",
+      "link": "",
+      "description": "The node is incorrect or has an incorrect ancestor for this operation. (Legacy code value: 24 and legacy constant name: INVALID_NODE_TYPE_ERR)"
+    },
+    {
+      "name": "DataCloneError",
+      "link": "",
+      "description": "The object can not be cloned. (Legacy code value: 25 and legacy constant name: DATA_CLONE_ERR)"
+    },
+    {
+      "name": "EncodingError",
+      "link": "",
+      "description": "The encoding or decoding operation failed (No legacy code value and constant name)."
+    },
+    {
+      "name": "NotReadableError",
+      "link": "",
+      "description": "The input/output read operation failed (No legacy code value and constant name)."
+    },
+    {
+      "name": "UnknownError",
+      "link": "",
+      "description": "The operation failed for an unknown transient reason (e.g. out of memory) (No legacy code value and constant name)."
+    },
+    {
+      "name": "ConstraintError",
+      "link": "",
+      "description": "A mutation operation in a transaction failed because a constraint was not satisfied (No legacy code value and constant name)."
+    },
+    {
+      "name": "DataError",
+      "link": "",
+      "description": "Provided data is inadequate (No legacy code value and constant name)."
+    },
+    {
+      "name": "TransactionInactiveError",
+      "link": "",
+      "description": "A request was placed against a transaction which is currently not active, or which is finished (No legacy code value and constant name)."
+    },
+    {
+      "name": "ReadOnlyError",
+      "link": "",
+      "description": "The mutating operation was attempted in a \"readonly\" transaction (No legacy code value and constant name)."
+    },
+    {
+      "name": "VersionError",
+      "link": "",
+      "description": "An attempt was made to open a database using a lower version than the existing version (No legacy code value and constant name)."
+    },
+    {
+      "name": "OperationError",
+      "link": "",
+      "description": "The operation failed for an operation-specific reason (No legacy code value and constant name)."
+    },
+    {
+      "name": "NotAllowedError",
+      "link": "",
+      "description": "The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission (No legacy code value and constant name)."
+    }
+  ]
+}

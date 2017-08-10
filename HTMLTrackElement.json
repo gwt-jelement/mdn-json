@@ -1,0 +1,41 @@
+{
+  "name": "HTMLTrackElement",
+  "description": "The HTMLTrackElement",
+  "members": [
+    {
+      "name": "HTMLTrackElement.kind",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/kind",
+      "description": "Is a DOMString that reflects the kind HTML attribute, indicating how the text track is meant to be used. Possible values are: subtitles, captions, descriptions, chapters, metadata."
+    },
+    {
+      "name": "HTMLTrackElement.src",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/src",
+      "description": "Is a DOMString that reflects the src HTML attribute, indicating the address of the text track data."
+    },
+    {
+      "name": "HTMLTrackElement.srclang",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/srclang",
+      "description": "Is a DOMString that reflects the srclang HTML attribute, indicating the language of the text track data."
+    },
+    {
+      "name": "HTMLTrackElement.label",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/label",
+      "description": "Is a DOMString that reflects the label HTML attribute, indicating a user-readable title for the track."
+    },
+    {
+      "name": "HTMLTrackElement.default",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/default",
+      "description": "Is a Boolean reflects the default HTML attribute, indicating that the track is to be enabled if the user\u0027s preferences do not indicate that another track would be more appropriate."
+    },
+    {
+      "name": "HTMLTrackElement.readyState",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/readyState",
+      "description": "Returns  an unsigned short that show the readiness state of the track: Constant Value Description NONE 0 Indicates that the text track\u0027s cues have not been obtained. LOADING 1 Indicates that the text track is loading and there have been no fatal errors encountered so far. Further cues might still be added to the track by the parser. LOADED 2 Indicates that the text track has been loaded with no fatal errors. ERROR 3 Indicates that the text track was enabled, but when the user agent attempted to obtain it, this failed in some way. Some or all of the cues are likely missing and will not be obtained."
+    },
+    {
+      "name": "HTMLTrackElement.track",
+      "link": "/en-US/docs/Web/API/HTMLTrackElement/track",
+      "description": "Returns TextTrack is the track element\u0027s text track data."
+    }
+  ]
+}

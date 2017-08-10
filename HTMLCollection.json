@@ -1,0 +1,27 @@
+{
+  "name": "HTMLCollection",
+  "description": "",
+  "members": [
+    {
+      "name": "HTMLCollection.length",
+      "link": "/en-US/docs/Web/API/HTMLCollection/length",
+      "description": "Returns the number of items in the collection."
+    },
+    {
+      "name": "HTMLCollection.item()",
+      "link": "/en-US/docs/Web/API/HTMLCollection/item",
+      "description": "Returns the specific node at the given zero-based index into the list. Returns null if the index is out of range.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The position of the Node to be returned. Elements appear in an HTMLCollection in the same order in which they appear in the document source."
+        }
+      ]
+    },
+    {
+      "name": "HTMLCollection.namedItem()",
+      "link": "/en-US/docs/Web/API/HTMLCollection/namedItem",
+      "description": "Returns the specific node whose ID or, as a fallback, name matches the string specified by name. Matching by name is only done as a last resort, only in HTML, and only if the referenced element supports the name attribute. Returns null if no node exists by the given name."
+    }
+  ]
+}

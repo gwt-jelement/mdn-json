@@ -1,0 +1,11 @@
+{
+  "name": "HTMLTimeElement",
+  "description": "The HTMLTimeElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating \u003ctime\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLTimeElement.dateTime",
+      "link": "/en-US/docs/Web/API/HTMLTimeElement/dateTime",
+      "description": "Is a DOMString that reflects the datetime HTML attribute, containing a machine-readable form of the element\u0027s date and time value."
+    }
+  ]
+}

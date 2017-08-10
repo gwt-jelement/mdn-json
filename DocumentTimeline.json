@@ -1,0 +1,22 @@
+{
+  "name": "DocumentTimeline",
+  "description": "",
+  "members": [
+    {
+      "name": "DocumentTimeline()",
+      "link": "/en-US/docs/Web/API/DocumentTimeline/DocumentTimeline",
+      "description": "Creates a new DocumentTimeline object associated with the active document of the current browsing context.",
+      "parameters": [
+        {
+          "name": "options",
+          "description": "An object specifying options for the new timeline. Currently the only supported option is the originTime member which specifies the zero time for the documentTimeline as a real number of milliseconds relative to the navigationStart moment of the active document for the current browsing context."
+        }
+      ]
+    },
+    {
+      "name": "AnimationTimeline.currentTime",
+      "link": "/en-US/docs/Web/API/AnimationTimeline/currentTime",
+      "description": "Returns the time value in milliseconds for this timeline or null if it is inactive."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "SVGTextPathElement",
+  "description": "The SVGTextPathElement interface corresponds to the \u003ctextPath\u003e element.",
+  "members": [
+    {
+      "name": "SVGTextPathElement.startOffset",
+      "link": "/en-US/docs/Web/API/SVGTextPathElement/startOffset",
+      "description": "An SVGAnimatedLength corresponding to the X component of the startOffset attribute of the given element."
+    },
+    {
+      "name": "SVGTextPathElement.method",
+      "link": "/en-US/docs/Web/API/SVGTextPathElement/method",
+      "description": "An SVGAnimatedEnumeration corresponding to the method attribute of the given element. It takes one of the TEXTPATH_METHODTYPE_* constants defined on this interface."
+    },
+    {
+      "name": "SVGTextPathElement.spacing",
+      "link": "/en-US/docs/Web/API/SVGTextPathElement/spacing",
+      "description": "An SVGAnimatedEnumeration corresponding to the spacing attribute of the given element. It takes one of the TEXTPATH_SPACINGTYPE_* constants defined on this interface."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MediaStreamTrackEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaStreamTrackEvent()",
+      "link": "/en-US/docs/Web/API/MediaStreamTrackEvent/MediaStreamTrackEvent",
+      "description": "Constructs a new MediaStreamTrackEvent with the specified configuration.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString representing the name of the type of the MediaStreamTrackEvent. It is case-sensitive and can be \"addtrack\" or \"removetrack\"."
+        },
+        {
+          "name": "track",
+          "description": "A MediaStreamTrack object representing the track which was added to or removed from the stream."
+        }
+      ]
+    }
+  ]
+}

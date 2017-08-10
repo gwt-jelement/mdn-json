@@ -1,0 +1,26 @@
+{
+  "name": "FocusEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "FocusEvent()",
+      "link": "/en-US/docs/Web/API/FocusEvent/FocusEvent",
+      "description": "Creates a FocusEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "focusEventInitOptional",
+          "description": "Is a FocusEventInit dictionary, having the following fields: \"relatedTarget\", optional and defaulting to null, is an EventTarget representing the secondary target of a FocusEvent. The FocusEventInit dictionary also accepts fields from the UIEventInit and EventInit dictionaries."
+        }
+      ]
+    },
+    {
+      "name": "FocusEvent.relatedTarget",
+      "link": "/en-US/docs/Web/API/FocusEvent/relatedTarget",
+      "description": "Is an EventTarget representing a secondary target for this event. As in some cases (like when tabbing in or out a page), this property may be set to null for security reasons."
+    }
+  ]
+}

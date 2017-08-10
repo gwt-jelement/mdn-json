@@ -1,0 +1,79 @@
+{
+  "name": "IDBKeyRange",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBKeyRange.lower",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/lower",
+      "description": "Lower bound of the key range."
+    },
+    {
+      "name": "IDBKeyRange.upper",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/upper",
+      "description": "Upper bound of the key range."
+    },
+    {
+      "name": "IDBKeyRange.lowerOpen",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/lowerOpen",
+      "description": "Returns false if the lower-bound value is included in the key range."
+    },
+    {
+      "name": "IDBKeyRange.upperOpen",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/upperOpen",
+      "description": "Returns false if the upper-bound value is included in the key range."
+    },
+    {
+      "name": "IDBKeyRange.bound()",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/bound",
+      "description": "Creates a new key range with upper and lower bounds.",
+      "parameters": [
+        {
+          "name": "lower ",
+          "description": "specifies the lower bound of the new key range. "
+        },
+        {
+          "name": "upper ",
+          "description": "specifies the upper bound of the new key range."
+        },
+        {
+          "name": "lowerOpen Optional",
+          "description": "indicates whether the lower bound excludes the endpoint value. The default is false. "
+        },
+        {
+          "name": "upperOpen Optional",
+          "description": "Indicates whether the upper bound excludes the endpoint value. The default is false. "
+        }
+      ]
+    },
+    {
+      "name": "IDBKeyRange.only()",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/only",
+      "description": "Creates a new key range containing a single value."
+    },
+    {
+      "name": "IDBKeyRange.lowerBound()",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/lowerBound",
+      "description": "Creates a new key range with only a lower bound.",
+      "parameters": [
+        {
+          "name": "lower ",
+          "description": "specifies the lower bound of the new key range. "
+        },
+        {
+          "name": "open Optional",
+          "description": "indicates whether the lower bound excludes the endpoint value. The default is false. "
+        }
+      ]
+    },
+    {
+      "name": "IDBKeyRange.upperBound()",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/upperBound",
+      "description": "Creates a new upper-bound key range."
+    },
+    {
+      "name": "IDBKeyRange.includes()",
+      "link": "/en-US/docs/Web/API/IDBKeyRange/includes",
+      "description": "Returns a boolean indicating whether a specified key is inside the key range."
+    }
+  ]
+}

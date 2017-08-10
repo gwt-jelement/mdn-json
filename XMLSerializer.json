@@ -1,0 +1,5 @@
+{
+  "name": "XMLSerializer",
+  "description": "XMLSerializer can be used to convert a DOM subtree or DOM document into text. XMLSerializer is available to unprivileged scripts.  ",
+  "members": []
+}

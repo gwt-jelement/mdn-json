@@ -1,0 +1,21 @@
+{
+  "name": "SpeechRecognitionResult",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognitionResult.isFinal",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionResult/isFinal",
+      "description": "A Boolean that states whether this result is final (true) or not (false) — if so, then this is the final time this result will be returned; if not, then this result is an interim result, and may be updated later on."
+    },
+    {
+      "name": "SpeechRecognitionResult.length",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionResult/length",
+      "description": "Returns the length of the \"array\" — the number of SpeechRecognitionAlternative objects contained in the result (also referred to as \"n-best alternatives\".)"
+    },
+    {
+      "name": "SpeechRecognitionResult.item",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionResult/item",
+      "description": "A standard getter that allows SpeechRecognitionAlternative objects within the result to be accessed via array syntax."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "PresentationRequest",
+  "description": "A PresentationRequest object is used to initiate or reconnect to a presentation made by a controlling browsing context. The PresentationRequest object MUST be implemented in a controlling browsing context provided by a controlling user agent.",
+  "members": [
+    {
+      "name": "PresentationRequest()",
+      "link": "/en-US/docs/Web/API/PresentationRequest/PresentationRequest",
+      "description": "Creates a PresentationRequest.",
+      "parameters": [
+        {
+          "name": "url or urls[]",
+          "description": "A URL or array of URLs that are possible URLs used to create, or reconnect, a presentation for the PresentationRequest instance."
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest.onconnectionavailable",
+      "link": "/en-US/docs/Web/API/PresentationRequest/onconnectionavailable",
+      "description": "Fires on a successful call to PresentationRequest.start() or PresentationRequest.join(). This method provides a object with a reference to the created or joined object."
+    },
+    {
+      "name": "PresentationRequest.start()",
+      "link": "/en-US/docs/Web/API/PresentationRequest/start",
+      "description": "When the start method is called, the user agent MUST run the following steps to start a presentation.",
+      "parameters": [
+        {
+          "name": "Input",
+          "description": "presentationRequest, the PresentationRequest object"
+        },
+        {
+          "name": "Output",
+          "description": "A Promise"
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest.reconnect()",
+      "link": "/en-US/docs/Web/API/PresentationRequest/reconnect",
+      "description": "When the reconnect(presentationId) method is called on a PresentationRequest presentationRequest, the user agent MUST run the following steps to reconnect to a presentation.",
+      "parameters": [
+        {
+          "name": "Input",
+          "description": "presentationRequest, the PresentationRequest object that reconnect() was called on."
+        },
+        {
+          "name": "Output",
+          "description": "P, a Promise"
+        }
+      ]
+    },
+    {
+      "name": "PresentationRequest.getAvailability()",
+      "link": "/en-US/docs/Web/API/PresentationRequest/getAvailability",
+      "description": "When the getAvailability() method is called, the user agent MUST run the steps as the link.",
+      "parameters": [
+        {
+          "name": "Input",
+          "description": "presentationUrls, a list of presentation request URLs"
+        },
+        {
+          "name": "Output",
+          "description": "P, a Promise"
+        }
+      ]
+    }
+  ]
+}

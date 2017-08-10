@@ -1,0 +1,237 @@
+{
+  "name": "Node",
+  "description": "Node is an interface from which a number of DOM API object types inherit; it allows these various types to be treated similarly, for example inheriting the same set of methods, or being tested in the same way.",
+  "members": [
+    {
+      "name": "Node.baseURI",
+      "link": "/en-US/docs/Web/API/Node/baseURI",
+      "description": "Returns a DOMString representing the base URL. The concept of base URL changes from one language to another; in HTML, it corresponds to the protocol, the domain name and the directory structure, that is all until the last \u0027/\u0027."
+    },
+    {
+      "name": "Node.baseURIObject",
+      "link": "/en-US/docs/Web/API/Node/baseURIObject",
+      "description": "(Not available to web content.) The read-only nsIURI object representing the base URI for the element."
+    },
+    {
+      "name": "Node.childNodes",
+      "link": "/en-US/docs/Web/API/Node/childNodes",
+      "description": "Returns a live NodeList containing all the children of this node. NodeList being live means that if the children of the Node change, the NodeList object is automatically updated."
+    },
+    {
+      "name": "Node.firstChild",
+      "link": "/en-US/docs/Web/API/Node/firstChild",
+      "description": "Returns a Node representing the first direct child node of the node, or null if the node has no child."
+    },
+    {
+      "name": "Node.lastChild",
+      "link": "/en-US/docs/Web/API/Node/lastChild",
+      "description": "Returns a Node representing the last direct child node of the node, or null if the node has no child."
+    },
+    {
+      "name": "Node.nextSibling",
+      "link": "/en-US/docs/Web/API/Node/nextSibling",
+      "description": "Returns a Node representing the next node in the tree, or null if there isn\u0027t such node."
+    },
+    {
+      "name": "Node.nodeName",
+      "link": "/en-US/docs/Web/API/Node/nodeName",
+      "description": "Returns a DOMString containing the name of the Node. The structure of the name will differ with the node type. E.g. An HTMLElement will contain the name of the corresponding tag, like \u0027audio\u0027 for an HTMLAudioElement, a Text node will have the \u0027#text\u0027 string, or a Document node will have the \u0027#document\u0027 string."
+    },
+    {
+      "name": "Node.nodePrincipal",
+      "link": "/en-US/docs/Web/API/Node/nodePrincipal",
+      "description": "A nsIPrincipal representing the node principal."
+    },
+    {
+      "name": "Node.nodeType",
+      "link": "/en-US/docs/Web/API/Node/nodeType",
+      "description": "Returns an unsigned short representing the type of the node. Possible values are: Name Value ELEMENT_NODE 1 ATTRIBUTE_NODE 2 TEXT_NODE 3 CDATA_SECTION_NODE 4 ENTITY_REFERENCE_NODE 5 ENTITY_NODE 6 PROCESSING_INSTRUCTION_NODE 7 COMMENT_NODE 8 DOCUMENT_NODE 9 DOCUMENT_TYPE_NODE 10 DOCUMENT_FRAGMENT_NODE 11 NOTATION_NODE 12"
+    },
+    {
+      "name": "Node.nodeValue",
+      "link": "/en-US/docs/Web/API/Node/nodeValue",
+      "description": "Returns / Sets the value of the current node"
+    },
+    {
+      "name": "Node.ownerDocument",
+      "link": "/en-US/docs/Web/API/Node/ownerDocument",
+      "description": "Returns the Document that this node belongs to. If no document is associated with it, returns null."
+    },
+    {
+      "name": "Node.parentNode",
+      "link": "/en-US/docs/Web/API/Node/parentNode",
+      "description": "Returns a Node that is the parent of this node. If there is no such node, like if this node is the top of the tree or if doesn\u0027t participate in a tree, this property returns null."
+    },
+    {
+      "name": "Node.parentElement",
+      "link": "/en-US/docs/Web/API/Node/parentElement",
+      "description": "Returns an Element that is the parent of this node. If the node has no parent, or if that parent is not an Element, this property returns null."
+    },
+    {
+      "name": "Node.previousSibling",
+      "link": "/en-US/docs/Web/API/Node/previousSibling",
+      "description": "Returns a Node representing the previous node in the tree, or null if there isn\u0027t such node."
+    },
+    {
+      "name": "Node.textContent",
+      "link": "/en-US/docs/Web/API/Node/textContent",
+      "description": "Returns / Sets the textual content of an element and all its descendants."
+    },
+    {
+      "name": "Node.rootNode",
+      "link": "/en-US/docs/Web/API/Node/rootNode",
+      "description": "Returns a Node object representing the topmost node in the tree, or the current node if it\u0027s the topmost node in the tree. This has been replaced by Node.getRootNode()."
+    },
+    {
+      "name": "Node.localName",
+      "link": "/en-US/docs/Web/API/Node/localName",
+      "description": "Returns a DOMString representing the local part of the qualified name of an element. Note: In Firefox 3.5 and earlier, the property upper-cases the local name for HTML elements (but not XHTML elements). In later versions, this does not happen, so the property is in lower case for both HTML and XHTML."
+    },
+    {
+      "name": "Node.namespaceURI",
+      "link": "/en-US/docs/Web/API/Node/namespaceURI",
+      "description": "The namespace URI of this node, or null if it is no namespace. Note: In Firefox 3.5 and earlier, HTML elements are in no namespace. In later versions, HTML elements are in the https://www.w3.org/1999/xhtml/ namespace in both HTML and XML trees."
+    },
+    {
+      "name": "Node.prefix",
+      "link": "/en-US/docs/Web/API/Node/prefix",
+      "description": "Is a DOMString representing the namespace prefix of the node, or null if no prefix is specified."
+    },
+    {
+      "name": "Node.appendChild()",
+      "link": "/en-US/docs/Web/API/Node/appendChild",
+      "description": "Adds the specified childNode argument as the last child to the current node. If the argument referenced an existing node on the DOM tree, the node will be detached from its current position and attached at the new position."
+    },
+    {
+      "name": "Node.cloneNode()",
+      "link": "/en-US/docs/Web/API/Node/cloneNode",
+      "description": "Clone a Node, and optionally, all of its contents. By default, it clones the content of the node.",
+      "parameters": [
+        {
+          "name": "node",
+          "description": "The node to be cloned."
+        },
+        {
+          "name": "dupNode",
+          "description": "The new node that will be a clone of node"
+        },
+        {
+          "name": "deep Optional",
+          "description": "true if the children of the node should also be cloned, or false to clone only the specified node."
+        }
+      ]
+    },
+    {
+      "name": "Node.compareDocumentPosition()",
+      "link": "/en-US/docs/Web/API/Node/compareDocumentPosition",
+      "description": "Compares the position of the current node against another node in any other document."
+    },
+    {
+      "name": "Node.contains()",
+      "link": "/en-US/docs/Web/API/Node/contains",
+      "description": "Returns a Boolean value indicating whether a node is a descendant of a given node or not."
+    },
+    {
+      "name": "Node.getRootNode()",
+      "link": "/en-US/docs/Web/API/Node/getRootNode",
+      "description": "Returns the context object\u0027s root which optionally includes the shadow root if it is available. ",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for getting the root node. The available options are: composed: A Boolean that indicates whether the shadow root should be returned (false, the default), or a root node beyond shadow root (true)."
+        }
+      ]
+    },
+    {
+      "name": "Node.hasChildNodes()",
+      "link": "/en-US/docs/Web/API/Node/hasChildNodes",
+      "description": "Returns a Boolean indicating if the element has any child nodes, or not.",
+      "parameters": [
+        {
+          "name": "result",
+          "description": "holds the return value true or false."
+        }
+      ]
+    },
+    {
+      "name": "Node.insertBefore()",
+      "link": "/en-US/docs/Web/API/Node/insertBefore",
+      "description": "Inserts a Node before the reference node as a child of the current node."
+    },
+    {
+      "name": "Node.isDefaultNamespace()",
+      "link": "/en-US/docs/Web/API/Node/isDefaultNamespace",
+      "description": "Accepts a namespace URI as an argument and returns a Boolean with a value of true if the namespace is the default namespace on the given node or false if not."
+    },
+    {
+      "name": "Node.isEqualNode()",
+      "link": "/en-US/docs/Web/API/Node/isEqualNode",
+      "description": "Returns a Boolean which indicates whether or not two nodes are of the same type and all their defining data points match."
+    },
+    {
+      "name": "Node.isSameNode()",
+      "link": "/en-US/docs/Web/API/Node/isSameNode",
+      "description": "Returns a Boolean value indicating whether or not the two nodes are the same (that is, they reference the same object)."
+    },
+    {
+      "name": "Node.lookupPrefix()",
+      "link": "/en-US/docs/Web/API/Node/lookupPrefix",
+      "description": "Returns a DOMString containing the prefix for a given namespace URI, if present, and null if not. When multiple prefixes are possible, the result is implementation-dependent."
+    },
+    {
+      "name": "Node.lookupNamespaceURI()",
+      "link": "/en-US/docs/Web/API/Node/lookupNamespaceURI",
+      "description": "Accepts a prefix and returns the namespace URI associated with it on the given node if found (and null if not). Supplying null for the prefix will return the default namespace."
+    },
+    {
+      "name": "Node.normalize()",
+      "link": "/en-US/docs/Web/API/Node/normalize",
+      "description": "Clean up all the text nodes under this element (merge adjacent, remove empty)."
+    },
+    {
+      "name": "Node.removeChild()",
+      "link": "/en-US/docs/Web/API/Node/removeChild",
+      "description": "Removes a child node from the current element, which must be a child of the current node."
+    },
+    {
+      "name": "Node.replaceChild()",
+      "link": "/en-US/docs/Web/API/Node/replaceChild",
+      "description": "Replaces one child Node of the current one with the second one given in parameter."
+    },
+    {
+      "name": "Node.getFeature()",
+      "link": "/en-US/docs/Web/API/Node/getFeature",
+      "description": "x"
+    },
+    {
+      "name": "Node.getUserData()",
+      "link": "/en-US/docs/Web/API/Node/getUserData",
+      "description": "Allows a user to get some DOMUserData from the node."
+    },
+    {
+      "name": "Node.hasAttributes()",
+      "link": "/en-US/docs/Web/API/Node/hasAttributes",
+      "description": "Returns a Boolean indicating if the element has any attributes, or not."
+    },
+    {
+      "name": "Node.isSupported()",
+      "link": "/en-US/docs/Web/API/Node/isSupported",
+      "description": "Returns a Boolean flag containing the result of a test whether the DOM implementation implements a specific feature and this feature is supported by the specific node.",
+      "parameters": [
+        {
+          "name": "feature",
+          "description": "Is a DOMString containing the name of the feature to test. This is the same name which can be passed to the method hasFeature on DOMImplementation. Possible values defined within the core DOM specification are listed on the DOM Level 2 Conformance Section."
+        },
+        {
+          "name": "version",
+          "description": "Is a DOMString containing the version number of the feature to test. In DOM Level 2, version 1, this is the string 2.0. If the version is not specified, supporting any version of the feature will cause the method to return true."
+        }
+      ]
+    },
+    {
+      "name": "Node.setUserData()",
+      "link": "/en-US/docs/Web/API/Node/setUserData",
+      "description": "Allows a user to attach, or remove, DOMUserData to the node."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "SecurityPolicyViolationEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "SecurityPolicyViolationEvent()",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/SecurityPolicyViolationEvent",
+      "description": "Creates a SecurityPolicyViolationEvent object."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.blockedURI",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/blockedURI",
+      "description": "The URI of the resource blocked because it violates a policy."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.disposition",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/disposition",
+      "description": "Indicates how the violated policy is configured to be treated by the user agent. This will be \"enforce\" or \"report\"."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.documentURI",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/documentURI",
+      "description": "The URI of the document or worker in which the violation was found."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.effectiveDirective",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/effectiveDirective",
+      "description": "The string representing the directive whose enforcement uncovered the violation."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.LineNumber",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/LineNumber",
+      "description": "The line number in the document or worker at which the violation occurred."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.originalPolicy",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/originalPolicy",
+      "description": "A string containing the policy whose enforcement uncovered the violation."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.referrer",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/referrer",
+      "description": "The referrer of the resources whose policy was violated. This will be a URL or null."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.sourceFile",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/sourceFile",
+      "description": "The URI of the document or worker in which the violation was found."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.statusCode",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/statusCode",
+      "description": "The HTTP status code of the document or worker in which the violation occurred."
+    },
+    {
+      "name": "SecurityPolicyViolationEvent.violatedDirective",
+      "link": "/en-US/docs/Web/API/SecurityPolicyViolationEvent/violatedDirective",
+      "description": "The string representing the directive whose enforcement uncovered the violation."
+    }
+  ]
+}

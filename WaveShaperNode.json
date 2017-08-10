@@ -1,0 +1,31 @@
+{
+  "name": "WaveShaperNode",
+  "description": "",
+  "members": [
+    {
+      "name": "WaveShaperNode()",
+      "link": "/en-US/docs/Web/API/WaveShaperNode/WaveShaperNode",
+      "description": "Creates a new instance of an WaveShaperNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: curve: The shaping curve used for the waveshaping effect. The input signal is nominally within the range [-1;1]. oversample: Specifies what type of oversampling (if any) should be used when applying the shaping curve. Valid values are \u0027none\u0027, \u00272x\u0027, or \u00274x\u0027. The default is \u0027none\u0027."
+        }
+      ]
+    },
+    {
+      "name": "WaveShaperNode.curve",
+      "link": "/en-US/docs/Web/API/WaveShaperNode/curve",
+      "description": "Is a Float32Array of numbers describing the distortion to apply."
+    },
+    {
+      "name": "WaveShaperNode.oversample",
+      "link": "/en-US/docs/Web/API/WaveShaperNode/oversample",
+      "description": "Is an enumerated value indicating if oversampling must be used. Oversampling is a technique for creating more samples (up-sampling) before applying the distortion effect to the audio signal."
+    }
+  ]
+}

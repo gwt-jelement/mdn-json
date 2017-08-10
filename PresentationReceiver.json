@@ -1,0 +1,5 @@
+{
+  "name": "PresentationReceiver",
+  "description": "The PresentationReceiver interface allows a receiving browsing context to access the controlling browsing contexts and communicate with them. The PresentationReceiver interface MUST be implemented in a receiving browsing context, provided by a receiving user agent.",
+  "members": []
+}

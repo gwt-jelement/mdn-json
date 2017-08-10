@@ -1,0 +1,26 @@
+{
+  "name": "PerformanceMeasure",
+  "description": "PerformanceMeasure is an abstract interface for performance entries with an entry type of \"measure\". Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the measure) between two marks to the browser\u0027s performance timeline.",
+  "members": [
+    {
+      "name": "PerformanceEntry.entryType",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/entryType",
+      "description": "Set to \"measure\"."
+    },
+    {
+      "name": "PerformanceEntry.name",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/name",
+      "description": "Set to the name given to the measure when it was created via a call to performance.measure()."
+    },
+    {
+      "name": "PerformanceEntry.startTime",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/startTime",
+      "description": "Set to the timestamp when performance.measure() was called."
+    },
+    {
+      "name": "PerformanceEntry.duration",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/duration",
+      "description": "Set to a DOMHighResTimeStamp that is the duration of the measure (typically, the measure\u0027s end mark timestamp minus its start mark timestamp)."
+    }
+  ]
+}

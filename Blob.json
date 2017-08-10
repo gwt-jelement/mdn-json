@@ -1,0 +1,40 @@
+{
+  "name": "Blob",
+  "description": "A Blob object represents a file-like object of immutable, raw data. Blobs represent data that isn\u0027t necessarily in a JavaScript-native format. The File interface is based on Blob, inheriting blob functionality and expanding it to support files on the user\u0027s system.",
+  "members": [
+    {
+      "name": "Blob(blobParts[, options])",
+      "link": "/en-US/docs/Web/API/Blob/Blob",
+      "description": "Returns a newly created Blob object whose content consists of the concatenation of the array of values given in parameter."
+    },
+    {
+      "name": "Blob.size",
+      "link": "/en-US/docs/Web/API/Blob/size",
+      "description": "The size, in bytes, of the data contained in the Blob object."
+    },
+    {
+      "name": "Blob.type",
+      "link": "/en-US/docs/Web/API/Blob/type",
+      "description": "A string indicating the MIME type of the data contained in the Blob. If the type is unknown, this string is empty."
+    },
+    {
+      "name": "Blob.slice([start[, end[, contentType]]])",
+      "link": "/en-US/docs/Web/API/Blob/slice",
+      "description": "Returns a new Blob object containing the data in the specified range of bytes of the source Blob.",
+      "parameters": [
+        {
+          "name": "start Optional",
+          "description": "An index into the Blob indicating the first byte to include in the new Blob. If you specify a negative value, it\u0027s treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is 0. If you specify a value for start that is larger than the size of the source Blob, the returned Blob has size 0 and contains no data."
+        },
+        {
+          "name": "end Optional",
+          "description": "An index into the Blob indicating the first byte that will *not* be included in the new Blob (i.e. the byte exactly at this index is not included). If you specify a negative value, it\u0027s treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is size."
+        },
+        {
+          "name": "contentType Optional",
+          "description": "The content type to assign to the new Blob; this will be the value of its type property. The default value is an empty string."
+        }
+      ]
+    }
+  ]
+}

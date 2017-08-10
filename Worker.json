@@ -1,0 +1,51 @@
+{
+  "name": "Worker",
+  "description": "",
+  "members": [
+    {
+      "name": "Worker()",
+      "link": "/en-US/docs/Web/API/Worker/Worker",
+      "description": "Creates a dedicated web worker that executes the script at the specified URL. Workers can also be constructed using Blobs.",
+      "parameters": [
+        {
+          "name": "aURL",
+          "description": "A USVString representing the URL of the script the worker will execute. It must obey the same-origin policy."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object containing option properties that can set when creating the object instance. Available properties are as follows: type: A DOMString specifying the type of worker to create. The value can be classic or module. If not specified, the default used is classic. credentials: A DOMString specifying the type of credentialsto use for the worker. The value can be omit, same-origin, or include. If not specified, or if type is classic, the default used is omit (no credentials required). name: A DOMString specifying an identifying name for the DedicatedWorkerGlobalScope representing the scope of the worker, which is mainly useful for debugging purposes."
+        }
+      ]
+    },
+    {
+      "name": "AbstractWorker.onerror",
+      "link": "/en-US/docs/Web/API/AbstractWorker/onerror",
+      "description": "An EventListener called whenever an ErrorEvent of type error bubbles through to the worker. This is inherited from AbstractWorker."
+    },
+    {
+      "name": "Worker.onmessage",
+      "link": "/en-US/docs/Web/API/Worker/onmessage",
+      "description": "An EventListener called whenever a MessageEvent of type message bubbles through the worker — i.e. when a message is sent to the parent document from the worker via DedicatedWorkerGlobalScope.postMessage. The message is stored in the event\u0027s data property."
+    },
+    {
+      "name": "Worker.postMessage()",
+      "link": "/en-US/docs/Web/API/Worker/postMessage",
+      "description": "Sends a message — which can consist of any JavaScript object — to the worker\u0027s inner scope.",
+      "parameters": [
+        {
+          "name": "aMessage",
+          "description": "The object to deliver to the worker; this will be in the data field in the event delivered to the DedicatedWorkerGlobalScope.onmessage handler. This may be any value or JavaScript object handled by the structured clone algorithm, which includes cyclical references."
+        },
+        {
+          "name": "transferList Optional",
+          "description": "An optional array of Transferable objects to transfer ownership of. If the ownership of an object is transferred, it becomes unusable (neutered) in the context it was sent from and becomes available only to the worker it was sent to."
+        }
+      ]
+    },
+    {
+      "name": "Worker.terminate()",
+      "link": "/en-US/docs/Web/API/Worker/terminate",
+      "description": "Immediately terminates the worker. This does not offer the worker an opportunity to finish its operations; it is simply stopped at once. ServiceWorker instances do not support this method."
+    }
+  ]
+}

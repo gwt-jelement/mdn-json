@@ -1,0 +1,31 @@
+{
+  "name": "SVGFEGaussianBlurElement",
+  "description": "The SVGFEGaussianBlurElement interface corresponds to the \u003cfeGaussianBlur\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEGaussianBlurElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEGaussianBlurElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEGaussianBlurElement.stdDeviationX",
+      "link": "/en-US/docs/Web/API/SVGFEGaussianBlurElement/stdDeviationX",
+      "description": "An SVGAnimatedNumber corresponding to the (possibly automatically computed) X component of the stdDeviation attribute of the given element."
+    },
+    {
+      "name": "SVGFEGaussianBlurElement.stdDeviationY",
+      "link": "/en-US/docs/Web/API/SVGFEGaussianBlurElement/stdDeviationY",
+      "description": "An SVGAnimatedNumber corresponding to the (possibly automatically computed) Y component of the stdDeviation attribute of the given element."
+    },
+    {
+      "name": "SVGFEGaussianBlurElement.edgeMode",
+      "link": "/en-US/docs/Web/API/SVGFEGaussianBlurElement/edgeMode",
+      "description": "An SVGAnimatedEnumeration corresponding to the edgeMode attribute of the given element. Takes one of the SVG_EDGEMODE_* constants defined on this interface."
+    },
+    {
+      "name": "SVGFEGaussianBlurElement.setStdDeviation()",
+      "link": "/en-US/docs/Web/API/SVGFEGaussianBlurElement/setStdDeviation",
+      "description": "Sets the values for the stdDeviation attribute."
+    }
+  ]
+}

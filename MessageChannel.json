@@ -1,0 +1,21 @@
+{
+  "name": "MessageChannel",
+  "description": "",
+  "members": [
+    {
+      "name": "MessageChannel.port1",
+      "link": "/en-US/docs/Web/API/MessageChannel/port1",
+      "description": "Returns port1 of the channel."
+    },
+    {
+      "name": "MessageChannel.port2",
+      "link": "/en-US/docs/Web/API/MessageChannel/port2",
+      "description": "Returns port2 of the channel."
+    },
+    {
+      "name": "MessageChannel()",
+      "link": "/en-US/docs/Web/API/MessageChannel/MessageChannel",
+      "description": "Returns a new MessageChannel object with two new MessagePort objects."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ImageBitmapFactories",
+  "description": "Important: As of Firefox 52, the method defined in this mixin has been moved to the WindowOrWorkerGlobalScope mixin, and other browsers will follow suit. Look to that page for up-to-date details. The ImageBitmapFactories mixin interface contains utility methods to create an ImageBitmap. There is no object of this type, but the two interfaces Window, available within the regular browsing scope, and the WorkerGlobalScope interface for workers, implement this interface.",
+  "members": [
+    {
+      "name": "ImageBitmapFactories.createImageBitmap()",
+      "link": "/en-US/docs/Web/API/ImageBitmapFactories/createImageBitmap",
+      "description": "Accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap. Optionally the source is cropped to the rectangle of pixels originating at (sx, sy) with width sw, and height sh.",
+      "parameters": [
+        {
+          "name": "image",
+          "description": "An image source, which can be an \u003cimg\u003e, SVG \u003cimage\u003e, \u003cvideo\u003e, \u003ccanvas\u003e, HTMLImageElement, SVGImageElement, HTMLVideoElement, HTMLCanvasElement, Blob, ImageData, ImageBitmap, or OffscreenCanvas object."
+        },
+        {
+          "name": "sx",
+          "description": "The x coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sy",
+          "description": "The y coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sw",
+          "description": "The width of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "sh",
+          "description": "The height of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for . The available options are: imageOrientation: Indicates whether the image is presented as is or flipped vertically. Either none (default) or flipY. premultiplyAlpha: Indicates that the bitmaps color channels are premultiplied by the alpha channel. One of none, premultiply, or default (default). colorSpaceConversion: Indicates whether the image is decoded using color space conversion. Either none or default (default). The value default indicates that implementation-specific behavior is used. resizeWidth: A long integer that indicates the new width. resizeHeight: A long integer that indicates the new height. resizeQuality: Specifies an image scaling algorithm. One of pixelated, low (default), medium, or high."
+        }
+      ]
+    }
+  ]
+}

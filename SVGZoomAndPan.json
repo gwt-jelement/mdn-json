@@ -1,0 +1,11 @@
+{
+  "name": "SVGZoomAndPan",
+  "description": "The SVGZoomAndPan interfaceis used to reflect the zoomAndPan attribute, and is mixed in to other interfaces for elements that support this attribute.",
+  "members": [
+    {
+      "name": "SVGZoomAndPan.zoomAndPan",
+      "link": "/en-US/docs/Web/API/SVGZoomAndPan/zoomAndPan",
+      "description": "An unsigned short representing the value of the zoomAndPan attribute."
+    }
+  ]
+}

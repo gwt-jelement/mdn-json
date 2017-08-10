@@ -1,0 +1,11 @@
+{
+  "name": "HTMLBRElement",
+  "description": "The HTMLBRElement interface represents a HTML line break element (\u003cbr\u003e). It inherits from HTMLElement.",
+  "members": [
+    {
+      "name": "HTMLBRElement.clear",
+      "link": "/en-US/docs/Web/API/HTMLBRElement/clear",
+      "description": "Is a DOMString indicating the flow of text around floating objects."
+    }
+  ]
+}

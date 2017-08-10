@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedNumber",
+  "description": "SVG animated number interface The SVGAnimatedNumber interface is used for attributes of basic type \u003cNumber\u003e which can be animated.",
+  "members": []
+}

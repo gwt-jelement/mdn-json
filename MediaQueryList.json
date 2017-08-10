@@ -1,0 +1,43 @@
+{
+  "name": "MediaQueryList",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. A MediaQueryList object stores information on a media query applied to a document, and handles sending notifications to listeners when the media query state change (i.e. when the media query test starts or stops evaluating to true).",
+  "members": [
+    {
+      "name": "MediaQueryList.matches",
+      "link": "/en-US/docs/Web/API/MediaQueryList/matches",
+      "description": " A Boolean that returns true if the document currently matches the media query list, or false if not."
+    },
+    {
+      "name": "MediaQueryList.media",
+      "link": "/en-US/docs/Web/API/MediaQueryList/media",
+      "description": " A DOMString representing a serialized media query."
+    },
+    {
+      "name": "MediaQueryList.onchange",
+      "link": "/en-US/docs/Web/API/MediaQueryList/onchange",
+      "description": " An event handler property representing a function that is invoked when the change event fires, i.e when the status of media query support changes. The event object is a MediaQueryListEvent instance, which is recognised as a MediaListQuery instance in older browsers, for backwards compatibility purposes."
+    },
+    {
+      "name": "MediaQueryList.addListener()",
+      "link": "/en-US/docs/Web/API/MediaQueryList/addListener",
+      "description": " Adds a listener to the MediaQueryListener that will run a custom callback function in response to the media query status changing. This is basically an alias for EventTarget.addEventListener(), for backwards compatibility purposes.",
+      "parameters": [
+        {
+          "name": "func",
+          "description": "A function or function reference representing the callback function you want to run when the media query status changes. In the original implementation, the callback was a non-standard MediaQueryListListener object. In the new implementation the standard event mechanism is used, the callback is a standard function, and the event object is a MediaQueryListEvent, which inherits from Event."
+        }
+      ]
+    },
+    {
+      "name": "MediaQueryList.removeListener()",
+      "link": "/en-US/docs/Web/API/MediaQueryList/removeListener",
+      "description": " Removes a listener from the MediaQueryListener. This is basically an alias for EventTarget.removeEventListener(), for backwards compatibility purposes.",
+      "parameters": [
+        {
+          "name": "func",
+          "description": "A function or function reference representing the callback function you want to remove. In the original implementation, the callback was a non-standard MediaQueryListListener object. In the new implementation the standard event mechanism is used, and the callback is a standard function."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "ElementTraversal",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The ElementTraversal interface was defining methods allowing to access from one Node to another one in the document tree.",
+  "members": []
+}

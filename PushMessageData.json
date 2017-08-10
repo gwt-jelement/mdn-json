@@ -1,0 +1,26 @@
+{
+  "name": "PushMessageData",
+  "description": "",
+  "members": [
+    {
+      "name": "PushMessageData.arrayBuffer()",
+      "link": "/en-US/docs/Web/API/PushMessageData/arrayBuffer",
+      "description": "Extracts the data as an ArrayBuffer object."
+    },
+    {
+      "name": "PushMessageData.blob()",
+      "link": "/en-US/docs/Web/API/PushMessageData/blob",
+      "description": "Extracts the data as a Blob object."
+    },
+    {
+      "name": "PushMessageData.json()",
+      "link": "/en-US/docs/Web/API/PushMessageData/json",
+      "description": "Extracts the data as a JSON object."
+    },
+    {
+      "name": "PushMessageData.text()",
+      "link": "/en-US/docs/Web/API/PushMessageData/text",
+      "description": "Extracts the data as a plain text string."
+    }
+  ]
+}

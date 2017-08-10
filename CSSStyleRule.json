@@ -1,0 +1,16 @@
+{
+  "name": "CSSStyleRule",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSStyleRule.selectorText",
+      "link": "/en-US/docs/Web/API/CSSStyleRule/selectorText",
+      "description": "Gets the textual representation of the selector for this rule, e.g. \"h1,h2\"."
+    },
+    {
+      "name": "CSSStyleRule.style",
+      "link": "/en-US/docs/Web/API/CSSStyleRule/style",
+      "description": "Returns the CSSStyleDeclaration object for the rule."
+    }
+  ]
+}

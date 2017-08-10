@@ -1,0 +1,11 @@
+{
+  "name": "HTMLQuoteElement",
+  "description": "The HTMLQuoteElement interface provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating quoting elements, like \u003cblockquote\u003e and \u003cq\u003e, but not the \u003ccite\u003e element.",
+  "members": [
+    {
+      "name": "HTMLQuoteElement.cite",
+      "link": "/en-US/docs/Web/API/HTMLQuoteElement/cite",
+      "description": "Is a DOMString reflecting the cite HTML attribute, containing a URL for the source of the quotation."
+    }
+  ]
+}

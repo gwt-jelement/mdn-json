@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedBoolean",
+  "description": "SVG animated boolean interface The SVGAnimatedBoolean interface is used for attributes of type boolean which can be animated.",
+  "members": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "OES_vertex_array_object",
+  "description": "The OES_vertex_array_object extension is part of the WebGL API and provides vertex array objects (VAOs) which encapsulate vertex array states. These objects keep pointers to vertex data and provide names for different sets of vertex data.",
+  "members": [
+    {
+      "name": "ext.createVertexArrayOES()",
+      "link": "/en-US/docs/Web/API/OES_vertex_array_object/createVertexArrayOES",
+      "description": "Creates a new WebGLVertexArrayObject."
+    },
+    {
+      "name": "ext.deleteVertexArrayOES()",
+      "link": "/en-US/docs/Web/API/OES_vertex_array_object/deleteVertexArrayOES",
+      "description": "Deletes a given WebGLVertexArrayObject.",
+      "parameters": [
+        {
+          "name": "arrayObject",
+          "description": "A WebGLVertexArrayObject (VAO) object to delete."
+        }
+      ]
+    },
+    {
+      "name": "ext.isVertexArrayOES()",
+      "link": "/en-US/docs/Web/API/OES_vertex_array_object/isVertexArrayOES",
+      "description": "Returns true if a given object is a WebGLVertexArrayObject.",
+      "parameters": [
+        {
+          "name": "arrayObject",
+          "description": "A WebGLVertexArrayObject (VAO) object to test."
+        }
+      ]
+    },
+    {
+      "name": "ext.bindVertexArrayOES()",
+      "link": "/en-US/docs/Web/API/OES_vertex_array_object/bindVertexArrayOES",
+      "description": "Binds a given WebGLVertexArrayObject to the buffer.",
+      "parameters": [
+        {
+          "name": "arrayObject",
+          "description": "A WebGLVertexArrayObject (VAO) object to bind."
+        }
+      ]
+    }
+  ]
+}

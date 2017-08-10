@@ -1,0 +1,36 @@
+{
+  "name": "SVGFEDropShadowElement",
+  "description": "The SVGFEDropShadowElement interface corresponds to the \u003cfeDropShadow\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEDropShadowElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEDropShadowElement.dx",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/dx",
+      "description": "An SVGAnimatedNumber corresponding to the dx attribute of the given element."
+    },
+    {
+      "name": "SVGFEDropShadowElement.dy",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/dy",
+      "description": "An SVGAnimatedNumber corresponding to the dy attribute of the given element."
+    },
+    {
+      "name": "SVGFEDropShadowElement.stdDeviationX",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/stdDeviationX",
+      "description": "An SVGAnimatedNumber corresponding to the (possibly automatically computed) X component of the stdDeviationX attribute of the given element."
+    },
+    {
+      "name": "SVGFEDropShadowElement.stdDeviationY",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/stdDeviationY",
+      "description": "An SVGAnimatedNumber corresponding to the (possibly automatically computed) Y component of the stdDeviationY attribute of the given element."
+    },
+    {
+      "name": "SVGFEDropShadowElement.setStdDeviation()",
+      "link": "/en-US/docs/Web/API/SVGFEDropShadowElement/setStdDeviation",
+      "description": "Sets the values for the stdDeviation attribute."
+    }
+  ]
+}

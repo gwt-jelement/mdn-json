@@ -1,0 +1,16 @@
+{
+  "name": "CSSKeyframeRule",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The CSSKeyframeRule interface describes an object representing a set of style for a given keyframe. It corresponds to the contains of a single keyframe of a @keyframes at-rule. It implements the CSSRule interface with a type value of 8 (CSSRule.KEYFRAME_RULE).",
+  "members": [
+    {
+      "name": "CSSKeyframe.keyText",
+      "link": "/en-US/docs/Web/API/CSSKeyframe/keyText",
+      "description": "Represents the key of the keyframe, like \u002710%\u0027, \u002775%\u0027. The from keyword maps to \u00270%\u0027 and the to keyword maps to \u0027100%\u0027."
+    },
+    {
+      "name": "CSSKeyframe.style",
+      "link": "/en-US/docs/Web/API/CSSKeyframe/style",
+      "description": "Returns a CSSStyleDeclaration of the CSS style associated with the keyfrom."
+    }
+  ]
+}

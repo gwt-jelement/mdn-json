@@ -1,0 +1,233 @@
+{
+  "name": "XSLTProcessor",
+  "description": "An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate \u003cxsl:param\u003e parameter values, and to apply the transformation to documents.",
+  "members": [
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Imports the XSLT stylesheet. If the given node is a document node, you can pass in a full XSL Transform or a literal result element transform; otherwise, it must be an \u003cxsl:stylesheet\u003e or \u003cxsl:transform\u003e element.",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Transforms the node source by applying the stylesheet imported using the XSLTProcessor.importStylesheet() function. The owner document of the resulting document fragment is the owner node.",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Transforms the node source applying the stylesheet given importing using the XSLTProcessor.importStylesheet() function. The resultant object depends on the output method of the stylesheet: Output method Result type html HTMLDocument xml XMLDocument text XMLDocument with a single root element \u003ctransformiix:result\u003e with the text as a child",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Sets a parameter in the XSLT stylesheet that was imported. (Sets the value of an \u003cxsl:param\u003e.) A null value for namespaceURI is treated the same as an empty string.",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Gets the value of a parameter from the XSLT stylesheet. A null value for namespaceURI is treated the same as an empty string.",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "[Throws]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#Throws",
+      "description": "Removes the parameter if it was previously set. This will make the XSLTProcessor use the default value for the parameter as specified in the stylesheet. A null value for namespaceURI is treated the same as an empty string.",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    },
+    {
+      "name": "XSLTProcessor.clearParameters()",
+      "link": "/en-US/docs/Web/API/XSLTProcessor/clearParameters",
+      "description": "Removes all set parameters from the XSLTProcessor. The XSLTProcessor will then use the defaults specified in the XSLT stylesheet."
+    },
+    {
+      "name": "XSLTProcessor.reset()",
+      "link": "/en-US/docs/Web/API/XSLTProcessor/reset",
+      "description": "Removes all parameters and stylesheets from the XSLTProcessor."
+    },
+    {
+      "name": "[ChromeOnly]",
+      "link": "/en-US/docs/Mozilla/WebIDL_bindings#ChromeOnly",
+      "description": "Flags that tweak the behavior of the processor. Not reset by calling XSLTProcessor.reset(). Default value: 0 Possible values are: Name Value Effect (None) 0 None DISABLE_ALL_LOADS 1 Disable loading external documents (via e.g. \u003cxsl:import\u003e and document())",
+      "parameters": [
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [DependsOn] is not specified. This means we don\u0027t know anything about the return value\u0027s dependencies and hence can\u0027t rearrange other code that might change values around the method or attribute."
+        },
+        {
+          "name": "DOMState",
+          "description": "The return value depends on the state of the \"DOM\", by which we mean all objects specified via Web IDL. The return value is guaranteed to not depend on the state of the JS heap or other JS engine data structures, and is guaranteed to not change unless some function with [Affects\u003dEverything] is executed."
+        },
+        {
+          "name": "DeviceState",
+          "description": "The return value depends on the state of the device we\u0027re running on (e.g., the system clock). The return value is guaranteed to not be affected by any code running inside Gecko itself, but we might get a new value every time the method or getter is called even if no Gecko code ran between the calls."
+        },
+        {
+          "name": "Nothing",
+          "description": "The return value is a constant that never changes. This value cannot be used on non-readonly attributes, since having a non-readonly attribute whose value never changes doesn\u0027t make sense."
+        },
+        {
+          "name": "Everything",
+          "description": "This value can\u0027t actually be specified explicitly; this is the default value you get when [Affects] is not specified. This means that calling the method or getter might change any mutable state in the DOM or JS heap."
+        },
+        {
+          "name": "Nothing",
+          "description": "Calling the method or getter will have no side-effects on either the DOM or the JS heap."
+        }
+      ]
+    }
+  ]
+}

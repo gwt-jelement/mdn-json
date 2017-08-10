@@ -1,0 +1,11 @@
+{
+  "name": "PerformanceLongTaskTiming",
+  "description": "",
+  "members": [
+    {
+      "name": "PerformanceLongTaskTiming.attribution",
+      "link": "/en-US/docs/Web/API/PerformanceLongTaskTiming/attribution",
+      "description": "Returns a sequence of TaskAttributionTiming instances."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "HTMLLinkElement",
+  "description": "The HTMLLinkElement interface represents reference information for external resources and the relationship of those resources to a document and vice-versa. This object inherits all of the properties and methods of the HTMLElement interface.",
+  "members": [
+    {
+      "name": "HTMLLinkElement.as",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/as",
+      "description": "Is a DOMString representing the type of content that is being loaded by the HTML link."
+    },
+    {
+      "name": "HTMLLinkElement.charset",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/charset",
+      "description": "Is a DOMString representing the character encoding for the target resource."
+    },
+    {
+      "name": "HTMLLinkElement.crossOrigin",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/crossOrigin",
+      "description": "Is a DOMString that corresponds to the CORS setting for this link element. See CORS settings attributes for details."
+    },
+    {
+      "name": "HTMLLinkElement.disabled",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/disabled",
+      "description": "Is a Boolean which represents whether the link is disabled; currently only used with style sheet links."
+    },
+    {
+      "name": "HTMLLinkElement.href",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/href",
+      "description": "Is a DOMString representing the URI for the target resource."
+    },
+    {
+      "name": "HTMLLinkElement.hreflang",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/hreflang",
+      "description": "Is a DOMString representing the language code for the linked resource."
+    },
+    {
+      "name": "HTMLLinkElement.media",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/media",
+      "description": "Is a DOMString representing a list of one or more media formats to which the resource applies."
+    },
+    {
+      "name": "HTMLLinkElement.referrerPolicy",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/referrerPolicy",
+      "description": "Is a DOMString that reflects the referrerpolicy HTML attribute indicating which referrer to use."
+    },
+    {
+      "name": "HTMLLinkElement.rel",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/rel",
+      "description": "Is a DOMString representing the forward relationship of the linked resource from the document to the resource."
+    },
+    {
+      "name": "HTMLLinkElement.relList",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/relList",
+      "description": "Is a DOMTokenList that reflects the rel HTML attribute, as a list of tokens."
+    },
+    {
+      "name": "HTMLLinkElement.rev",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/rev",
+      "description": "Is a DOMString representing the reverse relationship of the linked resource from the resource to the document."
+    },
+    {
+      "name": "HTMLLinkElement.sizes",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/sizes",
+      "description": "Is a DOMSettableTokenList that reflects the sizes HTML attribute, as a list of tokens."
+    },
+    {
+      "name": "LinkStyle.sheet",
+      "link": "/en-US/docs/Web/API/LinkStyle/sheet",
+      "description": "Returns the StyleSheet object associated with the given element, or null if there is none."
+    },
+    {
+      "name": "HTMLLinkElement.target",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/target",
+      "description": "Is a DOMString representing the name of the target frame to which the resource applies."
+    },
+    {
+      "name": "HTMLLinkElement.type",
+      "link": "/en-US/docs/Web/API/HTMLLinkElement/type",
+      "description": "Is a DOMString representing the MIME type of the linked resource."
+    }
+  ]
+}

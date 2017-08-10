@@ -1,0 +1,91 @@
+{
+  "name": "SVGMatrix",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. Many of SVG\u0027s graphics operations utilize 2x3 matrices of the form:",
+  "members": [
+    {
+      "name": "SVGMatrix.a",
+      "link": "/en-US/docs/Web/API/SVGMatrix/a",
+      "description": "A float representing the a component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.b",
+      "link": "/en-US/docs/Web/API/SVGMatrix/b",
+      "description": "A float representing the b component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.c",
+      "link": "/en-US/docs/Web/API/SVGMatrix/c",
+      "description": "A float representing the c component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.d",
+      "link": "/en-US/docs/Web/API/SVGMatrix/d",
+      "description": "A float representing the d component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.e",
+      "link": "/en-US/docs/Web/API/SVGMatrix/e",
+      "description": "A float representing the e component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.f",
+      "link": "/en-US/docs/Web/API/SVGMatrix/f",
+      "description": "A float representing the f component of the matrix."
+    },
+    {
+      "name": "SVGMatrix.multiply()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/multiply",
+      "description": "Performs matrix multiplication. This matrix is post-multiplied by another matrix, returning the resulting new matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.inverse()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/inverse",
+      "description": "Returns the inverse matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.translate()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/translate",
+      "description": "Post-multiplies a translation transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.scale()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/scale",
+      "description": "Post-multiplies a uniform scale transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.scaleNonUniform()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/scaleNonUniform",
+      "description": "Post-multiplies a non-uniform scale transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.rotate()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/rotate",
+      "description": "Post-multiplies a rotation transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.rotateFromVector()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/rotateFromVector",
+      "description": "Post-multiplies a rotation transformation on the current matrix and returns the resulting matrix as SVGMatrix. The rotation angle is determined by taking (+/-) atan(y/x). The direction of the vector (x, y) determines whether the positive or negative angle value is used."
+    },
+    {
+      "name": "SVGMatrix.flipX()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/flipX",
+      "description": "Post-multiplies the transformation [-1 0 0 1 0 0] and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.flipY()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/flipY",
+      "description": "Post-multiplies the transformation [1 0 0 -1 0 0] and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.skewX()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/skewX",
+      "description": "Post-multiplies a skewX transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    },
+    {
+      "name": "SVGMatrix.skewY()",
+      "link": "/en-US/docs/Web/API/SVGMatrix/skewY",
+      "description": "Post-multiplies a skewY transformation on the current matrix and returns the resulting matrix as SVGMatrix."
+    }
+  ]
+}

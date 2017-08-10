@@ -1,0 +1,5 @@
+{
+  "name": "WebGL",
+  "description": "WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. WebGL does so by introducing an API that closely conforms to OpenGL ES 2.0 that can be used in HTML5 \u003ccanvas\u003e elements. Support for WebGL is present in Firefox 4+, Google Chrome 9+, Opera 12+, Safari 5.1+ and Internet Explorer 11+; however, the user\u0027s device must also have hardware that supports these features.",
+  "members": []
+}

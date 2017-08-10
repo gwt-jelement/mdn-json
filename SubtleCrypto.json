@@ -1,0 +1,86 @@
+{
+  "name": "SubtleCrypto",
+  "description": "",
+  "members": [
+    {
+      "name": "SubtleCrypto.encrypt()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/encrypt",
+      "description": "Returns a Promise of the encrypted data corresponding to the clear text, algorithm and key given as parameters.",
+      "parameters": [
+        {
+          "name": "InvalidAccessError",
+          "description": "when the requested operation is not valid for the provided key (e.g. invalid encryption algorithm, or invalid key for specified encryption algorithm)."
+        },
+        {
+          "name": "OperationError",
+          "description": "when the operation failed for an operation-specific reason (e.g. algorithm parameters of invalid sizes, or AES-GCM plaintext longer than 2³⁹−256 bytes)."
+        }
+      ]
+    },
+    {
+      "name": "SubtleCrypto.decrypt()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/decrypt",
+      "description": "Returns a Promise of the clear data corresponding to the encrypted text, algorithm and key given as parameters.",
+      "parameters": [
+        {
+          "name": "InvalidAccessError",
+          "description": "when the requested operation is not valid for the provided key (e.g. invalid encryption algorithm, or invalid key for specified encryption algorithm)."
+        },
+        {
+          "name": "OperationError",
+          "description": "when the operation failed for an operation-specific reason (e.g. algorithm parameters of invalid sizes, or the result of the decryption is a fail)."
+        }
+      ]
+    },
+    {
+      "name": "SubtleCrypto.sign()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/sign",
+      "description": "Returns a Promise of the signature corresponding to the text, algorithm and key given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.verify()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/verify",
+      "description": "Returns a Promise of a Boolean value indicating if the signature given as parameter matches the text, algorithm and key also given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.digest()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/digest",
+      "description": "Returns a Promise of a digest generated from the algorithm and text given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.generateKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/generateKey",
+      "description": "Returns a Promise of a newly generated CryptoKey, for symmetrical algorithms, or a CryptoKeyPair, containing two newly generated keys, for asymmetrical algorithm, that matches the algorithm, the usages and the extractability given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.deriveKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/deriveKey",
+      "description": "Returns a Promise of a newly generated CryptoKey derived from a master key and a specific algorithm given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.deriveBits()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/deriveBits",
+      "description": "Returns a Promise of a newly generated buffer of pseudo-random bits derived from a master key and a specific algorithm given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.importKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/importKey",
+      "description": "Returns a Promise of a CryptoKey corresponding to the format, the algorithm, the raw key data, the usages and the extractability given as parameters."
+    },
+    {
+      "name": "SubtleCrypto.exportKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/exportKey",
+      "description": "Returns a Promise of a buffer containing the key in the format requested."
+    },
+    {
+      "name": "SubtleCrypto.wrapKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/wrapKey",
+      "description": "Returns a Promise of a wrapped symmetric key for usage (transfer, storage) in insecure environments. The wrapped buffer returned is in the format given in parameters, and contains the key wrapped by the given wrapping key with the given algorithm."
+    },
+    {
+      "name": "SubtleCrypto.unwrapKey()",
+      "link": "/en-US/docs/Web/API/SubtleCrypto/unwrapKey",
+      "description": "Returns a Promise of a CryptoKey corresponding to the wrapped key given in parameter."
+    }
+  ]
+}

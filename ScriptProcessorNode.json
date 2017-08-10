@@ -1,0 +1,16 @@
+{
+  "name": "ScriptProcessorNode",
+  "description": "",
+  "members": [
+    {
+      "name": "ScriptProcessorNode.bufferSize",
+      "link": "/en-US/docs/Web/API/ScriptProcessorNode/bufferSize",
+      "description": "Returns an integer representing both the input and output buffer size. Its value can be a power of 2 value in the range 256–16384."
+    },
+    {
+      "name": "ScriptProcessorNode.onaudioprocess",
+      "link": "/en-US/docs/Web/API/ScriptProcessorNode/onaudioprocess",
+      "description": "Represents the EventHandler to be called."
+    }
+  ]
+}

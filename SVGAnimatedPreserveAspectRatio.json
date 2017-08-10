@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedPreserveAspectRatio",
+  "description": "SVG animated preserveAspectRatio interface The SVGAnimatedPreserveAspectRatio interface is used for attributes of type SVGPreserveAspectRatio which can be animated.",
+  "members": []
+}

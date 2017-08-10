@@ -1,0 +1,16 @@
+{
+  "name": "HTMLOptGroupElement",
+  "description": "The HTMLOptGroupElement interface provides special properties and methods (beyond the regular HTMLElement object interface they also have available to them by inheritance) for manipulating the layout and presentation of \u003coptgroup\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLOptGroupElement.disabled",
+      "link": "/en-US/docs/Web/API/HTMLOptGroupElement/disabled",
+      "description": "Is a boolean representing whether or not the whole list of children \u003coption\u003e is disabled (true) or not (false)."
+    },
+    {
+      "name": "HTMLOptGroupElement.label",
+      "link": "/en-US/docs/Web/API/HTMLOptGroupElement/label",
+      "description": "Is a DOMString representing the label for the group."
+    }
+  ]
+}

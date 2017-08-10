@@ -1,0 +1,5 @@
+{
+  "name": "FileList",
+  "description": "An object of this type is returned by the files property of the HTML \u003cinput\u003e element; this lets you access the list of files selected with the \u003cinput type\u003d\"file\"\u003e element. It\u0027s also used for a list of files dropped into web content when using the drag and drop API; see the DataTransfer object for details on this usage.",
+  "members": []
+}

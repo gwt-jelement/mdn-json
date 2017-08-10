@@ -1,0 +1,46 @@
+{
+  "name": "RTCDTMFToneChangeEvent",
+  "description": "The RTCDTMFToneChangeEvent interface represents events sent to indicate that DTMF tones have started or finished finished playing. This interface is used by the tonechange event.",
+  "members": [
+    {
+      "name": "RTCDTMFToneChangeEvent.tone",
+      "link": "/en-US/docs/Web/API/RTCDTMFToneChangeEvent/tone",
+      "description": "A DOMString specifying the tone which has begun playing, or an empty string (\"\") if the previous tone has finished playing."
+    },
+    {
+      "name": "RTCDTMFToneChangeEvent()",
+      "link": "/en-US/docs/Web/API/RTCDTMFToneChangeEvent/RTCDTMFToneChangeEvent",
+      "description": "Returns a new RTCDTMFToneChangeEvent. It takes two parameters, the first being a DOMString representing the type of the event (always \"tonechange\"); the second a dictionary containing the initial state of the properties of the event.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString containing the name of the event. This is always \"tonechange\"."
+        },
+        {
+          "name": "options",
+          "description": "A dictionary of type RTCDTMFToneChangeEventInit, which may contain one or more of the following fields: tone A DOMString containing a single DTMF tone character which has just begun to play, or an empty string (\"\") to indicate that the previous tone has stopped playing. See Tone characters for details on what characters are permitted."
+        },
+        {
+          "name": "tone",
+          "description": "A DOMString containing a single DTMF tone character which has just begun to play, or an empty string (\"\") to indicate that the previous tone has stopped playing. See Tone characters for details on what characters are permitted."
+        },
+        {
+          "name": "The digits 0-9",
+          "description": "These characters represent the digit keys on a telephone keypad."
+        },
+        {
+          "name": "The letters A-D",
+          "description": "These characters represent the \"A\" through \"D\" keys which are part of the DTMF standard but not included on most telephones. These are not interpreted as digits. Lower-case \"a\"-\"d\" automatically gets converted to upper-case."
+        },
+        {
+          "name": "The pound/hash sign (\"#\") and the asterisk (\"*\")",
+          "description": "These correspond to the similarly-labeled keys which are typically on the bottom row of the telephone keypad."
+        },
+        {
+          "name": "The comma (\",\")",
+          "description": "This character instructs the dialing process to pause for two seconds before sending the next character in the buffer."
+        }
+      ]
+    }
+  ]
+}

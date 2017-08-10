@@ -1,0 +1,21 @@
+{
+  "name": "MediaKeySystemAccess",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaKeySystemAccess.keySystem",
+      "link": "/en-US/docs/Web/API/MediaKeySystemAccess/keySystem",
+      "description": "Returns a DOMString identifying the key system being used."
+    },
+    {
+      "name": "MediaKeySystemAccess.createMediaKeys()",
+      "link": "/en-US/docs/Web/API/MediaKeySystemAccess/createMediaKeys",
+      "description": "Returns a Promise that resolves to a new MediaKeys object."
+    },
+    {
+      "name": "MediaKeySystemAccess.getConfiguration()",
+      "link": "/en-US/docs/Web/API/MediaKeySystemAccess/getConfiguration",
+      "description": "Returns a MediaKeySystemConfiguration object with the supported combination of configuration options."
+    }
+  ]
+}

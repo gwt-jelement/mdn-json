@@ -1,0 +1,36 @@
+{
+  "name": "Text",
+  "description": "",
+  "members": [
+    {
+      "name": "Text()",
+      "link": "/en-US/docs/Web/API/Text/Text",
+      "description": "Returns a Text node with the parameter as its textual content."
+    },
+    {
+      "name": "Text.isElementContentWhitespace",
+      "link": "/en-US/docs/Web/API/Text/isElementContentWhitespace",
+      "description": "Returns a Boolean flag indicating whether or not the text node contains only whitespace."
+    },
+    {
+      "name": "Text.wholeText",
+      "link": "/en-US/docs/Web/API/Text/wholeText",
+      "description": "Returns a DOMString containing the text of all Text nodes logically adjacent to this Node, concatenated in document order."
+    },
+    {
+      "name": "Text.assignedSlot",
+      "link": "/en-US/docs/Web/API/Text/assignedSlot",
+      "description": "Returns the HTMLSlotElement object associated with the element."
+    },
+    {
+      "name": "Text.replaceWholeText",
+      "link": "/en-US/docs/Web/API/Text/replaceWholeText",
+      "description": "Replaces the text of the current node and all logically adjacent nodes with the specified text."
+    },
+    {
+      "name": "Text.splitText",
+      "link": "/en-US/docs/Web/API/Text/splitText",
+      "description": "Breaks the node into two nodes at a specified offset."
+    }
+  ]
+}

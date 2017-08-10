@@ -1,0 +1,31 @@
+{
+  "name": "IDBTransactionSync",
+  "description": "",
+  "members": [
+    {
+      "name": "NON_TRANSIENT_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NON_TRANSIENT_ERR",
+      "description": "If this transaction has already been committed or aborted."
+    },
+    {
+      "name": "NON_TRANSIENT_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NON_TRANSIENT_ERR",
+      "description": "If this transaction has already been committed or aborted."
+    },
+    {
+      "name": "RECOVERABLE_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#RECOVERABLE_ERR",
+      "description": "If this transaction\u0027s scope is dynamic, and the browser cannot commit all of the changes due to another transaction."
+    },
+    {
+      "name": "IDBObjectStoreSync",
+      "link": "/IDBObjectStoreSync",
+      "description": "An object for accessing the requested object store."
+    },
+    {
+      "name": "NOT_FOUND_ERR",
+      "link": "/en/IndexedDB/IDBDatabaseException#NOT_FOUND_ERR",
+      "description": "If the requested object store is not in this transaction\u0027s scope."
+    }
+  ]
+}

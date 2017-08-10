@@ -1,0 +1,26 @@
+{
+  "name": "PerformanceMark",
+  "description": "PerformanceMark is an abstract interface for performance entries with an entry type of \"mark\". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser\u0027s performance timeline.",
+  "members": [
+    {
+      "name": "PerformanceEntry.entryType",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/entryType",
+      "description": "Set to \"mark\"."
+    },
+    {
+      "name": "PerformanceEntry.name",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/name",
+      "description": "Set to the the name given to the mark when it was created via a call to performance.mark()."
+    },
+    {
+      "name": "PerformanceEntry.startTime",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/startTime",
+      "description": "Set to the DOMHighResTimeStamp when performance.mark() was called."
+    },
+    {
+      "name": "PerformanceEntry.duration",
+      "link": "/en-US/docs/Web/API/PerformanceEntry/duration",
+      "description": "Set to \"0\" (a mark has no duration)."
+    }
+  ]
+}

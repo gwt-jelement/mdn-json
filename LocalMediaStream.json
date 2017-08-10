@@ -1,0 +1,5 @@
+{
+  "name": "LocalMediaStream",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The LocalMediaStream interface was part of the Media Capture and Streams API, representing a stream of data being generated locally (such as by getUserMedia(). However, getUserMedia() now returns a MediaStream instead, and this interface has been removed from the specification.",
+  "members": []
+}

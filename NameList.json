@@ -1,0 +1,31 @@
+{
+  "name": "NameList",
+  "description": "",
+  "members": [
+    {
+      "name": "NameList.length",
+      "link": "/en-US/docs/Web/API/NameList/length",
+      "description": ""
+    },
+    {
+      "name": "NameList.contains()",
+      "link": "/en-US/docs/Web/API/NameList/contains",
+      "description": "Returns a Boolean."
+    },
+    {
+      "name": "NameList.containsNS()",
+      "link": "/en-US/docs/Web/API/NameList/containsNS",
+      "description": "Returns a Boolean"
+    },
+    {
+      "name": "NameList.getName()",
+      "link": "/en-US/docs/Web/API/NameList/getName",
+      "description": "Returns a DOMString"
+    },
+    {
+      "name": "NameList.getNamespaceURI()",
+      "link": "/en-US/docs/Web/API/NameList/getNamespaceURI",
+      "description": "Returns a DOMString"
+    }
+  ]
+}

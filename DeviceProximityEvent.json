@@ -1,0 +1,21 @@
+{
+  "name": "DeviceProximityEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "DeviceProximityEvent.max",
+      "link": "/en-US/docs/Web/API/DeviceProximityEvent/max",
+      "description": "The maximum sensing distance the sensor is able to report, in centimeters."
+    },
+    {
+      "name": "DeviceProximityEvent.min",
+      "link": "/en-US/docs/Web/API/DeviceProximityEvent/min",
+      "description": "The minimum sensing distance the sensor is able to report, in centimeters. Ususally zero."
+    },
+    {
+      "name": "DeviceProximityEvent.value",
+      "link": "/en-US/docs/Web/API/DeviceProximityEvent/value",
+      "description": "The current device proximity, in centimeters."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "PeriodicSyncEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "PeriodicSyncEvent.PeriodicSyncEvent()",
+      "link": "/en-US/docs/Web/API/PeriodicSyncEvent/PeriodicSyncEvent",
+      "description": "Creates a new PeriodicSyncEvent object."
+    },
+    {
+      "name": "PeriodicSyncEvent.registration",
+      "link": "/en-US/docs/Web/API/PeriodicSyncEvent/registration",
+      "description": "The instance of PeriodicSyncRegistration that fired the event."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "BluetoothRemoteGATTDescriptor",
+  "description": "",
+  "members": [
+    {
+      "name": "BluetoothRemoteGATTDescriptor.characteristic",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/characteristic",
+      "description": "Returns the BluetoothRemoteGATTCharacteristic this descriptor belongs to."
+    },
+    {
+      "name": "BluetoothRemoteGATTDescriptor.uuid",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/uuid",
+      "description": "Returns the UUID of the characteristic descriptor, for example \u002700002902-0000-1000-8000-00805f9b34fb\u0027 for theClient Characteristic Configuration descriptor."
+    },
+    {
+      "name": "BluetoothRemoteGATTDescriptor.value",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/value",
+      "description": "Returns the currently cached descriptor value. This value gets updated when the value of the descriptor is read."
+    },
+    {
+      "name": "BluetoothRemoteGATTDescriptor.readValue()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/readValue",
+      "description": "Returns a Promise that resolves to an ArrayBuffer holding a duplicate  of the value property if it is available and supported. Otherwise it throws an error."
+    },
+    {
+      "name": "BluetoothRemoteGATTDescriptor.writeValue()",
+      "link": "/en-US/docs/Web/API/BluetoothRemoteGATTDescriptor/writeValue",
+      "description": "Sets the value property to the bytes contained in an ArrayBuffer and returns a Promise.",
+      "parameters": [
+        {
+          "name": "array",
+          "description": "Sets the value with the bytes contained in the array."
+        }
+      ]
+    }
+  ]
+}

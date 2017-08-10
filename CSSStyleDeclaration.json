@@ -1,0 +1,51 @@
+{
+  "name": "CSSStyleDeclaration",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSStyleDeclaration.cssText",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/cssText",
+      "description": "Textual representation of the declaration block. Setting this attribute changes the style."
+    },
+    {
+      "name": "CSSStyleDeclaration.length",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/length",
+      "description": "The number of properties. See the item() method below."
+    },
+    {
+      "name": "CSSStyleDeclaration.parentRule",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/parentRule",
+      "description": "The containing CSSRule."
+    },
+    {
+      "name": "CSSStyleDeclaration.getPropertyPriority()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyPriority",
+      "description": "Returns the optional priority, \"important\"."
+    },
+    {
+      "name": "CSSStyleDeclaration.getPropertyValue()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue",
+      "description": "Returns the property value given a property name."
+    },
+    {
+      "name": "CSSStyleDeclaration.item()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/item",
+      "description": "Returns a property name."
+    },
+    {
+      "name": "CSSStyleDeclaration.removeProperty()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/removeProperty",
+      "description": "Removes a property from the CSS declaration block."
+    },
+    {
+      "name": "CSSStyleDeclaration.setProperty()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/setProperty",
+      "description": "Modifies an existing CSS property or creates a new CSS property in the declaration block/."
+    },
+    {
+      "name": "CSSStyleDeclaration.getPropertyCSSValue()",
+      "link": "/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyCSSValue",
+      "description": "Only supported via getComputedStyle in Firefox. Returns the property value as a CSSPrimitiveValue or null for shorthand properties."
+    }
+  ]
+}

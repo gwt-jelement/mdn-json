@@ -1,0 +1,16 @@
+{
+  "name": "RTCIdentityAssertion",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCIdentityAssertion.idp",
+      "link": "/en-US/docs/Web/API/RTCIdentityAssertion/idp",
+      "description": "Indicates the provider of the identity assertion."
+    },
+    {
+      "name": "RTCIdentityAssertion.name",
+      "link": "/en-US/docs/Web/API/RTCIdentityAssertion/name",
+      "description": "Indicates the name of the identity assertion provider."
+    }
+  ]
+}

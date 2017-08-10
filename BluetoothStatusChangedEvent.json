@@ -1,0 +1,16 @@
+{
+  "name": "BluetoothStatusChangedEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "BluetoothStatusChangedEvent.address",
+      "link": "/en-US/docs/Web/API/BluetoothStatusChangedEvent/address",
+      "description": "A string representing the address of the device for which the status has changed in the Bluetooth micro-network."
+    },
+    {
+      "name": "BluetoothStatusChangedEvent.status",
+      "link": "/en-US/docs/Web/API/BluetoothStatusChangedEvent/status",
+      "description": "A boolean representing the current status of the connection. It can be enabled (true) or disabled (false)."
+    }
+  ]
+}

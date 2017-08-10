@@ -1,0 +1,33 @@
+{
+  "name": "TrackDefaultList",
+  "description": "",
+  "members": [
+    {
+      "name": "TrackDefaultList()",
+      "link": "/en-US/docs/Web/API/TrackDefaultList/TrackDefaultList",
+      "description": "Constructs and returns a new TrackDefaultList object.",
+      "parameters": [
+        {
+          "name": "trackDefaults",
+          "description": "A sequence (array) of TrackDefault objects."
+        }
+      ]
+    },
+    {
+      "name": "TrackDefaultList.length",
+      "link": "/en-US/docs/Web/API/TrackDefaultList/length",
+      "description": "Returns the number of TrackDefault objects in the list."
+    },
+    {
+      "name": "TrackDefaultList.TrackDefault()",
+      "link": "/en-US/docs/Web/API/TrackDefaultList/TrackDefault",
+      "description": "This getter allows the TrackDefault objects in the list to be accessed with an array operator (i.e. [].)",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The index position of the TrackDefault object you want to return."
+        }
+      ]
+    }
+  ]
+}

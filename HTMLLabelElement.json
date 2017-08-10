@@ -1,0 +1,21 @@
+{
+  "name": "HTMLLabelElement",
+  "description": "The HTMLLabelElement interface gives access to properties specific to \u003clabel\u003e elements. It inherits methods and properties from the base HTMLElement interface.",
+  "members": [
+    {
+      "name": "HTMLLabelElement.control",
+      "link": "/en-US/docs/Web/API/HTMLLabelElement/control",
+      "description": "Is a HTMLElement representing the control with which the label is associated."
+    },
+    {
+      "name": "HTMLLabelElement.form",
+      "link": "/en-US/docs/Web/API/HTMLLabelElement/form",
+      "description": "Is a HTMLFormElement object representing the form with which the labeled control is associated, or null if there is no associated control, or if that control isn\u0027t associated with a form. In other words, this is just a shortcut for HTMLLabelElement.control.form."
+    },
+    {
+      "name": "HTMLLabelElement.htmlFor",
+      "link": "/en-US/docs/Web/API/HTMLLabelElement/htmlFor",
+      "description": "Is a string containing the ID of the labeled control. This reflects the for attribute."
+    }
+  ]
+}

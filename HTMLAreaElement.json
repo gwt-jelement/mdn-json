@@ -1,0 +1,136 @@
+{
+  "name": "HTMLAreaElement",
+  "description": "The HTMLAreaElement interface provides special properties and methods (beyond those of the regular object HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of area elements.",
+  "members": [
+    {
+      "name": "HTMLAreaElement.accessKey",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/accessKey",
+      "description": "Is a DOMString containing a single character that switches input focus to the control."
+    },
+    {
+      "name": "HTMLAreaElement.alt",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/alt",
+      "description": "Is a DOMString that reflects the alt HTML attribute, containing alternative text for the element."
+    },
+    {
+      "name": "HTMLAreaElement.coords",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/coords",
+      "description": "Is a DOMString that reflects the coords HTML attribute, containing coordinates to define the hot-spot region."
+    },
+    {
+      "name": "HTMLAreaElement.download",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/download",
+      "description": "Is a DOMString indicating that the linked resource is intended to be downloaded rather than displayed in the browser. The value represent the proposed name of the file. If the name is not a valid filename of the underlying OS, browser will adapt it."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.hash",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hash",
+      "description": "Is a USVString containing the fragment identifier (including the leading hash mark (#)), if any, in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.host",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/host",
+      "description": "Is a USVString containing the hostname and port (if it\u0027s not the default port) in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.hostname",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname",
+      "description": "Is a USVString containing the hostname in the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.href",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/href",
+      "description": "Is a USVString containing that reflects the href HTML attribute, containing a valid URL of a linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.hreflang",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/hreflang",
+      "description": "Is a DOMString containing that reflects the hreflang HTML attribute, indicating the language of the linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.media",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/media",
+      "description": "Is a DOMString containing that reflects the media HTML attribute, indicating target media of the linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.noHref",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/noHref",
+      "description": "Is a Boolean flag indicating if the area is inactive (true) or active (false)."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.password",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/password",
+      "description": "Is a USVString containing the password specified before the domain name."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.origin",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/origin",
+      "description": "Returns a USVString containing the origin of the URL, that is its scheme, its domain and its port."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.pathname",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/pathname",
+      "description": "Is a USVString containing the path name component, if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.port",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/port",
+      "description": "Is a USVString containing the port component, if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.protocol",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/protocol",
+      "description": "Is a USVString containing the protocol component (including trailing colon \u0027:\u0027), of the referenced URL."
+    },
+    {
+      "name": "HTMLAreaElement.referrerPolicy",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/referrerPolicy",
+      "description": "Is a DOMString that reflects the referrerpolicy HTML attribute indicating which referrer to use when fetching the linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.rel",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/rel",
+      "description": "Is a DOMString that reflects the rel HTML attribute, indicating relationships of the current document to the linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.relList",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/relList",
+      "description": "Returns a DOMTokenList that reflects the rel HTML attribute, indicating relationships of the current document to the linked resource, as a list of tokens."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.search",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/search",
+      "description": "Is a USVString containing the search element (including leading question mark \u0027?\u0027), if any, of the referenced URL."
+    },
+    {
+      "name": "HTMLAreaElement.shape",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/shape",
+      "description": "Is a DOMString that reflects the shape HTML attribute, indicating the shape of the hot-spot, limited to known values."
+    },
+    {
+      "name": "HTMLAreaElement.tabIndex",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/tabIndex",
+      "description": "Is a long containing the element\u0027s position in the tabbing order."
+    },
+    {
+      "name": "HTMLAreaElement.target",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/target",
+      "description": "Is a DOMString that reflects the target HTML attribute, indicating the browsing context in which to open the linked resource."
+    },
+    {
+      "name": "HTMLAreaElement.type",
+      "link": "/en-US/docs/Web/API/HTMLAreaElement/type",
+      "description": "Is a DOMString that reflects the type HTML attribute, indicating the MIME type of the linked resource."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.username",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/username",
+      "description": "Is a USVString containing the username specified before the domain name."
+    },
+    {
+      "name": "HTMLHyperlinkElementUtils.toString()",
+      "link": "/en-US/docs/Web/API/HTMLHyperlinkElementUtils/toString",
+      "description": "Returns a USVString containing the whole URL of the script executed in the Worker. It is a synonym for URLUtils.href."
+    }
+  ]
+}

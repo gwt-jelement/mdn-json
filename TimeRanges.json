@@ -1,0 +1,33 @@
+{
+  "name": "TimeRanges",
+  "description": "The TimeRanges interface is used to represent a set of time ranges, primarily for the purpose of tracking which portions of media have been buffered when loading it for use by the \u003caudio\u003e and \u003cvideo\u003e elements.",
+  "members": [
+    {
+      "name": "TimeRanges.length",
+      "link": "/en-US/docs/Web/API/TimeRanges/length",
+      "description": "Returns an unsigned long representing the number of time ranges represented by the time range object."
+    },
+    {
+      "name": "TimeRanges.start()",
+      "link": "/en-US/docs/Web/API/TimeRanges/start",
+      "description": "Returns the time for the start of the range with the specified index.",
+      "parameters": [
+        {
+          "name": "INDEX_SIZE_ERR",
+          "description": "A DOMException thrown if the specified index doesn\u0027t correspond to an existing range."
+        }
+      ]
+    },
+    {
+      "name": "TimeRanges.end()",
+      "link": "/en-US/docs/Web/API/TimeRanges/end",
+      "description": "Returns the time for the end of the specified range.",
+      "parameters": [
+        {
+          "name": "INDEX_SIZE_ERR",
+          "description": "A DOMException thrown if the specified index doesn\u0027t correspond to an existing range."
+        }
+      ]
+    }
+  ]
+}

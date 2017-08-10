@@ -1,0 +1,46 @@
+{
+  "name": "SVGFESpotLightElement",
+  "description": "The SVGFESpotLightElement interface corresponds to the \u003cfeSpotLight\u003e element.",
+  "members": [
+    {
+      "name": "SVGFESpotLightElement.x",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/x",
+      "description": "An SVGAnimatedNumber corresponding to the x attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.y",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/y",
+      "description": "An SVGAnimatedNumber corresponding to the y attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.z",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/z",
+      "description": "An SVGAnimatedNumber corresponding to the z attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.pointAtX",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/pointAtX",
+      "description": "An SVGAnimatedNumber corresponding to the pointAtX attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.pointAtY",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/pointAtY",
+      "description": "An SVGAnimatedNumber corresponding to the pointAtY attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.pointAtZ",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/pointAtZ",
+      "description": "An SVGAnimatedNumber corresponding to the pointAtZ attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.specularExponent",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/specularExponent",
+      "description": "An SVGAnimatedNumber corresponding to the specularExponent attribute of the given element."
+    },
+    {
+      "name": "SVGFESpotLightElement.limitingConeAngle",
+      "link": "/en-US/docs/Web/API/SVGFESpotLightElement/limitingConeAngle",
+      "description": "An SVGAnimatedNumber corresponding to the limitingConeAngle attribute of the given element."
+    }
+  ]
+}

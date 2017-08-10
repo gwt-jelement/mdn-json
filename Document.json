@@ -1,0 +1,1769 @@
+{
+  "name": "Document",
+  "description": "  The Document interface represents any web page loaded in the browser and serves as an entry point into the web page\u0027s content, which is the DOM tree. The DOM tree includes elements such as \u003cbody\u003e and \u003ctable\u003e, among many others. It provides functionality global to the document, like how to obtain the page\u0027s URL and create new elements in the document.",
+  "members": [
+    {
+      "name": "Document.all",
+      "link": "/en-US/docs/Web/API/Document/all",
+      "description": "Provides access to all elements with an id. This is a legacy, non-standard interface and you should use the document.getElementById() method instead."
+    },
+    {
+      "name": "Document.async",
+      "link": "/en-US/docs/Web/API/Document/async",
+      "description": "Used with Document.load to indicate an asynchronous request."
+    },
+    {
+      "name": "Document.characterSet",
+      "link": "/en-US/docs/Web/API/Document/characterSet",
+      "description": "Returns the character set being used by the document."
+    },
+    {
+      "name": "Document.charset",
+      "link": "/en-US/docs/Web/API/Document/charset",
+      "description": "Alias of Document.characterSet. Use this property instead."
+    },
+    {
+      "name": "Document.compatMode",
+      "link": "/en-US/docs/Web/API/Document/compatMode",
+      "description": "Indicates whether the document is rendered in quirks or strict mode.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "Is an enumerated value that can be:"
+        }
+      ]
+    },
+    {
+      "name": "Document.contentType",
+      "link": "/en-US/docs/Web/API/Document/contentType",
+      "description": "Returns the Content-Type from the MIME Header of the current document."
+    },
+    {
+      "name": "Document.doctype",
+      "link": "/en-US/docs/Web/API/Document/doctype",
+      "description": "Returns the Document Type Definition (DTD) of the current document."
+    },
+    {
+      "name": "Document.documentElement",
+      "link": "/en-US/docs/Web/API/Document/documentElement",
+      "description": "Returns the Element that is a direct child of the document. For HTML documents, this is normally the \u003chtml\u003e element."
+    },
+    {
+      "name": "Document.documentURI",
+      "link": "/en-US/docs/Web/API/Document/documentURI",
+      "description": "Returns the document location as a string."
+    },
+    {
+      "name": "Document.domConfig",
+      "link": "/en-US/docs/Web/API/Document/domConfig",
+      "description": "Should return a DOMConfiguration object."
+    },
+    {
+      "name": "Document.fullscreen",
+      "link": "/en-US/docs/Web/API/Document/fullscreen",
+      "description": "true when the document is in full-screen mode."
+    },
+    {
+      "name": "Document.hidden",
+      "link": "/en-US/docs/Web/API/Document/hidden",
+      "description": "…"
+    },
+    {
+      "name": "Document.implementation",
+      "link": "/en-US/docs/Web/API/Document/implementation",
+      "description": "Returns the DOM implementation associated with the current document."
+    },
+    {
+      "name": "Document.inputEncoding",
+      "link": "/en-US/docs/Web/API/Document/inputEncoding",
+      "description": "Alias of Document.characterSet. Use this property instead."
+    },
+    {
+      "name": "Document.lastStyleSheetSet",
+      "link": "/en-US/docs/Web/API/Document/lastStyleSheetSet",
+      "description": "Returns the name of the style sheet set that was last enabled. Has the value null until the style sheet is changed by setting the value of selectedStyleSheetSet."
+    },
+    {
+      "name": "Document.mozSyntheticDocument",
+      "link": "/en-US/docs/Web/API/Document/mozSyntheticDocument",
+      "description": "Returns a Boolean that is true only if this document is synthetic, such as a standalone image, video, audio file, or the like."
+    },
+    {
+      "name": "Document.mozFullScreenElement",
+      "link": "/en-US/docs/Web/API/Document/mozFullScreenElement",
+      "description": "The element that\u0027s currently in full screen mode for this document."
+    },
+    {
+      "name": "Document.mozFullScreenEnabled",
+      "link": "/en-US/docs/Web/API/Document/mozFullScreenEnabled",
+      "description": "true if calling Element.mozRequestFullscreen() would succeed in the curent document."
+    },
+    {
+      "name": "Document.pointerLockElement",
+      "link": "/en-US/docs/Web/API/Document/pointerLockElement",
+      "description": "Returns the element set as the target for mouse events while the pointer is locked. null if lock is pending, pointer is unlocked, or if the target is in another document."
+    },
+    {
+      "name": "Document.preferredStyleSheetSet",
+      "link": "/en-US/docs/Web/API/Document/preferredStyleSheetSet",
+      "description": "Returns the preferred style sheet set as specified by the page author."
+    },
+    {
+      "name": "Document.scrollingElement",
+      "link": "/en-US/docs/Web/API/Document/scrollingElement",
+      "description": "Returns a reference to the Element that scrolls the document."
+    },
+    {
+      "name": "Document.selectedStyleSheetSet",
+      "link": "/en-US/docs/Web/API/Document/selectedStyleSheetSet",
+      "description": "Returns which style sheet set is currently in use."
+    },
+    {
+      "name": "Document.styleSheets",
+      "link": "/en-US/docs/Web/API/Document/styleSheets",
+      "description": "Returns a list of the style sheet objects on the current document."
+    },
+    {
+      "name": "Document.styleSheetSets",
+      "link": "/en-US/docs/Web/API/Document/styleSheetSets",
+      "description": "Returns a list of the style sheet sets available on the document."
+    },
+    {
+      "name": "Document.timeline",
+      "link": "/en-US/docs/Web/API/Document/timeline",
+      "description": "…"
+    },
+    {
+      "name": "Document.undoManager",
+      "link": "/en-US/docs/Web/API/Document/undoManager",
+      "description": "…"
+    },
+    {
+      "name": "Document.visibilityState",
+      "link": "/en-US/docs/Web/API/Document/visibilityState",
+      "description": "Returns a string denoting the visibility state of the document. Possible values are visible,  hidden,  prerender, and unloaded."
+    },
+    {
+      "name": "Document.xmlEncoding",
+      "link": "/en-US/docs/Web/API/Document/xmlEncoding",
+      "description": "Returns the encoding as determined by the XML declaration."
+    },
+    {
+      "name": "Document.xmlStandalone",
+      "link": "/en-US/docs/Web/API/Document/xmlStandalone",
+      "description": "Returns true if the XML declaration specifies the document to be standalone (e.g., An external part of the DTD affects the document\u0027s content), else false."
+    },
+    {
+      "name": "Document.xmlVersion",
+      "link": "/en-US/docs/Web/API/Document/xmlVersion",
+      "description": "Returns the version number as specified in the XML declaration or \"1.0\" if the declaration is absent."
+    },
+    {
+      "name": "ParentNode.children",
+      "link": "/en-US/docs/Web/API/ParentNode/children",
+      "description": "Returns a live HTMLCollection containing all objects of type Element that are children of this ParentNode."
+    },
+    {
+      "name": "ParentNode.firstElementChild",
+      "link": "/en-US/docs/Web/API/ParentNode/firstElementChild",
+      "description": "Returns the Element that is the first child of this ParentNode, or null if there is none."
+    },
+    {
+      "name": "ParentNode.lastElementChild",
+      "link": "/en-US/docs/Web/API/ParentNode/lastElementChild",
+      "description": "Returns the Element that is the last child of this ParentNode, or null if there is none."
+    },
+    {
+      "name": "ParentNode.childElementCount",
+      "link": "/en-US/docs/Web/API/ParentNode/childElementCount",
+      "description": "Returns an unsigned long giving the amount of children that the object has.",
+      "parameters": [
+        {
+          "name": "count",
+          "description": "holds the return value an unsigned long (simply an integer) type."
+        },
+        {
+          "name": "node",
+          "description": "is an object representing a Document, DocumentFragment or Element."
+        }
+      ]
+    },
+    {
+      "name": "Document.activeElement",
+      "link": "/en-US/docs/Web/API/Document/activeElement",
+      "description": "Returns the currently focused element."
+    },
+    {
+      "name": "Document.alinkColor",
+      "link": "/en-US/docs/Web/API/Document/alinkColor",
+      "description": "Returns or sets the color of active links in the document body."
+    },
+    {
+      "name": "Document.anchors",
+      "link": "/en-US/docs/Web/API/Document/anchors",
+      "description": "Returns a list of all of the anchors in the document."
+    },
+    {
+      "name": "Document.applets",
+      "link": "/en-US/docs/Web/API/Document/applets",
+      "description": "Returns an ordered list of the applets within a document."
+    },
+    {
+      "name": "Document.bgColor",
+      "link": "/en-US/docs/Web/API/Document/bgColor",
+      "description": "Gets/sets the background color of the current document."
+    },
+    {
+      "name": "Document.body",
+      "link": "/en-US/docs/Web/API/Document/body",
+      "description": "Returns the \u003cbody\u003e element of the current document."
+    },
+    {
+      "name": "Document.cookie",
+      "link": "/en-US/docs/Web/API/Document/cookie",
+      "description": "Returns a semicolon-separated list of the cookies for that document or sets a single cookie.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "The function to be executed (function)."
+        },
+        {
+          "name": "thisObject Optional",
+          "description": "The this object (object or null)."
+        },
+        {
+          "name": "argumentToPass1, argumentToPass2, argumentToPassN Optional",
+          "description": "The arguments of the callback function."
+        },
+        {
+          "name": "identifier",
+          "description": "The identifier to check, i.e. the name of the cookie (string)"
+        },
+        {
+          "name": "onlyHere Optional",
+          "description": "A boolean expressing whether the cookie will use the local path (true) instead of the global one (false or undefined) (boolean or undefined)"
+        }
+      ]
+    },
+    {
+      "name": "Document.defaultView",
+      "link": "/en-US/docs/Web/API/Document/defaultView",
+      "description": "Returns a reference to the window object."
+    },
+    {
+      "name": "Document.designMode",
+      "link": "/en-US/docs/Web/API/Document/designMode",
+      "description": "Gets/sets the ability to edit the whole document."
+    },
+    {
+      "name": "Document.dir",
+      "link": "/en-US/docs/Web/API/Document/dir",
+      "description": "Gets/sets directionality (rtl/ltr) of the document."
+    },
+    {
+      "name": "Document.domain",
+      "link": "/en-US/docs/Web/API/Document/domain",
+      "description": "Gets/sets the domain of the current document."
+    },
+    {
+      "name": "Document.embeds",
+      "link": "/en-US/docs/Web/API/Document/embeds",
+      "description": "Returns a list of the embedded \u003cembed\u003e elements within the current document."
+    },
+    {
+      "name": "document.fgColor",
+      "link": "/en-US/docs/Web/API/Document/fgColor",
+      "description": "Gets/sets the foreground color, or text color, of the current document."
+    },
+    {
+      "name": "Document.forms",
+      "link": "/en-US/docs/Web/API/Document/forms",
+      "description": "Returns a list of the \u003cform\u003e elements within the current document."
+    },
+    {
+      "name": "Document.head",
+      "link": "/en-US/docs/Web/API/Document/head",
+      "description": "Returns the \u003chead\u003e element of the current document."
+    },
+    {
+      "name": "Document.height",
+      "link": "/en-US/docs/Web/API/Document/height",
+      "description": "Gets/sets the height of the current document."
+    },
+    {
+      "name": "Document.images",
+      "link": "/en-US/docs/Web/API/Document/images",
+      "description": "Returns a list of the images in the current document."
+    },
+    {
+      "name": "Document.lastModified",
+      "link": "/en-US/docs/Web/API/Document/lastModified",
+      "description": "Returns the date on which the document was last modified."
+    },
+    {
+      "name": "Document.linkColor",
+      "link": "/en-US/docs/Web/API/Document/linkColor",
+      "description": "Gets/sets the color of hyperlinks in the document."
+    },
+    {
+      "name": "Document.links",
+      "link": "/en-US/docs/Web/API/Document/links",
+      "description": "Returns a list of all the hyperlinks in the document."
+    },
+    {
+      "name": "Document.location",
+      "link": "/en-US/docs/Web/API/Document/location",
+      "description": "Returns the URI of the current document."
+    },
+    {
+      "name": "Document.plugins",
+      "link": "/en-US/docs/Web/API/Document/plugins",
+      "description": "Returns a list of the available plugins."
+    },
+    {
+      "name": "Document.readyState",
+      "link": "/en-US/docs/Web/API/Document/readyState",
+      "description": "Returns loading status of the document.",
+      "parameters": [
+        {
+          "name": "loading",
+          "description": "The document is still loading."
+        },
+        {
+          "name": "interactive",
+          "description": "The document has finished loading and the document has been parsed but sub-resources such as images, stylesheets and frames are still loading."
+        },
+        {
+          "name": "complete",
+          "description": "The document and all sub-resources have finished loading. The state indicates that the load event is about to fire."
+        }
+      ]
+    },
+    {
+      "name": "Document.referrer",
+      "link": "/en-US/docs/Web/API/Document/referrer",
+      "description": "Returns the URI of the page that linked to this page."
+    },
+    {
+      "name": "Document.scripts",
+      "link": "/en-US/docs/Web/API/Document/scripts",
+      "description": "Returns all the \u003cscript\u003e elements on the document."
+    },
+    {
+      "name": "Document.title",
+      "link": "/en-US/docs/Web/API/Document/title",
+      "description": "Sets or gets the title of the current document."
+    },
+    {
+      "name": "Document.URL",
+      "link": "/en-US/docs/Web/API/Document/URL",
+      "description": "Returns the document location as a string."
+    },
+    {
+      "name": "Document.vlinkColor",
+      "link": "/en-US/docs/Web/API/Document/vlinkColor",
+      "description": "Gets/sets the color of visited hyperlinks."
+    },
+    {
+      "name": "Document.width",
+      "link": "/en-US/docs/Web/API/Document/width",
+      "description": "Returns the width of the current document."
+    },
+    {
+      "name": "Document.onafterscriptexecute",
+      "link": "/en-US/docs/Web/API/Document/onafterscriptexecute",
+      "description": "Represents the event handling code for the afterscriptexecute event."
+    },
+    {
+      "name": "Document.onbeforescriptexecute",
+      "link": "/en-US/docs/Web/API/Document/onbeforescriptexecute",
+      "description": "Represents the event handling code for the beforescriptexecute event."
+    },
+    {
+      "name": "Document.oncopy",
+      "link": "/en-US/docs/Web/API/Document/oncopy",
+      "description": "Represents the event handling code for the copy event."
+    },
+    {
+      "name": "Document.oncut",
+      "link": "/en-US/docs/Web/API/Document/oncut",
+      "description": "Represents the event handling code for the cut event."
+    },
+    {
+      "name": "Document.onfullscreenchange",
+      "link": "/en-US/docs/Web/API/Document/onfullscreenchange",
+      "description": "Is an EventHandler representing the code to be called when the fullscreenchange event is raised."
+    },
+    {
+      "name": "Document.onfullscreenerror",
+      "link": "/en-US/docs/Web/API/Document/onfullscreenerror",
+      "description": "Is an EventHandler representing the code to be called when the fullscreenerror event is raised."
+    },
+    {
+      "name": "Document.onpaste",
+      "link": "/en-US/docs/Web/API/Document/onpaste",
+      "description": "Represents the event handling code for the paste event."
+    },
+    {
+      "name": "Document.onpointerlockchange",
+      "link": "/en-US/docs/Web/API/Document/onpointerlockchange",
+      "description": "Represents the event handling code for the pointerlockchange event."
+    },
+    {
+      "name": "Document.onpointerlockerror",
+      "link": "/en-US/docs/Web/API/Document/onpointerlockerror",
+      "description": "Represetnts the event handling code for the pointerlockerror event."
+    },
+    {
+      "name": "Document.onreadystatechange",
+      "link": "/en-US/docs/Web/API/Document/onreadystatechange",
+      "description": "Represents the event handling code for the readystatechange event."
+    },
+    {
+      "name": "Document.onselectionchange",
+      "link": "/en-US/docs/Web/API/Document/onselectionchange",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised."
+    },
+    {
+      "name": "Document.onvisibilitychange",
+      "link": "/en-US/docs/Web/API/Document/onvisibilitychange",
+      "description": "Is an EventHandler representing the code to be called when the visibilitychange event is raised."
+    },
+    {
+      "name": "Document.onwheel",
+      "link": "/en-US/docs/Web/API/Document/onwheel",
+      "description": "Represents the event handling code for the wheel event."
+    },
+    {
+      "name": "GlobalEventHandlers.onabort",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onabort",
+      "description": "Is an EventHandler representing the code to be called when the abort event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationcancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationcancel",
+      "description": "An EventHandler called when an animationcancel event is sent, indicating that a running CSS animation has been canceled."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationend",
+      "description": "An EventHandler called when an animationend event is sent, indicating that a CSS animation has stopped playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationiteration",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationiteration",
+      "description": "An EventHandler called when an animationiteration event has been sent, indicating that a CSS animation has begun playing a new iteration of the animation sequence."
+    },
+    {
+      "name": "GlobalEventHandlers.onanimationstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onanimationstart",
+      "description": "An EventHandler called when an animationstart event is sent, indicating that a CSS animation has started playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onauxclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onauxclick",
+      "description": "An EventHandler called when an auxclick event is sent, indicating that a non-primary button has been pressed on an input device (e.g. a middle mouse button)."
+    },
+    {
+      "name": "GlobalEventHandlers.onblur",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onblur",
+      "description": "Is an EventHandler representing the code to be called when the blur event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onerror",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onerror",
+      "description": "Is an OnErrorEventHandler representing the code to be called when the error event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onfocus",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onfocus",
+      "description": "Is an EventHandler representing the code to be called when the focus event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncancel",
+      "description": "Is an EventHandler representing the code to be called when the cancel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncanplay",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncanplay",
+      "description": "Is an EventHandler representing the code to be called when the canplay event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncanplaythrough",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncanplaythrough",
+      "description": "Is an EventHandler representing the code to be called when the canplaythrough event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onchange",
+      "description": "Is an EventHandler representing the code to be called when the change event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclick",
+      "description": "Is an EventHandler representing the code to be called when the click event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onclose",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclose",
+      "description": "Is an EventHandler representing the code to be called when the close event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncontextmenu",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncontextmenu",
+      "description": "Is an EventHandler representing the code to be called when the contextmenu event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oncuechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncuechange",
+      "description": "Is an EventHandler representing the code to be called when the cuechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ondblclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondblclick",
+      "description": "Is an EventHandler representing the code to be called when the dblclick event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ondrag",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrag",
+      "description": "Is an EventHandler representing the code to be called when the drag event is raised.",
+      "parameters": [
+        {
+          "name": "dragHandler",
+          "description": "The drag event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragend",
+      "description": "Is an EventHandler representing the code to be called when the dragend event is raised.",
+      "parameters": [
+        {
+          "name": "dragendHandler",
+          "description": "The dragend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragenter",
+      "description": "Is an EventHandler representing the code to be called when the dragenter event is raised.",
+      "parameters": [
+        {
+          "name": "dragenterHandler",
+          "description": "The dragenter event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragexit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragexit",
+      "description": "Is an EventHandler representing the code to be called when the dragexit event is raised.",
+      "parameters": [
+        {
+          "name": "dragexitHandler",
+          "description": "The dragexit event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragleave",
+      "description": "Is an EventHandler representing the code to be called when the dragleave event is raised.",
+      "parameters": [
+        {
+          "name": "dragleaveHandler",
+          "description": "The dragleave event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragover",
+      "description": "Is an EventHandler representing the code to be called when the dragover event is raised.",
+      "parameters": [
+        {
+          "name": "dragoverHandler",
+          "description": "The dragover event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondragstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondragstart",
+      "description": "Is an EventHandler representing the code to be called when the dragstart event is raised.",
+      "parameters": [
+        {
+          "name": "dragstartHandler",
+          "description": "The dragstart event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondrop",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondrop",
+      "description": "Is an EventHandler representing the code to be called when the drop event is raised.",
+      "parameters": [
+        {
+          "name": "dropHandler",
+          "description": "The drop event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ondurationchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondurationchange",
+      "description": "Is an EventHandler representing the code to be called when the durationchange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onemptied",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onemptied",
+      "description": "Is an EventHandler representing the code to be called when the emptied event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onended",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onended",
+      "description": "Is an EventHandler representing the code to be called when the ended event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ongotpointercapture",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ongotpointercapture",
+      "description": "Is an EventHandler representing the code to be called when the gotpointercapture event type is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oninput",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oninput",
+      "description": "Is an EventHandler representing the code to be called when the input event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.oninvalid",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oninvalid",
+      "description": "Is an EventHandler representing the code to be called when the invalid event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeydown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeydown",
+      "description": "Is an EventHandler representing the code to be called when the keydown event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeypress",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeypress",
+      "description": "Is an EventHandler representing the code to be called when the keypress event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeyup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeyup",
+      "description": "Is an EventHandler representing the code to be called when the keyup event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onload",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onload",
+      "description": "Is an EventHandler representing the code to be called when the load event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadeddata",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadeddata",
+      "description": "Is an EventHandler representing the code to be called when the loadeddata event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadedmetadata",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadedmetadata",
+      "description": "Is an EventHandler representing the code to be called when the loadedmetadata event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onloadend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadend",
+      "description": "Is an EventHandler representing the code to be called when the loadend event is raised (when progress has stopped on the loading of a resource.)"
+    },
+    {
+      "name": "GlobalEventHandlers.onloadstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onloadstart",
+      "description": "Is an EventHandler representing the code to be called when the loadstart event is raised (when progress has begun on the loading of a resource.)"
+    },
+    {
+      "name": "GlobalEventHandlers.onlostpointercapture",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onlostpointercapture",
+      "description": "Is an EventHandler representing the code to be called when the lostpointercapture event type is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousedown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousedown",
+      "description": "Is an EventHandler representing the code to be called when the mousedown event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseenter",
+      "description": "Is an EventHandler representing the code to be called when the mouseenter event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseleave",
+      "description": "Is an EventHandler representing the code to be called when the mouseleave event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousemove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousemove",
+      "description": "Is an EventHandler representing the code to be called when the mousemove event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseout",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseout",
+      "description": "Is an EventHandler representing the code to be called when the mouseout event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseover",
+      "description": "Is an EventHandler representing the code to be called when the mouseover event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseup",
+      "description": "Is an EventHandler representing the code to be called when the mouseup event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousewheel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousewheel",
+      "description": "Is an EventHandler representing the code to be called when the mousewheel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onwheel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onwheel",
+      "description": "Is an EventHandler representing the code to be called when the wheel event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpause",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpause",
+      "description": "Is an EventHandler representing the code to be called when the pause event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onplay",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onplay",
+      "description": "Is an EventHandler representing the code to be called when the play event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onplaying",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onplaying",
+      "description": "Is an EventHandler representing the code to be called when the playing event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerdown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerdown",
+      "description": "Is an EventHandler representing the code to be called when the pointerdown event is raised.",
+      "parameters": [
+        {
+          "name": "downHandler",
+          "description": "The pointerdown event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointermove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointermove",
+      "description": "Is an EventHandler representing the code to be called when the pointermove event is raised.",
+      "parameters": [
+        {
+          "name": "moveHandler",
+          "description": "The pointermove event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerup",
+      "description": "Is an EventHandler representing the code to be called when the pointerup event is raised.",
+      "parameters": [
+        {
+          "name": "upHandler",
+          "description": "The pointerup event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointercancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointercancel",
+      "description": "Is an EventHandler representing the code to be called when the pointercancel event is raised.",
+      "parameters": [
+        {
+          "name": "cancelHandler",
+          "description": "The pointercancel event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerover",
+      "description": "Is an EventHandler representing the code to be called when the pointerover event is raised.",
+      "parameters": [
+        {
+          "name": "overHandler",
+          "description": "The pointerover event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerout",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerout",
+      "description": "Is an EventHandler representing the code to be called when the pointerout event is raised.",
+      "parameters": [
+        {
+          "name": "outHandler",
+          "description": "The pointerout event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerenter",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerenter",
+      "description": "Is an EventHandler representing the code to be called when the pointerevent event is raised.",
+      "parameters": [
+        {
+          "name": "enterHandler",
+          "description": "The pointerenter event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerleave",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerleave",
+      "description": "Is an EventHandler representing the code to be called when the pointerleave event is raised.",
+      "parameters": [
+        {
+          "name": "leaveHandler",
+          "description": "The EventListener which will be invoked to handle pointerleave events sent to the target."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerlockchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerlockchange",
+      "description": "Is an EventHandler representing the code to be called when the pointerlockchange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onpointerlockerror",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onpointerlockerror",
+      "description": "Is an EventHandler representing the code to be called when the pointerlockerror event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onprogress",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onprogress",
+      "description": "Is an EventHandler representing the code to be called when the progress event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onratechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onratechange",
+      "description": "Is an EventHandler representing the code to be called when the ratechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onreset",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onreset",
+      "description": "Is an EventHandler representing the code to be called when the reset event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onscroll",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onscroll",
+      "description": "Is an EventHandler representing the code to be called when the scroll event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onseeked",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onseeked",
+      "description": "Is an EventHandler representing the code to be called when the seeked event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onseeking",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onseeking",
+      "description": "Is an EventHandler representing the code to be called when the seeking event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onselect",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselect",
+      "description": "Is an EventHandler representing the code to be called when the select event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onselectstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselectstart",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised, i.e. when the user starts to make a new text selection on a web page."
+    },
+    {
+      "name": "GlobalEventHandlers.onselectionchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselectionchange",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised, i.e. when the text selected on a web page changes."
+    },
+    {
+      "name": "GlobalEventHandlers.onshow",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onshow",
+      "description": "Is an EventHandler representing the code to be called when the show event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsort",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsort",
+      "description": "Is an EventHandler representing the code to be called when the sort event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onstalled",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onstalled",
+      "description": "Is an EventHandler representing the code to be called when the stalled event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsubmit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsubmit",
+      "description": "Is an EventHandler representing the code to be called when the submit event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onsuspend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsuspend",
+      "description": "Is an EventHandler representing the code to be called when the suspend event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ontimeupdate",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontimeupdate",
+      "description": "Is an EventHandler representing the code to be called when the timeupdate event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onvolumechange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onvolumechange",
+      "description": "Is an EventHandler representing the code to be called when the volumechange event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchcancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchcancel",
+      "description": "Is an EventHandler representing the code to be called when the touchcancel event is raised.",
+      "parameters": [
+        {
+          "name": "cancelHandler",
+          "description": "The touchcancel event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchend",
+      "description": "Is an EventHandler representing the code to be called when the touchend event is raised.",
+      "parameters": [
+        {
+          "name": "endHandler",
+          "description": "The touchend event handler for element targetElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchmove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchmove",
+      "description": "Is an EventHandler representing the code to be called when the touchmove event is raised.",
+      "parameters": [
+        {
+          "name": "moveHandler",
+          "description": "The touchmove event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontouchstart",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontouchstart",
+      "description": "Is an EventHandler representing the code to be called when the touchstart event is raised.",
+      "parameters": [
+        {
+          "name": "startHandler",
+          "description": "The touchstart event handler for element someElement."
+        }
+      ]
+    },
+    {
+      "name": "GlobalEventHandlers.ontransitioncancel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontransitioncancel",
+      "description": "An EventHandler called when a transitioncancel event is sent, indicating that a CSS transition has been cancelled."
+    },
+    {
+      "name": "GlobalEventHandlers.ontransitionend",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ontransitionend",
+      "description": "An EventHandler called when a transitionend event is sent, indicating that a CSS transition has finished playing."
+    },
+    {
+      "name": "GlobalEventHandlers.onwaiting",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onwaiting",
+      "description": "Is an EventHandler representing the code to be called when the waiting event is raised."
+    },
+    {
+      "name": "Document.adoptNode()",
+      "link": "/en-US/docs/Web/API/Document/adoptNode",
+      "description": "Adopt node from an external document.",
+      "parameters": [
+        {
+          "name": "   node",
+          "description": "is the adopted node that now has this document as its ownerDocument. The node\u0027s parentNode is null, since it has not yet been inserted into the document tree.  Note that node and externalNode are the same object after this call.  "
+        },
+        {
+          "name": "externalNode",
+          "description": "is the node from another document to be adopted."
+        }
+      ]
+    },
+    {
+      "name": "Document.captureEvents()",
+      "link": "/en-US/docs/Web/API/Document/captureEvents",
+      "description": "See Window.captureEvents."
+    },
+    {
+      "name": "Document.caretPositionFromPoint()",
+      "link": "/en-US/docs/Web/API/Document/caretPositionFromPoint",
+      "description": "Gets the CaretPosition at or near the specified coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "A horizontal position within the current viewport."
+        },
+        {
+          "name": "y",
+          "description": "A vertical position within the current viewport."
+        }
+      ]
+    },
+    {
+      "name": "Document.caretRangeFromPoint()",
+      "link": "/en-US/docs/Web/API/Document/caretRangeFromPoint",
+      "description": "Gets a Range object for the document fragment under the specified coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "A horizontal position within the current viewport."
+        },
+        {
+          "name": "y",
+          "description": "A vertical position within the current viewport."
+        }
+      ]
+    },
+    {
+      "name": "Document.createAttribute()",
+      "link": "/en-US/docs/Web/API/Document/createAttribute",
+      "description": "Creates a new Attr object and returns it."
+    },
+    {
+      "name": "Document.createAttributeNS()",
+      "link": "/en-US/docs/Web/API/Document/createAttributeNS",
+      "description": "Creates a new attribute node in a given namespace and returns it."
+    },
+    {
+      "name": "Document.createCDATASection()",
+      "link": "/en-US/docs/Web/API/Document/createCDATASection",
+      "description": "Creates a new CDATA node and returns it."
+    },
+    {
+      "name": "Document.createComment()",
+      "link": "/en-US/docs/Web/API/Document/createComment",
+      "description": "Creates a new comment node and returns it.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "A string containing the data to be added to the Comment."
+        }
+      ]
+    },
+    {
+      "name": "Document.createDocumentFragment()",
+      "link": "/en-US/docs/Web/API/Document/createDocumentFragment",
+      "description": "Creates a new document fragment."
+    },
+    {
+      "name": "Document.createElement()",
+      "link": "/en-US/docs/Web/API/Document/createElement",
+      "description": "Creates a new element with the given tag name.",
+      "parameters": [
+        {
+          "name": "tagName",
+          "description": "A string that specifies the type of element to be created. The nodeName of the created element is initialized with the value of tagName. Don\u0027t use qualified names (like \"html:a\") with this method. When called on an HTML document, createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome, createElement(null) works like createElement(\"null\")."
+        },
+        {
+          "name": "optionsOptional",
+          "description": "An optional ElementCreationOptions object containing a single property named is, whose value is the tag name for a custom element previously defined using customElements.define(). For backwards compatibility with previous versions of the Custom Elements specification, some browsers will allow you to pass a string here instead of an object, where the string\u0027s value is the custom element\u0027s tag name. See Extending native HTML elements for more information on how to use this parameter."
+        }
+      ]
+    },
+    {
+      "name": "Document.createElementNS()",
+      "link": "/en-US/docs/Web/API/Document/createElementNS",
+      "description": "Creates a new element with the given tag name and namespace URI.",
+      "parameters": [
+        {
+          "name": "namespaceURI",
+          "description": "A string that specifies the namespace URI to associate with the element. The namespaceURI property of the created element is initialized with the value of namespaceURI. See Valid Namespace URIs."
+        },
+        {
+          "name": "qualifiedName",
+          "description": "A string that specifies the type of element to be created. The nodeName property of the created element is initialized with the value of qualifiedName."
+        },
+        {
+          "name": "optionsOptional",
+          "description": "An optional ElementCreationOptions object containing a single property named is, whose value is the tag name for a custom element previously defined using customElements.define(). For backwards compatibility with previous versions of the Custom Elements specification, some browsers will allow you to pass a string here instead of an object, where the string\u0027s value is the custom element\u0027s tag name. See Extending native HTML elements for more information on how to use this parameter."
+        }
+      ]
+    },
+    {
+      "name": "Document.createEntityReference()",
+      "link": "/en-US/docs/Web/API/Document/createEntityReference",
+      "description": "Creates a new entity reference object and returns it."
+    },
+    {
+      "name": "Document.createEvent()",
+      "link": "/en-US/docs/Web/API/Document/createEvent",
+      "description": "Creates an event object."
+    },
+    {
+      "name": "Document.createNodeIterator()",
+      "link": "/en-US/docs/Web/API/Document/createNodeIterator",
+      "description": "Creates a NodeIterator object.",
+      "parameters": [
+        {
+          "name": "root",
+          "description": "The root node at which to begin the NodeIterator\u0027s traversal."
+        },
+        {
+          "name": "whatToShow Optional",
+          "description": "Is an optional unsigned long representing a bitmask created by combining the constant properties of NodeFilter. It is a convenient way of filtering for certain types of node. It defaults to 0xFFFFFFFF representing the SHOW_ALL constant. Constant Numerical value Description NodeFilter.SHOW_ALL -1 (that is the max value of unsigned long) Shows all nodes. NodeFilter.SHOW_ATTRIBUTE 2 Shows attribute Attr nodes. This is meaningful only when creating a TreeWalker with an Attr node as its root; in this case, it means that the attribute node will appear in the first position of the iteration or traversal. Since attributes are never children of other nodes, they do not appear when traversing over the document tree. NodeFilter.SHOW_CDATA_SECTION 8 Shows CDATASection nodes. NodeFilter.SHOW_COMMENT 128 Shows Comment nodes. NodeFilter.SHOW_DOCUMENT 256 Shows Document nodes. NodeFilter.SHOW_DOCUMENT_FRAGMENT 1024 Shows DocumentFragment nodes. NodeFilter.SHOW_DOCUMENT_TYPE 512 Shows DocumentType nodes. NodeFilter.SHOW_ELEMENT 1 Shows Element nodes. NodeFilter.SHOW_ENTITY 32 Shows Entity nodes. This is meaningful only when creating a TreeWalker with an Entity node as its root; in this case, it means that the Entity node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_ENTITY_REFERENCE 16 Shows EntityReference nodes. NodeFilter.SHOW_NOTATION 2048 Shows Notation nodes. This is meaningful only when creating a TreeWalker with a Notation node as its root; in this case, it means that the Notation node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_PROCESSING_INSTRUCTION 64 Shows ProcessingInstruction nodes. NodeFilter.SHOW_TEXT 4 Shows Text nodes."
+        },
+        {
+          "name": "filter Optional",
+          "description": "An object implementing the NodeFilter interface; its acceptNode() method will be called for each node in the subtree based at root which is accepted as included by the whatToShow flag to determine whether or not to include it in the list of iterable nodes (a simple callback function may also be used instead). The method should return one of NodeFilter.FILTER_ACCEPT, NodeFilter.FILTER_REJECT, or NodeFilter.FILTER_SKIP. See the Example."
+        }
+      ]
+    },
+    {
+      "name": "Document.createProcessingInstruction()",
+      "link": "/en-US/docs/Web/API/Document/createProcessingInstruction",
+      "description": "Creates a new ProcessingInstruction object.",
+      "parameters": [
+        {
+          "name": "NOT_SUPPORTED_ERR",
+          "description": "Thrown if you attempt to create a processing instruction node on an HTML document in Gecko 9 (Firefox 9.0 / Thunderbird 9.0 / SeaMonkey 2.6) or earlier. In Gecko 10.0 (Firefox 10.0 / Thunderbird 10.0 / SeaMonkey 2.7) and later, you can use this method on HTML documents."
+        },
+        {
+          "name": "DOM_INVALID_CHARACTER",
+          "description": "Thrown if you try to add an invalid processing instruction target (it should be an XML name besides any case combination of the letters \"xml\") or if the closing processing instruction sequence (\"?\u003e\") is added as part of the data, so unescaped user-provided data cannot be safely used without escaping or otherwise dealing with such situations."
+        }
+      ]
+    },
+    {
+      "name": "Document.createRange()",
+      "link": "/en-US/docs/Web/API/Document/createRange",
+      "description": "Creates a Range object."
+    },
+    {
+      "name": "Document.createTextNode()",
+      "link": "/en-US/docs/Web/API/Document/createTextNode",
+      "description": "Creates a text node."
+    },
+    {
+      "name": "Document.createTouch()",
+      "link": "/en-US/docs/Web/API/Document/createTouch",
+      "description": "Creates a Touch object.",
+      "parameters": [
+        {
+          "name": "view",
+          "description": "The window in which the touch occurred."
+        },
+        {
+          "name": "target",
+          "description": "The EventTarget for the touch."
+        },
+        {
+          "name": "identifier",
+          "description": "The value for Touch.identifier."
+        },
+        {
+          "name": "pageX",
+          "description": "The value for Touch.pageX."
+        },
+        {
+          "name": "pageY",
+          "description": "The value for Touch.pageY."
+        },
+        {
+          "name": "screenX",
+          "description": "The value for Touch.screenX."
+        },
+        {
+          "name": "screenY",
+          "description": "The value for Touch.screenY."
+        },
+        {
+          "name": "clientX",
+          "description": "The value for Touch.clientX."
+        },
+        {
+          "name": "clientY",
+          "description": "The value for Touch.clientY."
+        },
+        {
+          "name": "radiusX",
+          "description": "The value for Touch.radiusX."
+        },
+        {
+          "name": "radiusY",
+          "description": "The value for Touch.radiusY."
+        },
+        {
+          "name": "rotationAngle",
+          "description": "The value for Touch.rotationAngle."
+        },
+        {
+          "name": "force",
+          "description": "The value for Touch.force."
+        },
+        {
+          "name": "touch",
+          "description": "A Touch object configured as described by the input parameters."
+        }
+      ]
+    },
+    {
+      "name": "Document.createTouchList()",
+      "link": "/en-US/docs/Web/API/Document/createTouchList",
+      "description": "Creates a TouchList object.",
+      "parameters": [
+        {
+          "name": "touches",
+          "description": "Zero or more Touch objects. Note: Firefox also accepts an array of Touch objects."
+        },
+        {
+          "name": "list",
+          "description": "A TouchList object containing the Touch objects specified by the touches parameter."
+        }
+      ]
+    },
+    {
+      "name": "Document.createTreeWalker()",
+      "link": "/en-US/docs/Web/API/Document/createTreeWalker",
+      "description": "Creates a TreeWalker object.",
+      "parameters": [
+        {
+          "name": "root",
+          "description": "Is the root Node of this TreeWalker traversal. Typically this will be an element owned by the document."
+        },
+        {
+          "name": "whatToShow Optional",
+          "description": "Is an optional unsigned long representing a bitmask created by combining the constant properties of NodeFilter. It is a convenient way of filtering for certain types of node. It defaults to 0xFFFFFFFF representing the SHOW_ALL constant. Constant Numerical value Description NodeFilter.SHOW_ALL -1 (that is the max value of unsigned long) Shows all nodes. NodeFilter.SHOW_ATTRIBUTE 2 Shows attribute Attr nodes. This is meaningful only when creating a TreeWalker with an Attr node as its root; in this case, it means that the attribute node will appear in the first position of the iteration or traversal. Since attributes are never children of other nodes, they do not appear when traversing over the document tree. NodeFilter.SHOW_CDATA_SECTION 8 Shows CDATASection nodes. NodeFilter.SHOW_COMMENT 128 Shows Comment nodes. NodeFilter.SHOW_DOCUMENT 256 Shows Document nodes. NodeFilter.SHOW_DOCUMENT_FRAGMENT 1024 Shows DocumentFragment nodes. NodeFilter.SHOW_DOCUMENT_TYPE 512 Shows DocumentType nodes. NodeFilter.SHOW_ELEMENT 1 Shows Element nodes. NodeFilter.SHOW_ENTITY 32 Shows Entity nodes. This is meaningful only when creating a TreeWalker with an Entity node as its root; in this case, it means that the Entity node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_ENTITY_REFERENCE 16 Shows EntityReference nodes. NodeFilter.SHOW_NOTATION 2048 Shows Notation nodes. This is meaningful only when creating a TreeWalker with a Notation node as its root; in this case, it means that the Notation node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_PROCESSING_INSTRUCTION 64 Shows ProcessingInstruction nodes. NodeFilter.SHOW_TEXT 4 Shows Text nodes."
+        },
+        {
+          "name": "filter Optional",
+          "description": "Is an optional NodeFilter, that is an object with a method acceptNode, which is called by the TreeWalker to determine whether or not to accept a node that has passed the whatToShow check."
+        },
+        {
+          "name": "entityReferenceExpansion Optional",
+          "description": "Is a Boolean flag indicating if when discarding an EntityReference its whole sub-tree must be discarded at the same time."
+        }
+      ]
+    },
+    {
+      "name": "Document.elementFromPoint()",
+      "link": "/en-US/docs/Web/API/Document/elementFromPoint",
+      "description": "Returns the topmost element at the specified coordinates. ",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "A horizontal position within the current viewport."
+        },
+        {
+          "name": "y",
+          "description": "A vertical position within the current viewport."
+        }
+      ]
+    },
+    {
+      "name": "Document.elementsFromPoint()",
+      "link": "/en-US/docs/Web/API/Document/elementsFromPoint",
+      "description": "Returns an array of all elements at the specified coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "A horizontal position within the current viewport."
+        },
+        {
+          "name": "y",
+          "description": "A vertical position within the current viewport."
+        }
+      ]
+    },
+    {
+      "name": "Document.enableStyleSheetsForSet()",
+      "link": "/en-US/docs/Web/API/Document/enableStyleSheetsForSet",
+      "description": "Enables the style sheets for the specified style sheet set.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the style sheets to enable. All style sheets with a title that match this name will be enabled, while all others that have a title will be disabled. Specify an empty string for the name parameter to disable all alternate and preferred style sheets (but not the persistent style sheets; that is, those with no title attribute)."
+        }
+      ]
+    },
+    {
+      "name": "Document.exitPointerLock()",
+      "link": "/en-US/docs/Web/API/Document/exitPointerLock",
+      "description": "Release the pointer lock."
+    },
+    {
+      "name": "Document.getAnimations()",
+      "link": "/en-US/docs/Web/API/Document/getAnimations",
+      "description": "Returns an array of all Animation objects currently in effect, whose target elements are descendants of the document."
+    },
+    {
+      "name": "Document.getElementsByClassName()",
+      "link": "/en-US/docs/Web/API/Document/getElementsByClassName",
+      "description": "Returns a list of elements with the given class name."
+    },
+    {
+      "name": "Document.getElementsByTagName()",
+      "link": "/en-US/docs/Web/API/Document/getElementsByTagName",
+      "description": "Returns a list of elements with the given tag name."
+    },
+    {
+      "name": "Document.getElementsByTagNameNS()",
+      "link": "/en-US/docs/Web/API/Document/getElementsByTagNameNS",
+      "description": "Returns a list of elements with the given tag name and namespace."
+    },
+    {
+      "name": "Document.importNode()",
+      "link": "/en-US/docs/Web/API/Document/importNode",
+      "description": "Returns a clone of a node from an external document.",
+      "parameters": [
+        {
+          "name": "externalNode",
+          "description": "The new Node or DocumentFragment to import into the current document. After importing, the new node\u0027s parentNode is null, since it has not yet been inserted into the document tree."
+        },
+        {
+          "name": "deep",
+          "description": "A Boolean value which indicates whether or not to import the entire DOM subtree originating at externalNode. If this parameter is true, then externalNode and all of its descendants are copied; if false, then only the single node, externalNode, is imported."
+        }
+      ]
+    },
+    {
+      "name": "Document.normalizeDocument()",
+      "link": "/en-US/docs/Web/API/Document/normalizeDocument",
+      "description": "Replaces entities, normalizes text nodes, etc."
+    },
+    {
+      "name": "Document.registerElement()",
+      "link": "/en-US/docs/Web/API/Document/registerElement",
+      "description": "Registers a web component.",
+      "parameters": [
+        {
+          "name": "tag-name",
+          "description": "The name of the custom element. The name must contain a dash (-), for example my-tag."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object with properties prototype to base the custom element on, and extends, an existing tag to extend. Both of these are optional."
+        }
+      ]
+    },
+    {
+      "name": "Document.releaseCapture()",
+      "link": "/en-US/docs/Web/API/Document/releaseCapture",
+      "description": "Releases the current mouse capture if it\u0027s on an element in this document."
+    },
+    {
+      "name": "Document.releaseEvents()",
+      "link": "/en-US/docs/Web/API/Document/releaseEvents",
+      "description": "See Window.releaseEvents()."
+    },
+    {
+      "name": "Document.routeEvent()",
+      "link": "/en-US/docs/Web/API/Document/routeEvent",
+      "description": "See Window.routeEvent()."
+    },
+    {
+      "name": "Document.mozSetImageElement()",
+      "link": "/en-US/docs/Web/API/Document/mozSetImageElement",
+      "description": "Allows you to change the element being used as the background image for a specified element ID."
+    },
+    {
+      "name": "document.getElementById(String id)",
+      "link": "/en-US/docs/Web/API/Document/getElementById",
+      "description": "Returns an object reference to the identified element.",
+      "parameters": [
+        {
+          "name": "id",
+          "description": "is a case-sensitive string representing the unique ID of the element being sought."
+        },
+        {
+          "name": "element",
+          "description": "is a reference to an Element object, or null if an element with the specified ID is not in the document."
+        }
+      ]
+    },
+    {
+      "name": "document.querySelector(String selector)",
+      "link": "/en-US/docs/Web/API/Document/querySelector",
+      "description": "Returns the first Element node within the document, in document order, that matches the specified selectors."
+    },
+    {
+      "name": "document.querySelectorAll(String selector)",
+      "link": "/en-US/docs/Web/API/Document/querySelectorAll",
+      "description": "Returns a list of all the Element nodes within the document that match the specified selectors."
+    },
+    {
+      "name": "document.createExpression(String expression, XPathNSResolver resolver)",
+      "link": "/en-US/docs/Web/API/Document/createExpression",
+      "description": "Compiles an XPathExpression which can then be used for (repeated) evaluations."
+    },
+    {
+      "name": "document.createNSResolver(Node resolver)",
+      "link": "/en-US/docs/Web/API/Document/createNSResolver",
+      "description": "Creates an XPathNSResolver object."
+    },
+    {
+      "name": "document.evaluate(String expression, Node contextNode, XPathNSResolver resolver, Number type, Object result)",
+      "link": "/en-US/docs/Web/API/Document/evaluate",
+      "description": "Evaluates an XPath expression."
+    },
+    {
+      "name": "document.clear()",
+      "link": "/en-US/docs/Web/API/Document/clear",
+      "description": "In majority of modern browsers, including recent versions of Firefox and Internet Explorer, this method does nothing."
+    },
+    {
+      "name": "document.close()",
+      "link": "/en-US/docs/Web/API/Document/close",
+      "description": "Closes a document stream for writing."
+    },
+    {
+      "name": "document.execCommand(String command[, Boolean showUI[, String value]])",
+      "link": "/en-US/docs/Web/API/Document/execCommand",
+      "description": "On an editable document, executes a formating command.",
+      "parameters": [
+        {
+          "name": "aCommandName",
+          "description": "A DOMString specifying the name of the command to execute. See Commands for a list of possible commands."
+        },
+        {
+          "name": "aShowDefaultUI",
+          "description": "A Boolean indicating whether the default user interface should be shown. This is not implemented in Mozilla."
+        },
+        {
+          "name": "aValueArgument",
+          "description": "For commands which require an input argument (such as insertImage, for which this is the URL of the image to insert), this is a DOMString providing that information. Specify null if no argument is needed."
+        },
+        {
+          "name": "backColor",
+          "description": "Changes the document background color. In styleWithCss mode, it affects the background color of the containing block instead. This requires a \u003ccolor\u003e value string to be passed in as a value argument. Note that Internet Explorer uses this to set the text background color."
+        },
+        {
+          "name": "bold",
+          "description": "Toggles bold on/off for the selection or at the insertion point. Internet Explorer uses the \u003cstrong\u003e tag instead of \u003cb\u003e."
+        },
+        {
+          "name": "contentReadOnly",
+          "description": "Makes the content document either read-only or editable. This requires a boolean true/false to be passed in as a value argument. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "copy",
+          "description": "Copies the current selection to the clipboard. Conditions of having this behavior enabled vary from one browser to another, and have evolved over time. Check the compatibility table to determine if you can use it in your case."
+        },
+        {
+          "name": "createLink",
+          "description": "Creates an anchor link from the selection, only if there is a selection. This requires the HREF URI string to be passed in as a value argument. The URI must contain at least a single character, which may be a white space. (Internet Explorer will create a link with a null URI value.)"
+        },
+        {
+          "name": "cut",
+          "description": "Cuts the current selection and copies it to the clipboard. Conditions of having this behavior enabled vary from one browser to another, and have evolved over time. Check the compatibility table for knowing if you can use it in your case."
+        },
+        {
+          "name": "decreaseFontSize",
+          "description": "Adds a \u003csmall\u003e tag around the selection or at the insertion point. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "delete",
+          "description": "Deletes the current selection."
+        },
+        {
+          "name": "enableInlineTableEditing",
+          "description": "Enables or disables the table row and column insertion and deletion controls. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "enableObjectResizing",
+          "description": "Enables or disables the resize handles on images and other resizable objects. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "fontName",
+          "description": "Changes the font name for the selection or at the insertion point. This requires a font name string (\"Arial\" for example) to be passed in as a value argument."
+        },
+        {
+          "name": "fontSize",
+          "description": "Changes the font size for the selection or at the insertion point. This requires an HTML font size (1-7) to be passed in as a value argument."
+        },
+        {
+          "name": "foreColor",
+          "description": "Changes a font color for the selection or at the insertion point. This requires a color value string to be passed in as a value argument."
+        },
+        {
+          "name": "formatBlock",
+          "description": "Adds an HTML block-style tag around the line containing the current selection, replacing the block element containing the line if one exists (in Firefox, BLOCKQUOTE is the exception - it will wrap any containing block element). Requires a tag-name string to be passed in as a value argument. Virtually all block style tags can be used (eg. \"H1\", \"P\", \"DL\", \"BLOCKQUOTE\"). (Internet Explorer supports only heading tags H1 - H6, ADDRESS, and PRE, which must also include the tag delimiters \u003c \u003e, such as \"\u003cH1\u003e\".)"
+        },
+        {
+          "name": "forwardDelete",
+          "description": "Deletes the character ahead of the cursor\u0027s position.  It is the same as hitting the delete key."
+        },
+        {
+          "name": "heading",
+          "description": "Adds a heading tag around a selection or insertion point line. Requires the tag-name string to be passed in as a value argument (i.e. \"H1\", \"H6\"). (Not supported by Internet Explorer and Safari.)"
+        },
+        {
+          "name": "hiliteColor",
+          "description": "Changes the background color for the selection or at the insertion point. Requires a color value string to be passed in as a value argument. UseCSS must be turned on for this to function. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "increaseFontSize",
+          "description": "Adds a BIG tag around the selection or at the insertion point. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "indent",
+          "description": "Indents the line containing the selection or insertion point. In Firefox, if the selection spans multiple lines at different levels of indentation, only the least indented lines in the selection will be indented."
+        },
+        {
+          "name": "insertBrOnReturn",
+          "description": "Controls whether the Enter key inserts a br tag or splits the current block element into two. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "insertHorizontalRule",
+          "description": "Inserts a horizontal rule at the insertion point (deletes selection)."
+        },
+        {
+          "name": "insertHTML",
+          "description": "Inserts an HTML string at the insertion point (deletes selection). Requires a valid HTML string to be passed in as a value argument. (Not supported by Internet Explorer.)"
+        },
+        {
+          "name": "insertImage",
+          "description": "Inserts an image at the insertion point (deletes selection). Requires the image SRC URI string to be passed in as a value argument. The URI must contain at least a single character, which may be a white space. (Internet Explorer will create a link with a null URI value.)"
+        },
+        {
+          "name": "insertOrderedList",
+          "description": "Creates a numbered ordered list for the selection or at the insertion point."
+        },
+        {
+          "name": "insertUnorderedList",
+          "description": "Creates a bulleted unordered list for the selection or at the insertion point."
+        },
+        {
+          "name": "insertParagraph",
+          "description": "Inserts a paragraph around the selection or the current line. (Internet Explorer inserts a paragraph at the insertion point and deletes the selection.)"
+        },
+        {
+          "name": "insertText",
+          "description": "Inserts the given plain text at the insertion point (deletes selection)."
+        },
+        {
+          "name": "italic",
+          "description": "Toggles italics on/off for the selection or at the insertion point. (Internet Explorer uses the EM tag instead of I.)"
+        },
+        {
+          "name": "justifyCenter",
+          "description": "Centers the selection or insertion point."
+        },
+        {
+          "name": "justifyFull",
+          "description": "Justifies the selection or insertion point."
+        },
+        {
+          "name": "justifyLeft",
+          "description": "Justifies the selection or insertion point to the left."
+        },
+        {
+          "name": "justifyRight",
+          "description": "Right-justifies the selection or the insertion point."
+        },
+        {
+          "name": "outdent",
+          "description": "Outdents the line containing the selection or insertion point."
+        },
+        {
+          "name": "paste",
+          "description": "Pastes the clipboard contents at the insertion point (replaces current selection). Clipboard capability must be enabled in the user.js preference file. See [1]."
+        },
+        {
+          "name": "redo",
+          "description": "Redoes the previous undo command."
+        },
+        {
+          "name": "removeFormat",
+          "description": "Removes all formatting from the current selection."
+        },
+        {
+          "name": "selectAll",
+          "description": "Selects all of the content of the editable region."
+        },
+        {
+          "name": "strikeThrough",
+          "description": "Toggles strikethrough on/off for the selection or at the insertion point."
+        },
+        {
+          "name": "subscript",
+          "description": "Toggles subscript on/off for the selection or at the insertion point."
+        },
+        {
+          "name": "superscript",
+          "description": "Toggles superscript on/off for the selection or at the insertion point."
+        },
+        {
+          "name": "underline",
+          "description": "Toggles underline on/off for the selection or at the insertion point."
+        },
+        {
+          "name": "undo",
+          "description": "Undoes the last executed command."
+        },
+        {
+          "name": "unlink",
+          "description": "Removes the anchor tag from a selected anchor link."
+        },
+        {
+          "name": "useCSS",
+          "description": "Toggles the use of HTML tags or CSS for the generated markup. Requires a boolean true/false as a value argument. NOTE: This argument is logically backwards (i.e. use false to use CSS, true to use HTML). (Not supported by Internet Explorer.) This has been deprecated; use the styleWithCSS command instead."
+        },
+        {
+          "name": "styleWithCSS",
+          "description": "Replaces the useCSS command; argument works as expected, i.e. true modifies/generates style attributes in markup, false generates formatting elements."
+        }
+      ]
+    },
+    {
+      "name": "document.getElementsByName(String name)",
+      "link": "/en-US/docs/Web/API/Document/getElementsByName",
+      "description": "Returns a list of elements with the given name."
+    },
+    {
+      "name": "document.getSelection()",
+      "link": "/en-US/docs/Web/API/Document/getSelection",
+      "description": "Returns a Selection object related to text selected in the document."
+    },
+    {
+      "name": "document.hasFocus()",
+      "link": "/en-US/docs/Web/API/Document/hasFocus",
+      "description": "Returns true if the focus is currently located anywhere inside the specified document."
+    },
+    {
+      "name": "document.open()",
+      "link": "/en-US/docs/Web/API/Document/open",
+      "description": "Opens a document stream for writing."
+    },
+    {
+      "name": "document.queryCommandEnabled(String command)",
+      "link": "/en-US/docs/Web/API/Document/queryCommandEnabled",
+      "description": "Returns true if the formating command can be executed on the current range.",
+      "parameters": [
+        {
+          "name": "Parameters",
+          "description": ""
+        },
+        {
+          "name": "command",
+          "description": "The command for which to determine support."
+        }
+      ]
+    },
+    {
+      "name": "document.queryCommandIndeterm(String command)",
+      "link": "/en-US/docs/Web/API/Document/queryCommandIndeterm",
+      "description": "Returns true if the formating command is in an indeterminate state on the current range."
+    },
+    {
+      "name": "document.queryCommandState(String command)",
+      "link": "/en-US/docs/Web/API/Document/queryCommandState",
+      "description": "Returns true if the formating command has been executed on the current range."
+    },
+    {
+      "name": "document.queryCommandSupported(String command)",
+      "link": "/en-US/docs/Web/API/Document/queryCommandSupported",
+      "description": "Returns true if the formating command is supported on the current range.",
+      "parameters": [
+        {
+          "name": "Parameters",
+          "description": ""
+        },
+        {
+          "name": "command",
+          "description": "The command for which to determine support."
+        }
+      ]
+    },
+    {
+      "name": "document.queryCommandValue(String command)",
+      "link": "/en-US/docs/Web/API/Document/queryCommandValue",
+      "description": "Returns the current value of the current range for a formating command."
+    },
+    {
+      "name": "document.write(String text)",
+      "link": "/en-US/docs/Web/API/Document/write",
+      "description": "Writes text in a document.",
+      "parameters": [
+        {
+          "name": "markup",
+          "description": "A string containing the text to be written to the document."
+        }
+      ]
+    },
+    {
+      "name": "document.writeln(String text)",
+      "link": "/en-US/docs/Web/API/Document/writeln",
+      "description": "Writes a line of text in a document."
+    },
+    {
+      "name": "document.currentScript",
+      "link": "/en-US/docs/Web/API/Document/currentScript",
+      "description": "Returns the \u003cscript\u003e element that is currently executing."
+    },
+    {
+      "name": "document.documentURIObject",
+      "link": "/en-US/docs/Web/API/Document/documentURIObject",
+      "description": "(Mozilla add-ons only!) Returns the nsIURI object representing the URI of the document. This property only has special meaning in privileged JavaScript code (with UniversalXPConnect privileges)."
+    },
+    {
+      "name": "document.popupNode",
+      "link": "/en-US/docs/Web/API/Document/popupNode",
+      "description": "Returns the node upon which a popup was invoked."
+    },
+    {
+      "name": "document.tooltipNode",
+      "link": "/en-US/docs/Web/API/Document/tooltipNode",
+      "description": "Returns the node which is the target of the current tooltip."
+    },
+    {
+      "name": "document.execCommandShowHelp",
+      "link": "/en-US/docs/Web/API/Document/execCommandShowHelp",
+      "description": "This method never did anything and always threw an exception, so it was removed in Gecko 14.0 (Firefox 14.0 / Thunderbird 14.0 / SeaMonkey 2.11)."
+    },
+    {
+      "name": "document.getBoxObjectFor",
+      "link": "/en-US/docs/Web/API/Document/getBoxObjectFor",
+      "description": "Use the Element.getBoundingClientRect() method instead."
+    },
+    {
+      "name": "document.loadOverlay",
+      "link": "/en-US/docs/Web/API/Document/loadOverlay",
+      "description": "Loads a XUL overlay dynamically. This only works in XUL documents.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "A string containing the absolute URL of the overlay to load."
+        },
+        {
+          "name": "observer",
+          "description": "An object implementing nsIObserver that will be notified with a message of topic \"xul-overlay-merged\" when the merge is complete, or null if no observer is needed. The subject parameter of observe will implement nsIURI and will contain the URI of the merged overlay."
+        }
+      ]
+    },
+    {
+      "name": "document.queryCommandText",
+      "link": "/en-US/docs/Web/API/Document/queryCommandText",
+      "description": "This method never did anything but throw an exception, and was removed in Gecko 14.0 (Firefox 14.0 / Thunderbird 14.0 / SeaMonkey 2.11)."
+    },
+    {
+      "name": "document.fileSize",
+      "link": "/en-US/docs/Web/API/Document/fileSize",
+      "description": "Returns size in bytes of the document. Starting with Internet Explorer 11, that property is no longer supported. See MSDN."
+    },
+    {
+      "name": "document.contains",
+      "link": "/en-US/docs/Web/API/Document/contains",
+      "description": "As a work-around, document.body.contains() can be used."
+    }
+  ]
+}

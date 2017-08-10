@@ -1,0 +1,81 @@
+{
+  "name": "MediaTrackSupportedConstraints",
+  "description": "The MediaTrackSupportedConstraints dictionary establishes the list of constrainable properties recognized by the user agent or browser in its implementation of the MediaStreamTrack object. An object conforming to MediaTrackSupportedConstraints is returned by MediaDevices.getSupportedConstraints().",
+  "members": [
+    {
+      "name": "autoGainControl",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/autoGainControl",
+      "description": "A Boolean whose value is true if the autoGainControl constraint is supported in the current environment."
+    },
+    {
+      "name": "width",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/width",
+      "description": "A Boolean value whose value is true if the width constraint is supported in the current environment."
+    },
+    {
+      "name": "height",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/height",
+      "description": "A Boolean value whose value is true if the height constraint is supported in the current environment."
+    },
+    {
+      "name": "aspectRatio",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/aspectRatio",
+      "description": "A Boolean value whose value is true if the aspectRatio constraint is supported in the current environment."
+    },
+    {
+      "name": "frameRate",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/frameRate",
+      "description": "A Boolean value whose value is true if the frameRate constraint is supported in the current environment."
+    },
+    {
+      "name": "facingMode",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/facingMode",
+      "description": "A Boolean value whose value is true if the facingMode constraint is supported in the current environment."
+    },
+    {
+      "name": "volume",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/volume",
+      "description": "A Boolean value whose value is true if the volume constraint is supported in the current environment."
+    },
+    {
+      "name": "sampleRate",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/sampleRate",
+      "description": "A Boolean value whose value is true if the sampleRate constraint is supported in the current environment."
+    },
+    {
+      "name": "sampleSize",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/sampleSize",
+      "description": "A Boolean value whose value is true if the sampleSize constraint is supported in the current environment."
+    },
+    {
+      "name": "echoCancellation",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/echoCancellation",
+      "description": "A Boolean value whose value is true if the echoCancellation constraint is supported in the current environment."
+    },
+    {
+      "name": "latency",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/latency",
+      "description": "A Boolean value whose value is true if the latency constraint is supported in the current environment."
+    },
+    {
+      "name": "noiseSuppression",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/noiseSuppression",
+      "description": "A Boolean whose value is true if the noiseSuppression constraint is supported in the current environment."
+    },
+    {
+      "name": "channelCount",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/channelCount",
+      "description": "A Boolean value whose value is true if the channelCount constraint is supported in the current environment."
+    },
+    {
+      "name": "deviceId",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/deviceId",
+      "description": "A Boolean value whose value is true if the deviceId constraint is supported in the current environment."
+    },
+    {
+      "name": "groupId",
+      "link": "/en-US/docs/Web/API/MediaTrackSupportedConstraints/groupId",
+      "description": "A Boolean value whose value is true if the groupId constraint is supported in the current environment."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "DOMImplementationList",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMImplementationList.length",
+      "link": "/en-US/docs/Web/API/DOMImplementationList/length",
+      "description": "Returns an integer."
+    },
+    {
+      "name": "DOMImplementationList.item()",
+      "link": "/en-US/docs/Web/API/DOMImplementationList/item",
+      "description": "Returns the pos item."
+    }
+  ]
+}

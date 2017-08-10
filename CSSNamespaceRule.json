@@ -1,0 +1,16 @@
+{
+  "name": "CSSNamespaceRule",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSNamespaceRule.namespaceURI",
+      "link": "/en-US/docs/Web/API/CSSNamespaceRule/namespaceURI",
+      "description": "Returns a DOMString containing the text of the URI of the given namespace."
+    },
+    {
+      "name": "CSSNamespaceRule.prefix",
+      "link": "/en-US/docs/Web/API/CSSNamespaceRule/prefix",
+      "description": "Returns a DOMString with the name of the prefix associated to this namespace. If there is no such prefix, returns  null."
+    }
+  ]
+}

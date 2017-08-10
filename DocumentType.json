@@ -1,0 +1,41 @@
+{
+  "name": "DocumentType",
+  "description": "The DocumentType interface represents a Node containing a doctype.",
+  "members": [
+    {
+      "name": "DocumentType.entities",
+      "link": "/en-US/docs/Web/API/DocumentType/entities",
+      "description": "A NamedNodeMap of entities declared in the DTD. Every node in this map implements the Entity interface."
+    },
+    {
+      "name": "DocumentType.internalSubset",
+      "link": "/en-US/docs/Web/API/DocumentType/internalSubset",
+      "description": "A DOMString of the internal subset, or null if there is none. Eg \"\u003c!ELEMENT foo (bar)\u003e\"."
+    },
+    {
+      "name": "DocumentType.name",
+      "link": "/en-US/docs/Web/API/DocumentType/name",
+      "description": "A DOMString, eg \"html\" for \u003c!DOCTYPE HTML\u003e."
+    },
+    {
+      "name": "DocumentType.notations",
+      "link": "/en-US/docs/Web/API/DocumentType/notations",
+      "description": "A NamedNodeMap with notations declared in the DTD. Every node in this map implements the Notation interface."
+    },
+    {
+      "name": "DocumentType.publicId",
+      "link": "/en-US/docs/Web/API/DocumentType/publicId",
+      "description": "A DOMString, eg \"-//W3C//DTD HTML 4.01//EN\", empty string for HTML5."
+    },
+    {
+      "name": "DocumentType.systemId",
+      "link": "/en-US/docs/Web/API/DocumentType/systemId",
+      "description": "A DOMString, eg \"http://www.w3.org/TR/html4/strict.dtd\", empty string for HTML5."
+    },
+    {
+      "name": "ChildNode.remove()",
+      "link": "/en-US/docs/Web/API/ChildNode/remove",
+      "description": "Removes the object from its parent children list."
+    }
+  ]
+}

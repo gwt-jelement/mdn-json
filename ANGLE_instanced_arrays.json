@@ -1,0 +1,71 @@
+{
+  "name": "ANGLE_instanced_arrays",
+  "description": "The ANGLE_instanced_arrays extension is part of the WebGL API and allows to draw the same object, or groups of similar objects multiple times, if they share the same vertex data, primitive count and type.",
+  "members": [
+    {
+      "name": "ext.drawArraysInstancedANGLE()",
+      "link": "/en-US/docs/Web/API/ANGLE_instanced_arrays/drawArraysInstancedANGLE",
+      "description": "Behaves identically to gl.drawArrays() except that multiple instances of the range of elements are executed, and the instance advances for each iteration.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "A GLenum specifying the type primitive to render. Possible values are: gl.POINTS: Draws a single dot. gl.LINE_STRIP: Draws a straight line to the next vertex. gl.LINE_LOOP: Draws a straight line to the next vertex, and connects the last vertex back to the first. gl.LINES: Draws a line between a pair of vertices. gl.TRIANGLE_STRIP gl.TRIANGLE_FAN gl.TRIANGLES: Draws a triangle for a group of three vertices."
+        },
+        {
+          "name": "first",
+          "description": "A GLint specifying the starting index in the array of vector points."
+        },
+        {
+          "name": "count",
+          "description": "A GLsizei specifying the number of indices to be rendered."
+        },
+        {
+          "name": "primcount",
+          "description": "A GLsizei specifying the number of instances of the range of elements to execute."
+        }
+      ]
+    },
+    {
+      "name": "ext.drawElementsInstancedANGLE()",
+      "link": "/en-US/docs/Web/API/ANGLE_instanced_arrays/drawElementsInstancedANGLE",
+      "description": "Behaves identically to gl.drawElements() except that multiple instances of the set of elements are executed and the instance advances between each set.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "A GLenum specifying the type primitive to render. Possible values are: gl.POINTS: Draws a single dot. gl.LINE_STRIP: Draws a straight line to the next vertex. gl.LINE_LOOP: Draws a straight line to the next vertex, and connects the last vertex back to the first. gl.LINES: Draws a line between a pair of vertices. gl.TRIANGLE_STRIP gl.TRIANGLE_FAN gl.TRIANGLES: Draws a triangle for a group of three vertices."
+        },
+        {
+          "name": "count",
+          "description": "A GLsizei specifying the number of elements to be rendered."
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the type of the values in the element array buffer. Possible values are: gl.UNSIGNED_BYTE gl.UNSIGNED_SHORT When using the OES_element_index_uint extension: gl.UNSIGNED_INT"
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr specifying an offset in the element array buffer. Must be a valid multiple of the size of the given type."
+        },
+        {
+          "name": "primcount",
+          "description": "A GLsizei specifying the number of instances of the set of elements to execute."
+        }
+      ]
+    },
+    {
+      "name": "ext.vertexAttribDivisorANGLE()",
+      "link": "/en-US/docs/Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE",
+      "description": "Modifies the rate at which generic vertex attributes advance when rendering multiple instances of primitives with ext.drawArraysInstancedANGLE() and ext.drawElementsInstancedANGLE().",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the generic vertex attributes."
+        },
+        {
+          "name": "divisor",
+          "description": "A GLuint specifying the number of instances that will pass between updates of the generic attribute."
+        }
+      ]
+    }
+  ]
+}

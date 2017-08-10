@@ -1,0 +1,16 @@
+{
+  "name": "CSSPageRule",
+  "description": "CSSPageRule is an interface representing a single CSS @page rule. It implements the CSSRule interface with a type value of 6 (CSSRule.PAGE_RULE).",
+  "members": [
+    {
+      "name": "CSSPageRule.selectorText",
+      "link": "/en-US/docs/Web/API/CSSPageRule/selectorText",
+      "description": "Represents the text of the page selector associated with the at-rule."
+    },
+    {
+      "name": "CSSPageRule.style",
+      "link": "/en-US/docs/Web/API/CSSPageRule/style",
+      "description": "Returns the declaration block associated with the at-rule."
+    }
+  ]
+}

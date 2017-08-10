@@ -1,0 +1,26 @@
+{
+  "name": "SVGTests",
+  "description": "The SVGTests interface is used to reflect conditional processing attributes and is mixed into other interfaces for elements that support these attributes.",
+  "members": [
+    {
+      "name": "SVGTests.requiredFeatures",
+      "link": "/en-US/docs/Web/API/SVGTests/requiredFeatures",
+      "description": "An SVGStringList corresponding to the requiredFeatures attribute of the given element."
+    },
+    {
+      "name": "SVGTests.requiredExtensions",
+      "link": "/en-US/docs/Web/API/SVGTests/requiredExtensions",
+      "description": "An SVGStringList corresponding to the requiredExtensions attribute of the given element."
+    },
+    {
+      "name": "SVGTests.systemLanguage",
+      "link": "/en-US/docs/Web/API/SVGTests/systemLanguage",
+      "description": "An SVGStringList corresponding to the systemLanguage attribute of the given element."
+    },
+    {
+      "name": "SVGTests.hasExtension()",
+      "link": "/en-US/docs/Web/API/SVGTests/hasExtension",
+      "description": "Returns true if the browser supports the given extension, specified by a URI."
+    }
+  ]
+}

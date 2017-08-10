@@ -1,0 +1,26 @@
+{
+  "name": "HTMLOListElement",
+  "description": "The HTMLOListElement interface provides special properties (beyond those defined on the regular HTMLElement interface it also has available to it by inheritance) for manipulating ordered list elements.",
+  "members": [
+    {
+      "name": "HTMLOListElement.reversed",
+      "link": "/en-US/docs/Web/API/HTMLOListElement/reversed",
+      "description": "Is a Boolean value reflecting the reversed and defining if the numbering is descending, that is its value is true, or ascending (false)."
+    },
+    {
+      "name": "HTMLOListElement.start",
+      "link": "/en-US/docs/Web/API/HTMLOListElement/start",
+      "description": "Is a long value reflecting the start and defining the value of the first number of the first element of the list."
+    },
+    {
+      "name": "HTMLOListElement.type",
+      "link": "/en-US/docs/Web/API/HTMLOListElement/type",
+      "description": "Is a DOMString value reflecting the type and defining the kind of marker to be used to display. It can have the following values: \u00271\u0027 meaning that decimal numbers are used: 1, 2, 3, 4, 5, … \u0027a\u0027 meaning that the lowercase latin alphabet is used:  a, b, c, d, e, … \u0027A\u0027 meaning that the uppercase latin alphabet is used: A, B, C, D, E, … \u0027i\u0027 meaning that the lowercase latin numerals are used: i, ii, iii, iv, v, … \u0027I\u0027 meaning that the uppercase latin numerals are used: I, II, III, IV, V, …"
+    },
+    {
+      "name": "HTMLOListElement.compact",
+      "link": "/en-US/docs/Web/API/HTMLOListElement/compact",
+      "description": "Is a Boolean indicating that spacing between list items should be reduced. This property reflects the compact attribute only, it doesn\u0027t consider the line-height CSS property used for that behavior in modern pages."
+    }
+  ]
+}

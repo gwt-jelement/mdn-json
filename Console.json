@@ -1,0 +1,255 @@
+{
+  "name": "Console",
+  "description": "The Console object provides access to the browser\u0027s debugging console (e.g., the Web Console in Firefox). The specifics of how it works vary from browser to browser, but there is a de facto set of features that are typically provided.",
+  "members": [
+    {
+      "name": "Console.assert()",
+      "link": "/en-US/docs/Web/API/Console/assert",
+      "description": "Log a message and stack trace to console if first argument is false.",
+      "parameters": [
+        {
+          "name": "assertion",
+          "description": "Any boolean expression. If the assertion is false, the message is written to the console."
+        },
+        {
+          "name": "obj1 ... objN",
+          "description": "A list of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output."
+        },
+        {
+          "name": "msg",
+          "description": "A JavaScript string containing zero or more substitution strings."
+        },
+        {
+          "name": "subst1 ... substN",
+          "description": "JavaScript objects with which to replace substitution strings within msg. This parameter gives you additional control over the format of the output."
+        }
+      ]
+    },
+    {
+      "name": "Console.clear()",
+      "link": "/en-US/docs/Web/API/Console/clear",
+      "description": "Clear the console."
+    },
+    {
+      "name": "Console.count()",
+      "link": "/en-US/docs/Web/API/Console/count",
+      "description": "Log the number of times this line has been called with the given label.",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "A string. If this is supplied, count() outputs the number of times it has been called at this line and with that label."
+        }
+      ]
+    },
+    {
+      "name": "Console.debug()",
+      "link": "/en-US/docs/Web/API/Console/debug",
+      "description": "An alias for log() - starting with Chromium 58 this method is a no-op on Chromium browsers."
+    },
+    {
+      "name": "Console.dir()",
+      "link": "/en-US/docs/Web/API/Console/dir",
+      "description": "Displays an interactive listing of the properties of a specified JavaScript object. This listing lets you use disclosure triangles to examine the contents of child objects.",
+      "parameters": [
+        {
+          "name": "object",
+          "description": "A JavaScript object whose properties should be output."
+        }
+      ]
+    },
+    {
+      "name": "Console.dirxml()",
+      "link": "/en-US/docs/Web/API/Console/dirxml",
+      "description": "Displays an XML/HTML Element representation of the specified object if possible or the JavaScript Object view if it is not.",
+      "parameters": [
+        {
+          "name": "object",
+          "description": "A JavaScript object whose properties should be output."
+        }
+      ]
+    },
+    {
+      "name": "Console.error()",
+      "link": "/en-US/docs/Web/API/Console/error",
+      "description": "Outputs an error message. You may use string substitution and additional arguments with this method.",
+      "parameters": [
+        {
+          "name": "obj1 ... objN",
+          "description": "A list of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output."
+        },
+        {
+          "name": "msg",
+          "description": "A JavaScript string containing zero or more substitution strings."
+        },
+        {
+          "name": "subst1 ... substN",
+          "description": "JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output."
+        }
+      ]
+    },
+    {
+      "name": "Console.exception()",
+      "link": "/en-US/docs/Web/API/Console/exception",
+      "description": "An alias for error()"
+    },
+    {
+      "name": "Console.group()",
+      "link": "/en-US/docs/Web/API/Console/group",
+      "description": "Creates a new inline group, indenting all following output by another level. To move back out a level, call groupEnd().",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "Label for the group. Optional.   (Chrome 59 tested) Does not work with console.groupEnd()"
+        }
+      ]
+    },
+    {
+      "name": "Console.groupCollapsed()",
+      "link": "/en-US/docs/Web/API/Console/groupCollapsed",
+      "description": "Creates a new inline group, indenting all following output by another level; unlike group(), this starts with the inline group collapsed, requiring the use of a disclosure button to expand it. To move back out a level, call groupEnd().",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "Label for the group. Optional."
+        }
+      ]
+    },
+    {
+      "name": "Console.groupEnd()",
+      "link": "/en-US/docs/Web/API/Console/groupEnd",
+      "description": "Exits the current inline group."
+    },
+    {
+      "name": "Console.info()",
+      "link": "/en-US/docs/Web/API/Console/info",
+      "description": "Informative logging information. You may use string substitution and additional arguments with this method.",
+      "parameters": [
+        {
+          "name": "obj1 ... objN",
+          "description": "A list of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output."
+        },
+        {
+          "name": "msg",
+          "description": "A JavaScript string containing zero or more substitution strings."
+        },
+        {
+          "name": "subst1 ... substN",
+          "description": "JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output."
+        }
+      ]
+    },
+    {
+      "name": "Console.log()",
+      "link": "/en-US/docs/Web/API/Console/log",
+      "description": "For general output of logging information. You may use string substitution and additional arguments with this method.",
+      "parameters": [
+        {
+          "name": "obj1 ... objN",
+          "description": "A list of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output."
+        },
+        {
+          "name": "msg",
+          "description": "A JavaScript string containing zero or more substitution strings. "
+        },
+        {
+          "name": "subst1 ... substN",
+          "description": "JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output."
+        }
+      ]
+    },
+    {
+      "name": "Console.profile()",
+      "link": "/en-US/docs/Web/API/Console/profile",
+      "description": "Starts the browser\u0027s build-in profiler (for example, the Firefox performance tool). You can specify an optional name for the profile.",
+      "parameters": [
+        {
+          "name": "profileName",
+          "description": "The name to give the profile. Optional."
+        }
+      ]
+    },
+    {
+      "name": "Console.profileEnd()",
+      "link": "/en-US/docs/Web/API/Console/profileEnd",
+      "description": "Stops the profiler. You can see the resulting profile in the browser\u0027s performance tool (for example, the Firefox performance tool).",
+      "parameters": [
+        {
+          "name": "profileName",
+          "description": "The name to give the profile. This parameter is optional."
+        }
+      ]
+    },
+    {
+      "name": "Console.table()",
+      "link": "/en-US/docs/Web/API/Console/table",
+      "description": "Displays tabular data as a table.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "The data to display. This must be either an array or an object."
+        },
+        {
+          "name": "columns",
+          "description": "An array containing the names of columns to include in the output."
+        }
+      ]
+    },
+    {
+      "name": "Console.time()",
+      "link": "/en-US/docs/Web/API/Console/time",
+      "description": "Starts a timer with a name specified as an input parameter. Up to 10,000 simultaneous timers can run on a given page.",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "The name to give the new timer. This will identify the timer; use the same name when calling console.timeEnd() to stop the timer and get the time output to the console."
+        }
+      ]
+    },
+    {
+      "name": "Console.timeEnd()",
+      "link": "/en-US/docs/Web/API/Console/timeEnd",
+      "description": "Stops the specified timer and logs the elapsed time in seconds since its start.",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "The name of the timer to stop. Once stopped, the elapsed time is automatically displayed in the Web Console."
+        }
+      ]
+    },
+    {
+      "name": "Console.timeStamp()",
+      "link": "/en-US/docs/Web/API/Console/timeStamp",
+      "description": "Adds a marker to the browser\u0027s Timeline or Waterfall tool.",
+      "parameters": [
+        {
+          "name": "label",
+          "description": "Label for the timestamp. Optional."
+        }
+      ]
+    },
+    {
+      "name": "Console.trace()",
+      "link": "/en-US/docs/Web/API/Console/trace",
+      "description": "Outputs a stack trace."
+    },
+    {
+      "name": "Console.warn()",
+      "link": "/en-US/docs/Web/API/Console/warn",
+      "description": "Outputs a warning message. You may use string substitution and additional arguments with this method.",
+      "parameters": [
+        {
+          "name": "obj1 ... objN",
+          "description": "A list of JavaScript objects to output. The string representations of each of these objects are appended together in the order listed and output."
+        },
+        {
+          "name": "msg",
+          "description": "A JavaScript string containing zero or more substitution strings."
+        },
+        {
+          "name": "subst1 ... substN",
+          "description": "JavaScript objects with which to replace substitution strings within msg. This gives you additional control over the format of the output."
+        }
+      ]
+    }
+  ]
+}

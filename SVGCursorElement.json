@@ -1,0 +1,16 @@
+{
+  "name": "SVGCursorElement",
+  "description": "The SVGCursorElement interface provides access to the properties of \u003ccursor\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGCursorElement.x",
+      "link": "/en-US/docs/Web/API/SVGCursorElement/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given \u003ccursor\u003e element."
+    },
+    {
+      "name": "SVGCursorElement.y",
+      "link": "/en-US/docs/Web/API/SVGCursorElement/y",
+      "description": "An SVGAnimatedLength corresponding to the y attribute of the given \u003ccursor\u003e element."
+    }
+  ]
+}

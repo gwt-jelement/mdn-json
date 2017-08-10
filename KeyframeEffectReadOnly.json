@@ -1,0 +1,175 @@
+{
+  "name": "KeyframeEffectReadOnly",
+  "description": "",
+  "members": [
+    {
+      "name": "KeyframeEffectReadOnly.KeyframeEffectReadOnly()",
+      "link": "/en-US/docs/Web/API/KeyframeEffectReadOnly/KeyframeEffectReadOnly",
+      "description": "Returns a new KeyframeEffectReadOnly object instance, and also allows you to clone an existing keyframe effect object instance.",
+      "parameters": [
+        {
+          "name": "element",
+          "description": "The DOM element to be animated, or null."
+        },
+        {
+          "name": "keyframeSet",
+          "description": "A keyframe object or null."
+        },
+        {
+          "name": "keyframeOptions Optional",
+          "description": "Either an integer representing the animation\u0027s duration (in milliseconds), or an Object containing one or more of the following: delay Optional The number of milliseconds to delay the start of the animation. Defaults to 0. direction Optional Whether the animation runs forwards (normal), backwards (reverse), switches direction after each iteration (alternate), or runs backwards and switches direction after each iteration (alternate-reverse). Defaults to \"normal\". duration Optional The number of milliseconds each iteration of the animation takes to complete. Defaults to 0. Although this is technically optional, keep in mind that your animation will not run if this value is 0. easing Optional The rate of the animation\u0027s change over time. Accepts the pre-defined values \"linear\", \"ease\", \"ease-in\", \"ease-out\", and \"ease-in-out\", or a custom \"cubic-bezier\" value like \"cubic-bezier(0.42, 0, 0.58, 1)\". Defaults to \"linear\". endDelay Optional The number of milliseconds to delay after the end of an animation. This is primarily of use when sequencing animations based on the end time of another animation. Defaults to 0.  fill Optional Dictates whether the animation\u0027s effects should be reflected by the element(s) prior to playing (\"backwards\"), retained after the animation has completed playing (\"forwards\"), or both. Defaults to \"none\". iterationStart Optional Describes at what point in the iteration the animation should start. 0.5 would indicate starting halfway through the first iteration for example, and with this value set, an animation with 2 iterations would end halfway through a third iteration. Defaults to 0.0. iterations Optional The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists. The following options are currently not shipped anywhere, but will be added in the near future: composite Determines how values are combined between this animation and the element\u0027s underlying values. iterationComposite Determines how values build from iteration to iteration in the current animation."
+        },
+        {
+          "name": "delay Optional",
+          "description": "The number of milliseconds to delay the start of the animation. Defaults to 0."
+        },
+        {
+          "name": "direction Optional",
+          "description": "Whether the animation runs forwards (normal), backwards (reverse), switches direction after each iteration (alternate), or runs backwards and switches direction after each iteration (alternate-reverse). Defaults to \"normal\"."
+        },
+        {
+          "name": "duration Optional",
+          "description": "The number of milliseconds each iteration of the animation takes to complete. Defaults to 0. Although this is technically optional, keep in mind that your animation will not run if this value is 0."
+        },
+        {
+          "name": "easing Optional",
+          "description": "The rate of the animation\u0027s change over time. Accepts the pre-defined values \"linear\", \"ease\", \"ease-in\", \"ease-out\", and \"ease-in-out\", or a custom \"cubic-bezier\" value like \"cubic-bezier(0.42, 0, 0.58, 1)\". Defaults to \"linear\"."
+        },
+        {
+          "name": "endDelay Optional",
+          "description": "The number of milliseconds to delay after the end of an animation. This is primarily of use when sequencing animations based on the end time of another animation. Defaults to 0. "
+        },
+        {
+          "name": "fill Optional",
+          "description": "Dictates whether the animation\u0027s effects should be reflected by the element(s) prior to playing (\"backwards\"), retained after the animation has completed playing (\"forwards\"), or both. Defaults to \"none\"."
+        },
+        {
+          "name": "iterationStart Optional",
+          "description": "Describes at what point in the iteration the animation should start. 0.5 would indicate starting halfway through the first iteration for example, and with this value set, an animation with 2 iterations would end halfway through a third iteration. Defaults to 0.0."
+        },
+        {
+          "name": "iterations Optional",
+          "description": "The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists."
+        },
+        {
+          "name": "composite",
+          "description": "Determines how values are combined between this animation and the element\u0027s underlying values."
+        },
+        {
+          "name": "iterationComposite",
+          "description": "Determines how values build from iteration to iteration in the current animation."
+        },
+        {
+          "name": "sourceKeyFrames",
+          "description": "A KeyframeEffectReadOnly object that you want to clone."
+        }
+      ]
+    },
+    {
+      "name": "KeyframeEffectReadOnly.target",
+      "link": "/en-US/docs/Web/API/KeyframeEffectReadOnly/target",
+      "description": "The element or pseudo-element being animated by this object. This may be null for animations that do not target a specific element."
+    },
+    {
+      "name": "AnimationEffectReadOnly.timing",
+      "link": "/en-US/docs/Web/API/AnimationEffectReadOnly/timing",
+      "description": "The AnimationEffectTimingReadOnly object associated with the animation containing all the animation\u0027s timing values."
+    },
+    {
+      "name": "KeyframeEffectReadOnly.composite",
+      "link": "/en-US/docs/Web/API/KeyframeEffectReadOnly/composite",
+      "description": "The composite operation property for resolving the property value changes between this and other keyframe effects.",
+      "parameters": [
+        {
+          "name": "replace",
+          "description": "The keyframeEffect overrides the underlying value it is combined with:  blur(2) replaces blur(3)."
+        },
+        {
+          "name": "add",
+          "description": "The keyframeEffect is added to the underlying value with which it is combined (aka additive):  blur(2) blur(3)."
+        },
+        {
+          "name": "accumulate",
+          "description": "The keyframeEffect is accumulated on to the underlying value:  blur(5)."
+        }
+      ]
+    },
+    {
+      "name": "KeyframeEffectReadOnly.iterationComposite",
+      "link": "/en-US/docs/Web/API/KeyframeEffectReadOnly/iterationComposite",
+      "description": "The iteration composite operation for resolving the property value changes of this keyframe effect.",
+      "parameters": [
+        {
+          "name": "replace",
+          "description": "The keyframeEffect value produced is independent of the current iteration."
+        },
+        {
+          "name": "accumulate",
+          "description": "Subsequent iterations of the keyframeEffect build on the final value of the previous iteration."
+        }
+      ]
+    },
+    {
+      "name": "KeyframeEffectReadOnly.getKeyframes()",
+      "link": "/en-US/docs/Web/API/KeyframeEffectReadOnly/getKeyframes",
+      "description": "Returns the computed keyframes that make up this effect along with their computed keyframe offsets.",
+      "parameters": [
+        {
+          "name": "property value pairs",
+          "description": "As many property value pairs as are contained in each keyframe of the animation."
+        },
+        {
+          "name": "offset",
+          "description": "The offset of the keyframe specified as a number between 0.0 and 1.0 inclusive or null. This will be null if the keyframe is automatically spaced using KeyframeEffect.spacing."
+        },
+        {
+          "name": "computedOffset",
+          "description": "The computed offset for this keyframe, calculated when the list of computed keyframes was produced according to KeyframeEffect.spacing. Unlike offset, above, the computedOffset is never null."
+        },
+        {
+          "name": "easing",
+          "description": "The timing function used from this keyframe until the next keyframe in the series."
+        },
+        {
+          "name": "composite",
+          "description": "The KeyframeEffectReadOnly.composite operation used to combine the values specified in this keyframe with the underlying value. This will be absent if the composite operation specified on the effect is being used."
+        }
+      ]
+    },
+    {
+      "name": "AnimationEffectReadOnly.getComputedTiming()",
+      "link": "/en-US/docs/Web/API/AnimationEffectReadOnly/getComputedTiming",
+      "description": "Returns the calculated, current timing values for this keyframe effect.",
+      "parameters": [
+        {
+          "name": "duration",
+          "description": "Returns the calculated value of the iteration duration. If AnimationEffectTimingReadOnly.duration is the string auto, this attribute will return 0."
+        },
+        {
+          "name": "fill",
+          "description": "The auto value is replaced with the appropriate AnimationEffectTimingReadOnly.fill value."
+        },
+        {
+          "name": "endTime",
+          "description": "The end time of the animation in milliseconds from the animation\u0027s start (if the KeyframeEffect is associated with an Animation). (Also includes AnimationEffectTimingReadOnly.endDelay in that calculation.)"
+        },
+        {
+          "name": "activeDuration",
+          "description": "The length of time in milliseconds that the animation\u0027s effects will run. This is equal to the iteration duration multiplied by the iteration count."
+        },
+        {
+          "name": "localTime",
+          "description": "The current time of the animation in milliseconds. If the KeyframeEffect is not associated with an Animation, its value is null."
+        },
+        {
+          "name": "progress",
+          "description": "Indicates how far along the animation is through its current iteration with values between 0 and 1. Returns null if the animation is not running or its KeyframeEffect isn\u0027t associated with an Animation."
+        },
+        {
+          "name": "currentIteration",
+          "description": "The number of times this animation has looped, starting from 0. Returns null if the animation is not running or its KeyframeEffect isn\u0027t associated with an Animation."
+        }
+      ]
+    }
+  ]
+}

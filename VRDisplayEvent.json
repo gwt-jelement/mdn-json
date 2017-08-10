@@ -1,0 +1,39 @@
+{
+  "name": "VRDisplayEvent",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The VRDisplayEvent interface of the WebVR API represents represents the event object of WebVR-related events (see the list of WebVR window extensions).",
+  "members": [
+    {
+      "name": "VRDisplayEvent.VRDisplayEvent()",
+      "link": "/en-US/docs/Web/API/VRDisplayEvent/VRDisplayEvent",
+      "description": "Creates a VRDisplayEvent object instance.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString describing the type of event object you want to create."
+        },
+        {
+          "name": "eventInitDict",
+          "description": "A object contaning initialization options to use when creating the constructor. These are: display A property containing the VRDisplay the event is to be associated with. reason A property containing a string representing the human-readable reason why the event is to be fired (see VRDisplayEvent.reason)."
+        },
+        {
+          "name": "display",
+          "description": "A property containing the VRDisplay the event is to be associated with."
+        },
+        {
+          "name": "reason",
+          "description": "A property containing a string representing the human-readable reason why the event is to be fired (see VRDisplayEvent.reason)."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplayEvent.display",
+      "link": "/en-US/docs/Web/API/VRDisplayEvent/display",
+      "description": "The VRDisplay associated with this event."
+    },
+    {
+      "name": "VRDisplayEvent.reason",
+      "link": "/en-US/docs/Web/API/VRDisplayEvent/reason",
+      "description": "A human-readable reason why the event was fired."
+    }
+  ]
+}

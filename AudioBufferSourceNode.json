@@ -1,0 +1,51 @@
+{
+  "name": "AudioBufferSourceNode",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioBufferSourceNode()",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/AudioBufferSourceNode",
+      "description": "Creates and returns a new AudioBufferSourceNode object. An AudioBufferSourceNode can be instantiated using the AudioContext.createBufferSource() method.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: buffer: An instance of AudioBuffer to be played. detune: A value in cents to modulate the speed of audio stream rendering. Its nominal range is (-\u0026infin;, \u0026infin;). The default is 0. loop: A boolean indicating whether the audio should play in a loop. The default is false. If the loop is dynamically modified during playback, the new value will take effect on the next processing block of audio. loopEnd: An optional value, in seconds, where looping should end if the loop attribute is true. The default is 0. Its value is exclusive to the content of the loop. The sample frames, comprising the loop, run from the values loopStart to loopEnd-(1/sampleRate). It\u0027s sensible to set this to a value between 0 and the duration of the buffer. If loopEnd is less than 0, looping will end at 0. If loopEnd is greater than the duration of the buffer, looping will end at the end of the buffer. This attribute is converted to an exact sample frame offset within the buffer, by multiplying by the buffer\u0027s sample rate and rounding to the nearest integer value. Thus, its behavior is independent of the value of the playbackRate parameter. loopStart: An optional value in seconds, where looping should end if the loop attribute is true. The default is 0. It\u0027s sensible to set this to a value between 0 and the duration of the buffer. If loopStart is less than 0, looping will begin at 0. If loopStart is greater than the duration of the buffer, looping will begin at the end of the buffer. This attribute is converted to an exact sample frame offset within the buffer, by multiplying by the buffer\u0027s sample rate and rounding to the nearest integer value. Thus, its behavior is independent of the value of the playbackRate parameter. playbackRate: The speed at which to render the audio stream. Its default value is 1. This parameter is k-rate. This is a compound parameter with detune. Its nominal range is (-\u0026infin;, \u0026infin;)."
+        }
+      ]
+    },
+    {
+      "name": "AudioBufferSourceNode.buffer",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/buffer",
+      "description": "An AudioBuffer that defines the audio asset to be played, or when set to the value null, defines a single channel of silence (in which every sample is 0.0)."
+    },
+    {
+      "name": "AudioBufferSourceNode.detune",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/detune",
+      "description": "Is a k-rate AudioParam representing detuning of playback in cents. This value is compounded with playbackRate to determine the speed at which the sound is played. Its default value is 0 (meaning no detuning), and its nominal range is -∞ to ∞."
+    },
+    {
+      "name": "AudioBufferSourceNode.loop",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/loop",
+      "description": "A Boolean attribute indicating if the audio asset must be replayed when the end of the AudioBuffer is reached. Its default value is false."
+    },
+    {
+      "name": "AudioBufferSourceNode.loopStart",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/loopStart",
+      "description": "A floating-point value indicating the time, in seconds, at which playback of the AudioBuffer must begin when loop is true. Its default value is 0 (meaning that at the beginning of each loop, playback begins at the start of the audio buffer)."
+    },
+    {
+      "name": "AudioBufferSourceNode.loopEnd",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/loopEnd",
+      "description": "A floating-point number indicating the time, in seconds, at which playback of the AudioBuffer stops and loops back to the time indicated by loopStart, if loop is true. The default value is 0."
+    },
+    {
+      "name": "AudioBufferSourceNode.playbackRate",
+      "link": "/en-US/docs/Web/API/AudioBufferSourceNode/playbackRate",
+      "description": "An a-rate AudioParam that defines the speed factor at which the audio asset will be played, where a value of 1.0 is the sound\u0027s natural sampling rate. Since no pitch correction is applied on the output, this can be used to change the pitch of the sample. This value is compounded with detune to determine the final playback rate."
+    }
+  ]
+}

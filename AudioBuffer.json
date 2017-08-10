@@ -1,0 +1,90 @@
+{
+  "name": "AudioBuffer",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioBuffer()",
+      "link": "/en-US/docs/Web/API/AudioBuffer/AudioBuffer",
+      "description": "Creates and returns a new AudioBuffer object.",
+      "parameters": [
+        {
+          "name": "context ",
+          "description": "A reference to an AudioContext. This parameter was removed from the spec. See the Browser Compatibility section for details."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: length: The length in sample frames of the buffer. numberOfChannels: The number of channels for the buffer. The default is 1.  sampleRate: The sample rate in Hz for the buffer. The default is the sample rate of the context used in constructing this object."
+        }
+      ]
+    },
+    {
+      "name": "AudioBuffer.sampleRate",
+      "link": "/en-US/docs/Web/API/AudioBuffer/sampleRate",
+      "description": "Returns a float representing the sample rate, in samples per second, of the PCM data stored in the buffer."
+    },
+    {
+      "name": "AudioBuffer.length",
+      "link": "/en-US/docs/Web/API/AudioBuffer/length",
+      "description": "Returns an integer representing the length, in sample-frames, of the PCM data stored in the buffer."
+    },
+    {
+      "name": "AudioBuffer.duration",
+      "link": "/en-US/docs/Web/API/AudioBuffer/duration",
+      "description": "Returns a double representing the duration, in seconds, of the PCM data stored in the buffer."
+    },
+    {
+      "name": "AudioBuffer.numberOfChannels",
+      "link": "/en-US/docs/Web/API/AudioBuffer/numberOfChannels",
+      "description": "Returns an integer representing the number of discrete audio channels described by the PCM data stored in the buffer."
+    },
+    {
+      "name": "AudioBuffer.getChannelData()",
+      "link": "/en-US/docs/Web/API/AudioBuffer/getChannelData",
+      "description": "Returns a Float32Array containing the PCM data associated with the channel, defined by the channel parameter (with 0 representing the first channel).",
+      "parameters": [
+        {
+          "name": "channel",
+          "description": "The channel property is an index representing the particular channel to get data for. An index value of 0 represents the first channel. If the channel index value is greater than of equal to AudioBuffer.numberOfChannels, an INDEX_SIZE_ERR exception will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "AudioBuffer.copyFromChannel()",
+      "link": "/en-US/docs/Web/API/AudioBuffer/copyFromChannel",
+      "description": "Copies the samples from the specified channel of the AudioBuffer to the destination array.",
+      "parameters": [
+        {
+          "name": "destination",
+          "description": "A Float32Array to copy the channel data to."
+        },
+        {
+          "name": "channelNumber",
+          "description": "The channel number of the current AudioBuffer to copy the channel data from. If channelNumber is greater than or equal to AudioBuffer.numberOfChannels, an INDEX_SIZE_ERR will be thrown."
+        },
+        {
+          "name": "startInChannel Optional",
+          "description": "An optional offset to copy the data from. If startInChannel is greater than AudioBuffer.length, an INDEX_SIZE_ERR will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "AudioBuffer.copyToChannel()",
+      "link": "/en-US/docs/Web/API/AudioBuffer/copyToChannel",
+      "description": "Copies the samples to the specified channel of the AudioBuffer, from the source array.",
+      "parameters": [
+        {
+          "name": "source",
+          "description": "A Float32Array that the channel data will be copied from."
+        },
+        {
+          "name": "channelNumber",
+          "description": "The channel number of the current AudioBuffer to copy the channel data to. If channelNumber is greater than or equal to AudioBuffer.numberOfChannels, an INDEX_SIZE_ERR will be thrown."
+        },
+        {
+          "name": "startInChannel Optional",
+          "description": "An optional offset to copy the data to. If startInChannel is greater than AudioBuffer.length, an INDEX_SIZE_ERR will be thrown."
+        }
+      ]
+    }
+  ]
+}

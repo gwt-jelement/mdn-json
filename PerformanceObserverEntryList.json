@@ -1,0 +1,43 @@
+{
+  "name": "PerformanceObserverEntryList",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The PerformanceObserverEntryList interface is a list of peformance events that were explicitly observed via the observe() method.",
+  "members": [
+    {
+      "name": "PerformanceObserverEntryList.getEntries()",
+      "link": "/en-US/docs/Web/API/PerformanceObserverEntryList/getEntries",
+      "description": "Returns a list of explicitly observed PerformanceEntry objects based on the given filter.",
+      "parameters": [
+        {
+          "name": "PerformanceEntryFilterOptionsOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "PerformanceObserverEntryList.getEntriesByType()",
+      "link": "/en-US/docs/Web/API/PerformanceObserverEntryList/getEntriesByType",
+      "description": "Returns a list of explicitly observed PerformanceEntry objects of the given entry type.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of entry to retrieve such as \"frame\". The valid entry types are listed in PerformanceEntry.entryType."
+        }
+      ]
+    },
+    {
+      "name": "PerformanceObserverEntryList.getEntriesByName()",
+      "link": "/en-US/docs/Web/API/PerformanceObserverEntryList/getEntriesByName",
+      "description": "Returns a list of explicitly observed PerformanceEntry objects based on the given name and entry type.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A DOMString representing the name of the entry to retrieve."
+        },
+        {
+          "name": "type Optional",
+          "description": "A DOMString representing the type of entry to retrieve such as \"mark\". The valid entry types are listed in PerformanceEntry.entryType."
+        }
+      ]
+    }
+  ]
+}

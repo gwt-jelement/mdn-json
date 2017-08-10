@@ -1,0 +1,22 @@
+{
+  "name": "AmbientLightSensor",
+  "description": "",
+  "members": [
+    {
+      "name": "AmbientLightSensor.AmbientLightSensor()",
+      "link": "/en-US/docs/Web/API/AmbientLightSensor/AmbientLightSensor",
+      "description": "Creates a new AmbientLightSensor object.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: frequency:  TBD"
+        }
+      ]
+    },
+    {
+      "name": "AmbientLightSensor.reading",
+      "link": "/en-US/docs/Web/API/AmbientLightSensor/reading",
+      "description": "Returns an AmbientLightSensorReading interface, containing the current light level."
+    }
+  ]
+}

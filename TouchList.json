@@ -1,0 +1,47 @@
+{
+  "name": "TouchList",
+  "description": "The TouchList interface represents a list of contact points with a touch surface; for example, if the user has three fingers on the touch surface (such as a screen or trackpad), the corresponding TouchList object would have one Touch object for each finger, for a total of three entries.",
+  "members": [
+    {
+      "name": "TouchList.length",
+      "link": "/en-US/docs/Web/API/TouchList/length",
+      "description": "The number of Touch objects in the TouchList.",
+      "parameters": [
+        {
+          "name": "numTouches",
+          "description": "The number of touch points in touchList."
+        }
+      ]
+    },
+    {
+      "name": "TouchList.identifiedTouch()",
+      "link": "/en-US/docs/Web/API/TouchList/identifiedTouch",
+      "description": "Returns the first Touch item in the list whose identifier matches a specified value.",
+      "parameters": [
+        {
+          "name": "id",
+          "description": "An integer value identifying the Touch object to retrieve from the list."
+        },
+        {
+          "name": "touchItem",
+          "description": "A Touch object matching the specified id."
+        }
+      ]
+    },
+    {
+      "name": "TouchList.item()",
+      "link": "/en-US/docs/Web/API/TouchList/item",
+      "description": "Returns the Touch object at the specified index in the list.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "The index of the Touch object to retrieve. The index is a number in the range of 0 to one less than the length of the TouchList."
+        },
+        {
+          "name": "touchPoint",
+          "description": "The requested Touch object from the TouchList. Returns null if the index is not less than the length of the list."
+        }
+      ]
+    }
+  ]
+}

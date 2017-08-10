@@ -1,0 +1,56 @@
+{
+  "name": "URLUtilsReadOnly",
+  "description": "",
+  "members": [
+    {
+      "name": "URLUtilsReadOnly.href",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/href",
+      "description": "Is a DOMString containing the whole URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.protocol",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/protocol",
+      "description": "Is a DOMString containing the protocol scheme of the URL, including the final \u0027:\u0027."
+    },
+    {
+      "name": "URLUtilsReadOnly.host",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/host",
+      "description": "Is a DOMString containing the host, that is the hostname, a \u0027:\u0027, and the port of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.hostname",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/hostname",
+      "description": "Is a DOMString containing the domain of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.origin",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/origin",
+      "description": "Returns a DOMString containing the canonical form of the origin of the specific location."
+    },
+    {
+      "name": "URLUtilsReadOnly.port",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/port",
+      "description": "Is a DOMString containing the port number of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.pathname",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/pathname",
+      "description": "Is a DOMString containing an initial \u0027/\u0027 followed by the path of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.search",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/search",
+      "description": "Is a DOMString containing a \u0027?\u0027 followed by the parameters of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.hash",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/hash",
+      "description": "Is a DOMString containing a \u0027#\u0027 followed by the fragment identifier of the URL."
+    },
+    {
+      "name": "URLUtilsReadOnly.toString()",
+      "link": "/en-US/docs/Web/API/URLUtilsReadOnly/toString",
+      "description": "Returns a DOMString containing the whole URL. It is a synonym for URLUtilsReadOnly.href."
+    }
+  ]
+}

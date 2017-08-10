@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedTransformList",
+  "description": "SVG animated transform list interface The SVGAnimatedTransformList interface is used for attributes which take a list of numbers and which can be animated.",
+  "members": []
+}

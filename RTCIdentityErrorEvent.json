@@ -1,0 +1,21 @@
+{
+  "name": "RTCIdentityErrorEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCIdentityErrorEvent.idp",
+      "link": "/en-US/docs/Web/API/RTCIdentityErrorEvent/idp",
+      "description": "Is a DOMString describing the domain name of the identity provider (idp) generating the error response."
+    },
+    {
+      "name": "RTCIdentityErrorEvent.loginUrl",
+      "link": "/en-US/docs/Web/API/RTCIdentityErrorEvent/loginUrl",
+      "description": "Is a DOMString giving the URL where the user can complete the authentication. It can be null and is provided by the identity provider (idp)."
+    },
+    {
+      "name": "RTCIdentityErrorEvent.protocol",
+      "link": "/en-US/docs/Web/API/RTCIdentityErrorEvent/protocol",
+      "description": "Is a DOMString describing the Idp protocol in use."
+    }
+  ]
+}

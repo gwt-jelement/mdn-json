@@ -1,0 +1,480 @@
+{
+  "name": "HTMLIFrameElement",
+  "description": "The HTMLIFrameElement interface provides special properties and methods (beyond those of the HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of inline frame elements.",
+  "members": [
+    {
+      "name": "HTMLIFrameElement.align",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/align",
+      "description": "Is a DOMString that specifies the alignment of the frame with respect to the surrounding context."
+    },
+    {
+      "name": "HTMLIFrameElement.allowfullscreen",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/allowfullscreen",
+      "description": "Is a Boolean indicating whether the inline frame is willing to be placed into full screen mode. See Using full-screen mode for details."
+    },
+    {
+      "name": "HTMLIFrameElement.allowPaymentRequest",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/allowPaymentRequest",
+      "description": "Is a Boolean indicating whether the Payment Request API may be invoked inside a cross-origin iframe."
+    },
+    {
+      "name": "HTMLIFrameElement.contentDocument",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/contentDocument",
+      "description": "Returns a Document, the active document in the inline frame\u0027s nested browsing context."
+    },
+    {
+      "name": "HTMLIFrameElement.contentWindow",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/contentWindow",
+      "description": "Returns a WindowProxy, the window proxy for the nested browsing context."
+    },
+    {
+      "name": "HTMLIFrameElement.frameBorder",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/frameBorder",
+      "description": "Is a DOMString that indicates whether to create borders between frames."
+    },
+    {
+      "name": "HTMLIFrameElement.height",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/height",
+      "description": "Is a DOMString that reflects the height HTML attribute, indicating the height of the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.longDesc",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/longDesc",
+      "description": "Is a DOMString that contains the URI of a long description of the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.marginHeight",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/marginHeight",
+      "description": "Is a DOMString being the height of the frame margin."
+    },
+    {
+      "name": "HTMLIFrameElement.marginWidth",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/marginWidth",
+      "description": "Is a DOMString being the width of the frame margin."
+    },
+    {
+      "name": "HTMLIFrameElement.name",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/name",
+      "description": "Is a DOMString that reflects the name HTML attribute, containing a name by which to refer to the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.referrerPolicy",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/referrerPolicy",
+      "description": "Is a DOMString that reflects the referrerpolicy HTML attribute indicating which referrer to use when fetching the linked resource."
+    },
+    {
+      "name": "HTMLIFrameElement.sandbox",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/sandbox",
+      "description": "Is a DOMSettableTokenList that reflects the sandbox HTML attribute, indicating extra restrictions on the behavior of the nested content."
+    },
+    {
+      "name": "HTMLIFrameElement.scrolling",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/scrolling",
+      "description": "Is a DOMString that indicates whether the browser should provide scrollbars for the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.src",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/src",
+      "description": "Is a DOMString that reflects the src HTML attribute, containing the address of the content to be embedded."
+    },
+    {
+      "name": "HTMLIFrameElement.srcdoc",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/srcdoc",
+      "description": "Is a DOMString that represents the content to display in the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.width",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/width",
+      "description": "Is a DOMString that reflects the width HTML attribute, indicating the width of the frame."
+    },
+    {
+      "name": "HTMLIFrameElement.reload()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/reload",
+      "description": "Allows reloading of the \u003ciframe\u003e element content.",
+      "parameters": [
+        {
+          "name": "hardReload Optional",
+          "description": "A boolean that indicates whether all the resources to reload must be revalidated (true) or may be taken directly from the browser cache (false)."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.stop()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/stop",
+      "description": "Allows stopping of the \u003ciframe\u003e\u0027s content loading."
+    },
+    {
+      "name": "HTMLIFrameElement.getCanGoBack()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getCanGoBack",
+      "description": "Indicates whether it\u0027s possible to navigate backwards."
+    },
+    {
+      "name": "HTMLIFrameElement.goBack()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/goBack",
+      "description": "Changes the location of the \u003ciframe\u003e for the previous location in its browsing history."
+    },
+    {
+      "name": "HTMLIFrameElement.getCanGoForward()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getCanGoForward",
+      "description": "Indicates whether it\u0027s possible to navigate forward."
+    },
+    {
+      "name": "HTMLIFrameElement.goForward()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/goForward",
+      "description": "Changes the location of the \u003ciframe\u003e for the next location in its browsing history."
+    },
+    {
+      "name": "HTMLIFrameElement.executeScript()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/executeScript",
+      "description": "Allows a specified script to be executed against a page loaded in the browser \u003ciframe\u003e.",
+      "parameters": [
+        {
+          "name": "script",
+          "description": "The script to be executed."
+        },
+        {
+          "name": "options Optional",
+          "description": "Optionally, you can provide an origin or URL for the script to be executed against. It\u0027s recommended that you include an origin or URL, in order to ensure that the script is being executed in the expected context: origin: an origin, e.g. http://example.com url: a URL, e.g. http://example.com/index.html"
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.purgeHistory()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/purgeHistory",
+      "description": "Clears all the resources (cookies, localStorage, cache, etc.) associated with the browser \u003ciframe\u003e."
+    },
+    {
+      "name": "HTMLIFrameElement.setVisible()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/setVisible",
+      "description": "Changes the visibility state of a browser \u003ciframe\u003e. This can influence resource allocation and some function usage such as requestAnimationFrame.",
+      "parameters": [
+        {
+          "name": "visible",
+          "description": "A Boolean that indicates if the browser \u003ciframe\u003e visible state is true or false."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.getVisible()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getVisible",
+      "description": "Indicates the current visibility state of the browser \u003ciframe\u003e."
+    },
+    {
+      "name": "HTMLIFrameElement.setActive()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/setActive",
+      "description": "Sets the current \u003ciframe\u003e as the active frame, which has an effect on how it is prioritized by the process manager.",
+      "parameters": [
+        {
+          "name": "boolean",
+          "description": "A Boolean that indicates whether the iframe is to be the active frame (true) or not (false)."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.getActive()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getActive",
+      "description": "Indicates whether the current browser \u003ciframe\u003e is the currently active frame."
+    },
+    {
+      "name": "HTMLIFrameElement.getVolume()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getVolume",
+      "description": "Gets the current volume of the browser \u003ciframe\u003e."
+    },
+    {
+      "name": "HTMLIFrameElement.setVolume()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/setVolume",
+      "description": "Sets the current volume of the browser \u003ciframe\u003e.",
+      "parameters": [
+        {
+          "name": "number",
+          "description": "A floating point number representing the volume you want to set — this can have a value between 0 and 1."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.mute()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/mute",
+      "description": "Mutes any audio playing in the browser \u003ciframe\u003e."
+    },
+    {
+      "name": "HTMLIFrameElement.unmute()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/unmute",
+      "description": "Unmutes any audio playing in the browser \u003ciframe\u003e."
+    },
+    {
+      "name": "HTMLIFrameElement.getMuted()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getMuted",
+      "description": "Indicates whether the browser \u003ciframe\u003e is currently muted."
+    },
+    {
+      "name": "HTMLIFrameElement.findAll()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/findAll",
+      "description": "Searches for a string in a browser \u003ciframe\u003e\u0027s content; if found, the first instance of the string relative to the caret position will be highlighted.",
+      "parameters": [
+        {
+          "name": "searchString",
+          "description": "The string you want to search for in the browser \u003ciframe\u003e\u0027s text."
+        },
+        {
+          "name": "caseSensitivity",
+          "description": "A string to declare whether you want the search to be case sensitive (case-sensitive) or insensitive (case-insensitive.)"
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.findNext()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/findNext",
+      "description": "Highlights the next or previous instance of a search result after a findAll() search has been carried out.",
+      "parameters": [
+        {
+          "name": "direction",
+          "description": "A string indicating the direction in which you want to cycle through the available search results. Available values are forward and backward."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.clearMatch()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/clearMatch",
+      "description": "Clears any content highlighted by findAll() or findNext()."
+    },
+    {
+      "name": "\u003ciframe\u003e",
+      "link": "/en-US/docs/Web/HTML/Element/iframe",
+      "description": "addEventListener(), removeEventListener(), and dispatchEvent().",
+      "parameters": [
+        {
+          "name": "align Deprecated since HTML4.01, Obsolete since HTML5",
+          "description": "The alignment of this element with respect to the surrounding context."
+        },
+        {
+          "name": "allowfullscreen",
+          "description": "This attribute can be set to true if the frame is allowed to be placed into full screen mode by calling its Element.requestFullscreen() method. If this isn\u0027t set, the element can\u0027t be placed into full screen mode."
+        },
+        {
+          "name": "allowpaymentrequest",
+          "description": "This attribute can be set to true if the contents of a cross-origin \u003ciframe\u003e should be allowed to invoke the Payment Request API."
+        },
+        {
+          "name": "frameborder HTML 4 only",
+          "description": "The value 1 (the default) tells the browser to draw a border between this frame and every other frame. The value 0 tells the browser not to draw a border between this frame and other frames."
+        },
+        {
+          "name": "height",
+          "description": "Indicates the height of the frame HTML5 in CSS pixels, or HTML 4.01 in pixels or as a percentage."
+        },
+        {
+          "name": "longdesc HTML 4 only",
+          "description": "A URI of a long description of the frame. Due to widespread misuse, this is not helpful for non-visual browsers."
+        },
+        {
+          "name": "marginheight HTML 4 only",
+          "description": "The amount of space in pixels between the frame\u0027s content and its top and bottom margins."
+        },
+        {
+          "name": "marginwidth HTML 4 only",
+          "description": "The amount of space in pixels between the frame\u0027s content and its left and right margins."
+        },
+        {
+          "name": "mozallowfullscreen",
+          "description": "Use allowfullscreen instead. In Gecko 9.0 or later, this attribute can be set to true if the frame is allowed to be placed into full screen mode by calling its element.mozRequestFullScreen() method. If this isn\u0027t set, the element can\u0027t be placed into full screen mode."
+        },
+        {
+          "name": "webkitallowfullscreen",
+          "description": "Use allowfullscreen instead. In Chrome 17 or later (and maybe earlier), this attribute can be set to true if the frame is allowed to be placed into full screen mode by calling its element.webkitRequestFullScreen() method. If this isn\u0027t set, the element can\u0027t be placed into full screen mode."
+        },
+        {
+          "name": "mozbrowser Only available on Firefox OS",
+          "description": "Indicates that the frame is to appear like a top-level browser window to the embedded content. This means that window.top, window.parent, window.frameElement, etc. will not reflect the frame hierarchy. This allows for a web browser UI to be implemented entirely with web technology, given the right permissions. See Using the Browser API for details. Available in Gecko 13.0 and later."
+        },
+        {
+          "name": "name",
+          "description": "A name for the embedded browsing context (or frame). This can be used as the value of the target attribute of an \u003ca\u003e or \u003cform\u003e element, or the formtarget attribute of an \u003cinput\u003e or \u003cbutton\u003e element."
+        },
+        {
+          "name": "referrerpolicy",
+          "description": "A string indicating which referrer to use when fetching the resource: \"no-referrer\" meaning that the Referer: header will not be sent. \"no-referrer-when-downgrade\" meaning that no Referer: header will be sent when navigating to an origin without TLS (HTTPS). This is a user agent’s default behavior, if no policy is otherwise specified. \"origin\" meaning that the referrer will be the origin of the page, that is roughly the scheme, the host and the port. \"origin-when-cross-origin\" meaning that navigations to other origins will be limited to the scheme, the host and the port, while navigations on the same origin will include the referrer\u0027s path. \"unsafe-url\" meaning that the referrer will include the origin and the path (but not the fragment, password, or username). This case is unsafe because it can leak origins and paths from TLS-protected resources to insecure origins."
+        },
+        {
+          "name": "remote Only available on Firefox OS",
+          "description": "Load the frame\u0027s page in a separate content process."
+        },
+        {
+          "name": "scrolling HTML 4 only",
+          "description": "Enumerated attribute indicating when the browser should provide a scroll bar (or other scrolling device) for the frame: auto: Only when needed. yes: Always provide a scroll bar. no: Never provide a scroll bar."
+        },
+        {
+          "name": "sandbox HTML5 only",
+          "description": "If specified as an empty string, this attribute enables extra restrictions on the content that can appear in the inline frame. The value of the attribute can either be an empty string (all the restrictions are applied), or a space-separated list of tokens that lift particular restrictions. Valid tokens are: allow-forms: Allows the embedded browsing context to submit forms. If this keyword is not used, this operation is not allowed. allow-modals: Allows the embedded browsing context to open modal windows. allow-orientation-lock: Allows the embedded browsing context to disable the ability to lock the screen orientation. allow-pointer-lock: Allows the embedded browsing context to use the Pointer Lock API. allow-popups: Allows popups (like from window.open, target\u003d\"_blank\", showModalDialog). If this keyword is not used, that functionality will silently fail. allow-popups-to-escape-sandbox:  Allows a sandboxed document to open new windows without forcing the sandboxing flags upon them. This will allow, for example, a third-party advertisement to be safely sandboxed without forcing the same restrictions upon a landing page. allow-presentation: Allows embedders to have control over whether an iframe can start a presentation session. allow-same-origin: Allows the content to be treated as being from its normal origin. If this keyword is not used, the embedded content is treated as being from a unique origin. allow-scripts: Allows the embedded browsing context to run scripts (but not create pop-up windows). If this keyword is not used, this operation is not allowed. allow-top-navigation: Allows the embedded browsing context to navigate (load) content to the top-level browsing context. If this keyword is not used, this operation is not allowed. allow-top-navigation-by-user-activation: Allows the embedded browsing context to navigate (load) content to the top-level browsing context only when initiated by a user gesture. If this keyword is not used, this operation is not allowed. Note: When the embedded document has the same origin as the main page, it is strongly discouraged to use both allow-scripts and allow-same-origin at the same time, as that allows the embedded document to programmatically remove the sandbox attribute. Although it is accepted, this case is no more secure than not using the sandbox attribute. Sandboxing in general is only of minimal help if the attacker can arrange for the potentially hostile content to be displayed in the user\u0027s browser outside a sandboxed iframe. It is recommended that such content should be served from a separate dedicated domain, to limit the potential damage. The sandbox attribute is not supported in Internet Explorer 9 and earlier versions."
+        },
+        {
+          "name": "src",
+          "description": "The URL of the page to embed. Use \u0027about:blank\u0027 for empty pages that conform to Same-Origin Policy."
+        },
+        {
+          "name": "srcdoc HTML5 only",
+          "description": "The content of the page that the embedded context is to contain. This attribute is expected to generally be used together with the sandbox attribute. If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present). If a browser does NOT support the srcdoc attribute, it will show the file specified in the src attribute instead (if present). Note that if the content of the attribute contains a script tag then a closing script tag is required for the script to run, even if nothing else comes after the script."
+        },
+        {
+          "name": "width",
+          "description": "Indicates the width of the frame HTML5 in CSS pixels, or HTML 4.01 in pixels or as a percentage."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.sendMouseEvent()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/sendMouseEvent",
+      "description": "Sends a MouseEvent to the \u003ciframe\u003e\u0027s content.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the event type. Possible values are mousedown, mouseup, mousemove, mouseover, mouseout, or contextmenu."
+        },
+        {
+          "name": "x",
+          "description": "A number representing the x position of the cursor relative to the browser \u003ciframe\u003e\u0027s visible area in CSS pixels."
+        },
+        {
+          "name": "y",
+          "description": "A number representing the y position of the cursor relative to the browser \u003ciframe\u003e\u0027s visible area in CSS pixels."
+        },
+        {
+          "name": "button",
+          "description": "A number representing which button has been pressed on the mouse: 0 (Left button), 1 (middle button), or 2 (right button)."
+        },
+        {
+          "name": "clickCount",
+          "description": "The number of clicks that should be performed."
+        },
+        {
+          "name": "modifiers",
+          "description": "A number representing a key pressed at the same time the mouse button was clicked: 1 :  Alt 2 :  Ctrl 4 :  Shift 8 :  Meta 16 :  Alt Gr 32 :  Caps Lock 64 :  Fn 128 :  Num Lock 256 :  Scroll 512 :  Symbol Lock 1024 :  Win Note: You can specify multiple key modifiers separated by a pipe symbol, for example 1 | 1014."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.sendTouchEvent()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/sendTouchEvent",
+      "description": "Sends a TouchEvent to the \u003ciframe\u003e\u0027s content. Note that this method is available for touch enabled devices only.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the event type. Possible values are touchstart, touchend, touchmove, or touchcancel."
+        },
+        {
+          "name": "x",
+          "description": "An array of numbers representing the x position of each touch point relative to the browser \u003ciframe\u003e\u0027s visible area in CSS pixels."
+        },
+        {
+          "name": "y",
+          "description": "An array of numbers representing the y position of each touch point relative to the browser \u003ciframe\u003e\u0027s visible area in CSS pixels."
+        },
+        {
+          "name": "rx",
+          "description": "An array of numbers representing the x radius of each touch point in CSS pixels."
+        },
+        {
+          "name": "ry",
+          "description": "An array of numbers representing the y radius of each touch point in CSS pixels."
+        },
+        {
+          "name": "rotationAngles",
+          "description": "An array of numbers representing the angle of each touch point in degrees."
+        },
+        {
+          "name": "forces",
+          "description": "An array of numbers representing the intensity of each touch in the range 0–1."
+        },
+        {
+          "name": "count",
+          "description": "The number of touches that should be performed."
+        },
+        {
+          "name": "modifiers",
+          "description": "A number representing a key pressed at the same time the mouse button was clicked: 1 :  Alt 2 :  Ctrl 4 :  Shift 8 :  Meta 16 :  Alt Gr 32 :  Caps Lock 64 :  Fn 128 :  Num Lock 256 :  Scroll 512 :  Symbol Lock 1024 :  Win Note: You can specify multiple key modifiers separated by a pipe symbol, for example 1 | 1014."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.addNextPaintListener()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/addNextPaintListener",
+      "description": "Defines a handler to listen for the next MozAfterPaint event in the browser \u003ciframe\u003e.",
+      "parameters": [
+        {
+          "name": "listener",
+          "description": "A function handler to listen for a MozAfterPaint event."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.removeNextPaintListener()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/removeNextPaintListener",
+      "description": "Removes a handler previously set with addNextPaintListener().",
+      "parameters": [
+        {
+          "name": "listener",
+          "description": "A function handler previously set with addNextPaintListener."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.download()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/download",
+      "description": "Downloads a specified URL, storing it at the specified filename/path.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The URL of the file to be downloaded."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object allowing optional settings to be specified for the download. The available options are: filename: The filename to save the downloaded file as. If this is not specified, the filename used will be the original filename, as specified in the url. referrer: Specifies a referrer for the downloaded file. If this is not specified there will be no referrer."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.getContentDimensions()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getContentDimensions",
+      "description": "Retrieves the X and Y dimensions of the content window."
+    },
+    {
+      "name": "HTMLIFrameElement.getManifest()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getManifest",
+      "description": "Retrieves the manifest of an app loaded in the browser \u003ciframe\u003e and returns it as JSON."
+    },
+    {
+      "name": "HTMLIFrameElement.getScreenshot()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getScreenshot",
+      "description": "Takes a screenshot of the browser \u003ciframe\u003e\u0027s content. This is particularly useful to get thumbnails of tabs in a tabbed browser app.",
+      "parameters": [
+        {
+          "name": "maxWidth",
+          "description": "A number representing the maximum width of the screenshot in device pixels."
+        },
+        {
+          "name": "maxHeight",
+          "description": "A number representing the maximum height of the screenshot in device pixels."
+        },
+        {
+          "name": "mimeType Optional",
+          "description": "A MIME type specifying the format of the image to be returned; if not specified, the default used is image/jpeg. Use image/png to capture the alpha channel of the rendered result by returning a PNG-format image. This lets you get a transparent background for the content \u003ciframe\u003e."
+        }
+      ]
+    },
+    {
+      "name": "HTMLIFrameElement.getStructuredData()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/getStructuredData",
+      "description": "Retrieves any structured microdata (and hCard and hCalendar microformat data) contained in the HTML loaded in the browser \u003ciframe\u003e and returns it as JSON."
+    },
+    {
+      "name": "HTMLIFrameElement.zoom()",
+      "link": "/en-US/docs/Web/API/HTMLIFrameElement/zoom",
+      "description": "Changes the zoom factor of the browser \u003ciframe\u003e\u0027s content. This is particularly useful for zooming in/out on non-touch-enabled devices.",
+      "parameters": [
+        {
+          "name": "zoomFactor",
+          "description": "A unitless number value representing the amount to zoom in or out. It acts like a percentage, so for example 1.1 would zoom in by 10%, whereas 0.9 would zoom out by 10%."
+        }
+      ]
+    }
+  ]
+}

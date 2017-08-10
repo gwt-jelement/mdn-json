@@ -1,0 +1,101 @@
+{
+  "name": "DOMMatrixReadOnly",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMMatrixReadOnly.is2D",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/is2D",
+      "description": "Is a Boolean indicating if the matrix contains a 2D matrix and only accept 2D transformations."
+    },
+    {
+      "name": "DOMMatrixReadOnly.isIdentity",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/isIdentity",
+      "description": "Is a Boolean indincating if the matrix identity, that is a matrix with 1 on the components of its diagonal, and 0 elsewhere."
+    },
+    {
+      "name": "DOMMatrixReadOnly.translate()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/translate",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the matrix being translated by the given vector. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.scale()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/scale",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the matrix x and y dimensions being scaled by the given factor, centered on the origin given. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.scale3d()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/scale3d",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the matrix x, y and z dimension being scaled by the given factor, centered on the origin given. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.scaleNonUniform()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/scaleNonUniform",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the matrix x, y and z dimension being scaled by the given factor for each dimension, centered on the origin given. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.rotate()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/rotate",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being rotated by the given angle, with the rotation centered on the origin given. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.rotateFromVector()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/rotateFromVector",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being rotated by the angle between the given vector and (1,0), centered on the origin given. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.rotateAxisAngle()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/rotateAxisAngle",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being rotated by the given angle and the give vector. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.skewX()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/skewX",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being skewed along the x-axis by the given factor. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.skewY()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/skewY",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being skewed along the y-axis by the given factor. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.multiply()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/multiply",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being multiplied by the given DOMMatrix. The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.flipX()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/flipX",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being flipped around the x-axis, that is multiplied by the DOMMatrix(-1, 0, 0, 1, 0, 0). The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.flipY()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/flipY",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being flipped around the y-axis, that is multiplied by the DOMMatrix(1, 0, 0, -1, 0, 0). The original matrix is not modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.inverse()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/inverse",
+      "description": "Returns a DOMMatrix containing a new matrix being the result of the original matrix being inverted. The original matrix is not modified. If the matrix cannot be inverted, all its components are set to NaN and is2D() returns false."
+    },
+    {
+      "name": "DOMMatrixReadOnly.transformPoint()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/transformPoint",
+      "description": "Returns a DOMPoint that is the point given in parameter multiplied by the matrix. But the original point and the matrix aren\u0027t modified."
+    },
+    {
+      "name": "DOMMatrixReadOnly.toFloat32Array()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/toFloat32Array",
+      "description": "Returns a Float32Array containing the 6 components (a, b, c, d, e, f) in the case of a 2D matrix or the 16 components (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44) for a 3D matrix."
+    },
+    {
+      "name": "DOMMatrixReadOnly.toFloat64Array()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/toFloat64Array",
+      "description": "Returns a Float64Array containing the 6 components (a, b, c, d, e, f) in the case of a 2D matrix or the 16 components (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44) for a 3D matrix."
+    },
+    {
+      "name": "DOMMatrixReadOnly.toString()",
+      "link": "/en-US/docs/Web/API/DOMMatrixReadOnly/toString",
+      "description": "Returns a DOMString containing the 6 components separated by a \u0027,\u0027 and prefixed by the CSS matrix functional notation, as \u0027matrix (a, b, c, d, e, f)\u0027, in the case of a 2D matrix or matrix3d functional notation and the 16 components,\u0027matrix3d(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44)\u0027, for a 3D matrix."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "SpeechSynthesisErrorEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechSynthesisErrorEvent.error",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisErrorEvent/error",
+      "description": "Returns an error code indicating what has gone wrong with a speech synthesis attempt.",
+      "parameters": [
+        {
+          "name": "canceled",
+          "description": "A SpeechSynthesis.cancel method call caused the SpeechSynthesisUtterance to be removed from the queue before it had begun being spoken."
+        },
+        {
+          "name": "interrupted",
+          "description": "A SpeechSynthesis.cancel method call caused the SpeechSynthesisUtterance to be interrupted after it had begun being spoken and before it completed."
+        },
+        {
+          "name": "audio-busy",
+          "description": "The operation couldn\u0027t be completed at this time because the user-agent couldn\u0027t access the audio output device (for example, the user may need to correct this by closing another application.)"
+        },
+        {
+          "name": "audio-hardware",
+          "description": "The operation couldn\u0027t be completed at this time because the user-agent couldn\u0027t identify an audio output device (for example, the user may need to connect a speaker or configure system settings.)"
+        },
+        {
+          "name": "network",
+          "description": "The operation couldn\u0027t be completed at this time because some required network communication failed."
+        },
+        {
+          "name": "synthesis-unavailable",
+          "description": "The operation couldn\u0027t be completed at this time because no synthesis engine was available (For example, the user may need to install or configure a synthesis engine.)"
+        },
+        {
+          "name": "synthesis-failed",
+          "description": "The operation failed because the synthesis engine raised an error."
+        },
+        {
+          "name": "language-unavailable",
+          "description": "No appropriate voice was available for the language set in SpeechSynthesisUtterance.lang."
+        },
+        {
+          "name": "voice-unavailable",
+          "description": "The voice set in SpeechSynthesisUtterance.voice was not available."
+        },
+        {
+          "name": "text-too-long",
+          "description": "The contents of the SpeechSynthesisUtterance.text attribute was too long to synthesize."
+        },
+        {
+          "name": "invalid-argument",
+          "description": "The content of the SpeechSynthesisUtterance.rate, SpeechSynthesisUtterance.pitch or SpeechSynthesisUtterance.volume property was not valid."
+        }
+      ]
+    }
+  ]
+}

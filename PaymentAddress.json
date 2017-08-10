@@ -1,0 +1,66 @@
+{
+  "name": "PaymentAddress",
+  "description": "",
+  "members": [
+    {
+      "name": "PaymentAddress.country",
+      "link": "/en-US/docs/Web/API/PaymentAddress/country",
+      "description": "The Common Locale Data Repository region code. For example, US, GB, CN, etc."
+    },
+    {
+      "name": "PaymentAddress.addressLine",
+      "link": "/en-US/docs/Web/API/PaymentAddress/addressLine",
+      "description": "An array of strings describing the address. The exact size and content varies by country or location and can include, for example, a street name, house number, apartment number, rural delivery route, descriptive instructions, or post office box number."
+    },
+    {
+      "name": "PaymentAddress.region",
+      "link": "/en-US/docs/Web/API/PaymentAddress/region",
+      "description": "The top level administrative subdivision of the country, for example, a state, province, oblast, or prefecture."
+    },
+    {
+      "name": "PaymentAddress.city",
+      "link": "/en-US/docs/Web/API/PaymentAddress/city",
+      "description": "The city or town portion of the address."
+    },
+    {
+      "name": "PaymentAddress.dependentLocality",
+      "link": "/en-US/docs/Web/API/PaymentAddress/dependentLocality",
+      "description": "The dependent locality or sublocality within a city, for example, a neighborhood, borough, district, or UK dependent locality."
+    },
+    {
+      "name": "PaymentAddress.postalCode",
+      "link": "/en-US/docs/Web/API/PaymentAddress/postalCode",
+      "description": "A code used by a jurisdiction for mail routing, for example, the ZIP code in the United States or the PIN code in India."
+    },
+    {
+      "name": "PaymentAddress.sortingCode",
+      "link": "/en-US/docs/Web/API/PaymentAddress/sortingCode",
+      "description": "A postal sorting code such as is used in France."
+    },
+    {
+      "name": "PaymentAddress.languageCode",
+      "link": "/en-US/docs/Web/API/PaymentAddress/languageCode",
+      "description": "The BCP-47 language code for the address, used to determine the field separators and the order of fields when formatting the address for display."
+    },
+    {
+      "name": "PaymentAddress.organization",
+      "link": "/en-US/docs/Web/API/PaymentAddress/organization",
+      "description": "The name of the organization, firm, company, or institution at the payment address."
+    },
+    {
+      "name": "PaymentAddress.recipient",
+      "link": "/en-US/docs/Web/API/PaymentAddress/recipient",
+      "description": "The name of the recipient, purchaser, or contact person at the payment address."
+    },
+    {
+      "name": "PaymentAddress.careOf",
+      "link": "/en-US/docs/Web/API/PaymentAddress/careOf",
+      "description": "The name of an intermediary party or entity responsible for transferring packages between the postal service and the recipient."
+    },
+    {
+      "name": "PaymentAddress.phone",
+      "link": "/en-US/docs/Web/API/PaymentAddress/phone",
+      "description": "The telephone number of the recipient or contact person."
+    }
+  ]
+}

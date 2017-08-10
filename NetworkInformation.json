@@ -1,0 +1,21 @@
+{
+  "name": "NetworkInformation",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The NetworkInformation interface provides information about the connection a device is using to commuinicate with the network and provides a means for scripts to be notified if the connection type changes. The NetworkInformation interfaces cannot be instantiated. It is instead accessed through the connection property of the Navigator interface.",
+  "members": [
+    {
+      "name": "NetworkInformation.type",
+      "link": "/en-US/docs/Web/API/NetworkInformation/type",
+      "description": "Returns the type of connection a device is using to communicate with the network. It will be one of the following values: bluetooth cellular ethernet none wifi wimax other unknown"
+    },
+    {
+      "name": "NetworkInformation.downlinkMax",
+      "link": "/en-US/docs/Web/API/NetworkInformation/downlinkMax",
+      "description": "Returns the maximum downlink speed, in megabits per second (Mbps), for the underlying connection technology."
+    },
+    {
+      "name": "NetworkInformation.onchange",
+      "link": "/en-US/docs/Web/API/NetworkInformation/onchange",
+      "description": "The event that\u0027s fired when connection information changes and the change is fired on this object."
+    }
+  ]
+}

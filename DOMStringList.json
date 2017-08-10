@@ -1,0 +1,21 @@
+{
+  "name": "DOMStringList",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMStringList.length",
+      "link": "/en-US/docs/Web/API/DOMStringList/length",
+      "description": "Returns the length of the list,"
+    },
+    {
+      "name": "DOMStringList.item()",
+      "link": "/en-US/docs/Web/API/DOMStringList/item",
+      "description": "Returns a DOMString."
+    },
+    {
+      "name": "DOMStringList.contains()",
+      "link": "/en-US/docs/Web/API/DOMStringList/contains",
+      "description": "Returns Boolean indicating if the given string is in the list"
+    }
+  ]
+}

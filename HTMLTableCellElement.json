@@ -1,0 +1,71 @@
+{
+  "name": "HTMLTableCellElement",
+  "description": "The HTMLTableCellElement interface provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of table cells, either header or data cells, in an HTML document.",
+  "members": [
+    {
+      "name": "HTMLTableCellElement.colSpan",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/colSpan",
+      "description": "Is a unsigned long that represents the number of columns this cell must span. It reflects the colspan attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.rowSpan",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/rowSpan",
+      "description": "Is a unsigned long that represents the number of rows this cell must span. It reflects the rowspan attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.headers",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/headers",
+      "description": "Is a DOMSettableTokenList describing a list of id of \u003cth\u003e elements that represents headers associated with the cell. It reflects the headers attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.cellIndex",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/cellIndex",
+      "description": "Is a long representing the cell position in the cells collection of the \u003ctr\u003e it belongs to. If the cell doesn\u0027t belong to a \u003ctr\u003e, it returns -1."
+    },
+    {
+      "name": "HTMLTableCellElement.align",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/align",
+      "description": "Is a DOMString containing an enumerated value reflecting the align attribute. It indicates the alignment of the element\u0027s contents with respect to the surrounding context. The possible values are \"left\", \"right\", and \"center\"."
+    },
+    {
+      "name": "HTMLTableCellElement.bgColor",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/bgColor",
+      "description": "Is a DOMString containing the background color of the cells. It reflects the obsolete bgcolor attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.axis",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/axis",
+      "description": "Is a DOMString containing a name grouping cells in virtual. It reflects the obsolete axis attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.height",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/height",
+      "description": "Is a DOMString containing a length of pixel of the hinted height of the cell. It reflects the obsolete height attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.width",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/width",
+      "description": "Is a DOMString containing a length of pixel of the hinted width of the cell. It reflects the obsolete width attribute."
+    },
+    {
+      "name": "HTMLTableCellElement.ch",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/ch",
+      "description": "Is a DOMString containing one single chararcter. This character is the one to align all the cell of a column on. It reflects the char and default to the decimal points associated with the language, e.g. \u0027.\u0027 for English, or \u0027,\u0027 for French. This property was optional and was not very well supported."
+    },
+    {
+      "name": "HTMLTableCellElement.chOff",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/chOff",
+      "description": "Is a DOMString containing a integer indicating how many characters must be left at the right (for left-to-right scripts; or at the left for right-to-left scripts) of the character defined by HTMLTableCellElement.ch. This property was optional and was not very well supported."
+    },
+    {
+      "name": "HTMLTableCellElement.noWrap",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/noWrap",
+      "description": "Is a Boolean value reflecting the nowrap attribute and indicating if cell content can be broken in several lines."
+    },
+    {
+      "name": "HTMLTableCellElement.vAlign",
+      "link": "/en-US/docs/Web/API/HTMLTableCellElement/vAlign",
+      "description": "Is a DOMString representing an enumerated value indicating how the content of the cell must be vertically aligned. It reflects the valign attribute and can have one of the following values: \"top\", \"middle\", \"bottom\", or \"baseline\"."
+    }
+  ]
+}

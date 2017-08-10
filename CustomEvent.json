@@ -1,0 +1,183 @@
+{
+  "name": "CustomEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "CustomEvent()",
+      "link": "/en-US/docs/Web/API/CustomEvent/CustomEvent",
+      "description": "Creates a CustomEvent.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "customEventInitOptional",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "CustomEvent.detail",
+      "link": "/en-US/docs/Web/API/CustomEvent/detail",
+      "description": "Any data passed when initializing the event."
+    },
+    {
+      "name": "Event.bubbles",
+      "link": "/en-US/docs/Web/API/Event/bubbles",
+      "description": "A Boolean indicating whether the event bubbles up through the DOM or not."
+    },
+    {
+      "name": "Event.cancelBubble",
+      "link": "/en-US/docs/Web/API/Event/cancelBubble",
+      "description": "A historical alias to Event.stopPropagation(). Setting its value to true before returning from an event handler prevents propagation of the event."
+    },
+    {
+      "name": "Event.cancelable",
+      "link": "/en-US/docs/Web/API/Event/cancelable",
+      "description": "A Boolean indicating whether the event is cancelable."
+    },
+    {
+      "name": "Event.composed",
+      "link": "/en-US/docs/Web/API/Event/composed",
+      "description": "A Boolean value indicating whether or not the event can bubble across the boundary between the shadow DOM and the regular DOM."
+    },
+    {
+      "name": "Event.currentTarget",
+      "link": "/en-US/docs/Web/API/Event/currentTarget",
+      "description": "A reference to the currently registered target for the event. This is the object to which the event is currently slated to be sent to; it\u0027s possible this has been changed along the way through retargeting."
+    },
+    {
+      "name": "Event.deepPath",
+      "link": "/en-US/docs/Web/API/Event/deepPath",
+      "description": "An Array of DOM Nodes through which the event has bubbled."
+    },
+    {
+      "name": "Event.defaultPrevented",
+      "link": "/en-US/docs/Web/API/Event/defaultPrevented",
+      "description": "Indicates whether or not event.preventDefault() has been called on the event."
+    },
+    {
+      "name": "Event.eventPhase",
+      "link": "/en-US/docs/Web/API/Event/eventPhase",
+      "description": "Indicates which phase of the event flow is being processed."
+    },
+    {
+      "name": "Event.explicitOriginalTarget",
+      "link": "/en-US/docs/Web/API/Event/explicitOriginalTarget",
+      "description": "The explicit original target of the event (Mozilla-specific)."
+    },
+    {
+      "name": "Event.originalTarget",
+      "link": "/en-US/docs/Web/API/Event/originalTarget",
+      "description": "The original target of the event, before any retargetings (Mozilla-specific)."
+    },
+    {
+      "name": "Event.returnValue",
+      "link": "/en-US/docs/Web/API/Event/returnValue",
+      "description": "A non-standard alternative (from old versions of Microsoft Internet Explorer) to Event.preventDefault() and Event.defaultPrevented."
+    },
+    {
+      "name": "Event.scoped",
+      "link": "/en-US/docs/Web/API/Event/scoped",
+      "description": "A Boolean indicating whether the given event will bubble across through the shadow root into the standard DOM. This property has been renamed to composed."
+    },
+    {
+      "name": "Event.srcElement",
+      "link": "/en-US/docs/Web/API/Event/srcElement",
+      "description": "A non-standard alias (from old versions of Microsoft Internet Explorer) for Event.target."
+    },
+    {
+      "name": "Event.target",
+      "link": "/en-US/docs/Web/API/Event/target",
+      "description": "A reference to the target to which the event was originally dispatched."
+    },
+    {
+      "name": "Event.timeStamp",
+      "link": "/en-US/docs/Web/API/Event/timeStamp",
+      "description": "The time at which the event was created, in milliseconds. By specification, this value is time since epoch, but in reality browsers\u0027 definitions vary; in addition, work is underway to change this to be a DOMHighResTimeStamp instead."
+    },
+    {
+      "name": "Event.type",
+      "link": "/en-US/docs/Web/API/Event/type",
+      "description": "The name of the event (case-insensitive)."
+    },
+    {
+      "name": "Event.isTrusted",
+      "link": "/en-US/docs/Web/API/Event/isTrusted",
+      "description": "Indicates whether or not the event was initiated by the browser (after a user click for instance) or by a script (using an event creation method, like event.initEvent)"
+    },
+    {
+      "name": "CustomEvent.initCustomEvent()",
+      "link": "/en-US/docs/Web/API/CustomEvent/initCustomEvent",
+      "description": "Initializes a CustomEvent object. If the event has already being dispatched, this method does nothing.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString containing the name of the event."
+        },
+        {
+          "name": "canBubble",
+          "description": "Is a Boolean indicating whether the event bubbles up through the DOM or not."
+        },
+        {
+          "name": "cancelable",
+          "description": "Is a Boolean indicating whether the event is cancelable."
+        },
+        {
+          "name": "detail",
+          "description": "The data passed when initializing the event."
+        }
+      ]
+    },
+    {
+      "name": "Event.initEvent()",
+      "link": "/en-US/docs/Web/API/Event/initEvent",
+      "description": "Initializes the value of an Event created. If the event has already being dispatched, this method does nothing.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString defining the type of event."
+        },
+        {
+          "name": "bubbles",
+          "description": "Is a Boolean deciding whether the event should bubble up through the event chain or not. Once set, the read-only property Event.bubbles will give its value."
+        },
+        {
+          "name": "cancelable",
+          "description": "Is a Boolean defining whether the event can be canceled. Once set, the read-only property Event.cancelable will give its value."
+        }
+      ]
+    },
+    {
+      "name": "Event.preventBubble()",
+      "link": "/en-US/docs/Web/API/Event/preventBubble",
+      "description": "Prevents the event from bubbling. Obsolete, use event.stopPropagation instead."
+    },
+    {
+      "name": "Event.preventCapture()",
+      "link": "/en-US/docs/Web/API/Event/preventCapture",
+      "description": "Obsolete, use event.stopPropagation instead."
+    },
+    {
+      "name": "Event.preventDefault()",
+      "link": "/en-US/docs/Web/API/Event/preventDefault",
+      "description": "Cancels the event (if it is cancelable)."
+    },
+    {
+      "name": "Event.stopImmediatePropagation()",
+      "link": "/en-US/docs/Web/API/Event/stopImmediatePropagation",
+      "description": "For this particular event, no other listener will be called. Neither those attached on the same element, nor those attached on elements which will be traversed later (in capture phase, for instance)"
+    },
+    {
+      "name": "Event.stopPropagation()",
+      "link": "/en-US/docs/Web/API/Event/stopPropagation",
+      "description": "Stops the propagation of events further along in the DOM."
+    },
+    {
+      "name": "Event.getPreventDefault()",
+      "link": "/en-US/docs/Web/API/Event/getPreventDefault",
+      "description": "Non-standard. Returns the value of Event.defaultPrevented. Use Event.defaultPrevented instead."
+    }
+  ]
+}

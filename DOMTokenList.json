@@ -1,0 +1,143 @@
+{
+  "name": "DOMTokenList",
+  "description": "The DOMTokenList interface represents a set of space-separated tokens. Such a set is returned by Element.classList, HTMLLinkElement.relList, HTMLAnchorElement.relList or HTMLAreaElement.relList. It is indexed beginning with 0 as with JavaScript Array objects. DOMTokenList is always case-sensitive.",
+  "members": [
+    {
+      "name": "DOMTokenList.length",
+      "link": "/en-US/docs/Web/API/DOMTokenList/length",
+      "description": "Is an integer representing the number of objects stored in the object."
+    },
+    {
+      "name": "DOMTokenList.value",
+      "link": "/en-US/docs/Web/API/DOMTokenList/value",
+      "description": "Returns the value of the list as a DOMString."
+    },
+    {
+      "name": "DOMTokenList.item()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/item",
+      "description": "Returns an item in the list by its index (returns undefined if the number is greater than or equal to the length of the list).",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A DOMString representing the index of the item you want to return."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.contains()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/contains",
+      "description": "Returns true if the list contains the given token, otherwise false.",
+      "parameters": [
+        {
+          "name": "token",
+          "description": "A DOMString representing the token you want to check for the existance of in the list."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.add()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/add",
+      "description": "Adds the given token to the list.",
+      "parameters": [
+        {
+          "name": "token",
+          "description": "A DOMString representing the token you want to add to the list."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.remove()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/remove",
+      "description": "Removes the specified token from the list.",
+      "parameters": [
+        {
+          "name": "token",
+          "description": "A DOMString representing the token you want to remove from the list. If the string does not exist in the list, no error is thrown, and nothing happens."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.replace()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/replace",
+      "description": "Replaces an existing token with a new token.",
+      "parameters": [
+        {
+          "name": "oldToken",
+          "description": "A DOMString representing the token you want to replace."
+        },
+        {
+          "name": "newToken",
+          "description": "A DOMString representing the token you want to replace oldToken with."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.supports()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/supports",
+      "description": "Returns true if a given token is in the associated attribute\u0027s supported tokens.",
+      "parameters": [
+        {
+          "name": "token",
+          "description": "A DOMString containing the token to query for."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.toggle()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/toggle",
+      "description": "Removes a given token from the list and returns false. If token doesn\u0027t exist it\u0027s added and the function returns true.",
+      "parameters": [
+        {
+          "name": "token",
+          "description": "A DOMString representing the token you want to toggle."
+        },
+        {
+          "name": "force Optional",
+          "description": "A Boolean that, if included, turns the toggle into a one way-only operation. If set to false, the token will only be removed but not added again. If set to true, the token will only be added but not removed again."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.entries()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/entries",
+      "description": "Returns an iterator allowing you to go through all key/value pairs contained in this object."
+    },
+    {
+      "name": "DOMTokenList.forEach()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/forEach",
+      "description": "Executes a provided function once per DOMTokenList element.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "Function to execute for each element, eventually taking three arguments: currentValue The current element being processed in the array. currentIndex The index of the current element being processed in the array. listObj The array that forEach() is being applied to."
+        },
+        {
+          "name": "currentValue",
+          "description": "The current element being processed in the array."
+        },
+        {
+          "name": "currentIndex",
+          "description": "The index of the current element being processed in the array."
+        },
+        {
+          "name": "listObj",
+          "description": "The array that forEach() is being applied to."
+        },
+        {
+          "name": "argument Optional",
+          "description": "Value to use as this when executing callback."
+        }
+      ]
+    },
+    {
+      "name": "DOMTokenList.keys()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/keys",
+      "description": "Returns an iterator allowing you to go through all keys of the key/value pairs contained in this object."
+    },
+    {
+      "name": "DOMTokenList.values()",
+      "link": "/en-US/docs/Web/API/DOMTokenList/values",
+      "description": "Returns an iterator allowing you to go through all values of the key/value pairs contained in this object."
+    }
+  ]
+}

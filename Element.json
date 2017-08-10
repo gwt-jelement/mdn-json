@@ -1,0 +1,664 @@
+{
+  "name": "Element",
+  "description": "",
+  "members": [
+    {
+      "name": "Element.assignedSlot",
+      "link": "/en-US/docs/Web/API/Element/assignedSlot",
+      "description": "Returns the HTMLSlotElement interface associated with the element."
+    },
+    {
+      "name": "Element.attributes",
+      "link": "/en-US/docs/Web/API/Element/attributes",
+      "description": "Returns a NamedNodeMap object containing the assigned attributes of the corresponding HTML element."
+    },
+    {
+      "name": "Element.classList",
+      "link": "/en-US/docs/Web/API/Element/classList",
+      "description": "Returns a DOMTokenList containing the list of class attributes.",
+      "parameters": [
+        {
+          "name": "add( String [, String] )",
+          "description": "Add specified class values. If these classes already exist in attribute of the element, then they are ignored."
+        },
+        {
+          "name": "remove( String [, String] )",
+          "description": "Remove specified class values. Note: Removing a class that does not exist, does NOT throw an error."
+        },
+        {
+          "name": "item( Number )",
+          "description": "Return class value by index in collection."
+        },
+        {
+          "name": "toggle( String [, force] )",
+          "description": "When only one argument is present: Toggle class value; i.e., if class exists then remove it and return false, if not, then add it and return true. When a second argument is present: If the second argument evaluates to true, add specified class value, and if it evaluates to false, remove it."
+        },
+        {
+          "name": "contains( String )",
+          "description": "Checks if specified class value exists in class attribute of the element."
+        },
+        {
+          "name": "replace( oldClass, newClass )",
+          "description": "Replaces an existing class with a new class."
+        }
+      ]
+    },
+    {
+      "name": "Element.className",
+      "link": "/en-US/docs/Web/API/Element/className",
+      "description": "Is a DOMString representing the class of the element."
+    },
+    {
+      "name": "Element.clientHeight",
+      "link": "/en-US/docs/Web/API/Element/clientHeight",
+      "description": "Returns a Number representing the inner height of the element."
+    },
+    {
+      "name": "Element.clientLeft",
+      "link": "/en-US/docs/Web/API/Element/clientLeft",
+      "description": "Returns a Number representing the width of the left border of the element."
+    },
+    {
+      "name": "Element.clientTop",
+      "link": "/en-US/docs/Web/API/Element/clientTop",
+      "description": "Returns a Number representing the width of the top border of the element."
+    },
+    {
+      "name": "Element.clientWidth",
+      "link": "/en-US/docs/Web/API/Element/clientWidth",
+      "description": "Returns a Number representing the inner width of the element."
+    },
+    {
+      "name": "Element.computedName",
+      "link": "/en-US/docs/Web/API/Element/computedName",
+      "description": "Returns a DOMString containing the label exposed to accessibility."
+    },
+    {
+      "name": "Element.computedRole",
+      "link": "/en-US/docs/Web/API/Element/computedRole",
+      "description": "Returns a DOMString containing the ARIA role that has been applied to a particular element. "
+    },
+    {
+      "name": "Element.id",
+      "link": "/en-US/docs/Web/API/Element/id",
+      "description": "Is a DOMString representing the id of the element."
+    },
+    {
+      "name": "Element.innerHTML",
+      "link": "/en-US/docs/Web/API/Element/innerHTML",
+      "description": "Is a DOMString representing the markup of the element\u0027s content."
+    },
+    {
+      "name": "Element.localName",
+      "link": "/en-US/docs/Web/API/Element/localName",
+      "description": "A DOMString representing the local part of the qualified name of the element."
+    },
+    {
+      "name": "Element.namespaceURI",
+      "link": "/en-US/docs/Web/API/Element/namespaceURI",
+      "description": "The namespace URI of the element, or null if it is no namespace. Note: In Firefox 3.5 and earlier, HTML elements are in no namespace. In later versions, HTML elements are in the http://www.w3.org/1999/xhtml namespace in both HTML and XML trees."
+    },
+    {
+      "name": "NonDocumentTypeChildNode.nextElementSibling",
+      "link": "/en-US/docs/Web/API/NonDocumentTypeChildNode/nextElementSibling",
+      "description": "Is a Element, the element immediately following the given one in the tree, or null if there\u0027s no sibling node."
+    },
+    {
+      "name": "Element.outerHTML",
+      "link": "/en-US/docs/Web/API/Element/outerHTML",
+      "description": "Is a DOMString representing the markup of the element including its content. When used as a setter, replaces the element with nodes parsed from the given string."
+    },
+    {
+      "name": "Element.prefix",
+      "link": "/en-US/docs/Web/API/Element/prefix",
+      "description": "A DOMString representing the namespace prefix of the element, or null if no prefix is specified."
+    },
+    {
+      "name": "NonDocumentTypeChildNode.previousElementSibling",
+      "link": "/en-US/docs/Web/API/NonDocumentTypeChildNode/previousElementSibling",
+      "description": "Is a Element, the element immediately preceding the given one in the tree, or null if there is no sibling element."
+    },
+    {
+      "name": "Element.scrollHeight",
+      "link": "/en-US/docs/Web/API/Element/scrollHeight",
+      "description": "Returns a Number representing the scroll view height of an element."
+    },
+    {
+      "name": "Element.scrollLeft",
+      "link": "/en-US/docs/Web/API/Element/scrollLeft",
+      "description": "Is a Number representing the left scroll offset of the element."
+    },
+    {
+      "name": "Element.scrollLeftMax",
+      "link": "/en-US/docs/Web/API/Element/scrollLeftMax",
+      "description": "Returns a Number representing the maximum left scroll offset possible for the element."
+    },
+    {
+      "name": "Element.scrollTop",
+      "link": "/en-US/docs/Web/API/Element/scrollTop",
+      "description": "Is a Number representing the top scroll offset the element."
+    },
+    {
+      "name": "Element.scrollTopMax",
+      "link": "/en-US/docs/Web/API/Element/scrollTopMax",
+      "description": "Returns a Number representing the maximum top scroll offset possible for the element."
+    },
+    {
+      "name": "Element.scrollWidth",
+      "link": "/en-US/docs/Web/API/Element/scrollWidth",
+      "description": "Returns a Number representing the scroll view width of the element."
+    },
+    {
+      "name": "Element.shadowRoot",
+      "link": "/en-US/docs/Web/API/Element/shadowRoot",
+      "description": "Returns the youngest shadow root that is hosted by the element."
+    },
+    {
+      "name": "Element.slot",
+      "link": "/en-US/docs/Web/API/Element/slot",
+      "description": "Returns the name of the shadow DOM slot attached to the element. A slot is a placeholder inside a web component that users can fill with their own markup."
+    },
+    {
+      "name": "Element.tabStop",
+      "link": "/en-US/docs/Web/API/Element/tabStop",
+      "description": "Is a Boolean indicating if the element can receive input focus via the tab key."
+    },
+    {
+      "name": "Element.tagName",
+      "link": "/en-US/docs/Web/API/Element/tagName",
+      "description": "Returns a String with the name of the tag for the given element."
+    },
+    {
+      "name": "Element.undoManager",
+      "link": "/en-US/docs/Web/API/Element/undoManager",
+      "description": "Returns the UndoManager associated with the element."
+    },
+    {
+      "name": "Element.undoScope",
+      "link": "/en-US/docs/Web/API/Element/undoScope",
+      "description": "Is a Boolean indicating if the element is an undo scope host, or not."
+    },
+    {
+      "name": "Element.ongotpointercapture",
+      "link": "/en-US/docs/Web/API/Element/ongotpointercapture",
+      "description": "Returns the event handler for the gotpointercapture event type.",
+      "parameters": [
+        {
+          "name": "gotCaptureHandler",
+          "description": "The gotpointercapture event handler for element target."
+        }
+      ]
+    },
+    {
+      "name": "Element.onlostpointercapture",
+      "link": "/en-US/docs/Web/API/Element/onlostpointercapture",
+      "description": "Returns the event handler for the lostpointercapture event type.",
+      "parameters": [
+        {
+          "name": "lostCaptureHandler",
+          "description": "The lostpointercapture event handler for element target."
+        }
+      ]
+    },
+    {
+      "name": "Element.onwheel",
+      "link": "/en-US/docs/Web/API/Element/onwheel",
+      "description": "Returns the event handling code for the wheel event. This is now implemented on GlobalEventHandlers."
+    },
+    {
+      "name": "EventTarget.addEventListener()",
+      "link": "/en-US/docs/Web/API/EventTarget/addEventListener",
+      "description": "Registers an event handler to a specific event type on the element.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the event type to listen for."
+        },
+        {
+          "name": "listener",
+          "description": "The object which receives a notification (an object that implements the Event interface) when an event of the specified type occurs. This must be an object implementing the EventListener interface, or a JavaScript function."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   once: A Boolean indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. See Improving scrolling performance with passive listeners to learn more. mozSystemGroup: A Boolean indicating that the listener should be added to the system group. Available only in code running in XBL or in Firefox\u0027s chrome."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree. Events that are bubbling upward through the tree will not trigger a listener designated to use capture. Event bubbling and capturing are two ways of propagating events which occur in an element that is nested within another element, when both elements have registered a handle for that event. The event propagation mode determines the order in which elements receive the event. See DOM Level 3 Events and JavaScript Event order for a detailed explanation. If not specified, useCapture defaults to false."
+        },
+        {
+          "name": "wantsUntrusted",
+          "description": "A Firefox (Gecko)-specific parameter. If true, the listener receives synthetic events dispatched by web content (the default is false for chrome and true for regular web pages). This parameter is useful for code found in add-ons as well as the browser itself. See Interaction between privileged and non-privileged pages for an example."
+        }
+      ]
+    },
+    {
+      "name": "Element.attachShadow()",
+      "link": "/en-US/docs/Web/API/Element/attachShadow",
+      "description": "Attatches a shadow DOM tree to the specified element and returns a reference to its ShadowRoot.",
+      "parameters": [
+        {
+          "name": "shadowRootInit",
+          "description": "A ShadowRootInit dictionary, having the following field: mode: A string specifying the encapsulation mode for the shadow DOM tree. One of: open. Specifies open encapsulation mode. closed. Specifies closed encapsulation mode."
+        }
+      ]
+    },
+    {
+      "name": "Element.animate()",
+      "link": "/en-US/docs/Web/API/Element/animate",
+      "description": "A shortcut method to create and run an animation on an element. Returns the created Animation object instance.",
+      "parameters": [
+        {
+          "name": "keyframes",
+          "description": "An Object formatted to represent a set of keyframes."
+        },
+        {
+          "name": "options",
+          "description": "Either an integer representing the animation\u0027s duration (in milliseconds), or an Object containing one or more timing properties: "
+        },
+        {
+          "name": "id Optional",
+          "description": "A property unique to animate(): a DOMString with which to reference the animation."
+        },
+        {
+          "name": "delay Optional",
+          "description": "The number of milliseconds to delay the start of the animation. Defaults to 0."
+        },
+        {
+          "name": "direction Optional",
+          "description": "Whether the animation runs forwards (normal), backwards (reverse), switches direction after each iteration (alternate), or runs backwards and switches direction after each iteration (alternate-reverse). Defaults to \"normal\"."
+        },
+        {
+          "name": "duration Optional",
+          "description": "The number of milliseconds each iteration of the animation takes to complete. Defaults to 0. Although this is technically optional, keep in mind that your animation will not run if this value is 0."
+        },
+        {
+          "name": "easing Optional",
+          "description": "The rate of the animation\u0027s change over time. Accepts the pre-defined values \"linear\", \"ease\", \"ease-in\", \"ease-out\", and \"ease-in-out\", or a custom \"cubic-bezier\" value like \"cubic-bezier(0.42, 0, 0.58, 1)\". Defaults to \"linear\"."
+        },
+        {
+          "name": "endDelay Optional",
+          "description": "The number of milliseconds to delay after the end of an animation. This is primarily of use when sequencing animations based on the end time of another animation. Defaults to 0. "
+        },
+        {
+          "name": "fill Optional",
+          "description": "Dictates whether the animation\u0027s effects should be reflected by the element(s) prior to playing (\"backwards\"), retained after the animation has completed playing (\"forwards\"), or both. Defaults to \"none\"."
+        },
+        {
+          "name": "iterationStart Optional",
+          "description": "Describes at what point in the iteration the animation should start. 0.5 would indicate starting halfway through the first iteration for example, and with this value set, an animation with 2 iterations would end halfway through a third iteration. Defaults to 0.0."
+        },
+        {
+          "name": "iterations Optional",
+          "description": "The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists."
+        },
+        {
+          "name": "composite Optional",
+          "description": "Determines how values are combined between this animation and other, separate animations that do not specify their own specific composite operation. Defaults to replace. add dictates an additive effect, where each successive iteration builds on the last. For instance with transform, a translateX(-200px) would not override an earlier rotate(20deg) value but result in translateX(-200px) rotate(20deg). accumulate is similar but a little smarter: blur(2) and blur(5) become blur(7), not blur(2) blur(5). replace overwrites the previous value with the new one. "
+        },
+        {
+          "name": "iterationComposite Optional",
+          "description": "Determines how values build from iteration to iteration in this animation. Can be set to accumulate or replace (see above). Defaults to replace."
+        },
+        {
+          "name": "spacing Optional",
+          "description": "Determines how keyframes without temporal offsets should be distributed during the animation\u0027s duration. Defaults to distribute. distribute positions keyframes so that the difference between subsequent keyframe offsets are equal, that is to say, without any offsets, it will equally distribute the keyframes across play time. paced positions keyframes so that the distance between subsequent values of a specified paced property are equal, that is to say, keyframes are spaced further apart the greater the difference in their property values.  "
+        }
+      ]
+    },
+    {
+      "name": "Element.closest()",
+      "link": "/en-US/docs/Web/API/Element/closest",
+      "description": "Returns the Element which is the closest ancestor of the current element (or the current element itself) which matches the selectors given in parameter."
+    },
+    {
+      "name": "Element.createShadowRoot()",
+      "link": "/en-US/docs/Web/API/Element/createShadowRoot",
+      "description": "Creates a shadow DOM on on the element, turning it into a shadow host. Returns a ShadowRoot."
+    },
+    {
+      "name": "EventTarget.dispatchEvent()",
+      "link": "/en-US/docs/Web/API/EventTarget/dispatchEvent",
+      "description": "Dispatches an event to this node in the DOM and returns a Boolean that indicates that at least one handler has not canceled it."
+    },
+    {
+      "name": "Element.find()",
+      "link": "/en-US/docs/Web/API/Element/find",
+      "description": "..."
+    },
+    {
+      "name": "Element.findAll()",
+      "link": "/en-US/docs/Web/API/Element/findAll",
+      "description": "..."
+    },
+    {
+      "name": "Element.getAnimations()",
+      "link": "/en-US/docs/Web/API/Element/getAnimations",
+      "description": "Returns an array of Animation objects currently active on the element."
+    },
+    {
+      "name": "Element.getAttribute()",
+      "link": "/en-US/docs/Web/API/Element/getAttribute",
+      "description": "Retrieves the value of the named attribute from the current node and returns it as an Object."
+    },
+    {
+      "name": "Element.getAttributeNames()",
+      "link": "/en-US/docs/Web/API/Element/getAttributeNames",
+      "description": "Returns an array of attribute names from the current element."
+    },
+    {
+      "name": "Element.getAttributeNS()",
+      "link": "/en-US/docs/Web/API/Element/getAttributeNS",
+      "description": "Retrieves the value of the attribute with the specified name and namespace, from the current node and returns it as an Object.",
+      "parameters": [
+        {
+          "name": "namespace",
+          "description": "The namespace in which to look for the specified attribute."
+        },
+        {
+          "name": "name",
+          "description": "The name of the attribute to look for."
+        }
+      ]
+    },
+    {
+      "name": "Element.getAttributeNode()",
+      "link": "/en-US/docs/Web/API/Element/getAttributeNode",
+      "description": "Retrieves the node representation of the named attribute from the current node and returns it as an Attr."
+    },
+    {
+      "name": "Element.getAttributeNodeNS()",
+      "link": "/en-US/docs/Web/API/Element/getAttributeNodeNS",
+      "description": "Retrieves the node representation of the attribute with the specified name and namespace, from the current node and returns it as an Attr."
+    },
+    {
+      "name": "Element.getBoundingClientRect()",
+      "link": "/en-US/docs/Web/API/Element/getBoundingClientRect",
+      "description": "..."
+    },
+    {
+      "name": "Element.getClientRects()",
+      "link": "/en-US/docs/Web/API/Element/getClientRects",
+      "description": "Returns a collection of rectangles that indicate the bounding rectangles for each line of text in a client."
+    },
+    {
+      "name": "Element.getElementsByClassName()",
+      "link": "/en-US/docs/Web/API/Element/getElementsByClassName",
+      "description": "Returns a live HTMLCollection that contains all descendants of the current element that possess the list of classes given in the parameter."
+    },
+    {
+      "name": "Element.getElementsByTagName()",
+      "link": "/en-US/docs/Web/API/Element/getElementsByTagName",
+      "description": "Returns a live HTMLCollection containing all descendant elements, of a particular tag name, from the current element."
+    },
+    {
+      "name": "Element.getElementsByTagNameNS()",
+      "link": "/en-US/docs/Web/API/Element/getElementsByTagNameNS",
+      "description": "Returns a live HTMLCollection containing all descendant elements, of a particular tag name and namespace, from the current element."
+    },
+    {
+      "name": "Element.hasAttribute()",
+      "link": "/en-US/docs/Web/API/Element/hasAttribute",
+      "description": "Returns a Boolean indicating if the element has the specified attribute or not.",
+      "parameters": [
+        {
+          "name": "result",
+          "description": "holds the return value true or false."
+        },
+        {
+          "name": "name",
+          "description": "is a string representing the name of the attribute."
+        }
+      ]
+    },
+    {
+      "name": "Element.hasAttributeNS()",
+      "link": "/en-US/docs/Web/API/Element/hasAttributeNS",
+      "description": "Returns a Boolean indicating if the element has the specified attribute, in the specified namespace, or not."
+    },
+    {
+      "name": "Element.hasAttributes()",
+      "link": "/en-US/docs/Web/API/Element/hasAttributes",
+      "description": "Returns a Boolean indicating if the element has one or more HTML attributes present.",
+      "parameters": [
+        {
+          "name": "result",
+          "description": "holds the return value true or false."
+        }
+      ]
+    },
+    {
+      "name": "Element.insertAdjacentElement",
+      "link": "/en-US/docs/Web/API/Element/insertAdjacentElement",
+      "description": "Inserts a given element node at a given position relative to the element it is invoked upon.",
+      "parameters": [
+        {
+          "name": "position",
+          "description": "A DOMString representing the position relative to the targetElement; must be one of the following strings: \u0027beforebegin\u0027: Before the element itself. \u0027afterbegin\u0027: Just inside the element, before its first child. \u0027beforeend\u0027: Just inside the element, after its last child. \u0027afterend\u0027: After the element itself."
+        },
+        {
+          "name": "element",
+          "description": "The element to be inserted into the tree."
+        }
+      ]
+    },
+    {
+      "name": "Element.insertAdjacentHTML",
+      "link": "/en-US/docs/Web/API/Element/insertAdjacentHTML",
+      "description": "Parses the text as HTML or XML and inserts the resulting nodes into the tree in the position given.",
+      "parameters": [
+        {
+          "name": "\u0027beforebegin\u0027",
+          "description": "Before the element itself."
+        },
+        {
+          "name": "\u0027afterbegin\u0027",
+          "description": "Just inside the element, before its first child."
+        },
+        {
+          "name": "\u0027beforeend\u0027",
+          "description": "Just inside the element, after its last child."
+        },
+        {
+          "name": "\u0027afterend\u0027",
+          "description": "After the element itself."
+        }
+      ]
+    },
+    {
+      "name": "Element.insertAdjacentText",
+      "link": "/en-US/docs/Web/API/Element/insertAdjacentText",
+      "description": "Inserts a given text node at a given position relative to the element it is invoked upon.",
+      "parameters": [
+        {
+          "name": "position",
+          "description": "A DOMString representing the position relative to the element; must be one of the following strings: \u0027beforebegin\u0027: Before the element itself. \u0027afterbegin\u0027: Just inside the element, before its first child. \u0027beforeend\u0027: Just inside the element, after its last child. \u0027afterend\u0027: After the element itself."
+        },
+        {
+          "name": "element",
+          "description": "A DOMString representing the text to be inserted into the tree."
+        }
+      ]
+    },
+    {
+      "name": "Element.matches()",
+      "link": "/en-US/docs/Web/API/Element/matches",
+      "description": "Returns a Boolean indicating whether or not the element would be selected by the specified selector string.",
+      "parameters": [
+        {
+          "name": "SYNTAX_ERR",
+          "description": "The specified selector string is invalid."
+        }
+      ]
+    },
+    {
+      "name": "Element.querySelector()",
+      "link": "/en-US/docs/Web/API/Element/querySelector",
+      "description": "Returns the first Node which matches the specified selector string relative to the element.",
+      "parameters": [
+        {
+          "name": "selectors",
+          "description": "A group of selectors to match the descendant elements of the Element baseElement against; this must be valid CSS syntax, or a SyntaxError exception will occur. The first element found which matches this group of selectors is returned."
+        },
+        {
+          "name": "SyntaxError",
+          "description": "The specified selectors are invalid."
+        }
+      ]
+    },
+    {
+      "name": "Element.querySelectorAll",
+      "link": "/en-US/docs/Web/API/Element/querySelectorAll",
+      "description": "Returns a NodeList of nodes which match the specified selector string relative to the element.",
+      "parameters": [
+        {
+          "name": "elementList",
+          "description": "is a non-live node list [ NodeList[elements] ] of element objects."
+        },
+        {
+          "name": "baseElement",
+          "description": "is an element object."
+        },
+        {
+          "name": "selectors",
+          "description": "is a group of selectors to match on or elements of the DOM. "
+        }
+      ]
+    },
+    {
+      "name": "Element.releasePointerCapture",
+      "link": "/en-US/docs/Web/API/Element/releasePointerCapture",
+      "description": "Releases (stops) pointer capture that was previously set for a specific pointer event.",
+      "parameters": [
+        {
+          "name": "pointerId",
+          "description": "The identifier for a pointer event."
+        }
+      ]
+    },
+    {
+      "name": "ChildNode.remove()",
+      "link": "/en-US/docs/Web/API/ChildNode/remove",
+      "description": "Removes the element from the children list of its parent."
+    },
+    {
+      "name": "Element.removeAttribute()",
+      "link": "/en-US/docs/Web/API/Element/removeAttribute",
+      "description": "Removes the named attribute from the current node."
+    },
+    {
+      "name": "Element.removeAttributeNS()",
+      "link": "/en-US/docs/Web/API/Element/removeAttributeNS",
+      "description": "Removes the attribute with the specified name and namespace, from the current node."
+    },
+    {
+      "name": "Element.removeAttributeNode()",
+      "link": "/en-US/docs/Web/API/Element/removeAttributeNode",
+      "description": "Removes the node representation of the named attribute from the current node."
+    },
+    {
+      "name": "EventTarget.removeEventListener()",
+      "link": "/en-US/docs/Web/API/EventTarget/removeEventListener",
+      "description": "Removes an event listener from the element.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string which specifies the type of event for which to remove an event."
+        },
+        {
+          "name": "listener",
+          "description": "The EventListener function of the event handler to remove from the event target."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean that indicates that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. mozSystemGroup: Available only in code running in XBL or in Firefox\u0027 chrome, it is a Boolean defining if the listener is added to the system group."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "Specifies whether the EventListener to be removed is registered as a capturing listener or not. If this parameter is absent, a default value of false is assumed."
+        }
+      ]
+    },
+    {
+      "name": "Element.requestFullscreen()",
+      "link": "/en-US/docs/Web/API/Element/requestFullscreen",
+      "description": "Asynchronously asks the browser to make the element full-screen."
+    },
+    {
+      "name": "Element.requestPointerLock()",
+      "link": "/en-US/docs/Web/API/Element/requestPointerLock",
+      "description": "Allows to asynchronously ask for the pointer to be locked on the given element."
+    },
+    {
+      "name": "Element.scrollIntoView()",
+      "link": "/en-US/docs/Web/API/Element/scrollIntoView",
+      "description": "Scrolls the page until the element gets into the view.",
+      "parameters": [
+        {
+          "name": "alignToTop Optional",
+          "description": "Is a Boolean value: If true, the top of the element will be aligned to the top of the visible area of the scrollable ancestor. This is the default value. If false, the bottom of the element will be aligned to the bottom of the visible area of the scrollable ancestor."
+        },
+        {
+          "name": "scrollIntoViewOptions Optional",
+          "description": "A Boolean or an object with the following options:"
+        }
+      ]
+    },
+    {
+      "name": "Element.setAttribute()",
+      "link": "/en-US/docs/Web/API/Element/setAttribute",
+      "description": "Sets the value of a named attribute of the current node.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A DOMString specifying the name of the attribute whose value is to be set. The attribute name is automatically converted to all lower-case when setAttribute() is called on an HTML element in an HTML document."
+        },
+        {
+          "name": "value",
+          "description": "A DOMString containing the value to assign to the attribute. Any non-string value specified is converted automatically into a string."
+        },
+        {
+          "name": "InvalidCharacterError",
+          "description": "The specified attribute name contains one or more characters which are not valid in attribute names."
+        }
+      ]
+    },
+    {
+      "name": "Element.setAttributeNS()",
+      "link": "/en-US/docs/Web/API/Element/setAttributeNS",
+      "description": "Sets the value of the attribute with the specified name and namespace, from the current node."
+    },
+    {
+      "name": "Element.setAttributeNode()",
+      "link": "/en-US/docs/Web/API/Element/setAttributeNode",
+      "description": "Sets the node representation of the named attribute from the current node."
+    },
+    {
+      "name": "Element.setAttributeNodeNS()",
+      "link": "/en-US/docs/Web/API/Element/setAttributeNodeNS",
+      "description": "Setw the node representation of the attribute with the specified name and namespace, from the current node."
+    },
+    {
+      "name": "Element.setCapture()",
+      "link": "/en-US/docs/Web/API/Element/setCapture",
+      "description": "Sets up mouse event capture, redirecting all mouse events to this element.",
+      "parameters": [
+        {
+          "name": "retargetToElement",
+          "description": "If true, all events are targeted directly to this element; if false, events can also fire at descendants of this element."
+        }
+      ]
+    },
+    {
+      "name": "Element.setPointerCapture()",
+      "link": "/en-US/docs/Web/API/Element/setPointerCapture",
+      "description": "Designates a specific element as the capture target of future pointer events.",
+      "parameters": [
+        {
+          "name": "pointerId",
+          "description": "The identifier for a pointer event."
+        }
+      ]
+    }
+  ]
+}

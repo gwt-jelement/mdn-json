@@ -1,0 +1,21 @@
+{
+  "name": "PresentationConnectionCloseEvent",
+  "description": "The PresentationConnectionCloseEvent interface of the Presentation API is fired on a PresentationConnection when it is closed.",
+  "members": [
+    {
+      "name": "PresentationConnectionCloseEvent.PresentationConnectionCloseEvent()",
+      "link": "/en-US/docs/Web/API/PresentationConnectionCloseEvent/PresentationConnectionCloseEvent",
+      "description": "Creates a new PresentationConnectionCloseEvent."
+    },
+    {
+      "name": "PresentationConnectionCloseEvent.message",
+      "link": "/en-US/docs/Web/API/PresentationConnectionCloseEvent/message",
+      "description": "A human-readable message that provides more information about why the connection was closed."
+    },
+    {
+      "name": "PresentationConnectionCloseEvent.reason",
+      "link": "/en-US/docs/Web/API/PresentationConnectionCloseEvent/reason",
+      "description": "Indicates why the connection was closed. This property takes one of the following values: error, closed, or wentaway."
+    }
+  ]
+}

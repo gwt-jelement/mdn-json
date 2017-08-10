@@ -1,0 +1,26 @@
+{
+  "name": "SpeechRecognitionEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognitionEvent.emma",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionEvent/emma",
+      "description": "Returns an Extensible MultiModal Annotation markup language (EMMA) — XML — representation of the result."
+    },
+    {
+      "name": "SpeechRecognitionEvent.interpretation",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionEvent/interpretation",
+      "description": "Returns the semantic meaning of what the user said."
+    },
+    {
+      "name": "SpeechRecognitionEvent.resultIndex",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionEvent/resultIndex",
+      "description": "Returns the lowest index value result in the SpeechRecognitionResultList \"array\" that has actually changed."
+    },
+    {
+      "name": "SpeechRecognitionEvent.results",
+      "link": "/en-US/docs/Web/API/SpeechRecognitionEvent/results",
+      "description": "Returns a SpeechRecognitionResultList object representing all the speech recognition results for the current session."
+    }
+  ]
+}

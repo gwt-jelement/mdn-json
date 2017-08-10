@@ -1,0 +1,32 @@
+{
+  "name": "PaymentRequestUpdateEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "PaymentRequestUpdateEvent()",
+      "link": "/en-US/docs/Web/API/PaymentRequestUpdateEvent/PaymentRequestUpdateEvent",
+      "description": "Creates a new PaymentRequestUpdateEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Must be \"paymentrequest\"."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: displayItems[]: An array of optional line items for the payment request that the user agent may display, such as product details, tax, and shipping. error: A message to display to the user when an invalid shipping options is passed to PaymentRequestUpdateEvent.updateWith(). modifiers: Modifiers for specific payment methods; for example, adjusting the total amount based on the payment method. shippingOptions: The shipping options the user may choose from. If this sequence is blank, it indicates the merchant cannot ship to the current shipping address. The default shipping option may be indicated in this sequence. total: The total amount of the payment request."
+        }
+      ]
+    },
+    {
+      "name": "PaymentRequestUpdateEvent.updateWith()",
+      "link": "/en-US/docs/Web/API/PaymentRequestUpdateEvent/updateWith",
+      "description": "Updates the details of an existing PaymentRequest.",
+      "parameters": [
+        {
+          "name": "options",
+          "description": "Options are as follows: displayItems[]: An array of optional line items for the payment request that the user agent may display, such as product details, tax, and shipping. error: A message to display to the user when an invalid shipping options is passed to PaymentRequestUpdateEvent.updateWith(). modifiers: Modifiers for specific payment methods; for example, adjusting the total amount based on the payment method. shippingOptions: The shipping options the user may choose from. If this sequence is blank, it indicates the merchant cannot ship to the current shipping address. The default shipping option may be indicated in this sequence. total: The total amount of the payment request."
+        }
+      ]
+    }
+  ]
+}

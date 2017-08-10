@@ -1,0 +1,26 @@
+{
+  "name": "MimeType",
+  "description": "",
+  "members": [
+    {
+      "name": "MimeType.type",
+      "link": "/en-US/docs/Web/API/MimeType/type",
+      "description": "Returns the MIME type of the associated plugin."
+    },
+    {
+      "name": "MimeType.description",
+      "link": "/en-US/docs/Web/API/MimeType/description",
+      "description": "Returns a description of the associated plugin or an empty string if there is none."
+    },
+    {
+      "name": "MimeType.suffixes",
+      "link": "/en-US/docs/Web/API/MimeType/suffixes",
+      "description": "A string containing valid file extensions for the data displayed by the plugin, or an empty string if an extension is not valid for the particular module. For example, a browser\u0027s content decryption module may appear in the plugin list, but support more file extenions than can be anticipated. It might therefore return an empty string."
+    },
+    {
+      "name": "MimeType.enabledPlugin",
+      "link": "/en-US/docs/Web/API/MimeType/enabledPlugin",
+      "description": "Returns an instance of Plugin containing information about the plugin itself."
+    }
+  ]
+}

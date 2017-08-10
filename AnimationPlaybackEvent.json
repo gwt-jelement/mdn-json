@@ -1,0 +1,43 @@
+{
+  "name": "AnimationPlaybackEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "AnimationPlaybackEvent.AnimationPlaybackEvent()",
+      "link": "/en-US/docs/Web/API/AnimationPlaybackEvent/AnimationPlaybackEvent",
+      "description": "Constructs a new AnimationPlaybackEvent object instance.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString representing the name of the event."
+        },
+        {
+          "name": "eventInitDict Optional",
+          "description": "An optional EventInit dictionary object containing the following fields: bubbles Optional Defaults to false, of type Boolean, indicating if the event bubbles or not. cancelable Optional Defaults to false, of type Boolean, indicating if the event can be canceled or not. detail Optional Defaults to null, of type any — an event-dependent value associated with the event."
+        },
+        {
+          "name": "bubbles Optional",
+          "description": "Defaults to false, of type Boolean, indicating if the event bubbles or not."
+        },
+        {
+          "name": "cancelable Optional",
+          "description": "Defaults to false, of type Boolean, indicating if the event can be canceled or not."
+        },
+        {
+          "name": "detail Optional",
+          "description": "Defaults to null, of type any — an event-dependent value associated with the event."
+        }
+      ]
+    },
+    {
+      "name": "AnimationPlaybackEvent.currentTime",
+      "link": "/en-US/docs/Web/API/AnimationPlaybackEvent/currentTime",
+      "description": "The current time of the animation that generated the event."
+    },
+    {
+      "name": "AnimationPlaybackEvent.timelineTime",
+      "link": "/en-US/docs/Web/API/AnimationPlaybackEvent/timelineTime",
+      "description": "The time value of the timeline of the animation that generated the event."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "SVGClipPathElement",
+  "description": "The SVGClipPathElement interface provides access to the properties of \u003cclipPath\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGClipPathElement.clipPathUnits",
+      "link": "/en-US/docs/Web/API/SVGClipPathElement/clipPathUnits",
+      "description": "An SVGAnimatedEnumeration corresponding to the clipPathUnits attribute of the given \u003cclipPath\u003e element. Takes one of the constants defined in SVGUnitTypes."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "GlobalFetch",
+  "description": "Important: As of Firefox 52, the methods defined in this mixin have been moved to the WindowOrWorkerGlobalScope mixin, and other browsers will follow suit. Look to that page for up-to-date details. The GlobalFetch mixin of the Fetch API contains the GlobalFetch.fetch() method used to start the process of fetching a resource.",
+  "members": [
+    {
+      "name": "GlobalFetch.fetch()",
+      "link": "/en-US/docs/Web/API/GlobalFetch/fetch",
+      "description": "Starts the process of fetching a resource.",
+      "parameters": [
+        {
+          "name": "input",
+          "description": "This defines the resource that you wish to fetch. This can either be: A USVString containing the direct URL of the resource you want to fetch. Some browsers accept blob: and data: as schemes. A Request object."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the request. The possible options are: method: The request method, e.g., GET, POST. headers: Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. body: Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, or USVString object. Note that a request using the GET or HEAD method cannot have a body. mode: The mode you want to use for the request, e.g., cors, no-cors, or same-origin. credentials: The request credentials you want to use for the request: omit, same-origin, or include. To automatically send cookies for the current domain, this option must be provided. Starting with Chrome 50, this property also takes a FederatedCredential instance or a PasswordCredential instance. cache: The cache mode you want to use for the request: default, no-store, reload, no-cache, force-cache, or only-if-cached. redirect: The redirect mode to use: follow (automatically follow redirects), error (abort with an error if a redirect occurs), or manual (handle redirects manually). In Chrome the default was follow before Chrome 47 and manual starting with Chrome 47. referrer: A USVString specifying no-referrer, client, or a URL. The default is client. referrerPolicy: Specifies the value of the referer HTTP header. May be one of no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url. integrity: Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d). signal: A FetchSignal object instance; allows you to communicate with a fetch request and control it via a FetchController. observe: An ObserverCallback object — this object\u0027s sole purpose is to provide a callback function that runs when the fetch request runs. This returns a FetchObserver object that can be used to retrieve information concerning the status of a fetch request."
+        }
+      ]
+    }
+  ]
+}

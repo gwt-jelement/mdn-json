@@ -1,0 +1,11 @@
+{
+  "name": "AnimationTimeline",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The AnimationTimeline interface of the Web Animations API represents the timeline of an animation. This interface exists to define timeline features (inherited by DocumentTimeline and future timeline types) and is not itself directly used by developers. Anywhere you see AnimationTimeline, you should use DocumentTimeline or any other timeline type instead.",
+  "members": [
+    {
+      "name": "AnimationTimeline.currentTime",
+      "link": "/en-US/docs/Web/API/AnimationTimeline/currentTime",
+      "description": "Returns the time value in milliseconds for this timeline or null if this timeline is inactive."
+    }
+  ]
+}

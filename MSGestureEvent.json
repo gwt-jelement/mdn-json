@@ -1,0 +1,66 @@
+{
+  "name": "MSGestureEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "MSGestureEvent()",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/MSGestureEvent",
+      "description": "Creates an MSGestureEvent object."
+    },
+    {
+      "name": "MSGestureEvent.expansion",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/expansion",
+      "description": "The diameter of the gesture area. For example, the distance between fingers."
+    },
+    {
+      "name": "MSGestureEvent.gestureObject",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/gestureObject",
+      "description": "Returns the MSGesture object for this gesture event."
+    },
+    {
+      "name": "MSGestureEvent.rotation",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/rotation",
+      "description": "Amount of rotation (in radians) since the previous MSGestureEvent of the current gesture. Positive values indicate clockwise rotation; negative values indicate anticlockwise rotation."
+    },
+    {
+      "name": "MSGestureEvent.scale",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/scale",
+      "description": "The difference in scale (for zoom gestures) from the previous MSGestureEvent of the current gesture."
+    },
+    {
+      "name": "MSGestureEvent.translationX",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/translationX",
+      "description": "Distance traversed along the X-axis since the previous MSGestureEvent of the current gesture"
+    },
+    {
+      "name": "MSGestureEvent.translationY",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/translationY",
+      "description": "Distance traversed along the Y-axis since the previous MSGestureEvent of the current gesture"
+    },
+    {
+      "name": "MSGestureEvent.velocityAngular",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/velocityAngular",
+      "description": "Angular velocity. Expressed in radians."
+    },
+    {
+      "name": "MSGestureEvent.velocityExpansion",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/velocityExpansion",
+      "description": "The velocity of the expansion of the gesture area."
+    },
+    {
+      "name": "MSGestureEvent.velocityX",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/velocityX",
+      "description": "Velocity along the direction of the X-axis."
+    },
+    {
+      "name": "MSGestureEvent.velocityY",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/velocityY",
+      "description": "Velocity along the direction of the Y-axis."
+    },
+    {
+      "name": "MSGestureEvent.initGestureEvent()",
+      "link": "/en-US/docs/Web/API/MSGestureEvent/initGestureEvent",
+      "description": "Initializes the value of an MSGestureEvent. If the event has already being dispatched, this method does nothing. This method is deprecated as of Microsoft Edge."
+    }
+  ]
+}

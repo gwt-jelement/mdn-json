@@ -1,0 +1,16 @@
+{
+  "name": "SVGFEImageElement",
+  "description": "The SVGFEImageElement interface corresponds to the \u003cfeImage\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEImageElement.preserveAspectRatio",
+      "link": "/en-US/docs/Web/API/SVGFEImageElement/preserveAspectRatio",
+      "description": "An SVGAnimatedPreserveAspectRatio corresponding to the preserveAspectRatio attribute of the given element."
+    },
+    {
+      "name": "SVGFEImageElement.crossOrigin",
+      "link": "/en-US/docs/Web/API/SVGFEImageElement/crossOrigin",
+      "description": "An SVGAnimatedString reflects the crossorigin attribute of the given element, limited to only known values."
+    }
+  ]
+}

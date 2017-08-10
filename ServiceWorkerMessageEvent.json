@@ -1,0 +1,46 @@
+{
+  "name": "ServiceWorkerMessageEvent",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. Important: In modern browsers, this interface has been deprecated. Service worker messages will now use the MessageEvent interface, for consistency with other web messaging features. The ServiceWorkerMessageEvent interface of the ServiceWorker API contains information about an event sent to a ServiceWorkerContainer target. This extends the default message event to allow setting a ServiceWorker object as the source of a message. The event object is accessed via the handler function of a message event, when fired by a message received from a service worker.",
+  "members": [
+    {
+      "name": "ServiceWorkerMessageEvent.ServiceWorkerMessageEvent()",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/ServiceWorkerMessageEvent",
+      "description": "Creates a new ServiceWorkerMessageEvent object instance.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString that defines the type of the message event being created."
+        },
+        {
+          "name": "init Optional",
+          "description": "An initialisation object, which should contain the following parameters: data: The event\u0027s data — this can be any type. origin: A DOMString that defines the origin of the corresponding service worker\u0027s environment settings object. lastEventId: A DOMString that defines the last event ID of the event source. source: The ServiceWorker or MessagePort that sent the message. ports: An array containing the MessagePort objects connected to the channel sending the message."
+        }
+      ]
+    },
+    {
+      "name": "ServiceWorkerMessageEvent.data",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/data",
+      "description": "Returns the event\u0027s data. It can be any data type."
+    },
+    {
+      "name": "ServiceWorkerMessageEvent.origin",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/origin",
+      "description": "Returns the origin of the service worker\u0027s environment settings object."
+    },
+    {
+      "name": "ServiceWorkerMessageEvent.lastEventId",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/lastEventId",
+      "description": "Represents, in server-sent events, the last event ID of the event source."
+    },
+    {
+      "name": "ServiceWorkerMessageEvent.source",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/source",
+      "description": "Returns a reference to the service worker that sent the message."
+    },
+    {
+      "name": "ServiceWorkerMessageEvent.ports",
+      "link": "/en-US/docs/Web/API/ServiceWorkerMessageEvent/ports",
+      "description": "Returns an array of MessagePort objects."
+    }
+  ]
+}

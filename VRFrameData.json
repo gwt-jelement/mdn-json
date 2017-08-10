@@ -1,0 +1,41 @@
+{
+  "name": "VRFrameData",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The VRFrameData interface of the WebVR API represents all the information needed to render a single frame of a VR scene; constructed by VRDisplay.getFrameData().",
+  "members": [
+    {
+      "name": "VRFrameData.VRFrameData()",
+      "link": "/en-US/docs/Web/API/VRFrameData/VRFrameData",
+      "description": "Creates a VRFrameData object instance."
+    },
+    {
+      "name": "VRFrameData.leftProjectionMatrix",
+      "link": "/en-US/docs/Web/API/VRFrameData/leftProjectionMatrix",
+      "description": "A Float32Array representing a 4x4 matrix that describes the projection to be used for the left eye’s rendering."
+    },
+    {
+      "name": "VRFrameData.leftViewMatrix",
+      "link": "/en-US/docs/Web/API/VRFrameData/leftViewMatrix",
+      "description": "A Float32Array representing a 4x4 matrix that describes the view transform to be used for the left eye’s rendering."
+    },
+    {
+      "name": "VRFrameData.pose",
+      "link": "/en-US/docs/Web/API/VRFrameData/pose",
+      "description": "The VRPose of the VRDisplay at the current VRFrameData.timestamp."
+    },
+    {
+      "name": "VRFrameData.rightProjectionMatrix",
+      "link": "/en-US/docs/Web/API/VRFrameData/rightProjectionMatrix",
+      "description": "A Float32Array representing a 4x4 matrix that describes the projection to be used for the right eye’s rendering."
+    },
+    {
+      "name": "VRFrameData.rightViewMatrix",
+      "link": "/en-US/docs/Web/API/VRFrameData/rightViewMatrix",
+      "description": "A Float32Array representing a 4x4 matrix that describes the view transform to be used for the right eye’s rendering."
+    },
+    {
+      "name": "VRFrameData.timestamp",
+      "link": "/en-US/docs/Web/API/VRFrameData/timestamp",
+      "description": "A constantly increasing timestamp value representing the time a frame update occurred."
+    }
+  ]
+}

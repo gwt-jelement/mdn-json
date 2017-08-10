@@ -1,0 +1,5 @@
+{
+  "name": "SVGPreserveAspectRatio",
+  "description": "SVG preserveAspectRatio interface The SVGPreserveAspectRatio interface corresponds to the preserveAspectRatio attribute, which is available for some of SVG\u0027s elements.",
+  "members": []
+}

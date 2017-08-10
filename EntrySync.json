@@ -1,0 +1,41 @@
+{
+  "name": "EntrySync",
+  "description": "",
+  "members": [
+    {
+      "name": "DirectoryEntrySync",
+      "link": "/en/DOM/File_API/File_System_API/DirectoryEntrySync",
+      "description": "An object that represents a directory in the file system.",
+      "parameters": [
+        {
+          "name": "DirectoryReaderSync",
+          "description": "Represents a directory in a file system."
+        },
+        {
+          "name": "path",
+          "description": "Either an absolute path or a relative path from the directory to the file to be looked up or created. You cannot create a file whose immediate parent does not exist. Create the parent directory first."
+        },
+        {
+          "name": "options",
+          "description": "An object literal describing the behavior of the method. If the file does not exist, it is created."
+        },
+        {
+          "name": "FileEntrySync",
+          "description": "Represents a file in a file system."
+        },
+        {
+          "name": "path",
+          "description": "Either an absolute path or a relative path from the directory to the file to be looked up or created. You cannot create a file whose immediate parent does not exist. Create the parent directory first."
+        },
+        {
+          "name": "options",
+          "description": "An object literal describing the behavior of the method if the file does not exist."
+        },
+        {
+          "name": "DirectoryEntrySync",
+          "description": "Represents a directory in a file system."
+        }
+      ]
+    }
+  ]
+}

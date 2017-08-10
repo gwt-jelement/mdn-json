@@ -1,0 +1,11 @@
+{
+  "name": "HTMLDataListElement",
+  "description": "The HTMLDataListElement interface provides special properties (beyond the HTMLElement object interface it also has available to it by inheritance) to manipulate \u003cdatalist\u003e elements and their content.",
+  "members": [
+    {
+      "name": "HTMLDataListElement.options",
+      "link": "/en-US/docs/Web/API/HTMLDataListElement/options",
+      "description": "Is a HTMLCollection representing a collection of the contained option elements."
+    }
+  ]
+}

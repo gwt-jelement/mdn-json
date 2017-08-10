@@ -1,0 +1,140 @@
+{
+  "name": "AnimationEffectTimingProperties",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The AnimationEffectTimingProperties dictionary, part of the Web Animations API, is used by Element.animate(), KeyframeEffectReadOnly(), and KeyframeEffect() to describe timing properties for animation effects. These properties are all optional, although without setting a duration the animation will not play.",
+  "members": [
+    {
+      "name": "delay",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/delay",
+      "description": "The number of milliseconds to delay the start of the animation. Defaults to 0."
+    },
+    {
+      "name": "direction",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/direction",
+      "description": "Whether the animation runs forwards (normal), backwards (reverse), switches direction after each iteration (alternate), or runs backwards and switches direction after each iteration (alternate-reverse). Defaults to \"normal\".",
+      "parameters": [
+        {
+          "name": "\"normal\"",
+          "description": "The animation runs forwards, from beginning to end, in the way we experience the flow of time."
+        },
+        {
+          "name": "\"reverse\"",
+          "description": "The animation runs backwards, or \"rewinds.\""
+        },
+        {
+          "name": "\"alternate\"",
+          "description": "The animation switches direction after each iteration, going forward through the animation sequence the first iteration, then backward through the sequence the second iteration, and so forth."
+        },
+        {
+          "name": "\"alternate-reverse\"",
+          "description": "Similar to \"alternate\", except the animation playback starts by going from the end of the animation sequence toward the beginning the first iteration, then goes forward during the second, and so forth."
+        }
+      ]
+    },
+    {
+      "name": "duration",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/duration",
+      "description": "The number of milliseconds each iteration of the animation takes to complete. Defaults to 0. Although this is technically optional, keep in mind that your animation will not run if this value is 0.",
+      "parameters": [
+        {
+          "name": "TypeError",
+          "description": "The specified value is either a string other than \"auto\", a number less than zero, NaN, or some other type of object entirely."
+        }
+      ]
+    },
+    {
+      "name": "easing",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/easing",
+      "description": "The rate of the animation\u0027s change over time. Accepts the pre-defined values \"linear\", \"ease\", \"ease-in\", \"ease-out\", and \"ease-in-out\", or a custom \"cubic-bezier\" value like \"cubic-bezier(0.42, 0, 0.58, 1)\". Defaults to \"linear\".",
+      "parameters": [
+        {
+          "name": "linear",
+          "description": "A constant rate of change, neither accelerating nor deccelerating. "
+        },
+        {
+          "name": "cubic-bezier(\u003cnumber\u003e, \u003cnumber\u003e, \u003cnumber\u003e, \u003cnumber\u003e)",
+          "description": "Specifies a cubic Bézier timing function. The four numbers specify points P1 and P2 of the curve as (x1, y1, x2, y2). Both x values must be in the range [0, 1] or the definition is invalid."
+        },
+        {
+          "name": "ease",
+          "description": "A decelerated rate of change, going from fast to slow. Equivalent to cubic-bezier(0.25, 0.1, 0.25, 1)."
+        },
+        {
+          "name": "ease-in",
+          "description": "An accelerated rate of change, going from slow to fast. Equivalent to cubic-bezier(0.42, 0, 1, 1)."
+        },
+        {
+          "name": "ease-out",
+          "description": "Another decelerated rate of change, going from fast to slow. Equivalent to cubic-bezier(0, 0, 0.58, 1)."
+        },
+        {
+          "name": "ease-in-out",
+          "description": "This rate of change speeds up in the middle. Equivalent to cubic-bezier(0.42, 0, 0.58, 1)."
+        },
+        {
+          "name": "frames(\u003cinteger\u003e)",
+          "description": "Specifies a frames timing function, which breaks the animation down into a number of equal time intervals but also displays the start (0%) and end (100%) states for an equal amount of time to the other intervals. The browser flips to a different static frame when each interval is reached, rather than animating smoothly. See GitHub for a simple example that illustrates the difference between steps() and frames()."
+        },
+        {
+          "name": "steps(\u003cinteger\u003e[, [ start | end ] ]?)",
+          "description": "Specifies a step timing function, which breaks the animation down into a number of equal time intervals. The browser flips to a different static frame when each interval is reached, rather than animating smoothly. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value end."
+        },
+        {
+          "name": "step-start",
+          "description": "Equivalent to steps(1, start)"
+        },
+        {
+          "name": "step-end",
+          "description": "Equivalent to steps(1, end)."
+        }
+      ]
+    },
+    {
+      "name": "endDelay",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/endDelay",
+      "description": "The number of milliseconds to delay after the end of an animation. This is primarily of use when sequencing animations based on the end time of another animation. Defaults to 0. "
+    },
+    {
+      "name": "fill",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/fill",
+      "description": "Dictates whether the animation\u0027s effects should be reflected by the element(s) prior to playing (\"backwards\"), retained after the animation has completed playing (\"forwards\"), or both. Defaults to \"none\".",
+      "parameters": [
+        {
+          "name": "\"none\"",
+          "description": "The animation\u0027s effects are only visible while the animation is iterating or its playhead is positioned over an iteration. The animation\u0027s effects are not visible when its playState is pending with a delay, when its playState is finished, or during its endDelay or  delay. In other words, if the animation isn\u0027t in its active interval, the affected element is not visible."
+        },
+        {
+          "name": "\"forwards\"",
+          "description": "The affected element will continue to be rendered in the state of the final animation framecontinue to be applied to the  after the animation has completed playing, in spite of and during any endDelay or when its playState is finished."
+        },
+        {
+          "name": "\"backwards\"",
+          "description": "The animation\u0027s effects should be reflected by the element(s) state prior to playing, in spite of and during any delay and pending playState."
+        },
+        {
+          "name": "\"both\"",
+          "description": "Combining the effects of both forwards and backwards: The animation\u0027s effects should be reflected by the element(s) state prior to playing and retained after the animation has completed playing, in spite of and during any endDelay, delay and/or pending or finished playState."
+        },
+        {
+          "name": "\"auto\"",
+          "description": "If the animation effect the fill mode is being applied to is a keyframe effect (KeyframeEffect or KeyframeEffectReadOnly), \"auto\" is equivalent to \"none\". Otherwise, the result is \"both\"."
+        }
+      ]
+    },
+    {
+      "name": "iterationStart",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/iterationStart",
+      "description": "Describes at what point in the iteration the animation should start. 0.5 would indicate starting halfway through the first iteration for example, and with this value set, an animation with 2 iterations would end halfway through a third iteration. Defaults to 0.0."
+    },
+    {
+      "name": "iterations",
+      "link": "/en-US/docs/Web/API/AnimationEffectTimingProperties/iterations",
+      "description": "The number of times the animation should repeat. Defaults to 1, and can also take a value of Infinity to make it repeat for as long as the element exists.",
+      "parameters": [
+        {
+          "name": "TypeError",
+          "description": "An attempt was made to set the value of this property to a negative number or NaN. The property\u0027s value is left unchanged."
+        }
+      ]
+    }
+  ]
+}

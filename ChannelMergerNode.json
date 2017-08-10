@@ -1,0 +1,21 @@
+{
+  "name": "ChannelMergerNode",
+  "description": "",
+  "members": [
+    {
+      "name": "ChannelMergerNode.ChannelMergerNode()",
+      "link": "/en-US/docs/Web/API/ChannelMergerNode/ChannelMergerNode",
+      "description": "Creates a new ChannelMergerNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A BaseAudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options Optional",
+          "description": "A ChannelMergerOptions dictionary object defining the properties you want the ChannelMergerNode to have (It also inherits the options defined in the AudioNodeOptions dictionary): numberOfInputs: A number defining the number of inputs the ChannelMergerNode should have. If not specified, the default value used is 6."
+        }
+      ]
+    }
+  ]
+}

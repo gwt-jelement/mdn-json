@@ -1,0 +1,36 @@
+{
+  "name": "HTMLSourceElement",
+  "description": "The HTMLSourceElement interface provides special properties (beyond the regular HTMLElement object interface it also has available to it by inheritance) for manipulating \u003csource\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLSourceElement.keySystem",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/keySystem",
+      "description": "Is a DOMString describing the key system encrypting the stream."
+    },
+    {
+      "name": "HTMLSourceElement.media",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/media",
+      "description": "Is a DOMString reflecting the media HTML attribute, containing the intended type of the media resource."
+    },
+    {
+      "name": "HTMLSourceElement.sizes",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/sizes",
+      "description": "Is a DOMString representing image sizes between breakpoints"
+    },
+    {
+      "name": "HTMLSourceElement.src",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/src",
+      "description": "Is a DOMString reflecting the src HTML attribute, containing the URL for the media resource. The HTMLSourceElement.src property has a meaning only when the associated \u003csource\u003e element is nested in a media element that is a \u003cvideo\u003e or an \u003caudio\u003e element. It has no meaning and is ignored when it is nested in a \u003cpicture\u003e element."
+    },
+    {
+      "name": "HTMLSourceElement.srcset",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/srcset",
+      "description": "Is a DOMString reflecting the srcset HTML attribute, containing a list of candidate images, separated by a comma (\u0027,\u0027, U+002C COMMA). A candidate image is a URL followed by a \u0027w\u0027 with the width of the images, or an \u0027x\u0027 followed by the pixel density."
+    },
+    {
+      "name": "HTMLSourceElement.type",
+      "link": "/en-US/docs/Web/API/HTMLSourceElement/type",
+      "description": "Is a DOMString reflecting the type HTML attribute, containing the type of the media resource."
+    }
+  ]
+}

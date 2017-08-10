@@ -1,0 +1,75 @@
+{
+  "name": "ProgressEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "ProgressEvent()",
+      "link": "/en-US/docs/Web/API/ProgressEvent/ProgressEvent",
+      "description": "Creates a ProgressEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "Is a DOMString representing the name of the type of the ProgressEvent. It is case-sensitive."
+        },
+        {
+          "name": "lengthComputable Optional",
+          "description": "Is a Boolean flag indicating if the total work to be done, and the amount of work already done, by the underlying process is calculable. In other words, it tells if the progress is measurable or not. It defaults to false."
+        },
+        {
+          "name": "loaded Optional",
+          "description": "Is an unsigned long long representing the amount of work already performed by the underlying process. The ratio of work done can be calculated with the property and ProgressEvent.total. When downloading a resource using HTTP, this only represent the part of the content itself, not headers and other overhead. It defaults to 0."
+        },
+        {
+          "name": "total Optional",
+          "description": "Is an unsigned long long representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this only represent the content itself, not headers and other overhead. It defaults to 0."
+        }
+      ]
+    },
+    {
+      "name": "ProgressEvent.lengthComputable",
+      "link": "/en-US/docs/Web/API/ProgressEvent/lengthComputable",
+      "description": "Is a Boolean flag indicating if the total work to be done, and the amount of work already done, by the underlying process is calculable. In other words, it tells if the progress is measurable or not."
+    },
+    {
+      "name": "ProgressEvent.loaded",
+      "link": "/en-US/docs/Web/API/ProgressEvent/loaded",
+      "description": "Is an unsigned long long representing the amount of work already performed by the underlying process. The ratio of work done can be calculated with the property and ProgressEvent.total. When downloading a resource using HTTP, this only represent the part of the content itself, not headers and other overhead."
+    },
+    {
+      "name": "ProgressEvent.total",
+      "link": "/en-US/docs/Web/API/ProgressEvent/total",
+      "description": "Is an unsigned long long representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this only represent the content itself, not headers and other overhead."
+    },
+    {
+      "name": "ProgressEvent.initProgressEvent()",
+      "link": "/en-US/docs/Web/API/ProgressEvent/initProgressEvent",
+      "description": "Initializes a ProgressEvent created using the deprecated Document.createEvent(\"ProgressEvent\") method.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString identifying the specific type of animation event that occurred. The following values are allowed: Value Meaning loadstart The operation has started. progress The operation still is in progress. error The operation failed and didn\u0027t complete. abort The operation was cancelled and didn\u0027t complete. load The operation completed. loadend The operation stopped."
+        },
+        {
+          "name": "canBubbleArg",
+          "description": "Is a Boolean flag indicating if the event can bubble (true) or not (false)."
+        },
+        {
+          "name": "cancelableArg",
+          "description": "Is a Boolean flag indicating if the event associated action can be avoided (true) or not (false)."
+        },
+        {
+          "name": "lengthComputable",
+          "description": "Is a Boolean flag indicating if the total work to be done, and the amount of work already done, by the underlying process is calculable. In other words, it tells if the progress is measurable or not."
+        },
+        {
+          "name": "loaded",
+          "description": "Is an unsigned long long representing the amount of work already performed by the underlying process. The ratio of work done can be calculated with the property and ProgressEvent.total. When downloading a resource using HTTP, this only represent the part of the content itself, not headers and other overhead."
+        },
+        {
+          "name": "total",
+          "description": "Is an unsigned long long representing the total amount of work that the underlying process is in the progress of performing. When downloading a resource using HTTP, this only represent the content itself, not headers and other overhead."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "FileSystemFileEntry",
+  "description": "Non-standard This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future. The FileSystemFileEntry interface of the File System API represents a file in a file system. It offers properties describing the file\u0027s attributes, as well as the file() method, which creates a File object that can be used to read the file.",
+  "members": [
+    {
+      "name": "file()",
+      "link": "/en-US/docs/Web/API/FileSystemFileEntry/file",
+      "description": "Creates a new File object which can be used to read the file.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A callback function which is called when the File has been created successfully; the File is passed into the callback as the only parameter."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "If provided, this must be a method which is caled when an error occurs while trying to create the File. This callback receives as input a FileError object describing the error."
+        }
+      ]
+    },
+    {
+      "name": "createWriter()",
+      "link": "/en-US/docs/Web/API/FileSystemFileEntry/createWriter",
+      "description": "Creates a new FileWriter object which allows writing to the file represented by the file system entry.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A callback function which is called when the FileWriter has been created successfully; the FileWriter is passed into the callback as the only parameter."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "If provided, this must be a method which is caled when an error occurs while trying to create the FileWriter. This callback receives as input a FileError object describing the error."
+        }
+      ]
+    }
+  ]
+}

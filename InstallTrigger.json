@@ -1,0 +1,122 @@
+{
+  "name": "InstallTrigger",
+  "description": "",
+  "members": [
+    {
+      "name": "compareVersion",
+      "link": "/en-US/docs/Web/API/InstallTrigger/compareVersion",
+      "description": "Compares the version of a file or package with the version of an existing file or package.",
+      "parameters": [
+        {
+          "name": "registryName",
+          "description": "The pathname in the Client Version Registry for the component whose version is to be compared. This parameter can be an absolute pathname, such as /royalairways/RoyalSW or a relative pathname, such as plugsin/royalairway/RoyalSW. Note that the registry pathname is not the location of the software on the computer; it is the location of information about the software inside the Client Version Registry."
+        },
+        {
+          "name": "version",
+          "description": "An InstallVersion object containing version information or a String in the format major.minor.release.build, where major, minor, release, and build are integer values representing version information."
+        },
+        {
+          "name": "-5",
+          "description": "component not present or not registered."
+        },
+        {
+          "name": "-4",
+          "description": "registryName has a smaller (earlier) major number than version."
+        },
+        {
+          "name": "-3",
+          "description": "registryName has a smaller (earlier) minor number than version."
+        },
+        {
+          "name": "-2",
+          "description": "registryName has a smaller (earlier) release number than version."
+        },
+        {
+          "name": "-1",
+          "description": "registryName has a smaller (earlier) build number than version."
+        },
+        {
+          "name": "0",
+          "description": "The version numbers are the same; both objects represent the same version."
+        },
+        {
+          "name": "1",
+          "description": "registryName has a larger (newer) build number than version."
+        },
+        {
+          "name": "2",
+          "description": "registryName has a larger (newer) release number than version."
+        },
+        {
+          "name": "3",
+          "description": "registryName has a larger (newer) minor number than version."
+        },
+        {
+          "name": "4",
+          "description": "registryName has a larger (newer) major number than version."
+        }
+      ]
+    },
+    {
+      "name": "enabled",
+      "link": "/en-US/docs/Web/API/InstallTrigger/enabled",
+      "description": "Indicates whether or not Software Installation is enabled for this client machine."
+    },
+    {
+      "name": "getVersion",
+      "link": "/en-US/docs/Web/API/InstallTrigger/getVersion",
+      "description": "Returns an object representing the version number from the Client Version Registry for the specified component. It is used in both trigger scripts and installation scripts.",
+      "parameters": [
+        {
+          "name": "component",
+          "description": "The name of a component in the Client Version Registry."
+        }
+      ]
+    },
+    {
+      "name": "install",
+      "link": "/en-US/docs/Web/API/InstallTrigger/install",
+      "description": "Installs one or more XPI files on the local machine.",
+      "parameters": [
+        {
+          "name": "XPIlist",
+          "description": "An array of files to be installed (see example below)."
+        },
+        {
+          "name": "callBackFunc",
+          "description": "An optional callback function invoked when the installation is complete (see example below)."
+        }
+      ]
+    },
+    {
+      "name": "installChrome",
+      "link": "/en-US/docs/Web/API/InstallTrigger/installChrome",
+      "description": "Installs new skin or locale packages in Netscape 6 and Mozilla.",
+      "parameters": [
+        {
+          "name": "TYPE",
+          "description": "TYPE can be InstallTrigger.SKIN or InstallTrigger.LOCALE."
+        },
+        {
+          "name": "url",
+          "description": "url is a string containing a full or relative URL to download"
+        },
+        {
+          "name": "name",
+          "description": "name is displayed in the dialog, but is also used to *select* the theme somust match exactly the name in the internal manifest.rdf file."
+        }
+      ]
+    },
+    {
+      "name": "startSoftwareUpdate",
+      "link": "/en-US/docs/Web/API/InstallTrigger/startSoftwareUpdate",
+      "description": "Triggers the downloading and installation of the software at the specified URL.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "A uniform resource locator specifying the location of the XPI file containing the software."
+        }
+      ]
+    }
+  ]
+}

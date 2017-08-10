@@ -1,0 +1,5 @@
+{
+  "name": "SVGFontFaceUriElement",
+  "description": "Deprecated This feature has been removed from the Web standards. Though some browsers may still support it, it is in the process of being dropped. Avoid using it and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time. The SVGFontFaceUriElement interface corresponds to the \u003cfont-face-uri\u003e elements.",
+  "members": []
+}

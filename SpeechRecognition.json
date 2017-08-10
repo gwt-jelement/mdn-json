@@ -1,0 +1,111 @@
+{
+  "name": "SpeechRecognition",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechRecognition.SpeechRecognition()",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/SpeechRecognition",
+      "description": "Creates a new SpeechRecognition object."
+    },
+    {
+      "name": "SpeechRecognition.grammars",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/grammars",
+      "description": "Returns and sets a collection of SpeechGrammar objects that represent the grammars that will be understood by the current SpeechRecognition."
+    },
+    {
+      "name": "SpeechRecognition.lang",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/lang",
+      "description": "Returns and sets the language of the current SpeechRecognition. If not specified, this defaults to the HTML lang attribute value, or the user agent\u0027s language setting if that isn\u0027t set either."
+    },
+    {
+      "name": "SpeechRecognition.continuous",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/continuous",
+      "description": "Controls whether continuous results are returned for each recognition, or only a single result. Defaults to single (false.)"
+    },
+    {
+      "name": "SpeechRecognition.interimResults",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/interimResults",
+      "description": "Controls whether interim results should be returned (true) or not (false.) Interim results are results that are not yet final (e.g. the SpeechRecognitionResult.isFinal property is false.)"
+    },
+    {
+      "name": "SpeechRecognition.maxAlternatives",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/maxAlternatives",
+      "description": "Sets the maximum number of SpeechRecognitionAlternatives provided per result. The default value is 1."
+    },
+    {
+      "name": "SpeechRecognition.serviceURI",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/serviceURI",
+      "description": "Specifies the location of the speech recognition service used by the current SpeechRecognition to handle the actual recognition. The default is the user agent\u0027s default speech service."
+    },
+    {
+      "name": "SpeechRecognition.onaudiostart",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onaudiostart",
+      "description": "Fired when the user agent has started to capture audio."
+    },
+    {
+      "name": "SpeechRecognition.onaudioend",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onaudioend",
+      "description": "Fired when the user agent has finished capturing audio."
+    },
+    {
+      "name": "SpeechRecognition.onend",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onend",
+      "description": "Fired when the speech recognition service has disconnected."
+    },
+    {
+      "name": "SpeechRecognition.onerror",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onerror",
+      "description": "Fired when a speech recognition error occurs."
+    },
+    {
+      "name": "SpeechRecognition.onnomatch",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onnomatch",
+      "description": "Fired when the speech recognition service returns a final result with no significant recognition. This may involve some degree of recognition, which doesn\u0027t meet or exceed the confidence threshold."
+    },
+    {
+      "name": "SpeechRecognition.onresult",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onresult",
+      "description": "Fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app."
+    },
+    {
+      "name": "SpeechRecognition.onsoundstart",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onsoundstart",
+      "description": "Fired when any sound — recognisable speech or not — has been detected."
+    },
+    {
+      "name": "SpeechRecognition.onsoundend",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onsoundend",
+      "description": "Fired when any sound — recognisable speech or not — has stopped being detected."
+    },
+    {
+      "name": "SpeechRecognition.onspeechstart",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onspeechstart",
+      "description": "Fired when sound that is recognised by the speech recognition service as speech has been detected."
+    },
+    {
+      "name": "SpeechRecognition.onspeechend",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onspeechend",
+      "description": "Fired when speech recognised by the speech recognition service has stopped being detected."
+    },
+    {
+      "name": "SpeechRecognition.onstart",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/onstart",
+      "description": "Fired when the speech recognition service has begun listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition."
+    },
+    {
+      "name": "SpeechRecognition.abort()",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/abort",
+      "description": "Stops the speech recognition service from listening to incoming audio, and doesn\u0027t attempt to return a SpeechRecognitionResult."
+    },
+    {
+      "name": "SpeechRecognition.start()",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/start",
+      "description": "Starts the speech recognition service listening to incoming audio with intent to recognize grammars associated with the current SpeechRecognition."
+    },
+    {
+      "name": "SpeechRecognition.stop()",
+      "link": "/en-US/docs/Web/API/SpeechRecognition/stop",
+      "description": "Stops the speech recognition service from listening to incoming audio, and attempts to return a SpeechRecognitionResult using the audio captured so far."
+    }
+  ]
+}

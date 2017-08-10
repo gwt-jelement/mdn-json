@@ -1,0 +1,11 @@
+{
+  "name": "AudioDestinationNode",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioDestinationNode.maxChannelCount",
+      "link": "/en-US/docs/Web/API/AudioDestinationNode/maxChannelCount",
+      "description": "Is an unsigned long defining the maximum number of channels that the physical device can handle."
+    }
+  ]
+}

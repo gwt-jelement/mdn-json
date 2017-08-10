@@ -1,0 +1,5 @@
+{
+  "name": "HTMLTableColElement",
+  "description": "The HTMLTableColElement interface provides special properties (beyond the HTMLElement interface it also has available to it inheritance) for manipulating single or grouped table column elements.",
+  "members": []
+}

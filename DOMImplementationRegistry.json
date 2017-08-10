@@ -1,0 +1,16 @@
+{
+  "name": "DOMImplementationRegistry",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMImplementationRegistry.getDOMImplementation()",
+      "link": "/en-US/docs/Web/API/DOMImplementationRegistry/getDOMImplementation",
+      "description": "See DOMImplementationSource.getDOMImplementation()."
+    },
+    {
+      "name": "DOMImplementationRegistry.getDOMImplementationList()",
+      "link": "/en-US/docs/Web/API/DOMImplementationRegistry/getDOMImplementationList",
+      "description": "See also DOMImplementationSource.getDOMImplementationList()."
+    }
+  ]
+}

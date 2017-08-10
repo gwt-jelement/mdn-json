@@ -1,0 +1,21 @@
+{
+  "name": "HTMLMapElement",
+  "description": "The HTMLMapElement interface provides special properties and methods (beyond those of the regular object HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of map elements.",
+  "members": [
+    {
+      "name": "HTMLMapElement.name",
+      "link": "/en-US/docs/Web/API/HTMLMapElement/name",
+      "description": "Is a DOMString representing the \u003cmap\u003e element for referencing it other context. If the id attribute is set, this must have the same value; and it cannot be null or empty."
+    },
+    {
+      "name": "HTMLMapElement.areas",
+      "link": "/en-US/docs/Web/API/HTMLMapElement/areas",
+      "description": "Is a live HTMLCollection representing the \u003carea\u003e elements associated to this \u003cmap\u003e."
+    },
+    {
+      "name": "HTMLMapElement.images",
+      "link": "/en-US/docs/Web/API/HTMLMapElement/images",
+      "description": "Is a live HTMLCollection representing the \u003cimg\u003e and \u003cobject\u003e elements associated to this \u003cmap\u003e."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "RTCDTMFSender",
+  "description": "The RTCDTMFSender interface provides a mechanism for transmitting DTMF codes on a WebRTC RTCPeerConnection. You gain access to the connection\u0027s RTCDTMFSender through the RTCRtpSender.dtmf property on the audio track you wish to send DTMF with. The primary purpose for WebRTC\u0027s DTMF support is to allow WebRTC-based communication clients to be connected to a public-switched telephone network (PSTN) or other legacy telephone service, including extant voice over IP (VoIP) services. For that reason, DTMF can\u0027t be used between two WebRTC-based devices, because there is no mechanism provided by WebRTC for receiving DTMF codes.   \u003cdiv id\u003d\"interfaceDiagram\" style\u003d\"display: inline-block; position: relative; width: 100%; padding-bottom: 11.666666666666666%; vertical-align: middle; overflow: hidden;\"\u003e\u003csvg style\u003d\"display: inline-block; position: absolute; top: 0; left: 0;\" viewbox\u003d\"-50 0 600 70\" preserveAspectRatio\u003d\"xMinYMin meet\"\u003e\u003ca xlink:href\u003d\"https://developer.mozilla.org/en-US/docs/Web/API/EventTarget\" target\u003d\"_top\"\u003e\u003crect x\u003d\"1\" y\u003d\"1\" width\u003d\"110\" height\u003d\"50\" fill\u003d\"#fff\" stroke\u003d\"#D4DDE4\" stroke-width\u003d\"2px\" /\u003e\u003ctext  x\u003d\"56\" y\u003d\"30\" font-size\u003d\"12px\" font-family\u003d\"Consolas,Monaco,Andale Mono,monospace\" fill\u003d\"#4D4E53\" text-anchor\u003d\"middle\" alignment-baseline\u003d\"middle\"\u003eEventTarget\u003c/text\u003e\u003c/a\u003e\u003cpolyline points\u003d\"111,25  121,20  121,30  111,25\" stroke\u003d\"#D4DDE4\" fill\u003d\"none\"/\u003e\u003cline x1\u003d\"121\" y1\u003d\"25\" x2\u003d\"151\" y2\u003d\"25\" stroke\u003d\"#D4DDE4\"/\u003e\u003ca xlink:href\u003d\"https://developer.mozilla.org/en-US/docs/Web/API/RTCDTMFSender\" target\u003d\"_top\"\u003e\u003crect x\u003d\"151\" y\u003d\"1\" width\u003d\"130\" height\u003d\"50\" fill\u003d\"#F4F7F8\" stroke\u003d\"#D4DDE4\" stroke-width\u003d\"2px\" /\u003e\u003ctext  x\u003d\"216\" y\u003d\"30\" font-size\u003d\"12px\" font-family\u003d\"Consolas,Monaco,Andale Mono,monospace\" fill\u003d\"#4D4E53\" text-anchor\u003d\"middle\" alignment-baseline\u003d\"middle\"\u003eRTCDTMFSender\u003c/text\u003e\u003c/a\u003e\u003c/svg\u003e\u003c/div\u003e\n   a:hover text { fill: #0095DD; pointer-events: all;} Properties RTCDTMFSender.toneBuffer Read only A DOMString which contains the list of DTMF tones currently in the queue to be transmitted (tones which have already been played are no longer included in the string). See toneBuffer for details on the format of the tone buffer. Event handlers RTCDTMFSender.ontonechange An EventHandler to handle the tonechange event, which is sent each time an outbound tone starts or finishes playing. Methods RTCDTMFSender.insertDTMF() Given a string describing a set of DTMF codes and, optionally, the duration of and inter-tone gap between the tones, insertDTMF() starts sending the specified tones. Calling insertDTMF() replaces any already-pending tones from the toneBuffer. You can abort sending queued tones by specifying an empty string (\"\") as the set of tones to play. Example tbd",
+  "members": [
+    {
+      "name": "RTCDTMFSender.toneBuffer",
+      "link": "/en-US/docs/Web/API/RTCDTMFSender/toneBuffer",
+      "description": "A DOMString which contains the list of DTMF tones currently in the queue to be transmitted (tones which have already been played are no longer included in the string). See toneBuffer for details on the format of the tone buffer.",
+      "parameters": [
+        {
+          "name": "The digits 0-9",
+          "description": "These characters represent the digit keys on a telephone keypad."
+        },
+        {
+          "name": "The letters A-D",
+          "description": "These characters represent the \"A\" through \"D\" keys which are part of the DTMF standard but not included on most telephones. These are not interpreted as digits. Lower-case \"a\"-\"d\" automatically gets converted to upper-case."
+        },
+        {
+          "name": "The pound/hash sign (\"#\") and the asterisk (\"*\")",
+          "description": "These correspond to the similarly-labeled keys which are typically on the bottom row of the telephone keypad."
+        },
+        {
+          "name": "The comma (\",\")",
+          "description": "This character instructs the dialing process to pause for two seconds before sending the next character in the buffer."
+        }
+      ]
+    },
+    {
+      "name": "RTCDTMFSender.ontonechange",
+      "link": "/en-US/docs/Web/API/RTCDTMFSender/ontonechange",
+      "description": "An EventHandler to handle the tonechange event, which is sent each time an outbound tone starts or finishes playing."
+    },
+    {
+      "name": "RTCDTMFSender.insertDTMF()",
+      "link": "/en-US/docs/Web/API/RTCDTMFSender/insertDTMF",
+      "description": "Given a string describing a set of DTMF codes and, optionally, the duration of and inter-tone gap between the tones, insertDTMF() starts sending the specified tones. Calling insertDTMF() replaces any already-pending tones from the toneBuffer. You can abort sending queued tones by specifying an empty string (\"\") as the set of tones to play.",
+      "parameters": [
+        {
+          "name": "tones",
+          "description": "A DOMString containing the DTMF codes to be transmitted to the recipient. Specifying an empty string as the tones parameter clears the tone buffer, aborting any currently queued tones. A \",\" character inserts a two second delay."
+        },
+        {
+          "name": "duration Optional",
+          "description": "The amount of time, in milliseconds, that each DTMF tone should last. This value must be between 40 ms and 6000 ms (6 seconds), inclusive. The default is 100 ms."
+        },
+        {
+          "name": "interToneGap Optional",
+          "description": "The length of time, in milliseconds, to wait between tones. The browser will enforce a minimum value of 30 ms (that is, if you specify a lower value, 30 ms will be used instead); the default is 70 ms."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "The DTMF tones couldn\u0027t be sent because the track has been stopped, or is in a read-only or inactive state."
+        },
+        {
+          "name": "InvalidCharacterError",
+          "description": "One or more of the characters in tones is not valid DTMF."
+        }
+      ]
+    }
+  ]
+}

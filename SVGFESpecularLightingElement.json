@@ -1,0 +1,36 @@
+{
+  "name": "SVGFESpecularLightingElement",
+  "description": "The SVGFESpecularLightingElement interface corresponds to the \u003cfeSpecularLighting\u003e element.",
+  "members": [
+    {
+      "name": "SVGFESpecularLightingElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFESpecularLightingElement.surfaceScale",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/surfaceScale",
+      "description": "An SVGAnimatedNumber corresponding to the surfaceScale attribute of the given element."
+    },
+    {
+      "name": "SVGFESpecularLightingElement.specularConstant",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/specularConstant",
+      "description": "An SVGAnimatedNumber corresponding to the specularConstant attribute of the given element."
+    },
+    {
+      "name": "SVGFESpecularLightingElement.specularExponent",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/specularExponent",
+      "description": "An SVGAnimatedNumber corresponding to the specularExponent attribute of the given element."
+    },
+    {
+      "name": "SVGFESpecularLightingElement.kernelUnitLengthX",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/kernelUnitLengthX",
+      "description": "An SVGAnimatedNumber corresponding to the X component of the kernelUnitLength attribute of the given element."
+    },
+    {
+      "name": "SVGFESpecularLightingElement.kernelUnitLengthY",
+      "link": "/en-US/docs/Web/API/SVGFESpecularLightingElement/kernelUnitLengthY",
+      "description": "An SVGAnimatedNumber corresponding to the Y component of the kernelUnitLength attribute of the given element."
+    }
+  ]
+}

@@ -1,0 +1,1583 @@
+{
+  "name": "Window",
+  "description": "",
+  "members": [
+    {
+      "name": "Window.applicationCache",
+      "link": "/en-US/docs/Web/API/Window/applicationCache",
+      "description": "An OfflineResourceList object providing access to the offline resources for the window."
+    },
+    {
+      "name": "Window.closed",
+      "link": "/en-US/docs/Web/API/Window/closed",
+      "description": "This property indicates whether the current window is closed or not.",
+      "parameters": [
+        {
+          "name": "isClosed",
+          "description": "A boolean. Possible Values: true: The window has been closed. false: The window is open."
+        }
+      ]
+    },
+    {
+      "name": "Window.Components",
+      "link": "/en-US/docs/Web/API/Window/Components",
+      "description": "The entry point to many XPCOM features. Some properties, e.g. classes, are only available to sufficiently privileged code. Web code should not use this property."
+    },
+    {
+      "name": "Window.console",
+      "link": "/en-US/docs/Web/API/Window/console",
+      "description": "Returns a reference to the console object which provides access to the browser\u0027s debugging console."
+    },
+    {
+      "name": "Window.content",
+      "link": "/en-US/docs/Web/API/Window/content",
+      "description": "Returns a reference to the content element in the current window. The obsolete variant with underscore is no longer available from Web content."
+    },
+    {
+      "name": "Window.controllers",
+      "link": "/en-US/docs/Web/API/Window/controllers",
+      "description": "Returns the XUL controller objects for the current chrome window."
+    },
+    {
+      "name": "Window.crypto",
+      "link": "/en-US/docs/Web/API/Window/crypto",
+      "description": "Returns the browser crypto object."
+    },
+    {
+      "name": "Window.defaultStatus",
+      "link": "/en-US/docs/Web/API/Window/defaultStatus",
+      "description": "Gets/sets the status bar text for the given window."
+    },
+    {
+      "name": "Window.devicePixelRatio",
+      "link": "/en-US/docs/Web/API/Window/devicePixelRatio",
+      "description": "Returns the ratio between physical pixels and device independent pixels in the current display."
+    },
+    {
+      "name": "Window.dialogArguments",
+      "link": "/en-US/docs/Web/API/Window/dialogArguments",
+      "description": "Gets the arguments passed to the window (if it\u0027s a dialog box) at the time window.showModalDialog() was called. This is an nsIArray."
+    },
+    {
+      "name": "Window.directories",
+      "link": "/en-US/docs/Web/API/Window/directories",
+      "description": "Synonym of window.personalbar"
+    },
+    {
+      "name": "Window.document",
+      "link": "/en-US/docs/Web/API/Window/document",
+      "description": "Returns a reference to the document that the window contains."
+    },
+    {
+      "name": "Window.frameElement",
+      "link": "/en-US/docs/Web/API/Window/frameElement",
+      "description": "Returns the element in which the window is embedded, or null if the window is not embedded."
+    },
+    {
+      "name": "Window.frames",
+      "link": "/en-US/docs/Web/API/Window/frames",
+      "description": "Returns an array of the subframes in the current window."
+    },
+    {
+      "name": "Window.fullScreen",
+      "link": "/en-US/docs/Web/API/Window/fullScreen",
+      "description": "This property indicates whether the window is displayed in full screen or not.",
+      "parameters": [
+        {
+          "name": "isInFullScreen",
+          "description": "A boolean. Possible Values:"
+        }
+      ]
+    },
+    {
+      "name": "Window.globalStorage",
+      "link": "/en-US/docs/Web/API/Window/globalStorage",
+      "description": "Unsupported since Gecko 13 (Firefox 13). Use Window.localStorage instead. Was: Multiple storage objects that are used for storing data across multiple pages."
+    },
+    {
+      "name": "Window.history",
+      "link": "/en-US/docs/Web/API/Window/history",
+      "description": "Returns a reference to the history object."
+    },
+    {
+      "name": "Window.innerHeight",
+      "link": "/en-US/docs/Web/API/Window/innerHeight",
+      "description": "Gets the height of the content area of the browser window including, if rendered, the horizontal scrollbar."
+    },
+    {
+      "name": "Window.innerWidth",
+      "link": "/en-US/docs/Web/API/Window/innerWidth",
+      "description": "Gets the width of the content area of the browser window including, if rendered, the vertical scrollbar."
+    },
+    {
+      "name": "Window.isSecureContext",
+      "link": "/en-US/docs/Web/API/Window/isSecureContext",
+      "description": "Indicates whether a context is capable of using features that require secure contexts."
+    },
+    {
+      "name": "Window.length",
+      "link": "/en-US/docs/Web/API/Window/length",
+      "description": "Returns the number of frames in the window. See also window.frames."
+    },
+    {
+      "name": "Window.location",
+      "link": "/en-US/docs/Web/API/Window/location",
+      "description": "Gets/sets the location, or current URL, of the window object."
+    },
+    {
+      "name": "Window.locationbar",
+      "link": "/en-US/docs/Web/API/Window/locationbar",
+      "description": "Returns the locationbar object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.localStorage",
+      "link": "/en-US/docs/Web/API/Window/localStorage",
+      "description": "Returns a reference to the local storage object used to store data that may only be accessed by the origin that created it.",
+      "parameters": [
+        {
+          "name": "SecurityError",
+          "description": "The request violates a policy decision, or the origin is not a valid scheme/host/port tuple (this can happen if the origin uses the file: or data: scheme, for example). For example, the user may have their browser configured to deny permission to persist data for the specified origin."
+        }
+      ]
+    },
+    {
+      "name": "Window.menubar",
+      "link": "/en-US/docs/Web/API/Window/menubar",
+      "description": "Returns the menubar object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.messageManager",
+      "link": "/en-US/docs/Web/API/Window/messageManager",
+      "description": "Returns the message manager object for this window."
+    },
+    {
+      "name": "Window.mozAnimationStartTime",
+      "link": "/en-US/docs/Web/API/Window/mozAnimationStartTime",
+      "description": "The time in milliseconds since epoch at which the current animation cycle began."
+    },
+    {
+      "name": "Window.mozInnerScreenX",
+      "link": "/en-US/docs/Web/API/Window/mozInnerScreenX",
+      "description": "Returns the horizontal (X) coordinate of the top-left corner of the window\u0027s viewport, in screen coordinates. This value is reported in CSS pixels. See mozScreenPixelsPerCSSPixel in nsIDOMWindowUtils for a conversion factor to adapt to screen pixels if needed."
+    },
+    {
+      "name": "Window.mozInnerScreenY",
+      "link": "/en-US/docs/Web/API/Window/mozInnerScreenY",
+      "description": "Returns the vertical (Y) coordinate of the top-left corner of the window\u0027s viewport, in screen coordinates. This value is reported in CSS pixels. See mozScreenPixelsPerCSSPixel for a conversion factor to adapt to screen pixels if needed."
+    },
+    {
+      "name": "Window.mozPaintCount",
+      "link": "/en-US/docs/Web/API/Window/mozPaintCount",
+      "description": "Returns the number of times the current document has been rendered to the screen in this window. This can be used to compute rendering performance."
+    },
+    {
+      "name": "Window.name",
+      "link": "/en-US/docs/Web/API/Window/name",
+      "description": "Gets/sets the name of the window."
+    },
+    {
+      "name": "Window.navigator",
+      "link": "/en-US/docs/Web/API/Window/navigator",
+      "description": "Returns a reference to the navigator object."
+    },
+    {
+      "name": "Window.opener",
+      "link": "/en-US/docs/Web/API/Window/opener",
+      "description": "Returns a reference to the window that opened this current window."
+    },
+    {
+      "name": "Window.orientation",
+      "link": "/en-US/docs/Web/API/Window/orientation",
+      "description": "Returns the orientation in degrees (in 90 degree increments) of the viewport relative to the device\u0027s natural orientation."
+    },
+    {
+      "name": "Window.outerHeight",
+      "link": "/en-US/docs/Web/API/Window/outerHeight",
+      "description": "Gets the height of the outside of the browser window."
+    },
+    {
+      "name": "Window.outerWidth",
+      "link": "/en-US/docs/Web/API/Window/outerWidth",
+      "description": "Gets the width of the outside of the browser window."
+    },
+    {
+      "name": "Window.pageXOffset",
+      "link": "/en-US/docs/Web/API/Window/scrollX",
+      "description": "An alias for window.scrollX."
+    },
+    {
+      "name": "Window.pageYOffset",
+      "link": "/en-US/docs/Web/API/Window/scrollY",
+      "description": "An alias for window.scrollY"
+    },
+    {
+      "name": "Window.sessionStorage",
+      "link": "/en-US/docs/Web/API/Window/sessionStorage",
+      "description": "Returns a reference to the session storage object used to store data that may only be accessed by the origin that created it."
+    },
+    {
+      "name": "Window.parent",
+      "link": "/en-US/docs/Web/API/Window/parent",
+      "description": "Returns a reference to the parent of the current window or subframe."
+    },
+    {
+      "name": "Window.performance",
+      "link": "/en-US/docs/Web/API/Window/performance",
+      "description": "Provides a hosting area for performance related attributes.",
+      "parameters": [
+        {
+          "name": "performance.mark()",
+          "description": "Maps a DOMHighResTimeStamp to a specified name representing the number of milliseconds elapsed since a reference instant."
+        },
+        {
+          "name": "performance.now()",
+          "description": "Returns a DOMHighResTimeStamp representing the number of milliseconds elapsed since a reference instant."
+        },
+        {
+          "name": "performance.timing",
+          "description": "Is a PerformanceTiming object containing latency-related performance information."
+        },
+        {
+          "name": "performance.navigation",
+          "description": "Is a PerformanceNavigation object representing the type of navigation that occurs in the given browsing context, like the number of redirections needed to fetch the resource."
+        },
+        {
+          "name": "performance.memory",
+          "description": "A non-standard extension added in Chrome."
+        }
+      ]
+    },
+    {
+      "name": "Window.personalbar",
+      "link": "/en-US/docs/Web/API/Window/personalbar",
+      "description": "Returns the personalbar object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.pkcs11",
+      "link": "/en-US/docs/Web/API/Window/pkcs11",
+      "description": "Formerly provided access to install and remove PKCS11 modules."
+    },
+    {
+      "name": "Window.returnValue",
+      "link": "/en-US/docs/Web/API/Window/returnValue",
+      "description": "The return value to be returned to the function that called window.showModalDialog() to display the window as a modal dialog."
+    },
+    {
+      "name": "Window.screen",
+      "link": "/en-US/docs/Web/API/Window/screen",
+      "description": "Returns a reference to the screen object associated with the window."
+    },
+    {
+      "name": "Window.screenX",
+      "link": "/en-US/docs/Web/API/Window/screenX",
+      "description": "Returns the horizontal distance of the left border of the user\u0027s browser from the left side of the screen."
+    },
+    {
+      "name": "Window.screenY",
+      "link": "/en-US/docs/Web/API/Window/screenY",
+      "description": "Returns the vertical distance of the top border of the user\u0027s browser from the top side of the screen."
+    },
+    {
+      "name": "Window.scrollbars",
+      "link": "/en-US/docs/Web/API/Window/scrollbars",
+      "description": "Returns the scrollbars object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.scrollMaxX",
+      "link": "/en-US/docs/Web/API/Window/scrollMaxX",
+      "description": "The maximum offset that the window can be scrolled to horizontally, that is the document width minus the viewport width."
+    },
+    {
+      "name": "Window.scrollMaxY",
+      "link": "/en-US/docs/Web/API/Window/scrollMaxY",
+      "description": "The maximum offset that the window can be scrolled to vertically (i.e., the document height minus the viewport height)."
+    },
+    {
+      "name": "Window.scrollX",
+      "link": "/en-US/docs/Web/API/Window/scrollX",
+      "description": "Returns the number of pixels that the document has already been scrolled horizontally."
+    },
+    {
+      "name": "Window.scrollY",
+      "link": "/en-US/docs/Web/API/Window/scrollY",
+      "description": "Returns the number of pixels that the document has already been scrolled vertically."
+    },
+    {
+      "name": "Window.self",
+      "link": "/en-US/docs/Web/API/Window/self",
+      "description": "Returns an object reference to the window object itself."
+    },
+    {
+      "name": "Window.sessionStorage",
+      "link": "/en-US/docs/Web/API/Window/sessionStorage",
+      "description": "Returns a storage object for storing data within a single page session."
+    },
+    {
+      "name": "Window.sidebar",
+      "link": "/en-US/docs/Web/API/Window/sidebar",
+      "description": "Returns a reference to the window object of the sidebar."
+    },
+    {
+      "name": "Window.speechSynthesis",
+      "link": "/en-US/docs/Web/API/Window/speechSynthesis",
+      "description": "Returns a SpeechSynthesis object, which is the entry point into using Web Speech API speech synthesis functionality."
+    },
+    {
+      "name": "Window.status",
+      "link": "/en-US/docs/Web/API/Window/status",
+      "description": "Gets/sets the text in the statusbar at the bottom of the browser."
+    },
+    {
+      "name": "Window.statusbar",
+      "link": "/en-US/docs/Web/API/Window/statusbar",
+      "description": "Returns the statusbar object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.toolbar",
+      "link": "/en-US/docs/Web/API/Window/toolbar",
+      "description": "Returns the toolbar object, whose visibility can be toggled in the window."
+    },
+    {
+      "name": "Window.top",
+      "link": "/en-US/docs/Web/API/Window/top",
+      "description": "Returns a reference to the topmost window in the window hierarchy. This property is read only."
+    },
+    {
+      "name": "Window.window",
+      "link": "/en-US/docs/Web/API/Window/window",
+      "description": "Returns a reference to the current window."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.caches",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/caches",
+      "description": "Returns the CacheStorage object associated with the current context. This object enables functionality such as storing assets for offline use, and generating custom responses to requests."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.indexedDB",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/indexedDB",
+      "description": "Provides a mechanism for applications to asynchronously access capabilities of indexed databases; returns an IDBFactory object."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.isSecureContext",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/isSecureContext",
+      "description": "Returns a boolean indicating whether the current context is secure (true) or not (false)."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.origin",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/origin",
+      "description": "Returns the global object\u0027s origin, serialized as a string. (This does not yet appear to be implemented in any browser.)"
+    },
+    {
+      "name": "Window.alert()",
+      "link": "/en-US/docs/Web/API/Window/alert",
+      "description": "Displays an alert dialog."
+    },
+    {
+      "name": "Window.back()",
+      "link": "/en-US/docs/Web/API/Window/back",
+      "description": "Moves back one in the window history."
+    },
+    {
+      "name": "Window.blur()",
+      "link": "/en-US/docs/Web/API/Window/blur",
+      "description": "Sets focus away from the window."
+    },
+    {
+      "name": "Window.cancelAnimationFrame()",
+      "link": "/en-US/docs/Web/API/Window/cancelAnimationFrame",
+      "description": "Enables you to cancel a callback previously scheduled with Window.requestAnimationFrame.",
+      "parameters": [
+        {
+          "name": "requestID",
+          "description": "The ID value returned by the call to window.requestAnimationFrame() that requested the callback."
+        }
+      ]
+    },
+    {
+      "name": "Window.cancelIdleCallback()",
+      "link": "/en-US/docs/Web/API/Window/cancelIdleCallback",
+      "description": "Enables you to cancel a callback previously scheduled with Window.requestIdleCallback.",
+      "parameters": [
+        {
+          "name": "handle",
+          "description": "The ID value returned by window.requestIdleCallback() when the callback was established."
+        }
+      ]
+    },
+    {
+      "name": "Window.captureEvents()",
+      "link": "/en-US/docs/Web/API/Window/captureEvents",
+      "description": "Registers the window to capture all events of the specified type."
+    },
+    {
+      "name": "Window.clearImmediate()",
+      "link": "/en-US/docs/Web/API/Window/clearImmediate",
+      "description": "Cancels the repeated execution set using setImmediate."
+    },
+    {
+      "name": "Window.close()",
+      "link": "/en-US/docs/Web/API/Window/close",
+      "description": "Closes the current window."
+    },
+    {
+      "name": "Window.confirm()",
+      "link": "/en-US/docs/Web/API/Window/confirm",
+      "description": "Displays a dialog with a message that the user needs to respond to."
+    },
+    {
+      "name": "Window.disableExternalCapture()",
+      "link": "/en-US/docs/Web/API/Window/disableExternalCapture",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.dispatchEvent()",
+      "link": "/en-US/docs/Web/API/Window/dispatchEvent",
+      "description": "Used to trigger an event."
+    },
+    {
+      "name": "Window.dump()",
+      "link": "/en-US/docs/Web/API/Window/dump",
+      "description": "Writes a message to the console."
+    },
+    {
+      "name": "Window.enableExternalCapture()",
+      "link": "/en-US/docs/Web/API/Window/enableExternalCapture",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.find()",
+      "link": "/en-US/docs/Web/API/Window/find",
+      "description": "Searches for a given string in a window.",
+      "parameters": [
+        {
+          "name": "aString",
+          "description": "The text string for which to search."
+        },
+        {
+          "name": "aCaseSensitive",
+          "description": "Boolean value. If true, specifies a case-sensitive search."
+        },
+        {
+          "name": "aBackwards",
+          "description": "Boolean. If true, specifies a backward search."
+        },
+        {
+          "name": "aWrapAround",
+          "description": "Boolean. If true, specifies a wrap around search."
+        },
+        {
+          "name": "aWholeWord Unimplemented",
+          "description": "Boolean. If true, specifies a whole word search. This is not implemented; see bug 481513."
+        },
+        {
+          "name": "aSearchInFrames",
+          "description": "Boolean. If true, specifies a search in frames."
+        }
+      ]
+    },
+    {
+      "name": "Window.focus()",
+      "link": "/en-US/docs/Web/API/Window/focus",
+      "description": "Sets focus on the current window."
+    },
+    {
+      "name": "Window.forward()",
+      "link": "/en-US/docs/Web/API/Window/forward",
+      "description": "Moves the window one document forward in the history."
+    },
+    {
+      "name": "Window.getAttention()",
+      "link": "/en-US/docs/Web/API/Window/getAttention",
+      "description": "Flashes the application icon."
+    },
+    {
+      "name": "Window.getAttentionWithCycleCount()",
+      "link": "/en-US/docs/Web/API/Window/getAttentionWithCycleCount",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.getComputedStyle()",
+      "link": "/en-US/docs/Web/API/Window/getComputedStyle",
+      "description": "Gets computed style for the specified element. Computed style indicates the computed values of all CSS properties of the element.",
+      "parameters": [
+        {
+          "name": "element",
+          "description": "The Element for which to get the computed style."
+        },
+        {
+          "name": "pseudoElt Optional",
+          "description": "A string specifying the pseudo-element to match. Must be omitted (or null) for regular elements."
+        }
+      ]
+    },
+    {
+      "name": "Window.getDefaultComputedStyle()",
+      "link": "/en-US/docs/Web/API/Window/getDefaultComputedStyle",
+      "description": "Gets default computed style for the specified element, ignoring author stylesheets.",
+      "parameters": [
+        {
+          "name": "element",
+          "description": "The Element for which to get the computed style."
+        },
+        {
+          "name": "pseudoElt Optional",
+          "description": "A string specifying the pseudo-element to match. Must be null (or not specified) for regular elements."
+        }
+      ]
+    },
+    {
+      "name": "Window.getSelection()",
+      "link": "/en-US/docs/Web/API/Window/getSelection",
+      "description": "Returns the selection object representing the selected item(s)."
+    },
+    {
+      "name": "Window.home()",
+      "link": "/en-US/docs/Web/API/Window/home",
+      "description": "Returns the browser to the home page."
+    },
+    {
+      "name": "Window.matchMedia()",
+      "link": "/en-US/docs/Web/API/Window/matchMedia",
+      "description": "Returns a MediaQueryList object representing the specified media query string."
+    },
+    {
+      "name": "Window.maximize()",
+      "link": "/en-US/docs/Web/API/Window/maximize",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.minimize()",
+      "link": "/en-US/docs/Web/API/Window/minimize",
+      "description": "Minimizes the window."
+    },
+    {
+      "name": "Window.moveBy()",
+      "link": "/en-US/docs/Web/API/Window/moveBy",
+      "description": "Moves the current window by a specified amount."
+    },
+    {
+      "name": "Window.moveTo()",
+      "link": "/en-US/docs/Web/API/Window/moveTo",
+      "description": "Moves the window to the specified coordinates."
+    },
+    {
+      "name": "Window.open()",
+      "link": "/en-US/docs/Web/API/Window/open",
+      "description": "Opens a new window.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "A DOMString indicating the URL of the resource to be loaded. This can be a path or URL to an HTML page, image file, or any other resource which is supported by the browser. If the empty string (\"\") is specified as url, a blank page is opened into the targeted browsing context."
+        },
+        {
+          "name": "windowName",
+          "description": "A DOMString specifying the name of the browsing context (window or tab) into which to load the specified resource; if the name doesn\u0027t indicate an existing context, a new window is created and is given the name specified by windowName. This name can then be used as the target of links and forms by specifying it as the target attribute of \u003ca\u003e or \u003cform\u003e elements. The name should not contain whitespace. Keep in mind that this will not be used as the window\u0027s displayed title."
+        },
+        {
+          "name": "windowFeatures Optional",
+          "description": "A DOMString containing a comma-separated list of window features given with their corresponding values in the form \"name\u003dvalue\". These features include options such as the window\u0027s default size and position, whether or not to include scroll bars, and so forth. There must be no whitespace in the string. See Window features below for documentation of each of the features that can be specified."
+        },
+        {
+          "name": "left",
+          "description": "Specifies the distance the new window is placed from the left side of the work area for applications of the user\u0027s operating system to the leftmost border (resizing handle) of the browser window. The new window can not be initially positioned offscreen."
+        },
+        {
+          "name": "top",
+          "description": "Specifies the distance the new window is placed from the top side of the work area for applications of the user\u0027s operating system to the topmost border (resizing handle) of the browser window. The new window can not be initially positioned offscreen."
+        },
+        {
+          "name": "height",
+          "description": "Specifies the height of the content area, viewing area of the new secondary window in pixels. The height value includes the height of the horizontal scrollbar if present. The minimum required value is 100."
+        },
+        {
+          "name": "width",
+          "description": "Specifies the width of the content area, viewing area of the new secondary window in pixels. The width value includes the width of the vertical scrollbar if present. The width value does not include the sidebar if it is expanded. The minimum required value is 100."
+        },
+        {
+          "name": "screenX",
+          "description": "Deprecated. Same as left but only supported by Netscape and Mozilla-based browsers."
+        },
+        {
+          "name": "screenY",
+          "description": "Deprecated. Same as top but only supported by Netscape and Mozilla-based browsers."
+        },
+        {
+          "name": "centerscreen",
+          "description": "Centers the window in relation to its parent\u0027s size and position. Requires chrome\u003dyes."
+        },
+        {
+          "name": "outerHeight",
+          "description": "Specifies the height of the whole browser window in pixels. This outerHeight value includes any/all present toolbar, window horizontal scrollbar (if present) and top and bottom window resizing borders. Minimal required value is 100."
+        },
+        {
+          "name": "outerWidth",
+          "description": "Specifies the width of the whole browser window in pixels. This outerWidth value includes the window vertical scrollbar (if present) and left and right window resizing borders."
+        },
+        {
+          "name": "innerHeight",
+          "description": "Same as height but only supported by Netscape and Mozilla-based browsers. Specifies the height of the content area, viewing area of the new secondary window in pixels. The innerHeight value includes the height of the horizontal scrollbar if present. Minimal required value is 100."
+        },
+        {
+          "name": "innerWidth",
+          "description": "Same as width but only supported by Netscape and Mozilla-based browsers. Specifies the width of the content area, viewing area of the new secondary window in pixels. The innerWidth value includes the width of the vertical scrollbar if present. The innerWidth value does not include the sidebar if it is expanded. Minimal required value is 100."
+        },
+        {
+          "name": "NOTE: All features can be set to yes or 1, or just be present to be \"on\". Set them to no or 0, or in most cases just omit them, to be \"off\".",
+          "description": "Example: \"status\u003dyes\", \"status\u003d1\", and \"status\" have identical results."
+        },
+        {
+          "name": "menubar",
+          "description": "If this feature is on, then the new secondary window renders the menubar."
+        },
+        {
+          "name": "toolbar",
+          "description": "If this feature is on, then the new secondary window renders the Navigation Toolbar (Back, Forward, Reload, Stop buttons). In addition to the Navigation Toolbar, Mozilla-based browsers will render the Tab Bar if it is visible, present in the parent window. (If this feature is set to no all toolbars in the window will be invisible, for example extension toolbars)."
+        },
+        {
+          "name": "location",
+          "description": "If this feature is on, then the new secondary window renders the Location bar in Mozilla-based browsers. MSIE 5+ and Opera 7.x renders the Address Bar."
+        },
+        {
+          "name": "personalbar",
+          "description": "If this feature is on, then the new secondary window renders the Personal Toolbar in Netscape 6.x, Netscape 7.x and Mozilla browser. It renders the Bookmarks Toolbar in Firefox. In addition to the Personal Toolbar, Mozilla browser will render the Site Navigation Bar if such toolbar is visible, present in the parent window."
+        },
+        {
+          "name": "directories Obsolete since Gecko 2",
+          "description": "Obsolete synonym of personalbar. In IE, it rendered the Links bar. Supported in Gecko up to 1.9.2 and in IE up to 6."
+        },
+        {
+          "name": "status",
+          "description": "If this feature is on, then the new secondary window has a status bar. Users can force the rendering of status bar in all Mozilla-based browsers, in MSIE 6 SP2 (Note on status bar in XP SP2) and in Opera 6+. The default preference setting in recent Mozilla-based browser releases and in Firefox 1.0 is to force the presence of the status bar."
+        },
+        {
+          "name": "attention Non-standard",
+          "description": "If this feature is specified, the window is able to open even if another application is already in the foreground. This feature is for Firefox OS applications only, and is currently restricted to certified applications. See \"Certified app permissions\" in undefined for more information."
+        },
+        {
+          "name": "dependent",
+          "description": "If on, the new window is said to be dependent of its parent window. A dependent window closes when its parent window closes. A dependent window is minimized on the Windows task bar only when its parent window is minimized. On Windows platforms, a dependent window does not show on the task bar. A dependent window also stays in front of the parent window."
+        },
+        {
+          "name": "minimizable",
+          "description": "This setting can only apply to dialog windows; \"minimizable\" requires dialog\u003dyes. If minimizable is on, the new dialog window will have a minimize system command icon in the titlebar and it will be minimizable. Any non-dialog window is always minimizable and minimizable\u003dno will be ignored."
+        },
+        {
+          "name": "fullscreen",
+          "description": "Do not use. Not implemented in Mozilla. There are no plans to implement this feature in Mozilla."
+        },
+        {
+          "name": "noopener",
+          "description": "If this feature is set, the newly-opened window will open as normal, except that it will not have access back to the originating window (via Window.opener — it returns null). In addition, the window.open() call will also return null, so the originating window will not have access to the new one either.  This is useful for preventing untrusted sites opened via window.open() from tampering with the originating window, and vice versa."
+        },
+        {
+          "name": "resizable",
+          "description": "If this feature is on, the new secondary window will be resizable."
+        },
+        {
+          "name": "scrollbars",
+          "description": "If this feature is on, the new secondary window will show horizontal and/or vertical scrollbar(s) if the document doesn\u0027t fit into the window\u0027s viewport. Tip: For accessibility reasons, it is strongly encouraged to set this feature always on."
+        },
+        {
+          "name": "chrome",
+          "description": "Note: Starting with Mozilla 1.7/Firefox 0.9, this feature requires the UniversalBrowserWrite privilege (bug 244965). Without this privilege, it is ignored."
+        },
+        {
+          "name": "dialog",
+          "description": "Note: Starting with Firefox 44, this feature can only be used with chrome privileges. If content attempts to toggle this feature, it will be ignored."
+        },
+        {
+          "name": "modal",
+          "description": "Note: Starting with Mozilla 1.2.1, this feature requires the UniversalBrowserWrite privilege (bug 180048). Without this privilege, it is ignored."
+        },
+        {
+          "name": "titlebar",
+          "description": "By default, all new secondary windows have a titlebar. If set to no or 0, this feature removes the titlebar from the new secondary window."
+        },
+        {
+          "name": "alwaysRaised",
+          "description": "If on, the new window will always be displayed on top of other browser windows, regardless of whether it is active or not."
+        },
+        {
+          "name": "alwaysLowered",
+          "description": "If on, the new created window floats below, under its own parent when the parent window is not minimized. alwaysLowered windows are often referred as pop-under windows. The alwaysLowered window can not be on top of the parent but the parent window can be minimized. In NS 6.x, the alwaysLowered window has no minimize system command icon and no restore/maximize system command."
+        },
+        {
+          "name": "z-lock",
+          "description": "Same as alwaysLowered."
+        },
+        {
+          "name": "close",
+          "description": "When set to no or 0, this feature removes the system close command icon and system close menu item. It will only work for dialog windows (dialog feature set). close\u003dno will override minimizable\u003dyes."
+        },
+        {
+          "name": "How can I prevent the confirmation message asking the user whether he wants to close the window?",
+          "description": "You can not. New windows not opened by javascript can not as a rule be closed by JavaScript. The JavaScript Console in Mozilla-based browsers will report the warning message: \"Scripts may not close windows that were not opened by script.\" Otherwise the history of URLs visited during the browser session would be lost."
+        },
+        {
+          "name": "How can I bring back the window if it is minimized or behind another window?",
+          "description": "First check for the existence of the window object reference of such window and if it exists and if it has not been closed, then use the focus() method. There is no other reliable way. You can examine an example explaining how to use the focus() method."
+        },
+        {
+          "name": "How do I force a maximized window?",
+          "description": "You cannot. All browser manufacturers try to make the opening of new secondary windows noticed by users and noticeable by users to avoid confusion, to avoid disorienting users."
+        },
+        {
+          "name": "How do I turn off window resizability or remove toolbars?",
+          "description": "You cannot force this. Users with Mozilla-based browsers have absolute control over window functionalities like resizability, scrollability and toolbars presence via user preferences in about:config. Since your users are the ones who are supposed to use such windows (and not you, being the web author), the best is to avoid interfering with their habits and preferences. We recommend to always set the resizability and scrollbars presence (if needed) to yes to insure accessibility to content and usability of windows. This is in the best interests of both the web author and the users."
+        },
+        {
+          "name": "How do I resize a window to fit its content?",
+          "description": "You can not reliably because the users can prevent the window from being resized by unchecking the Edit/Preferences/Advanced/Scripts \u0026 Plug-ins/Allow Scripts to/ Move or resize existing windows checkbox in Mozilla or Tools/Options.../Content tab/Enable Javascript/Advanced button/Move or resize existing windows checkbox in Firefox or by setting dom.disable_window_move_resize to true in about:config or by editing accordingly their user.js file."
+        },
+        {
+          "name": "How do I open a referenced resource of a link in a new tab? or in a specific tab?",
+          "description": "To open a resource in a new tab see Tabbed browser. Some Code snippets are available. If you are using the SDK, tabs are handled a bit differently"
+        },
+        {
+          "name": "How do I know whether a window I opened is still open?",
+          "description": "You can test for the existence of the window object reference which is the returned value in case of success of the window.open() call and then verify that windowObjectReference.closed return value is false."
+        },
+        {
+          "name": "How can I tell when my window was blocked by a popup blocker?",
+          "description": "With the built-in popup blockers of Mozilla/Firefox and Internet Explorer 6 SP2, you have to check the return value of window.open(): it will be null if the window wasn\u0027t allowed to open. However, for most other popup blockers, there is no reliable way."
+        },
+        {
+          "name": "What is the JavaScript relationship between the main window and the secondary window?",
+          "description": "The window.open() method gives a main window a reference to a secondary window; the opener property gives a secondary window a reference to its main window."
+        },
+        {
+          "name": "I can not access the properties of the new secondary window. I always get an error in the javascript console saying \"Error: uncaught exception: Permission denied to get property \u003cproperty_name or method_name\u003e. Why is that?",
+          "description": "It is because of the cross-domain script security restriction (also referred as the \"Same Origin Policy\"). A script loaded in a window (or frame) from a distinct origin (domain name) cannot get nor set properties of another window (or frame) or the properties of any of its HTML objects coming from another distinct origin (domain name). Therefore, before executing a script targeting a secondary window, the browser in the main window will verify that the secondary window has the same domain name."
+        },
+        {
+          "name": "Opener window, parent window, main window, first window",
+          "description": "Terms often used to describe or to identify the same window. It is the window from which a new window will be created. It is the window on which the user clicked a link which lead to the creation of another, new window."
+        },
+        {
+          "name": "Sub-window, child window, secondary window, second window",
+          "description": "Terms often used to describe or to identify the same window. It is the new window which was created."
+        },
+        {
+          "name": "Unrequested popup windows",
+          "description": "Script-initiated windows opening automatically without the user\u0027s consent."
+        }
+      ]
+    },
+    {
+      "name": "Window.openDialog()",
+      "link": "/en-US/docs/Web/API/Window/openDialog",
+      "description": "Opens a new dialog window.",
+      "parameters": [
+        {
+          "name": "newWindow",
+          "description": "The opened window"
+        },
+        {
+          "name": "url",
+          "description": "The URL to be loaded in the newly opened window."
+        },
+        {
+          "name": "name",
+          "description": "The window name (optional). See window.open() description for detailed information."
+        },
+        {
+          "name": "features",
+          "description": "See window.open() for details."
+        },
+        {
+          "name": "arg1, arg2, ...",
+          "description": "The arguments to be passed to the new window (optional)."
+        }
+      ]
+    },
+    {
+      "name": "Window.postMessage()",
+      "link": "/en-US/docs/Web/API/Window/postMessage",
+      "description": "Provides a secure means for one window to send a string of data to another window, which need not be within the same domain as the first.",
+      "parameters": [
+        {
+          "name": "otherWindow",
+          "description": "A reference to another window; such a reference may be obtained, for example, using the contentWindow property of an iframe element, the object returned by window.open, or by named or numeric index on Window.frames, if you\u0027re trying to start the communication from iframe to parent window then parent is also a valid reference"
+        },
+        {
+          "name": "message",
+          "description": "Data to be sent to the other window. The data is serialized using the structured clone algorithm. This means you can pass a broad variety of data objects safely to the destination window without having to serialize them yourself. [1]"
+        },
+        {
+          "name": "targetOrigin",
+          "description": "Specifies what the origin of otherWindow must be for the event to be dispatched, either as the literal string \"*\" (indicating no preference) or as a URI. If at the time the event is scheduled to be dispatched the scheme, hostname, or port of otherWindow\u0027s document does not match that provided in targetOrigin, the event will not be dispatched; only if all three match will the event be dispatched. This mechanism provides control over where messages are sent; for example, if postMessage() was used to transmit a password, it would be absolutely critical that this argument be a URI whose origin is the same as the intended receiver of the message containing the password, to prevent interception of the password by a malicious third party. Always provide a specific targetOrigin, not *, if you know where the other window\u0027s document should be located. Failing to provide a specific target discloses the data you send to any interested malicious site."
+        },
+        {
+          "name": "transfer Optional",
+          "description": "Is a sequence of Transferable objects that are transferred with the message. The ownership of these objects is given to the destination side and they are no longer usable on the sending side."
+        },
+        {
+          "name": "data",
+          "description": "The object passed from the other window."
+        },
+        {
+          "name": "origin",
+          "description": "The origin of the window that sent the message at the time postMessage was called. This string is the concatenation of the protocol and \"://\", the host name if one exists, and \":\" followed by a port number if a port is present and differs from the default port for the given protocol. Examples of typical origins are https://example.org (implying port 443), http://example.net (implying port 80), and http://example.com:8080. Note that this origin is not guaranteed to be the current or future origin of that window, which might have been navigated to a different location since postMessage was called."
+        },
+        {
+          "name": "source",
+          "description": "A reference to the window object that sent the message; you can use this to establish two-way communication between two windows with different origins."
+        }
+      ]
+    },
+    {
+      "name": "Window.print()",
+      "link": "/en-US/docs/Web/API/Window/print",
+      "description": "Opens the Print Dialog to print the current document."
+    },
+    {
+      "name": "Window.prompt()",
+      "link": "/en-US/docs/Web/API/Window/prompt",
+      "description": "Returns the text entered by the user in a prompt dialog."
+    },
+    {
+      "name": "Window.releaseEvents()",
+      "link": "/en-US/docs/Web/API/Window/releaseEvents",
+      "description": "Releases the window from trapping events of a specific type."
+    },
+    {
+      "name": "Window.requestAnimationFrame()",
+      "link": "/en-US/docs/Web/API/Window/requestAnimationFrame",
+      "description": "Tells the browser that an animation is in progress, requesting that the browser schedule a repaint of the window for the next animation frame.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "A parameter specifying a function to call when it\u0027s time to update your animation for the next repaint. The callback has one single argument, a DOMHighResTimeStamp, which indicates the current time (the time returned from performance.now() ) for when requestAnimationFrame starts to fire callbacks."
+        }
+      ]
+    },
+    {
+      "name": "Window.requestIdleCallback()",
+      "link": "/en-US/docs/Web/API/Window/requestIdleCallback",
+      "description": "Enables the scheduling of tasks during a browser\u0027s idle periods.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "A reference to a function that should be called in the near future, when the event loop is idle. The callback function is passed a IdleDeadline object describing the amount of time available and whether or not the callback has been run because the timeout period expired."
+        },
+        {
+          "name": "options Optional",
+          "description": "Contains optional configuration parameters. Currently only one property is defined: timeout: If timeout is specified and has a positive value, and the callback has not already been called by the time timeout milliseconds have passed, the timeout will be called during the next idle period, even if doing so risks causing a negative performance impact."
+        }
+      ]
+    },
+    {
+      "name": "Window.resizeBy()",
+      "link": "/en-US/docs/Web/API/Window/resizeBy",
+      "description": "Resizes the current window by a certain amount."
+    },
+    {
+      "name": "Window.resizeTo()",
+      "link": "/en-US/docs/Web/API/Window/resizeTo",
+      "description": "Dynamically resizes window."
+    },
+    {
+      "name": "Window.restore()",
+      "link": "/en-US/docs/Web/API/Window/restore",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.routeEvent()",
+      "link": "/en-US/docs/Web/API/Window/routeEvent",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.scroll()",
+      "link": "/en-US/docs/Web/API/Window/scroll",
+      "description": "Scrolls the window to a particular place in the document."
+    },
+    {
+      "name": "Window.scrollBy()",
+      "link": "/en-US/docs/Web/API/Window/scrollBy",
+      "description": "Scrolls the document in the window by the given amount."
+    },
+    {
+      "name": "Window.scrollByLines()",
+      "link": "/en-US/docs/Web/API/Window/scrollByLines",
+      "description": "Scrolls the document by the given number of lines."
+    },
+    {
+      "name": "Window.scrollByPages()",
+      "link": "/en-US/docs/Web/API/Window/scrollByPages",
+      "description": "Scrolls the current document by the specified number of pages."
+    },
+    {
+      "name": "Window.scrollTo()",
+      "link": "/en-US/docs/Web/API/Window/scrollTo",
+      "description": "Scrolls to a particular set of coordinates in the document."
+    },
+    {
+      "name": "Window.setCursor()",
+      "link": "/en-US/docs/Web/API/Window/setCursor",
+      "description": "Changes the cursor for the current window"
+    },
+    {
+      "name": "Window.setImmediate()",
+      "link": "/en-US/docs/Web/API/Window/setImmediate",
+      "description": "Executes a function after the browser has finished other heavy tasks"
+    },
+    {
+      "name": "Window.setResizable()",
+      "link": "/en-US/docs/Web/API/Window/setResizable",
+      "description": "Toggles a user\u0027s ability to resize a window."
+    },
+    {
+      "name": "Window.sizeToContent()",
+      "link": "/en-US/docs/Web/API/Window/sizeToContent",
+      "description": "Sizes the window according to its content."
+    },
+    {
+      "name": "Window.stop()",
+      "link": "/en-US/docs/Web/API/Window/stop",
+      "description": "This method stops window loading."
+    },
+    {
+      "name": "Window.updateCommands()",
+      "link": "/en-US/docs/Web/API/Window/updateCommands",
+      "description": "Updates the state of commands of the current chrome window (UI)."
+    },
+    {
+      "name": "EventTarget.addEventListener()",
+      "link": "/en-US/docs/Web/API/EventTarget/addEventListener",
+      "description": "Register an event handler to a specific event type on the window.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the event type to listen for."
+        },
+        {
+          "name": "listener",
+          "description": "The object which receives a notification (an object that implements the Event interface) when an event of the specified type occurs. This must be an object implementing the EventListener interface, or a JavaScript function."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   once: A Boolean indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. See Improving scrolling performance with passive listeners to learn more. mozSystemGroup: A Boolean indicating that the listener should be added to the system group. Available only in code running in XBL or in Firefox\u0027s chrome."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree. Events that are bubbling upward through the tree will not trigger a listener designated to use capture. Event bubbling and capturing are two ways of propagating events which occur in an element that is nested within another element, when both elements have registered a handle for that event. The event propagation mode determines the order in which elements receive the event. See DOM Level 3 Events and JavaScript Event order for a detailed explanation. If not specified, useCapture defaults to false."
+        },
+        {
+          "name": "wantsUntrusted",
+          "description": "A Firefox (Gecko)-specific parameter. If true, the listener receives synthetic events dispatched by web content (the default is false for chrome and true for regular web pages). This parameter is useful for code found in add-ons as well as the browser itself. See Interaction between privileged and non-privileged pages for an example."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.atob()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob",
+      "description": "Decodes a string of data which has been encoded using base-64 encoding."
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.btoa()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa",
+      "description": "Creates a base-64 encoded ASCII string from a string of binary data.",
+      "parameters": [
+        {
+          "name": "stringToEncode",
+          "description": "A string whose characters each represent a single byte of binary data to be encoded into ASCII."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.clearInterval()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval",
+      "description": "Cancels the repeated execution set using WindowOrWorkerGlobalScope.setInterval().",
+      "parameters": [
+        {
+          "name": "intervalID",
+          "description": "The identifier of the repeated action you want to cancel. This ID was returned by the corresponding call to setInterval()."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.clearTimeout()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout",
+      "description": "Cancels the delayed execution set using WindowOrWorkerGlobalScope.setTimeout().",
+      "parameters": [
+        {
+          "name": "timeoutID",
+          "description": "The identifier of the timeout you want to cancel. This ID was returned by the corresponding call to setTimeout()."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.createImageBitmap()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/createImageBitmap",
+      "description": "Accepts a variety of different image sources, and returns a Promise which resolves to an ImageBitmap. Optionally the source is cropped to the rectangle of pixels originating at (sx, sy) with width sw, and height sh.",
+      "parameters": [
+        {
+          "name": "image",
+          "description": "An image source, which can be an \u003cimg\u003e, SVG \u003cimage\u003e, \u003cvideo\u003e, \u003ccanvas\u003e, HTMLImageElement, SVGImageElement, HTMLVideoElement, HTMLCanvasElement, Blob, ImageData, ImageBitmap, or OffscreenCanvas object."
+        },
+        {
+          "name": "sx",
+          "description": "The x coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sy",
+          "description": "The y coordinate of the reference point of the rectangle from which the ImageBitmap will be extracted."
+        },
+        {
+          "name": "sw",
+          "description": "The width of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "sh",
+          "description": "The height of the rectangle from which the ImageBitmap will be extracted. This value can be negative."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for . The available options are: imageOrientation: Indicates whether the image is presented as is or flipped vertically. Either none (default) or flipY. premultiplyAlpha: Indicates that the bitmaps color channels are premultiplied by the alpha channel. One of none, premultiply, or default (default). colorSpaceConversion: Indicates whether the image is decoded using color space conversion. Either none or default (default). The value default indicates that implementation-specific behavior is used. resizeWidth: A long integer that indicates the new width. resizeHeight: A long integer that indicates the new height. resizeQuality: Specifies an image scaling algorithm. One of pixelated, low (default), medium, or high."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.fetch()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch",
+      "description": "Starts the process of fetching a resource from the network.",
+      "parameters": [
+        {
+          "name": "input",
+          "description": "This defines the resource that you wish to fetch. This can either be: A USVString containing the direct URL of the resource you want to fetch. Some browsers accept blob: and data: as schemes. A Request object."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the request. The possible options are: method: The request method, e.g., GET, POST. headers: Any headers you want to add to your request, contained within a Headers object or an object literal with ByteString values. body: Any body that you want to add to your request: this can be a Blob, BufferSource, FormData, URLSearchParams, or USVString object. Note that a request using the GET or HEAD method cannot have a body. mode: The mode you want to use for the request, e.g., cors, no-cors, or same-origin. credentials: The request credentials you want to use for the request: omit, same-origin, or include. To automatically send cookies for the current domain, this option must be provided. Starting with Chrome 50, this property also takes a FederatedCredential instance or a PasswordCredential instance. cache: The cache mode you want to use for the request: default, no-store, reload, no-cache, force-cache, or only-if-cached. redirect: The redirect mode to use: follow (automatically follow redirects), error (abort with an error if a redirect occurs), or manual (handle redirects manually). In Chrome the default was follow before Chrome 47 and manual starting with Chrome 47. referrer: A USVString specifying no-referrer, client, or a URL. The default is client. referrerPolicy: Specifies the value of the referer HTTP header. May be one of no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url. integrity: Contains the subresource integrity value of the request (e.g., sha256-BpfBw7ivV8q2jLiT13fxDYAe2tJllusRSZ273h2nFSE\u003d). signal: A FetchSignal object instance; allows you to communicate with a fetch request and control it via a FetchController. observe: An ObserverCallback object — this object\u0027s sole purpose is to provide a callback function that runs when the fetch request runs. This returns a FetchObserver object that can be used to retrieve information concerning the status of a fetch request."
+        }
+      ]
+    },
+    {
+      "name": "EventTarget.removeEventListener",
+      "link": "/en-US/docs/Web/API/EventTarget/removeEventListener",
+      "description": "Removes an event listener from the window.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string which specifies the type of event for which to remove an event."
+        },
+        {
+          "name": "listener",
+          "description": "The EventListener function of the event handler to remove from the event target."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean that indicates that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. mozSystemGroup: Available only in code running in XBL or in Firefox\u0027 chrome, it is a Boolean defining if the listener is added to the system group."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "Specifies whether the EventListener to be removed is registered as a capturing listener or not. If this parameter is absent, a default value of false is assumed."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.setInterval()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval",
+      "description": "Schedules a function to execute every time a given number of milliseconds elapses.",
+      "parameters": [
+        {
+          "name": "func",
+          "description": "A function to be executed every delay milliseconds. The function is not passed any parameters, and no return value is expected."
+        },
+        {
+          "name": "code",
+          "description": "An optional syntax allows you to include a string instead of a function, which is compiled and executed every delay milliseconds. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should delay in between executions of the specified function or code. If this parameter is less than 10, a value of 10 is used. Note that the actual delay may be longer; see \"Reasons for delays longer than specified\" in WindowOrWorkerGlobalScope.setTimeout() for examples."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by func once the timer expires."
+        },
+        {
+          "name": "thisObject",
+          "description": "The this object on which the callback function is called. It can be an object or null."
+        },
+        {
+          "name": "callback",
+          "description": "The function that is repeatedly invoked . It is called with three parameters: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is increasing or decreasing). It is something like callback.call(thisObject, index, length, backwards). If the callback function returns a false value the daemon is paused."
+        },
+        {
+          "name": "rate (optional)",
+          "description": "The time lapse (in number of milliseconds) between each invocation. The default value is 100."
+        },
+        {
+          "name": "length (optional)",
+          "description": "The total number of invocations. It can be a positive integer or Infinity. The default value is Infinity."
+        },
+        {
+          "name": "myDaemon.owner",
+          "description": "The this object on which is executed the daemon (read/write). It can be an object or null."
+        },
+        {
+          "name": "myDaemon.task",
+          "description": "The function that is repeatedly invoked (read/write). It is called with three arguments: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is decreasing or not) – see above. If the myDaemon.task function returns a false value the daemon is paused."
+        },
+        {
+          "name": "myDaemon.rate",
+          "description": "The time lapse (in number of milliseconds) between each invocation (read/write)."
+        },
+        {
+          "name": "myDaemon.length",
+          "description": "The total number of invocations. It can be a positive integer or Infinity (read/write)."
+        },
+        {
+          "name": "myDaemon.isAtEnd()",
+          "description": "Returns a boolean expressing whether the daemon is at the start/end position or not."
+        },
+        {
+          "name": "myDaemon.synchronize()",
+          "description": "Synchronize the timer of a started daemon with the time of its invocation."
+        },
+        {
+          "name": "myDaemon.pause()",
+          "description": "Pauses the daemon."
+        },
+        {
+          "name": "myDaemon.start([reverse])",
+          "description": "Starts the daemon forward (index of each invocation increasing) or backwards (index decreasing)."
+        },
+        {
+          "name": "MiniDaemon.forceCall(minidaemon)",
+          "description": "Forces a single callback to the minidaemon.task function regardless of the fact that the end has been reached or not. In any case the internal INDEX property is increased/decreased (depending on the actual direction of the process)."
+        }
+      ]
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope.setTimeout()",
+      "link": "/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout",
+      "description": "Schedules a function to execute in a given amount of time.",
+      "parameters": [
+        {
+          "name": "function",
+          "description": "A function to be executed after the timer expires."
+        },
+        {
+          "name": "code",
+          "description": "An alternative syntax that allows you to include a string instead of a function, which is compiled and executed when the timer expires. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay Optional",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should wait before the specified function or code is executed. If this parameter is omitted, a value of 0 is used, meaning execute \"immediately\", or more accurately, as soon as possible. Note that in either case, the actual delay may be longer than intended; see Reasons for delays longer than specified below."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by function or code once the timer expires."
+        }
+      ]
+    },
+    {
+      "name": "Window.showModalDialog()",
+      "link": "/en-US/docs/Web/API/Window/showModalDialog",
+      "description": "Displays a modal dialog. This method was removed completely in Chrome 43, and Firefox 55."
+    },
+    {
+      "name": "GlobalEventHandlers.onabort",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onabort",
+      "description": "Called when the loading of a resource has been aborted, such as by a user canceling the load while it is still in progress"
+    },
+    {
+      "name": "WindowEventHandlers.onafterprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onafterprint",
+      "description": "Called when the print dialog box is closed. See afterprint event."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeprint",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeprint",
+      "description": "Called when the print dialog box is opened. See beforeprint event."
+    },
+    {
+      "name": "Window.onbeforeinstallprompt",
+      "link": "/en-US/docs/Web/API/Window/onbeforeinstallprompt",
+      "description": "An event handler property dispatched before a user is prompted to save a web site to a home screen on mobile."
+    },
+    {
+      "name": "WindowEventHandlers.onbeforeunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
+      "description": "An event handler property for before-unload events on the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onblur",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onblur",
+      "description": "Called after the window loses focus, such as due to a popup."
+    },
+    {
+      "name": "GlobalEventHandlers.onchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onchange",
+      "description": "An event handler property for change events on the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclick",
+      "description": "Called after the ANY mouse button is pressed \u0026 released"
+    },
+    {
+      "name": "GlobalEventHandlers.ondblclick",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/ondblclick",
+      "description": "Called when a double click is made with ANY mouse button."
+    },
+    {
+      "name": "GlobalEventHandlers.onclose",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onclose",
+      "description": "Called after the window is closed"
+    },
+    {
+      "name": "GlobalEventHandlers.oncontextmenu",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/oncontextmenu",
+      "description": "Called when the RIGHT mouse button is pressed"
+    },
+    {
+      "name": "Window.ondevicelight",
+      "link": "/en-US/docs/Web/API/Window/ondevicelight",
+      "description": "An event handler property for any ambient light levels changes"
+    },
+    {
+      "name": "Window.ondevicemotion",
+      "link": "/en-US/docs/Web/API/Window/ondevicemotion",
+      "description": "Called if accelerometer detects a change (For mobile devices)"
+    },
+    {
+      "name": "Window.ondeviceorientation",
+      "link": "/en-US/docs/Web/API/Window/ondeviceorientation",
+      "description": "Called when the orientation is changed (For mobile devices)"
+    },
+    {
+      "name": "Window.ondeviceorientationabsolute",
+      "link": "/en-US/docs/Web/API/Window/ondeviceorientationabsolute",
+      "description": "An event handler property for any device orientation changes."
+    },
+    {
+      "name": "Window.ondeviceproximity",
+      "link": "/en-US/docs/Web/API/Window/ondeviceproximity",
+      "description": "An event handler property for device proximity event"
+    },
+    {
+      "name": "GlobalEventHandlers.onerror",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onerror",
+      "description": "Called when a resource fails to load OR when an error occurs at runtime. See error event."
+    },
+    {
+      "name": "GlobalEventHandlers.onfocus",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onfocus",
+      "description": "Called after the window receives or regains focus. See focus events."
+    },
+    {
+      "name": "WindowEventHandlers.onhashchange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onhashchange",
+      "description": "An event handler property for hashchange events on the window; called when the part of the URL after the hash mark (\"#\") changes.",
+      "parameters": [
+        {
+          "name": "funcRef",
+          "description": "A reference to a function."
+        }
+      ]
+    },
+    {
+      "name": "Window.onappinstalled",
+      "link": "/en-US/docs/Web/API/Window/onappinstalled",
+      "description": "Called when the page is installed as a webapp. See appinstalled event."
+    },
+    {
+      "name": "Window.ongamepadconnected",
+      "link": "/en-US/docs/Web/API/Window/ongamepadconnected",
+      "description": "Represents an event handler that will run when a gamepad is connected (when the gamepadconnected event fires)."
+    },
+    {
+      "name": "Window.ongamepaddisconnected",
+      "link": "/en-US/docs/Web/API/Window/ongamepaddisconnected",
+      "description": "Represents an event handler that will run when a gamepad is disconnected (when the gamepaddisconnected event fires)."
+    },
+    {
+      "name": "Window.oninput",
+      "link": "/en-US/docs/Web/API/Window/oninput",
+      "description": "Called when the value of an \u003cinput\u003e element changes"
+    },
+    {
+      "name": "GlobalEventHandlers.onkeydown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeydown",
+      "description": "Called when you begin pressing ANY key. See keydown event."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeypress",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeypress",
+      "description": "Called when a key (except Shift, Fn, and CapsLock) is in pressed position. See keypress event."
+    },
+    {
+      "name": "GlobalEventHandlers.onkeyup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onkeyup",
+      "description": "Called when you finish releasing ANY key. See keyup event."
+    },
+    {
+      "name": "WindowEventHandlers.onlanguagechange",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onlanguagechange",
+      "description": "An event handler property for languagechange events on the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onload",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onload",
+      "description": "Called after all resources and the DOM are fully loaded. WILL NOT get called when the page is loaded from cache, such as with back button."
+    },
+    {
+      "name": "WindowEventHandlers.onmessage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onmessage",
+      "description": "Is an EventHandler representing the code to be called when the message event is raised."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousedown",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousedown",
+      "description": "Called when ANY mouse button is pressed."
+    },
+    {
+      "name": "GlobalEventHandlers.onmousemove",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmousemove",
+      "description": "Called continously when the mouse is moved inside the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseout",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseout",
+      "description": "Called when the pointer leaves the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseover",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseover",
+      "description": "Called when the pointer enters the window"
+    },
+    {
+      "name": "GlobalEventHandlers.onmouseup",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onmouseup",
+      "description": "Called when ANY mouse button is released"
+    },
+    {
+      "name": "Window.onmozbeforepaint",
+      "link": "/en-US/docs/Web/API/Window/onmozbeforepaint",
+      "description": "An event handler property for the MozBeforePaint event, which is sent before repainting the window if the event has been requested by a call to the Window.mozRequestAnimationFrame() method."
+    },
+    {
+      "name": "WindowEventHandlers.onoffline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onoffline",
+      "description": "Called when network connection is lost. See offline event."
+    },
+    {
+      "name": "WindowEventHandlers.ononline",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/ononline",
+      "description": "Called when network connection is established. See online event."
+    },
+    {
+      "name": "WindowEventHandlers.onpagehide",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpagehide",
+      "description": "Called when the user navigates away from the page, before the onunload event. See pagehide event."
+    },
+    {
+      "name": "WindowEventHandlers.onpageshow",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpageshow",
+      "description": "Called after all resources and the DOM are fully loaded. See pageshow event."
+    },
+    {
+      "name": "Window.onpaint",
+      "link": "/en-US/docs/Web/API/Window/onpaint",
+      "description": "An event handler property for paint events on the window."
+    },
+    {
+      "name": "WindowEventHandlers.onpopstate",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onpopstate",
+      "description": "Called when a back putton is pressed."
+    },
+    {
+      "name": "Window.onrejectionhandled",
+      "link": "/en-US/docs/Web/API/Window/onrejectionhandled",
+      "description": "An event handler for handled Promise rejection events."
+    },
+    {
+      "name": "GlobalEventHandlers.onreset",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onreset",
+      "description": "Called when a form is reset"
+    },
+    {
+      "name": "GlobalEventHandlers.onresize",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onresize",
+      "description": "Called continuously as you are resizing the window."
+    },
+    {
+      "name": "GlobalEventHandlers.onscroll",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onscroll",
+      "description": "Called when the scroll bar is moved via ANY means. If the resource fully fits in the window, then this event cannot be invoked"
+    },
+    {
+      "name": "GlobalEventHandlers.onwheel",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onwheel",
+      "description": "Called when the mouse wheel is rotated around any axis"
+    },
+    {
+      "name": "GlobalEventHandlers.onselect",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselect",
+      "description": "Called after text in an input field is selected"
+    },
+    {
+      "name": "GlobalEventHandlers.onselectionchange",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onselectionchange",
+      "description": "Is an EventHandler representing the code to be called when the selectionchange event is raised."
+    },
+    {
+      "name": "WindowEventHandlers.onstorage",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onstorage",
+      "description": "Called when there is a change in session storage or local storage. See storage event"
+    },
+    {
+      "name": "GlobalEventHandlers.onsubmit",
+      "link": "/en-US/docs/Web/API/GlobalEventHandlers/onsubmit",
+      "description": "Called when a form is submitted"
+    },
+    {
+      "name": "WindowEventHandlers.onunhandledrejection",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunhandledrejection",
+      "description": "An event handler for unhandled Promise rejection events."
+    },
+    {
+      "name": "WindowEventHandlers.onunload",
+      "link": "/en-US/docs/Web/API/WindowEventHandlers/onunload",
+      "description": "Called when the user navigates away from the page."
+    },
+    {
+      "name": "Window.onuserproximity",
+      "link": "/en-US/docs/Web/API/Window/onuserproximity",
+      "description": "An event handler property for user proximity events."
+    },
+    {
+      "name": "Window.onvrdisplayconnect",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplayconnect",
+      "description": "Represents an event handler that will run when a compatible VR device has been connected to the computer (when the vrdisplayconnected event fires)."
+    },
+    {
+      "name": "Window.onvrdisplaydisconnect",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplaydisconnect",
+      "description": "Represents an event handler that will run when a compatible VR device has been disconnected from the computer (when the vrdisplaydisconnected event fires)."
+    },
+    {
+      "name": "Window.onvrdisplayactivate",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplayactivate",
+      "description": "Represents an event handler that will run when a display is able to be presented to (when the vrdisplayactivate event fires), for example if an HMD has been moved to bring it out of standby, or woken up by being put on."
+    },
+    {
+      "name": "Window.onvrdisplaydeactivate",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplaydeactivate",
+      "description": "Represents an event handler that will run when a display can no longer be presented to (when the vrdisplaydeactivate event fires), for example if an HMD has gone into standby or sleep mode due to a period of inactivity."
+    },
+    {
+      "name": "Window.onvrdisplayblur",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplayblur",
+      "description": "Represents an event handler that will run when presentation to a display has been paused for some reason by the browser, OS, or VR hardware (when the vrdisplayblur event fires) — for example, while the user is interacting with a system menu or browser, to prevent tracking or loss of experience."
+    },
+    {
+      "name": "Window.onvrdisplayfocus",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplayfocus",
+      "description": "Represents an event handler that will run when presentation to a display has resumed after being blurred (when the vrdisplayfocus event fires)."
+    },
+    {
+      "name": "Window.onvrdisplaypresentchange",
+      "link": "/en-US/docs/Web/API/Window/onvrdisplaypresentchange",
+      "description": "represents an event handler that will run when the presenting state of a VR device changes — i.e. goes from presenting to not presenting, or vice versa (when the vrdisplaypresentchange event fires)."
+    },
+    {
+      "name": "Window.DOMParser",
+      "link": "/en-US/docs/Web/API/Window/DOMParser",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.GeckoActiveXObject",
+      "link": "/en-US/docs/Web/API/Window/GeckoActiveXObject",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Image",
+      "link": "/en-US/docs/Web/API/Image",
+      "description": "Used for creating an HTMLImageElement.",
+      "parameters": [
+        {
+          "name": "width",
+          "description": "The width of the image (i.e. the value for the width attribute)."
+        },
+        {
+          "name": "height",
+          "description": "The height of the image (i.e. the value for the height attribute)."
+        }
+      ]
+    },
+    {
+      "name": "Option",
+      "link": "/en-US/docs/Web/API/Option",
+      "description": "Used for creating an HTMLOptionElement",
+      "parameters": [
+        {
+          "name": "text Optional",
+          "description": "A DOMString representing the content of the element, i.e. the displayed text. If this is not specified, a default value of \"\" (empty string) is used."
+        },
+        {
+          "name": "value Optional",
+          "description": "A DOMString representing the value of the HTMLOptionElement, i.e. the value attribute of the equivalent \u003coption\u003e. If this is not specified, the value of text is used as the value, e.g. for the associated \u003cselect\u003e element\u0027s value when the form is submitted to the server."
+        },
+        {
+          "name": "defaultSelected Optional",
+          "description": "A Boolean that sets the selected attribute value, i.e. so that this \u003coption\u003e will be the default value selected in the \u003cselect\u003e element when the page is first loaded. If this is not specified, a default value of false is used. Note that a value of true does not set the option to selected if it is not already selected. "
+        },
+        {
+          "name": "selected Optional",
+          "description": "A Boolean that sets the option\u0027s selected state; the default is false (not selected). If omitted, even if the defaultSelected argument is true, the option is not selected."
+        }
+      ]
+    },
+    {
+      "name": "Window.QueryInterface",
+      "link": "/en-US/docs/Web/API/Window/QueryInterface",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.XMLSerializer",
+      "link": "/en-US/docs/Web/API/Window/XMLSerializer",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Worker",
+      "link": "/en-US/docs/Web/API/Worker",
+      "description": "Used for creating a Web worker",
+      "parameters": [
+        {
+          "name": "Worker()",
+          "description": "Creates a dedicated web worker that executes the script at the specified URL. Workers can also be constructed using Blobs."
+        },
+        {
+          "name": "AbstractWorker.onerror",
+          "description": "An EventListener called whenever an ErrorEvent of type error bubbles through to the worker. This is inherited from AbstractWorker."
+        },
+        {
+          "name": "Worker.onmessage",
+          "description": "An EventListener called whenever a MessageEvent of type message bubbles through the worker — i.e. when a message is sent to the parent document from the worker via DedicatedWorkerGlobalScope.postMessage. The message is stored in the event\u0027s data property."
+        },
+        {
+          "name": "Worker.postMessage()",
+          "description": "Sends a message — which can consist of any JavaScript object — to the worker\u0027s inner scope."
+        },
+        {
+          "name": "Worker.terminate()",
+          "description": "Immediately terminates the worker. This does not offer the worker an opportunity to finish its operations; it is simply stopped at once. ServiceWorker instances do not support this method."
+        }
+      ]
+    },
+    {
+      "name": "Window.XPCNativeWrapper",
+      "link": "/en-US/docs/Web/API/Window/XPCNativeWrapper",
+      "description": "FIXME: NeedsContents"
+    },
+    {
+      "name": "Window.XPCSafeJSObjectWrapper",
+      "link": "/en-US/docs/Web/API/Window/XPCSafeJSObjectWrapper",
+      "description": "FIXME: NeedsContents"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "SVGGeometryElement",
+  "description": "The SVGGeometryElement interface represents SVG elements whose rendering is defined by geometry with an equivalent path, and which can be filled and stroked. This includes paths and the basic shapes.",
+  "members": [
+    {
+      "name": "SVGGeometryElement.pathLength",
+      "link": "/en-US/docs/Web/API/SVGGeometryElement/pathLength",
+      "description": "This property reflects the pathLength attribute."
+    },
+    {
+      "name": "SVGGeometryElement.isPointInFill()",
+      "link": "/en-US/docs/Web/API/SVGGeometryElement/isPointInFill",
+      "description": "Determines whether a given point is within the fill shape of an element. Normal hit testing rules apply; the value of the pointer-events property on the element determines whether a point is considered to be within the fill.",
+      "parameters": [
+        {
+          "name": "point",
+          "description": "A DOMPoint interpreted as a point in the local coordiante system of the element."
+        }
+      ]
+    },
+    {
+      "name": "SVGGeometryElement.isPointInStroke()",
+      "link": "/en-US/docs/Web/API/SVGGeometryElement/isPointInStroke",
+      "description": "Determines whether a given point is within the stroke shape of an element. Normal hit testing rules apply; the value of the pointer-events property on the element determines whether a point is considered to be within the stroke.",
+      "parameters": [
+        {
+          "name": "point",
+          "description": "A DOMPoint interpreted as a point in the local coordinate system of the element."
+        }
+      ]
+    },
+    {
+      "name": "SVGGeometryElement.getTotalLength()",
+      "link": "/en-US/docs/Web/API/SVGGeometryElement/getTotalLength",
+      "description": "Returns the user agent\u0027s computed value for the total length of the path in user units."
+    },
+    {
+      "name": "SVGGeometryElement.getPointAtLength()",
+      "link": "/en-US/docs/Web/API/SVGGeometryElement/getPointAtLength",
+      "description": "Returns the point at a given distance along the path.",
+      "parameters": [
+        {
+          "name": "distance",
+          "description": "A float referring to the distance along the path."
+        }
+      ]
+    }
+  ]
+}

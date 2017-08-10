@@ -1,0 +1,26 @@
+{
+  "name": "VREyeParameters",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The VREyeParameters interface of the WebVR API represents all the information required to correctly render a scene for a given eye, including field of view information.",
+  "members": [
+    {
+      "name": "VREyeParameters.offset",
+      "link": "/en-US/docs/Web/API/VREyeParameters/offset",
+      "description": "Represents the offset from the center point between the user\u0027s eyes to the center of the eye, measured in meters."
+    },
+    {
+      "name": "VREyeParameters.fieldOfView",
+      "link": "/en-US/docs/Web/API/VREyeParameters/fieldOfView",
+      "description": "Describes the current field of view for the eye, which can vary as the user adjusts their interpupillary distance (IPD)."
+    },
+    {
+      "name": "VREyeParameters.renderWidth",
+      "link": "/en-US/docs/Web/API/VREyeParameters/renderWidth",
+      "description": "Describes the recommended render target width of each eye viewport, in pixels."
+    },
+    {
+      "name": "VREyeParameters.renderHeight",
+      "link": "/en-US/docs/Web/API/VREyeParameters/renderHeight",
+      "description": "Describes the recommended render target height of each eye viewport, in pixels."
+    }
+  ]
+}

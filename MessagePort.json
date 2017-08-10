@@ -1,0 +1,36 @@
+{
+  "name": "MessagePort",
+  "description": "",
+  "members": [
+    {
+      "name": "MessagePort.postMessage",
+      "link": "/en-US/docs/Web/API/MessagePort/postMessage",
+      "description": "Sends a message from the port, and optionally, transfers ownership of objects to other browsing contexts.",
+      "parameters": [
+        {
+          "name": "message",
+          "description": "The message you want to send through the channel. This can be of any basic data type. Multiple data items can be sent as an array."
+        },
+        {
+          "name": "transferList Optional",
+          "description": "Transferable objects to be transferred — these objects have their ownership transferred to the receiving browsing context, so are no longer usable by the sending browsing context."
+        }
+      ]
+    },
+    {
+      "name": "MessagePort.start",
+      "link": "/en-US/docs/Web/API/MessagePort/start",
+      "description": "Starts the sending of messages queued on the port (only needed when using EventTarget.addEventListener; it is implied when using MessagePort.onmessage.)"
+    },
+    {
+      "name": "MessagePort.close",
+      "link": "/en-US/docs/Web/API/MessagePort/close",
+      "description": "Disconnects the port, so it is no longer active."
+    },
+    {
+      "name": "MessagePort.onmessage",
+      "link": "/en-US/docs/Web/API/MessagePort/onmessage",
+      "description": "Is an EventListener that is called whenever an MessageEvent of type message is fired on the port — that is, when the port receives a message."
+    }
+  ]
+}

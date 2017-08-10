@@ -1,0 +1,64 @@
+{
+  "name": "Storage",
+  "description": "",
+  "members": [
+    {
+      "name": "Storage.length",
+      "link": "/en-US/docs/Web/API/Storage/length",
+      "description": "Returns an integer representing the number of data items stored in the Storage object."
+    },
+    {
+      "name": "Storage.key()",
+      "link": "/en-US/docs/Web/API/Storage/key",
+      "description": "When passed a number n, this method will return the name of the nth key in the storage.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "An integer representing the number of the key you want to get the name of. This is a zero-based index."
+        }
+      ]
+    },
+    {
+      "name": "Storage.getItem()",
+      "link": "/en-US/docs/Web/API/Storage/getItem",
+      "description": "When passed a key name, will return that key\u0027s value.",
+      "parameters": [
+        {
+          "name": "keyName",
+          "description": "A DOMString containing the name of the key you want to retrieve the value of."
+        }
+      ]
+    },
+    {
+      "name": "Storage.setItem()",
+      "link": "/en-US/docs/Web/API/Storage/setItem",
+      "description": "When passed a key name and value, will add that key to the storage, or update that key\u0027s value if it already exists.",
+      "parameters": [
+        {
+          "name": "keyName",
+          "description": "A DOMString containing the name of the key you want to create/update."
+        },
+        {
+          "name": "keyValue",
+          "description": "A DOMString containing the value you want to give the key you are creating/updating."
+        }
+      ]
+    },
+    {
+      "name": "Storage.removeItem()",
+      "link": "/en-US/docs/Web/API/Storage/removeItem",
+      "description": "When passed a key name, will remove that key from the storage.",
+      "parameters": [
+        {
+          "name": "keyName",
+          "description": "A DOMString containing the name of the key you want to remove."
+        }
+      ]
+    },
+    {
+      "name": "Storage.clear()",
+      "link": "/en-US/docs/Web/API/Storage/clear",
+      "description": "When invoked, will empty all keys out of the storage."
+    }
+  ]
+}

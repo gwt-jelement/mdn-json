@@ -1,0 +1,11 @@
+{
+  "name": "HTMLPreElement",
+  "description": "The HTMLPreElement interface expose specific properties and methods (beyond those defined by regular HTMLElement interface it also has available to it by inheritance) for manipulating block of preformatted text.",
+  "members": [
+    {
+      "name": "HTMLPreElement.width",
+      "link": "/en-US/docs/Web/API/HTMLPreElement/width",
+      "description": "Is a long value reflecting the obsolete width attribute, containing a fixed-size length for the \u003cpre\u003e element."
+    }
+  ]
+}

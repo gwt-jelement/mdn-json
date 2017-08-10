@@ -1,0 +1,37 @@
+{
+  "name": "HTMLDialogElement",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The HTMLDialogElement interface provides methods to manipulate \u003cdialog\u003e elements. It inherits properties and methods from the HTMLElement interface.",
+  "members": [
+    {
+      "name": "HTMLDialogElement.open",
+      "link": "/en-US/docs/Web/API/HTMLDialogElement/open",
+      "description": "A Boolean reflecting the open HTML attribute, indicating whether the dialog is available for interaction."
+    },
+    {
+      "name": "HTMLDialogElement.returnValue",
+      "link": "/en-US/docs/Web/API/HTMLDialogElement/returnValue",
+      "description": "A DOMString that sets or returns the return value for the dialog."
+    },
+    {
+      "name": "HTMLDialogElement.close()",
+      "link": "/en-US/docs/Web/API/HTMLDialogElement/close",
+      "description": "Closes the dialog. An optional DOMString may be passed as an argument, updating the returnValue of the the dialog.",
+      "parameters": [
+        {
+          "name": "returnValue Optional",
+          "description": "A DOMString representing an updated value for the HTMLDialogElement.returnValue of the dialog."
+        }
+      ]
+    },
+    {
+      "name": "HTMLDialogElement.show()",
+      "link": "/en-US/docs/Web/API/HTMLDialogElement/show",
+      "description": "Displays the dialog modelessly, i.e. still allowing interaction with content outside of the dialog."
+    },
+    {
+      "name": "HTMLDialogElement.showModal()",
+      "link": "/en-US/docs/Web/API/HTMLDialogElement/showModal",
+      "description": "Displays the dialog as a modal, over the top of any other dialogs that might be present. Interaction outside the dialog is blocked."
+    }
+  ]
+}

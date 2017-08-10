@@ -1,0 +1,47 @@
+{
+  "name": "CustomElementRegistry",
+  "description": "",
+  "members": [
+    {
+      "name": "CustomElementRegistry.define()",
+      "link": "/en-US/docs/Web/API/CustomElementRegistry/define",
+      "description": "Defines a new custom element.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "Name for the new custom element."
+        },
+        {
+          "name": "constructor",
+          "description": "Constructor for the new custom element."
+        },
+        {
+          "name": "options Optional",
+          "description": "Object that controls how the element is defined. One option is currently supported: extends. String specifying the name of a built-in element to extend. Used to create a customized built-in element."
+        }
+      ]
+    },
+    {
+      "name": "CustomElementRegistry.get()",
+      "link": "/en-US/docs/Web/API/CustomElementRegistry/get",
+      "description": "Returns the constuctor for the named custom element, or undefined if the custom element is not defined.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "Name for the new custom element."
+        }
+      ]
+    },
+    {
+      "name": "CustomElementRegistry.whenDefined()",
+      "link": "/en-US/docs/Web/API/CustomElementRegistry/whenDefined",
+      "description": "Returns a promise that will be fulfilled when a custom element becomes defined with the given name. (If such a custom element is already defined, the returned promise is immediately fulfilled.)",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "Custom element name."
+        }
+      ]
+    }
+  ]
+}

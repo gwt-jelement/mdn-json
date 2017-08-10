@@ -1,0 +1,16 @@
+{
+  "name": "BudgetState",
+  "description": "",
+  "members": [
+    {
+      "name": "BudgetState.budgetAt",
+      "link": "/en-US/docs/Web/API/BudgetState/budgetAt",
+      "description": "Returns the anticipated processing budget at a specific time."
+    },
+    {
+      "name": "BudgetState.time",
+      "link": "/en-US/docs/Web/API/BudgetState/time",
+      "description": "Returns a timestamp at which the budgetAt value is valid."
+    }
+  ]
+}

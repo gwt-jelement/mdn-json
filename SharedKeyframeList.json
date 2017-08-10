@@ -1,0 +1,17 @@
+{
+  "name": "SharedKeyframeList",
+  "description": "",
+  "members": [
+    {
+      "name": "SharedKeyframeList()",
+      "link": "/en-US/docs/Web/API/SharedKeyframeList/SharedKeyframeList",
+      "description": "Creates a new SharedKeyframeList object.",
+      "parameters": [
+        {
+          "name": "keyframes",
+          "description": "An object representing a set of keyframes. There are two different ways to format keyframes: An object containing key-value pairs consisting of the property to animate and an array of values to iterate over. element.animate({\n  opacity: [ 0, 1 ],          // [ from, to ]\n  color:   [ \"#fff\", \"#000\" ] // [ from, to ]\n}, 2000);\n An array of objects (keyframes) consisting of properties and values to iterate over. This is the canonical format returned by the getKeyframes() method. element.animate([ \n  { // from\n    opacity: 0,\n    color: \"#fff\"\n  }, \n  { // to\n    opacity: 1,\n ​   color: \"#000\"\n  }\n], 2000); With this latter form it is also possible to specify offsets for each keyframe by providing an offset value. element.animate([ { opacity: 1 },\n                  { opacity: 0.1, offset: 0.7 },\n                  { opacity: 0 } ],\n                2000);\n Note: offset values, if provided, must be between 0.0 and 1.0 and arranged in ascending order. Furthermore, using this form it is also possible to specify easing to apply between keyframes by providing an easing value as illustrated below. element.animate([ { opacity: 1, easing: \u0027ease-out\u0027 },\n                  { opacity: 0.1, easing: \u0027ease-in\u0027 },\n                  { opacity: 0 } ],\n                2000);\n In this example, the specified easing only applies from the keyframe where it is specified until the next keyframe. Any easing value specified on the options argument, however, applies across a single iteration of the animation — for the entire duration."
+        }
+      ]
+    }
+  ]
+}

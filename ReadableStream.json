@@ -1,0 +1,26 @@
+{
+  "name": "ReadableStream",
+  "description": "",
+  "members": [
+    {
+      "name": "ReadableStream.cancel()",
+      "link": "/en-US/docs/Web/API/ReadableStream/cancel",
+      "description": "Cancels the stream, signaling a loss of interest in the stream by a consumer. The supplied reason argument will be given to the underlying source, which may or may not use it."
+    },
+    {
+      "name": "ReadableStream.getReader()",
+      "link": "/en-US/docs/Web/API/ReadableStream/getReader",
+      "description": "Creates a reader of the type specified by the mode option, and locks the stream to the new reader. While the stream is locked, no other reader can be acquired until this one is released."
+    },
+    {
+      "name": "ReadableStream.pipeThrough()",
+      "link": "/en-US/docs/Web/API/ReadableStream/pipeThrough",
+      "description": "Provides a chaninable way of piping the current stream through a transform stream or any other writable/readable pair."
+    },
+    {
+      "name": "ReadableStream.pipeTo()",
+      "link": "/en-US/docs/Web/API/ReadableStream/pipeTo",
+      "description": "Pipes the current ReadableStream to a given WritableStream and returns a promise that fulfills when the piping process completes successfully, or rejects if any errors were encountered."
+    }
+  ]
+}

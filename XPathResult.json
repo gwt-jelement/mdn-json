@@ -1,0 +1,51 @@
+{
+  "name": "XPathResult",
+  "description": "",
+  "members": [
+    {
+      "name": "XPathResult.booleanValue",
+      "link": "/en-US/docs/Web/API/XPathResult/booleanValue",
+      "description": "readonly boolean"
+    },
+    {
+      "name": "XPathResult.invalidIteratorState",
+      "link": "/en-US/docs/Web/API/XPathResult/invalidIteratorState",
+      "description": "readonly boolean"
+    },
+    {
+      "name": "XPathResult.numberValue",
+      "link": "/en-US/docs/Web/API/XPathResult/numberValue",
+      "description": "readonly float"
+    },
+    {
+      "name": "XPathResult.resultType",
+      "link": "/en-US/docs/Web/API/XPathResult/resultType",
+      "description": "readonly integer (short)"
+    },
+    {
+      "name": "XPathResult.singleNodeValue",
+      "link": "/en-US/docs/Web/API/XPathResult/singleNodeValue",
+      "description": "readonly Node"
+    },
+    {
+      "name": "XPathResult.snapshotLength",
+      "link": "/en-US/docs/Web/API/XPathResult/snapshotLength",
+      "description": "readonly Integer"
+    },
+    {
+      "name": "XPathResult.stringValue",
+      "link": "/en-US/docs/Web/API/XPathResult/stringValue",
+      "description": "readonly String"
+    },
+    {
+      "name": "XPathResult.iterateNext()",
+      "link": "/en-US/docs/Web/API/XPathResult/iterateNext",
+      "description": "..."
+    },
+    {
+      "name": "XPathResult.snapshotItem()",
+      "link": "/en-US/docs/Web/API/XPathResult/snapshotItem",
+      "description": "..."
+    }
+  ]
+}

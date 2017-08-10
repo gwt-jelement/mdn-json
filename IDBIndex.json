@@ -1,0 +1,148 @@
+{
+  "name": "IDBIndex",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBIndex.isAutoLocale",
+      "link": "/en-US/docs/Web/API/IDBIndex/isAutoLocale",
+      "description": "Returns a Boolean indicating whether the index had a locale value of auto specified upon its creation (see createIndex()\u0027s optionalParameters.)"
+    },
+    {
+      "name": "IDBIndex.locale",
+      "link": "/en-US/docs/Web/API/IDBIndex/locale",
+      "description": "Returns the locale of the index (for example en-US, or pl) if it had a locale value specified upon its creation (see createIndex()\u0027s optionalParameters.)"
+    },
+    {
+      "name": "IDBIndex.name",
+      "link": "/en-US/docs/Web/API/IDBIndex/name",
+      "description": "The name of this index.",
+      "parameters": [
+        {
+          "name": "InvalidStateError",
+          "description": "The index, or its object store, has been deleted; or the current transaction is not an upgrade transaction. You can only rename indexes during upgrade transactions; that is, when the mode is \"versionchange\"."
+        },
+        {
+          "name": "TransactionInactiveError",
+          "description": "The current transaction is not active."
+        },
+        {
+          "name": "ConstraintError",
+          "description": "An index is already using the specified name."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.objectStore",
+      "link": "/en-US/docs/Web/API/IDBIndex/objectStore",
+      "description": "The name of the object store referenced by this index."
+    },
+    {
+      "name": "IDBIndex.keyPath",
+      "link": "/en-US/docs/Web/API/IDBIndex/keyPath",
+      "description": "The key path of this index. If null, this index is not auto-populated."
+    },
+    {
+      "name": "IDBIndex.multiEntry",
+      "link": "/en-US/docs/Web/API/IDBIndex/multiEntry",
+      "description": "Affects how the index behaves when the result of evaluating the index\u0027s key path yields an array. If true, there is one record in the index for each item in an array of keys. If false, then there is one record for each key that is an array."
+    },
+    {
+      "name": "IDBIndex.unique",
+      "link": "/en-US/docs/Web/API/IDBIndex/unique",
+      "description": "If true, this index does not allow duplicate values for a key."
+    },
+    {
+      "name": "IDBIndex.count()",
+      "link": "/en-US/docs/Web/API/IDBIndex/count",
+      "description": "Returns an IDBRequest object, and in a separate thread, returns the number of records within a key range.",
+      "parameters": [
+        {
+          "name": "key Optional",
+          "description": "The key or key range that identifies the record to be counted."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.get()",
+      "link": "/en-US/docs/Web/API/IDBIndex/get",
+      "description": "Returns an IDBRequest object, and, in a separate thread, finds either the value in the referenced object store that corresponds to the given key or the first corresponding value, if key is an IDBKeyRange.",
+      "parameters": [
+        {
+          "name": "key Optional",
+          "description": "A key or IDBKeyRange that identifies the record to be retrieved. If this value is null or missing, the browser will use an unbound key range."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.getKey()",
+      "link": "/en-US/docs/Web/API/IDBIndex/getKey",
+      "description": "Returns an IDBRequest object, and, in a separate thread, finds either the given key or the primary key, if key is an IDBKeyRange.",
+      "parameters": [
+        {
+          "name": "key Optional",
+          "description": "A key or IDBKeyRange that identifies a record to be retrieved. If this value is null or missing, the browser will use an unbound key range."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.getAll()",
+      "link": "/en-US/docs/Web/API/IDBIndex/getAll",
+      "description": "Returns an IDBRequest object, in a separate thread, finds all matching values in the referenced object store that correspond to the given key or are in range, if key is an IDBKeyRange.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A key or an IDBKeyRange identifying the records to retrieve. If this value is null or missing, the browser will use an unbound key range."
+        },
+        {
+          "name": "count Optional",
+          "description": "The number records to return. If this value exceeds the number of records in the query, the browser will only retrieve the first item. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.getAllKeys()",
+      "link": "/en-US/docs/Web/API/IDBIndex/getAllKeys",
+      "description": "Returns an IDBRequest object, in a separate thread, finds all matching keys in the referenced object store that correspond to the given key or are in range, if key is an IDBKeyRange.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A key or an IDBKeyRange identifying the keys to retrieve. If this value is null or missing, the browser will use an unbound key range."
+        },
+        {
+          "name": "count Optional",
+          "description": "The number records to return. If this value exceeds the number of records in the query, the browser will only retrieve the first item. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.openCursor()",
+      "link": "/en-US/docs/Web/API/IDBIndex/openCursor",
+      "description": "Returns an IDBRequest object, and, in a separate thread, creates a cursor over the specified key range.",
+      "parameters": [
+        {
+          "name": "range Optional",
+          "description": "A key or IDBKeyRange to use as the cursor\u0027s range. If nothing is passed, this will default to a key range that selects all the records in this object store."
+        },
+        {
+          "name": "direction Optional",
+          "description": "The cursor\u0027s direction. See IDBCursor Constants for possible values."
+        }
+      ]
+    },
+    {
+      "name": "IDBIndex.openKeyCursor()",
+      "link": "/en-US/docs/Web/API/IDBIndex/openKeyCursor",
+      "description": "Returns an IDBRequest object, and, in a separate thread, creates a cursor over the specified key range, as arranged by this index.",
+      "parameters": [
+        {
+          "name": "range Optional",
+          "description": "A key or IDBKeyRange to use as the cursor\u0027s range. If nothing is passed, this will default to a key range that selects all the records in this object store."
+        },
+        {
+          "name": "direction Optional",
+          "description": "The cursor\u0027s direction. See IDBCursor Constants for possible values."
+        }
+      ]
+    }
+  ]
+}

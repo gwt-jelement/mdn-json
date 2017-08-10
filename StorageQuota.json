@@ -1,0 +1,21 @@
+{
+  "name": "StorageQuota",
+  "description": "",
+  "members": [
+    {
+      "name": "StorageQuota.supportedTypes",
+      "link": "/en-US/docs/Web/API/StorageQuota/supportedTypes",
+      "description": "Returns a list of the available storage types. "
+    },
+    {
+      "name": "StorageQuota.queryInfo",
+      "link": "/en-US/docs/Web/API/StorageQuota/queryInfo",
+      "description": "Returns a StorageInfo object containting the current data usage and available quota information for the application."
+    },
+    {
+      "name": "StorageQuota.requestPersistentQuota",
+      "link": "/en-US/docs/Web/API/StorageQuota/requestPersistentQuota",
+      "description": "Requests persistent storage for the requesting application and returns a Promise to an instance of StorageInfo. There is no guarantee that the requested space will be granted by the user agent."
+    }
+  ]
+}

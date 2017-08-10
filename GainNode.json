@@ -1,0 +1,26 @@
+{
+  "name": "GainNode",
+  "description": "",
+  "members": [
+    {
+      "name": "GainNode()",
+      "link": "/en-US/docs/Web/API/GainNode/GainNode",
+      "description": "Creates a new instance of an GainNode object. You shouldn\u0027t manually create a gain node; instead, use the method AudioContext.createGain().",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: gain: The amount of gain to apply. This parameter is a-rate and it\u0027s nominal range is (-∞,+∞). The default is 1."
+        }
+      ]
+    },
+    {
+      "name": "GainNode.gain",
+      "link": "/en-US/docs/Web/API/GainNode/gain",
+      "description": "Is an a-rate AudioParam representing the amount of gain to apply."
+    }
+  ]
+}

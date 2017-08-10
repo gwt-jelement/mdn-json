@@ -1,0 +1,21 @@
+{
+  "name": "ChannelSplitterNode",
+  "description": "",
+  "members": [
+    {
+      "name": "ChannelSplitterNode.ChannelSplitterNode()",
+      "link": "/en-US/docs/Web/API/ChannelSplitterNode/ChannelSplitterNode",
+      "description": "Creates a new ChannelSplitterNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A BaseAudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options Optional",
+          "description": "A ChannelSplitterOptions dictionary object defining the properties you want the ChannelSplitterNode to have (It also inherits the options defined in the AudioNodeOptions dictionary): numberOfOutputs: A number defining the number of inputs the ChannelSplitterNode should have. If not specified, the default value used is 6."
+        }
+      ]
+    }
+  ]
+}

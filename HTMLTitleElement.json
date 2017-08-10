@@ -1,0 +1,11 @@
+{
+  "name": "HTMLTitleElement",
+  "description": "The HTMLTitleElement interface contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface.",
+  "members": [
+    {
+      "name": "HTMLTitleElement.text",
+      "link": "/en-US/docs/Web/API/HTMLTitleElement/text",
+      "description": "Is a DOMString representing the text of the document\u0027s title."
+    }
+  ]
+}

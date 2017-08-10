@@ -1,0 +1,40 @@
+{
+  "name": "RTCSessionDescription",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCSessionDescription.type",
+      "link": "/en-US/docs/Web/API/RTCSessionDescription/type",
+      "description": "An enum of type RTCSdpType describing the session description\u0027s type."
+    },
+    {
+      "name": "RTCSessionDescription.sdp",
+      "link": "/en-US/docs/Web/API/RTCSessionDescription/sdp",
+      "description": "A DOMString containing the SDP describing the session."
+    },
+    {
+      "name": "RTCSessionDescription()",
+      "link": "/en-US/docs/Web/API/RTCSessionDescription/RTCSessionDescription",
+      "description": "This constructor returns a new RTCSessionDescription. The parameter is a RTCSessionDescriptionInit dictionary containing the values to assign the two properties.",
+      "parameters": [
+        {
+          "name": "rtcSessionDescriptionInit Optional",
+          "description": "An object providing the default values for the session description; the object conforms to the RTCSessionDescriptionInit dictionary. That dictionary has the following properties: type Required. A string which is a member of the RTCSdpType enum; it must have one of the following values: This enum defines strings that describe the current state of the session description, as used in the type property. The session description\u0027s type will be specified using one of these values. Value Description answer The SDP contained in the sdp property is the definitive choice in the exchange. In other words, this session description describes the agreed-upon configuration, and is being sent to finalize negotiation. offer The session description object describes the initial proposal in an offer/answer exchange. The session negotiation process begins with an offer being sent from the caller to the callee. pranswer The session description object describe a provisional answer; that is, it\u0027s a response to a previous offer or provisional answer. rollback This session description is used to allow one peer to tell the other, in essence, that an impasse has been reached, and to roll back to the previous state and try again. sdp A string containing a SDP message describing the session. This value is an empty string (\"\") by default and may not be null."
+        },
+        {
+          "name": "type",
+          "description": "Required. A string which is a member of the RTCSdpType enum; it must have one of the following values: This enum defines strings that describe the current state of the session description, as used in the type property. The session description\u0027s type will be specified using one of these values. Value Description answer The SDP contained in the sdp property is the definitive choice in the exchange. In other words, this session description describes the agreed-upon configuration, and is being sent to finalize negotiation. offer The session description object describes the initial proposal in an offer/answer exchange. The session negotiation process begins with an offer being sent from the caller to the callee. pranswer The session description object describe a provisional answer; that is, it\u0027s a response to a previous offer or provisional answer. rollback This session description is used to allow one peer to tell the other, in essence, that an impasse has been reached, and to roll back to the previous state and try again."
+        },
+        {
+          "name": "sdp",
+          "description": "A string containing a SDP message describing the session. This value is an empty string (\"\") by default and may not be null."
+        }
+      ]
+    },
+    {
+      "name": "RTCSessionDescription.toJSON()",
+      "link": "/en-US/docs/Web/API/RTCSessionDescription/toJSON",
+      "description": "Returns a JSON description of the object. The values of both properties, type and sdp, are contained in the generated JSON."
+    }
+  ]
+}

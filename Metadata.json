@@ -1,0 +1,16 @@
+{
+  "name": "Metadata",
+  "description": "",
+  "members": [
+    {
+      "name": "modificationTime",
+      "link": "/en-US/docs/Web/API/Metadata/modificationTime",
+      "description": "A Date object indicating the date and time the entry was modified."
+    },
+    {
+      "name": "size",
+      "link": "/en-US/docs/Web/API/Metadata/size",
+      "description": "A 64-bit unsigned integer indicating the size of the entry in bytes."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PromiseResolver",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The PromiseResolver interface represents an object controlling the state and the result value of a Promise.",
+  "members": [
+    {
+      "name": "PromiseResolver.fulfill()",
+      "link": "/en-US/docs/Web/API/PromiseResolver/fulfill",
+      "description": "Sets the result value of the associated Promise to the parameter and its state to fulfill. Call the fulfill callbacks or, if the asynch parameter is set to true, queue a task to call them."
+    },
+    {
+      "name": "PromiseResolver.resolve()",
+      "link": "/en-US/docs/Web/API/PromiseResolver/resolve",
+      "description": "..."
+    },
+    {
+      "name": "PromiseResolver.reject()",
+      "link": "/en-US/docs/Web/API/PromiseResolver/reject",
+      "description": "Sets the result value of the associated Promise to the parameter and its state to rejected. Call the reject callbacks or if the asynch parameter is set to true, queue a task to call them."
+    }
+  ]
+}

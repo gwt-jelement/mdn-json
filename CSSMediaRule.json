@@ -1,0 +1,11 @@
+{
+  "name": "CSSMediaRule",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSMediaRule.media",
+      "link": "/en-US/docs/Web/API/CSSMediaRule/media",
+      "description": "Specifies a MediaList representing the intended destination medium for style information."
+    }
+  ]
+}

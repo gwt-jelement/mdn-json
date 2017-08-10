@@ -1,0 +1,11 @@
+{
+  "name": "UserProximityEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "UserProximityEvent.near",
+      "link": "/en-US/docs/Web/API/UserProximityEvent/near",
+      "description": "Indicates if the device has sensed a nearby physical object."
+    }
+  ]
+}

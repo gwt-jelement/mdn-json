@@ -1,0 +1,16 @@
+{
+  "name": "HTMLLIElement",
+  "description": "The HTMLLIElement interface expose specific properties and methods (beyond those defined by regular HTMLElement interface it also has available to it by inheritance) for manipulating list elements.",
+  "members": [
+    {
+      "name": "HTMLLIElement.type",
+      "link": "/en-US/docs/Web/API/HTMLLIElement/type",
+      "description": "Is a DOMString representing the type of the bullets, \"disc\", \"square\" or \"circle\". As the standard way of defining the list type is via the CSS list-style-type property, use the CSSOM methods to set it via a script."
+    },
+    {
+      "name": "HTMLLIElement.value",
+      "link": "/en-US/docs/Web/API/HTMLLIElement/value",
+      "description": "Is a long indicating the ordinal position of the list element inside a given \u003col\u003e. It reflects the value attribute of the HTML \u003cli\u003e element, and can be smaller than 0. If the \u003cli\u003e element is not a child of an \u003col\u003e element, the property has no meaning."
+    }
+  ]
+}

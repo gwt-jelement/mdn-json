@@ -1,0 +1,5 @@
+{
+  "name": "SVGAngle",
+  "description": "The SVGAngle interface is used to represent a value that can be an \u003cangle\u003e or \u003cnumber\u003e value. An SVGAngle reflected through the animVal attribute is always read only.",
+  "members": []
+}

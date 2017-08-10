@@ -1,0 +1,21 @@
+{
+  "name": "SVGFEOffsetElement",
+  "description": "The SVGFEOffsetElement interface corresponds to the \u003cfeOffset\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEOffsetElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEOffsetElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEOffsetElement.dx",
+      "link": "/en-US/docs/Web/API/SVGFEOffsetElement/dx",
+      "description": "An SVGAnimatedNumber corresponding to the dx attribute of the given element."
+    },
+    {
+      "name": "SVGFEOffsetElement.dy",
+      "link": "/en-US/docs/Web/API/SVGFEOffsetElement/dy",
+      "description": "An SVGAnimatedNumber corresponding to the dy attribute of the given element."
+    }
+  ]
+}

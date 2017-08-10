@@ -1,0 +1,26 @@
+{
+  "name": "StereoPannerNode",
+  "description": "",
+  "members": [
+    {
+      "name": "StereoPannerNode()",
+      "link": "/en-US/docs/Web/API/StereoPannerNode/StereoPannerNode",
+      "description": "Creates a new instance of an StereoPannerNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: pan: A floating point number in the range [-1,1] indicating the position of an AudioNode in an output image. The value -1 represents full left and 1 represents full right. The default value is 0."
+        }
+      ]
+    },
+    {
+      "name": "StereoPannerNode.pan",
+      "link": "/en-US/docs/Web/API/StereoPannerNode/pan",
+      "description": "Is an a-rate AudioParam representing the amount of panning to apply."
+    }
+  ]
+}

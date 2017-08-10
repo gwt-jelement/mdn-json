@@ -1,0 +1,26 @@
+{
+  "name": "GamepadHapticActuator",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The GamepadHapticActuator interface of the Gamepad API represents hardware in the controller designed to provide haptic feedback to the user (if available), most commonly vibration hardware.",
+  "members": [
+    {
+      "name": "GamepadHapticActuator.type",
+      "link": "/en-US/docs/Web/API/GamepadHapticActuator/type",
+      "description": "Returns an enum representing the type of the haptic hardware."
+    },
+    {
+      "name": "GamepadHapticActuator.pulse()",
+      "link": "/en-US/docs/Web/API/GamepadHapticActuator/pulse",
+      "description": "Makes the hardware pulse at a certain intensity for a specified duration.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A double representing the intensity of the pulse. This can vary depending on the hardware type, but generally takes a value between 0.0 (no intensity) and 1.0 (full intensity)."
+        },
+        {
+          "name": "duration",
+          "description": "A double representing the duration of the pulse, in milliseconds."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "name": "DataTransfer",
+  "description": "The DataTransfer object is used to hold the data that is being dragged during a drag and drop operation. It may hold one or more data items, each of one or more data types. For more information about drag and drop, see HTML Drag and Drop API.",
+  "members": [
+    {
+      "name": "DataTransfer.dropEffect",
+      "link": "/en-US/docs/Web/API/DataTransfer/dropEffect",
+      "description": "Gets the type of drag-and-drop operation currently selected or sets the operation to a new type. The value must be none, copy, link or move.",
+      "parameters": [
+        {
+          "name": "copy",
+          "description": "A copy of the source item is made at the new location."
+        },
+        {
+          "name": "move",
+          "description": "An item is moved to a new location."
+        },
+        {
+          "name": "link",
+          "description": "A link is established to the source at the new location."
+        },
+        {
+          "name": "none",
+          "description": "The item may not be dropped."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.effectAllowed",
+      "link": "/en-US/docs/Web/API/DataTransfer/effectAllowed",
+      "description": "Provides all of the types of operations that are possible. Must be one of none, copy, copyLink, copyMove, link, linkMove, move, all or uninitialized.",
+      "parameters": [
+        {
+          "name": "none",
+          "description": "The item may not be dropped."
+        },
+        {
+          "name": "copy",
+          "description": "A copy of the source item may be made at the new location."
+        },
+        {
+          "name": "copyLink",
+          "description": "A copy or link operation is permitted."
+        },
+        {
+          "name": "copyMove",
+          "description": "A copy or move operation is permitted."
+        },
+        {
+          "name": "link",
+          "description": "A link may be established to the source at the new location."
+        },
+        {
+          "name": "linkMove",
+          "description": "A link or move operation is permitted."
+        },
+        {
+          "name": "move",
+          "description": "An item may be moved to a new location."
+        },
+        {
+          "name": "all",
+          "description": "All operations are permitted."
+        },
+        {
+          "name": "uninitialized",
+          "description": "The default value when the effect has not been set, equivalent to all."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.files",
+      "link": "/en-US/docs/Web/API/DataTransfer/files",
+      "description": "Contains a list of all the local files available on the data transfer. If the drag operation doesn\u0027t involve dragging files, this property is an empty list."
+    },
+    {
+      "name": "DataTransfer.items",
+      "link": "/en-US/docs/Web/API/DataTransfer/items",
+      "description": "Gives a DataTransferItemList object which is a list of all of the drag data."
+    },
+    {
+      "name": "DataTransfer.types",
+      "link": "/en-US/docs/Web/API/DataTransfer/types",
+      "description": "An array of strings giving the formats that were set in the dragstart event."
+    },
+    {
+      "name": "DataTransfer.mozCursor",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozCursor",
+      "description": "Gives the drag cursor\u0027s state. This is primarily used to control the cursor during tab drags.",
+      "parameters": [
+        {
+          "name": "auto",
+          "description": "Uses the default system behavior."
+        },
+        {
+          "name": "default",
+          "description": "Uses the default Gecko behavior, which is to set the cursor to an arrow during the drag operation."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.mozItemCount",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozItemCount",
+      "description": "Gives the number of items in the drag operation."
+    },
+    {
+      "name": "DataTransfer.mozSourceNode",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozSourceNode",
+      "description": "The Node over which the mouse cursor was located when the button was pressed to initiate the drag operation. This value is null for external drags or if the caller can\u0027t access the node."
+    },
+    {
+      "name": "DataTransfer.mozUserCancelled",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozUserCancelled",
+      "description": "This property applies only to the dragend event, and is true if the user canceled the drag operation by pressing escape. It will be false in all other cases, including if the drag failed for any other reason, for instance due to a drop over an invalid location."
+    },
+    {
+      "name": "DataTransfer.clearData()",
+      "link": "/en-US/docs/Web/API/DataTransfer/clearData",
+      "description": "Remove the data associated with a given type. The type argument is optional. If the type is empty or not specified, the data associated with all types is removed. If data for the specified type does not exist, or the data transfer contains no data, this method will have no effect.",
+      "parameters": [
+        {
+          "name": "format Optional",
+          "description": "A string which specifies the type of data to remove. If this parameter is an empty string or is not provided, the data for all types is removed."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.getData()",
+      "link": "/en-US/docs/Web/API/DataTransfer/getData",
+      "description": "Retrieves the data for a given type, or an empty string if data for that type does not exist or the data transfer contains no data.",
+      "parameters": [
+        {
+          "name": "format",
+          "description": "A DOMString representing the type of data to retrieve."
+        },
+        {
+          "name": "DOMString",
+          "description": "A DOMString representing the drag data for the specified format. If the drag operation has no data or the operation has no data for the specified format, this method returns an empty string."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.setData()",
+      "link": "/en-US/docs/Web/API/DataTransfer/setData",
+      "description": "Set the data for a given type. If data for the type does not exist, it is added at the end, such that the last item in the types list will be the new format. If data for the type already exists, the existing data is replaced in the same position.",
+      "parameters": [
+        {
+          "name": "format",
+          "description": "A DOMString representing the type of the drag data to add to the drag object."
+        },
+        {
+          "name": "data",
+          "description": "A DOMString representing the data to add to the drag object."
+        },
+        {
+          "name": "void",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.setDragImage()",
+      "link": "/en-US/docs/Web/API/DataTransfer/setDragImage",
+      "description": "Set the image to be used for dragging if a custom one is desired.",
+      "parameters": [
+        {
+          "name": "img",
+          "description": "An image Element element to use for the drag feedback image."
+        },
+        {
+          "name": "xOffset",
+          "description": "A long indicating the horizontal offset within the image.  "
+        },
+        {
+          "name": "yOffset",
+          "description": "A long indicating the vertical offset within the image.  "
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.addElement()",
+      "link": "/en-US/docs/Web/API/DataTransfer/addElement",
+      "description": "Sets the drag source to the given element.",
+      "parameters": [
+        {
+          "name": "el",
+          "description": "The Element to set as the drag source."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.mozClearDataAt()",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozClearDataAt",
+      "description": "Removes the data associated with the given format for an item at the specified index. The index is in the range from zero to the number of items minus one.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the type of the drag data to remove from the drag data object."
+        },
+        {
+          "name": "index",
+          "description": "A unsigned long representing the index of the data to remove."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.mozGetDataAt()",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozGetDataAt",
+      "description": "Retrieves the data associated with the given format for an item at the specified index, or null if it does not exist. The index should be in the range from zero to the number of items minus one.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the type of the drag data to retrieve from the drag data object."
+        },
+        {
+          "name": "index",
+          "description": "A unsigned long representing the index of the data to retrieve."
+        },
+        {
+          "name": "nsIVariant",
+          "description": "The data item requested. If the specified item does not exist, null is returned."
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.mozSetDataAt()",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozSetDataAt",
+      "description": "A data transfer may store multiple items, each at a given zero-based index. mozSetDataAt() may only be called with an index argument less than mozItemCount in which case an existing item is modified, or equal to mozItemCount in which case a new item is added, and the mozItemCount is incremented by one.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the type of the drag data to add to the drag data object."
+        },
+        {
+          "name": "data",
+          "description": "A nsIVariant representing the data to add to the drag data object."
+        },
+        {
+          "name": "index",
+          "description": "A unsigned long representing the index of the data to add."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "DataTransfer.mozTypesAt()",
+      "link": "/en-US/docs/Web/API/DataTransfer/mozTypesAt",
+      "description": "Holds a list of the format types of the data that is stored for an item at the specified index. If the index is not in the range from 0 to the number of items minus one, an empty string list is returned.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A unsigned long that is the index of the data for which to retrieve the types."
+        },
+        {
+          "name": "nsIVariant",
+          "description": "A list of data formats (which are strings). If the index is not in the range from 0 to the number of items minus one, an empty string list is returned."
+        }
+      ]
+    }
+  ]
+}

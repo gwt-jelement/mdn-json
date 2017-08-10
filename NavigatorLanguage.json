@@ -1,0 +1,16 @@
+{
+  "name": "NavigatorLanguage",
+  "description": "",
+  "members": [
+    {
+      "name": "NavigatorLanguage.language",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/language",
+      "description": "Returns a DOMString representing the preferred language of the user, usually the language of the browser UI. The null value is returned when this is unknown."
+    },
+    {
+      "name": "NavigatorLanguage.languages",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/languages",
+      "description": "Returns an array of DOMString representing the languages known to the user, by order of preference."
+    }
+  ]
+}

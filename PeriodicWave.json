@@ -1,0 +1,21 @@
+{
+  "name": "PeriodicWave",
+  "description": "",
+  "members": [
+    {
+      "name": "PeriodicWave.PeriodicWave()",
+      "link": "/en-US/docs/Web/API/PeriodicWave/PeriodicWave",
+      "description": "Creates a new PeriodicWave instance using the default values for all properties. If you wish to establish custom property values at the outset, use the AudioContext.createPeriodicWave() factory method instead.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A BaseAudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options Optional",
+          "description": "A PannerOptions dictionary object defining the properties you want the PannerNode to have (It also inherits the options defined in the PeriodicWaveConstraints dictionary.): real: A Float32Array containing the cosine terms that you want to use to form the wave (equivalent to the real parameter of AudioContext.createPeriodicWave). imag: A Float32Array containing the sine terms that you want to use to form the wave (equivalent to the imag parameter of AudioContext.createPeriodicWave)."
+        }
+      ]
+    }
+  ]
+}

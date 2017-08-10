@@ -1,0 +1,26 @@
+{
+  "name": "SVGLineElement",
+  "description": "The SVGLineElement interface provides access to the properties of \u003cline\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGLineElement.x1",
+      "link": "/en-US/docs/Web/API/SVGLineElement/x1",
+      "description": "Returns an SVGAnimatedLength that corresponds to attribute x1 on the given \u003cline\u003e element."
+    },
+    {
+      "name": "SVGLineElement.y1",
+      "link": "/en-US/docs/Web/API/SVGLineElement/y1",
+      "description": "Returns an SVGAnimatedLength that corresponds to attribute y1 on the given \u003cline\u003e element."
+    },
+    {
+      "name": "SVGLineElement.x2",
+      "link": "/en-US/docs/Web/API/SVGLineElement/x2",
+      "description": "Returns an SVGAnimatedLength that corresponds to attribute x2 on the given \u003cline\u003e element."
+    },
+    {
+      "name": "SVGLineElement.y2",
+      "link": "/en-US/docs/Web/API/SVGLineElement/y2",
+      "description": "Returns an SVGAnimatedLength that corresponds to attribute y2 on the given \u003cline\u003e element."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "OscillatorNode",
+  "description": "",
+  "members": [
+    {
+      "name": "OscillatorNode()",
+      "link": "/en-US/docs/Web/API/OscillatorNode/OscillatorNode",
+      "description": "Creates a new instance of an OscillatorNode object, optionally providing an object specifying default values for the node\u0027s properties.  If the default values are acceptable, you can simply call the AudioContext.createOscillator() factory method.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object whose properties specify the initial values for the oscillator node\u0027s properties. Any properties omitted from the object will take on the default value as documented. type The shape of the wave produced by the node. Valid values are \u0027sine\u0027, \u0027square\u0027, \u0027sawtooth\u0027, \u0027triangle\u0027 and \u0027custom\u0027. The default is \u0027sine\u0027. detune A detuning value (in cents) which will offset the frequency by the given amount. Its default is 0. frequency The frequency (in hertz) of the periodic waveform. Its default is 440. periodicWave An arbitrary period waveform described by a PeriodicWave object."
+        },
+        {
+          "name": "type",
+          "description": "The shape of the wave produced by the node. Valid values are \u0027sine\u0027, \u0027square\u0027, \u0027sawtooth\u0027, \u0027triangle\u0027 and \u0027custom\u0027. The default is \u0027sine\u0027."
+        },
+        {
+          "name": "detune",
+          "description": "A detuning value (in cents) which will offset the frequency by the given amount. Its default is 0."
+        },
+        {
+          "name": "frequency",
+          "description": "The frequency (in hertz) of the periodic waveform. Its default is 440."
+        },
+        {
+          "name": "periodicWave",
+          "description": "An arbitrary period waveform described by a PeriodicWave object."
+        }
+      ]
+    },
+    {
+      "name": "OscillatorNode.frequency",
+      "link": "/en-US/docs/Web/API/OscillatorNode/frequency",
+      "description": "An a-rate AudioParam representing the frequency of oscillation in hertz (though the AudioParam returned is read-only, the value it represents is not). The default value is 440 Hz (a standard middle-A note)."
+    },
+    {
+      "name": "OscillatorNode.detune",
+      "link": "/en-US/docs/Web/API/OscillatorNode/detune",
+      "description": "An a-rate AudioParam representing detuning of oscillation in cents (though the AudioParam returned is read-only, the value it represents is not). The default value is 0."
+    },
+    {
+      "name": "OscillatorNode.type",
+      "link": "/en-US/docs/Web/API/OscillatorNode/type",
+      "description": "A string which specifies the shape of waveform to play; this can be one of a number of standard values, or custom to use a PeriodicWave to describe a custom waveform. Different waves will produce different tones. Standard values are \"sine\", \"square\", \"sawtooth\", \"triangle\" and \"custom\". The default is \"sine\".",
+      "parameters": [
+        {
+          "name": "sine",
+          "description": "A sine wave. This is the default value."
+        },
+        {
+          "name": "square",
+          "description": "A square wave with a duty cycle of 0.5; that is, the signal is \"high\" for half of each period."
+        },
+        {
+          "name": "sawtooth",
+          "description": "A sawtooth wave."
+        },
+        {
+          "name": "triangle",
+          "description": "A triangle wave."
+        },
+        {
+          "name": "custom",
+          "description": "A custom waveform. You never set type to custom manually; instead, use the setPeriodicWave() method to provide the data representing the waveform. Doing so automatically sets the type to custom."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "The value custom was specified. To set a custom waveform, just call setPeriodicWave(). Doing so automatically sets the type for you."
+        }
+      ]
+    },
+    {
+      "name": "OscillatorNode.setPeriodicWave()",
+      "link": "/en-US/docs/Web/API/OscillatorNode/setPeriodicWave",
+      "description": "Sets a PeriodicWave which describes a periodic waveform to be used instead of one of the standard waveforms; calling this sets the type to custom. This replaces the now-obsolete OscillatorNode.setWaveTable() method.",
+      "parameters": [
+        {
+          "name": "wave",
+          "description": "A PeriodicWave object representing the waveform to use as the shape of the oscillator\u0027s output."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "HTMLTableHeaderCellElement",
+  "description": "The HTMLTableHeaderCellElement interface provides special properties and methods (beyond the regular HTMLTableCellElement and HTMLElement interfaces it also has available to it by inheritance) for manipulating the layout and presentation of table header cells in an HTML document.",
+  "members": [
+    {
+      "name": "HTMLTableHeaderCellElement.abbr",
+      "link": "/en-US/docs/Web/API/HTMLTableHeaderCellElement/abbr",
+      "description": "Is a DOMString containing a name used to refer to this cell in other context. It reflects the abbr attribute."
+    },
+    {
+      "name": "HTMLTableHeaderCellElement.scope",
+      "link": "/en-US/docs/Web/API/HTMLTableHeaderCellElement/scope",
+      "description": "Is a DOMString representing an enumerated value indicating which cells the header cell applies to. It reflects the scope attribute and has one of the following values: \"row\", \"col\", \"colgroup\", or \"rowgroup\". If the attribute is in the auto state, or if an invalid value is set for the attribute, scope will be returns the empty string, \"\"."
+    },
+    {
+      "name": "HTMLTableHeaderCellElement.sorted",
+      "link": "/en-US/docs/Web/API/HTMLTableHeaderCellElement/sorted",
+      "description": "Is a Boolean value indicating if the table is sorted by the scope associated with this header cell. It reflects the sorted attribute."
+    }
+  ]
+}

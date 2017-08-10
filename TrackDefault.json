@@ -1,0 +1,58 @@
+{
+  "name": "TrackDefault",
+  "description": "",
+  "members": [
+    {
+      "name": "TrackDefault()",
+      "link": "/en-US/docs/Web/API/TrackDefault/TrackDefault",
+      "description": "Constructs and returns a new TrackDefault object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString specifying a media segment data type for the SourceBuffer to contain. Can be audio, video, or text."
+        },
+        {
+          "name": "language",
+          "description": "A DOMString specifying a default language for the SourceBuffer to use when an initialization segment does not contain language information for a new track."
+        },
+        {
+          "name": "label",
+          "description": "A DOMString specifying a default label for the SourceBuffer to use when an initialization segment does not contain label information for a new track."
+        },
+        {
+          "name": "kinds",
+          "description": "An array (sequence) of DOMStrings specifying default kinds for the SourceBuffer to use when an initialization segment does not contain kind information for a new track."
+        },
+        {
+          "name": "byteStreamTrackID Optional",
+          "description": "A DOMString specifying the ID of the specific track that the SourceBuffer should apply to. If not specified, this value will be an empty string and the SourceBuffer can contain any tracks of the specified type."
+        }
+      ]
+    },
+    {
+      "name": "TrackDefault.type",
+      "link": "/en-US/docs/Web/API/TrackDefault/type",
+      "description": "Returns the type of track that this SourceBuffer\u0027s media segment data relates to (i.e. audio, video, or text track.)"
+    },
+    {
+      "name": "TrackDefault.byteStreamTrackID",
+      "link": "/en-US/docs/Web/API/TrackDefault/byteStreamTrackID",
+      "description": "Returns the ID of the specific track that the SourceBuffer should apply to."
+    },
+    {
+      "name": "TrackDefault.language",
+      "link": "/en-US/docs/Web/API/TrackDefault/language",
+      "description": "Returns the default language to use when an initialization segment does not contain language information for a new track."
+    },
+    {
+      "name": "TrackDefault.label",
+      "link": "/en-US/docs/Web/API/TrackDefault/label",
+      "description": "Returns the default label to use when an initialization segment does not contain label information for a new track."
+    },
+    {
+      "name": "TrackDefault.kinds",
+      "link": "/en-US/docs/Web/API/TrackDefault/kinds",
+      "description": "Returns the default kinds used when an initialization segment does not contain kind information for a new track."
+    }
+  ]
+}

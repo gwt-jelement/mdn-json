@@ -1,0 +1,16 @@
+{
+  "name": "SVGFEDistantLightElement",
+  "description": "The SVGFEDistantLightElement interface corresponds to the \u003cfeDistantLight\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEDistantLightElement.azimuth",
+      "link": "/en-US/docs/Web/API/SVGFEDistantLightElement/azimuth",
+      "description": "An SVGAnimatedNumber corresponding to the azimuth attribute of the given element."
+    },
+    {
+      "name": "SVGFEDistantLightElement.elevation",
+      "link": "/en-US/docs/Web/API/SVGFEDistantLightElement/elevation",
+      "description": "An SVGAnimatedNumber corresponding to the elevation attribute of the given element."
+    }
+  ]
+}

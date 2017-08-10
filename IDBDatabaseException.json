@@ -1,0 +1,5 @@
+{
+  "name": "IDBDatabaseException",
+  "description": "Obsolete: This interface was removed from the specification and was replaced by usage of DOMException. In the IndexedDB API, an IDBDatabaseException object represents exception conditions that can be encountered while performing database operations.",
+  "members": []
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Clients",
+  "description": "",
+  "members": [
+    {
+      "name": "Clients.get()",
+      "link": "/en-US/docs/Web/API/Clients/get",
+      "description": "Gets a service worker client matching a given id and returns it in a Promise.",
+      "parameters": [
+        {
+          "name": "id",
+          "description": "A DOMString representing the id of the client you want to get."
+        }
+      ]
+    },
+    {
+      "name": "Clients.matchAll()",
+      "link": "/en-US/docs/Web/API/Clients/matchAll",
+      "description": "Gets a list of service worker clients and returns them in a Promise. Include the options parameter to return all service worker clients whose origin is the same as the associated service worker\u0027s origin. If options are not included, the method returns only the service worker clients controlled by the service worker. ",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "An options object allowing you to set options for the matching operation. Available options are: includeUncontrolled: A Boolean — if set to true, the matching operation will return all service worker clients who share the same origin as the current service worker. Otherwise, it returns only the service worker clients controlled by the current service worker. The default is false. type: Sets the type of clients you want matched. Available values are window, worker, sharedworker, and all. The default is all."
+        }
+      ]
+    },
+    {
+      "name": "Clients.openWindow()",
+      "link": "/en-US/docs/Web/API/Clients/openWindow",
+      "description": "Opens a service worker Client in a new browser window.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "A USVString representing the URL of the client you want to open in the window. Generally this value must be a URL from the same origin as the calling script."
+        }
+      ]
+    },
+    {
+      "name": "Clients.claim()",
+      "link": "/en-US/docs/Web/API/Clients/claim",
+      "description": "Allows an active Service Worker to set itself as the active worker for a client page when the worker and the page are in the same scope. "
+    }
+  ]
+}

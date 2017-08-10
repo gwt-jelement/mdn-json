@@ -1,0 +1,52 @@
+{
+  "name": "PaymentResponse",
+  "description": "",
+  "members": [
+    {
+      "name": "PaymentResponse.details",
+      "link": "/en-US/docs/Web/API/PaymentResponse/details",
+      "description": "Returns a JSON-serializable object that provides a payment method specific message used by the merchant to process the transaction and determine successful fund transfer. This data is returned by the payment app that satisfies the payment request."
+    },
+    {
+      "name": "PaymentResponse.methodName",
+      "link": "/en-US/docs/Web/API/PaymentResponse/methodName",
+      "description": "Returns the payment method identifier for the payment method that the user selected, for example, Visa, Mastercard, Paypal, etc.. "
+    },
+    {
+      "name": "PaymentResponse.payerEmail",
+      "link": "/en-US/docs/Web/API/PaymentResponse/payerEmail",
+      "description": "Returns the email address supplied by the user. This option is only present when the requestPayerEmail option is set to true in the options parameter of the PaymentRequest() constructor."
+    },
+    {
+      "name": "PaymentResponse.payerName",
+      "link": "/en-US/docs/Web/API/PaymentResponse/payerName",
+      "description": "Returns the name supplied by the user. This option is only present when the requestPayerName option is set to true in the options parameter of the PaymentRequest() constructor."
+    },
+    {
+      "name": "PaymentResponse.payerPhone",
+      "link": "/en-US/docs/Web/API/PaymentResponse/payerPhone",
+      "description": "Returns the phone number supplied by the user. This option is only present when the requestPayerPhone option is set to true in the options parameter of the PaymentRequest() constructor."
+    },
+    {
+      "name": "PaymentResponse.shippingAddress",
+      "link": "/en-US/docs/Web/API/PaymentResponse/shippingAddress",
+      "description": "Returns the shipping Address supplied by the user. This option is only present when the requestShipping option is set to true in the options parameter of the PaymentRequest() constructor."
+    },
+    {
+      "name": "PaymentResponse.shippingOption",
+      "link": "/en-US/docs/Web/API/PaymentResponse/shippingOption",
+      "description": "Returns the ID attribute of the shipping option selected by the user. This option is only present when the requestShipping option is set to true in the options parameter of the PaymentRequest() constructor."
+    },
+    {
+      "name": "PaymentResponse.complete()",
+      "link": "/en-US/docs/Web/API/PaymentResponse/complete",
+      "description": "Notifies the user agent that the user interaction is over. This causes any remaining user interface to be closed. This method should only be called after the Promise returned by the PaymentRequest.show() method.",
+      "parameters": [
+        {
+          "name": "result",
+          "description": "A string with one of the following values: \"success\": Indicates the payment was successfully processed. The user agent may or may not indicate success to the user. \"fail\": Indicates the payment was not successfully processed. The user agent may or may not indicate failure to the user. \"unknown\": The web page did not indicate success or failure and the user agent should not display a UI indicating success or failure.  This is the default. \"\" (empty string): The web page did not indicate success or failure and the user agent should not display a UI indicating success or failure. This value has been replaced by \"unknown\". See browser compatibility for details. Note: The value passed to this method must include the quotation marks."
+        }
+      ]
+    }
+  ]
+}

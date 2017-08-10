@@ -1,0 +1,315 @@
+{
+  "name": "AudioContext",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioContext()",
+      "link": "/en-US/docs/Web/API/AudioContext/AudioContext",
+      "description": "Creates and returns a new AudioContext object.",
+      "parameters": [
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: latencyHint: This value identifies type of playback, which affects tradeoffs between audio output latency and power consumption. The prefered values are \"balanced\", \"interactive\", and \"playback\", with the default value: \"interactive\". These values mean \"balance audio output latency and power consumption\", \"provide lowest audio output latency as possible without glitching\", and \"prioritize sustained playback without interruption over audio output latency\". You can also specify double value for the number of seconds of latency, for finer control."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.currentTime",
+      "link": "/en-US/docs/Web/API/AudioContext/currentTime",
+      "description": "Returns a double representing an ever-increasing hardware time in seconds used for scheduling. It starts at 0."
+    },
+    {
+      "name": "AudioContext.destination",
+      "link": "/en-US/docs/Web/API/AudioContext/destination",
+      "description": "Returns an AudioDestinationNode representing the final destination of all audio in the context. It can be thought of as the audio-rendering device."
+    },
+    {
+      "name": "AudioContext.listener",
+      "link": "/en-US/docs/Web/API/AudioContext/listener",
+      "description": "Returns the AudioListener object, used for 3D spatialization."
+    },
+    {
+      "name": "AudioContext.sampleRate",
+      "link": "/en-US/docs/Web/API/AudioContext/sampleRate",
+      "description": "Returns a float representing the sample rate (in samples per second) used by all nodes in this context. The sample-rate of an AudioContext cannot be changed."
+    },
+    {
+      "name": "AudioContext.state",
+      "link": "/en-US/docs/Web/API/AudioContext/state",
+      "description": "Returns the current state of the AudioContext."
+    },
+    {
+      "name": "AudioContext.mozAudioChannelType",
+      "link": "/en-US/docs/Web/API/AudioContext/mozAudioChannelType",
+      "description": "Returns the audio channel that the sound playing in an AudioContext will play in. This non-standard property, implemented for Firefox OS, was removed in Firefox 55."
+    },
+    {
+      "name": "AudioContext.onstatechange",
+      "link": "/en-US/docs/Web/API/AudioContext/onstatechange",
+      "description": "An event handler that runs when an event of type statechange has fired. This occurs when the AudioContext\u0027s state changes, due to the calling of one of the state change methods (AudioContext.suspend, AudioContext.resume, or AudioContext.close)."
+    },
+    {
+      "name": "AudioContext.close()",
+      "link": "/en-US/docs/Web/API/AudioContext/close",
+      "description": "Closes the audio context, releasing any system audio resources that it uses."
+    },
+    {
+      "name": "AudioContext.createBuffer()",
+      "link": "/en-US/docs/Web/API/AudioContext/createBuffer",
+      "description": "Creates a new, empty AudioBuffer object, which can then be populated by data and played via an AudioBufferSourceNode.",
+      "parameters": [
+        {
+          "name": "numOfChannels",
+          "description": "An integer representing the number of channels this buffer should have. Implementations must support a minimum of 1 channel and a maximum of 32 channels."
+        },
+        {
+          "name": "length",
+          "description": "An integer representing the size of the buffer in sample-frames."
+        },
+        {
+          "name": "sampleRate",
+          "description": "The sample-rate of the linear audio data in sample-frames per second. An implementation must support sample-rates in at least the range 22050 to 96000."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createConstantSource()",
+      "link": "/en-US/docs/Web/API/AudioContext/createConstantSource",
+      "description": "Creates a ConstantSourceNode object, which is an audio source that continuously outputs a monaural (one-channel) sound signal whose samples all have the same value."
+    },
+    {
+      "name": "AudioContext.createBufferSource()",
+      "link": "/en-US/docs/Web/API/AudioContext/createBufferSource",
+      "description": "Creates an AudioBufferSourceNode, which can be used to play and manipulate audio data contained within an AudioBuffer object. AudioBuffers are created using AudioContext.createBuffer or returned by AudioContext.decodeAudioData when it successfully decodes an audio track."
+    },
+    {
+      "name": "AudioContext.createMediaElementSource()",
+      "link": "/en-US/docs/Web/API/AudioContext/createMediaElementSource",
+      "description": "Creates a MediaElementAudioSourceNode associated with an HTMLMediaElement. This can be used to play and manipulate audio from \u003cvideo\u003e or \u003caudio\u003e elements.",
+      "parameters": [
+        {
+          "name": "myMediaElement",
+          "description": "An HTMLMediaElement object that you want to feed into an audio processing graph to manipulate."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createMediaStreamSource()",
+      "link": "/en-US/docs/Web/API/AudioContext/createMediaStreamSource",
+      "description": "Creates a MediaStreamAudioSourceNode associated with a MediaStream representing an audio stream which may come from the local computer microphone or other sources.",
+      "parameters": [
+        {
+          "name": "stream",
+          "description": "A MediaStream object that you want to feed into an audio processing graph to manipulate."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createMediaStreamDestination()",
+      "link": "/en-US/docs/Web/API/AudioContext/createMediaStreamDestination",
+      "description": "Creates a MediaStreamAudioDestinationNode associated with a MediaStream representing an audio stream which may be stored in a local file or sent to another computer."
+    },
+    {
+      "name": "AudioContext.createScriptProcessor()",
+      "link": "/en-US/docs/Web/API/AudioContext/createScriptProcessor",
+      "description": "Creates a ScriptProcessorNode, which can be used for direct audio processing via JavaScript.",
+      "parameters": [
+        {
+          "name": "bufferSize",
+          "description": "The buffer size in units of sample-frames. If specified, the bufferSize must be one of the following values: 256, 512, 1024, 2048, 4096, 8192, 16384. If it\u0027s not passed in, or if the value is 0, then the implementation will choose the best buffer size for the given environment, which will be a constant power of 2 throughout the lifetime of the node."
+        },
+        {
+          "name": "numberOfInputChannels",
+          "description": "Integer specifying the number of channels for this node\u0027s input, defaults to 2. Values of up to 32 are supported."
+        },
+        {
+          "name": "numberOfOutputChannels",
+          "description": "Integer specifying the number of channels for this node\u0027s output, defaults to 2. Values of up to 32 are supported."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createStereoPanner()",
+      "link": "/en-US/docs/Web/API/AudioContext/createStereoPanner",
+      "description": "Creates a StereoPannerNode, which can be used to apply stereo panning to an audio source."
+    },
+    {
+      "name": "AudioContext.createAnalyser()",
+      "link": "/en-US/docs/Web/API/AudioContext/createAnalyser",
+      "description": "Creates an AnalyserNode, which can be used to expose audio time and frequency data and for example to create data visualisations."
+    },
+    {
+      "name": "AudioContext.createBiquadFilter()",
+      "link": "/en-US/docs/Web/API/AudioContext/createBiquadFilter",
+      "description": "Creates a BiquadFilterNode, which represents a second order filter configurable as several different common filter types: high-pass, low-pass, band-pass, etc."
+    },
+    {
+      "name": "AudioContext.createChannelMerger()",
+      "link": "/en-US/docs/Web/API/AudioContext/createChannelMerger",
+      "description": "Creates a ChannelMergerNode, which is used to combine channels from multiple audio streams into a single audio stream.",
+      "parameters": [
+        {
+          "name": "numberOfInputs",
+          "description": "The number of channels in the input audio streams, which the output stream will contain; the default is 6 if this parameter is not specified."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createChannelSplitter()",
+      "link": "/en-US/docs/Web/API/AudioContext/createChannelSplitter",
+      "description": "Creates a ChannelSplitterNode, which is used to access the individual channels of an audio stream and process them separately.",
+      "parameters": [
+        {
+          "name": "numberOfOutputs",
+          "description": "The number of channels in the input audio stream that you want to output separately; the default is 6 if this parameter is not specified."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createConvolver()",
+      "link": "/en-US/docs/Web/API/AudioContext/createConvolver",
+      "description": "Creates a ConvolverNode, which can be used to apply convolution effects to your audio graph, for example a reverberation effect."
+    },
+    {
+      "name": "AudioContext.createDelay()",
+      "link": "/en-US/docs/Web/API/AudioContext/createDelay",
+      "description": "Creates a DelayNode, which is used to delay the incoming audio signal by a certain amount. This node is also useful to create feedback loops in a Web Audio API graph.",
+      "parameters": [
+        {
+          "name": "maxDelayTime",
+          "description": "The maximum amount of time, in seconds, that the audio signal can be delayed by."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createDynamicsCompressor()",
+      "link": "/en-US/docs/Web/API/AudioContext/createDynamicsCompressor",
+      "description": "Creates a DynamicsCompressorNode, which can be used to apply acoustic compression to an audio signal."
+    },
+    {
+      "name": "AudioContext.createGain()",
+      "link": "/en-US/docs/Web/API/AudioContext/createGain",
+      "description": "Creates a GainNode, which can be used to control the overall volume of the audio graph."
+    },
+    {
+      "name": "AudioContext.createIIRFilter()",
+      "link": "/en-US/docs/Web/API/AudioContext/createIIRFilter",
+      "description": "Creates an IIRFilterNode, which represents a second order filter configurable as several different common filter types.",
+      "parameters": [
+        {
+          "name": "feedforward",
+          "description": "An array of floating-point values specifying the feedforward (numerator) coefficients for the transfer function of the IIR filter. The maximum length of this array is 20, and at least one value must be nonzero."
+        },
+        {
+          "name": "feedback",
+          "description": "An array of floating-point values specifying the feedback (denominator) coefficients for the transfer function of the IIR filter. This array may have up to 20 members, the first of which must not be zero."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "All of the feedforward coefficients are 0, and/or the first feedback coefficient is 0."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "One or both of the input arrays exceeds 20 members."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createOscillator()",
+      "link": "/en-US/docs/Web/API/AudioContext/createOscillator",
+      "description": "Creates an OscillatorNode, a source representing a periodic waveform. It basically generates a tone."
+    },
+    {
+      "name": "AudioContext.createPanner()",
+      "link": "/en-US/docs/Web/API/AudioContext/createPanner",
+      "description": "Creates a PannerNode, which is used to spatialise an incoming audio stream in 3D space."
+    },
+    {
+      "name": "AudioContext.createPeriodicWave()",
+      "link": "/en-US/docs/Web/API/AudioContext/createPeriodicWave",
+      "description": "Creates a PeriodicWave, used to define a periodic waveform that can be used to determine the output of an OscillatorNode.",
+      "parameters": [
+        {
+          "name": "real",
+          "description": "An array of cosine terms (traditionally the A terms)."
+        },
+        {
+          "name": "imag",
+          "description": "An array of sine terms (traditionally the B terms)."
+        },
+        {
+          "name": "constraints Optional",
+          "description": "An dictionary object that specifies whether normalization should be disabled (if not specified, normalization is enabled by default.) It takes one property: disableNormalization: If set to true, normalization is disabled for the periodic wave. The default is false."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createWaveShaper()",
+      "link": "/en-US/docs/Web/API/AudioContext/createWaveShaper",
+      "description": "Creates a WaveShaperNode, which is used to implement non-linear distortion effects."
+    },
+    {
+      "name": "AudioContext.createAudioWorker()",
+      "link": "/en-US/docs/Web/API/AudioContext/createAudioWorker",
+      "description": "Creates an AudioWorkerNode, which can interact with a web worker thread to generate, process, or analyse audio directly. This was added to the spec on August 29 2014, and is not implemented in any browser yet."
+    },
+    {
+      "name": "AudioContext.decodeAudioData()",
+      "link": "/en-US/docs/Web/API/AudioContext/decodeAudioData",
+      "description": "Asynchronously decodes audio file data contained in an ArrayBuffer. In this case, the ArrayBuffer is usually loaded from an XMLHttpRequest\u0027s response attribute after setting the responseType to arraybuffer. This method only works on complete files, not fragments of audio files.",
+      "parameters": [
+        {
+          "name": "ArrayBuffer",
+          "description": "An ArrayBuffer containing the audio data to be decoded, usually grabbed from XMLHttpRequest and FileReader."
+        },
+        {
+          "name": "DecodeSuccessCallback",
+          "description": "A callback function to be invoked when the decoding successfully finishes. The single argument to this callback is an AudioBuffer representing the decoded PCM audio data. Usually you\u0027ll want to put the decoded data into an AudioBufferSourceNode, from which it can be played and manipulated how you want."
+        },
+        {
+          "name": "DecodeErrorCallback",
+          "description": "An optional error callback, to be invoked if an error occurs when the audio data is being decoded."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.getOutputTimestamp()",
+      "link": "/en-US/docs/Web/API/AudioContext/getOutputTimestamp",
+      "description": "Returns a new AudioTimestamp containing two correlated context\u0027s audio stream position values: the AudioTimestamp.contextTime member contains the time of the sample frame which is currently being rendered by the audio output device (i.e., output audio stream position), in the same units and origin as context\u0027s AudioContext.currentTime; the AudioTimestamp.performanceTime member contains the time estimating the moment when the sample frame corresponding to the stored contextTime value was rendered by the audio output device, in the same units and origin as performance.now()."
+    },
+    {
+      "name": "AudioContext.resume()",
+      "link": "/en-US/docs/Web/API/AudioContext/resume",
+      "description": "Resumes the progression of time in an audio context that has previously been suspended."
+    },
+    {
+      "name": "AudioContext.suspend()",
+      "link": "/en-US/docs/Web/API/AudioContext/suspend",
+      "description": "Suspends the progression of time in the audio context, temporarily halting audio hardware access and reducing CPU/battery usage in the process."
+    },
+    {
+      "name": "AudioContext.createJavaScriptNode()",
+      "link": "/en-US/docs/Web/API/AudioContext/createJavaScriptNode",
+      "description": "Creates a JavaScriptNode, used for direct audio processing via JavaScript. This method is obsolete, and has been replaced by AudioContext.createScriptProcessor().",
+      "parameters": [
+        {
+          "name": "bufferSize",
+          "description": "The buffer size must be in units of sample frames, i.e., one of: 256, 512, 1024, 2048, 4096, 8192, or 16384. It controls the frequency of callbacks asking for a buffer refill. Smaller sizes allow for lower latency and higher for better overall quality."
+        },
+        {
+          "name": "numInputChannels",
+          "description": "The number of input channels in the audio stream."
+        },
+        {
+          "name": "numOutputChannels",
+          "description": "The number of output channels in the audio stream."
+        }
+      ]
+    },
+    {
+      "name": "AudioContext.createWaveTable()",
+      "link": "/en-US/docs/Web/API/AudioContext/createWaveTable",
+      "description": "Creates a WaveTableNode, used to define a periodic waveform. This method is obsolete, and has been replaced by AudioContext.createPeriodicWave()."
+    }
+  ]
+}

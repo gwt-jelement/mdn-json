@@ -1,0 +1,101 @@
+{
+  "name": "BatteryManager",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. The BatteryManager interface provides ways to get information about the system\u0027s battery charge level.",
+  "members": [
+    {
+      "name": "BatteryManager.charging",
+      "link": "/en-US/docs/Web/API/BatteryManager/charging",
+      "description": "A Boolean value indicating whether or not the battery is currently being charged."
+    },
+    {
+      "name": "BatteryManager.chargingTime",
+      "link": "/en-US/docs/Web/API/BatteryManager/chargingTime",
+      "description": "A number representing the remaining time in seconds until the battery is fully charged, or 0 if the battery is already fully charged."
+    },
+    {
+      "name": "BatteryManager.dischargingTime",
+      "link": "/en-US/docs/Web/API/BatteryManager/dischargingTime",
+      "description": "A number representing the remaining time in seconds until the battery is completely discharged and the system will suspend."
+    },
+    {
+      "name": "BatteryManager.level",
+      "link": "/en-US/docs/Web/API/BatteryManager/level",
+      "description": "A number representing the system\u0027s battery charge level scaled to a value between 0.0 and 1.0."
+    },
+    {
+      "name": "BatteryManager.onchargingchange",
+      "link": "/en-US/docs/Web/API/BatteryManager/onchargingchange",
+      "description": "A handler for the chargingchange event; This event is sent when the battery charging state is updated."
+    },
+    {
+      "name": "BatteryManager.onchargingtimechange",
+      "link": "/en-US/docs/Web/API/BatteryManager/onchargingtimechange",
+      "description": "A handler for the chargingtimechange event; This event is sent when the battery charging time is updated"
+    },
+    {
+      "name": "BatteryManager.ondischargingtimechange",
+      "link": "/en-US/docs/Web/API/BatteryManager/ondischargingtimechange",
+      "description": "A handler for the dischargingtimechange event; This event is sent when the battery discharging time is updated."
+    },
+    {
+      "name": "BatteryManager.onlevelchange",
+      "link": "/en-US/docs/Web/API/BatteryManager/onlevelchange",
+      "description": "A handler for the levelchange event; This event is sent when the battery level is updated."
+    },
+    {
+      "name": "EventTarget.addEventListener()",
+      "link": "/en-US/docs/Web/API/EventTarget/addEventListener",
+      "description": "Register an event handler of a specific event type on the EventTarget.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing the event type to listen for."
+        },
+        {
+          "name": "listener",
+          "description": "The object which receives a notification (an object that implements the Event interface) when an event of the specified type occurs. This must be an object implementing the EventListener interface, or a JavaScript function."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   once: A Boolean indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked. passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. See Improving scrolling performance with passive listeners to learn more. mozSystemGroup: A Boolean indicating that the listener should be added to the system group. Available only in code running in XBL or in Firefox\u0027s chrome."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "A Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree. Events that are bubbling upward through the tree will not trigger a listener designated to use capture. Event bubbling and capturing are two ways of propagating events which occur in an element that is nested within another element, when both elements have registered a handle for that event. The event propagation mode determines the order in which elements receive the event. See DOM Level 3 Events and JavaScript Event order for a detailed explanation. If not specified, useCapture defaults to false."
+        },
+        {
+          "name": "wantsUntrusted",
+          "description": "A Firefox (Gecko)-specific parameter. If true, the listener receives synthetic events dispatched by web content (the default is false for chrome and true for regular web pages). This parameter is useful for code found in add-ons as well as the browser itself. See Interaction between privileged and non-privileged pages for an example."
+        }
+      ]
+    },
+    {
+      "name": "EventTarget.removeEventListener()",
+      "link": "/en-US/docs/Web/API/EventTarget/removeEventListener",
+      "description": "Removes an event listener from the EventTarget.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string which specifies the type of event for which to remove an event."
+        },
+        {
+          "name": "listener",
+          "description": "The EventListener function of the event handler to remove from the event target."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object that specifies characteristics about the event listener. The available options are: capture: A Boolean that indicates that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.   passive: A Boolean indicating that the listener will never call preventDefault(). If it does, the user agent should ignore it and generate a console warning. mozSystemGroup: Available only in code running in XBL or in Firefox\u0027 chrome, it is a Boolean defining if the listener is added to the system group."
+        },
+        {
+          "name": "useCapture Optional",
+          "description": "Specifies whether the EventListener to be removed is registered as a capturing listener or not. If this parameter is absent, a default value of false is assumed."
+        }
+      ]
+    },
+    {
+      "name": "EventTarget.dispatchEvent()",
+      "link": "/en-US/docs/Web/API/EventTarget/dispatchEvent",
+      "description": "Dispatch an event to this EventTarget."
+    }
+  ]
+}

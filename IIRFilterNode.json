@@ -1,0 +1,44 @@
+{
+  "name": "IIRFilterNode",
+  "description": "",
+  "members": [
+    {
+      "name": "IIRFilterNode()",
+      "link": "/en-US/docs/Web/API/IIRFilterNode/IIRFilterNode",
+      "description": "Creates a new instance of an IIRFilterNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: feedforward: A sequence of feedforward coefficients. feedback: A sequence of feedback coefficients."
+        }
+      ]
+    },
+    {
+      "name": "getFrequencyResponse()",
+      "link": "/en-US/docs/Web/API/IIRFilterNode/getFrequencyResponse",
+      "description": "Uses the filter\u0027s current parameter settings to calculate the response for frequencies specified in the provided array of frequencies.",
+      "parameters": [
+        {
+          "name": "frequencyArray",
+          "description": "A Float32Array containing an array of frequencies, specified in Hertz, which you want to filter."
+        },
+        {
+          "name": "magResponseOutput",
+          "description": "A Float32Array to receive the computed magnitudes of the freqency response for each frequency value in the frequencyArray."
+        },
+        {
+          "name": "phaseResponseOutput",
+          "description": "A Float32Array to receive the computed phase response values in radians for each frequency value in the input frequencyArray."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "The three arrays provided are not all of the same length."
+        }
+      ]
+    }
+  ]
+}

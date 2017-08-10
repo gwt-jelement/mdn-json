@@ -1,0 +1,44 @@
+{
+  "name": "ChildNode",
+  "description": "The ChildNode interface contains methods that are particular to Node objects that can have a parent.",
+  "members": [
+    {
+      "name": "ChildNode.remove()",
+      "link": "/en-US/docs/Web/API/ChildNode/remove",
+      "description": "Removes this ChildNode from the children list of its parent."
+    },
+    {
+      "name": "ChildNode.before()",
+      "link": "/en-US/docs/Web/API/ChildNode/before",
+      "description": "Inserts a set of Node or DOMString objects in the children list of this ChildNode\u0027s parent, just before this ChildNode. DOMString objects are inserted as equivalent Text nodes.",
+      "parameters": [
+        {
+          "name": "nodes",
+          "description": "A set of Node or DOMString objects to insert."
+        }
+      ]
+    },
+    {
+      "name": "ChildNode.after()",
+      "link": "/en-US/docs/Web/API/ChildNode/after",
+      "description": "Inserts a set of Node or DOMString objects in the children list of this ChildNode\u0027s parent, just after this ChildNode. DOMString objects are inserted as equivalent Text nodes.",
+      "parameters": [
+        {
+          "name": "nodes",
+          "description": "A set of Node or DOMString objects to insert."
+        }
+      ]
+    },
+    {
+      "name": "ChildNode.replaceWith()",
+      "link": "/en-US/docs/Web/API/ChildNode/replaceWith",
+      "description": "Replaces this ChildNode in the children list of its parent with a set of Node or DOMString objects. DOMString objects are inserted as equivalent Text nodes.",
+      "parameters": [
+        {
+          "name": "nodes",
+          "description": "A set of Node or DOMString objects to replace."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "FontFaceSetLoadEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "FontFaceSetLoadEvent()",
+      "link": "/en-US/docs/Web/API/FontFaceSetLoadEvent/FontFaceSetLoadEvent",
+      "description": "Creates a new FontFaceSetLoadEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The literal value \u0027Type\u0027 (quotation marks included)."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: fontfaces: An array of FontFace instances."
+        }
+      ]
+    },
+    {
+      "name": "FontFaceSetLoadEvent.fontfaces",
+      "link": "/en-US/docs/Web/API/FontFaceSetLoadEvent/fontfaces",
+      "description": "Returns an array of FontFace instances each of which represents a single usable font."
+    }
+  ]
+}

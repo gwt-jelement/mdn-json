@@ -1,0 +1,41 @@
+{
+  "name": "WheelEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "WheelEvent()",
+      "link": "/en-US/docs/Web/API/WheelEvent/WheelEvent",
+      "description": "Creates a WheelEvent object.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "Is a DOMString representing the name of the event."
+        },
+        {
+          "name": "wheelEventInitOptional",
+          "description": "Is a WheelEventInit dictionary, having the following fields: \"deltaX\", optional and defaulting to 0.0, is a double representing the horizontal scroll amount in the deltaMode unit. \"deltaY\", optional and defaulting to 0.0, is a double representing the vertical scroll amount in the deltaMode unit. \"deltaZ\", optional and defaulting to 0.0, is a double representing the scroll amount for the z-axis in the deltaMode unit. \"deltaMode\", optional and defaulting to 0, is a unsigned long representing the unit of the delta values scroll amount. Permitted values are: Constant Value Description DOM_DELTA_PIXEL 0x00 The delta values are specified in pixels. DOM_DELTA_LINE 0x01 The delta values are specified in lines. DOM_DELTA_PAGE 0x02 The delta values are specified in pages. The WheelEventInit dictionary also accepts fields from the MouseEventInit, UIEventInit and EventInit dictionaries."
+        }
+      ]
+    },
+    {
+      "name": "WheelEvent.deltaX",
+      "link": "/en-US/docs/Web/API/WheelEvent/deltaX",
+      "description": "Returns a double representing the horizontal scroll amount."
+    },
+    {
+      "name": "WheelEvent.deltaY",
+      "link": "/en-US/docs/Web/API/WheelEvent/deltaY",
+      "description": "Returns a double representing the vertical scroll amount."
+    },
+    {
+      "name": "WheelEvent.deltaZ",
+      "link": "/en-US/docs/Web/API/WheelEvent/deltaZ",
+      "description": "Returns a double representing the scroll amount for the z-axis."
+    },
+    {
+      "name": "WheelEvent.deltaMode",
+      "link": "/en-US/docs/Web/API/WheelEvent/deltaMode",
+      "description": "Returns an unsigned long representing the unit of the delta values scroll amount. Permitted values are: Constant Value Description DOM_DELTA_PIXEL 0x00 The delta values are specified in pixels. DOM_DELTA_LINE 0x01 The delta values are specified in lines. DOM_DELTA_PAGE 0x02 The delta values are specified in pages."
+    }
+  ]
+}

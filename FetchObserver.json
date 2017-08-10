@@ -1,0 +1,26 @@
+{
+  "name": "FetchObserver",
+  "description": "Draft This page is not complete. This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The FetchObserver interface of the Fetch API represents an observer object that allows you to retrieve information concerning the status of a fetch request.",
+  "members": [
+    {
+      "name": "FetchObserver.state",
+      "link": "/en-US/docs/Web/API/FetchObserver/state",
+      "description": "Returns a FetchState enum value indicating the current state of the fetch request."
+    },
+    {
+      "name": "FetchObserver.onstatechange",
+      "link": "/en-US/docs/Web/API/FetchObserver/onstatechange",
+      "description": "Invoked when a statechange event fires, i.e. when the state of the fetch request changes."
+    },
+    {
+      "name": "FetchObserver.onrequestprogress",
+      "link": "/en-US/docs/Web/API/FetchObserver/onrequestprogress",
+      "description": "Invoked when a requestprogress event fires, i.e. when the request progresses."
+    },
+    {
+      "name": "FetchObserver.onresponseprogress",
+      "link": "/en-US/docs/Web/API/FetchObserver/onresponseprogress",
+      "description": "Invoked when a responseprogress event fires, i.e. when the download of the response progresses."
+    }
+  ]
+}

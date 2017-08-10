@@ -1,0 +1,21 @@
+{
+  "name": "CanvasGradient",
+  "description": "The CanvasGradient interface represents an opaque object describing a gradient. It is returned by the methods CanvasRenderingContext2D.createLinearGradient() or CanvasRenderingContext2D.createRadialGradient().",
+  "members": [
+    {
+      "name": "CanvasGradient.addColorStop()",
+      "link": "/en-US/docs/Web/API/CanvasGradient/addColorStop",
+      "description": "Adds a new stop, defined by an offset and a color, to the gradient. If the offset is not between 0 and 1 an INDEX_SIZE_ERR is raised, if the color can\u0027t be parsed as a CSS \u003ccolor\u003e, a SYNTAX_ERR is raised.",
+      "parameters": [
+        {
+          "name": "offset",
+          "description": "A number between 0 and 1. An INDEX_SIZE_ERR is raised, if the number is not in that range."
+        },
+        {
+          "name": "color",
+          "description": "A CSS \u003ccolor\u003e. A SYNTAX_ERR is raised, if the value can not be parsed as a CSS \u003ccolor\u003e value."
+        }
+      ]
+    }
+  ]
+}

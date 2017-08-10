@@ -1,0 +1,16 @@
+{
+  "name": "RTCSctpTransport",
+  "description": "",
+  "members": [
+    {
+      "name": "RTCSctpTransport.maxMessageSize",
+      "link": "/en-US/docs/Web/API/RTCSctpTransport/maxMessageSize",
+      "description": "An integer value indicating the maximum size, in bytes, of a message which can be sent using the RTCDataChannel.send() method."
+    },
+    {
+      "name": "RTCSctpTransport.transport",
+      "link": "/en-US/docs/Web/API/RTCSctpTransport/transport",
+      "description": "An RTCDtlsTransport object representing the DTLS transport used for the transmission and receipt of data packets."
+    }
+  ]
+}

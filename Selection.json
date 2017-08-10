@@ -1,0 +1,205 @@
+{
+  "name": "Selection",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. A Selection object represents the range of text selected by the user or the current position of the caret. To obtain a Selection object for examination or modification, call window.getSelection().",
+  "members": [
+    {
+      "name": "Selection.anchorNode",
+      "link": "/en-US/docs/Web/API/Selection/anchorNode",
+      "description": "Returns the Node in which the selection begins."
+    },
+    {
+      "name": "Selection.anchorOffset",
+      "link": "/en-US/docs/Web/API/Selection/anchorOffset",
+      "description": "Returns a number representing the offset of the selection\u0027s anchor within the anchorNode. If anchorNode is a text node, this is the number of characters within anchorNode preceding the anchor. If anchorNode is an element, this is the number of child nodes of the anchorNode preceding the anchor."
+    },
+    {
+      "name": "Selection.focusNode",
+      "link": "/en-US/docs/Web/API/Selection/focusNode",
+      "description": "Returns the Node in which the selection ends."
+    },
+    {
+      "name": "Selection.focusOffset",
+      "link": "/en-US/docs/Web/API/Selection/focusOffset",
+      "description": "Returns a number representing the offset of the selection\u0027s anchor within the focusNode. If focusNode is a text node, this is the number of characters within focusNode preceding the focus. If focusNode is an element, this is the number of child nodes of the focusNode preceding the focus."
+    },
+    {
+      "name": "Selection.isCollapsed",
+      "link": "/en-US/docs/Web/API/Selection/isCollapsed",
+      "description": "Returns a Boolean indicating whether the selection\u0027s start and end points are at the same position."
+    },
+    {
+      "name": "Selection.rangeCount",
+      "link": "/en-US/docs/Web/API/Selection/rangeCount",
+      "description": "Returns the number of ranges in the selection."
+    },
+    {
+      "name": "Selection.type",
+      "link": "/en-US/docs/Web/API/Selection/type",
+      "description": "Returns a DOMString describing the type of the current selection."
+    },
+    {
+      "name": "Selection.addRange()",
+      "link": "/en-US/docs/Web/API/Selection/addRange",
+      "description": "A Range object that will be added to the selection.",
+      "parameters": [
+        {
+          "name": "range",
+          "description": "A Range object that will be added to the Selection."
+        }
+      ]
+    },
+    {
+      "name": "Selection.collapse()",
+      "link": "/en-US/docs/Web/API/Selection/collapse",
+      "description": "Collapses the current selection to a single point.",
+      "parameters": [
+        {
+          "name": "node",
+          "description": "The caret location will be within this node. This value can also be set to null — if null is specified, the method will behave like Selection.removeAllRanges(), i.e. all ranges will be removed from the selection."
+        },
+        {
+          "name": "offset Optional",
+          "description": "The offset in parentNode to which the selection will be collapsed. If not specified, the default value 0 is used."
+        }
+      ]
+    },
+    {
+      "name": "Selection.collapseToEnd()",
+      "link": "/en-US/docs/Web/API/Selection/collapseToEnd",
+      "description": "Collapses the selection to the end of the last range in the selection."
+    },
+    {
+      "name": "Selection.collapseToStart()",
+      "link": "/en-US/docs/Web/API/Selection/collapseToStart",
+      "description": "Collapses the selection to the start of the first range in the selection."
+    },
+    {
+      "name": "Selection.containsNode()",
+      "link": "/en-US/docs/Web/API/Selection/containsNode",
+      "description": "Indicates if a certain node is part of the selection.",
+      "parameters": [
+        {
+          "name": "node",
+          "description": "The node that is being looked for in the selection."
+        },
+        {
+          "name": "partialContainment Optional",
+          "description": "When true, containsNode() returns true when a part of the node is part of the selection. When false, containsNode() only returns true when the entire node is part of the selection. If not specified, the default value false is used."
+        }
+      ]
+    },
+    {
+      "name": "Selection.deleteFromDocument()",
+      "link": "/en-US/docs/Web/API/Selection/deleteFromDocument",
+      "description": "Deletes the selection\u0027s content from the document."
+    },
+    {
+      "name": "Selection.extend()",
+      "link": "/en-US/docs/Web/API/Selection/extend",
+      "description": "Moves the focus of the selection to a specified point.",
+      "parameters": [
+        {
+          "name": "parentNode",
+          "description": "The node within which the focus will be moved."
+        },
+        {
+          "name": "offset Optional",
+          "description": "The offset position within node where the focus will be moved to. If not specified, the default value 0 is used."
+        },
+        {
+          "name": " ",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Selection.getRangeAt()",
+      "link": "/en-US/docs/Web/API/Selection/getRangeAt",
+      "description": "Returns a Range object representing one of the ranges currently selected.",
+      "parameters": [
+        {
+          "name": "range",
+          "description": "The Range object that will be returned."
+        },
+        {
+          "name": "index",
+          "description": "The zero-based index of the range to return. A negative number or a number greater than or equal to Selection.rangeCount will result in an error."
+        }
+      ]
+    },
+    {
+      "name": "Selection.modify()",
+      "link": "/en-US/docs/Web/API/Selection/modify",
+      "description": "Changes the current selection.",
+      "parameters": [
+        {
+          "name": "alter",
+          "description": "The type of change to apply. Specify \"move\" to move the current cursor position or \"extend\" to extend the current selection."
+        },
+        {
+          "name": "direction",
+          "description": "The direction in which to adjust the current selection. You can specify \"forward\" or \"backward\" to adjust in the appropriate direction based on the language at the selection point. If you want to adjust in a specific direction, you can specify \"left\" or \"right\"."
+        },
+        {
+          "name": "granularity",
+          "description": "The distance to adjust the current selection or cursor position. You can move by \"character\", \"word\", \"sentence\", \"line\", \"paragraph\", \"lineboundary\", \"sentenceboundary\", \"paragraphboundary\", or \"documentboundary\"."
+        }
+      ]
+    },
+    {
+      "name": "Selection.removeRange()",
+      "link": "/en-US/docs/Web/API/Selection/removeRange",
+      "description": "Removes a range from the selection.",
+      "parameters": [
+        {
+          "name": "range",
+          "description": "A range object that will be removed to the selection."
+        }
+      ]
+    },
+    {
+      "name": "Selection.removeAllRanges()",
+      "link": "/en-US/docs/Web/API/Selection/removeAllRanges",
+      "description": "Removes all ranges from the selection."
+    },
+    {
+      "name": "Selection.selectAllChildren()",
+      "link": "/en-US/docs/Web/API/Selection/selectAllChildren",
+      "description": "Adds all the children of the specified node to the selection.",
+      "parameters": [
+        {
+          "name": "parentNode",
+          "description": "All children ofparentNode will be selected.parentNode itself is not part of the selection."
+        }
+      ]
+    },
+    {
+      "name": "Selection.setBaseAndExtent()",
+      "link": "/en-US/docs/Web/API/Selection/setBaseAndExtent",
+      "description": "Sets the selection to be a range including all or parts of two specified DOM nodes, and any content located between them.",
+      "parameters": [
+        {
+          "name": "anchorNode",
+          "description": "The node at the start of the selection."
+        },
+        {
+          "name": "anchorOffset",
+          "description": "The number of child nodes from the start of the anchor node that should be excluded from the selection. So for example, if the value is 0 the whole node is included. If the value is 1, the whole node minus the first child node is included. And so on."
+        },
+        {
+          "name": "focusNode",
+          "description": "The node at the end of the selection."
+        },
+        {
+          "name": "focusOffset",
+          "description": "The number of child nodes from the start of the focus node that should be included in the selection. So for example, if the value is 0 the whole node is excluded. If the value is 1, the first child node is included. And so on."
+        }
+      ]
+    },
+    {
+      "name": "Selection.toString()",
+      "link": "/en-US/docs/Web/API/Selection/toString",
+      "description": "Returns a string currently being represented by the selection object, i.e. the currently selected text."
+    }
+  ]
+}

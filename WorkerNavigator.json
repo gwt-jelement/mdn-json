@@ -1,0 +1,86 @@
+{
+  "name": "WorkerNavigator",
+  "description": "",
+  "members": [
+    {
+      "name": "WorkerNavigator.connection",
+      "link": "/en-US/docs/Web/API/WorkerNavigator/connection",
+      "description": "Provides a NetworkInformation object containing information about the network connection of a device."
+    },
+    {
+      "name": "WorkerNavigator.permissions",
+      "link": "/en-US/docs/Web/API/WorkerNavigator/permissions",
+      "description": "Returns a Permissions object that can be used to query and update permission status of APIs covered by the Permissions API."
+    },
+    {
+      "name": "Navigator.storage",
+      "link": "/en-US/docs/Web/API/Navigator/storage",
+      "description": "Returns a StorageManager interface for managing persistance permissions and estimating available storage."
+    },
+    {
+      "name": "NavigatorID.appCodeName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appCodeName",
+      "description": "Always returns \u0027Mozilla\u0027, in any browser. This property is kept only for compatibility purposes."
+    },
+    {
+      "name": "NavigatorID.appName",
+      "link": "/en-US/docs/Web/API/NavigatorID/appName",
+      "description": "Returns the official name of the browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.appVersion",
+      "link": "/en-US/docs/Web/API/NavigatorID/appVersion",
+      "description": "Returns the version of the browser as a string. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorConcurrentHardware.hardwareConcurrency",
+      "link": "/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency",
+      "description": "Returns the number of logical processor cores available."
+    },
+    {
+      "name": "NavigatorLanguage.language",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/language",
+      "description": "Returns a DOMString representing the language version of the browser. The null value is returned when this is unknown."
+    },
+    {
+      "name": "NavigatorLanguage.languages",
+      "link": "/en-US/docs/Web/API/NavigatorLanguage/languages",
+      "description": "Returns an array of DOMStrings representing the languages known to the user, in order of preference."
+    },
+    {
+      "name": "NavigatorOnLine.onLine",
+      "link": "/en-US/docs/Web/API/NavigatorOnLine/onLine",
+      "description": "Returns a Boolean indicating whether the browser is online."
+    },
+    {
+      "name": "NavigatorID.platform",
+      "link": "/en-US/docs/Web/API/NavigatorID/platform",
+      "description": "Returns a string representing the platform of the browser. Do not rely on this property to return the correct value."
+    },
+    {
+      "name": "NavigatorID.product",
+      "link": "/en-US/docs/Web/API/NavigatorID/product",
+      "description": "Always returns \u0027Gecko\u0027, on any browser. This property is kept only for compatibility purposes."
+    },
+    {
+      "name": "NavigatorID.userAgent",
+      "link": "/en-US/docs/Web/API/NavigatorID/userAgent",
+      "description": "Returns the user agent string for the current browser."
+    },
+    {
+      "name": "WorkerNavigator.sendBeacon()",
+      "link": "/en-US/docs/Web/API/WorkerNavigator/sendBeacon",
+      "description": "Used to asynchronously transfer a small amount of data using HTTP from a Worker to a web server.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The url parameter indicates the resolved URL to which the data is to be transmitted."
+        },
+        {
+          "name": "data",
+          "description": "The data parameter is a ArrayBufferView, Blob, DOMString, or FormData object containing the data to be transmitted."
+        }
+      ]
+    }
+  ]
+}

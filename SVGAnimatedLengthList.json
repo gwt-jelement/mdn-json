@@ -1,0 +1,5 @@
+{
+  "name": "SVGAnimatedLengthList",
+  "description": "SVG animated length list interface The SVGAnimatedLengthList interface is used for attributes of type SVGLengthList which can be animated.",
+  "members": []
+}

@@ -1,0 +1,57 @@
+{
+  "name": "SpeechSynthesis",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechSynthesis.paused",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/paused",
+      "description": "A Boolean that returns true if the SpeechSynthesis object is in a paused state."
+    },
+    {
+      "name": "SpeechSynthesis.pending",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/pending",
+      "description": "A Boolean that returns true if the utterance queue contains as-yet-unspoken utterances."
+    },
+    {
+      "name": "SpeechSynthesis.speaking",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/speaking",
+      "description": "A Boolean that returns true if an utterance is currently in the process of being spoken — even if SpeechSynthesis is in a paused state."
+    },
+    {
+      "name": "SpeechSynthesis.onvoiceschanged",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/onvoiceschanged",
+      "description": "Fired when the list of SpeechSynthesisVoice objects that would be returned by the SpeechSynthesis.getVoices() method has changed."
+    },
+    {
+      "name": "SpeechSynthesis.cancel()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/cancel",
+      "description": "Removes all utterances from the utterance queue."
+    },
+    {
+      "name": "SpeechSynthesis.getVoices()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/getVoices",
+      "description": "Returns a list of SpeechSynthesisVoice objects representing all the available voices on the current device."
+    },
+    {
+      "name": "SpeechSynthesis.pause()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/pause",
+      "description": "Puts the SpeechSynthesis object into a paused state."
+    },
+    {
+      "name": "SpeechSynthesis.resume()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/resume",
+      "description": "Puts the SpeechSynthesis object into a non-paused state: resumes it if it was already paused."
+    },
+    {
+      "name": "SpeechSynthesis.speak()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesis/speak",
+      "description": "Adds an utterance to the utterance queue; it will be spoken when any other utterances queued before it have been spoken.",
+      "parameters": [
+        {
+          "name": "utterance",
+          "description": "A SpeechSynthesisUtterance object."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "OES_texture_float",
+  "description": "The OES_texture_float extension is part of the WebGL API and exposes floating-point pixel types for textures.",
+  "members": []
+}

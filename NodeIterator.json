@@ -1,0 +1,51 @@
+{
+  "name": "NodeIterator",
+  "description": "The NodeIterator interface represents an iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order.",
+  "members": [
+    {
+      "name": "NodeIterator.root",
+      "link": "/en-US/docs/Web/API/NodeIterator/root",
+      "description": "Returns a Node representing the root node as specified when the NodeIterator was created."
+    },
+    {
+      "name": "NodeIterator.whatToShow",
+      "link": "/en-US/docs/Web/API/NodeIterator/whatToShow",
+      "description": "Returns an unsigned long being a bitmask made of constants describing the types of Node that must to be presented. Non-matching nodes are skipped, but their children may be included, if relevant. The possible values are: Constant Numerical value Description NodeFilter.SHOW_ALL -1 (that is the max value of unsigned long) Shows all nodes. NodeFilter.SHOW_ATTRIBUTE 2 Shows attribute Attr nodes. This is meaningful only when creating a NodeIterator with an Attr node as its root; in this case, it means that the attribute node will appear in the first position of the iteration or traversal. Since attributes are never children of other nodes, they do not appear when traversing over the document tree. NodeFilter.SHOW_CDATA_SECTION 8 Shows CDATASection nodes. NodeFilter.SHOW_COMMENT 128 Shows Comment nodes. NodeFilter.SHOW_DOCUMENT 256 Shows Document nodes. NodeFilter.SHOW_DOCUMENT_FRAGMENT 1024 Shows DocumentFragment nodes. NodeFilter.SHOW_DOCUMENT_TYPE 512 Shows DocumentType nodes. NodeFilter.SHOW_ELEMENT 1 Shows Element nodes. NodeFilter.SHOW_ENTITY 32 Shows Entity nodes. This is meaningful only when creating a NodeIterator with an Entity node as its root; in this case, it means that the Entity node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_ENTITY_REFERENCE 16 Shows EntityReference nodes. NodeFilter.SHOW_NOTATION 2048 Shows Notation nodes. This is meaningful only when creating a NodeIterator with a Notation node as its root; in this case, it means that the Notation node will appear in the first position of the traversal. Since entities are not part of the document tree, they do not appear when traversing over the document tree. NodeFilter.SHOW_PROCESSING_INSTRUCTION 64 Shows ProcessingInstruction nodes. NodeFilter.SHOW_TEXT 4 Shows Text nodes."
+    },
+    {
+      "name": "NodeIterator.filter",
+      "link": "/en-US/docs/Web/API/NodeIterator/filter",
+      "description": "Returns a NodeFilter used to select the relevant nodes."
+    },
+    {
+      "name": "NodeIterator.expandEntityReferences",
+      "link": "/en-US/docs/Web/API/NodeIterator/expandEntityReferences",
+      "description": "Is a Boolean indicating if, when discarding an EntityReference its whole sub-tree must be discarded at the same time."
+    },
+    {
+      "name": "NodeIterator.referenceNode",
+      "link": "/en-US/docs/Web/API/NodeIterator/referenceNode",
+      "description": "Returns the Node to which the iterator is anchored."
+    },
+    {
+      "name": "NodeIterator.pointerBeforeReferenceNode",
+      "link": "/en-US/docs/Web/API/NodeIterator/pointerBeforeReferenceNode",
+      "description": "Returns a Boolean flag that indicates whether the NodeIterator is anchored before, the flag being true, or after, the flag being false, the anchor node."
+    },
+    {
+      "name": "NodeIterator.detach()",
+      "link": "/en-US/docs/Web/API/NodeIterator/detach",
+      "description": "This operation is a no-op. It doesn\u0027t do anything. Previously it was telling the engine that the NodeIterator was no more used, but this is now useless."
+    },
+    {
+      "name": "NodeIterator.previousNode()",
+      "link": "/en-US/docs/Web/API/NodeIterator/previousNode",
+      "description": "Returns the previous Node in the document, or null if there are none."
+    },
+    {
+      "name": "NodeIterator.nextNode()",
+      "link": "/en-US/docs/Web/API/NodeIterator/nextNode",
+      "description": "Returns the next Node in the document, or null if there are none."
+    }
+  ]
+}

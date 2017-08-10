@@ -1,0 +1,11 @@
+{
+  "name": "XMLDocument",
+  "description": "",
+  "members": [
+    {
+      "name": "XMLDocument.load()",
+      "link": "/en-US/docs/Web/API/XMLDocument/load",
+      "description": "Loads an XML document."
+    }
+  ]
+}

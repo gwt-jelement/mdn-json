@@ -1,0 +1,31 @@
+{
+  "name": "PeriodicSyncManager",
+  "description": "",
+  "members": [
+    {
+      "name": "PeriodicSyncManager.minPossiblePeriod",
+      "link": "/en-US/docs/Web/API/PeriodicSyncManager/minPossiblePeriod",
+      "description": "Indicates in milliseconds the minimum time between PeriodicSyncEvents events."
+    },
+    {
+      "name": "PeriodicSyncManager.register",
+      "link": "/en-US/docs/Web/API/PeriodicSyncManager/register",
+      "description": "Returns a Promise that resolves to a PeriodicSyncRegistration instance."
+    },
+    {
+      "name": "PeriodicSyncManager.getRegistration",
+      "link": "/en-US/docs/Web/API/PeriodicSyncManager/getRegistration",
+      "description": "Returns a Promise that resolves to the PeriodicSyncRegistration instance with the given id."
+    },
+    {
+      "name": "PeriodicSyncManager.getRegistrations",
+      "link": "/en-US/docs/Web/API/PeriodicSyncManager/getRegistrations",
+      "description": "Returns a Promise that resolves to an array of all existing PeriodicSyncRegistration instances."
+    },
+    {
+      "name": "PeriodicSyncManager.permissionState",
+      "link": "/en-US/docs/Web/API/PeriodicSyncManager/permissionState",
+      "description": "Returns a Promise that resolves to \"default\", \"denied\", or \"granted\"."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "SVGStylable",
+  "description": "SVG stylable interface The SVGStylable interface is implemented on all objects corresponding to SVG elements that can have style, class and presentation attributes specified on them.",
+  "members": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MediaStreamAudioSourceNode",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaStreamAudioSourceNode.MediaStreamAudioSourceNode()",
+      "link": "/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode",
+      "description": "Creates a new MediaStreamAudioSourceNode instance.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "An AudioContext representing the audio context you want the node to be associated with."
+        },
+        {
+          "name": "options",
+          "description": "A MediaStreamAudioSourceOptions dictionary object defining the properties you want the MediaStreamAudioSourceNode to have: mediaStream: The media stream that will be used as the source for the audio."
+        }
+      ]
+    }
+  ]
+}

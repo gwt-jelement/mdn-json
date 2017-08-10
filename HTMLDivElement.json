@@ -1,0 +1,11 @@
+{
+  "name": "HTMLDivElement",
+  "description": "  The HTMLDivElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating div elements.",
+  "members": [
+    {
+      "name": "HTMLDivElement.align",
+      "link": "/en-US/docs/Web/API/HTMLDivElement/align",
+      "description": "Is a DOMString representing an enumerated property indicating alignment of the element\u0027s contents with respect to the surrounding context. The possible values are \"left\", \"right\", \"justify\", and \"center\"."
+    }
+  ]
+}

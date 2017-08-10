@@ -1,0 +1,82 @@
+{
+  "name": "SpeechSynthesisUtterance",
+  "description": "",
+  "members": [
+    {
+      "name": "SpeechSynthesisUtterance.SpeechSynthesisUtterance()",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/SpeechSynthesisUtterance",
+      "description": "Returns a new SpeechSynthesisUtterance object instance.",
+      "parameters": [
+        {
+          "name": "text",
+          "description": "A DOMString containing the text that will be synthesised when the utterance is spoken.."
+        }
+      ]
+    },
+    {
+      "name": "SpeechSynthesisUtterance.lang",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/lang",
+      "description": "Gets and sets the language of the utterance."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.pitch",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/pitch",
+      "description": "Gets and sets the pitch at which the utterance will be spoken at."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.rate",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/rate",
+      "description": "Gets and sets the speed at which the utterance will be spoken at."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.text",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/text",
+      "description": "Gets and sets the text that will be synthesised when the utterance is spoken."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.voice",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/voice",
+      "description": "Gets and sets the voice that will be used to speak the utterance."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.volume",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/volume",
+      "description": "Gets and sets the volume that the utterance will be spoken at."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onboundary",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onboundary",
+      "description": "Fired when the spoken utterance reaches a word or sentence boundary."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onend",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onend",
+      "description": "Fired when the utterance has finished being spoken."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onerror",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onerror",
+      "description": "Fired when an error occurs that prevents the utterance from being succesfully spoken."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onmark",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onmark",
+      "description": "Fired when the spoken utterance reaches a named SSML \"mark\" tag."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onpause",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onpause",
+      "description": "Fired when the utterance is paused part way through."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onresume",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onresume",
+      "description": "Fired when a paused utterance is resumed."
+    },
+    {
+      "name": "SpeechSynthesisUtterance.onstart",
+      "link": "/en-US/docs/Web/API/SpeechSynthesisUtterance/onstart",
+      "description": "Fired when the utterance has begun to be spoken."
+    }
+  ]
+}

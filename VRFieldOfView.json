@@ -1,0 +1,26 @@
+{
+  "name": "VRFieldOfView",
+  "description": "",
+  "members": [
+    {
+      "name": "VRFieldOfView.upDegrees",
+      "link": "/en-US/docs/Web/API/VRFieldOfView/upDegrees",
+      "description": "The number of degrees upwards that the field of view extends in."
+    },
+    {
+      "name": "VRFieldOfView.rightDegrees",
+      "link": "/en-US/docs/Web/API/VRFieldOfView/rightDegrees",
+      "description": "The number of degrees to the right that the field of view extends in."
+    },
+    {
+      "name": "VRFieldOfView.downDegrees",
+      "link": "/en-US/docs/Web/API/VRFieldOfView/downDegrees",
+      "description": "The number of degrees downwards that the field of view extends in."
+    },
+    {
+      "name": "VRFieldOfView.leftDegrees",
+      "link": "/en-US/docs/Web/API/VRFieldOfView/leftDegrees",
+      "description": "The number of degrees to the left that the field of view extends in."
+    }
+  ]
+}

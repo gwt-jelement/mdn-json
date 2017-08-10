@@ -1,0 +1,31 @@
+{
+  "name": "SVGFilterPrimitiveStandardAttributes",
+  "description": "The SVGFilterPrimitiveStandardAttributes interface defines the set of DOM attributes that are common across the filter primitive interfaces.",
+  "members": [
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes.x",
+      "link": "/en-US/docs/Web/API/SVGFilterPrimitiveStandardAttributes/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given element."
+    },
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes.y",
+      "link": "/en-US/docs/Web/API/SVGFilterPrimitiveStandardAttributes/y",
+      "description": "An SVGAnimatedLength corresponding to the y attribute of the given element."
+    },
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes.width",
+      "link": "/en-US/docs/Web/API/SVGFilterPrimitiveStandardAttributes/width",
+      "description": "An SVGAnimatedLength corresponding to the width attribute of the given element."
+    },
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes.height",
+      "link": "/en-US/docs/Web/API/SVGFilterPrimitiveStandardAttributes/height",
+      "description": "An SVGAnimatedLength corresponding to the height attribute of the given element."
+    },
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes.result",
+      "link": "/en-US/docs/Web/API/SVGFilterPrimitiveStandardAttributes/result",
+      "description": "An SVGAnimatedString corresponding to the result attribute of the given element."
+    }
+  ]
+}

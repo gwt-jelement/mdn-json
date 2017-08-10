@@ -1,0 +1,36 @@
+{
+  "name": "IDBMutableFile",
+  "description": "",
+  "members": [
+    {
+      "name": "MutableFile.name",
+      "link": "/en-US/docs/Web/API/MutableFile/name",
+      "description": "The name of the handled file."
+    },
+    {
+      "name": "MutableFile.type",
+      "link": "/en-US/docs/Web/API/MutableFile/type",
+      "description": "The MIME type of the handled file."
+    },
+    {
+      "name": "MutableFile.onabort",
+      "link": "/en-US/docs/Web/API/MutableFile/onabort",
+      "description": "The abort event is triggered each time the handled file is aborted."
+    },
+    {
+      "name": "MutableFile.onerror",
+      "link": "/en-US/docs/Web/API/MutableFile/onerror",
+      "description": "The error event is triggered each time something goes wrong."
+    },
+    {
+      "name": "MutableFile.open()",
+      "link": "/en-US/docs/Web/API/MutableFile/open",
+      "description": "Returns a LockedFile object to read or write the associated file safely."
+    },
+    {
+      "name": "MutableFile.getFile()",
+      "link": "/en-US/docs/Web/API/MutableFile/getFile",
+      "description": "Returns a DOMRequest object. In case of success, the request\u0027s result is a File object representing a snapshot of the handled file."
+    }
+  ]
+}

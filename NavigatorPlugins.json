@@ -1,0 +1,21 @@
+{
+  "name": "NavigatorPlugins",
+  "description": "",
+  "members": [
+    {
+      "name": "NavigatorPlugins.mimeTypes",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/mimeTypes",
+      "description": "Returns an MimeTypeArray listing the MIME types supported by the browser."
+    },
+    {
+      "name": "NavigatorPlugins.plugins",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/plugins",
+      "description": "Returns a PluginArray listing the plugins installed in the browser."
+    },
+    {
+      "name": "NavigatorPlugins.javaEnabled()",
+      "link": "/en-US/docs/Web/API/NavigatorPlugins/javaEnabled",
+      "description": "Returns a Boolean flag indicating whether the host browser is Java-enabled or not."
+    }
+  ]
+}

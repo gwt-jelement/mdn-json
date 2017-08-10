@@ -1,0 +1,189 @@
+{
+  "name": "FileSystemEntry",
+  "description": "Non-standard This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future. The FileSystemEntry interface of the File and Directory Entries API represents a single in a file system. The entry can be a file or a directory (directories are represented by the DirectoryEntry interface). It includes methods for working with files—including copying, moving, removing, and reading files—as well as information about a file it points to—including the file name and its path from the root to the entry.",
+  "members": [
+    {
+      "name": "filesystem",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/filesystem",
+      "description": "A FileSystem object representing the file system in which the entry is located."
+    },
+    {
+      "name": "fullPath",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/fullPath",
+      "description": "A USVString object which provides the full, absolute path from the file system\u0027s root to the entry; it can also be thought of as a path which is relative to the root directory, prepended with a \"/\" character."
+    },
+    {
+      "name": "isDirectory",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/isDirectory",
+      "description": "A Boolean which is true if the entry represents a directory; otherwise, it\u0027s false."
+    },
+    {
+      "name": "isFile",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/isFile",
+      "description": "A Boolean which is true if the entry represents a file. If it\u0027s not a file, this value is false."
+    },
+    {
+      "name": "name",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/name",
+      "description": "A USVString containing the name of the entry (the final part of the path, after the last \"/\" character)."
+    },
+    {
+      "name": "copyTo()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/copyTo",
+      "description": "Copies the file or directory to a new location on the file system.",
+      "parameters": [
+        {
+          "name": "newParent",
+          "description": "A FileSystemDirectoryEntry object specifying the destination directory for the copy operation."
+        },
+        {
+          "name": "newName Optional",
+          "description": "If this parameter is provided, the copy is given this string as its new file or directory name."
+        },
+        {
+          "name": "successCallback Optional",
+          "description": "A function which is called when the copy operation is succesfully completed. Receives a single input parameter: a FileSystemEntry based object providing the copied item\u0027s new details."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "An optional callback which is executed if an error occurs while copying the items. There\u0027s a single parameter: a FileError describing what went wrong."
+        },
+        {
+          "name": "FileError.INVALID_MODIFICATION_ERR",
+          "description": "The requested operation involves an impossible change, such as moving a directory inside itself or one of its own child directories, or copying an item within the same directory without renaming it."
+        },
+        {
+          "name": "FileError.QUOTA_EXCEEDED_ERR",
+          "description": "The operation exceeded the user\u0027s storage quota, or there isn\u0027t enough storage space left to complete the operation."
+        }
+      ]
+    },
+    {
+      "name": "getMetadata()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/getMetadata",
+      "description": "Obtains metadata about the file, such as its modification date and size.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A function which is called when the copy operation is succesfully completed. Receives a single input parameter: a Metadata object with information about the file."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "An optional callback which is executed if an error occurs while looking up the metadata. There\u0027s a single parameter: a FileError describing what went wrong."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The FileSystemEntry refers to an item which doesn\u0027t exist."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "Security restrictions prohibit obtaining the requested metadata."
+        }
+      ]
+    },
+    {
+      "name": "getParent()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/getParent",
+      "description": "Returns a FileSystemDirectoryEntry representing the entry\u0027s parent directory.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A function which is called when the parent directory entry has been retrieved. The callback receives a single input parameter: a FileSystemDirectoryEntry object representing the parent directory. The parent of the root directory is considered to be the root directory, itself, so be sure to watch for that."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "An optional callback which is executed if an error occurs. There\u0027s a single parameter: a FileError describing what went wrong."
+        },
+        {
+          "name": "FileError.INVALID_STATE_ERR",
+          "description": "The operation failed because the file system\u0027s state doesn\u0027t permit it. This can happen, for example, if the file system\u0027s cached state differs from the actual state of the file system."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The specified path could not be found."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "Security restrictions prohibit obtaining the parent directory\u0027s information."
+        }
+      ]
+    },
+    {
+      "name": "moveTo()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/moveTo",
+      "description": "Moves the file or directory to a new location on the file system, or renames the file or directory.",
+      "parameters": [
+        {
+          "name": "newParent",
+          "description": "A FileSystemDirectoryEntry object specifying the destination directory for the move operation."
+        },
+        {
+          "name": "newName Optional",
+          "description": "If this parameter is provided, the entry is renamed to have this string as its new file or directory name."
+        },
+        {
+          "name": "successCallback Optional",
+          "description": "A function which is called when the move operation is succesfully completed. Receives a single input parameter: a FileSystemEntry based object providing the moved item\u0027s new details."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "An optional callback which is executed if an error occurs while moving the items. There\u0027s a single parameter: a FileError describing what went wrong."
+        },
+        {
+          "name": "FileError.INVALID_MODIFICATION_ERR",
+          "description": "The requested operation involves an impossible change, such as moving a directory inside itself or one of its own child directories, or copying an item within the same directory without renaming it."
+        },
+        {
+          "name": "FileError.QUOTA_EXCEEDED_ERR",
+          "description": "The operation exceeded the user\u0027s storage quota, or there isn\u0027t enough storage space left to complete the operation."
+        }
+      ]
+    },
+    {
+      "name": "remove()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/remove",
+      "description": "Removes the specified file or directory. You can only remove directories which are empty.",
+      "parameters": [
+        {
+          "name": "successCallback",
+          "description": "A function which is called once the file has been successfully removed."
+        },
+        {
+          "name": "errorCallback Optional",
+          "description": "An optional callback which is called if the attempt to remove the file fails."
+        },
+        {
+          "name": "FileError.INVALID_MODIFICATION_ERR",
+          "description": "The specified entry was the file system\u0027s root directory, or the specified entry is a directory which isn\u0027t empty."
+        },
+        {
+          "name": "FileError.INVALID_STATE_ERR",
+          "description": "The file system\u0027s cached state is inconsistent with its state on disk, so the file could not be deleted for safety reasons."
+        },
+        {
+          "name": "FileError.NO_MODIFICATION_ALLOWED_ERR",
+          "description": "The file system\u0027s state doesn\u0027t permit removing the file or directory."
+        },
+        {
+          "name": "FileError.NOT_FOUND_ERR",
+          "description": "The file or directory doesn\u0027t exist."
+        },
+        {
+          "name": "FileError.SECURITY_ERR",
+          "description": "The entry couldn\u0027t be removed due to permissions or other access constraints, or because there are too many calls being made on file resources."
+        }
+      ]
+    },
+    {
+      "name": "toURL()",
+      "link": "/en-US/docs/Web/API/FileSystemEntry/toURL",
+      "description": "Creates and returns a URL which identifies the entry. This URL uses the URL scheme \"filesystem:\".",
+      "parameters": [
+        {
+          "name": "mimeType Optional",
+          "description": "An optional string specifying the MIME type to use when interpreting the file. This can be used to help deal with files whose types aren\u0027t recognized automatically by the user agent. If this parameter is omitted, the user agent uses its standard algorithms to identify the file."
+        }
+      ]
+    }
+  ]
+}

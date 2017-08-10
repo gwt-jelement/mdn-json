@@ -1,0 +1,121 @@
+{
+  "name": "LockedFile",
+  "description": "",
+  "members": [
+    {
+      "name": "LockedFile.fileHandle",
+      "link": "/en-US/docs/Web/API/LockedFile/fileHandle",
+      "description": "The FileHandle object from which the lock was opened."
+    },
+    {
+      "name": "LockedFile.mode",
+      "link": "/en-US/docs/Web/API/LockedFile/mode",
+      "description": "The mode for accessing the file; can be readonly or readwrite."
+    },
+    {
+      "name": "LockedFile.active",
+      "link": "/en-US/docs/Web/API/LockedFile/active",
+      "description": "A flag indicating if the file can be accessed (true) or not (false)."
+    },
+    {
+      "name": "LockedFile.location",
+      "link": "/en-US/docs/Web/API/LockedFile/location",
+      "description": "The position of the reading/writing pointer within the file."
+    },
+    {
+      "name": "LockedFile.oncomplete",
+      "link": "/en-US/docs/Web/API/LockedFile/oncomplete",
+      "description": "The complete event is triggered each time a read or write operation is successful."
+    },
+    {
+      "name": "LockedFile.onabort",
+      "link": "/en-US/docs/Web/API/LockedFile/onabort",
+      "description": "The abort event is triggered each time the abort() method is called."
+    },
+    {
+      "name": "LockedFile.onerror",
+      "link": "/en-US/docs/Web/API/LockedFile/onerror",
+      "description": "The error event is triggered each time something goes wrong."
+    },
+    {
+      "name": "LockedFile.getMetadata()",
+      "link": "/en-US/docs/Web/API/LockedFile/getMetadata",
+      "description": "Allows to retrieve the file metadata (size and date of the last modification). Returns a FileRequest.",
+      "parameters": [
+        {
+          "name": "param Optional",
+          "description": "An object used to request specific metadata. Each key is a boolean where true means the metadata is expected and where false means it is not expected. Note that if the key is undefined, it is considered as if it were true. The following metadata are supported:"
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.readAsArrayBuffer()",
+      "link": "/en-US/docs/Web/API/LockedFile/readAsArrayBuffer",
+      "description": "Allows to retrieve a part of the content of the file as an ArrayBuffer. Returns a FileRequest object.",
+      "parameters": [
+        {
+          "name": "size",
+          "description": "A number representing the number of bytes to read in the file."
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.readAsText()",
+      "link": "/en-US/docs/Web/API/LockedFile/readAsText",
+      "description": "Allows to retrieve a part of the content of the file as a string. Returns a FileRequest object.",
+      "parameters": [
+        {
+          "name": "size",
+          "description": "A number representing the number of bytes to read in the file."
+        },
+        {
+          "name": "encoding Optional",
+          "description": "A string indicating the encoding to use for the returned data. By default, UTF-8 is assumed if this parameter is not specified."
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.write()",
+      "link": "/en-US/docs/Web/API/LockedFile/write",
+      "description": "Allows to write some data in the file starting at the location offset. Returns a FileRequest object.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "The data to write into the file. It can be a string or an ArrayBuffer."
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.append()",
+      "link": "/en-US/docs/Web/API/LockedFile/append",
+      "description": "Allows to write some data at the end of the file. Returns a FileRequest object.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "The data to write into the file. It can be a string or an ArrayBuffer."
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.truncate()",
+      "link": "/en-US/docs/Web/API/LockedFile/truncate",
+      "description": "Allows to truncate the file\u0027s content. Returns a FileRequest object.",
+      "parameters": [
+        {
+          "name": "start Optional",
+          "description": "A number representing the index where to start the operation."
+        }
+      ]
+    },
+    {
+      "name": "LockedFile.flush()",
+      "link": "/en-US/docs/Web/API/LockedFile/flush",
+      "description": "Allows to guarantee that any buffered data has been transferred to disk."
+    },
+    {
+      "name": "LockedFile.abort()",
+      "link": "/en-US/docs/Web/API/LockedFile/abort",
+      "description": "Makes the LockedFile inactive and cancels all ongoing operations."
+    }
+  ]
+}

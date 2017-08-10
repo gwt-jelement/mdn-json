@@ -1,0 +1,11 @@
+{
+  "name": "IDBEnvironment",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBEnvironment.indexedDB",
+      "link": "/en-US/docs/Web/API/IDBEnvironment/indexedDB",
+      "description": "Provides a mechanism for applications to asynchronously access capabilities of indexed databases; contains an IDBFactory object."
+    }
+  ]
+}

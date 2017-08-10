@@ -1,0 +1,194 @@
+{
+  "name": "Performance",
+  "description": "The Performance interface represents timing-related performance information for the given page.",
+  "members": [
+    {
+      "name": "Performance.navigation",
+      "link": "/en-US/docs/Web/API/Performance/navigation",
+      "description": "Is a PerformanceNavigation object representing the type of navigation that occurs in the given browsing context, like the amount of redirections needed to fetch the resource."
+    },
+    {
+      "name": "Performance.timing",
+      "link": "/en-US/docs/Web/API/Performance/timing",
+      "description": "Is a PerformanceTiming object containing latency-related performance information."
+    },
+    {
+      "name": "Performance.onresourcetimingbufferfull",
+      "link": "/en-US/docs/Web/API/Performance/onresourcetimingbufferfull",
+      "description": "Is an EventTarget which is a callback that will be called when the resourcetimingbufferfull event is fired.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "An EventHandler that is invoked when the resourcetimingbufferfull event is fired."
+        }
+      ]
+    },
+    {
+      "name": "Performance.clearMarks()",
+      "link": "/en-US/docs/Web/API/Performance/clearMarks",
+      "description": "Removes the given mark from the browser\u0027s performance entry buffer.",
+      "parameters": [
+        {
+          "name": "name Optional",
+          "description": "A DOMString representing the name of the timestamp. If this argument is omitted, all performance entries with an entry type of \"mark\" will be removed."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "Performance.clearMeasures()",
+      "link": "/en-US/docs/Web/API/Performance/clearMeasures",
+      "description": "Removes the given measure from the browser\u0027s performance entry buffer.",
+      "parameters": [
+        {
+          "name": "name Optional",
+          "description": "A DOMString representing the name of the timestamp. If this argument is omitted, all performance entries with an entry type of \"measure\" will be removed."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "Performance.clearResourceTimings()",
+      "link": "/en-US/docs/Web/API/Performance/clearResourceTimings",
+      "description": "Removes all performance entries with a entryType of \"resource\" from the browser\u0027s performance data buffer.",
+      "parameters": [
+        {
+          "name": "void",
+          "description": " "
+        },
+        {
+          "name": "none",
+          "description": "This method has no return value."
+        }
+      ]
+    },
+    {
+      "name": "Performance.getEntries()",
+      "link": "/en-US/docs/Web/API/Performance/getEntries",
+      "description": "Returns a list of PerformanceEntry objects based on the given filter.",
+      "parameters": [
+        {
+          "name": "PerformanceEntryFilterOptions Optional",
+          "description": ""
+        },
+        {
+          "name": "entries",
+          "description": "A list of PerformanceEntry objects that meets the criteria of the filter. The items will be in chronological order based on the entries\u0027 startTime. If no objects that meet the filter are found, an empty list is returned. If no argument is given, all entries are returned."
+        }
+      ]
+    },
+    {
+      "name": "Performance.getEntriesByName()",
+      "link": "/en-US/docs/Web/API/Performance/getEntriesByName",
+      "description": "Returns a list of PerformanceEntry objects based on the given name and entry type.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the entry to retrieve."
+        },
+        {
+          "name": "type Optional",
+          "description": "The type of entry to retrieve such as \"mark\". The valid entry types are listed in PerformanceEntry.entryType."
+        },
+        {
+          "name": "entries",
+          "description": "A list of PerformanceEntry objects that have the specified name and type. If the type argument is not specified, only the name will be used to determine the entries to return. The items will be in chronological order based on the entries\u0027 startTime. If no objects meet the specified criteria, an empty list is returned."
+        }
+      ]
+    },
+    {
+      "name": "Performance.getEntriesByType()",
+      "link": "/en-US/docs/Web/API/Performance/getEntriesByType",
+      "description": "Returns a list of PerformanceEntry objects of the given entry type.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of entry to retrieve such as \"mark\". The valid entry types are listed in PerformanceEntry.entryType."
+        },
+        {
+          "name": "entries",
+          "description": "A list of PerformanceEntry objects that have the specified type. The items will be in chronological order based on the entries\u0027 startTime. If no objects have the specified type, or no argument is provided, an empty list is returned.  "
+        }
+      ]
+    },
+    {
+      "name": "Performance.mark()",
+      "link": "/en-US/docs/Web/API/Performance/mark",
+      "description": "Creates a timestamp in the browser\u0027s performance entry buffer with the given name.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A DOMString representing the name of the mark."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "Performance.measure()",
+      "link": "/en-US/docs/Web/API/Performance/measure",
+      "description": "Creates a named timestamp in the browser\u0027s performance entry buffer between two specified marks (known as the start mark and end mark, respectively).",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A DOMString representing the name of the measure."
+        },
+        {
+          "name": "startMark Optional",
+          "description": "A DOMString representing the name of the measure\u0027s starting mark. May also be the name of a PerformanceTiming property."
+        },
+        {
+          "name": "endMark Optional",
+          "description": "A DOMString representing the name of the measure\u0027s ending mark. May also be the name of a PerformanceTiming property."
+        },
+        {
+          "name": "void",
+          "description": " "
+        }
+      ]
+    },
+    {
+      "name": "Performance.now()",
+      "link": "/en-US/docs/Web/API/Performance/now",
+      "description": "Returns a DOMHighResTimeStamp representing the amount of milliseconds elapsed since a reference instant."
+    },
+    {
+      "name": "Performance.setResourceTimingBufferSize()",
+      "link": "/en-US/docs/Web/API/Performance/setResourceTimingBufferSize",
+      "description": "Sets the browser\u0027s resource timing buffer size to the specified number of \"resource\" type performance entry objects.",
+      "parameters": [
+        {
+          "name": "maxSize",
+          "description": "A number representing the maximum number of performance entry objects the browser should hold in its performance entry buffer."
+        },
+        {
+          "name": "none",
+          "description": "This method has no return value."
+        }
+      ]
+    },
+    {
+      "name": "Performance.toJSON()",
+      "link": "/en-US/docs/Web/API/Performance/toJSON",
+      "description": "Is a jsonizer returning a json object representing the Performance object.",
+      "parameters": [
+        {
+          "name": "None",
+          "description": " "
+        },
+        {
+          "name": "myPerf",
+          "description": "A JSON object that is the serialization of the Performance object."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "WebGLContextEvent",
+  "description": "The WebContextEvent interface is part of the WebGL API and is an interface for an event that is generated in response to a status change to the WebGL rendering context.",
+  "members": [
+    {
+      "name": "WebGLContextEvent.statusMessage",
+      "link": "/en-US/docs/Web/API/WebGLContextEvent/statusMessage",
+      "description": "A read-only property containing additional information about the event."
+    }
+  ]
+}

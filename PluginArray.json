@@ -1,0 +1,26 @@
+{
+  "name": "PluginArray",
+  "description": "",
+  "members": [
+    {
+      "name": "PluginArray.length",
+      "link": "/en-US/docs/Web/API/PluginArray/length",
+      "description": "The number of plugins in the array."
+    },
+    {
+      "name": "PluginArray.item",
+      "link": "/en-US/docs/Web/API/PluginArray/item",
+      "description": "Returns the Plugin at the specified index into the array."
+    },
+    {
+      "name": "PluginArray.namedItem",
+      "link": "/en-US/docs/Web/API/PluginArray/namedItem",
+      "description": "Returns the Plugin with the specified name."
+    },
+    {
+      "name": "PluginArray.refresh",
+      "link": "/en-US/docs/Web/API/PluginArray/refresh",
+      "description": "Refreshes all plugins on the current page, optionally reloading documents."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "FileError",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. Represents an error that occurs while using the FileReader interface.",
+  "members": []
+}

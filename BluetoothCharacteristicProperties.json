@@ -1,0 +1,51 @@
+{
+  "name": "BluetoothCharacteristicProperties",
+  "description": "",
+  "members": [
+    {
+      "name": "broadcast",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/broadcast",
+      "description": "tbd"
+    },
+    {
+      "name": "read",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/read",
+      "description": "tbd"
+    },
+    {
+      "name": "writeWithoutResponse",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/writeWithoutResponse",
+      "description": "tbd"
+    },
+    {
+      "name": "write",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/write",
+      "description": "tbd"
+    },
+    {
+      "name": "notify",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/notify",
+      "description": "tbd"
+    },
+    {
+      "name": "indicate",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/indicate",
+      "description": "tbd"
+    },
+    {
+      "name": "authenticatedSignedWrites",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/authenticatedSignedWrites",
+      "description": "tbd"
+    },
+    {
+      "name": "reliableWrite",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/reliableWrite",
+      "description": "tbd"
+    },
+    {
+      "name": "writableAuxiliaries",
+      "link": "/en-US/docs/Web/API/BluetoothCharacteristicProperties/writableAuxiliaries",
+      "description": "tbd"
+    }
+  ]
+}

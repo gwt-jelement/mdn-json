@@ -1,0 +1,11 @@
+{
+  "name": "DOMError",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMError.name",
+      "link": "/en-US/docs/Web/API/DOMError/name",
+      "description": "Returns a DOMString representing one of the error type names (see below)."
+    }
+  ]
+}

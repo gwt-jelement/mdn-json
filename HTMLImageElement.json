@@ -1,0 +1,136 @@
+{
+  "name": "HTMLImageElement",
+  "description": "The HTMLImageElement interface provides special properties and methods  for manipulating the layout and presentation of \u003cimg\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLImageElement.align",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/align",
+      "description": "Is a DOMString indicating the alignment of the image with respect to the surrounding context. The possible values are \"left\", \"right\", \"justify\", and \"center\"."
+    },
+    {
+      "name": "HTMLImageElement.alt",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/alt",
+      "description": "Is a DOMString that reflects the alt HTML attribute,  thus indicating fallback context for the image."
+    },
+    {
+      "name": "HTMLImageElement.border",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/border",
+      "description": "Is a DOMString that is responsible for the width of the border surrounding the image. This is now deprecated and the CSS border property should be used instead."
+    },
+    {
+      "name": "HTMLImageElement.complete",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/complete",
+      "description": "Returns a Boolean that is true if the browser has finished fetching the image, whether successful or not. It also shows true, if the image has no src value."
+    },
+    {
+      "name": "HTMLImageElement.crossOrigin",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/crossOrigin",
+      "description": "Is a DOMString representing the CORS setting for this image element. See CORS settings attributes for further details."
+    },
+    {
+      "name": "HTMLImageElement.currentSrc",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/currentSrc",
+      "description": "Returns a DOMString representing the URL to the currently displayed image (which may change, for example in response to media queries)."
+    },
+    {
+      "name": "HTMLImageElement.height",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/height",
+      "description": "Is a unsigned long that reflects the height HTML attribute, indicating the rendered height of the image in CSS pixels."
+    },
+    {
+      "name": "HTMLImageElement.hspace",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/hspace",
+      "description": "Is a long representing the space on either side of the image."
+    },
+    {
+      "name": "HTMLImageElement.isMap",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/isMap",
+      "description": "Is a Boolean that reflects the ismap HTML attribute, indicating that the image is part of a server-side image map."
+    },
+    {
+      "name": "HTMLImageElement.longDesc",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/longDesc",
+      "description": "Is a DOMString representing the URI of a long description of the image."
+    },
+    {
+      "name": "HTMLImageElement.lowSrc",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/lowSrc",
+      "description": "Is a DOMString that refers to a low-quality (but faster to load) copy of the image."
+    },
+    {
+      "name": "HTMLImageElement.name",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/name",
+      "description": "Is a DOMString representing the name of the element."
+    },
+    {
+      "name": "HTMLImageElement.naturalHeight",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/naturalHeight",
+      "description": "Returns a unsigned long representing the intrinsic height of the image in CSS pixels, if it is available; else, it shows 0."
+    },
+    {
+      "name": "HTMLImageElement.naturalWidth",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/naturalWidth",
+      "description": "Returns a unsigned long representing the intrinsic width of the image in CSS pixels, if it is available; otherwise, it will show 0."
+    },
+    {
+      "name": "HTMLImageElement.referrerPolicy",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/referrerPolicy",
+      "description": "Is a DOMString that reflects the referrerpolicy HTML attribute indicating which referrer to use in order to fetch the image."
+    },
+    {
+      "name": "HTMLImageElement.src",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/src",
+      "description": "Is a DOMString that reflects the src HTML attribute, containing the full URL of the image including base URI."
+    },
+    {
+      "name": "HTMLImageElement.sizes",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/sizes",
+      "description": "Is a DOMString reflecting the sizes HTML attribute."
+    },
+    {
+      "name": "HTMLImageElement.srcset",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/srcset",
+      "description": "Is a DOMString reflecting the srcset HTML attribute, containing a list of candidate images, separated by a comma (\u0027,\u0027, U+002C COMMA). A candidate image is a URL followed by a \u0027w\u0027 with the width of the images, or an \u0027x\u0027 followed by the pixel density."
+    },
+    {
+      "name": "HTMLImageElement.useMap",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/useMap",
+      "description": "Is a DOMString that reflects the usemap HTML attribute, containing a partial URL of a map element."
+    },
+    {
+      "name": "HTMLImageElement.vspace",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/vspace",
+      "description": "Is a long representing the space above and below the image."
+    },
+    {
+      "name": "HTMLImageElement.width",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/width",
+      "description": "Is a unsigned long that reflects the width HTML attribute, indicating the rendered width of the image in CSS pixels."
+    },
+    {
+      "name": "HTMLImageElement.x",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/x",
+      "description": "Returns a long representing the horizontal offset from the nearest layer. This property mimics an old Netscape 4 behavior."
+    },
+    {
+      "name": "HTMLImageElement.y",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/y",
+      "description": "Returns a long representing the vertical offset from the nearest layer. This property is also similar to behavior of an old Netscape 4."
+    },
+    {
+      "name": "Image()",
+      "link": "/en-US/docs/Web/API/HTMLImageElement/Image",
+      "description": "The Image() constructor, taking two optional unsigned long, which are the width and the height of the resource, creates an instance of HTMLImageElement , not inserted in a DOM tree.",
+      "parameters": [
+        {
+          "name": "width",
+          "description": "The width of the image (i.e. the value for the width attribute)."
+        },
+        {
+          "name": "height",
+          "description": "The height of the image (i.e. the value for the height attribute)."
+        }
+      ]
+    }
+  ]
+}

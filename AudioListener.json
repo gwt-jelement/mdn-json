@@ -1,0 +1,111 @@
+{
+  "name": "AudioListener",
+  "description": "",
+  "members": [
+    {
+      "name": "AudioListener.positionX",
+      "link": "/en-US/docs/Web/API/AudioListener/positionX",
+      "description": "Represents the horizontal position of the listener in a right-hand cartesian coordinate sytem. The default is 0."
+    },
+    {
+      "name": "AudioListener.positionY",
+      "link": "/en-US/docs/Web/API/AudioListener/positionY",
+      "description": "Represents the vertical position of the listener in a right-hand cartesian coordinate sytem. The default is 0."
+    },
+    {
+      "name": "AudioListener.positionZ",
+      "link": "/en-US/docs/Web/API/AudioListener/positionZ",
+      "description": "Represents the longitudinal (back and forth) position of the listener in a right-hand cartesian coordinate sytem. The default is 0."
+    },
+    {
+      "name": "AudioListener.forwardX",
+      "link": "/en-US/docs/Web/API/AudioListener/forwardX",
+      "description": "Represents the horizontal position of the listener\u0027s forward direction in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is 0."
+    },
+    {
+      "name": "AudioListener.forwardY",
+      "link": "/en-US/docs/Web/API/AudioListener/forwardY",
+      "description": "Represents the vertical position of the listener\u0027s forward direction in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is 0."
+    },
+    {
+      "name": "AudioListener.forwardZ",
+      "link": "/en-US/docs/Web/API/AudioListener/forwardZ",
+      "description": "Represents the longitudinal (back and forth) position of the listener\u0027s forward direction in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is -1."
+    },
+    {
+      "name": "AudioListener.upX",
+      "link": "/en-US/docs/Web/API/AudioListener/upX",
+      "description": "Represents the horizontal position of the top of the listener\u0027s head in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is 0."
+    },
+    {
+      "name": "AudioListener.upY",
+      "link": "/en-US/docs/Web/API/AudioListener/upY",
+      "description": "Represents the vertical position of the top of the listener\u0027s head in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is 1."
+    },
+    {
+      "name": "AudioListener.upZ",
+      "link": "/en-US/docs/Web/API/AudioListener/upZ",
+      "description": "Represents the longitudinal (back and forth) position of the top of the listener\u0027s head in the same cartesian coordinate sytem as the position (positionX, positionY, and positionZ) values. The forward and up values are linearly independent of each other. The default is 0."
+    },
+    {
+      "name": "AudioListener.setOrientation()",
+      "link": "/en-US/docs/Web/API/AudioListener/setOrientation",
+      "description": "Sets the orientation of the listener.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x value of the front vector of the listener."
+        },
+        {
+          "name": "y",
+          "description": "The y value of the front vector of the listener."
+        },
+        {
+          "name": "z",
+          "description": "The z value of the front vector of the listener."
+        },
+        {
+          "name": "xUp",
+          "description": "The x value of the up vector of the listener."
+        },
+        {
+          "name": "yUp",
+          "description": "The y value of the up vector of the listener."
+        },
+        {
+          "name": "zUp",
+          "description": "The z value of the up vector of the listener."
+        }
+      ]
+    },
+    {
+      "name": "AudioListener.setPosition()",
+      "link": "/en-US/docs/Web/API/AudioListener/setPosition",
+      "description": "Sets the position of the listener. See Deprecated features to learn why this method was removed.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x position of the listener in 3D space."
+        },
+        {
+          "name": "y",
+          "description": "The y position of the listener in 3D space."
+        },
+        {
+          "name": "z",
+          "description": "The z position of the listener in 3D space."
+        }
+      ]
+    },
+    {
+      "name": "AudioListener.dopplerFactor",
+      "link": "/en-US/docs/Web/API/AudioListener/dopplerFactor",
+      "description": "A double value representing the amount of pitch shift to use when rendering a doppler effect."
+    },
+    {
+      "name": "AudioListener.speedOfSound",
+      "link": "/en-US/docs/Web/API/AudioListener/speedOfSound",
+      "description": "Is a double value representing the speed of sound, in meters per second."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "NamedNodeMap",
+  "description": "The NamedNodeMap interface represents a collection of Attr objects. Objects inside a NamedNodeMap are not in any particular order, unlike NodeList, although they may be accessed by an index as in an array.",
+  "members": [
+    {
+      "name": "NamedNodeMap.length",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/length",
+      "description": "Returns the amount of objects in the map."
+    },
+    {
+      "name": "NamedNodeMap.getNamedItem()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/getNamedItem",
+      "description": "Returns a Attr, corresponding to the given name."
+    },
+    {
+      "name": "NamedNodeMap.setNamedItem()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/setNamedItem",
+      "description": "Replaces, or adds, the Attr identified in the map by the given name."
+    },
+    {
+      "name": "NamedNodeMap.removeNamedItem()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/removeNamedItem",
+      "description": "Removes the Attr identified by the given map."
+    },
+    {
+      "name": "NamedNodeMap.item()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/item",
+      "description": "Returns the Attr at the given index, or null if the index is higher or equal to the number of nodes."
+    },
+    {
+      "name": "NamedNodeMap.getNamedItemNS()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/getNamedItemNS",
+      "description": "Returns a Attr identified by a namespace and related local name."
+    },
+    {
+      "name": "NamedNodeMap.setNamedItemNS()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/setNamedItemNS",
+      "description": "Replaces, or adds, the Attr identified in the map by the given namespace and related local name."
+    },
+    {
+      "name": "NamedNodeMap.removeNamedItemNS()",
+      "link": "/en-US/docs/Web/API/NamedNodeMap/removeNamedItemNS",
+      "description": "Removes the Attr identified by the given namespace and related local name."
+    }
+  ]
+}

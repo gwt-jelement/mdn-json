@@ -1,0 +1,27 @@
+{
+  "name": "MediaQueryListEvent",
+  "description": "The MediaQueryListEvent object stores information on the changes that have happened to a MediaQueryList object — instances are available as the event object on a function referenced by a MediaQueryList.onchange property or MediaQueryList.addEvent() call.",
+  "members": [
+    {
+      "name": "MediaQueryListEvent.MediaQueryListEvent()",
+      "link": "/en-US/docs/Web/API/MediaQueryListEvent/MediaQueryListEvent",
+      "description": " Creates a new MediaQueryListEvent instance.",
+      "parameters": [
+        {
+          "name": "init",
+          "description": "An init object that defines features of the new object instance. The available properties are: media: A DOMString representing a serialized media query. matches: A Boolean representing the media query status — true if it matches, false if not."
+        }
+      ]
+    },
+    {
+      "name": "MediaQueryListEvent.matches",
+      "link": "/en-US/docs/Web/API/MediaQueryListEvent/matches",
+      "description": " A Boolean that returns true if the document currently matches the media query list, or false if not."
+    },
+    {
+      "name": "MediaQueryListEvent.media",
+      "link": "/en-US/docs/Web/API/MediaQueryListEvent/media",
+      "description": " A DOMString representing a serialized media query."
+    }
+  ]
+}

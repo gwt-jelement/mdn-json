@@ -1,0 +1,61 @@
+{
+  "name": "History",
+  "description": "The History interface allows manipulation of the browser session history, that is the pages visited in the tab or frame that the current page is loaded in.",
+  "members": [
+    {
+      "name": "History.length",
+      "link": "/en-US/docs/Web/API/History/length",
+      "description": "Returns an Integer representing the number of elements in the session history, including the currently loaded page. For example, for a page loaded in a new tab this property returns 1."
+    },
+    {
+      "name": "History.current",
+      "link": "/en-US/docs/Web/API/History/current",
+      "description": "Returns a DOMString representing the URL of the active item of the session history. This property was never available to web content and is no more supported by any browser. Use Location.href instead."
+    },
+    {
+      "name": "History.next",
+      "link": "/en-US/docs/Web/API/History/next",
+      "description": "Returns a DOMString representing the URL of the next item in the session history. This property was never available to web content and is not supported by other browsers."
+    },
+    {
+      "name": "History.previous",
+      "link": "/en-US/docs/Web/API/History/previous",
+      "description": "Returns a DOMString representing the URL of the previous item in the session history. This property was never available to web content and is not supported by other browsers."
+    },
+    {
+      "name": "History.scrollRestoration",
+      "link": "/en-US/docs/Web/API/History/scrollRestoration",
+      "description": "Allows web applications to explicitly set default scroll restoration behavior on history navigation. This property can be either auto or manual."
+    },
+    {
+      "name": "History.state",
+      "link": "/en-US/docs/Web/API/History/state",
+      "description": "Returns an any value representing the state at the top of the history stack. This is a way to look at the state without having to wait for a popstate event."
+    },
+    {
+      "name": "History.back()",
+      "link": "/en-US/docs/Web/API/History/back",
+      "description": "Goes to the previous page in session history, the same action as when the user clicks the browser\u0027s Back button. Equivalent to history.go(-1). Calling this method to go back beyond the first page in the session history has no effect and doesn\u0027t raise an exception."
+    },
+    {
+      "name": "History.forward()",
+      "link": "/en-US/docs/Web/API/History/forward",
+      "description": "Goes to the next page in session history, the same action as when the user clicks the browser\u0027s Forward button; this is equivalent to history.go(1). Calling this method to go forward beyond the most recent page in the session history has no effect and doesn\u0027t raise an exception."
+    },
+    {
+      "name": "History.go()",
+      "link": "/en-US/docs/Web/API/History/go",
+      "description": "Loads a page from the session history, identified by its relative location to the current page, for example -1 for the previous page or 1  for the next page. If you specify an out-of-bounds value (for instance, specifying -1 when there are no previously-visited pages in the session history), this method silently has no effect. Calling go() without parameters or a value of 0 reloads the current page. Internet Explorer lets you also specify a string to go to a specific page in the history list."
+    },
+    {
+      "name": "History.pushState()",
+      "link": "/en-US/docs/Web/API/History/pushState",
+      "description": "Pushes the given data onto the session history stack with the specified title and, if provided, URL. The data is treated as opaque by the DOM; you may specify any JavaScript object that can be serialized.  Note that Firefox currently ignores the title parameter; for more information, see manipulating the browser history."
+    },
+    {
+      "name": "History.replaceState()",
+      "link": "/en-US/docs/Web/API/History/replaceState",
+      "description": "Updates the most recent entry on the history stack to have the specified data, title, and, if provided, URL. The data is treated as opaque by the DOM; you may specify any JavaScript object that can be serialized.  Note that Firefox currently ignores the title parameter; for more information, see manipulating the browser history."
+    }
+  ]
+}

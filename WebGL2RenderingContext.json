@@ -1,0 +1,1279 @@
+{
+  "name": "WebGL2RenderingContext",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The WebGL2RenderingContext interface provides the OpenGL ES 3.0 rendering context for the drawing surface of an HTML \u003ccanvas\u003e element.",
+  "members": [
+    {
+      "name": "WebGL2RenderingContext.getIndexedParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getIndexedParameter",
+      "description": "Returns the indexed value for the given target.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A Glenum specifying the target for which to return information. Possible values: gl.TRANSFORM_FEEDBACK_BUFFER_BINDING: Returns a WebGLBuffer. gl.TRANSFORM_FEEDBACK_BUFFER_SIZE: Returns a GLsizeiptr. gl.TRANSFORM_FEEDBACK_BUFFER_START: Returns a GLintptr. gl.UNIFORM_BUFFER_BINDING: Returns a WebGLBuffer. gl.UNIFORM_BUFFER_SIZE: Returns a GLsizeiptr. gl.UNIFORM_BUFFER_START: Returns a GLintptr."
+        },
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the target that is queried."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.copyBufferSubData()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/copyBufferSubData",
+      "description": "Copies part of the data of a buffer to another buffer.",
+      "parameters": [
+        {
+          "name": "readTarget writeTarget",
+          "description": "A GLenum specifying the binding point (target) from whose data store should be read or written. Possible values: gl.ARRAY_BUFFER: Buffer containing vertex attributes, such as vertex coordinates, texture coordinate data, or vertex color data. gl.ELEMENT_ARRAY_BUFFER: Buffer used for element indices. gl.COPY_READ_BUFFER: Buffer for copying from one buffer object to another (provided specifically for copy operations). gl.COPY_WRITE_BUFFER: Buffer for copying from one buffer object to another (provided specifically for copy operations). gl.TRANSFORM_FEEDBACK_BUFFER: Buffer for transform feedback operations. gl.UNIFORM_BUFFER: Buffer used for storing uniform blocks. gl.PIXEL_PACK_BUFFER: Buffer used for pixel transfer operations. gl.PIXEL_UNPACK_BUFFER: Buffer used for pixel transfer operations."
+        },
+        {
+          "name": "readOffset writeOffset",
+          "description": "A GLintptr specifying the byte offset from which to start reading from or writing to the buffer."
+        },
+        {
+          "name": "size",
+          "description": "A GLsizei in bytes specifying the size of the data to be copied from readTarget to writeTarget."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getBufferSubData()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getBufferSubData",
+      "description": "Reads data from a buffer and writes them to an ArrayBuffer or SharedArrayBuffer.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target). Possible values: gl.ARRAY_BUFFER: Buffer containing vertex attributes, such as vertex coordinates, texture coordinate data, or vertex color data. gl.ELEMENT_ARRAY_BUFFER: Buffer used for element indices. gl.COPY_READ_BUFFER: Buffer for copying from one buffer object to another. gl.COPY_WRITE_BUFFER: Buffer for copying from one buffer object to another. gl.TRANSFORM_FEEDBACK_BUFFER: Buffer for transform feedback operations. gl.UNIFORM_BUFFER: Buffer used for storing uniform blocks. gl.PIXEL_PACK_BUFFER: Buffer used for pixel transfer operations. gl.PIXEL_UNPACK_BUFFER: Buffer used for pixel transfer operations."
+        },
+        {
+          "name": "srcByteOffset",
+          "description": "A GLintptr specifying the byte offset from which to start reading from the buffer."
+        },
+        {
+          "name": "dstData",
+          "description": "An ArrayBuffer or SharedArrayBuffer to which to write the buffer data."
+        },
+        {
+          "name": "srcOffset Optional",
+          "description": "A GLuint specifying the element index offset where to start reading the buffer."
+        },
+        {
+          "name": "length Optional",
+          "description": "A GLuint defaulting to 0."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.blitFramebuffer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/blitFramebuffer",
+      "description": "Transfers a block of pixels from the read framebuffer to the draw framebuffer.",
+      "parameters": [
+        {
+          "name": "srcX0, srcY0, srcX1, srcY1",
+          "description": "A GLint specifying the bounds of the source rectangle."
+        },
+        {
+          "name": "dstX0, dstY0, dstX1, dstY1",
+          "description": "A GLint specifying the bounds of the destination rectangle."
+        },
+        {
+          "name": "mask",
+          "description": "A GLbitfield specifying a bitwise OR mask indicating which buffers are to be copied. Possible values: gl.COLOR_BUFFER_BIT gl.DEPTH_BUFFER_BIT gl.STENCIL_BUFFER_BIT"
+        },
+        {
+          "name": "filter",
+          "description": "A GLenum specifying the interpolation to be applied if the image is stretched. Possible values: gl.NEAREST gl.LINEAR"
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.framebufferTextureLayer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/framebufferTextureLayer",
+      "description": "Attaches a single layer of a texture to a framebuffer.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target). Possible values: gl.FRAMEBUFFER: Collection buffer data storage of color, alpha, depth and stencil buffers used to render an image. gl.DRAW_FRAMEBUFFER: Equivalent to gl.FRAMEBUFFER. gl.READ_FRAMEBUFFER: Used as a source for reading operations."
+        },
+        {
+          "name": "attachment",
+          "description": "A GLenum specifying the attachment point for the texture. Possible values: gl.COLOR_ATTACHMENT{0-15}: Attaches the texture to one of the framebuffer\u0027s color buffers. gl.DEPTH_ATTACHMENT: Attaches the texture to the framebuffer\u0027s depth buffer. gl.STENCIL_ATTACHMENT: Attaches the texture to the framebuffer\u0027s stencil buffer. gl.DEPTH_STENCIL_ATTACHMENT: depth and stencil buffer."
+        },
+        {
+          "name": "texture",
+          "description": "A WebGLTexture object whose image to attach."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the mipmap level of the texture image to attach."
+        },
+        {
+          "name": "layer",
+          "description": "A GLint specifying the layer of the texture image to attach."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.invalidateFramebuffer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/invalidateFramebuffer",
+      "description": "Invalidates the contents of attachments in a framebuffer.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target). Possible values: gl.FRAMEBUFFER: Collection buffer data storage of color, alpha, depth and stencil buffers used to render an image. gl.DRAW_FRAMEBUFFER: Equivalent to gl.FRAMEBUFFER. gl.READ_FRAMEBUFFER: Used as a source for reading operations."
+        },
+        {
+          "name": "attachments",
+          "description": "An Array of GLenum specifying the attachment points to invalidate. Possible values: gl.COLOR_ATTACHMENT{0-15}: Invalidates one of the framebuffer\u0027s color buffers. gl.DEPTH_ATTACHMENT: Invalidates the framebuffer\u0027s depth buffer. gl.STENCIL_ATTACHMENT: Invalidates the framebuffer\u0027s stencil buffer. gl.DEPTH_STENCIL_ATTACHMENT: Invalidates both the framebuffer\u0027s depth and stencil buffer."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.invalidateSubFramebuffer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/invalidateSubFramebuffer",
+      "description": "Invalidates portions of the contents of attachments in a framebuffer",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target). Possible values: gl.FRAMEBUFFER: Collection buffer data storage of color, alpha, depth and stencil buffers used to render an image. gl.DRAW_FRAMEBUFFER: Equivalent to gl.FRAMEBUFFER. gl.READ_FRAMEBUFFER: Used as a source for reading operations."
+        },
+        {
+          "name": "attachments",
+          "description": "An Array of GLenum specifying the attachment points to invalidate. Possible values: gl.COLOR_ATTACHMENT{0-15}: Invalidates one of the framebuffer\u0027s color buffers. gl.DEPTH_ATTACHMENT: Invalidates the framebuffer\u0027s depth buffer. gl.STENCIL_ATTACHMENT: Invalidates the framebuffer\u0027s stencil buffer. gl.DEPTH_STENCIL_ATTACHMENT: Invalidates both the framebuffer\u0027s depth and stencil buffer."
+        },
+        {
+          "name": "x",
+          "description": "A GLint specifying the left origin of the pixel rectangle to invalidate."
+        },
+        {
+          "name": "y",
+          "description": "A GLint specifying the bottom origin of the pixel rectangle to invalidate."
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the pixel rectangle to invalidate."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the pixel rectangle to invalidate."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.readBuffer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/readBuffer",
+      "description": "Selects a color buffer as the source for pixels.",
+      "parameters": [
+        {
+          "name": "src",
+          "description": "A GLenum specifying a color buffer. Possible values: gl.BACK: Reads from the back color buffer. gl.NONE: Reads from no color buffer. gl.COLOR_ATTACHMENT{0-15}: Reads from one of the 16 color attachment buffers."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getInternalformatParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getInternalformatParameter",
+      "description": "Returns information about implementation-dependent support for internal formats.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A Glenum specifying the target renderbuffer object. Possible values: gl.RENDERBUFFER: Buffer data storage for single images in a renderable internal format."
+        },
+        {
+          "name": "internalformat",
+          "description": "A GLenum specifying the internal format about which to retrieve information (must be a color-renderable, depth-renderable or stencil-renderable format)."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying the type of information to query. Possible values: gl.SAMPLES: Returns a Int32Array containing sample counts supported for internalformat in descending order."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.renderbufferStorageMultisample()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/renderbufferStorageMultisample",
+      "description": "Creates and initializes a renderbuffer object\u0027s data store and allows specifying the number of samples to be used.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target renderbuffer object. Possible values: gl.RENDERBUFFER: Buffer data storage for single images in a renderable internal format."
+        },
+        {
+          "name": "samples",
+          "description": "A GLsizei specifying the number of samples to be used for the renderbuffer storage."
+        },
+        {
+          "name": "internalFormat",
+          "description": "A GLenum specifying the internal format of the renderbuffer. Possible values: gl.R8 gl.R8UI gl.R8I gl.R16UI gl.R16I gl.R32UI gl.R32I gl.RG8 gl.RG8UI gl.RG8I gl.RG16UI gl.RG16I gl.RG32UI gl.RG32I gl.RGB8 gl.RGBA8 gl.SRGB8_ALPHA8 gl.RGBA4 gl.RGB565 gl.RGB5_A1 gl.RGB10_A2 gl.RGBA8UI gl.RGBA8I gl.RGB10_A2UI gl.RGBA16UI gl.RGBA16I gl.RGBA32I gl.RGBA32UI gl.DEPTH_COMPONENT16 gl.DEPTH_COMPONENT24 gl.DEPTH_COMPONENT32F gl.DEPTH_STENCIL gl.DEPTH24_STENCIL8 gl.DEPTH32F_STENCIL8 gl.STENCIL_INDEX8"
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the renderbuffer in pixels."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the renderbuffer in pixels."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.texStorage2D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/texStorage2D",
+      "description": "Specifies all levels of two-dimensional texture storage.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_2D: A two-dimensional texture. gl.TEXTURE_CUBE_MAP: A cube-mapped texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the number of texture levels."
+        },
+        {
+          "name": "internalformat",
+          "description": "A GLenum specifying the texture store format. Possible values: gl.R8 gl.R16F gl.R32F gl.R8UI gl.RG8 gl.RG16F gl.RG32F gl.RGUI gl.RGB8 gl.SRGB8 gl.RGB565 gl.R11F_G11F_B10F gl.RGB9_E5 gl.RGB16F gl.RGB32F gl.RGB8UI gl.RGBA8 gl.SRGB_APLHA8 gl.RGB5_A1 gl.RGBA4444 gl.RGBA16F gl.RGBA32F gl.RGBA8UI gl.COMPRESSED_R11_EAC gl.COMPRESSED_SIGNED_R11_EAC gl.COMPRESSED_RG11_EAC gl.COMPRESSED_SIGNED_RG11_EAC gl.COMPRESSED_RGB8_ETC2 gl.COMPRESSED_RGBA8_ETC2_EAC gl.COMPRESSED_SRGB8_ETC2 gl.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC gl.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 gl.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.texStorage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/texStorage3D",
+      "description": "Specifies all levels of a three-dimensional texture or two-dimensional array texture.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the number of texture levels."
+        },
+        {
+          "name": "internalformat",
+          "description": "A GLenum specifying the texture store format. Possible values: gl.R8 gl.R16F gl.R32F gl.R8UI gl.RG8 gl.RG16F gl.RG32F gl.RGUI gl.RGB8 gl.SRGB8 gl.RGB565 gl.R11F_G11F_B10F gl.RGB9_E5 gl.RGB16F gl.RGB32F gl.RGB8UI gl.RGBA8 gl.SRGB_APLHA8 gl.RGB5_A1 gl.RGBA4444 gl.RGBA16F gl.RGBA32F gl.RGBA8UI gl.COMPRESSED_R11_EAC gl.COMPRESSED_SIGNED_R11_EAC gl.COMPRESSED_RG11_EAC gl.COMPRESSED_SIGNED_RG11_EAC gl.COMPRESSED_RGB8_ETC2 gl.COMPRESSED_RGBA8_ETC2_EAC gl.COMPRESSED_SRGB8_ETC2 gl.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC gl.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 gl.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        },
+        {
+          "name": "depth",
+          "description": "A GLsizei specifying the depth of the texture."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.texImage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/texImage3D",
+      "description": "Specifies a three-dimensional texture image.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the level of detail. Level 0 is the base image level and level n is the nth mipmap reduction level."
+        },
+        {
+          "name": "internalformat",
+          "description": "A GLint specifying the color components in the texture. Possible values: gl.ALPHA: Discards the red, green and blue components and reads the alpha component. gl.RGB: Discards the alpha components and reads the red, green and blue components. gl.RGBA: Red, green, blue and alpha components are read from the color buffer. gl.LUMINANCE: Each color component is a luminance component, alpha is 1.0. gl.LUMINANCE_ALPHA: Each component is a luminance/alpha component. gl.R8 gl.R16F gl.R32F gl.R8UI gl.RG8 gl.RG16F gl.RG32F gl.RGUI gl.RGB8 gl.SRGB8 gl.RGB565 gl.R11F_G11F_B10F gl.RGB9_E5 gl.RGB16F gl.RGB32F gl.RGB8UI gl.RGBA8 gl.SRGB_APLHA8 gl.RGB5_A1 gl.RGBA4444 gl.RGBA16F gl.RGBA32F gl.RGBA8UI"
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        },
+        {
+          "name": "depth",
+          "description": "A GLsizei specifying the depth of the texture."
+        },
+        {
+          "name": "border",
+          "description": "A GLint specifying the width of the border. Must be 0."
+        },
+        {
+          "name": "format",
+          "description": "A GLenum specifying the format of the texel data. The correct combinations with internalformat are listed in this table."
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the data type of the texel data. Possible values: gl.UNSIGNED_BYTE: 8 bits per channel for gl.RGBA gl.UNSIGNED_SHORT_5_6_5: 5 red bits, 6 green bits, 5 blue bits. gl.UNSIGNED_SHORT_4_4_4_4: 4 red bits, 4 green bits, 4 blue bits, 4 alpha bits. gl.UNSIGNED_SHORT_5_5_5_1: 5 red bits, 5 green bits, 5 blue bits, 1 alpha bit. gl.BYTE gl.UNSIGNED_SHORT gl.SHORT gl.UNSIGNED_INT gl.INT gl.HALF_FLOAT gl.FLOAT gl.UNSIGNED_INT_2_10_10_10_REV gl.UNSIGNED_INT_10F_11F_11F_REV gl.UNSIGNED_INT_5_9_9_9_REV gl.UNSIGNED_INT_24_8 gl.FLOAT_32_UNSIGNED_INT_24_8_REV (pixels must be null)"
+        },
+        {
+          "name": "source",
+          "description": "One of the following objects can be used as a pixel source for the texture: ArrayBufferView, ImageBitmap, ImageData, HTMLImageElement, HTMLCanvasElement, HTMLVideoElement."
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr byte offset into the WebGLBuffer\u0027s data store. Used to upload data to the currently bound WebGLTexture from the WebGLBuffer bound to the PIXEL_UNPACK_BUFFER target."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.texSubImage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/texSubImage3D",
+      "description": "Specifies a sub-rectangle of the current 3D texture.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the level of detail. Level 0 is the base image level and level n is the nth mipmap reduction level."
+        },
+        {
+          "name": "xoffset",
+          "description": "A GLint specifying the x offset within the texture image."
+        },
+        {
+          "name": "yoffset",
+          "description": "A GLint specifying the y offset within the texture image."
+        },
+        {
+          "name": "zoffset",
+          "description": "A GLint specifying the z offset within the texture image."
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        },
+        {
+          "name": "depth",
+          "description": "A GLsizei specifying the depth of the texture."
+        },
+        {
+          "name": "format",
+          "description": "A GLenum specifying the format of the texel data. Possible values: gl.ALPHA: Discards the red, green and blue components and reads the alpha component. gl.RGB: Discards the alpha components and reads the red, green and blue components. gl.RGBA: Red, green, blue and alpha components are read from the color buffer. gl.LUMINANCE: Each color component is a luminance component, alpha is 1.0. gl.LUMINANCE_ALPHA: Each component is a luminance/alpha component. gl.R8 gl.R16F gl.R32F gl.R8UI gl.RG8 gl.RG16F gl.RG32F gl.RGUI gl.RGB8 gl.SRGB8 gl.RGB565 gl.R11F_G11F_B10F gl.RGB9_E5 gl.RGB16F gl.RGB32F gl.RGB8UI gl.RGBA8 gl.SRGB_APLHA8 gl.RGB5_A1 gl.RGBA4444 gl.RGBA16F gl.RGBA32F gl.RGBA8UI"
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the data type of the texel data. Possible values: gl.UNSIGNED_BYTE: 8 bits per channel for gl.RGBA gl.UNSIGNED_SHORT_5_6_5: 5 red bits, 6 green bits, 5 blue bits. gl.UNSIGNED_SHORT_4_4_4_4: 4 red bits, 4 green bits, 4 blue bits, 4 alpha bits. gl.UNSIGNED_SHORT_5_5_5_1: 5 red bits, 5 green bits, 5 blue bits, 1 alpha bit. gl.BYTE gl.UNSIGNED_SHORT gl.SHORT gl.UNSIGNED_INT gl.INT gl.HALF_FLOAT gl.FLOAT gl.UNSIGNED_INT_2_10_10_10_REV gl.UNSIGNED_INT_10F_11F_11F_REV gl.UNSIGNED_INT_5_9_9_9_REV gl.UNSIGNED_INT_24_8 gl.FLOAT_32_UNSIGNED_INT_24_8_REV (pixels must be null)"
+        },
+        {
+          "name": "pixels",
+          "description": "One of the following objects can be used as a pixel source for the texture: ArrayBufferView, A Uint8Array must be used if type is gl.UNSIGNED_BYTE. A Uint16Array must be used if type is either gl.UNSIGNED_SHORT_5_6_5, gl.UNSIGNED_SHORT_4_4_4_4, gl.UNSIGNED_SHORT_5_5_5_1, or ext.HALF_FLOAT_OES. A Float32Array must be used if type is gl.FLOAT. ImageBitmap, ImageData, HTMLImageElement, HTMLCanvasElement, HTMLVideoElement."
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr byte offset into the WebGLBuffer\u0027s data store. Used to upload data to the currently bound WebGLTexture from the WebGLBuffer bound to the PIXEL_UNPACK_BUFFER target."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.copyTexSubImage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/copyTexSubImage3D",
+      "description": "Copies pixels from the current WebGLFramebuffer into an existing 3D texture sub-image.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the level of detail. Level 0 is the base image level and level n is the nth mipmap reduction level."
+        },
+        {
+          "name": "xoffset",
+          "description": "A GLint specifying the x offset within the texture image."
+        },
+        {
+          "name": "yoffset",
+          "description": "A GLint specifying the y offset within the texture image."
+        },
+        {
+          "name": "zoffset",
+          "description": "A GLint specifying the z offset within the texture image."
+        },
+        {
+          "name": "x",
+          "description": "A GLint specifying the x coordinate of the lower left corner where to start copying."
+        },
+        {
+          "name": "y",
+          "description": "A GLint specifying the y coordinate of the lower left corner where to start copying."
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.compressedTexImage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/compressedTexImage3D",
+      "description": "Specifies a three-dimensional texture image in a compressed format.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the level of detail. Level 0 is the base image level and level n is the nth mipmap reduction level."
+        },
+        {
+          "name": "internalformat",
+          "description": "A GLenum specifying the compressed image format. Possible values: gl.COMPRESSED_R11_EAC gl.COMPRESSED_SIGNED_R11_EAC gl.COMPRESSED_RG11_EAC gl.COMPRESSED_SIGNED_RG11_EAC gl.COMPRESSED_RGB8_ETC2 gl.COMPRESSED_RGBA8_ETC2_EAC gl.COMPRESSED_SRGB8_ETC2 gl.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC gl.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 gl.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        },
+        {
+          "name": "depth",
+          "description": "A GLsizei specifying the depth of the texture."
+        },
+        {
+          "name": "border",
+          "description": "A GLint specifying the width of the border. Must be 0."
+        },
+        {
+          "name": "srcData",
+          "description": "A ArrayBufferView that be used as a data store for the compressed image data in memory."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.compressedTexSubImage3D()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/compressedTexSubImage3D",
+      "description": "Specifies a three-dimensional sub-rectangle for a texture image in a compressed format.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the binding point (target) of the active texture. Possible values: gl.TEXTURE_3D: A three-dimensional texture. gl.TEXTURE_2D_ARRAY: A two-dimensional array texture."
+        },
+        {
+          "name": "level",
+          "description": "A GLint specifying the level of detail. Level 0 is the base image level and level n is the nth mipmap reduction level."
+        },
+        {
+          "name": "xoffset",
+          "description": "A GLint specifying the x offset within the compressed texture image."
+        },
+        {
+          "name": "yoffset",
+          "description": "A GLint specifying the y offset within the compressed texture image."
+        },
+        {
+          "name": "zoffset",
+          "description": "A GLint specifying the z offset within the compressed texture image."
+        },
+        {
+          "name": "width",
+          "description": "A GLsizei specifying the width of the texture."
+        },
+        {
+          "name": "height",
+          "description": "A GLsizei specifying the height of the texture."
+        },
+        {
+          "name": "depth",
+          "description": "A GLsizei specifying the depth of the texture."
+        },
+        {
+          "name": "format",
+          "description": "A GLenum specifying the compressed image format. Possible values: gl.COMPRESSED_R11_EAC gl.COMPRESSED_SIGNED_R11_EAC gl.COMPRESSED_RG11_EAC gl.COMPRESSED_SIGNED_RG11_EAC gl.COMPRESSED_RGB8_ETC2 gl.COMPRESSED_RGBA8_ETC2_EAC gl.COMPRESSED_SRGB8_ETC2 gl.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC gl.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 gl.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+        },
+        {
+          "name": "srcData",
+          "description": "A ArrayBufferView that be used as a data store for the compressed image data in memory."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getFragDataLocation()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getFragDataLocation",
+      "description": "Returns the binding of color numbers to user-defined varying out variables.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram to query."
+        },
+        {
+          "name": "name",
+          "description": "A DOMString specifying the name of the user-defined varying out variable."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.uniform[1234][uif][v]()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/uniform",
+      "description": "Methods specifying values of uniform variables.",
+      "parameters": [
+        {
+          "name": "location",
+          "description": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+        },
+        {
+          "name": "value, v0, v1, v2, v3",
+          "description": "A new value to be used for the uniform variable. Possible types: A Number for unsigned integer values (methods with ui), for integer values (methods with i), or for floats (methods with f). A Uint32Array for unsigned integer vector methods (methods with uiv)."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.uniformMatrix[234]x[234]fv()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/uniformMatrix",
+      "description": "Methods specifying matrix values for uniform variables.",
+      "parameters": [
+        {
+          "name": "location",
+          "description": "A WebGLUniformLocation object containing the location of the uniform attribute to modify."
+        },
+        {
+          "name": "transpose",
+          "description": "A GLboolean specifying whether to transpose the matrix. Must be false."
+        },
+        {
+          "name": "value",
+          "description": "A Float32Array of float values."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.vertexAttribI4[u]i[v]()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribI",
+      "description": "Methods specifying integer values for generic vertex attributes.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A GLuint specifying the position of the vertex attribute to be modified."
+        },
+        {
+          "name": "v0, v1, v2, v3",
+          "description": "An integer Number for the vertex attribute value."
+        },
+        {
+          "name": "value",
+          "description": "A Uint32Array/Int32Array or sequences of GLuint/ GLint for integer vector vertex attribute values."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.vertexAttribIPointer()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribIPointer",
+      "description": "Specifies integer data formats and locations of vertex attributes in a vertex attributes array.",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the vertex attribute that is to be modified."
+        },
+        {
+          "name": "size",
+          "description": "A GLint specifying the number of components per vertex attribute. Must be 1, 2, 3, or 4."
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the data type of each component in the array. Must be one of: gl.BYTE, gl.UNSIGNED_BYTE, gl.SHORT, gl.UNSIGNED_SHORT, gl.INT, or gl.UNSIGNED_INT."
+        },
+        {
+          "name": "stride",
+          "description": "A GLsizei specifying the offset in bytes between the beginning of consecutive vertex attributes."
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr specifying an offset in bytes of the first component in the vertex attribute array. Must be a multiple of type."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.vertexAttribDivisor()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/vertexAttribDivisor",
+      "description": "Modifies the rate at which generic vertex attributes advance when rendering multiple instances of primitives with gl.drawArraysInstanced() and gl.drawElementsInstanced().",
+      "parameters": [
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the generic vertex attributes."
+        },
+        {
+          "name": "divisor",
+          "description": "A GLuint specifying the number of instances that will pass between updates of the generic attribute."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.drawArraysInstanced()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/drawArraysInstanced",
+      "description": "Renders primitives from array data. In addition, it can execute multiple instances of the range of elements.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "A GLenum specifying the type primitive to render. Possible values are: gl.POINTS: Draws a single dot. gl.LINE_STRIP: Draws a straight line to the next vertex. gl.LINE_LOOP: Draws a straight line to the next vertex, and connects the last vertex back to the first. gl.LINES: Draws a line between a pair of vertices. gl.TRIANGLE_STRIP gl.TRIANGLE_FAN gl.TRIANGLES: Draws a triangle for a group of three vertices."
+        },
+        {
+          "name": "first",
+          "description": "A GLint specifying the starting index in the array of vector points."
+        },
+        {
+          "name": "count",
+          "description": "A GLsizei specifying the number of indices to be rendered."
+        },
+        {
+          "name": "instanceCount",
+          "description": "A GLsizei specifying the number of instances of the range of elements to execute."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.drawElementsInstanced()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/drawElementsInstanced",
+      "description": "Renders primitives from array data. In addition, it can execute multiple instances of a set of elements.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "A GLenum specifying the type primitive to render. Possible values are: gl.POINTS: Draws a single dot. gl.LINE_STRIP: Draws a straight line to the next vertex. gl.LINE_LOOP: Draws a straight line to the next vertex, and connects the last vertex back to the first. gl.LINES: Draws a line between a pair of vertices. gl.TRIANGLE_STRIP gl.TRIANGLE_FAN gl.TRIANGLES: Draws a triangle for a group of three vertices."
+        },
+        {
+          "name": "count",
+          "description": "A GLsizei specifying the number of elements to be rendered."
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the type of the values in the element array buffer. Possible values are: gl.UNSIGNED_BYTE gl.UNSIGNED_SHORT When using the OES_element_index_uint extension: gl.UNSIGNED_INT"
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr specifying an offset in the element array buffer. Must be a valid multiple of the size of the given type."
+        },
+        {
+          "name": "instanceCount",
+          "description": "A GLsizei specifying the number of instances of the set of elements to execute."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.drawRangeElements()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/drawRangeElements",
+      "description": "Renders primitives from array data in a given range.",
+      "parameters": [
+        {
+          "name": "mode",
+          "description": "A GLenum specifying the type primitive to render. Possible values are: gl.POINTS: Draws a single dot. gl.LINE_STRIP: Draws a straight line to the next vertex. gl.LINE_LOOP: Draws a straight line to the next vertex, and connects the last vertex back to the first. gl.LINES: Draws a line between a pair of vertices. gl.TRIANGLE_STRIP gl.TRIANGLE_FAN gl.TRIANGLES: Draws a triangle for a group of three vertices."
+        },
+        {
+          "name": "start",
+          "description": "A GLuint specifying the minimum array index contained in offset."
+        },
+        {
+          "name": "end",
+          "description": "A GLuint specifying the maximum array index contained in offset."
+        },
+        {
+          "name": "count",
+          "description": "A GLsizei specifying the number of elements to be rendered."
+        },
+        {
+          "name": "type",
+          "description": "A GLenum specifying the type of the values in the element array buffer. Possible values are: gl.UNSIGNED_BYTE gl.UNSIGNED_SHORT gl.UNSIGNED_INT"
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr specifying an offset in the element array buffer. Must be a valid multiple of the size of the given type."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.drawBuffers()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/drawBuffers",
+      "description": "Specifies a list of color buffers to be drawn into.",
+      "parameters": [
+        {
+          "name": "buffers",
+          "description": "An Array of GLenum specifying the buffers into which fragment colors will be written. Possible values are: gl.NONE: Fragment shader output is not written into any color buffer. gl.BACK: Fragment shader output is written into the back color buffer. gl.COLOR_ATTACHMENT{0-15}: Fragment shader output is written in the nth color attachment of the current framebuffer."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.clearBuffer[fiuv]()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/clearBuffer",
+      "description": "Clears buffers from the currently bound framebuffer.",
+      "parameters": [
+        {
+          "name": "buffer",
+          "description": "A GLenum specifying the buffer to clear. Possible values are: gl.COLOR: Color buffer. gl.DEPTH: Depth buffer. gl.STENCIL: Stencil buffer. gl.DEPTH_STENCIL: clears depth and stencil buffers (used with clearBufferfi)."
+        },
+        {
+          "name": "drawBuffer",
+          "description": "A GLint specifying the draw buffer to clear."
+        },
+        {
+          "name": "values",
+          "description": "An Array of GLint, GLuint or GLfloat values or an Int32Array, Uint32Array or Float32Array specifying the values to clear to."
+        },
+        {
+          "name": "depth",
+          "description": "A GLfloat specifying the value to clear a depth render buffer to."
+        },
+        {
+          "name": "stencil",
+          "description": "A GLint specifying the value to clear the stencil render buffer to."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.createQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/createQuery",
+      "description": "Creates a new WebGLQuery object."
+    },
+    {
+      "name": "WebGL2RenderingContext.deleteQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/deleteQuery",
+      "description": "Deletes a given WebGLQuery object.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object to delete."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.isQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/isQuery",
+      "description": "Returns true if a given object is a valid WebGLQuery object.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object to test."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.beginQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/beginQuery",
+      "description": "Begins an asynchronous query.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the query. Possible values: gl.ANY_SAMPLES_PASSED: Specifies an occlusion query: these queries detect whether an object is visible (whether the scoped drawing commands pass the depth test and if so, how many samples pass). gl.ANY_SAMPLES_PASSED_CONSERVATIVE: Same as above above, but less accurate and faster version. gl.TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: Number of primitives that are written to transform feedback buffers."
+        },
+        {
+          "name": "query",
+          "description": "A WebGLQuery object for which to start the querying."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.endQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/endQuery",
+      "description": "Marks the end of an asynchronous query.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the query. Possible values: gl.ANY_SAMPLES_PASSED: Specifies an occlusion query: these queries detect whether an object is visible (whether the scoped drawing commands pass the depth test and if so, how many samples pass). gl.ANY_SAMPLES_PASSED_CONSERVATIVE: Same as above above, but less accurate and faster version. gl.TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: Number of primitives that are written to transform feedback buffers."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getQuery()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getQuery",
+      "description": "Returns a WebGLQuery object for a given target.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target of the query. Possible values: gl.ANY_SAMPLES_PASSED: Specifies an occlusion query: these queries detect whether an object is visible (whether the scoped drawing commands pass the depth test and if so, how many samples pass). gl.ANY_SAMPLES_PASSED_CONSERVATIVE: Same as above above, but less accurate and faster version. gl.TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: Number of primitives that are written to transform feedback buffers."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying the query object target. Must be gl.CURRENT_QUERY."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getQueryParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getQueryParameter",
+      "description": "Returns information about a query.",
+      "parameters": [
+        {
+          "name": "query",
+          "description": "A WebGLQuery object."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to return. Possible values: gl.QUERY_RESULT: Returns a GLuint containing the query result. gl.QUERY_RESULT_AVAILABLE: Returns a GLboolean indicating whether or not a query result is available."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.createSampler()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/createSampler",
+      "description": "Creates a new WebGLSampler object."
+    },
+    {
+      "name": "WebGL2RenderingContext.deleteSampler()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/deleteSampler",
+      "description": "Deletes a given WebGLSampler object.",
+      "parameters": [
+        {
+          "name": "sampler",
+          "description": "A WebGLSampler object to delete."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.bindSampler()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/bindSampler",
+      "description": "Binds a given WebGLSampler to a texture unit.",
+      "parameters": [
+        {
+          "name": "unit",
+          "description": "A GLuint specifying the index of the texture unit to which to bind the sampler to."
+        },
+        {
+          "name": "sampler",
+          "description": "A WebGLSampler object to bind."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.isSampler()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/isSampler",
+      "description": "Returns true if a given object is a valid WebGLSampler object.",
+      "parameters": [
+        {
+          "name": "sampler",
+          "description": "A WebGLSampler object to test."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.samplerParameter[if]()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/samplerParameter",
+      "description": "Sets sampler parameters.",
+      "parameters": [
+        {
+          "name": "sampler",
+          "description": "A WebGLSampler object."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which parameter to set. Possible values: gl.TEXTURE_COMPARE_FUNC: A GLenum specifying the texture comparison function. gl.TEXTURE_COMPARE_MODE: A GLenum specifying the texture comparison mode. gl.TEXTURE_MAG_FILTER: A GLenum specifying the texture magnification filter. gl.TEXTURE_MAX_LOD: A GLfloat specifying the maximum level-of-detail value. gl.TEXTURE_MIN_FILTER: A GLenum specifying the texture minification filter gl.TEXTURE_MIN_LOD: A GLfloat specifying the minimum level-of-detail value. gl.TEXTURE_WRAP_R: A GLenum specifying the texture wrapping function for the texture coordinate r. gl.TEXTURE_WRAP_S: A GLenum specifying the texture wrapping function for the texture coordinate s. gl.TEXTURE_WRAP_T: A GLenum specifying the texture wrapping function for the texture coordinate t."
+        },
+        {
+          "name": "param",
+          "description": "A GLint (samplerParameteri) or a GLfloat (samplerParameterf) specifying a value for pname."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getSamplerParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getSamplerParameter",
+      "description": "Returns sampler parameter information.",
+      "parameters": [
+        {
+          "name": "sampler",
+          "description": "A WebGLSampler object."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to return. Possible values: gl.TEXTURE_COMPARE_FUNC: Returns a GLenum indicating the texture comparison function. gl.TEXTURE_COMPARE_MODE: Returns a GLenum indicating the texture comparison mode. gl.TEXTURE_MAG_FILTER: Returns a GLenum indicating the texture magnification filter. gl.TEXTURE_MAX_LOD: Returns a GLfloat indicating the maximum level-of-detail value. gl.TEXTURE_MIN_FILTER: Returns a GLenum indicating the texture minification filter gl.TEXTURE_MIN_LOD: Returns a GLfloat indicating the minimum level-of-detail value. gl.TEXTURE_WRAP_R: Returns a GLenum indicating the texture wrapping function for the texture coordinate r. gl.TEXTURE_WRAP_S: Returns a GLenum indicating the texture wrapping function for the texture coordinate s. gl.TEXTURE_WRAP_T: Returns a GLenum indicating the texture wrapping function for the texture coordinate t."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.fenceSync()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/fenceSync",
+      "description": "Creates a new WebGLSync object and inserts it into the GL command stream.",
+      "parameters": [
+        {
+          "name": "condition",
+          "description": "A GLenum specifying the condition that must be met to set the sync object\u0027s state to signaled. Must be gl.SYNC_GPU_COMMANDS_COMPLETE."
+        },
+        {
+          "name": "flags",
+          "description": "A GLbitfield specifying a bitwise combination of flags controlling the behavior of the sync object. Must be 0 (exists for extensions only)."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.isSync()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/isSync",
+      "description": "Returns true if the passed object is a valid WebGLSync object.",
+      "parameters": [
+        {
+          "name": "sync",
+          "description": "A WebGLSync object to test."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.deleteSync()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/deleteSync",
+      "description": "Deletes a given WebGLSync object.",
+      "parameters": [
+        {
+          "name": "sync",
+          "description": "A WebGLSync object to delete."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.clientWaitSync()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/clientWaitSync",
+      "description": "Blocks and waits for a WebGLSync object to become signaled or a given timeout to be passed.",
+      "parameters": [
+        {
+          "name": "sync",
+          "description": "A WebGLSync object on which to wait on."
+        },
+        {
+          "name": "flags",
+          "description": "A GLbitfield specifying a bitwise combination of flags controlling the flushing behavior. May be gl.SYNC_FLUSH_COMMANDS_BIT."
+        },
+        {
+          "name": "timeout",
+          "description": "A GLint64 specifying a timeout (in nanoseconds) for which to wait for the sync object to become signaled. Must not be larger than gl.MAX_CLIENT_WAIT_TIMEOUT_WEBGL."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.waitSync()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/waitSync",
+      "description": "Returns immediately, but waits on the GL server until the given WebGLSync object is signaled.",
+      "parameters": [
+        {
+          "name": "sync",
+          "description": "A WebGLSync object on which to wait on."
+        },
+        {
+          "name": "flags",
+          "description": "A GLbitfield specifying a bitwise combination of flags controlling the flushing behavior. Must be 0 (exists for extensions only)."
+        },
+        {
+          "name": "timeout",
+          "description": "A GLint64 specifying a timeout the server should wait before continuing. Must be gl.TIMEOUT_IGNORED."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getSyncParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getSyncParameter",
+      "description": "Returns parameter information of a WebGLSync object.",
+      "parameters": [
+        {
+          "name": "sync",
+          "description": "A WebGLSync object."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to return. Possible values: gl.OBJECT_TYPE: Returns a GLenum indicating the type of the sync object (always gl.SYNC_FENCE). gl.SYNC_STATUS: Returns a GLenum indicating the status of the sync object (gl.SIGNALED or gl.UNSIGNALED). gl.SYNC_CONDITION: Returns a GLenum indicating the sync objects\u0027 condition (always gl.SYNC_GPU_COMMANDS_COMPLETE). gl.SYNC_FLAGS: Returns a GLenum indicating the flags with which the sync object was created (always 0 as no flags are supported)."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.createTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/createTransformFeedback",
+      "description": "Creates and initializes WebGLTransformFeedback objects."
+    },
+    {
+      "name": "WebGL2RenderingContext.deleteTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/deleteTransformFeedback",
+      "description": "Deletes a given WebGLTransformFeedback object.",
+      "parameters": [
+        {
+          "name": "transformFeedback",
+          "description": "A WebGLTransformFeedback object to delete."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.isTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/isTransformFeedback",
+      "description": "Returns true if the passed object is a valid WebGLTransformFeedback object.",
+      "parameters": [
+        {
+          "name": "transformFeedback",
+          "description": "A WebGLTransformFeedback object to test."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.bindTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/bindTransformFeedback",
+      "description": "Binds a passed WebGLTransformFeedback object to the current GL state.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A GLenum specifying the target (binding point). Must be gl.TRANSFORM_FEEDBACK."
+        },
+        {
+          "name": "transformFeedback",
+          "description": "A WebGLTransformFeedback object to bind."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.beginTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/beginTransformFeedback",
+      "description": "Starts a transform feedback operation.",
+      "parameters": [
+        {
+          "name": "primitiveMode",
+          "description": "A GLenum specifying the output type of the primitives that will be recorded into the buffer objects that are bound for transform feedback. Possible values: gl.POINTS gl.LINES gl.TRIANGLES"
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.endTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/endTransformFeedback",
+      "description": "Ends a transform feedback operation."
+    },
+    {
+      "name": "WebGL2RenderingContext.transformFeedbackVaryings()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/transformFeedbackVaryings",
+      "description": "Specifies values to record in WebGLTransformFeedback buffers.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram."
+        },
+        {
+          "name": "varyings",
+          "description": "An Array of DOMString specifying the the names of the varying variables to use."
+        },
+        {
+          "name": "bufferMode",
+          "description": "A GLenum specifying the mode to use when capturing the varying variables. Either gl.INTERLEAVED_ATTRIBS or gl.SEPARATE_ATTRIBS."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getTransformFeedbackVarying()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getTransformFeedbackVarying",
+      "description": "Returns information about varying variables from WebGLTransformFeedback buffers.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram."
+        },
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the varying variable whose information to retrieve."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.pauseTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/pauseTransformFeedback",
+      "description": "Pauses a transform feedback operation."
+    },
+    {
+      "name": "WebGL2RenderingContext.resumeTransformFeedback()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/resumeTransformFeedback",
+      "description": "Resumes a transform feedback operation."
+    },
+    {
+      "name": "WebGL2RenderingContext.bindBufferBase()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/bindBufferBase",
+      "description": "Binds a given WebGLBuffer to a given binding point (target) at a given index.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A Glenum specifying the target for the bind operation. Possible values: gl.TRANSFORM_FEEDBACK_BUFFER gl.UNIFORM_BUFFER"
+        },
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the target."
+        },
+        {
+          "name": "buffer",
+          "description": "A WebGLBuffer which to bind to the binding point (target)."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.bindBufferRange()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/bindBufferRange",
+      "description": "Binds a range of a given WebGLBuffer to a given binding point (target) at a given index.",
+      "parameters": [
+        {
+          "name": "target",
+          "description": "A Glenum specifying the target for the bind operation. Possible values: gl.TRANSFORM_FEEDBACK_BUFFER gl.UNIFORM_BUFFER"
+        },
+        {
+          "name": "index",
+          "description": "A GLuint specifying the index of the target."
+        },
+        {
+          "name": "buffer",
+          "description": "A WebGLBuffer which to bind to the binding point (target)."
+        },
+        {
+          "name": "offset",
+          "description": "A GLintptr specifying the starting offset."
+        },
+        {
+          "name": "size",
+          "description": "A GLsizeiptr specifying the amount of data that can be read from the buffer."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getUniformIndices()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getUniformIndices",
+      "description": "Retrieves the indices of a number of uniforms within a WebGLProgram.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing uniforms whose indices to query."
+        },
+        {
+          "name": "uniformNames",
+          "description": "An Array of DOMString specifying the names of the uniforms to query."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getActiveUniforms()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getActiveUniforms",
+      "description": "Retrieves information about active uniforms within a WebGLProgram.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing the active uniforms."
+        },
+        {
+          "name": "uniformIndices",
+          "description": "An Array of GLuint specifying the indices of the active uniforms to query."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to query. Possible values: gl.UNIFORM_TYPE: Returns an Array of GLenum indicating the types of the uniforms. gl.UNIFORM_SIZE: Returns an Array of GLuint indicating the sizes of the uniforms. gl.UNIFORM_BLOCK_INDEX: Returns an Array of GLint indicating the block indices of the uniforms. gl.UNIFORM_OFFSET: Returns an Array of GLint indicating the uniform buffer offsets. gl.UNIFORM_ARRAY_STRIDE: Returns an Array of GLint indicating the strides between the elements. gl.UNIFORM_MATRIX_STRIDE: Returns an Array of GLint indicating the strides between columns of a column-major matrix or a row-major matrix. gl.UNIFORM_IS_ROW_MAJOR: Returns an Array of GLboolean indicating whether each of the uniforms is a row-major matrix or not."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getUniformBlockIndex()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getUniformBlockIndex",
+      "description": "Retrieves the index of a uniform block within a WebGLProgram.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing the uniform block."
+        },
+        {
+          "name": "uniformName",
+          "description": "A DOMString specifying the name of the uniform block to whose index to retrieve."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getActiveUniformBlockParameter()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockParameter",
+      "description": "Retrieves information about an active uniform block within a WebGLProgram.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing the active uniform block."
+        },
+        {
+          "name": "uniformBlockIndex",
+          "description": "A GLuint specifying the index of the active uniform block within the program."
+        },
+        {
+          "name": "pname",
+          "description": "A GLenum specifying which information to query. Possible values: gl.UNIFORM_BLOCK_BINDING: Returns a GLuint indicating the uniform buffer binding point. gl.UNIFORM_BLOCK_DATA_SIZE: Returns a GLuint indicating the minimum total buffer object size. gl.UNIFORM_BLOCK_ACTIVE_UNIFORMS: Returns a GLuint indicating the number of active uniforms in the uniform block. gl.UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: Returns a Uint32Array indicating the list of active uniforms in the uniform block. gl.UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: Returns a GLboolean indicating whether the uniform block is referenced by the vertex shader. gl.UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: Returns a GLboolean indicating whether the uniform block is referenced by the fragment shader."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.getActiveUniformBlockName()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/getActiveUniformBlockName",
+      "description": "Retrieves the name of the active uniform block at a given index within a WebGLProgram.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing the uniform block."
+        },
+        {
+          "name": "uniformBlockIndex",
+          "description": "A GLuint specifying the index of the uniform block to whose name to retrieve."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.uniformBlockBinding()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/uniformBlockBinding",
+      "description": "Assigns binding points for active uniform blocks.",
+      "parameters": [
+        {
+          "name": "program",
+          "description": "A WebGLProgram containing the active uniform block whose binding to assign."
+        },
+        {
+          "name": "uniformBlockIndex",
+          "description": "A GLuint specifying the index of the active uniform block within the program."
+        },
+        {
+          "name": "uniformBlockBinding",
+          "description": "A GLuint specifying the binding point to which to bind the uniform block."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.createVertexArray()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/createVertexArray",
+      "description": "Creates a new WebGLVertexArrayObject."
+    },
+    {
+      "name": "WebGL2RenderingContext.deleteVertexArray()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/deleteVertexArray",
+      "description": "Deletes a given WebGLVertexArrayObject.",
+      "parameters": [
+        {
+          "name": "vertexArray",
+          "description": "A WebGLVertexArrayObject (VAO) object to delete."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.isVertexArray()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/isVertexArray",
+      "description": "Returns true if a given object is a valid WebGLVertexArrayObject.",
+      "parameters": [
+        {
+          "name": "vertexArray",
+          "description": "A WebGLVertexArrayObject (VAO) object to test."
+        }
+      ]
+    },
+    {
+      "name": "WebGL2RenderingContext.bindVertexArray()",
+      "link": "/en-US/docs/Web/API/WebGL2RenderingContext/bindVertexArray",
+      "description": "Binds a given WebGLVertexArrayObject to the buffer.",
+      "parameters": [
+        {
+          "name": "vertexArray",
+          "description": "A WebGLVertexArrayObject (VAO) object to bind."
+        }
+      ]
+    }
+  ]
+}

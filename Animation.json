@@ -1,0 +1,135 @@
+{
+  "name": "Animation",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The Animation interface of the Web Animations API represents a single animation player and provides playback controls and a timeline for an animation node or source.",
+  "members": [
+    {
+      "name": "Animation()",
+      "link": "/en-US/docs/Web/API/Animation/Animation",
+      "description": "Creates a new Animation object instance.",
+      "parameters": [
+        {
+          "name": "effect Optional",
+          "description": "The target effect, as an object based on the AnimationEffectReadOnly interface, to assign to the animation. Although in the future other effects such as SequenceEffects or GroupEffects might be possible, the only kind of effect currently available is KeyframeEffect. This can be null (which is the default) to indicate that there should be no effect applied."
+        },
+        {
+          "name": "timeline Optional",
+          "description": "Specifies the timeline with which to associate the animation, as an object of a type based on the AnimationTimeline interface. Currently the only timeline type available is DocumentTimeline, but in the future there my be timelines associated with gestures or scrolling, for example. The default value is Document.timeline, but this can be set to null as well."
+        }
+      ]
+    },
+    {
+      "name": "Animation.currentTime",
+      "link": "/en-US/docs/Web/API/Animation/currentTime",
+      "description": "The current time value of the animation in milliseconds, whether running or paused. If the animation lacks a timeline, is inactive or hasn\u0027t been played yet, its value is null."
+    },
+    {
+      "name": "Animation.effect",
+      "link": "/en-US/docs/Web/API/Animation/effect",
+      "description": "Gets and sets the AnimationEffectReadOnly associated with this animation. This will usually be a KeyframeEffect object."
+    },
+    {
+      "name": "Animation.finished",
+      "link": "/en-US/docs/Web/API/Animation/finished",
+      "description": "Returns the current finished Promise for this animation."
+    },
+    {
+      "name": "Animation.id",
+      "link": "/en-US/docs/Web/API/Animation/id",
+      "description": "Gets and sets the String used to identify the animation."
+    },
+    {
+      "name": "Animation.playState",
+      "link": "/en-US/docs/Web/API/Animation/playState",
+      "description": "Returns an enumerated value describing the playback state of an animation.",
+      "parameters": [
+        {
+          "name": "idle",
+          "description": "The current time of the animation is unresolved and there are no pending tasks."
+        },
+        {
+          "name": "pending",
+          "description": "The animation is waiting on some pending task to complete."
+        },
+        {
+          "name": "running",
+          "description": "The animation is running."
+        },
+        {
+          "name": "paused",
+          "description": "The animation was suspended and the Animation.currentTime property is not updating."
+        },
+        {
+          "name": "finished",
+          "description": "The animation has reached one of its boundaries and the Animation.currentTime property is not updating."
+        }
+      ]
+    },
+    {
+      "name": "Animation.playbackRate",
+      "link": "/en-US/docs/Web/API/Animation/playbackRate",
+      "description": "Gets or sets the playback rate of the animation."
+    },
+    {
+      "name": "Animation.ready",
+      "link": "/en-US/docs/Web/API/Animation/ready",
+      "description": "Returns the current ready Promise for this animation."
+    },
+    {
+      "name": "Animation.startTime",
+      "link": "/en-US/docs/Web/API/Animation/startTime",
+      "description": "Gets or sets the scheduled time when an animation\u0027s playback should begin."
+    },
+    {
+      "name": "Animation.timeline",
+      "link": "/en-US/docs/Web/API/Animation/timeline",
+      "description": "Gets or sets the timeline associated with this animation."
+    },
+    {
+      "name": "Animation.oncancel",
+      "link": "/en-US/docs/Web/API/Animation/oncancel",
+      "description": "Gets and sets the event handler for the cancel event."
+    },
+    {
+      "name": "Animation.onfinish",
+      "link": "/en-US/docs/Web/API/Animation/onfinish",
+      "description": "Gets and sets the event handler for the finish event."
+    },
+    {
+      "name": "Animation.cancel()",
+      "link": "/en-US/docs/Web/API/Animation/cancel",
+      "description": "Clears all keyframeEffects caused by this animation and aborts its playback."
+    },
+    {
+      "name": "Animation.finish()",
+      "link": "/en-US/docs/Web/API/Animation/finish",
+      "description": "Seeks either end of an animation, depending on whether the animation is playing or reversing.",
+      "parameters": [
+        {
+          "name": "InvalidState",
+          "description": "The player\u0027s playback rate is 0 or the animation\u0027s playback rate is greater than 0 and the end time of the animation is infinity."
+        }
+      ]
+    },
+    {
+      "name": "Animation.pause()",
+      "link": "/en-US/docs/Web/API/Animation/pause",
+      "description": "Suspends playing of an animation.",
+      "parameters": [
+        {
+          "name": "InvalidStateError",
+          "description": "The animation\u0027s currentTime is unresolved (for example, if it\u0027s never been played or isn\u0027t currently playing) and the end time of the animation is positive infinity."
+        }
+      ]
+    },
+    {
+      "name": "Animation.play()",
+      "link": "/en-US/docs/Web/API/Animation/play",
+      "description": "Starts or resumes playing of an animation, or begins the animation again if it previously finished."
+    },
+    {
+      "name": "Animation.reverse()",
+      "link": "/en-US/docs/Web/API/Animation/reverse",
+      "description": "Reverses playback direction, stopping at the start of the animation. If the animation is finished or unplayed, it will play from end to beginning."
+    }
+  ]
+}

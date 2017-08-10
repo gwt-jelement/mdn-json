@@ -1,0 +1,41 @@
+{
+  "name": "SVGRectElement",
+  "description": "The SVGRectElement interface provides access to the properties of \u003crect\u003e elements, as well as methods to manipulate them.",
+  "members": [
+    {
+      "name": "SVGRectElement.x",
+      "link": "/en-US/docs/Web/API/SVGRectElement/x",
+      "description": "Returns an SVGAnimatedLength corresponding to the x attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.x",
+      "link": "/en-US/docs/Web/API/SVGRectElement/x",
+      "description": "Returns an SVGAnimatedLength corresponding to the x attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.y",
+      "link": "/en-US/docs/Web/API/SVGRectElement/y",
+      "description": "Returns an SVGAnimatedLength corresponding to the y attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.width",
+      "link": "/en-US/docs/Web/API/SVGRectElement/width",
+      "description": "Returns an SVGAnimatedLength corresponding to the width attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.height",
+      "link": "/en-US/docs/Web/API/SVGRectElement/height",
+      "description": "Returns an SVGAnimatedLength corresponding to the height attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.rx",
+      "link": "/en-US/docs/Web/API/SVGRectElement/rx",
+      "description": "Returns an SVGAnimatedLength corresponding to the rx attribute of the given \u003crect\u003e element."
+    },
+    {
+      "name": "SVGRectElement.ry",
+      "link": "/en-US/docs/Web/API/SVGRectElement/ry",
+      "description": "Returns an SVGAnimatedLength corresponding to the ry attribute of the given \u003crect\u003e element."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "MediaKeys",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The MediaKeys interface of EncryptedMediaExtensions API the represents a set of keys that an associated HTMLMediaElement can use for decryption of media data during playback.",
+  "members": [
+    {
+      "name": "MediaKeys.createSession()",
+      "link": "/en-US/docs/Web/API/MediaKeys/createSession",
+      "description": "Returns a new MediaKeySession object, which represents a context for message exchange with a content decryption module (CDM)."
+    },
+    {
+      "name": "MediaKeys.setServerCertificate()",
+      "link": "/en-US/docs/Web/API/MediaKeys/setServerCertificate",
+      "description": "Returns a Promise to a server certificate to be used to encrypt messages to the license server."
+    }
+  ]
+}

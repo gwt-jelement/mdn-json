@@ -1,0 +1,308 @@
+{
+  "name": "Range",
+  "description": "",
+  "members": [
+    {
+      "name": "Range.collapsed",
+      "link": "/en-US/docs/Web/API/Range/collapsed",
+      "description": "Returns a Boolean indicating whether the range\u0027s start and end points are at the same position."
+    },
+    {
+      "name": "Range.commonAncestorContainer",
+      "link": "/en-US/docs/Web/API/Range/commonAncestorContainer",
+      "description": "Returns the deepest Node that contains the startContainer and endContainer nodes."
+    },
+    {
+      "name": "Range.endContainer",
+      "link": "/en-US/docs/Web/API/Range/endContainer",
+      "description": "Returns the Node within which the Range ends."
+    },
+    {
+      "name": "Range.endOffset",
+      "link": "/en-US/docs/Web/API/Range/endOffset",
+      "description": "Returns a number representing where in the endContainer the Range ends."
+    },
+    {
+      "name": "Range.startContainer",
+      "link": "/en-US/docs/Web/API/Range/startContainer",
+      "description": "Returns the Node within which the Range starts."
+    },
+    {
+      "name": "Range.startOffset",
+      "link": "/en-US/docs/Web/API/Range/startOffset",
+      "description": "Returns a number representing where in the startContainer the Range starts."
+    },
+    {
+      "name": "Range()",
+      "link": "/en-US/docs/Web/API/Range/Range",
+      "description": "Returns a Range object with the global Document as its start and end."
+    },
+    {
+      "name": "Range.setStart()",
+      "link": "/en-US/docs/Web/API/Range/setStart",
+      "description": "Sets the start position of a Range.",
+      "parameters": [
+        {
+          "name": "startNode",
+          "description": "The Node where the Range should start."
+        },
+        {
+          "name": "startOffset ",
+          "description": "An integer greater than or equal to zero representing the offset for the start of the Range from the start of startNode."
+        }
+      ]
+    },
+    {
+      "name": "Range.setEnd()",
+      "link": "/en-US/docs/Web/API/Range/setEnd",
+      "description": "Sets the end position of a Range.",
+      "parameters": [
+        {
+          "name": "endNode",
+          "description": "The Node where the Range should end."
+        },
+        {
+          "name": "endOffset",
+          "description": "An integer greater than or equal to zero representing the offset for the end of the Range from the start of endNode."
+        }
+      ]
+    },
+    {
+      "name": "Range.setStartBefore()",
+      "link": "/en-US/docs/Web/API/Range/setStartBefore",
+      "description": "Sets the start position of a Range relative to another Node.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node before which the Range should start."
+        }
+      ]
+    },
+    {
+      "name": "Range.setStartAfter()",
+      "link": "/en-US/docs/Web/API/Range/setStartAfter",
+      "description": "Sets the start position of a Range relative to another Node.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to start the Range after."
+        }
+      ]
+    },
+    {
+      "name": "Range.setEndBefore()",
+      "link": "/en-US/docs/Web/API/Range/setEndBefore",
+      "description": "Sets the end position of a Range relative to another Node.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to end the Range before."
+        }
+      ]
+    },
+    {
+      "name": "Range.setEndAfter()",
+      "link": "/en-US/docs/Web/API/Range/setEndAfter",
+      "description": "Sets the end position of a Range relative to another Node.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to end the Range after."
+        }
+      ]
+    },
+    {
+      "name": "Range.selectNode()",
+      "link": "/en-US/docs/Web/API/Range/selectNode",
+      "description": "Sets the Range to contain the Node and its contents.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to select within a Range."
+        }
+      ]
+    },
+    {
+      "name": "Range.selectNodeContents()",
+      "link": "/en-US/docs/Web/API/Range/selectNodeContents",
+      "description": "Sets the Range to contain the contents of a Node.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node whose contents will be selected within a Range."
+        }
+      ]
+    },
+    {
+      "name": "Range.collapse()",
+      "link": "/en-US/docs/Web/API/Range/collapse",
+      "description": "Collapses the Range to one of its boundary points.",
+      "parameters": [
+        {
+          "name": "toStart Optional",
+          "description": "A boolean value: true collapses the Range to its start, false to its end. If omitted, it defaults to false ."
+        }
+      ]
+    },
+    {
+      "name": "Range.cloneContents()",
+      "link": "/en-US/docs/Web/API/Range/cloneContents",
+      "description": "Returns a DocumentFragment copying the nodes of a Range."
+    },
+    {
+      "name": "Range.deleteContents()",
+      "link": "/en-US/docs/Web/API/Range/deleteContents",
+      "description": "Removes the contents of a Range from the Document."
+    },
+    {
+      "name": "Range.extractContents()",
+      "link": "/en-US/docs/Web/API/Range/extractContents",
+      "description": "Moves contents of a Range from the document tree into a DocumentFragment."
+    },
+    {
+      "name": "Range.insertNode()",
+      "link": "/en-US/docs/Web/API/Range/insertNode",
+      "description": "Insert a Node at the start of a Range.",
+      "parameters": [
+        {
+          "name": "newNode",
+          "description": "The Node to insert at the start of the range."
+        }
+      ]
+    },
+    {
+      "name": "Range.surroundContents()",
+      "link": "/en-US/docs/Web/API/Range/surroundContents",
+      "description": "Moves content of a Range into a new Node.",
+      "parameters": [
+        {
+          "name": "newNode",
+          "description": "A Node to split based on the range."
+        }
+      ]
+    },
+    {
+      "name": "Range.compareBoundaryPoints()",
+      "link": "/en-US/docs/Web/API/Range/compareBoundaryPoints",
+      "description": "Compares the boundary points of the Range with another Range.",
+      "parameters": [
+        {
+          "name": "compare",
+          "description": "A number, -1, 0, or 1, indicating whether the corresponding boundary-point of the Range is respectively before, equal to, or after the corresponding boundary-point of sourceRange."
+        },
+        {
+          "name": "how",
+          "description": "A constant describing the comparison method: Range.END_TO_END compares the end boundary-point of sourceRange to the end boundary-point of Range. Range.END_TO_START compares the end boundary-point of sourceRange to the start boundary-point of Range. Range.START_TO_END compares the start boundary-point of sourceRange to the end boundary-point of Range. Range.START_TO_START compares the start boundary-point of sourceRange to the start boundary-point of Range. If the value of the parameter is invalid, a DOMException with a NOT_SUPPORTED_ERR code is thrown."
+        },
+        {
+          "name": "sourceRange ",
+          "description": "A Range to compare boundary points with the range."
+        }
+      ]
+    },
+    {
+      "name": "Range.cloneRange()",
+      "link": "/en-US/docs/Web/API/Range/cloneRange",
+      "description": "Returns a Range object with boundary points identical to the cloned Range."
+    },
+    {
+      "name": "Range.detach()",
+      "link": "/en-US/docs/Web/API/Range/detach",
+      "description": "Releases the Range from use to improve performance."
+    },
+    {
+      "name": "Range.toString()",
+      "link": "/en-US/docs/Web/API/Range/toString",
+      "description": "Returns the text of the Range."
+    },
+    {
+      "name": "Range.compareNode()",
+      "link": "/en-US/docs/Web/API/Range/compareNode",
+      "description": "Returns a constant representing whether the Node is before, after, inside, or surrounding the range.",
+      "parameters": [
+        {
+          "name": "NODE_BEFORE (0)",
+          "description": "Node starts before the Range"
+        },
+        {
+          "name": "NODE_AFTER (1)",
+          "description": "Node ends after the Range"
+        },
+        {
+          "name": "NODE_BEFORE_AND_AFTER (2)",
+          "description": "Node starts before and ends after the Range"
+        },
+        {
+          "name": "NODE_INSIDE (3)",
+          "description": "Node starts after and ends before the Range, i.e. the Node is completely selected by the Range."
+        },
+        {
+          "name": "referenceNode",
+          "description": "The Node to compare with the Range."
+        }
+      ]
+    },
+    {
+      "name": "Range.comparePoint()",
+      "link": "/en-US/docs/Web/API/Range/comparePoint",
+      "description": "Returns -1, 0, or 1 indicating whether the point occurs before, inside, or after the Range.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to compare with the Range."
+        },
+        {
+          "name": "offset",
+          "description": "An integer greater than or equal to zero representing the offset inside the referenceNode."
+        }
+      ]
+    },
+    {
+      "name": "Range.createContextualFragment()",
+      "link": "/en-US/docs/Web/API/Range/createContextualFragment",
+      "description": "Returns a DocumentFragment created from a given string of code.",
+      "parameters": [
+        {
+          "name": "tagString",
+          "description": "Text that contains text and tags to be converted to a document fragment."
+        }
+      ]
+    },
+    {
+      "name": "Range.getBoundingClientRect()",
+      "link": "/en-US/docs/Web/API/Range/getBoundingClientRect",
+      "description": "Returns a DOMRect object which bounds the entire contents of the Range; this would be the union of all the rectangles returned by range.getClientRects()."
+    },
+    {
+      "name": "Range.getClientRects()",
+      "link": "/en-US/docs/Web/API/Range/getClientRects",
+      "description": "Returns a list of DOMRect objects that aggregates the results of Element.getClientRects() for all the elements in the Range."
+    },
+    {
+      "name": "Range.intersectsNode()",
+      "link": "/en-US/docs/Web/API/Range/intersectsNode",
+      "description": "Returns a boolean indicating whether the given node intersects the Range.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to compare with the Range."
+        }
+      ]
+    },
+    {
+      "name": "Range.isPointInRange()",
+      "link": "/en-US/docs/Web/API/Range/isPointInRange",
+      "description": "Returns a boolean indicating whether the given point is in the Range.",
+      "parameters": [
+        {
+          "name": "referenceNode",
+          "description": "The Node to compare with the Range."
+        },
+        {
+          "name": "offset",
+          "description": "The offset into Node of the point to compare with the Range."
+        }
+      ]
+    }
+  ]
+}

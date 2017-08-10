@@ -1,0 +1,55 @@
+{
+  "name": "HMDVRDevice",
+  "description": "Obsolete This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time. Try to avoid using it. This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The HMDVRDevice interface of the WebVR API represents a head mounted display, providing access to information about each eye, and allowing us to modify the current field of view.",
+  "members": [
+    {
+      "name": "HMDVRDevice.getEyeParameters()",
+      "link": "/en-US/docs/Web/API/HMDVRDevice/getEyeParameters",
+      "description": "Returns current parameters for the eye specified as its argument (\"left\" or \"right\") — such as field of view information — stored in a VREyeParameters object.",
+      "parameters": [
+        {
+          "name": "whichEye",
+          "description": "A DOMString representing the eye you want to return information about. The value can be left or right."
+        }
+      ]
+    },
+    {
+      "name": "HMDVRDevice.setFieldOfView()",
+      "link": "/en-US/docs/Web/API/HMDVRDevice/setFieldOfView",
+      "description": "Sets the field of view for both eyes.",
+      "parameters": [
+        {
+          "name": "leftFOV Optional",
+          "description": "A VRFieldOfView object that defines the new field of view for the left eye. If not specified, the left eye field of view does not change."
+        },
+        {
+          "name": "rightFOV Optional",
+          "description": "A VRFieldOfView object that defines the new field of view for the right eye. If not specified, the right eye field of view does not change."
+        },
+        {
+          "name": "zNear Optional",
+          "description": "The distance from the eyes of the nearest point of the view. The closest things can be and still be in the view. If not specified, the default is used — 0.01."
+        },
+        {
+          "name": "zFar Optional",
+          "description": "The distance from the eyes of the farthest point of the view. The furthest away things can be and still be in the view. If not specified, the default is used — 10000.0."
+        }
+      ]
+    },
+    {
+      "name": "VRDevice.hardwareUnitId",
+      "link": "/en-US/docs/Web/API/VRDevice/hardwareUnitId",
+      "description": "Returns the distinct hardware ID for the overall hardware unit that this VRDevice is a part of. All devices that are part of the same physical piece of hardware will have the same hardwareUnitId."
+    },
+    {
+      "name": "VRDevice.deviceId",
+      "link": "/en-US/docs/Web/API/VRDevice/deviceId",
+      "description": "Returns the ID for this specific VRDevice. The ID shouldn’t change across browser restarts, allowing configuration data to be saved based on it."
+    },
+    {
+      "name": "VRDevice.deviceName",
+      "link": "/en-US/docs/Web/API/VRDevice/deviceName",
+      "description": "A human-readable name to identify the VRDevice."
+    }
+  ]
+}

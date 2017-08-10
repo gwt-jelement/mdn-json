@@ -1,0 +1,36 @@
+{
+  "name": "SVGImageElement",
+  "description": "The SVGImageElement interface corresponds to the \u003cimage\u003e element.",
+  "members": [
+    {
+      "name": "SVGImageElement.x",
+      "link": "/en-US/docs/Web/API/SVGImageElement/x",
+      "description": "An SVGAnimatedLength corresponding to the x attribute of the given \u003cimage\u003e element."
+    },
+    {
+      "name": "SVGImageElement.y",
+      "link": "/en-US/docs/Web/API/SVGImageElement/y",
+      "description": "An SVGAnimatedLength corresponding to the y attribute of the given \u003cimage\u003e element."
+    },
+    {
+      "name": "SVGImageElement.width",
+      "link": "/en-US/docs/Web/API/SVGImageElement/width",
+      "description": "An SVGAnimatedLength corresponding to the width attribute of the given \u003cimage\u003e element."
+    },
+    {
+      "name": "SVGImageElement.height",
+      "link": "/en-US/docs/Web/API/SVGImageElement/height",
+      "description": "An SVGAnimatedLength corresponding to the height attribute of the given \u003cimage\u003e element."
+    },
+    {
+      "name": "SVGImageElement.preserveAspectRatio",
+      "link": "/en-US/docs/Web/API/SVGImageElement/preserveAspectRatio",
+      "description": "An SVGAnimatedPreserveAspectRatio corresponding to the preserveAspectRatio attribute of the given \u003cimage\u003e element."
+    },
+    {
+      "name": "SVGImageElement.crossOrigin",
+      "link": "/en-US/docs/Web/API/SVGImageElement/crossOrigin",
+      "description": "A DOMString corresponding to the crossorigin attribute of the given \u003cimage\u003e element."
+    }
+  ]
+}

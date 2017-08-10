@@ -1,0 +1,16 @@
+{
+  "name": "HTMLModElement",
+  "description": "The HTMLModElement interface provides special properties (beyond the regular methods and properties available through the HTMLElement interface they also have available to them by inheritance) for manipulating modification elements, that is \u003cdel\u003e and \u003cins\u003e.",
+  "members": [
+    {
+      "name": "HTMLModElement.cite",
+      "link": "/en-US/docs/Web/API/HTMLModElement/cite",
+      "description": "Is a DOMString reflecting the cite HTML attribute, containing a URI of a resource explaining the change."
+    },
+    {
+      "name": "HTMLModElement.datetime",
+      "link": "/en-US/docs/Web/API/HTMLModElement/datetime",
+      "description": "Is a DOMString reflecting the datetime HTML attribute, containing a date-and-time string representing a timestamp for the change."
+    }
+  ]
+}

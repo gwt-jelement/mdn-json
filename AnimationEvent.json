@@ -1,0 +1,71 @@
+{
+  "name": "AnimationEvent",
+  "description": "",
+  "members": [
+    {
+      "name": "AnimationEvent()",
+      "link": "/en-US/docs/Web/API/AnimationEvent/AnimationEvent",
+      "description": "Creates an AnimationEvent event with the given parameters.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A DOMString representing the name of the type of the AnimationEvent. It is case-sensitive and can be: \u0027animationstart\u0027, \u0027animationend\u0027, or \u0027animationiteration\u0027."
+        },
+        {
+          "name": "animationName Optional",
+          "description": "A DOMString containing the value of the animation-name CSS property associated with the transition. It defaults to \"\"."
+        },
+        {
+          "name": "elapsedTime Optional",
+          "description": "A float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused. For an \"animationstart\" event, elapsedTime is 0.0 unless there was a negative value for animation-delay, in which case the event will be fired with elapsedTime containing  (-1 * delay). It defaults to 0.0."
+        },
+        {
+          "name": "pseudoElement Optional",
+          "description": "Is a DOMString, starting with \"::\", containing the name of the pseudo-element the animation runs on. If the animation doesn\u0027t run on a pseudo-element but on the element itself, specify an empty string: \"\". It defaults to \"\"."
+        }
+      ]
+    },
+    {
+      "name": "AnimationEvent.animationName",
+      "link": "/en-US/docs/Web/API/AnimationEvent/animationName",
+      "description": "Is a DOMString containing the value of the animation-name CSS property associated with the transition."
+    },
+    {
+      "name": "AnimationEvent.elapsedTime",
+      "link": "/en-US/docs/Web/API/AnimationEvent/elapsedTime",
+      "description": "Is a float giving the amount of time the animation has been running, in seconds, when this event fired, excluding any time the animation was paused. For an \"animationstart\" event, elapsedTime is 0.0 unless there was a negative value for animation-delay, in which case the event will be fired with elapsedTime containing  (-1 * delay)."
+    },
+    {
+      "name": "AnimationEvent.pseudoElement",
+      "link": "/en-US/docs/Web/API/AnimationEvent/pseudoElement",
+      "description": "Is a DOMString, starting with \u0027::\u0027, containing the name of the pseudo-element the animation runs on. If the animation doesn\u0027t run on a pseudo-element but on the element, an empty string: \u0027\u0027."
+    },
+    {
+      "name": "AnimationEvent.initAnimationEvent()",
+      "link": "/en-US/docs/Web/API/AnimationEvent/initAnimationEvent",
+      "description": "Initializes a AnimationEvent created using the deprecated Document.createEvent(\"AnimationEvent\") method.",
+      "parameters": [
+        {
+          "name": "typeArg",
+          "description": "A DOMString identifying the specific type of animation event that occurred. The following values are allowed: Value Meaning animationstart The animation has started. animationend The animation completed. animationiteration The current iteration just completed."
+        },
+        {
+          "name": "canBubbleArg",
+          "description": "A Boolean flag indicating if the event can bubble (true) or not (false)."
+        },
+        {
+          "name": "cancelableArg",
+          "description": "A Boolean flag indicating if the event associated action can be avoided (true) or not (false)."
+        },
+        {
+          "name": "animationNameArg",
+          "description": "A DOMString containing the value of the animation-name CSS property associated with the transition."
+        },
+        {
+          "name": "elapsedTimeArg",
+          "description": "A float indicating the amount of time the animation has been running, in seconds, as of the time the event was fired, excluding any time the animation was paused. For an \"animationstart\" event, elapsedTime is 0.0 unless there was a negative value for animation-delay, in which case the event will be fired with elapsedTime containing  (-1 * delay)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "HTMLTableCaptionElement",
+  "description": "The HTMLTableCaptionElement interface special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating table caption elements.",
+  "members": [
+    {
+      "name": "HTMLTableCaptionElement.align",
+      "link": "/en-US/docs/Web/API/HTMLTableCaptionElement/align",
+      "description": "Is a DOMString which represents an enumerated attribute indicating alignment of the caption with respect to the table."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "SVGFEDiffuseLightingElement",
+  "description": "The SVGFEDiffuseLightingElement interface corresponds to the \u003cfeDiffuseLighting\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEDiffuseLightingElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEDiffuseLightingElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    },
+    {
+      "name": "SVGFEDiffuseLightingElement.surfaceScale",
+      "link": "/en-US/docs/Web/API/SVGFEDiffuseLightingElement/surfaceScale",
+      "description": "An SVGAnimatedNumber corresponding to the surfaceScale attribute of the given element."
+    },
+    {
+      "name": "SVGFEDiffuseLightingElement.diffuseConstant",
+      "link": "/en-US/docs/Web/API/SVGFEDiffuseLightingElement/diffuseConstant",
+      "description": "An SVGAnimatedNumber corresponding to the diffuseConstant attribute of the given element."
+    },
+    {
+      "name": "SVGFEDiffuseLightingElement.kernelUnitLengthX",
+      "link": "/en-US/docs/Web/API/SVGFEDiffuseLightingElement/kernelUnitLengthX",
+      "description": "An SVGAnimatedNumber corresponding to the X component of the kernelUnitLength attribute of the given element."
+    },
+    {
+      "name": "SVGFEDiffuseLightingElement.kernelUnitLengthY",
+      "link": "/en-US/docs/Web/API/SVGFEDiffuseLightingElement/kernelUnitLengthY",
+      "description": "An SVGAnimatedNumber corresponding to the Y component of the kernelUnitLength attribute of the given element."
+    }
+  ]
+}

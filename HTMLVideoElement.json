@@ -1,0 +1,66 @@
+{
+  "name": "HTMLVideoElement",
+  "description": "The HTMLVideoElement interface provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement.",
+  "members": [
+    {
+      "name": "HTMLVideoElement.height",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/height",
+      "description": "Is a DOMString that reflects the height HTML attribute, which specifies the height of the display area, in CSS pixels."
+    },
+    {
+      "name": "HTMLVideoElement.poster",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/poster",
+      "description": "Is a DOMString that reflects the poster HTML attribute, which specifies an image to show while no video data is available."
+    },
+    {
+      "name": "HTMLVideoElement.videoHeight",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/videoHeight",
+      "description": "Returns an unsigned long containing the intrinsic height of the resource in CSS pixels, taking into account the dimensions, aspect ratio, clean aperture, resolution, and so forth, as defined for the format used by the resource. If the element\u0027s ready state is HAVE_NOTHING, the value is 0."
+    },
+    {
+      "name": "HTMLVideoElement.videoWidth",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/videoWidth",
+      "description": "Returns an unsigned long containing the intrinsic width of the resource in CSS pixels, taking into account the dimensions, aspect ratio, clean aperture, resolution, and so forth, as defined for the format used by the resource. If the element\u0027s ready state is HAVE_NOTHING, the value is 0."
+    },
+    {
+      "name": "HTMLVideoElement.width",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/width",
+      "description": "Is a DOMString that reflects the width HTML attribute, which specifies the width of the display area, in CSS pixels."
+    },
+    {
+      "name": "HTMLVideoElement.mozParsedFrames",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozParsedFrames",
+      "description": "Returns an unsigned long with the count of video frames that have been parsed from the media resource."
+    },
+    {
+      "name": "HTMLVideoElement.mozDecodedFrames",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozDecodedFrames",
+      "description": "Returns an unsigned long with the count of parsed video frames that have been decoded into images."
+    },
+    {
+      "name": "HTMLVideoElement.mozPresentedFrames",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozPresentedFrames",
+      "description": "Returns an unsigned long with the count of decoded frames that have been presented to the rendering pipeline for painting."
+    },
+    {
+      "name": "HTMLVideoElement.mozPaintedFrames",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozPaintedFrames",
+      "description": "Returns an unsigned long with the count of presented frames which were painted on the screen."
+    },
+    {
+      "name": "HTMLVideoElement.mozFrameDelay",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozFrameDelay",
+      "description": "Returns an double with the time which the last painted video frame was late by, in seconds."
+    },
+    {
+      "name": "HTMLVideoElement.mozHasAudio",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/mozHasAudio",
+      "description": "Returns a Boolean indicating if there is some audio associated with the video."
+    },
+    {
+      "name": "HTMLVideoElement.getVideoPlaybackQuality()",
+      "link": "/en-US/docs/Web/API/HTMLVideoElement/getVideoPlaybackQuality",
+      "description": "Returns a VideoPlaybackQuality objects that contains the current playback metrics."
+    }
+  ]
+}

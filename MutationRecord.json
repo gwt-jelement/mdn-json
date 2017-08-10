@@ -1,0 +1,5 @@
+{
+  "name": "MutationRecord",
+  "description": "A MutationRecord represents an individual DOM mutation. It is the object that is passed to MutationObserver\u0027s callback.",
+  "members": []
+}

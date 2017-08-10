@@ -1,0 +1,26 @@
+{
+  "name": "DOMConfiguration",
+  "description": "",
+  "members": [
+    {
+      "name": "DOMConfiguration.parameterNames",
+      "link": "/en-US/docs/Web/API/DOMConfiguration/parameterNames",
+      "description": "Is a DOMStringList"
+    },
+    {
+      "name": "DOMConfiguration.canSetParameter()",
+      "link": "/en-US/docs/Web/API/DOMConfiguration/canSetParameter",
+      "description": "Returns a Boolean"
+    },
+    {
+      "name": "DOMConfiguration.getParameter()",
+      "link": "/en-US/docs/Web/API/DOMConfiguration/getParameter",
+      "description": "Returns a DOMUserData"
+    },
+    {
+      "name": "DOMConfiguration.setParameter()",
+      "link": "/en-US/docs/Web/API/DOMConfiguration/setParameter",
+      "description": "Sets a parameter"
+    }
+  ]
+}

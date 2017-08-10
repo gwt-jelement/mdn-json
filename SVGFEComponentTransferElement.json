@@ -1,0 +1,11 @@
+{
+  "name": "SVGFEComponentTransferElement",
+  "description": "The SVGFEComponentTransferElement interface corresponds to the \u003cfeComponentTransfer\u003e element.",
+  "members": [
+    {
+      "name": "SVGFEComponentTransferElement.in1",
+      "link": "/en-US/docs/Web/API/SVGFEComponentTransferElement/in1",
+      "description": "An SVGAnimatedString corresponding to the in attribute of the given element."
+    }
+  ]
+}

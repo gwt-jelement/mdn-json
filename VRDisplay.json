@@ -1,0 +1,136 @@
+{
+  "name": "VRDisplay",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The VRDisplay interface of the WebVR API represents any VR device supported by this API. It includes generic information such as device IDs and descriptions, as well as methods for starting to present a VR scene, retrieving eye parameters and display capabilities, and other important functionality.",
+  "members": [
+    {
+      "name": "VRDisplay.capabilities",
+      "link": "/en-US/docs/Web/API/VRDisplay/capabilities",
+      "description": "Returns a VRDisplayCapabilities object that indicates the various capabilities of the VRDisplay."
+    },
+    {
+      "name": "VRDisplay.depthFar",
+      "link": "/en-US/docs/Web/API/VRDisplay/depthFar",
+      "description": "Gets and sets the z-depth defining the far plane of the eye view frustum, i.e. the furthest viewable boundary of the scene."
+    },
+    {
+      "name": "VRDisplay.depthNear",
+      "link": "/en-US/docs/Web/API/VRDisplay/depthNear",
+      "description": "Gets and sets the z-depth defining the near plane of the eye view frustum, i.e. the nearest viewable boundary of the scene."
+    },
+    {
+      "name": "VRDisplay.displayId",
+      "link": "/en-US/docs/Web/API/VRDisplay/displayId",
+      "description": "Returns an identifier for this particular VRDisplay, which is also used as an association point in the Gamepad API (see Gamepad.displayId)."
+    },
+    {
+      "name": "VRDisplay.displayName",
+      "link": "/en-US/docs/Web/API/VRDisplay/displayName",
+      "description": "Returns a human-readable name to identify the VRDisplay."
+    },
+    {
+      "name": "VRDisplay.isConnected",
+      "link": "/en-US/docs/Web/API/VRDisplay/isConnected",
+      "description": "Returns a Boolean indicating whether the VRDisplay is connected to the computer."
+    },
+    {
+      "name": "VRDisplay.isPresenting",
+      "link": "/en-US/docs/Web/API/VRDisplay/isPresenting",
+      "description": "Returns a Boolean indicating whether the VRDisplay is currently having content presented through it."
+    },
+    {
+      "name": "VRDisplay.stageParameters",
+      "link": "/en-US/docs/Web/API/VRDisplay/stageParameters",
+      "description": "Returns a VRStageParameters object containing room-scale parameters, if the VRDisplay is capable of supporting room-scale experiences."
+    },
+    {
+      "name": "VRDisplay.getEyeParameters()",
+      "link": "/en-US/docs/Web/API/VRDisplay/getEyeParameters",
+      "description": "Returns the VREyeParameters object containing the eye parameters for the specified eye.",
+      "parameters": [
+        {
+          "name": "whichEye",
+          "description": "A DOMString representing the eye you want to return the eye parameters for. Available values are left and right (defined in the VREye enum)."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplay.getFrameData()",
+      "link": "/en-US/docs/Web/API/VRDisplay/getFrameData",
+      "description": "Accepts a VRFrameData object and populates it with the information required to render the current frame.",
+      "parameters": [
+        {
+          "name": "frameData",
+          "description": "The VRFrameData object you want to populate."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplay.getLayers()",
+      "link": "/en-US/docs/Web/API/VRDisplay/getLayers",
+      "description": "Returns the layers currently being presented by the VRDisplay."
+    },
+    {
+      "name": "VRDisplay.resetPose()",
+      "link": "/en-US/docs/Web/API/VRDisplay/resetPose",
+      "description": "Resets the pose for this VRDisplay, treating its current VRPose.position and VRPose.orientation as the \"origin/zero\" values."
+    },
+    {
+      "name": "VRDisplay.cancelAnimationFrame()",
+      "link": "/en-US/docs/Web/API/VRDisplay/cancelAnimationFrame",
+      "description": "A special implementation of Window.cancelAnimationFrame that allows callbacks registered with VRDisplay.requestAnimationFrame() to be unregistered.",
+      "parameters": [
+        {
+          "name": "handle",
+          "description": "The handle returned by the VRDisplay.requestAnimationFrame() call that you want to unregister."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplay.requestAnimationFrame()",
+      "link": "/en-US/docs/Web/API/VRDisplay/requestAnimationFrame",
+      "description": "A special implementation of Window.requestAnimationFrame containing a callback function that will be called every time a new frame of the VRDisplay presentation is rendered.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "A callback function that will be called every time a new frame of the VRDisplay presentation is rendered."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplay.requestPresent()",
+      "link": "/en-US/docs/Web/API/VRDisplay/requestPresent",
+      "description": "Starts the VRDisplay presenting a scene.",
+      "parameters": [
+        {
+          "name": "layers",
+          "description": "An array of VRLayerInit objects representing the scene you want to present. At the moment, this can be a minimum of 0 and a maximum of 1."
+        }
+      ]
+    },
+    {
+      "name": "VRDisplay.exitPresent()",
+      "link": "/en-US/docs/Web/API/VRDisplay/exitPresent",
+      "description": "Stops the VRDisplay presenting a scene."
+    },
+    {
+      "name": "VRDisplay.submitFrame()",
+      "link": "/en-US/docs/Web/API/VRDisplay/submitFrame",
+      "description": "Captures the current state of the VRLayer currently being presented and displays it on the VRDisplay."
+    },
+    {
+      "name": "VRDisplay.getPose()",
+      "link": "/en-US/docs/Web/API/VRDisplay/getPose",
+      "description": "Returns a VRPose object defining the future predicted pose of the VRDisplay as it will be when the current frame is actually presented. This method is deprecated — instead, you should use VRDisplay.getFrameData(), which also provides a VRPose object."
+    },
+    {
+      "name": "VRDisplay.getImmediatePose()",
+      "link": "/en-US/docs/Web/API/VRDisplay/getImmediatePose",
+      "description": "Returns a VRPose object defining the current pose of the VRDisplay, with no prediction applied. This is no longer needed, and has been removed from the spec."
+    },
+    {
+      "name": "VRDisplay.hardwareUnitId",
+      "link": "/en-US/docs/Web/API/VRDisplay/hardwareUnitId",
+      "description": "Returns a DOMString defining the shared ID of the display, and any other devices that are part of that hardware set (e.g. controllers). This is no longer needed, and has been removed from the spec. Displays now use VRDisplay.displayId, and corresponsing controllers will now return the same ID under Gamepad.displayId."
+    }
+  ]
+}

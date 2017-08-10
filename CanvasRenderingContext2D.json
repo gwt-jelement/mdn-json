@@ -1,0 +1,1251 @@
+{
+  "name": "CanvasRenderingContext2D",
+  "description": "The CanvasRenderingContext2D interface is used for drawing rectangles, text, images and other objects onto the canvas element. It provides the 2D rendering context for the drawing surface of a \u003ccanvas\u003e element.   To get an object of this interface, call getContext() on a \u003ccanvas\u003e element, supplying \"2d\" as the argument:",
+  "members": [
+    {
+      "name": "CanvasRenderingContext2D.clearRect()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect",
+      "description": "Sets all pixels in the rectangle defined by starting point (x, y) and size (width, height) to transparent black, erasing any previously drawn content.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "width",
+          "description": "The rectangle\u0027s width."
+        },
+        {
+          "name": "height",
+          "description": "The rectangle\u0027s height."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.fillRect()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect",
+      "description": "Draws a filled rectangle at (x, y) position whose size is determined by width and height.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x component of the coordinates for the rectangle\u0027s starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y component of the coordinates for the rectangle\u0027s starting point."
+        },
+        {
+          "name": "width",
+          "description": "The rectangle\u0027s width."
+        },
+        {
+          "name": "height",
+          "description": "The rectangle\u0027s height."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.strokeRect()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/strokeRect",
+      "description": "Paints a rectangle which has a starting point at (x, y) and has a w width and an h height onto the canvas, using the current stroke style.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "width",
+          "description": "The rectangle\u0027s width."
+        },
+        {
+          "name": "height",
+          "description": "The rectangle\u0027s height."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.fillText()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/fillText",
+      "description": "Draws (fills) a given text at the given (x,y) position.",
+      "parameters": [
+        {
+          "name": "text",
+          "description": "The text to render using the current font, textAlign, textBaseline, and direction values."
+        },
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the text starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the text starting point."
+        },
+        {
+          "name": "maxWidth Optional",
+          "description": "The maximum width to draw.  If specified, and the string is computed to be wider than this width, the font is adjusted to use a more horizontally condensed font (if one is available or if a reasonably readable one can be synthesized by scaling the current font horizontally) or a smaller font."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.strokeText()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/strokeText",
+      "description": "Draws (strokes) a given text at the given (x, y) position.",
+      "parameters": [
+        {
+          "name": "text",
+          "description": "The text to render using the current font, textAlign, textBaseline, and direction values."
+        },
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the text starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the text starting point."
+        },
+        {
+          "name": "maxWidth Optional",
+          "description": "The maximum width to draw.  If specified, and the string is computed to be wider than this width, the font is adjusted to use a more horizontally condensed font (if one is available or if a reasonably readable one can be synthesized by scaling the current font horizontally) or a smaller font."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.measureText()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/measureText",
+      "description": "Returns a TextMetrics object.",
+      "parameters": [
+        {
+          "name": "text",
+          "description": "The text to measure."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.lineWidth",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth",
+      "description": "Width of lines. Default 1.0",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A number specifying the line width in space units. Zero, negative, Infinity and NaN values are ignored."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.lineCap",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap",
+      "description": "Type of endings on the end of lines. Possible values: butt (default), round, square.",
+      "parameters": [
+        {
+          "name": "butt",
+          "description": "The ends of lines are squared off at the endpoints."
+        },
+        {
+          "name": "round",
+          "description": "The ends of lines are rounded."
+        },
+        {
+          "name": "square",
+          "description": "The ends of lines are squared off by adding a box with an equal width and half the height of the line\u0027s thickness."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.lineJoin",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin",
+      "description": "Defines the type of corners where two lines meet. Possible values: round, bevel, miter (default).",
+      "parameters": [
+        {
+          "name": "round",
+          "description": "Rounds off the corners of a shape by filling an additional sector of disc centered at the common endpoint of connected segments. The radius for these rounded corners is equal to the line width."
+        },
+        {
+          "name": "bevel",
+          "description": "Fills an additional triangular area between the common endpoint of connected segments, and the separate outside rectangular corners of each segment."
+        },
+        {
+          "name": "miter",
+          "description": "Connected segments are joined by extending their outside edges to connect at a single point, with the effect of filling an additional lozenge-shaped area. This setting is affected by the miterLimit property."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.miterLimit",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/miterLimit",
+      "description": "Miter limit ratio. Default 10.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A number specifying the miter limit ratio in space units. Zero, negative, Infinity and NaN values are ignored."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.getLineDash()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/getLineDash",
+      "description": "Returns the current line dash pattern array containing an even number of non-negative numbers."
+    },
+    {
+      "name": "CanvasRenderingContext2D.setLineDash()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash",
+      "description": "Sets the current line dash pattern.",
+      "parameters": [
+        {
+          "name": "segments",
+          "description": "An Array of numbers which specify distances to alternately draw a line and a gap (in coordinate space units). If the number of elements in the array is odd, the elements of the array get copied and concatenated. For example, [5, 15, 25] will become [5, 15, 25, 5, 15, 25]. If the array is empty, the line dash list is cleared and line strokes return to being solid."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.lineDashOffset",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset",
+      "description": "Specifies where to start a dash array on a line.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A float specifying the amount of the offset. Initially 0.0."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.font",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/font",
+      "description": "Font setting. Default value 10px sans-serif.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A DOMString parsed as CSS font value. The default font is 10px sans-serif."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.textAlign",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign",
+      "description": "Text alignment setting. Possible values: start (default), end, left, right or center.",
+      "parameters": [
+        {
+          "name": "left",
+          "description": "The text is left-aligned."
+        },
+        {
+          "name": "right",
+          "description": "The text is right-aligned."
+        },
+        {
+          "name": "center",
+          "description": "The text is centered."
+        },
+        {
+          "name": "start",
+          "description": "The text is aligned at the normal start of the line (left-aligned for left-to-right locales, right-aligned for right-to-left locales)."
+        },
+        {
+          "name": "end",
+          "description": "The text is aligned at the normal end of the line (right-aligned for left-to-right locales, left-aligned for right-to-left locales)."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.textBaseline",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline",
+      "description": "Baseline alignment setting. Possible values: top, hanging, middle, alphabetic (default), ideographic, bottom.",
+      "parameters": [
+        {
+          "name": "top",
+          "description": "The text baseline is the top of the em square."
+        },
+        {
+          "name": "hanging",
+          "description": "The text baseline is the hanging baseline."
+        },
+        {
+          "name": "middle",
+          "description": "The text baseline is the middle of the em square."
+        },
+        {
+          "name": "alphabetic",
+          "description": "The text baseline is the normal alphabetic baseline."
+        },
+        {
+          "name": "ideographic",
+          "description": "The text baseline is the ideographic baseline; this is the bottom of the body of the characters, if the main body of characters protrudes beneath the alphabetic baseline."
+        },
+        {
+          "name": "bottom",
+          "description": "The text baseline is the bottom of the bounding box. This differs from the ideographic baseline in that the ideographic baseline doesn\u0027t consider descenders."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.direction",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/direction",
+      "description": "Directionality. Possible values: ltr, rtl, inherit (default).",
+      "parameters": [
+        {
+          "name": "ltr",
+          "description": "The text direction is left-to-right."
+        },
+        {
+          "name": "rtl",
+          "description": "The text direction is right-to-left."
+        },
+        {
+          "name": "inherit",
+          "description": "The text direction is inherited from the \u003ccanvas\u003e element or the Document as appropriate."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.fillStyle",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle",
+      "description": "Color or style to use inside shapes. Default #000 (black).",
+      "parameters": [
+        {
+          "name": "color",
+          "description": "A DOMString parsed as CSS \u003ccolor\u003e value."
+        },
+        {
+          "name": "gradient",
+          "description": "A CanvasGradient object (a linear or radial gradient)."
+        },
+        {
+          "name": "pattern",
+          "description": "A CanvasPattern object (a repetitive image)."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.strokeStyle",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/strokeStyle",
+      "description": "Color or style to use for the lines around shapes. Default #000 (black).",
+      "parameters": [
+        {
+          "name": "color",
+          "description": "A DOMString parsed as CSS \u003ccolor\u003e value."
+        },
+        {
+          "name": "gradient",
+          "description": "A CanvasGradient object (a linear or radial gradient)."
+        },
+        {
+          "name": "pattern",
+          "description": "A CanvasPattern object (a repetitive image)."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.createLinearGradient()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/createLinearGradient",
+      "description": "Creates a linear gradient along the line given by the coordinates represented by the parameters.",
+      "parameters": [
+        {
+          "name": "x0",
+          "description": "The x axis of the coordinate of the start point."
+        },
+        {
+          "name": "y0",
+          "description": "The y axis of the coordinate of the start point."
+        },
+        {
+          "name": "x1",
+          "description": "The x axis of the coordinate of the end point."
+        },
+        {
+          "name": "y1",
+          "description": "The y axis of the coordinate of the end point."
+        },
+        {
+          "name": "CanvasGradient",
+          "description": "A linear CanvasGradient initialized with the specified line."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.createRadialGradient()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/createRadialGradient",
+      "description": "Creates a radial gradient given by the coordinates of the two circles represented by the parameters.",
+      "parameters": [
+        {
+          "name": "x0",
+          "description": "The x axis of the coordinate of the start circle."
+        },
+        {
+          "name": "y0",
+          "description": "The y axis of the coordinate of the start circle."
+        },
+        {
+          "name": "r0",
+          "description": "The radius of the start circle."
+        },
+        {
+          "name": "x1",
+          "description": "The x axis of the coordinate of the end circle."
+        },
+        {
+          "name": "y1",
+          "description": "The y axis of the coordinate of the end circle."
+        },
+        {
+          "name": "r1",
+          "description": "The radius of the end circle."
+        },
+        {
+          "name": "CanvasGradient",
+          "description": "A radial CanvasGradient initialized with the two specified circles."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.createPattern()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/createPattern",
+      "description": "Creates a pattern using the specified image (a CanvasImageSource). It repeats the source in the directions specified by the repetition argument. This method returns a CanvasPattern.",
+      "parameters": [
+        {
+          "name": "image",
+          "description": "A CanvasImageSource to be used as image to repeat. It can either be a: HTMLImageElement (\u003cimg\u003e), HTMLVideoElement (\u003cvideo\u003e), HTMLCanvasElement (\u003ccanvas\u003e), CanvasRenderingContext2D, ImageBitmap, ImageData, or a Blob."
+        },
+        {
+          "name": "repetition",
+          "description": "A DOMString indicating how to repeat the image. Possible values are: \"repeat\" (both directions), \"repeat-x\" (horizontal only), \"repeat-y\" (vertical only), or \"no-repeat\" (neither). If repetition is an empty string (\u0027\u0027) or null (but not undefined), repetition will be \"repeat\"."
+        },
+        {
+          "name": "CanvasPattern",
+          "description": "An opaque object describing a pattern."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.shadowBlur",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/shadowBlur",
+      "description": "Specifies the blurring effect. Default 0",
+      "parameters": [
+        {
+          "name": "level",
+          "description": "A float specifying the level of the blurring effect. The default value is 0. Negative, Infinity or NaN values are ignored."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.shadowColor",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/shadowColor",
+      "description": "Color of the shadow. Default fully-transparent black.",
+      "parameters": [
+        {
+          "name": "color",
+          "description": "A DOMString parsed as CSS \u003ccolor\u003e value. The default value is fully-transparent black."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.shadowOffsetX",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetX",
+      "description": "Horizontal distance the shadow will be offset. Default 0.",
+      "parameters": [
+        {
+          "name": "offset",
+          "description": "A float specifying the distance that the shadow will be offset in horizontal distance. The default value is 0. Infinity or NaN values are ignored."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.shadowOffsetY",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetY",
+      "description": "Vertical distance the shadow will be offset. Default 0.",
+      "parameters": [
+        {
+          "name": "offset",
+          "description": "A float specifying the distance that the shadow will be offset in vertical distance. The default value is 0. Infinity or NaN values are ignored."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.beginPath()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath",
+      "description": "Starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path."
+    },
+    {
+      "name": "CanvasRenderingContext2D.closePath()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/closePath",
+      "description": "Causes the point of the pen to move back to the start of the current sub-path. It tries to draw a straight line from the current point to the start. If the shape has already been closed or has only one point, this function does nothing."
+    },
+    {
+      "name": "CanvasRenderingContext2D.moveTo()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo",
+      "description": "Moves the starting point of a new sub-path to the (x, y) coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the point."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.lineTo()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo",
+      "description": "Connects the last point in the subpath to the x, y coordinates with a straight line.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the end of the line."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the end of the line."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.bezierCurveTo()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveTo",
+      "description": "Adds a cubic Bézier curve to the path. It requires three points. The first two points are control points and the third one is the end point. The starting point is the last point in the current path, which can be changed using moveTo() before creating the Bézier curve.",
+      "parameters": [
+        {
+          "name": "cp1x",
+          "description": "The x axis of the coordinate for the first control point."
+        },
+        {
+          "name": "cp1y",
+          "description": "The y axis of the coordinate for first control point."
+        },
+        {
+          "name": "cp2x",
+          "description": "The x axis of the coordinate for the second control point."
+        },
+        {
+          "name": "cp2y",
+          "description": "The y axis of the coordinate for the second control point."
+        },
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the end point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the end point."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.quadraticCurveTo()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo",
+      "description": "Adds a quadratic Bézier curve to the current path.",
+      "parameters": [
+        {
+          "name": "cpx",
+          "description": "The x axis of the coordinate for the control point."
+        },
+        {
+          "name": "cpy",
+          "description": "The y axis of the coordinate for the control point."
+        },
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the end point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the end point."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.arc()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/arc",
+      "description": "Adds an arc to the path which is centered at (x, y) position with radius r starting at startAngle and ending at endAngle going in the given direction by anticlockwise (defaulting to clockwise).",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x coordinate of the arc\u0027s center."
+        },
+        {
+          "name": "y",
+          "description": "The y coordinate of the arc\u0027s center."
+        },
+        {
+          "name": "radius",
+          "description": "The arc\u0027s radius."
+        },
+        {
+          "name": "startAngle",
+          "description": "The angle at which the arc starts, measured clockwise from the positive x axis and expressed in radians."
+        },
+        {
+          "name": "endAngle",
+          "description": "The angle at which the arc ends, measured clockwise from the positive x axis and expressed in radians."
+        },
+        {
+          "name": "anticlockwise Optional",
+          "description": "An optional Boolean which, if true, causes the arc to be drawn counter-clockwise between the two angles. By default it is drawn clockwise."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.arcTo()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/arcTo",
+      "description": "Adds an arc to the path with the given control points and radius, connected to the previous point by a straight line.",
+      "parameters": [
+        {
+          "name": "x1",
+          "description": "The x axis of the coordinate for the first control point."
+        },
+        {
+          "name": "y1",
+          "description": "The y axis of the coordinate for the first control point."
+        },
+        {
+          "name": "x2",
+          "description": "The x axis of the coordinate for the second control point."
+        },
+        {
+          "name": "y2",
+          "description": "The y axis of the coordinate for the second control point."
+        },
+        {
+          "name": "radius",
+          "description": "The arc\u0027s radius."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.ellipse()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/ellipse",
+      "description": "Adds an ellipse to the path which is centered at (x, y) position with the radii radiusX and radiusY starting at startAngle and ending at endAngle going in the given direction by anticlockwise (defaulting to clockwise).",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the ellipse\u0027s center."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the ellipse\u0027s center."
+        },
+        {
+          "name": "radiusX",
+          "description": "The ellipse\u0027s major-axis radius."
+        },
+        {
+          "name": "radiusY",
+          "description": "The ellipse\u0027s minor-axis radius."
+        },
+        {
+          "name": "rotation",
+          "description": "The rotation for this ellipse, expressed in radians."
+        },
+        {
+          "name": "startAngle",
+          "description": "The starting point, measured from the x axis, from which it will be drawn, expressed in radians."
+        },
+        {
+          "name": "endAngle",
+          "description": "The end ellipse\u0027s angle to which it will be drawn, expressed in radians."
+        },
+        {
+          "name": "anticlockwise Optional",
+          "description": "An optional Boolean which, if true, draws the ellipse anticlockwise (counter-clockwise), otherwise in a clockwise direction."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.rect()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/rect",
+      "description": "Creates a path for a rectangle at position (x, y) with a size that is determined by width and height.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The x axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "y",
+          "description": "The y axis of the coordinate for the rectangle starting point."
+        },
+        {
+          "name": "width",
+          "description": "The rectangle\u0027s width."
+        },
+        {
+          "name": "height",
+          "description": "The rectangle\u0027s height."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.fill()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/fill",
+      "description": "Fills the subpaths with the current fill style.",
+      "parameters": [
+        {
+          "name": "fillRule",
+          "description": "The algorithm by which to determine if a point is inside a path or outside a path. Possible values: \"nonzero\": The non-zero winding rule, which is the default rule. \"evenodd\": The even-odd winding rule."
+        },
+        {
+          "name": "path",
+          "description": "A Path2D path to fill."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.stroke()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/stroke",
+      "description": "Strokes the subpaths with the current stroke style.",
+      "parameters": [
+        {
+          "name": "path",
+          "description": "A Path2D path to stroke."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.drawFocusIfNeeded()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/drawFocusIfNeeded",
+      "description": "If a given element is focused, this method draws a focus ring around the current path.",
+      "parameters": [
+        {
+          "name": "element",
+          "description": "The element to check whether it is focused or not."
+        },
+        {
+          "name": "path",
+          "description": "A Path2D path to use."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.scrollPathIntoView()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/scrollPathIntoView",
+      "description": "Scrolls the current path or a given path into the view.",
+      "parameters": [
+        {
+          "name": "path",
+          "description": "A Path2D path to use."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.clip()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/clip",
+      "description": "Creates a clipping path from the current sub-paths. Everything drawn after clip() is called appears inside the clipping path only. For an example, see Clipping paths in the Canvas tutorial.",
+      "parameters": [
+        {
+          "name": "fillRule",
+          "description": "The algorithm by which to determine if a point is inside a path or outside a path. Possible values: \"nonzero\": The non-zero winding rule, which is the default rule. \"evenodd\": The even-odd winding rule."
+        },
+        {
+          "name": "path",
+          "description": "A Path2D path to clip."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.isPointInPath()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/isPointInPath",
+      "description": "Reports whether or not the specified point is contained in the current path.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The X coordinate of the point to check."
+        },
+        {
+          "name": "y",
+          "description": "The Y coordinate of the point to check."
+        },
+        {
+          "name": "fillRule",
+          "description": "The algorithm by which to determine if a point is inside a path or outside a path. Possible values: \"nonzero\": The non-zero winding rule, which is the default rule. \"evenodd\": The even-odd winding rule."
+        },
+        {
+          "name": "path",
+          "description": "A Path2D path to use."
+        },
+        {
+          "name": "Boolean",
+          "description": "A Boolean, which is true if the specified point is contained in the current or specified path, otherwise false."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.isPointInStroke()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/isPointInStroke",
+      "description": "Reports whether or not the specified point is inside the area contained by the stroking of a path.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The X coordinate of the point to check."
+        },
+        {
+          "name": "y",
+          "description": "The Y coordinate of the point to check."
+        },
+        {
+          "name": "path",
+          "description": "A Path2D path to use."
+        },
+        {
+          "name": "Boolean",
+          "description": "A Boolean, which is true if the point is inside the area contained by the stroking of a path, otherwise false."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.currentTransform",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/currentTransform",
+      "description": "Current transformation matrix (SVGMatrix object).",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "An SVGMatrix object to use as the current transformation matrix."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.rotate()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/rotate",
+      "description": "Adds a rotation to the transformation matrix. The angle argument represents a clockwise rotation angle and is expressed in radians.",
+      "parameters": [
+        {
+          "name": "angle",
+          "description": "The angle to rotate clockwise in radians. You can use degree * Math.PI / 180 if you want to calculate from a degree value."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.scale()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/scale",
+      "description": "Adds a scaling transformation to the canvas units by x horizontally and by y vertically.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "Scaling factor in the horizontal direction."
+        },
+        {
+          "name": "y",
+          "description": "Scaling factor in the vertical direction."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.translate()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/translate",
+      "description": "Adds a translation transformation by moving the canvas and its origin x horzontally and y vertically on the grid.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "Distance to move in the horizontal direction."
+        },
+        {
+          "name": "y",
+          "description": "Distance to move in the vertical direction."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.transform()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/transform",
+      "description": "Multiplies the current transformation matrix with the matrix described by its arguments.",
+      "parameters": [
+        {
+          "name": "a (m11)",
+          "description": "Horizontal scaling."
+        },
+        {
+          "name": "b (m12)",
+          "description": "Horizontal skewing."
+        },
+        {
+          "name": "c (m21)",
+          "description": "Vertical skewing."
+        },
+        {
+          "name": "d (m22)",
+          "description": "Vertical scaling."
+        },
+        {
+          "name": "e (dx)",
+          "description": "Horizontal moving."
+        },
+        {
+          "name": "f (dy)",
+          "description": "Vertical moving."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.setTransform()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/setTransform",
+      "description": "Resets the current transform to the identity matrix, and then invokes the transform() method with the same arguments.",
+      "parameters": [
+        {
+          "name": "a (m11)",
+          "description": "Horizontal scaling."
+        },
+        {
+          "name": "b (m12)",
+          "description": "Horizontal skewing."
+        },
+        {
+          "name": "c (m21)",
+          "description": "Vertical skewing."
+        },
+        {
+          "name": "d (m22)",
+          "description": "Vertical scaling."
+        },
+        {
+          "name": "e (dx)",
+          "description": "Horizontal moving."
+        },
+        {
+          "name": "f (dy)",
+          "description": "Vertical moving."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.resetTransform()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/resetTransform",
+      "description": "Resets the current transform by the identity matrix."
+    },
+    {
+      "name": "CanvasRenderingContext2D.globalAlpha",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/globalAlpha",
+      "description": "Alpha value that is applied to shapes and images before they are composited onto the canvas. Default 1.0 (opaque).",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A number between 0.0 (fully transparent) and 1.0 (fully opaque). The default value is 1.0. Values outside the range, including Infinity and NaN will not be set and globalAlpha will retain its previous value."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.globalCompositeOperation",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation",
+      "description": "With globalAlpha applied this sets how shapes and images are drawn onto the existing bitmap."
+    },
+    {
+      "name": "CanvasRenderingContext2D.drawImage()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage",
+      "description": "Draws the specified image. This method is available in multiple formats, providing a great deal of flexibility in its use.",
+      "parameters": [
+        {
+          "name": "image",
+          "description": "An element to draw into the context. The specification permits any canvas image source (CanvasImageSource), specifically, a CSSImageValue, an HTMLImageElement, an SVGImageElement, an HTMLVideoElement, an HTMLCanvasElement, an ImageBitmap, or an OffscreenCanvas."
+        },
+        {
+          "name": "dx",
+          "description": "The X coordinate in the destination canvas at which to place the top-left corner of the source image."
+        },
+        {
+          "name": "dy",
+          "description": "The Y coordinate in the destination canvas at which to place the top-left corner of the source image."
+        },
+        {
+          "name": "dWidth",
+          "description": "The width to draw the image in the destination canvas. This allows scaling of the drawn image. If not specified, the image is not scaled in width when drawn."
+        },
+        {
+          "name": "dHeight",
+          "description": "The height to draw the image in the destination canvas. This allows scaling of the drawn image. If not specified, the image is not scaled in height when drawn."
+        },
+        {
+          "name": "sx",
+          "description": "The X coordinate of the top left corner of the sub-rectangle of the source image to draw into the destination context."
+        },
+        {
+          "name": "sy",
+          "description": "The Y coordinate of the top left corner of the sub-rectangle of the source image to draw into the destination context."
+        },
+        {
+          "name": "sWidth",
+          "description": "The width of the sub-rectangle of the source image to draw into the destination context. If not specified, the entire rectangle from the coordinates specified by sx and sy to the bottom-right corner of the image is used."
+        },
+        {
+          "name": "sHeight",
+          "description": "The height of the sub-rectangle of the source image to draw into the destination context."
+        },
+        {
+          "name": "INDEX_SIZE_ERR",
+          "description": "If the canvas or source rectangle width or height is zero."
+        },
+        {
+          "name": "INVALID_STATE_ERR",
+          "description": "The image has no image data."
+        },
+        {
+          "name": "TYPE_MISMATCH_ERR",
+          "description": "The specified source element isn\u0027t supported."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.createImageData()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/createImageData",
+      "description": "Creates a new, blank ImageData object with the specified dimensions. All of the pixels in the new object are transparent black.",
+      "parameters": [
+        {
+          "name": "width",
+          "description": "The width to give the new ImageData object."
+        },
+        {
+          "name": "height",
+          "description": "The height to give the new ImageData object."
+        },
+        {
+          "name": "imagedata",
+          "description": "An existing ImageData object from which to copy the width and height. The image itself is not copied."
+        },
+        {
+          "name": "IndexSizeError",
+          "description": "Thrown if either of the width or height arguments are zero."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.getImageData()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData",
+      "description": "Returns an ImageData object representing the underlying pixel data for the area of the canvas denoted by the rectangle which starts at (sx, sy) and has an sw width and sh height.",
+      "parameters": [
+        {
+          "name": "sx",
+          "description": "The x coordinate of the upper left corner of the rectangle from which the ImageData will be extracted."
+        },
+        {
+          "name": "sy",
+          "description": "The y coordinate of the upper left corner of the rectangle from which the ImageData will be extracted."
+        },
+        {
+          "name": "sw",
+          "description": "The width of the rectangle from which the ImageData will be extracted."
+        },
+        {
+          "name": "sh",
+          "description": "The height of the rectangle from which the ImageData will be extracted."
+        },
+        {
+          "name": "IndexSizeError",
+          "description": "Thrown if either of the width or height arguments are zero."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.putImageData()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData",
+      "description": "Paints data from the given ImageData object onto the bitmap. If a dirty rectangle is provided, only the pixels from that rectangle are painted.",
+      "parameters": [
+        {
+          "name": "dx",
+          "description": "Horizontal position (x-coordinate) of the upper-left corner at which to place the image data in the destination canvas."
+        },
+        {
+          "name": "dy",
+          "description": "Vertical position (y-coordinate) of the upper-left corner at which to place the image in the destination canvas."
+        },
+        {
+          "name": "dirtyX Optional",
+          "description": "Horizontal position (x-coordinate) in the source imagedata from which to start copying. Defaults to the top left of the whole image data."
+        },
+        {
+          "name": "dirtyY Optional",
+          "description": "Vertical position (y-coordinate) in the source imagedata from which to start copying. Defaults to the top left of the whole image data."
+        },
+        {
+          "name": "dirtyWidth Optional",
+          "description": "Width of the rectangle to be painted. Defaults to the width of the image data."
+        },
+        {
+          "name": "dirtyHeight Optional",
+          "description": "Height of the rectangle to be painted. Defaults to the height of the image data."
+        },
+        {
+          "name": "NotSupportedError",
+          "description": "Thrown if either of the arguments are infinite."
+        },
+        {
+          "name": "InvalidStateError",
+          "description": "Thrown if the ImageData object\u0027s data has been detached."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.imageSmoothingEnabled",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled",
+      "description": "Image smoothing mode; if disabled, images will not be smoothed if scaled.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "A Boolean indicating whether to smooth images or not."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.save()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/save",
+      "description": "Saves the current drawing style state using a stack so you can revert any change you make to it using restore()."
+    },
+    {
+      "name": "CanvasRenderingContext2D.restore()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/restore",
+      "description": "Restores the drawing style state to the last element on the \u0027state stack\u0027 saved by save()."
+    },
+    {
+      "name": "CanvasRenderingContext2D.canvas",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/canvas",
+      "description": "A read-only back-reference to the HTMLCanvasElement. Might be null if it is not associated with a \u003ccanvas\u003e element."
+    },
+    {
+      "name": "CanvasRenderingContext2D.addHitRegion()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/addHitRegion",
+      "description": "Adds a hit region to the canvas.",
+      "parameters": [
+        {
+          "name": "path",
+          "description": "A Path2D object describing the area of the hit region. If not provided, the current path is used."
+        },
+        {
+          "name": "fillRule",
+          "description": "The fill rule to use (defaults to \"nonzero\")."
+        },
+        {
+          "name": "id",
+          "description": "The ID for this hit region to reference it for later use in events, for example."
+        },
+        {
+          "name": "parentID",
+          "description": "The ID of the parent region for cursor fallback and navigation by accessibility tools."
+        },
+        {
+          "name": "cursor",
+          "description": "The cursor to use when the mouse is over this region (defaults to \"inherit\"). Inherits the cursor of the parent hit region, if any, or the canvas element\u0027s cursor."
+        },
+        {
+          "name": "control",
+          "description": "An element (descendant of the canvas) to which events are to be routed. Defaults to null."
+        },
+        {
+          "name": "label",
+          "description": "A text label for accessibility tools to use as a description of the region, if there is no control. Defaults to null."
+        },
+        {
+          "name": "role",
+          "description": "An ARIA role for accessibility tools to determine how to represent this region, if there is no control. Defaults to null."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.removeHitRegion()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/removeHitRegion",
+      "description": "Removes the hit region with the specified id from the canvas.",
+      "parameters": [
+        {
+          "name": "id",
+          "description": "A DOMString representing the id of the region that is to be removed."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.clearHitRegions()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/clearHitRegions",
+      "description": "Removes all hit regions from the canvas."
+    },
+    {
+      "name": "CanvasRenderingContext2D.filter",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/filter",
+      "description": "CSS and SVG filters as Canvas APIs. Likely to be standardized in a new version of the specification.",
+      "parameters": [
+        {
+          "name": "url(\u003curl\u003e)",
+          "description": "The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element."
+        },
+        {
+          "name": "blur(\u003clength\u003e)",
+          "description": "CSS length. Applies a Gaussian blur to the drawing."
+        },
+        {
+          "name": "brightness(\u003cpercentage\u003e)",
+          "description": "Percentage. Applies a linear multiplier to the drawing, making it appear more or less bright."
+        },
+        {
+          "name": "contrast(\u003cpercentage\u003e)",
+          "description": "Percentage. Adjusts the contrast of the drawing. A value of 0% will create a drawing that is completely black. A value of 100% leaves the drawing unchanged."
+        },
+        {
+          "name": "drop-shadow(\u003coffset-x\u003e \u003coffset-y\u003e \u003cblur-radius\u003e \u003ccolor\u003e)",
+          "description": "Applies a drop shadow effect to the drawing. A drop shadow is effectively a blurred, offset version of the drawing\u0027s alpha mask drawn in a particular color, composited below the drawing. This function takes up to five arguments: \u003coffset-x\u003e: See \u003clength\u003e for possible units. Specifies the horizontal distance of the shadow. \u003coffset-y\u003e: See \u003clength\u003e for possible units. Specifies the vertical distance of the shadow. \u003cblur-radius\u003e: The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. \u003ccolor\u003e: See \u003ccolor\u003e values for possible keywords and notations."
+        },
+        {
+          "name": "grayscale(\u003cpercentage\u003e)",
+          "description": "Percentage. Converts the drawing to a gray-scale picture. A value of 100% is completely gray-scale. A value of 0% leaves the drawing unchanged."
+        },
+        {
+          "name": "hue-rotate(\u003cdegree\u003e)",
+          "description": "Degree. Applies a hue rotation on the drawing. A value of 0deg leaves the input unchanged."
+        },
+        {
+          "name": "invert(\u003cpercentage\u003e)",
+          "description": "Percentage. Inverts the drawing. A value of 100% means complete inversion. A value of 0% leaves the drawing unchanged."
+        },
+        {
+          "name": "opacity(\u003cpercentage\u003e)",
+          "description": "Percentage. Applies transparency to the drawing. A value of 0% means completely transparent. A value of 100% leaves the drawing unchanged."
+        },
+        {
+          "name": "saturate(\u003cpercentage\u003e)",
+          "description": "Saturates the drawing. A value of 0% means completely un-saturated. A value of 100% leaves the drawing unchanged."
+        },
+        {
+          "name": "sepia(\u003cpercentage\u003e)",
+          "description": "Converts the drawing to sepia. A value of 100% means completely sepia. A value of 0% leaves the drawing unchanged."
+        },
+        {
+          "name": "none",
+          "description": "No filter is applied. Initial value."
+        }
+      ]
+    },
+    {
+      "name": "CanvasRenderingContext2D.drawWindow()",
+      "link": "/en-US/docs/Web/API/CanvasRenderingContext2D/drawWindow",
+      "description": "Renders a region of a window into the canvas. The contents of the window\u0027s viewport are rendered, ignoring viewport clipping and scrolling.",
+      "parameters": [
+        {
+          "name": "window",
+          "description": "The Window to render."
+        },
+        {
+          "name": "x",
+          "description": "The X coordinate of the window."
+        },
+        {
+          "name": "y",
+          "description": "The Y coordnate of the window."
+        },
+        {
+          "name": "w",
+          "description": "The width of the window."
+        },
+        {
+          "name": "h",
+          "description": "The height of the window."
+        },
+        {
+          "name": "bgColor",
+          "description": "A DOMString that specifies the color the canvas is filled with before the window is rendered into it. This color may be transparent/translucent. It is given as a CSS color string (for example, rgb() or rgba()). Notes: If \"rgba(0,0,0,0)\" is used for the background color, the drawing will be transparent wherever the window is transparent. Top-level browsed documents are usually not transparent because the user\u0027s background-color preference is applied, but iframes are transparent if the page doesn\u0027t set a background. If an opaque color is used for the background color, rendering will be faster because we won\u0027t have to compute the window\u0027s transparency."
+        },
+        {
+          "name": "flags Optional",
+          "description": "Used to better control the drawWindow call. Flags can be ORed together. Constant Value Description DRAWWINDOW_DRAW_CARET 0x01 Show the caret if appropriate when drawing. DRAWWINDOW_DO_NOT_FLUSH 0x02 Do not flush pending layout notifications that could otherwise be batched up. DRAWWINDOW_DRAW_VIEW 0x04 Draw scrollbars and scroll the viewport if they are present. DRAWWINDOW_USE_WIDGET_LAYERS 0x08 Use the widget layer manager if available. This means hardware acceleration may be used, but it might actually be slower or lower quality than normal. It will, however, more accurately reflect the pixels rendered to the screen. DRAWWINDOW_ASYNC_DECODE_IMAGES 0x10 Do not synchronously decode images - draw what we have."
+        }
+      ]
+    }
+  ]
+}

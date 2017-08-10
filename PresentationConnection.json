@@ -1,0 +1,67 @@
+{
+  "name": "PresentationConnection",
+  "description": "The PresentationConnection interface of the Presentation API provides methods and properties for managing a single presentation. Each presentation connection is represented by a PresentationConnection object. Both the controlling user agent and receiving user agent MUST implement PresentationConnection.",
+  "members": [
+    {
+      "name": "PresentationConnection.binaryType",
+      "link": "/en-US/docs/Web/API/PresentationConnection/binaryType",
+      "description": "Returns either blob or arrayBuffer. When a PresentationConnection object is created, its binaryType IDL attribute MUST be set to the string \" arraybuffer\"."
+    },
+    {
+      "name": "PresentationConnection.id",
+      "link": "/en-US/docs/Web/API/PresentationConnection/id",
+      "description": "Provides the presentation connection identifier."
+    },
+    {
+      "name": "PresentationConnection.state",
+      "link": "/en-US/docs/Web/API/PresentationConnection/state",
+      "description": "Returns the presentation connection\u0027s current state."
+    },
+    {
+      "name": "PresentationConnection.url",
+      "link": "/en-US/docs/Web/API/PresentationConnection/url",
+      "description": "Returns the URL used to create or reconnect to the presentation."
+    },
+    {
+      "name": "PresentationConnection.onclose",
+      "link": "/en-US/docs/Web/API/PresentationConnection/onclose",
+      "description": "Fired when there is a call to PresentationConnection.close()."
+    },
+    {
+      "name": "PresentationConnection.onconnect",
+      "link": "/en-US/docs/Web/API/PresentationConnection/onconnect",
+      "description": "Fired when a presentation connection is established."
+    },
+    {
+      "name": "PresentationConnection.onmessage",
+      "link": "/en-US/docs/Web/API/PresentationConnection/onmessage",
+      "description": "Fired when there is a call to PresentationConnection.send()."
+    },
+    {
+      "name": "PresentationConnection.onterminated",
+      "link": "/en-US/docs/Web/API/PresentationConnection/onterminated",
+      "description": "Fired when there is a call to PresentationConnection.terminate()."
+    },
+    {
+      "name": "PresentationConnection.close()",
+      "link": "/en-US/docs/Web/API/PresentationConnection/close",
+      "description": "Closes the current connection and sends a PresentationConnectionCloseEvent to PresentationConnection.onclosed."
+    },
+    {
+      "name": "PresentationConnection.send()",
+      "link": "/en-US/docs/Web/API/PresentationConnection/send",
+      "description": "Sends either binary or text data between a controlling browsing context and a presenting browsing context.",
+      "parameters": [
+        {
+          "name": "data",
+          "description": "Data to send to the presentation. It will be one of the following: String Blob Array"
+        }
+      ]
+    },
+    {
+      "name": "PresentationConnection.terminate()",
+      "link": "/en-US/docs/Web/API/PresentationConnection/terminate",
+      "description": "Terminates the current connection and fires PresentationConnection.onterminated."
+    }
+  ]
+}

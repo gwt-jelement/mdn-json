@@ -1,0 +1,51 @@
+{
+  "name": "MessageEvent",
+  "description": "The MessageEvent interface represents a message received by a target object.",
+  "members": [
+    {
+      "name": "MessageEvent()",
+      "link": "/en-US/docs/Web/API/MessageEvent/MessageEvent",
+      "description": "Creates a new MessageEvent.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of MessageEvent that will be created. This can be one of XXX"
+        },
+        {
+          "name": "init Optional",
+          "description": "A dictionary object that can contain the following properties: data: The data you want contained in the MessageEvent. This can be of any data type, and will default to null if not specified. origin: A USVString representing the origin of the message emitter. This defaults to an empty string (\"\") if not specified. lastEventId: A DOMString representing a unique ID for the event. This defaults to an empty string (\"\") if not specified. source: An MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter. This defaults to null if not set. ports: An array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker). This defaults to an empty array ([]) if not specified."
+        }
+      ]
+    },
+    {
+      "name": "MessageEvent.data",
+      "link": "/en-US/docs/Web/API/MessageEvent/data",
+      "description": "The data sent by the message emitter."
+    },
+    {
+      "name": "MessageEvent.origin",
+      "link": "/en-US/docs/Web/API/MessageEvent/origin",
+      "description": "A USVString representing the origin of the message emitter."
+    },
+    {
+      "name": "MessageEvent.lastEventId",
+      "link": "/en-US/docs/Web/API/MessageEvent/lastEventId",
+      "description": "A DOMString representing a unique ID for the event."
+    },
+    {
+      "name": "MessageEvent.source",
+      "link": "/en-US/docs/Web/API/MessageEvent/source",
+      "description": "A MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter."
+    },
+    {
+      "name": "MessageEvent.ports",
+      "link": "/en-US/docs/Web/API/MessageEvent/ports",
+      "description": "An array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker)."
+    },
+    {
+      "name": "MessageEvent.initMessageEvent()",
+      "link": "/en-US/docs/Web/API/MessageEvent/initMessageEvent",
+      "description": "Initializes a message event. Do not use this anymore — use the MessageEvent() constructor instead."
+    }
+  ]
+}

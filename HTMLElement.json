@@ -1,0 +1,211 @@
+{
+  "name": "HTMLElement",
+  "description": "  The HTMLElement interface represents any HTML element. Some elements directly implement this interface, others implement it via an interface that inherits it.",
+  "members": [
+    {
+      "name": "HTMLElement.accessKey",
+      "link": "/en-US/docs/Web/API/HTMLElement/accessKey",
+      "description": "Is a DOMString representing the access key assigned to the element."
+    },
+    {
+      "name": "HTMLElement.accessKeyLabel",
+      "link": "/en-US/docs/Web/API/HTMLElement/accessKeyLabel",
+      "description": "Returns a DOMString containing the element\u0027s assigned access key."
+    },
+    {
+      "name": "HTMLElement.contentEditable",
+      "link": "/en-US/docs/Web/API/HTMLElement/contentEditable",
+      "description": "Is a DOMString, where a value of \"true\" means the element is editable and a value of \"false\" means it isn\u0027t."
+    },
+    {
+      "name": "HTMLElement.isContentEditable",
+      "link": "/en-US/docs/Web/API/HTMLElement/isContentEditable",
+      "description": "Returns a Boolean that indicates whether or not the content of the element can be edited."
+    },
+    {
+      "name": "HTMLElement.contextMenu",
+      "link": "/en-US/docs/Web/API/HTMLElement/contextMenu",
+      "description": "Is a HTMLMenuElement representing the contextual menu associated with the element. It may be null."
+    },
+    {
+      "name": "HTMLElement.dataset",
+      "link": "/en-US/docs/Web/API/HTMLElement/dataset",
+      "description": "Returns a DOMStringMap with which script can read and write the element\u0027s custom data attributes (data-*) ."
+    },
+    {
+      "name": "HTMLElement.dir",
+      "link": "/en-US/docs/Web/API/HTMLElement/dir",
+      "description": "Is a DOMString, reflecting the dir global attribute, representing the directionality of the element. Possible values are \"ltr\", \"rtl\", and \"auto\"."
+    },
+    {
+      "name": "HTMLElement.draggable",
+      "link": "/en-US/docs/Web/API/HTMLElement/draggable",
+      "description": "Is a Boolean indicating if the element can be dragged."
+    },
+    {
+      "name": "HTMLElement.dropzone",
+      "link": "/en-US/docs/Web/API/HTMLElement/dropzone",
+      "description": "Returns a DOMSettableTokenList reflecting the dropzone global attribute and describing the behavior of the element regarding a drop operation."
+    },
+    {
+      "name": "HTMLElement.hidden",
+      "link": "/en-US/docs/Web/API/HTMLElement/hidden",
+      "description": "Is a Boolean indicating if the element is hidden or not."
+    },
+    {
+      "name": "HTMLElement.itemScope",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemScope",
+      "description": "Is a Boolean representing the item scope."
+    },
+    {
+      "name": "HTMLElement.itemType",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemType",
+      "description": "Returns a DOMSettableTokenList…"
+    },
+    {
+      "name": "HTMLElement.itemId",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemId",
+      "description": "Is a DOMString representing the item ID."
+    },
+    {
+      "name": "HTMLElement.itemRef",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemRef",
+      "description": "Returns a DOMSettableTokenList…"
+    },
+    {
+      "name": "HTMLElement.itemProp",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemProp",
+      "description": "Returns a DOMSettableTokenList…"
+    },
+    {
+      "name": "HTMLElement.itemValue",
+      "link": "/en-US/docs/Web/API/HTMLElement/itemValue",
+      "description": "Returns a Object representing the item value."
+    },
+    {
+      "name": "HTMLElement.lang",
+      "link": "/en-US/docs/Web/API/HTMLElement/lang",
+      "description": "Is a DOMString representing the language of an element\u0027s attributes, text, and element contents."
+    },
+    {
+      "name": "HTMLElement.offsetHeight",
+      "link": "/en-US/docs/Web/API/HTMLElement/offsetHeight",
+      "description": "Returns a double containing the height of an element, relative to the layout."
+    },
+    {
+      "name": "HTMLElement.offsetLeft",
+      "link": "/en-US/docs/Web/API/HTMLElement/offsetLeft",
+      "description": "Returns a double, the distance from this element\u0027s left border to its offsetParent\u0027s left border."
+    },
+    {
+      "name": "HTMLElement.offsetParent",
+      "link": "/en-US/docs/Web/API/HTMLElement/offsetParent",
+      "description": "Returns a Element that is the element from which all offset calculations are currently computed."
+    },
+    {
+      "name": "HTMLElement.offsetTop",
+      "link": "/en-US/docs/Web/API/HTMLElement/offsetTop",
+      "description": "Returns a double, the distance from this element\u0027s top border to its offsetParent\u0027s top border."
+    },
+    {
+      "name": "HTMLElement.offsetWidth",
+      "link": "/en-US/docs/Web/API/HTMLElement/offsetWidth",
+      "description": "Returns a double containing the width of an element, relative to the layout."
+    },
+    {
+      "name": "HTMLElement.properties",
+      "link": "/en-US/docs/Web/API/HTMLElement/properties",
+      "description": "Returns a HTMLPropertiesCollection…"
+    },
+    {
+      "name": "HTMLElement.spellcheck",
+      "link": "/en-US/docs/Web/API/HTMLElement/spellcheck",
+      "description": "Is a Boolean that controls spell-checking. It is present on all HTML elements, though it doesn\u0027t have an effect on all of them."
+    },
+    {
+      "name": "HTMLElement.style",
+      "link": "/en-US/docs/Web/API/HTMLElement/style",
+      "description": "Is a CSSStyleDeclaration, an object representing the declarations of an element\u0027s style attributes."
+    },
+    {
+      "name": "HTMLElement.tabIndex",
+      "link": "/en-US/docs/Web/API/HTMLElement/tabIndex",
+      "description": "Is a long representing the position of the element in the tabbing order."
+    },
+    {
+      "name": "HTMLElement.title",
+      "link": "/en-US/docs/Web/API/HTMLElement/title",
+      "description": "Is a DOMString containing the text that appears in a popup box when mouse is over the element."
+    },
+    {
+      "name": "HTMLElement.translate",
+      "link": "/en-US/docs/Web/API/HTMLElement/translate",
+      "description": "Is a Boolean representing the translation."
+    },
+    {
+      "name": "HTMLElement.oncopy",
+      "link": "/en-US/docs/Web/API/HTMLElement/oncopy",
+      "description": "Returns the event handling code for the copy event (bug 280959)."
+    },
+    {
+      "name": "HTMLElement.oncut",
+      "link": "/en-US/docs/Web/API/HTMLElement/oncut",
+      "description": "Returns the event handling code for the cut event (bug 280959)."
+    },
+    {
+      "name": "HTMLElement.onpaste",
+      "link": "/en-US/docs/Web/API/HTMLElement/onpaste",
+      "description": "Returns the event handling code for the paste event (bug 280959)."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchstart",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchstart",
+      "description": "Returns the event handling code for the touchstart event."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchend",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchend",
+      "description": "Returns the event handling code for the touchend event."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchmove",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchmove",
+      "description": "Returns the event handling code for the touchmove event."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchenter",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchenter",
+      "description": "Returns the event handling code for the touchenter event."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchleave",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchleave",
+      "description": "Returns the event handling code for the touchleave event."
+    },
+    {
+      "name": "TouchEventHandlers.ontouchcancel",
+      "link": "/en-US/docs/Web/API/TouchEventHandlers/ontouchcancel",
+      "description": "Returns the event handling code for the touchcancel event."
+    },
+    {
+      "name": "HTMLElement.blur()",
+      "link": "/en-US/docs/Web/API/HTMLElement/blur",
+      "description": "Removes keyboard focus from the currently focused element."
+    },
+    {
+      "name": "HTMLElement.click()",
+      "link": "/en-US/docs/Web/API/HTMLElement/click",
+      "description": "Sends a mouse click event to the element."
+    },
+    {
+      "name": "HTMLElement.focus()",
+      "link": "/en-US/docs/Web/API/HTMLElement/focus",
+      "description": "Makes the element the current keyboard focus."
+    },
+    {
+      "name": "HTMLElement.forceSpellCheck()",
+      "link": "/en-US/docs/Web/API/HTMLElement/forceSpellCheck",
+      "description": "Runs the spell checker on the element\u0027s contents."
+    }
+  ]
+}

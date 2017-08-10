@@ -1,0 +1,75 @@
+{
+  "name": "MediaSource",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaSource()",
+      "link": "/en-US/docs/Web/API/MediaSource/MediaSource",
+      "description": "Constructs and returns a new MediaSource object with no associated source buffers."
+    },
+    {
+      "name": "MediaSource.sourceBuffers",
+      "link": "/en-US/docs/Web/API/MediaSource/sourceBuffers",
+      "description": "Returns a SourceBufferList object containing the list of SourceBuffer objects associated with this MediaSource."
+    },
+    {
+      "name": "MediaSource.activeSourceBuffers",
+      "link": "/en-US/docs/Web/API/MediaSource/activeSourceBuffers",
+      "description": "Returns a SourceBufferList object containing a subset of the SourceBuffer objects contained within SourceBuffers — the list of objects providing the selected video track,  enabled audio tracks, and shown/hidden text tracks."
+    },
+    {
+      "name": "MediaSource.readyState",
+      "link": "/en-US/docs/Web/API/MediaSource/readyState",
+      "description": "Returns an enum representing the state of the current MediaSource, whether it is not currently attached to a media element (closed), attached and ready to receive SourceBuffer objects (open), or attached but the stream has been ended via MediaSource.endOfStream() (ended.)"
+    },
+    {
+      "name": "MediaSource.duration",
+      "link": "/en-US/docs/Web/API/MediaSource/duration",
+      "description": "Gets and sets the duration of the current media being presented."
+    },
+    {
+      "name": "MediaSource.addSourceBuffer()",
+      "link": "/en-US/docs/Web/API/MediaSource/addSourceBuffer",
+      "description": "Creates a new SourceBuffer of the given MIME type and adds it to the MediaSource\u0027s SourceBuffers list.",
+      "parameters": [
+        {
+          "name": "mimeType",
+          "description": "The MIME type of the source buffer you want to create."
+        }
+      ]
+    },
+    {
+      "name": "MediaSource.removeSourceBuffer()",
+      "link": "/en-US/docs/Web/API/MediaSource/removeSourceBuffer",
+      "description": "Removes the given SourceBuffer from the SourceBuffers list associated with this MediaSource object.",
+      "parameters": [
+        {
+          "name": "sourceBuffer",
+          "description": "The SourceBuffer object to be removed."
+        }
+      ]
+    },
+    {
+      "name": "MediaSource.endOfStream()",
+      "link": "/en-US/docs/Web/API/MediaSource/endOfStream",
+      "description": "Signals the end of the stream.",
+      "parameters": [
+        {
+          "name": "endOfStreamError Optional",
+          "description": "A DOMString representing an error to throw when the end of the stream is reached. The possible values are: network: Terminates playback and signals that a network error has occured. This can be used create a custom error handler related to media streams. For example, you might have a function that handles media chunk requests, separate from other network requests. When you make an XMLHttpRequest call for a media chunk, and onabort or onerror triggers, you might want to call endOfStream(\u0027network\u0027), display a descriptive message in the UI, and maybe retry the network request immediately or wait until the network is back up (via some kind of polling.) decode: Terminates playback and signals that a decoding error has occured. This can be used to indicate that a parsing error has occured while fetching media data; maybe the data is corrupt, or is encoded using a codec that the browser doesn\u0027t know how to decode."
+        }
+      ]
+    },
+    {
+      "name": "MediaSource.isTypeSupported()",
+      "link": "/en-US/docs/Web/API/MediaSource/isTypeSupported",
+      "description": "Returns a Boolean value indicating if the given MIME type is supported by the current user agent — this is, if it can successfully create SourceBuffer objects for that MIME type.",
+      "parameters": [
+        {
+          "name": "mimeType",
+          "description": "The MIME type that you want to test support for in the current browser."
+        }
+      ]
+    }
+  ]
+}

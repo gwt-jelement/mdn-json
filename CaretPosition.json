@@ -1,0 +1,16 @@
+{
+  "name": "CaretPosition",
+  "description": "",
+  "members": [
+    {
+      "name": "CaretPosition.offsetNode",
+      "link": "/en-US/docs/Web/API/CaretPosition/offsetNode",
+      "description": "Returns a Node containing the found node at the caret\u0027s position."
+    },
+    {
+      "name": "CaretPosition.offset",
+      "link": "/en-US/docs/Web/API/CaretPosition/offset",
+      "description": "Returns a long representing the character offset in the caret position node."
+    }
+  ]
+}

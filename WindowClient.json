@@ -1,0 +1,32 @@
+{
+  "name": "WindowClient",
+  "description": "",
+  "members": [
+    {
+      "name": "WindowClient.focus()",
+      "link": "/en-US/docs/Web/API/WindowClient/focus",
+      "description": "Gives user input focus to the current client. "
+    },
+    {
+      "name": "WindowClient.navigate()",
+      "link": "/en-US/docs/Web/API/WindowClient/navigate",
+      "description": "Loads a specified URL into a controlled client page.",
+      "parameters": [
+        {
+          "name": "url",
+          "description": "The location to navigate to."
+        }
+      ]
+    },
+    {
+      "name": "WindowClient.focused",
+      "link": "/en-US/docs/Web/API/WindowClient/focused",
+      "description": "A boolean that indicates whether the current client has focus."
+    },
+    {
+      "name": "WindowClient.visibilityState",
+      "link": "/en-US/docs/Web/API/WindowClient/visibilityState",
+      "description": "Indicates the visibility of the current client. This value can be one of hidden, visible, prerender, or unloaded."
+    }
+  ]
+}

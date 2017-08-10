@@ -1,0 +1,16 @@
+{
+  "name": "Position",
+  "description": "Secure context This feature is available only in secure contexts (HTTPS), in some or all supporting browsers. The Position interface represents the position of the concerned device at a given time. The position, represented by a Coordinates object, comprehends the 2D position of the device, on a spheroid representing the Earth, but also its altitude and its speed.",
+  "members": [
+    {
+      "name": "Position.coords",
+      "link": "/en-US/docs/Web/API/Position/coords",
+      "description": "Returns a Coordinates object defining the current location."
+    },
+    {
+      "name": "Position.timestamp",
+      "link": "/en-US/docs/Web/API/Position/timestamp",
+      "description": "Returns a DOMTimeStamp representing the time at which the location was retrieved."
+    }
+  ]
+}

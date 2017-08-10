@@ -1,0 +1,58 @@
+{
+  "name": "NodeList",
+  "description": "NodeList objects are collections of nodes such as those returned by properties such as Node.childNodes and the document.querySelectorAll() method.",
+  "members": [
+    {
+      "name": "NodeList.length",
+      "link": "/en-US/docs/Web/API/NodeList/length",
+      "description": "The number of nodes in the NodeList."
+    },
+    {
+      "name": "NodeList.item()",
+      "link": "/en-US/docs/Web/API/NodeList/item",
+      "description": "Returns an item in the list by its index, or null if the index is out-of-bounds; can be used as an alternative to simply accessing nodeList[idx] (which instead returns  undefined when idx is out-of-bounds)."
+    },
+    {
+      "name": "NodeList.entries()",
+      "link": "/en-US/docs/Web/API/NodeList/entries",
+      "description": "Returns an iterator allowing to go through all key/value pairs contained in this object."
+    },
+    {
+      "name": "NodeList.forEach()",
+      "link": "/en-US/docs/Web/API/NodeList/forEach",
+      "description": "Executes a provided function once per NodeList element.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "Function to execute for each element, eventually taking 3 arguments: currentValue The current element being processed in the NodeList. currentIndex The index of the current element being processed in the NodeList. listObj The NodeList object that forEach() is being applied to."
+        },
+        {
+          "name": "currentValue",
+          "description": "The current element being processed in the NodeList."
+        },
+        {
+          "name": "currentIndex",
+          "description": "The index of the current element being processed in the NodeList."
+        },
+        {
+          "name": "listObj",
+          "description": "The NodeList object that forEach() is being applied to."
+        },
+        {
+          "name": "thisArg Optional",
+          "description": "Value to use as this when executing callback."
+        }
+      ]
+    },
+    {
+      "name": "NodeList.keys()",
+      "link": "/en-US/docs/Web/API/NodeList/keys",
+      "description": "Returns an iterator allowing to go through all keys of the key/value pairs contained in this object."
+    },
+    {
+      "name": "NodeList.values()",
+      "link": "/en-US/docs/Web/API/NodeList/values",
+      "description": "Returns an iterator allowing to go through all values of the key/value pairs contained in this object."
+    }
+  ]
+}

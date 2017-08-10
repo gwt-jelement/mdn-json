@@ -1,0 +1,233 @@
+{
+  "name": "IDBObjectStore",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBObjectStore.indexNames",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/indexNames",
+      "description": "A list of the names of indexes on objects in this object store."
+    },
+    {
+      "name": "IDBObjectStore.keyPath",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/keyPath",
+      "description": "The key path of this object store. If this attribute is null, the application must provide a key for each modification operation."
+    },
+    {
+      "name": "IDBObjectStore.name",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/name",
+      "description": "The name of this object store.",
+      "parameters": [
+        {
+          "name": "InvalidStateError",
+          "description": "Either the object store has been deleted or the current transaction is not an upgrade transaction; you can only rename indexes during upgrade transactions; that is, when the mode is \"versionchange\"."
+        },
+        {
+          "name": "TransactionInactiveError",
+          "description": "The current transaction is not active."
+        },
+        {
+          "name": "ConstraintError",
+          "description": "An object store is already using the specified name."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.transaction",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/transaction",
+      "description": "The IDBTransaction object to which this object store belongs."
+    },
+    {
+      "name": "IDBObjectStore.autoIncrement",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/autoIncrement",
+      "description": "The value of the auto increment flag for this object store."
+    },
+    {
+      "name": "IDBObjectStore.add()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/add",
+      "description": "Returns an IDBRequest object, and, in a separate thread, creates a structured clone of the value, and stores the cloned value in the object store. This is for adding new records to an object store.",
+      "parameters": [
+        {
+          "name": "value",
+          "description": "The value to be stored."
+        },
+        {
+          "name": "key Optional",
+          "description": "The key to use to identify the record. If unspecified, it results to null."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.clear()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/clear",
+      "description": "Creates and immediately returns an IDBRequest object, and clears this object store in a separate thread. This is for deleting all current records out of an object store."
+    },
+    {
+      "name": "IDBObjectStore.count()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/count",
+      "description": "Returns an IDBRequest object, and, in a separate thread, returns the total number of records that match the provided key or IDBKeyRange. If no arguments are provided, it returns the total number of records in the store.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A key or IDBKeyRange object that specifies a range of records you want to count."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.createIndex()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/createIndex",
+      "description": "Creates a new index during a version upgrade, returning a new IDBIndex object in the connected database.",
+      "parameters": [
+        {
+          "name": "indexName",
+          "description": "The name of the index to create. Note that it is possible to create an index with an empty name."
+        },
+        {
+          "name": "keyPath",
+          "description": "The key path for the index to use. Note that it is possible to create an index with an empty keyPath, and also to pass in a sequence (array) as a keyPath."
+        },
+        {
+          "name": "objectParameters Optional",
+          "description": "An IDBIndexParameters object, which can include the following properties: Attribute Description unique If true, the index will not allow duplicate values for a single key. multiEntry If true, the index will add an entry in the index for each array element when the keyPath resolves to an Array. If false, it will add one single entry containing the Array. locale Currently Firefox-only (43+), this allows you to specify a locale for the index. Any sorting operations performed on the data via key ranges will then obey sorting rules of that locale (see locale-aware sorting.) You can specify its value in one of three ways: string: A string containing a specific locale code, e.g. en-US, or pl. auto: The platform default locale will be used (may be changed by user agent settings.) null or undefined: If no locale is specified, normal JavaScript sorting will be used — not locale-aware."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.delete()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/delete",
+      "description": "returns an IDBRequest object, and, in a separate thread, deletes the store object selected by the specified key. This is for deleting individual records out of an object store.",
+      "parameters": [
+        {
+          "name": "Key",
+          "description": "The key of the record to be deleted, or an IDBKeyRange to delete all records with keys in range."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.deleteIndex()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/deleteIndex",
+      "description": "Destroys the specified index in the connected database, used during a version upgrade.",
+      "parameters": [
+        {
+          "name": "indexName",
+          "description": "The name of the existing index to remove."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.get()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/get",
+      "description": "Returns an IDBRequest object, and, in a separate thread, returns the store object store selected by the specified key. This is for retrieving specific records from an object store.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "The key or key range that identifies the record to be retrieved."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.getKey()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/getKey",
+      "description": "Returns an IDBRequest object, and, in a separate thread retrieves and returns the record key for the object in the object stored matching the specified parameter.",
+      "parameters": [
+        {
+          "name": "key",
+          "description": "The key or key range that identifies the record to be retrieved."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.getAll()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/getAll",
+      "description": "Returns an IDBRequest object retrieves all objects in the object store matching the specified parameter or all objects in the store if no parameters are given.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A key or IDBKeyRange to be queried. If nothing is passed, this will default to a key range that selects all the records in this object store."
+        },
+        {
+          "name": "count Optional",
+          "description": "Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.getAllKeys()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/getAllKeys",
+      "description": "Returns an IDBRequest object retrieves record keys for all objects in the object store matching the specified parameter or all objects in the store if no parameters are given.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A value that is or resolves to an IDBKeyRange."
+        },
+        {
+          "name": "count Optional",
+          "description": "Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.index()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/index",
+      "description": "Opens an index from this object store after which it can, for example, be used to return a sequence of records sorted by that index using a cursor.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the index to open."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.openCursor()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/openCursor",
+      "description": "Returns an IDBRequest object, and, in a separate thread, returns a new IDBCursorWithValue object. Used for iterating through an object store by primary key with a cursor.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "A key or IDBKeyRange to be queried. If a single valid key is passed, this will default to a range containing only that key. If nothing is passed, this will default to a key range that selects all the records in this object store."
+        },
+        {
+          "name": "direction Optional",
+          "description": "An IDBCursorDirection telling the cursor what direction to travel. Valid values are \"next\", \"nextunique\", \"prev\", and \"prevunique\". The default is \"next\"."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.openKeyCursor()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/openKeyCursor",
+      "description": "Returns an IDBRequest object, and, in a separate thread, returns a new IDBCursorWithValue. Used for iterating through an object store with a key.",
+      "parameters": [
+        {
+          "name": "query Optional",
+          "description": "The key range to be queried. If a single valid key is passed, this will default to a range containing only that key. If nothing is passed, this will default to a key range that selects all the records in this object store."
+        },
+        {
+          "name": "direction Optional",
+          "description": "An IDBCursorDirection telling the cursor what direction to travel. Valid values are \"next\", \"nextunique\", \"prev\", and \"prevunique\". The default is \"next\"."
+        }
+      ]
+    },
+    {
+      "name": "IDBObjectStore.put()",
+      "link": "/en-US/docs/Web/API/IDBObjectStore/put",
+      "description": "Returns an IDBRequest object, and, in a separate thread, creates a structured clone of the value, and stores the cloned value in the object store. This is for updating existing records in an object store when the transaction\u0027s mode is readwrite.",
+      "parameters": [
+        {
+          "name": "item",
+          "description": "The name of the item you wish to update (or insert)."
+        },
+        {
+          "name": "key Optional",
+          "description": "The primary key of the record you want to update (e.g. from IDBCursor.primaryKey). This is only needed for object stores that have an autoIncrement primary key, therefore the key is not in a field on the record object. In such cases, calling put(item) will always insert a new record, because it doesn\u0027t know what existing record you might want to modify."
+        },
+        {
+          "name": "value",
+          "description": "The value to be stored."
+        },
+        {
+          "name": "key",
+          "description": "The key to use to identify the record. If unspecified, it results to null. If the object store has a key generator (e.g. autoincrement) the key of the object must be passed in to update the object."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "InstallEvent",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The parameter passed into the oninstall handler, the InstallEvent interface represents an install action that is dispatched on the ServiceWorkerGlobalScope of a ServiceWorker. As a child of ExtendableEvent, it ensures that functional events such as FetchEvent are not dispatched during installation. ",
+  "members": [
+    {
+      "name": "InstallEvent.InstallEvent()",
+      "link": "/en-US/docs/Web/API/InstallEvent/InstallEvent",
+      "description": "Creates a new InstallEvent object.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "The type of the event."
+        },
+        {
+          "name": "init Optional",
+          "description": "An options object containing any custom settings that you want to apply to the event object. Available options are as follows: activeWorker: The ServiceWorker that is currently actively controlling the page."
+        }
+      ]
+    },
+    {
+      "name": "InstallEvent.activeWorker",
+      "link": "/en-US/docs/Web/API/InstallEvent/activeWorker",
+      "description": "Returns the ServiceWorker that is currently actively controlling the page."
+    }
+  ]
+}

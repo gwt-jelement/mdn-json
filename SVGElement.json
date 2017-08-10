@@ -1,0 +1,31 @@
+{
+  "name": "SVGElement",
+  "description": "All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the SVGElement interface.",
+  "members": [
+    {
+      "name": "SVGElement.dataset",
+      "link": "/en-US/docs/Web/API/SVGElement/dataset",
+      "description": "A DOMStringMap object which provides a list of key/value pairs of named data attributes which correspond to custom data attributes attached to the element. These can also be defined in SVG using attributes of the form data-*, where * is the key name for the pair. This works just like HTML\u0027s HTMLElement.dataset property and HTML\u0027s data-* global attribute."
+    },
+    {
+      "name": "SVGElement.id",
+      "link": "/en-US/docs/Web/API/SVGElement/id",
+      "description": "A DOMString representing the value of the id attribute on the given element, or the empty string if id is not present."
+    },
+    {
+      "name": "SVGElement.xmlbase",
+      "link": "/en-US/docs/Web/API/SVGElement/xmlbase",
+      "description": "A DOMString corresponding to the xml:base attribute on the given element."
+    },
+    {
+      "name": "SVGElement.ownerSVGElement",
+      "link": "/en-US/docs/Web/API/SVGElement/ownerSVGElement",
+      "description": "An SVGSVGElement referring to the nearest ancestor \u003csvg\u003e element. null if the given element is the outermost \u003csvg\u003e element."
+    },
+    {
+      "name": "SVGElement.viewportElement",
+      "link": "/en-US/docs/Web/API/SVGElement/viewportElement",
+      "description": "The SVGElement, which established the current viewport. Often, the nearest ancestor \u003csvg\u003e element. null if the given element is the outermost \u003csvg\u003e element."
+    }
+  ]
+}

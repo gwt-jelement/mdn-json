@@ -1,0 +1,31 @@
+{
+  "name": "MediaSession",
+  "description": "",
+  "members": [
+    {
+      "name": "MediaSession.metadata",
+      "link": "/en-US/docs/Web/API/MediaSession/metadata",
+      "description": "Returns an instance of MediaMetadata which contains rich media metadata, for display in a platform UI."
+    },
+    {
+      "name": "MediaSession.playbackState",
+      "link": "/en-US/docs/Web/API/MediaSession/playbackState",
+      "description": "Indicates whether the current media session is playing. Valid values are \"none\", \"paused\", or \"playing\"."
+    },
+    {
+      "name": "MediaSession.setActionHandler()",
+      "link": "/en-US/docs/Web/API/MediaSession/setActionHandler",
+      "description": "Sets an event handler for a media session action, such as play or pause. See the method page for a full list.",
+      "parameters": [
+        {
+          "name": "type",
+          "description": "A string representing an action type to listen for. It will be one of play, pause, seekbackward, seekforward, previoustrack, or nexttrack."
+        },
+        {
+          "name": "callback",
+          "description": "Indicates the function to call when the specified action type is invoked. This is a void function, with no parameters."
+        }
+      ]
+    }
+  ]
+}

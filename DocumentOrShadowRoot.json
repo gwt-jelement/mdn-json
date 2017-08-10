@@ -1,0 +1,66 @@
+{
+  "name": "DocumentOrShadowRoot",
+  "description": "",
+  "members": [
+    {
+      "name": "DocumentOrShadowRoot.activeElement",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/activeElement",
+      "description": "Returns the element within the shadow tree that has focus."
+    },
+    {
+      "name": "DocumentOrShadowRoot.styleSheets",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets",
+      "description": "Returns a StyleSheetList of CSSStyleSheet objects for stylesheets explicitly linked into, or embedded in a document"
+    },
+    {
+      "name": "DocumentOrShadowRoot.getSelection()",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/getSelection",
+      "description": "Returns a Selection object representing the range of text selected by the user, or the current position of the caret."
+    },
+    {
+      "name": "DocumentOrShadowRoot.elementFromPoint()",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/elementFromPoint",
+      "description": "Returns the topmost element at the specified coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The horizontal coordinate of a point."
+        },
+        {
+          "name": "y",
+          "description": "The vertical coordinate of a point."
+        }
+      ]
+    },
+    {
+      "name": "DocumentOrShadowRoot.elementsFromPoint()",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/elementsFromPoint",
+      "description": "Returns an array of all elements at the specified coordinates.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The horizontal coordinate of a point."
+        },
+        {
+          "name": "y",
+          "description": "The vertical coordinate of a point."
+        }
+      ]
+    },
+    {
+      "name": "DocumentOrShadowRoot.caretPositionFromPoint()",
+      "link": "/en-US/docs/Web/API/DocumentOrShadowRoot/caretPositionFromPoint",
+      "description": "Returns a CaretPosition object containing the DOM node containing the caret, and caret\u0027s character offset within that node.",
+      "parameters": [
+        {
+          "name": "x",
+          "description": "The horizontal coordinate of a point."
+        },
+        {
+          "name": "y",
+          "description": "The vertical coordinate of a point."
+        }
+      ]
+    }
+  ]
+}

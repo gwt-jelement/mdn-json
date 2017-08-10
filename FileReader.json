@@ -1,0 +1,115 @@
+{
+  "name": "FileReader",
+  "description": "The FileReader object lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user\u0027s computer, using File or Blob objects to specify the file or data to read.",
+  "members": [
+    {
+      "name": "FileReader()",
+      "link": "/en-US/docs/Web/API/FileReader/FileReader",
+      "description": "Returns a newly constructed FileReader."
+    },
+    {
+      "name": "FileReader.error",
+      "link": "/en-US/docs/Web/API/FileReader/error",
+      "description": "A DOMError representing the error that occurred while reading the file."
+    },
+    {
+      "name": "FileReader.readyState",
+      "link": "/en-US/docs/Web/API/FileReader/readyState",
+      "description": "A number indicating the state of the FileReader. This is one of the following: EMPTY 0 No data has been loaded yet. LOADING 1 Data is currently being loaded. DONE 2 The entire read request has been completed."
+    },
+    {
+      "name": "FileReader.result",
+      "link": "/en-US/docs/Web/API/FileReader/result",
+      "description": "The file\u0027s contents. This property is only valid after the read operation is complete, and the format of the data depends on which of the methods was used to initiate the read operation."
+    },
+    {
+      "name": "FileReader.onabort",
+      "link": "/en-US/docs/Web/API/FileReader/onabort",
+      "description": "A handler for the abort event. This event is triggered each time the reading operation is aborted."
+    },
+    {
+      "name": "FileReader.onerror",
+      "link": "/en-US/docs/Web/API/FileReader/onerror",
+      "description": "A handler for the error event. This event is triggered each time the reading operation encounter an error."
+    },
+    {
+      "name": "FileReader.onload",
+      "link": "/en-US/docs/Web/API/FileReader/onload",
+      "description": "A handler for the load event. This event is triggered each time the reading operation is successfully completed."
+    },
+    {
+      "name": "FileReader.onloadstart",
+      "link": "/en-US/docs/Web/API/FileReader/onloadstart",
+      "description": "A handler for the loadstart event. This event is triggered each time the reading is starting."
+    },
+    {
+      "name": "FileReader.onloadend",
+      "link": "/en-US/docs/Web/API/FileReader/onloadend",
+      "description": "A handler for the loadend event. This event is triggered each time the reading operation is completed (either in success or failure)."
+    },
+    {
+      "name": "FileReader.onprogress",
+      "link": "/en-US/docs/Web/API/FileReader/onprogress",
+      "description": "A handler for the progress event. This event is triggered while reading a Blob content."
+    },
+    {
+      "name": "FileReader.abort()",
+      "link": "/en-US/docs/Web/API/FileReader/abort",
+      "description": "Aborts the read operation. Upon return, the readyState will be DONE.",
+      "parameters": [
+        {
+          "name": "DOM_FILE_ABORT_ERR",
+          "description": "Thrown when abort is called while no read operation is in progress (that is, the state isn\u0027t LOADING)."
+        }
+      ]
+    },
+    {
+      "name": "FileReader.readAsArrayBuffer()",
+      "link": "/en-US/docs/Web/API/FileReader/readAsArrayBuffer",
+      "description": "Starts reading the contents of the specified Blob, once finished, the result attribute contains an ArrayBuffer representing the file\u0027s data.",
+      "parameters": [
+        {
+          "name": "blob",
+          "description": "The Blob or File from which to read."
+        }
+      ]
+    },
+    {
+      "name": "FileReader.readAsBinaryString()",
+      "link": "/en-US/docs/Web/API/FileReader/readAsBinaryString",
+      "description": "Starts reading the contents of the specified Blob, once finished, the result attribute contains the raw binary data from the file as a string.",
+      "parameters": [
+        {
+          "name": "blob",
+          "description": "The Blob or File from which to read."
+        }
+      ]
+    },
+    {
+      "name": "FileReader.readAsDataURL()",
+      "link": "/en-US/docs/Web/API/FileReader/readAsDataURL",
+      "description": "Starts reading the contents of the specified Blob, once finished, the result attribute contains a data: URL representing the file\u0027s data.",
+      "parameters": [
+        {
+          "name": "blob",
+          "description": "The Blob or File from which to read."
+        }
+      ]
+    },
+    {
+      "name": "FileReader.readAsText()",
+      "link": "/en-US/docs/Web/API/FileReader/readAsText",
+      "description": "Starts reading the contents of the specified Blob, once finished, the result attribute contains the contents of the file as a text string.",
+      "parameters": [
+        {
+          "name": "blob",
+          "description": "The Blob or File from which to read."
+        },
+        {
+          "name": "encoding Optional",
+          "description": "A string specifying the encoding to use for the returned data. By default, UTF-8 is assumed if this parameter is not specified."
+        }
+      ]
+    }
+  ]
+}

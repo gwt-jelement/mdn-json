@@ -1,0 +1,5 @@
+{
+  "name": "WEBGL_compressed_texture_pvrtc",
+  "description": "The WEBGL_compressed_texture_pvrtc extension is part of the WebGL API and exposes four PVRTC compressed texture formats.",
+  "members": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "TypeInfo",
+  "description": "",
+  "members": [
+    {
+      "name": "TypeInfo.typeName",
+      "link": "/en-US/docs/Web/API/TypeInfo/typeName",
+      "description": "Returns a DOMString."
+    },
+    {
+      "name": "TypeInfo.typeNamespace",
+      "link": "/en-US/docs/Web/API/TypeInfo/typeNamespace",
+      "description": "Returns a DOMString."
+    },
+    {
+      "name": "TypeInfo.isDerivedFrom()",
+      "link": "/en-US/docs/Web/API/TypeInfo/isDerivedFrom",
+      "description": "Returns a Boolean"
+    }
+  ]
+}

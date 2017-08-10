@@ -1,0 +1,57 @@
+{
+  "name": "IDBTransaction",
+  "description": "",
+  "members": [
+    {
+      "name": "IDBTransaction.db",
+      "link": "/en-US/docs/Web/API/IDBTransaction/db",
+      "description": "The database connection with which this transaction is associated."
+    },
+    {
+      "name": "IDBTransaction.error",
+      "link": "/en-US/docs/Web/API/IDBTransaction/error",
+      "description": "Returns one of several types of error when there is an unsuccessful transaction. This property is null if the transaction is not finished, is finished and successfully committed, or was aborted with IDBTransaction.abort function."
+    },
+    {
+      "name": "IDBTransaction.mode",
+      "link": "/en-US/docs/Web/API/IDBTransaction/mode",
+      "description": "The mode for isolating access to data in the object stores that are in the scope of the transaction. For possible values, see the Constants section below. The default value is readonly."
+    },
+    {
+      "name": "IDBTransaction.objectStoreNames",
+      "link": "/en-US/docs/Web/API/IDBTransaction/objectStoreNames",
+      "description": "Returns a DOMStringList of the names of IDBObjectStore objects."
+    },
+    {
+      "name": "IDBTransaction.onabort",
+      "link": "/en-US/docs/Web/API/IDBTransaction/onabort",
+      "description": "The event handler for the abort event, fired when the transaction is aborted."
+    },
+    {
+      "name": "IDBTransaction.oncomplete",
+      "link": "/en-US/docs/Web/API/IDBTransaction/oncomplete",
+      "description": "The event handler for the complete event, thrown when the transaction completes successfully."
+    },
+    {
+      "name": "IDBTransaction.onerror",
+      "link": "/en-US/docs/Web/API/IDBTransaction/onerror",
+      "description": "The event handler for the error event, thrown when the transaction fails to complete."
+    },
+    {
+      "name": "IDBTransaction.abort",
+      "link": "/en-US/docs/Web/API/IDBTransaction/abort",
+      "description": "Rolls back all the changes to objects in the database associated with this transaction. If this transaction has been aborted or completed, then this method throws an error event."
+    },
+    {
+      "name": "IDBTransaction.objectStore",
+      "link": "/en-US/docs/Web/API/IDBTransaction/objectStore",
+      "description": "Returns an IDBObjectStore object representing an object store that is part of the scope of this transaction.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the requested object store."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "PushSubscription",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The PushSubscription interface of the Push API provides a subcription\u0027s URL endpoint and allows unsubscription from a push service.",
+  "members": [
+    {
+      "name": "PushSubscription.endpoint",
+      "link": "/en-US/docs/Web/API/PushSubscription/endpoint",
+      "description": "A USVString containing the endpoint associated with the push subscription."
+    },
+    {
+      "name": "PushSubscription.options",
+      "link": "/en-US/docs/Web/API/PushSubscription/options",
+      "description": "An object containing containing the options used to create the subscription."
+    },
+    {
+      "name": "PushSubscription.subscriptionId",
+      "link": "/en-US/docs/Web/API/PushSubscription/subscriptionId",
+      "description": "A DOMString containing the subscription ID associated with the push subscription."
+    },
+    {
+      "name": "PushSubscription.getKey()",
+      "link": "/en-US/docs/Web/API/PushSubscription/getKey",
+      "description": "Returns an ArrayBuffer which contains the client\u0027s public key, which can then be sent to a server and used in encrypting push message data.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A DOMString representing the encryption method used to generate a client key.  The value can be: p256dh: An Elliptic curve Diffie–Hellman public key on the P-256 curve (that is, the NIST secp256r1 elliptic curve).  The resulting key is an uncompressed point in ANSI X9.62 format. auth: An authentication secret, as described in Message Encryption for Web Push."
+        }
+      ]
+    },
+    {
+      "name": "PushSubscription.toJSON()",
+      "link": "/en-US/docs/Web/API/PushSubscription/toJSON",
+      "description": "Standard serializer — returns a JSON representation of the subscription properties."
+    },
+    {
+      "name": "PushSubscription.unsubscribe()",
+      "link": "/en-US/docs/Web/API/PushSubscription/unsubscribe",
+      "description": "Starts the asynchronous process of unsubscribing from the push service, returning a Promise that resolves to a Boolean when the current subscription is successfully unregistered."
+    }
+  ]
+}

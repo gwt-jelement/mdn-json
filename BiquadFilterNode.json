@@ -1,0 +1,69 @@
+{
+  "name": "BiquadFilterNode",
+  "description": "",
+  "members": [
+    {
+      "name": "BiquadFilterNode()",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/BiquadFilterNode",
+      "description": "Creates a new instance of an BiquadFilterNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: type: One of \"lowpass\", \"highpass\", \"bandpass\", \"lowshelf\", \"highshelf\", \"peaking\", \"notch\", \"allpass\". The meaning of the other options depends on the value of this one. The defaults for all are as follows: Q: 1 detune: 0 frequency: 350 gain: 0 lowpass: (Default) Allows frequencies below a cutoff frequency to pass through, and attenuates frequencies above the cutoff. This is a standard second-order resonant lowpass filter with 12dB/octave rolloff. Q: Controls how peaked the response will be at the cutoff frequency. A large value makes the response more peaked. Please note that for this filter type, this value is not a traditional Q, but is a resonance value in decibels. frequency: The cutoff frequency. gain: Not used."
+        }
+      ]
+    },
+    {
+      "name": "BiquadFilterNode.frequency",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/frequency",
+      "description": "Is an a-rate AudioParam, a double representing a frequency in the current filtering algorithm measured in hertz (Hz)."
+    },
+    {
+      "name": "BiquadFilterNode.detune",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/detune",
+      "description": "Is an a-rate AudioParam representing detuning of the frequency in cents."
+    },
+    {
+      "name": "BiquadFilterNode.Q",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/Q",
+      "description": "Is an a-rate AudioParam, a double representing a Q factor, or quality factor."
+    },
+    {
+      "name": "BiquadFilterNode.gain",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/gain",
+      "description": "Is an a-rate AudioParam, a double representing the gain used in the current filtering algorithm."
+    },
+    {
+      "name": "BiquadFilterNode.type",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/type",
+      "description": "Is a string value defining the kind of filtering algorithm the node is implementing.   The meaning of the different parameters depending of the type of the filter (detune has the same meaning regardless, so isn\u0027t listed below) type Description frequency Q gain lowpass Standard second-order resonant lowpass filter with 12dB/octave rolloff. Frequencies below the cutoff pass through; frequencies above it are attenuated. The cutoff frequency. Indicates how peaked the frequency is around the cutoff. The greater the value is, the greater is the peak. Not used highpass Standard second-order resonant highpass filter with 12dB/octave rolloff. Frequencies below the cutoff are attenuated; frequencies above it pass through. The cutoff frequency. Indicates how peaked the frequency is around the cutoff. The greater the value, the greater the peak. Not used bandpass Standard second-order bandpass filter. Frequencies outside the given range of frequencies are attenuated; the frequencies inside it pass through. The center of the range of frequencies. Controls the width of the frequency band. The greater the Q value, the smaller the frequency band. Not used lowshelf Standard second-order lowshelf filter. Frequencies lower than the frequency get a boost, or an attenuation; frequencies over it are unchanged. The upper limit of the frequencies getting a boost or an attenuation. Not used The boost, in dB, to be applied; if negative, it will be an attenuation. highshelf Standard second-order highshelf filter. Frequencies higher than the frequency get a boost or an attenuation; frequencies lower than it are unchanged. The lower limit of the frequencies getting a boost or an attenuation. Not used The boost, in dB, to be applied; if negative, it will be an attenuation. peaking Frequencies inside the range get a boost or an attenuation; frequencies outside it are unchanged. The middle of the frequency range getting a boost or an attenuation. Controls the width of the frequency band. The greater the Q value, the smaller the frequency band. The boost, in dB, to be applied; if negative, it will be an attenuation. notch Standard notch filter, also called a band-stop or band-rejection filter. It is the opposite of a bandpass filter: frequencies outside the give range of frequencies pass through; frequencies inside it are attenuated. The center of the range of frequencies. Controls the width of the frequency band. The greater the Q value, the smaller the frequency band. Not used allpass Standard second-order allpass filter. It lets all frequencies through, but changes the phase-relationship between the various frequencies. The frequency with the maximal group delay, that is, the frequency where the center of the phase transition occurs. Controls how sharp the transition is at the medium frequency. The larger this parameter is, the sharper and larger the transition will be. Not used"
+    },
+    {
+      "name": "BiquadFilterNode.getFrequencyResponse()",
+      "link": "/en-US/docs/Web/API/BiquadFilterNode/getFrequencyResponse",
+      "description": "From the current filter parameter settings this method calculates the frequency response for frequencies specified in the provided array of frequencies.",
+      "parameters": [
+        {
+          "name": "frequencyArray",
+          "description": "A Float32Array containing an array of frequencies, specified in Hertz, which you want to filter."
+        },
+        {
+          "name": "magResponseOutput",
+          "description": "A Float32Array to receive the computed magnitudes of the freqency response for each frequency value in the frequencyArray. For any frequency in frequencyArray whose value is outside the range 0.0 to sampleRate/2 (where sampleRate is the sample rate of the AudioContext), the corresponding value in this array is NaN. These are unitless values."
+        },
+        {
+          "name": "phaseResponseOutput",
+          "description": "A Float32Array to receive the computed phase response values in radians for each frequency value in the input frequencyArray. For any frequency in frequencyArray whose value is outside the range 0.0 to sampleRate/2 (where sampleRate is the sample rate of the AudioContext), the corresponding value in this array is NaN."
+        },
+        {
+          "name": "InvalidAccessError",
+          "description": "The three arrays provided are not all of the same length."
+        }
+      ]
+    }
+  ]
+}

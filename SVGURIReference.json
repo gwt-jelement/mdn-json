@@ -1,0 +1,11 @@
+{
+  "name": "SVGURIReference",
+  "description": "The SVGURIReference interface is used to reflect the href attribute and the deprecated xlink:href attribute.",
+  "members": [
+    {
+      "name": "SVGURIReference.href",
+      "link": "/en-US/docs/Web/API/SVGURIReference/href",
+      "description": "An SVGAnimatedString that represents the value of the href attribute, and, on elements that are defined to support it, the deprecated xlink:href attribute. On getting href, an SVGAnimatedString object is returned that reflects the href attribute, and if the element is defined to support the deprecated xlink:href attribute, additionally reflects that deprecated attribute."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "CSSConditionRule",
+  "description": "",
+  "members": [
+    {
+      "name": "CSSConditionRule.conditionText",
+      "link": "/en-US/docs/Web/API/CSSConditionRule/conditionText",
+      "description": "Represents the text of the condition of the rule."
+    }
+  ]
+}

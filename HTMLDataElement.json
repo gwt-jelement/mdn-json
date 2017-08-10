@@ -1,0 +1,11 @@
+{
+  "name": "HTMLDataElement",
+  "description": "The HTMLDataElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating \u003cdata\u003e elements.",
+  "members": [
+    {
+      "name": "HTMLDataElement.value",
+      "link": "/en-US/docs/Web/API/HTMLDataElement/value",
+      "description": "Is a DOMString reflecting the value HTML attribute, containing a machine-readable form of the element\u0027s value."
+    }
+  ]
+}

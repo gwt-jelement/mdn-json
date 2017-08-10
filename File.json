@@ -1,0 +1,55 @@
+{
+  "name": "File",
+  "description": "The File interface provides information about files and allows JavaScript in a web page to access their content.",
+  "members": [
+    {
+      "name": "File()",
+      "link": "/en-US/docs/Web/API/File/File",
+      "description": "Returns a newly constructed File.",
+      "parameters": [
+        {
+          "name": "bits",
+          "description": "An Array of ArrayBuffer, ArrayBufferView, Blob, or DOMString objects — or a mix of any such objects. This is the file content encoded as UTF-8."
+        },
+        {
+          "name": "name",
+          "description": "A USVString representing the file name or the path to the file."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object containing optional attributes for the file. Available options are as follows: type: A DOMString representing the MIME type of the content that will be put into the file. Defaults to a value of \"\". lastModified: A number representing the number of milliseconds between the Unix time epoch and when the file was last modified. Defaults to a value of Date.now()."
+        }
+      ]
+    },
+    {
+      "name": "File.lastModified",
+      "link": "/en-US/docs/Web/API/File/lastModified",
+      "description": "Returns the last modified time of the file, in millisecond since the UNIX epoch (January 1st, 1970 at Midnight)."
+    },
+    {
+      "name": "File.lastModifiedDate",
+      "link": "/en-US/docs/Web/API/File/lastModifiedDate",
+      "description": "Returns the last modified Date of the file referenced by the File object."
+    },
+    {
+      "name": "File.name",
+      "link": "/en-US/docs/Web/API/File/name",
+      "description": "Returns the name of the file referenced by the File object."
+    },
+    {
+      "name": "File.size",
+      "link": "/en-US/docs/Web/API/File/size",
+      "description": "Returns the size of the file."
+    },
+    {
+      "name": "File.webkitRelativePath",
+      "link": "/en-US/docs/Web/API/File/webkitRelativePath",
+      "description": "Returns the path the URL of the File is relative to."
+    },
+    {
+      "name": "File.type",
+      "link": "/en-US/docs/Web/API/File/type",
+      "description": "Returns the MIME type of the file."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "HTMLInputElement",
+  "description": "The HTMLInputElement interface provides special properties and methods for manipulating the layout and presentation of input elements.",
+  "members": [
+    {
+      "name": "HTMLInputElement.align",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/align",
+      "description": "string: represents the alignment of the element. Use CSS instead."
+    },
+    {
+      "name": "HTMLInputElement.useMap",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/useMap",
+      "description": "string: represents a client-side image map."
+    },
+    {
+      "name": "HTMLInputElement.stepDown()",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/stepDown",
+      "description": "Decrements the value by (step * n), where n defaults to 1 if not specified. Throws an INVALID_STATE_ERR exception: if the method is not applicable to for the current type value, if the element has no step value, if the value cannot be converted to a number, if the resulting value is above the max or below the min. "
+    },
+    {
+      "name": "HTMLInputElement.stepUp()",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/stepUp",
+      "description": "Increments the value by (step * n), where n defaults to 1 if not specified. Throws an INVALID_STATE_ERR exception: if the method is not applicable to for the current type value., if the element has no step value, if the value cannot be converted to a number, if the resulting value is above the max or below the min."
+    },
+    {
+      "name": "HTMLInputElement.mozSetFileArray()",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/mozSetFileArray",
+      "description": "Sets the files selected on the input to the given array of File objects.  This is an alternative to mozSetFileNameArray() which can be used in frame scripts: a chrome script can open files as File objects and send them via message manager."
+    },
+    {
+      "name": "HTMLInputElement.mozGetFileNameArray()",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/mozGetFileNameArray",
+      "description": "Returns an array of all the file names from the input.",
+      "parameters": [
+        {
+          "name": "aLength",
+          "description": "If specified, will receive the number of file names in the returned array."
+        },
+        {
+          "name": "aFileNames",
+          "description": "Is an array into which the file names are placed."
+        }
+      ]
+    },
+    {
+      "name": "HTMLInputElement.mozSetFileNameArray()",
+      "link": "/en-US/docs/Web/API/HTMLInputElement/mozSetFileNameArray",
+      "description": "Sets the filenames for the files selected on the input.  Not for use in frame scripts, because it accesses the file system.",
+      "parameters": [
+        {
+          "name": "aFileNames",
+          "description": "Is the array of file names to apply to the element."
+        },
+        {
+          "name": "aLength",
+          "description": "Is the number of file names in the array."
+        }
+      ]
+    }
+  ]
+}

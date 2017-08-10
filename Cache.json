@@ -1,0 +1,103 @@
+{
+  "name": "Cache",
+  "description": "",
+  "members": [
+    {
+      "name": "Cache.match(request, options)",
+      "link": "/en-US/docs/Web/API/Cache/match",
+      "description": "Returns a Promise that resolves to the response associated with the first matching request in the Cache object.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The Request you are attempting to find in the Cache."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object that sets options for the match operation. The available options are: ignoreSearch: A Boolean that specifies whether to ignore the query string in the url.  For example, if set to true the ?value\u003dbar part of http://foo.com/?value\u003dbar would be ignored when performing a match. It defaults to false. ignoreMethod: A Boolean that, when set to true, prevents matching operations from validating the Request http method (normally only GET and HEAD are allowed.) It defaults to false. ignoreVary: A Boolean that when set to true tells the matching operation not to perform VARY header matching — i.e. if the URL matches you will get a match regardless of whether the Response object has a VARY header. It defaults to false. cacheName: A DOMString that represents a specific cache to search within. Note that this option is ignored by Cache.match()."
+        }
+      ]
+    },
+    {
+      "name": "Cache.matchAll(request, options)",
+      "link": "/en-US/docs/Web/API/Cache/matchAll",
+      "description": "Returns a Promise that resolves to an array of all matching requests in the Cache object.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The Request you are attempting to find in the Cache."
+        },
+        {
+          "name": "options Optional",
+          "description": "An options object allowing you to set specific control options for the matching done in the match operation. The available options are: ignoreSearch: A Boolean that specifies whether the matching process should ignore the query string in the url.  If set to true, the ?value\u003dbar part of http://foo.com/?value\u003dbar would be ignored when performing a match. It defaults to false. ignoreMethod: A Boolean that, when set to true, prevents matching operations from validating the Request http method (normally only GET and HEAD are allowed.) It defaults to false. ignoreVary: A Boolean that when set to true tells the matching operation not to perform VARY header matching — i.e. if the URL matches you will get a match regardless of the Response object having a VARY header or not. It defaults to false. cacheName: A DOMString that represents a specific cache to search within. Note that this option is ignored by Cache.matchAll()."
+        }
+      ]
+    },
+    {
+      "name": "Cache.add(request)",
+      "link": "/en-US/docs/Web/API/Cache/add",
+      "description": "Takes a URL, retrieves it and adds the resulting response object to the given cache. This is fuctionally equivalent to calling fetch(), then using Cache.put() to add the results to the cache.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The request you want to add to the cache. This can be a  Request object or a URL."
+        }
+      ]
+    },
+    {
+      "name": "Cache.addAll(requests)",
+      "link": "/en-US/docs/Web/API/Cache/addAll",
+      "description": "Takes an array of URLs, retrieves them, and adds the resulting response objects to the given cache.",
+      "parameters": [
+        {
+          "name": "requests",
+          "description": "An array of string URLs that you want to be fetched and added to the cache."
+        }
+      ]
+    },
+    {
+      "name": "Cache.put(request, response)",
+      "link": "/en-US/docs/Web/API/Cache/put",
+      "description": "Takes both a request and its response and adds it to the given cache.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The Request you want to add to the cache."
+        },
+        {
+          "name": "response",
+          "description": "The Response you want to match up to the request."
+        }
+      ]
+    },
+    {
+      "name": "Cache.delete(request, options)",
+      "link": "/en-US/docs/Web/API/Cache/delete",
+      "description": "Finds the Cache entry whose key is the request, and if found, deletes the Cache entry and returns a Promise that resolves to true. If no Cache entry is found, it returns false.",
+      "parameters": [
+        {
+          "name": "request",
+          "description": "The Request you are looking to delete."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object whose properties control how matching is done in the delete operation. The available options are: ignoreSearch: A Boolean that specifies whether the matching process should ignore the query string in the url.  If set to true, the ?value\u003dbar part of http://foo.com/?value\u003dbar would be ignored when performing a match. It defaults to false. ignoreMethod: A Boolean that, when set to true, prevents matching operations from validating the Request HTTP method (normally only GET and HEAD are allowed.) It defaults to false. ignoreVary: A Boolean that, when set to true, tells the matching operation not to perform VARY header matching.  In other words, if the URL matches you will get a match regardless of  whether the Response object has a VARY header. It defaults to false. cacheName: A DOMString that represents a specific cache to search within. Note that this option is ignored by Cache.delete()."
+        }
+      ]
+    },
+    {
+      "name": "Cache.keys(request, options)",
+      "link": "/en-US/docs/Web/API/Cache/keys",
+      "description": "Returns a Promise that resolves to an array of Cache keys.",
+      "parameters": [
+        {
+          "name": "request Optional",
+          "description": "The Request want to return, if a specific key is desired."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object whose properties control how matching is done in the keys operation. The available options are: ignoreSearch: A Boolean that specifies whether the matching process should ignore the query string in the url.  If set to true, the ?value\u003dbar part of http://foo.com/?value\u003dbar would be ignored when performing a match. It defaults to false. ignoreMethod: A Boolean that, when set to true, prevents matching operations from validating the Request HTTP method (normally only GET and HEAD are allowed.) It defaults to false. ignoreVary: A Boolean that, when set to true, tells the matching operation not to perform VARY header matching.  In other words, if the URL matches you will get a match regardless of  whether the Response object has a VARY header. It defaults to false. cacheName: A DOMString that represents a specific cache to search within. Note that this option is ignored by Cache.keys()."
+        }
+      ]
+    }
+  ]
+}

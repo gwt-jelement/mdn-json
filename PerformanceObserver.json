@@ -1,0 +1,33 @@
+{
+  "name": "PerformanceObserver",
+  "description": "This is an experimental technology Because this technology\u0027s specification has not stabilized, check the compatibility table for usage in various browsers. Also note that the syntax and behavior of an experimental technology is subject to change in future versions of browsers as the specification changes. The PerformanceObserver interface is used to observe performance measurement events and be notified of new performance entries as they are recorded in the browser\u0027s performance timeline.",
+  "members": [
+    {
+      "name": "PerformanceObserver()",
+      "link": "/en-US/docs/Web/API/PerformanceObserver/PerformanceObserver",
+      "description": "Creates a PerformanceObserver object.",
+      "parameters": [
+        {
+          "name": "callback",
+          "description": "A PerformanceObserverCallback callback that will be invoked when observered performance events are recorded. When the callback is invoked, its first parameter is a list of performance observer entries and the second parameter is the observer object."
+        }
+      ]
+    },
+    {
+      "name": "PerformanceObserver.observe()",
+      "link": "/en-US/docs/Web/API/PerformanceObserver/observe",
+      "description": "Specifies the set of entry types to observe. The performance observer\u0027s callback function will be invoked when a performance entry is recorded for one of the specified entryTypes",
+      "parameters": [
+        {
+          "name": "options",
+          "description": "A PerformanceObserverInit dictionary with one member: \"entryTypes\", an array of strings and the valid values for the strings are defined in PerformanceEntry.entryType. If a value is not valid, the browser will ignore it. If the options argument is not given or the array is empty, TypeError is thrown."
+        }
+      ]
+    },
+    {
+      "name": "PerformanceObserver.disconnect()",
+      "link": "/en-US/docs/Web/API/PerformanceObserver/disconnect",
+      "description": "Stops the performance observer callback from receiving performance entries."
+    }
+  ]
+}

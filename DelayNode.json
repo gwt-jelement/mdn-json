@@ -1,0 +1,26 @@
+{
+  "name": "DelayNode",
+  "description": "",
+  "members": [
+    {
+      "name": "DelayNode()",
+      "link": "/en-US/docs/Web/API/DelayNode/DelayNode",
+      "description": "Creates a new instance of an DelayNode object.",
+      "parameters": [
+        {
+          "name": "context",
+          "description": "A reference to an AudioContext."
+        },
+        {
+          "name": "options Optional",
+          "description": "Options are as follows: delayTime: The initial delay time for the node. The default is 0. maxDelayTime: The maximum delay time for the node. The default is 1."
+        }
+      ]
+    },
+    {
+      "name": "DelayNode.delayTime",
+      "link": "/en-US/docs/Web/API/DelayNode/delayTime",
+      "description": "Is an a-rate AudioParam representing the amount of delay to apply."
+    }
+  ]
+}

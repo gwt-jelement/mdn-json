@@ -1,0 +1,31 @@
+{
+  "name": "SharedWorker",
+  "description": "The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing contexts, such as several windows, iframes or even workers. They implement an interface different than dedicated workers and have a different global scope, SharedWorkerGlobalScope.",
+  "members": [
+    {
+      "name": "SharedWorker()",
+      "link": "/en-US/docs/Web/API/SharedWorker/SharedWorker",
+      "description": "Creates a shared web worker that executes the script at the specified URL.",
+      "parameters": [
+        {
+          "name": "aURL",
+          "description": "A DOMString representing the URL of the script the worker will execute. It must obey the same-origin policy."
+        },
+        {
+          "name": "options Optional",
+          "description": "An object containing option properties that can set when creating the object instance. Available properties are as follows: type: A DOMString specifying the type of worker to create. The value can be classic or module. If not specified, the default used is classic. credentials: A DOMString specifying the type of credentials to use for the worker. The value can be omit, same-origin, or include. If not specified, or if type is classic, the default used is omit (no credentials required). name: A DOMString specifying an identifying name for the SharedWorkerGlobalScope representing the scope of the worker, which is mainly useful for debugging purposes."
+        }
+      ]
+    },
+    {
+      "name": "AbstractWorker.onerror",
+      "link": "/en-US/docs/Web/API/AbstractWorker/onerror",
+      "description": "Is an EventListener that is called whenever an ErrorEvent of type error bubbles through the worker."
+    },
+    {
+      "name": "SharedWorker.port",
+      "link": "/en-US/docs/Web/API/SharedWorker/port",
+      "description": "Returns a MessagePort object used to communicate and control the shared worker."
+    }
+  ]
+}

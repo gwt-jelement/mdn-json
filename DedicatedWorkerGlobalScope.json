@@ -1,0 +1,212 @@
+{
+  "name": "DedicatedWorkerGlobalScope",
+  "description": "",
+  "members": [
+    {
+      "name": "DedicatedWorkerGlobalScope.name",
+      "link": "/en-US/docs/Web/API/DedicatedWorkerGlobalScope/name",
+      "description": "The name that the Worker was (optionally) given when it was created using the Worker() constructor. This is mainly useful for debugging purposes."
+    },
+    {
+      "name": "WorkerGlobalScope.self",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/self",
+      "description": "Returns an object reference to the DedicatedWorkerGlobalScope object itself."
+    },
+    {
+      "name": "WorkerGlobalScope.console",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/console",
+      "description": "Returns the Console associated with the worker."
+    },
+    {
+      "name": "WorkerGlobalScope.location",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/location",
+      "description": "Returns the WorkerLocation associated with the worker. WorkerLocation is a specific location object, mostly a subset of the Location for browsing scopes, but adapted to workers."
+    },
+    {
+      "name": "WorkerGlobalScope.navigator",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/navigator",
+      "description": "Returns the WorkerNavigator associated with the worker. WorkerNavigator is a specific navigator object, mostly a subset of the Navigator for browsing scopes, but adapted to workers."
+    },
+    {
+      "name": "WorkerGlobalScope.performance",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/performance",
+      "description": "Returns the Performance object associated with the worker, which is a regular performance object, but with a subset of its properties and methods available."
+    },
+    {
+      "name": "DedicatedWorkerGlobalScope.onmessage",
+      "link": "/en-US/docs/Web/API/DedicatedWorkerGlobalScope/onmessage",
+      "description": "Is an EventHandler representing the code to be called when the message event is raised. These events are of type MessageEvent and will be called when the worker receives a message from the document that started it (i.e. from the Worker.postMessage method.)"
+    },
+    {
+      "name": "DedicatedWorkerGlobalScope.onmessageerror",
+      "link": "/en-US/docs/Web/API/DedicatedWorkerGlobalScope/onmessageerror",
+      "description": "Is an EventHandler representing the code to be called when the messageerror event is raised."
+    },
+    {
+      "name": "DedicatedWorkerGlobalScope.close()",
+      "link": "/en-US/docs/Web/API/DedicatedWorkerGlobalScope/close",
+      "description": "Discards any tasks queued in the WorkerGlobalScope\u0027s event loop, effectively closing this particular scope."
+    },
+    {
+      "name": "DedicatedWorkerGlobalScope.postMessage()",
+      "link": "/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage",
+      "description": "Sends a message — which can consist of any JavaScript object — to the parent document that first spawned the worker.",
+      "parameters": [
+        {
+          "name": "aMessage",
+          "description": "The object to deliver to the main thread; this will be in the data field in the event delivered to the Worker.onmessage handler. This may be any value or JavaScript object handled by the structured clone algorithm, which includes cyclical references."
+        },
+        {
+          "name": "transferList Optional",
+          "description": "An optional array of Transferable objects to transfer ownership of. If the ownership of an object is transferred, it becomes unusable (neutered) in the context it was sent from and it becomes available only to the main thread it was sent to."
+        }
+      ]
+    },
+    {
+      "name": "WorkerGlobalScope.dump()",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/dump",
+      "description": "Writes a message to the console."
+    },
+    {
+      "name": "WorkerGlobalScope.importScripts()",
+      "link": "/en-US/docs/Web/API/WorkerGlobalScope/importScripts",
+      "description": "Imports one or more scripts into the worker\u0027s scope. You can specify as many as you\u0027d like, separated by commas. For example: importScripts(\u0027foo.js\u0027, \u0027bar.js\u0027);"
+    },
+    {
+      "name": "WindowBase64.atob()",
+      "link": "/en-US/docs/Web/API/WindowBase64/atob",
+      "description": "Decodes a string of data which has been encoded using base-64 encoding."
+    },
+    {
+      "name": "WindowBase64.btoa()",
+      "link": "/en-US/docs/Web/API/WindowBase64/btoa",
+      "description": "Creates a base-64 encoded ASCII string from a string of binary data.",
+      "parameters": [
+        {
+          "name": "stringToEncode",
+          "description": "A string whose characters each represent a single byte of binary data to be encoded into ASCII."
+        }
+      ]
+    },
+    {
+      "name": "WindowTimers.clearInterval()",
+      "link": "/en-US/docs/Web/API/WindowTimers/clearInterval",
+      "description": "Cancels the repeated execution set using WindowTimers.setInterval().",
+      "parameters": [
+        {
+          "name": "intervalID",
+          "description": "The identifier of the repeated action you want to cancel. This ID was returned by the corresponding call to setInterval()."
+        }
+      ]
+    },
+    {
+      "name": "WindowTimers.clearTimeout()",
+      "link": "/en-US/docs/Web/API/WindowTimers/clearTimeout",
+      "description": "Cancels the repeated execution set using WindowTimers.setTimeout().",
+      "parameters": [
+        {
+          "name": "timeoutID",
+          "description": "The identifier of the timeout you want to cancel. This ID was returned by the corresponding call to setTimeout()."
+        }
+      ]
+    },
+    {
+      "name": "WindowTimers.setInterval()",
+      "link": "/en-US/docs/Web/API/WindowTimers/setInterval",
+      "description": "Schedules the execution of a function every X milliseconds.",
+      "parameters": [
+        {
+          "name": "func",
+          "description": "A function to be executed every delay milliseconds. The function is not passed any parameters, and no return value is expected."
+        },
+        {
+          "name": "code",
+          "description": "An optional syntax allows you to include a string instead of a function, which is compiled and executed every delay milliseconds. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should delay in between executions of the specified function or code. If this parameter is less than 10, a value of 10 is used. Note that the actual delay may be longer; see \"Reasons for delays longer than specified\" in WindowOrWorkerGlobalScope.setTimeout() for examples."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by func once the timer expires."
+        },
+        {
+          "name": "thisObject",
+          "description": "The this object on which the callback function is called. It can be an object or null."
+        },
+        {
+          "name": "callback",
+          "description": "The function that is repeatedly invoked . It is called with three parameters: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is increasing or decreasing). It is something like callback.call(thisObject, index, length, backwards). If the callback function returns a false value the daemon is paused."
+        },
+        {
+          "name": "rate (optional)",
+          "description": "The time lapse (in number of milliseconds) between each invocation. The default value is 100."
+        },
+        {
+          "name": "length (optional)",
+          "description": "The total number of invocations. It can be a positive integer or Infinity. The default value is Infinity."
+        },
+        {
+          "name": "myDaemon.owner",
+          "description": "The this object on which is executed the daemon (read/write). It can be an object or null."
+        },
+        {
+          "name": "myDaemon.task",
+          "description": "The function that is repeatedly invoked (read/write). It is called with three arguments: index (the iterative index of each invocation), length (the number of total invocations assigned to the daemon - finite or Infinity) and backwards (a boolean expressing whether the index is decreasing or not) – see above. If the myDaemon.task function returns a false value the daemon is paused."
+        },
+        {
+          "name": "myDaemon.rate",
+          "description": "The time lapse (in number of milliseconds) between each invocation (read/write)."
+        },
+        {
+          "name": "myDaemon.length",
+          "description": "The total number of invocations. It can be a positive integer or Infinity (read/write)."
+        },
+        {
+          "name": "myDaemon.isAtEnd()",
+          "description": "Returns a boolean expressing whether the daemon is at the start/end position or not."
+        },
+        {
+          "name": "myDaemon.synchronize()",
+          "description": "Synchronize the timer of a started daemon with the time of its invocation."
+        },
+        {
+          "name": "myDaemon.pause()",
+          "description": "Pauses the daemon."
+        },
+        {
+          "name": "myDaemon.start([reverse])",
+          "description": "Starts the daemon forward (index of each invocation increasing) or backwards (index decreasing)."
+        },
+        {
+          "name": "MiniDaemon.forceCall(minidaemon)",
+          "description": "Forces a single callback to the minidaemon.task function regardless of the fact that the end has been reached or not. In any case the internal INDEX property is increased/decreased (depending on the actual direction of the process)."
+        }
+      ]
+    },
+    {
+      "name": "WindowTimers.setTimeout()",
+      "link": "/en-US/docs/Web/API/WindowTimers/setTimeout",
+      "description": "Sets a delay for executing a function.",
+      "parameters": [
+        {
+          "name": "function",
+          "description": "A function to be executed after the timer expires."
+        },
+        {
+          "name": "code",
+          "description": "An alternative syntax that allows you to include a string instead of a function, which is compiled and executed when the timer expires. This syntax is not recommended for the same reasons that make using eval() a security risk."
+        },
+        {
+          "name": "delay Optional",
+          "description": "The time, in milliseconds (thousandths of a second), the timer should wait before the specified function or code is executed. If this parameter is omitted, a value of 0 is used, meaning execute \"immediately\", or more accurately, as soon as possible. Note that in either case, the actual delay may be longer than intended; see Reasons for delays longer than specified below."
+        },
+        {
+          "name": "param1, ..., paramN Optional",
+          "description": "Additional parameters which are passed through to the function specified by function or code once the timer expires."
+        }
+      ]
+    }
+  ]
+}

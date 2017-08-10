@@ -1,0 +1,11 @@
+{
+  "name": "Comment",
+  "description": "",
+  "members": [
+    {
+      "name": "Comment()",
+      "link": "/en-US/docs/Web/API/Comment/Comment",
+      "description": "Returns a Comment object with the parameter as its textual content."
+    }
+  ]
+}

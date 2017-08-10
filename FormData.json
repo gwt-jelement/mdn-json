@@ -1,0 +1,114 @@
+{
+  "name": "FormData",
+  "description": "",
+  "members": [
+    {
+      "name": "FormData()",
+      "link": "/en-US/docs/Web/API/FormData/FormData",
+      "description": "Creates a new FormData object.",
+      "parameters": [
+        {
+          "name": "form Optional",
+          "description": "An HTML \u003cform\u003e element — when specified, the FormData object will be populated with the form\u0027s current keys/values using the name property of each element for the keys and their submitted value for the values. It will also encode file input content."
+        }
+      ]
+    },
+    {
+      "name": "FormData.append()",
+      "link": "/en-US/docs/Web/API/FormData/append",
+      "description": "Appends a new value onto an existing key inside a FormData object, or adds the key if it does not already exist.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the field whose data is contained in value."
+        },
+        {
+          "name": "value",
+          "description": "The field\u0027s value. This can be a USVString or Blob (including subclasses such as File)."
+        },
+        {
+          "name": "filename Optional",
+          "description": "The filename reported to the server (a USVString), when a Blob or File is passed as the second parameter. The default filename for Blob objects is \"blob\". The default filename for File objects is the file\u0027s filename."
+        }
+      ]
+    },
+    {
+      "name": "FormData.delete()",
+      "link": "/en-US/docs/Web/API/FormData/delete",
+      "description": "Deletes a key/value pair from a FormData object.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the key you want to delete."
+        }
+      ]
+    },
+    {
+      "name": "FormData.entries()",
+      "link": "/en-US/docs/Web/API/FormData/entries",
+      "description": "Returns an iterator allowing to go through all key/value pairs contained in this object."
+    },
+    {
+      "name": "FormData.get()",
+      "link": "/en-US/docs/Web/API/FormData/get",
+      "description": "Returns the first value associated with a given key from within a FormData object.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A USVString representing the name of the key you want to retrieve."
+        }
+      ]
+    },
+    {
+      "name": "FormData.getAll()",
+      "link": "/en-US/docs/Web/API/FormData/getAll",
+      "description": "Returns an array of all the values associated with a given key from within a FormData.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A USVString representing the name of the key you want to retrieve."
+        }
+      ]
+    },
+    {
+      "name": "FormData.has()",
+      "link": "/en-US/docs/Web/API/FormData/has",
+      "description": "Returns a boolean stating whether a FormData object contains a certain key/value pair.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "A USVString representing the name of the key you want to test for."
+        }
+      ]
+    },
+    {
+      "name": "FormData.keys()",
+      "link": "/en-US/docs/Web/API/FormData/keys",
+      "description": "Returns an iterator allowing to go through all keys of the key/value pairs contained in this object."
+    },
+    {
+      "name": "FormData.set()",
+      "link": "/en-US/docs/Web/API/FormData/set",
+      "description": "Sets a new value for an existing key inside a FormData object, or adds the key/value if it does not already exist.",
+      "parameters": [
+        {
+          "name": "name",
+          "description": "The name of the field whose data is contained in value."
+        },
+        {
+          "name": "value",
+          "description": "The field\u0027s value. In the two parameter version this is a USVString, or if it is not, it is converted to a string. In the three parameter version this can be a Blob, File, or a USVString. If none of these are specified the value is converted to a string."
+        },
+        {
+          "name": "filename Optional",
+          "description": "The filename reported to the server (a USVString), when a Blob or File is passed as the second parameter. The default filename for Blob objects is \"blob\"."
+        }
+      ]
+    },
+    {
+      "name": "FormData.values()",
+      "link": "/en-US/docs/Web/API/FormData/values",
+      "description": "Returns an iterator allowing to go through all values of the key/value pairs contained in this object."
+    }
+  ]
+}
